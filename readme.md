@@ -1,3 +1,3 @@
 This repository contains sketches of solutions to many (but not all) of the exercises in [Open Economy Macroeconomics](https://www.columbia.edu/~mu2166/book/) by Martín Uribe and Stephanie Schmitt-Grohé ([Princeton University Press link](https://press.princeton.edu/books/hardcover/9780691158778/open-economy-macroeconomics)). Please help us to improve the repository. If you have solutions or corrections or alternative approaches to solutions, please post them in the corresponding discussion thread in the Discussions tab.
 
-![Open Economy Macroeconomics cover](https://www.columbia.edu/~mu2166/book/Uribe_Open.gif
+![Open Economy Macroeconomics cover](https://www.columbia.edu/~mu2166/book/Uribe_Open.gif)
