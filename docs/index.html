@@ -2,20 +2,69 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Open-Economy Macroeconomics Solutions</title>
-  <link rel="stylesheet" href="style.css">
+  <title>OE Macroeconomics Solutions</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 0 20px; }
+    h1, h2, h3 { color: #333; margin-bottom: 10px; }
+    ul { list-style-type: none; padding: 0; }
+    li { margin-bottom: 6px; }
+    a { color: #0366d6; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer { margin-top: 40px; font-size: 0.9em; color: #666; border-top: 1px solid #ddd; padding-top: 20px; }
+    #comments { margin-top: 40px; }
+    #last-updated { font-style: italic; }
+  </style>
 </head>
 <body>
-  <h1>Open-Economy Macroeconomics Solutions</h1>
-  <p>Click the links below to view each chapter's solutions on nbviewer:</p>
+  <h1>Open‑Economy Macroeconomics Solutions</h1>
+
+  <p>Click the links below to view each chapter’s solutions via nbviewer:</p>
+
+  <h2>Chapter 2</h2>
   <ul>
-    <li><a href="https://nbviewer.org/github/uribe-schmitt-grohe/open-economy-macroeconomics-solutions/blob/main/ch02/2_1.ipynb">Exercise 2.1</a></li>
-    <li><a href="https://nbviewer.org/github/uribe-schmitt-grohe/open-economy-macroeconomics-solutions/blob/main/ch02/2_2.ipynb">Exercise 2.2</a></li>
-    <li><a href="https://nbviewer.org/github/uribe-schmitt-grohe/open-economy-macroeconomics-solutions/blob/main/ch02/2_7.ipynb">Exercise 2.7</a></li>
-    <!-- add more chapter links here -->
+    <li><a href="https://nbviewer.org/github/uribe-schmitt-grohe/open-economy-macroeconomics-solutions/blob/main/ch02/2_1.ipynb" target="_blank">Exercise 2.1 – Solutions</a></li>
+    <li><a href="https://nbviewer.org/github/uribe-schmitt-grohe/open-economy-macroeconomics-solutions/blob/main/ch02/2_2.ipynb" target="_blank">Exercise 2.2 – Solutions</a></li>
+    <li><a href="https://nbviewer.org/github/uribe-schmitt-grohe/open-economy-macroeconomics-solutions/blob/main/ch02/2_7.ipynb" target="_blank">Exercise 2.7 – Solutions</a></li>
   </ul>
+
+  <!-- Example for more chapters -->
+  <h2>Chapter 3</h2>
+  <ul>
+    <li><a href="https://nbviewer.org/github/uribe-schmitt-grohe/open-economy-macroeconomics-solutions/blob/main/ch03/3_1.ipynb" target="_blank">Exercise 3.1 – Solutions</a></li>
+    <!-- 更多链接 -->
+  </ul>
+
+  <section id="comments">
+    <h2>Comments</h2>
+    <script src="https://giscus.app/client.js"
+        data-repo="uribe-schmitt-grohe/open-economy-macroeconomics-solutions"
+        data-repo-id="R_kgDOO4snKg"
+        data-category="General"
+        data-category-id="DIC_kwDOO4snKs4CrP6J"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="preferred_color_scheme"
+        data-lang="en"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+    </script>
+  </section>
+
   <footer>
-    <p>Last updated: <!-- you can manually enter a date or script-insert it --></p>
+    <p id="last-updated">Last updated: <span id="now"></span></p>
+    <p><a href="https://github.com/uribe-schmitt-grohe/open-economy-macroeconomics-solutions" target="_blank">View source on GitHub</a></p>
   </footer>
+
+  <!-- 自动更新时间 JavaScript -->
+  <script>
+    const now = new Date();
+    const opts = { year: 'numeric', month: 'long', day: 'numeric' };
+    document.getElementById('now').textContent =
+      now.toLocaleDateString(undefined, opts);
+  </script>
 </body>
 </html>
