@@ -265,6 +265,7 @@ k_t =
 k' &gt; \bar{k} &amp; t &gt; 0
 \end{cases}
 \]</span></p>
+<p>Investment:</p>
 <p><span class="math display">\[
 i_t =
 \begin{cases}
@@ -273,6 +274,7 @@ k' - \bar{k} &gt; 0 &amp; t = 0 \\
 0 &amp; t &gt; 0
 \end{cases}
 \]</span></p>
+<p>Output:</p>
 <p><span class="math display">\[
 y_t =
 \begin{cases}
@@ -281,80 +283,83 @@ y_t =
 A'F(k') &gt; \bar{A}F(\bar{k}) &amp; t &gt; 0
 \end{cases}
 \]</span></p>
-<p>From the intertemporal resource constraint and the fact that <span class="math inline">\(c_t = c_0\)</span> for all <span class="math inline">\(t\)</span> we have that</p>
+<p>Consumption:</p>
+<p>Given that <span class="math inline">\(\beta(1 + r) = 1\)</span>, we know that <span class="math inline">\(c_t = c_0\)</span> for all <span class="math inline">\(t \geq 0\)</span>. We solve for <span class="math inline">\(c_0\)</span> from the intertemporal budget constraint:</p>
 <p><span class="math display">\[
-\begin{aligned}
-rd_{-1} + c_0 &amp;= \frac{r}{1 + r} \sum_{t=0}^{\infty} \left( \frac{1}{1 + r} \right)^t \left[ A_t F(k_t) - (k_{t+1} - k_t) \right] \\
-&amp;= \frac{r}{1 + r} \left[ \bar{A} F(\bar{k}) - (k' - \bar{k}) + r^{-1} A' F'(k') \right] \\
-&amp;= \bar{A} F(\bar{k}) + \frac{r}{1 + r} \left[ -r^{-1} \bar{A} F(\bar{k}) + r^{-1} A' F'(k') - (k' - \bar{k}) \right] \\
-&amp;= rd_{-1} + c_{-1} + \frac{1}{1 + r} \left[ A' F(\bar{k}) - \bar{A} F(\bar{k}) + A' F(k') - A' F(\bar{k}) - r(k' - \bar{k}) \right] \\
-&amp;= rd_{-1} + c_{-1} + \frac{1}{1 + r} \left[ A' F(k') - \bar{A} F(\bar{k}) + A' F'(k') - A' F(\bar{k}) - A' F'(k') (k' - \bar{k}) \right] \\
-&amp;\geq rd_{-1} + c_{-1},
-\end{aligned}
+c_0 + rd_{-1} = \frac{r}{1 + r} \sum_{t=0}^{\infty} \frac{A_t F(k_t) - i_t}{(1 + r)^t}
 \]</span></p>
-<p>where the last equality uses the fact that <span class="math inline">\(r = A' F'(k')\)</span>, and the inequality uses the fact that by the mean value theorem <span class="math inline">\(A' F(k') - A' F(\bar{k}) - A' F'(k')(k' - \bar{k}) &gt; 0\)</span>. We then have that</p>
+<p>Plug in the expressions for <span class="math inline">\(A_t F(k_t)\)</span> and <span class="math inline">\(i_t\)</span>:</p>
 <p><span class="math display">\[
-c_0 &gt; c_{-1},
+= \frac{1}{1 + r} \left[ r(\bar{A}F(\bar{k}) - i_0) + A'F(k') \right]
 \]</span></p>
-<p>that is, consumption jumps up in period 0 and stays at that higher level thereafter.</p>
-<p>The trade balance deteriorates in period 0. To see this, write</p>
 <p><span class="math display">\[
-tb_0 - tb_{-1} = (y_0 - y_{-1}) - (c_0 - c_{-1}) - (i_0 - i_{-1})
+= \bar{A}F(\bar{k}) + \frac{1}{1 + r} \left[ A'F(k') - \bar{A}F(\bar{k}) - r(k' - \bar{k}) \right]
 \]</span></p>
-<p>and note that <span class="math inline">\(y_0 - y_{-1} = 0\)</span>, <span class="math inline">\(c_0 - c_{-1} &gt; 0\)</span>, and <span class="math inline">\(i_0 - i_{-1} = i_0 &gt; 0\)</span>. Let <span class="math inline">\(tb_0 = tb'\)</span>. In period 1, the trade balance improves, because output increases, consumption doesn’t change, and investment drops to zero. We have already shown that output, consumption, and investment are all constant from period 1 on. This implies that the trade balance is also constant from period 1 on. Let <span class="math inline">\(tb_t = tb''\)</span> for <span class="math inline">\(t \geq 1\)</span>. We have established that <span class="math inline">\(tb'' &gt; tb' &gt; tb_{-1} = rd_{-1}\)</span>. Summarizing,</p>
+<p>So:</p>
 <p><span class="math display">\[
-tb_t =
-\begin{cases}
-rd_{-1} &amp; t &lt; 0 \\
-tb' &lt; rd_{-1} &amp; t = 0 \\
-tb'' = rd_0 &gt; rd_{-1} &amp; t &gt; 0
-\end{cases}
-\quad \tag{*}
+tb_0 - tb_{-1} = y_0 - c_0 - i_0 - rd_{-1}
+= - (k' - \bar{k}) - \frac{1}{1 + r} \left[ A'F(k') - \bar{A}F(\bar{k}) - r(k' - \bar{k}) \right] &lt; 0
 \]</span></p>
-<p>The last line will become clear shortly, when we characterize the equilibrium path of debt. It says that after deteriorating in period 0, the trade balance improves to a level higher than in the original steady state.</p>
-<p>The stock of debt increases in period 0. To see this, write</p>
+<p>Debt:</p>
 <p><span class="math display">\[
-\begin{aligned}
-d_0 &amp;= (1 + r) d_{-1} - tb_0 \\
-&amp;= (1 + r) d_{-1} - tb_{-1} - (tb_0 - tb_{-1}) \\
-&amp;= d_{-1} - (tb_0 - tb_{-1}) \\
-&amp;&gt; d_{-1}
-\end{aligned}
+d_0 = (1 + r)d_{-1} - tb_0
 \]</span></p>
-<p>since <span class="math inline">\(tb_0 - tb_{-1} &lt; 0\)</span>. Because the trade balance is constant (and equal to <span class="math inline">\(tb''\)</span>) from period 1 on, we have that the evolution of debt satisfies</p>
+<p>and</p>
 <p><span class="math display">\[
-d_t = (1 + r) d_{t-1} - tb''; \quad t \geq 1
+d_t = \frac{A'F(k') - c_0}{r}, \quad \text{for all } t \geq 1
 \]</span></p>
-<p>The only nonexplosive solution to this expression is</p>
+<p>Current account:</p>
 <p><span class="math display">\[
-d_t = d_0; \quad t \geq 1
+ca_0 = d_{-1} - d_0 = - (d_0 - d_{-1}) &lt; 0
 \]</span></p>
-<p>which means that</p>
 <p><span class="math display">\[
-tb'' = r d_0 &gt; r \bar{d}
+ca_1 = d_0 - d_1 &gt; 0
 \]</span></p>
-<p>This explains the last line of (*). Summarizing,</p>
 <p><span class="math display">\[
-d_t =
-\begin{cases}
-\bar{d} &amp; t &lt; 0 \\
-d' &gt; \bar{d} &amp; t = 0 \\
-d'' &gt; \bar{d} &amp; t &gt; 0
-\end{cases}
+ca_t = 0, \quad \text{for } t &gt; 1
 \]</span></p>
-<p>The current account, being the change in the stock of debt, is negative in period 0 and 0 thereafter,</p>
-<p><span class="math display">\[
-ca_t =
-\begin{cases}
-0 &amp; t &lt; 0 \\
--(d' - \bar{d}) &lt; 0 &amp; t = 0 \\
-0 &amp; t &gt; 0
-\end{cases}
-\]</span></p>
+<div class="callout callout-style-default callout-important callout-titled" title="Final Answer Summary – Anticipated Permanent Productivity Shock">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Final Answer Summary – Anticipated Permanent Productivity Shock
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Capital: jumps at <span class="math inline">\(t = 0\)</span> from <span class="math inline">\(\bar{k}\)</span> to <span class="math inline">\(k'\)</span> where <span class="math inline">\(k' = \kappa(A'/r)\)</span></li>
+<li>Investment: <span class="math inline">\(i_0 = k' - \bar{k} &gt; 0\)</span>, <span class="math inline">\(i_t = 0\)</span> for <span class="math inline">\(t \neq 0\)</span></li>
+<li>Output: rises at <span class="math inline">\(t = 1\)</span> from <span class="math inline">\(\bar{A}F(\bar{k})\)</span> to <span class="math inline">\(A'F(k')\)</span></li>
+<li>Consumption: constant at <span class="math inline">\(c_t = c_0\)</span></li>
+<li>Trade Balance: sharp deterioration at <span class="math inline">\(t = 0\)</span></li>
+<li>Debt: jumps up at <span class="math inline">\(t = 0\)</span>, stabilizes after</li>
+<li>Current Account: <span class="math inline">\(ca_0 &lt; 0\)</span>, <span class="math inline">\(ca_1 &gt; 0\)</span>, <span class="math inline">\(ca_t = 0\)</span> for <span class="math inline">\(t &gt; 1\)</span></li>
+</ul>
+</div>
+</div>
 </section>
 <section id="section-1" class="level4">
 <h4 class="anchored" data-anchor-id="section-1">2.</h4>
-<p>The key difference is that under a permanent but anticipated increase in productivity, output does not increase in period 0. This is because at <span class="math inline">\(t = 0\)</span> <span class="math inline">\(A_t\)</span> and <span class="math inline">\(k_t\)</span> are still at their old values <span class="math inline">\(\bar{A}\)</span> and <span class="math inline">\(\bar{k}\)</span>. In the unanticipated case, by contrast, <span class="math inline">\(A_0 = A' &gt; \bar{A}\)</span> and <span class="math inline">\(k_0 = \bar{k}\)</span>, so output increases in period 0. Besides this, the two cases are similar in the sense that in period 0 consumption and investment increase, and the trade balance deteriorates.</p>
+<p>The key difference is in the trade balance and the current account. Both deteriorate when the temporary shock is <strong>anticipated</strong> but <strong>improve</strong> when it is <strong>unanticipated</strong>. This is primarily because in the former case (anticipated), in period 0 <strong>investment increases and output is unchanged</strong>, whereas in the latter case (unanticipated), <strong>investment is unchanged and output increases</strong>.</p>
+<div class="callout callout-style-default callout-important callout-titled" title="Final Answer Summary – Anticipated vs. Unanticipated Permanent Shock">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Final Answer Summary – Anticipated vs.&nbsp;Unanticipated Permanent Shock
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Anticipated: investment rises at <span class="math inline">\(t = 0\)</span> before productivity gains</li>
+<li>Unanticipated: output jumps immediately, no change in <span class="math inline">\(i_0\)</span></li>
+<li>Result: TB and CA <strong>deteriorate</strong> in anticipated case, <strong>improve</strong> in unanticipated</li>
+</ul>
+</div>
+</div>
 </section>
 <section id="section-2" class="level4">
 <h4 class="anchored" data-anchor-id="section-2">3.</h4>
@@ -409,21 +414,13 @@ tb_0 - tb_{-1} = (y_0 - y_{-1}) - (c_0 - c_{-1}) - (i_0 - i_{-1})
 \]</span></p>
 <p>and note that <span class="math inline">\(y_0 - y_{-1} = 0\)</span>, <span class="math inline">\(c_0 - c_{-1} &gt; 0\)</span>, and <span class="math inline">\(i_0 &gt; 0\)</span>. The deterioration in the trade balance is smaller than in the case in which the anticipated productivity shock is permanent, because now the increase in consumption is smaller. In period 1 the trade balance improves:</p>
 <p><span class="math display">\[
-\begin{aligned}
-tb_1 - tb_0 &amp;= (y_1 - y_0) - (c_1 - c_0) - (i_1 - i_0) \\
-&amp;= A'F(k') - \bar{A}F(\bar{k}) + 2(k' - \bar{k}) \\
-&amp;&gt; 0
-\end{aligned}
+tb_1 - tb_0 = (y_1 - y_0) - (c_1 - c_0) - (i_1 - i_0) = A'F(k') - \bar{A}F(\bar{k}) + 2(k' - \bar{k}) &gt; 0
 \]</span></p>
 <p>In period 2 the trade balance deteriorates because output falls from <span class="math inline">\(A'F(k')\)</span> to <span class="math inline">\(\bar{A}F(\bar{k})\)</span>, and investment goes from negative to zero:</p>
 <p><span class="math display">\[
-\begin{aligned}
-tb_2 - tb_1 &amp;= (y_2 - y_1) - (c_2 - c_1) - (i_2 - i_1) \\
-&amp;= \bar{A}F(\bar{k}) - A'F(k') - (k' - \bar{k}) \\
-&amp;&lt; 0
-\end{aligned}
+tb_2 - tb_1 = (y_2 - y_1) - (c_2 - c_1) - (i_2 - i_1) = \bar{A}F(\bar{k}) - A'F(k') - (k' - \bar{k}) &lt; 0
 \]</span></p>
-<p>As we will see shortly, the trade balance in period 2 is lower than in the original steady state. From period 2 on, output is constant and equal to <span class="math inline">\(\bar{A}F(\bar{k})\)</span>, consumption is constant and equal to <span class="math inline">\(c_0\)</span>, and investment is zero, so the trade balance is constant and equal to <span class="math inline">\(\bar{A}F(\bar{k}) - c_0 &lt; \bar{A}F(\bar{k}) - c_{-1} = tb_{-1} = r\bar{d}\)</span>. Summarizing,</p>
+<p>As we will see shortly, the trade balance in period 2 is lower than in the original steady state. From period 2 on, output is constant and equal to* <span class="math inline">\(\bar{A}F(\bar{k})\)</span>, <em>consumption is constant and equal to</em> <span class="math inline">\(c_0\)</span>, <em>and investment is zero, so the trade balance is constant and equal to</em> <span class="math inline">\(\bar{A}F(\bar{k}) - c_0 &lt; \bar{A}F(\bar{k}) - c_{-1} = tb_{-1} = r\bar{d}\)</span>. <em>Summarizing,</em></p>
 <p><span class="math display">\[
 tb_t =
 \begin{cases}
@@ -433,7 +430,7 @@ tb'' &gt; tb' &amp; t = 1 \\
 rd_{-1} &lt; tb'' &amp; t &gt; 1
 \end{cases}
 \]</span></p>
-<p>The stock of debt increases in period 0. To see this, write</p>
+<p>The stock of debt increases in period 0. To see this, write*</p>
 <p><span class="math display">\[
 \begin{aligned}
 d_0 &amp;= (1 + r)d_{-1} - tb_0 \\
@@ -448,9 +445,9 @@ d_t = (1 + r)d_{t-1} - tb_2, \quad t \geq 2
 \]</span></p>
 <p>which means that the only nonexplosive solution is</p>
 <p><span class="math display">\[
-d_t = d_1 = tb_2 / r = (\bar{A}F(\bar{k}) - c_0)/r &lt; (\bar{A}F(\bar{k}) - c_{-1})/r = tb_{-1}/r = d_{-1} = \bar{d},
+d_t = d_1 = tb_2 / r = (\bar{A}F(\bar{k}) - c_0)/r &lt; (\bar{A}F(\bar{k}) - c_{-1})/r = tb_{-1}/r = d_{-1} = \bar{d}, \quad \text{for } t \geq 1.
 \]</span></p>
-<p>for <span class="math inline">\(t \geq 1\)</span>. So we can write</p>
+<p>So we can write</p>
 <p><span class="math display">\[
 d_t =
 \begin{cases}
@@ -469,14 +466,67 @@ ca_t =
 0 &amp; t &gt; 1
 \end{cases}
 \]</span></p>
+<div class="callout callout-style-default callout-important callout-titled" title="Final Answer Summary – Anticipated Transitory Shock">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Final Answer Summary – Anticipated Transitory Shock
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><span class="math inline">\(k_t\)</span> rises at <span class="math inline">\(t=1\)</span> then falls back at <span class="math inline">\(t=2\)</span></li>
+<li>Investment: <span class="math inline">\(i_0 &gt; 0\)</span>, <span class="math inline">\(i_1 &lt; 0\)</span>, <span class="math inline">\(i_t = 0\)</span> otherwise</li>
+<li>Consumption: rises at <span class="math inline">\(t = 0\)</span>, constant thereafter</li>
+<li>TB: worsens at <span class="math inline">\(t=0\)</span>, improves at <span class="math inline">\(t=1\)</span>, worsens again at <span class="math inline">\(t=2\)</span>, then stabilizes</li>
+<li>Debt: <span class="math inline">\(d_0 &gt; \bar{d}\)</span>, <span class="math inline">\(d_1 &lt; \bar{d}\)</span>, <span class="math inline">\(d_t = d_1\)</span> for <span class="math inline">\(t \geq 2\)</span></li>
+<li>CA: <span class="math inline">\(ca_0 &lt; 0\)</span>, <span class="math inline">\(ca_1 &gt; 0\)</span>, <span class="math inline">\(ca_t = 0\)</span> for <span class="math inline">\(t \ne 0, 1\)</span></li>
+</ul>
+</div>
+</div>
 </section>
 <section id="b" class="level5">
 <h5 class="anchored" data-anchor-id="b">(b)</h5>
 <p>The key diﬀerence is in the trade balance and the current account. Both deteriorate when the temporary shock is anticipated but improve when it is unanticipated. This is primarily because in the former case in period 0 investment increases and output is unchanged, whereas in the latter case investment is unchanged and output increases.</p>
+<div class="callout callout-style-default callout-important callout-titled" title="Final Answer Summary – Anticipated vs. Unanticipated Temporary Shock">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Final Answer Summary – Anticipated vs.&nbsp;Unanticipated Temporary Shock
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Anticipated: <span class="math inline">\(i_0 &gt; 0\)</span>, <span class="math inline">\(y_0\)</span> unchanged → TB/CA worsen</li>
+<li>Unanticipated: <span class="math inline">\(y_0\)</span> rises, <span class="math inline">\(i_0\)</span> unchanged → TB/CA improve</li>
+</ul>
+</div>
+</div>
 </section>
 <section id="c" class="level5">
 <h5 class="anchored" data-anchor-id="c">(c)</h5>
 <p>An anticipated endowment shock would also cause a deterioration in the trade balance and the current account in period 0, because output is unchanged but consumption increases (as households feel richer). However, the deterioration in the external accounts is smaller, because in the economy with capital investment is a second source of increase in domestic absorption.</p>
+<div class="callout callout-style-default callout-important callout-titled" title="Final Answer Summary – Comparison to Endowment Economy (Exercise 2.5)">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Final Answer Summary – Comparison to Endowment Economy (Exercise 2.5)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Both: anticipation leads to higher <span class="math inline">\(c_0\)</span>, TB/CA deterioration</li>
+<li>Capital economy: absorption includes both <span class="math inline">\(c\)</span> and <span class="math inline">\(i\)</span></li>
+<li>Result: TB/CA deteriorate <strong>more</strong> than in endowment economy</li>
+</ul>
+</div>
+</div>
 
 
 <!-- -->
