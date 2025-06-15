@@ -13,8 +13,8 @@ This repository contains sketches of solutions to many (but not all) of the exer
 
 ## 📚 Chapters
 
-- [Chapter 2 – An Open Endowment Economy](chapters/ch02/index.html)
-- [Chapter 3 – An Open Economy with Capital](chapters/ch03/index.html)
+- [Chapter 2 – An Open Endowment Economy](chapters/ch02/index.qmd)
+- [Chapter 3 – An Open Economy with Capital](chapters/ch03/index.qmd)
 
 ---
 
