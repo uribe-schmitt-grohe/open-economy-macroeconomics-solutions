@@ -1,0 +1,11 @@
+---
+title: "Chapter 4 – The Open Economy Real-Business-Cycle Model"
+comments: False
+---
+
+-[Exercise 4.1 (Dynamics of a Linear Economy)](4_1.qmd)
+-[Exercise 4.2 (Variation of the PAC Model)](4_2.qmd)
+-[Exercise 4.3 (Variation of the EDF Model)](4_3.qmd)
+-[Exercise 4.4 (Complete Asset Markets and a Discrete Endowment Process)](4_4.qmd)
+-[Exercise 4.5 (Complete Asset Markets and External Shocks)](4_5.qmd)
+-[Exercise 4.6 (An AR(2) TFP Process And Excess Consumption Volatility)](4_6.qmd)

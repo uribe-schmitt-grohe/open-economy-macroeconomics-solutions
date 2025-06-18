@@ -1,0 +1,405 @@
+---
+title: "Exercise 4.3"
+subtitle: "Variation of the EDF Model"
+---
+<a class="return-button" href="index.qmd">⬅ Return</a>
+
+## Problem
+
+This exercise analyzes the local stability of the equilibrium of the EDF model when the household’s subjective discount factor is assumed to be increasing in aggregate consumption, $\theta'(c_t) > 0$, as opposed to decreasing, as is assumed in the baseline specification presented in section 4.10.3. Consider a small open economy populated by infinitely-lived agents. Let $c_t$ denote consumption in period $t$. Assume that the discount factor, denoted $\beta_t$, evolves over time according to $\beta_{t+1} = \theta(c_t)\beta_t$. Assume that the function $\theta$ is positive and bounded above by unity. Agents have access to international financial markets, where they can borrow or lend at the interest rate $r > 0$. Agents choose consumption and external debt, $d_t$, so as to maximize lifetime utility given by $\sum_{t=0}^\infty \beta_t U(c_t)$, where $U(\cdot)$ is an increasing and strictly concave function. Agents are endowed with $y > 0$ units of goods each period. Agents enter period 0 with a stock $d_{-1}$ of net foreign debt. Assume that $\beta_0 = 1$. Assume that households are subject to some borrowing constraint that prevents them from engaging in Ponzi schemes. Assume that agents fail to internalize that their consumption choices affect their discount factor.
+
+1. Characterize the competitive equilibrium of this economy.
+
+2. Characterize the steady state of this economy. Consider the following two cases:  
+
+    \(i\) $\theta$ is strictly increasing in $c$ and  
+    \(ii\) $\theta$ is strictly decreasing in $c$.  
+
+    What properties does the function $\theta(\cdot)$ need to have in each case to ensure existence of a steady state? What properties does the function $\theta(\cdot)$ need to have in each case to ensure that the steady state is unique? Provide an intuitive explanation for your results by comparing them to those you would obtain in an economy in which $\theta(\cdot)$ is independent of $c_t$. Which case, (i) or (ii) is more plausible to you and why?
+
+3. Characterize the local stability of the economy in a small neighborhood around the steady state. Specifically, suppose that $d_{-1}$ is not equal to the steady state. Under what conditions on the function $\theta(\cdot)$ does there exist a unique perfect foresight equilibrium converging back to the steady state?
+
+4. Assume now, contrary to what was assumed above, that agents internalize that their own consumption choice in period $t$ changes the discount factor, that is, they internalize that $\theta$ depends on $c_t$. Characterize the competitive equilibrium of this economy. Give an intuitive explanation for the differences in equilibrium conditions in the economy with and without internalization.
+
+5. Characterize the steady state of the economy described in question 4. Does it exist? Is it unique? Is it the same as in the economy without internalization?
+
+6. Characterize the local stability of the steady state in the economy with internalization. Specifically, suppose that $d_{-1}$ is not equal but is close to its steady state value. Under what conditions does there exist a unique perfect foresight equilibrium converging back to the steady state? Express your answer in terms of a condition involving the parameter $r$ and the following four elasticities:  
+$\epsilon_\theta \equiv \frac{\theta'(c)}{\theta(c)}$， $\epsilon_{\theta\theta} \equiv \frac{\theta''(c)}{\theta'(c)}$, $\epsilon_c \equiv \frac{U'(c)}{U(c)}$, $\epsilon_{cc} \equiv \frac{U''(c)}{U'(c)}$, evaluated at the steady state value of $c_t$. Discuss how your result differs from that obtained in question 3 above.
+
+
+## Answer
+
+#### 1.
+
+Households solve:
+
+$$
+\sum_{t=0}^\infty \beta_t U(c_t)
+$$
+
+subject to some borrowing limit and
+
+$$
+y + (1 + r)b_{t-1} = c_t + b_t
+$$
+
+taking as exogenously given $\beta_t$, $y$, $r$, and $b_{-1}$.
+
+The Lagrangian is:
+
+$$
+\mathcal{L} = \sum_{t=0}^\infty \beta_t \left\{ U(c_t) + \lambda_t \left[ y + (1 + r)b_{t-1} - c_t - b_t \right] \right\}
+$$
+
+$$
+\frac{\partial \mathcal{L}}{\partial c_t} = U'(c_t) - \lambda_t = 0
+$$
+
+$$
+\frac{\partial \mathcal{L}}{\partial b_t} = -\beta_t \lambda_t + \beta_{t+1} \lambda_{t+1}(1 + r) = 0
+$$
+
+A competitive equilibrium are sequences $\{c_t, b_t\}_{t=0}^\infty$ satisfying for all $t \geq 0$
+
+$$
+y + (1 + r)b_{t-1} = c_t + b_t \tag{1}
+$$
+
+$$
+U'(c_t) = \theta(c_t)(1 + r)U'(c_{t+1}) \tag{2}
+$$
+
+given $b_{-1}$ and some borrowing constraint.
+
+#### 2.
+
+In the steady state all endogenous and exogenous variables are constant. That is, we are asking does there exist a solution
+
+$$
+c_t = c^{ss}, \quad d_t = d^{ss}
+$$
+
+Equations (1) and (2) become
+
+$$
+y + rb^{ss} = c^{ss}
+$$
+
+$$
+\frac{1}{1 + r} = \theta(c^{ss})
+$$
+
+A sufficient condition for existence and uniqueness is that $\theta$ is strictly decreasing and that $\theta(0) > 1/(1 + r)$ and that $\lim_{c \to \infty} \theta(c) < 1/(1 + r)$. Alternatively, suppose that $\theta$ is strictly increasing, then we need that $\theta(0) < 1/(1 + r)$ and that $\lim_{c \to \infty} \theta(c) > 1/(1 + r)$.
+
+If $\theta$ was independent of $c_t$ then the second steady state restriction does not give any restriction on the endogenous variables, and hence any combination of $(c^{ss}, b^{ss})$ that satisfies the budget constraint is a steady state. Of course, it also must be the case that $1 + r = \theta$. Else no steady state exists.
+
+#### 3.
+
+We have shown that a unique steady state exists. Now we will log-linearize the economy around the steady state $(c^{ss}, b^{ss})$. Let a hat over a variable denote percent deviations from the steady state.
+
+$$
+(1 + r)\hat{b}_{t-1} = \frac{c^{ss}}{b^{ss}}\hat{c}_t + \hat{b}_t \tag{3}
+$$
+
+$$
+\epsilon_{cc} \hat{c}_t = \epsilon_\theta \hat{c}_t + \epsilon_{cc} \hat{c}_{t+1} \tag{4}
+$$
+
+where
+
+$$
+\epsilon_{cc} \equiv \frac{U''(c^{ss}) c^{ss}}{U'(c^{ss})} < 0
+$$
+
+The inequality follows from our assumptions that the utility function is increasing and strictly concave.
+
+$$
+\epsilon_\theta \equiv \frac{\theta'(c^{ss}) c^{ss}}{\theta(c^{ss})} > 0
+$$
+
+The inequality follows from our assumption that $\theta$ is positive and increasing.
+
+$$
+\begin{bmatrix}
+\hat{b}_t \\
+\hat{c}_{t+1}
+\end{bmatrix}
+=
+M
+\begin{bmatrix}
+\hat{b}_{t-1} \\
+\hat{c}_t
+\end{bmatrix}
+\quad
+\text{where }
+M \equiv
+\begin{bmatrix}
+1 + r & -c^{ss}/b^{ss} \\
+0 & 1 - \epsilon_\theta / \epsilon_{cc}
+\end{bmatrix}
+$$
+
+This is a system with one predetermined variable, $b_{t-1}$, and one non-predetermined variable. Therefore, for local uniqueness, we need one root inside the unit circle and one outside. Since the matrix is lower triangular, its roots are:
+
+$$
+\lambda_1 = 1 + r > 1
+$$
+
+$$
+\lambda_2 = 1 - \epsilon_\theta / \epsilon_{cc}
+$$
+
+It follows that no local equilibrium exists if $\epsilon_\theta > 0$, then the economy will never return to the steady state.  
+Specifically, we need:
+
+$$
+\epsilon_\theta / \epsilon_{cc} < 2
+$$
+
+#### 4.
+
+Households solve:
+
+$$
+\sum_{t=0}^\infty \beta_t U(c_t)
+$$
+
+subject to some borrowing limit and
+
+$$
+y + (1 + r)b_{t-1} = c_t + b_t
+$$
+
+$$
+\beta_{t+1} = \theta(c_t) \beta_t
+$$
+
+taking as exogenously given $y$, $r$, and the initial conditions $\beta_0 = 1$ and $b_{-1}$.
+
+The Lagrangian is:
+
+$$
+\mathcal{L} = \sum_{t=0}^\infty \beta_t \left\{ U(c_t) + \lambda_t \left[ y + (1 + r)b_{t-1} - c_t - b_t \right] + \mu_t \left[ \theta(c_t) - \frac{\beta_{t+1}}{\beta_t} \right] \right\}
+$$
+
+The household chooses: $c_t$, $b_t$, and $\beta_{t+1}$
+
+$$
+\frac{\partial \mathcal{L}}{\partial c_t} = \beta_t U'(c_t) - \beta_t \lambda_t + \beta_t \mu_t \theta'(c_t) = 0
+$$
+
+$$
+\frac{\partial \mathcal{L}}{\partial b_t} = -\beta_t \lambda_t + \beta_{t+1} \lambda_{t+1}(1 + r) = 0
+$$
+
+$$
+\frac{\partial \mathcal{L}}{\partial \beta_{t+1}} = U(c_{t+1}) - \mu_t + \beta_{t+1} \mu_{t+1} \frac{\beta_{t+2}}{\beta_{t+1}^2} = 0
+$$
+
+A competitive equilibrium are sequences $\{c_t, b_t, \mu_t, \lambda_t\}_{t=0}^\infty$ satisfying for all $t \geq 0$
+
+$$
+y + (1 + r)b_{t-1} = c_t + b_t \tag{5}
+$$
+
+$$
+\lambda_t = \theta(c_t)(1 + r)\lambda_{t+1} \tag{6}
+$$
+
+$$
+\mu_t = U(c_{t+1}) + \mu_{t+1} \theta(c_{t+1}) \tag{7}
+$$
+
+$$
+U'(c_t) + \mu_t \theta'(c_t) = \lambda_t \tag{8}
+$$
+
+given $b_{-1}$ and some borrowing constraint. End of definition of competitive equilibrium.
+
+Note: Solving forward we obtain:
+
+$$
+\mu_t = U(c_{t+1}) + \theta(c_{t+1})[U(c_{t+2}) + \mu_{t+2} \theta(c_{t+2})] = \sum_{s=1}^{\infty} \frac{\beta_{t+s}}{\beta_{t+1}} U(c_{t+s}) \tag{9}
+$$
+
+So the interpretation of $\mu_t$ is the present discounted value of lifetime utility as of date $t+1$.
+
+#### 5.
+
+A steady state is the quadruple: $c^{ss}, b^{ss}, \lambda^{ss}, \mu^{ss}$ such that
+
+$$
+y + rb^{ss} = c^{ss}
+$$
+
+$$
+\frac{1}{1 + r} = \theta(c^{ss})
+$$
+
+$$
+U'(c^{ss}) + \mu^{ss} \theta'(c^{ss}) = \lambda^{ss}
+$$
+
+$$
+\mu^{ss}(1 - \theta(c^{ss})) = U(c^{ss})
+$$
+
+From the second SS equation we get unique value for $c^{ss}$ by the same arguments as above. From the first equation we then get a unique value for $b^{ss}$. The last equation then gives a unique value of $\mu^{ss}$, and the third equation gives a unique value of $\lambda^{ss}$. Notice that the steady state value of consumption and debt is the same in the economy with internalization and without.
+
+#### 6.
+
+Use equation (8) to eliminate $\lambda_t$, so that the complete set of equilibrium conditions are given by the following three equations
+
+$$
+y + (1 + r)b_{t-1} = c_t + b_t \tag{1}
+$$
+
+$$
+U'(c_t) + \mu_t \theta'(c_t) = \theta(c_t)(1 + r) \left[ U'(c_{t+1}) + \mu_{t+1} \theta'(c_{t+1}) \right] \tag{10}
+$$
+
+$$
+\mu_t = U(c_{t+1}) + \mu_{t+1} \theta(c_{t+1}) \tag{7}
+$$
+
+Notice that the first of those three equations is just equation (1). As we have just shown the steady states are the same. Therefore the log-linearization is the same as in the external case, that is, it is given by equation (3), which after some rearranging can be written as:
+
+$$
+\hat{b}_t = (1 + r) \hat{b}_{t-1} - \frac{c^{ss}}{b^{ss}} \hat{c}_t \tag{11}
+$$
+
+Further notice that the remaining two conditions, namely, (4.10) and (4.7) do not feature $b_t$. Therefore, a log-linearization of the 3 conditions is of the form
+
+$$
+\begin{bmatrix}
+\mu_{t+1} \\
+\hat{c}_{t+1} \\
+\hat{b}_t
+\end{bmatrix}
+=
+M
+\begin{bmatrix}
+\mu_t \\
+\hat{c}_t \\
+\hat{b}_{t-1}
+\end{bmatrix}
+\quad
+\text{with }
+M =
+\begin{bmatrix}
+M_{11} & M_{12} & 0 \\
+M_{21} & M_{22} & 0 \\
+0 & -\frac{c^{ss}}{b^{ss}} & 1 + r
+\end{bmatrix}
+$$
+
+This is a system of 3 equations in three unknowns. One of the unknowns is predetermined, $b_{t-1}$, and two of the unknowns are not predetermined, $\mu_t$ and $c_t$. Thus the equilibrium is locally unique if the matrix $M$ has two roots outside of the unit circle and one root inside the unit circle. Notice that the last column of $M$ is $[0, 0; (1 + r)]$. Hence the eigenvalues of the matrix $M$ are equal to the eigenvalues of the submatrix 
+$\begin{bmatrix}
+M_{11} & M_{12} \\
+M_{21} & M_{22}
+\end{bmatrix}$  
+and $1 + r$. Because $1 + r > 1$, for local uniqueness we need that the submatrix has one root inside the unit circle and one root outside. This can only be the case if the roots are real, for if they were complex they would be of the same modulus.
+
+We next turn to finding the terms $M_{11}, M_{12}, M_{21}, M_{22}$.
+
+Log-linearize (7) first:
+
+$$
+\hat{\mu}_t = \left[ \frac{r}{1 + r} \epsilon_c + \frac{1}{1 + r} \epsilon_\theta \right] \hat{c}_{t+1} + \frac{1}{1 + r} \hat{\mu}_{t+1} \tag{12}
+$$
+
+Solve for $\hat{\mu}_{t+1}$:
+
+$$
+\hat{\mu}_{t+1} = (1 + r)\hat{\mu}_t - \left[ r \epsilon_c + \epsilon_\theta \right] \hat{c}_{t+1} \tag{13}
+$$
+
+Next log-linearize equation (10):
+
+$$
+\frac{1}{r \epsilon_c + \epsilon_\theta} \left[ r \epsilon_c \epsilon_{cc} \hat{c}_t + \epsilon_\theta \hat{\mu}_t + \epsilon_\theta \epsilon_{\theta\theta} \hat{c}_t \right] = \epsilon_\theta \hat{c}_t + \frac{1}{r \epsilon_c + \epsilon_\theta} \left[ r \epsilon_c \epsilon_{cc} \hat{c}_{t+1} + \epsilon_\theta \hat{\mu}_{t+1} + \epsilon_\theta \epsilon_{\theta\theta} \hat{c}_{t+1} \right] \tag{14}
+$$
+
+Multiply both sides by $r \epsilon_c + \epsilon_\theta$, and use (13) to eliminate $\hat{\mu}_{t+1}$:
+
+$$
+\left[ r \epsilon_c \epsilon_{cc} + \epsilon_\theta \epsilon_{\theta\theta} \right] \hat{c}_t - r \epsilon_\theta \hat{\mu}_t = \left[ r \epsilon_c \epsilon_{cc} + \epsilon_\theta \epsilon_{\theta\theta} \right] \hat{c}_{t+1} - \epsilon_\theta \left[ (1 + r)\hat{\mu}_t - \left( r \epsilon_c + \epsilon_\theta \right) \hat{c}_{t+1} \right] \tag{15}
+$$
+
+Rearrange:
+
+$$
+\boxed{
+\hat{c}_{t+1} = \hat{c}_t - \frac{r \epsilon_\theta}{r \epsilon_c \epsilon_{cc} + \epsilon_\theta \epsilon_{\theta\theta} - (r \epsilon_c + \epsilon_\theta)\epsilon_\theta} \hat{\mu}_t \tag{17}
+}
+$$
+
+Then use this expression to eliminate $\hat{c}_{t+1}$ from (13):
+
+$$
+\boxed{
+\hat{\mu}_{t+1} = -[r \epsilon_c + \epsilon_\theta] \hat{c}_t + \left(1 + r + \frac{r \epsilon_\theta (r \epsilon_c + \epsilon_\theta)}{r \epsilon_c \epsilon_{cc} + \epsilon_\theta \epsilon_{\theta\theta} - (r \epsilon_c + \epsilon_\theta)\epsilon_\theta} \right) \hat{\mu}_t
+}
+$$
+
+Let:
+
+$$
+X \equiv \frac{r \epsilon_\theta}{r \epsilon_c \epsilon_{cc} + \epsilon_\theta \epsilon_{\theta\theta} - (r \epsilon_c + \epsilon_\theta)\epsilon_\theta}
+$$
+
+Then we have:
+
+$$
+\begin{bmatrix}
+M_{11} & M_{12} \\
+M_{21} & M_{22}
+\end{bmatrix}
+=
+\begin{bmatrix}
+1 + r + X (r \epsilon_c + \epsilon_\theta) & -(r \epsilon_c + \epsilon_\theta) \\
+-X & 1
+\end{bmatrix}
+$$
+
+The determinant of this matrix is:
+
+$$
+\det = 1 + r
+$$
+
+It follows that at least one eigenvalue is greater than one in modulus. Thus we either have no local solution or a unique one. But we can rule out the case of indeterminacy. Notice that this result is independent of $\theta'(c)$. The trace of this matrix is equal to
+
+$$
+\text{trace} = 1 + 1 + r + X(r \epsilon_c + \epsilon_\theta)
+$$
+
+Now we want to know what conditions are needed for a unique equilibrium. Let the two eigenvalues of the matrix be given by $\lambda_1$ and $\lambda_2$. Then
+
+$$
+\lambda_1 + \lambda_2 = \text{trace}
+$$
+
+and
+
+$$
+\lambda_1 \lambda_2 = \text{determinant}
+$$
+
+As we discussed above a unique equilibrium only exists if the roots are real. Therefore, we can use a graph, the horizontal axis is $\lambda_2$ and the vertical axis measures $\lambda_1$. Plot $\lambda_1 = \det / \lambda_2$. If $\lambda_2 = 1 + r$, then $\lambda_1 = 1$ and if $\lambda_2 = 1$, then $\lambda_1 = 1 + r$.
+
+Notice that this graph is completely independent of the function $\theta$. Now plot the trace: $\lambda_1 = \text{trace} - \lambda_2$. This is a downward sloping line, with slope equal to minus 1 and an intercept equal to the trace.
+
+Consider first the case that $\epsilon_\theta = 0$, then we have
+
+$$
+\lambda_1 = 1, \quad \lambda_2 = 1 + r
+$$
+
+That is, the two lines intersect at $\lambda_2 = 1$ and at $\lambda_2 = 1 + r$. In this case the system has a unit root and is therefore nonstationary.
+
+Now consider the case that $\epsilon_\theta \neq 0$. In that case the intercept changes. How does the intercept have to change to get one intersection of the two lines for $\lambda_2 < 1$ and one for $\lambda_2 > 1$? If the intercept goes down, we get two intersections for $\lambda_2 > 1$ and no local equilibrium exists. Therefore a necessary and sufficient condition for a locally unique equilibrium is that the intercept increases, or that:
+
+$$
+\boxed{\frac{r \epsilon_\theta}{r \epsilon_c \epsilon_{cc} + \epsilon_\theta \epsilon_{\theta\theta} - (r \epsilon_c + \epsilon_\theta)\epsilon_\theta} (r \epsilon_c + \epsilon_\theta) > 0}
+$$

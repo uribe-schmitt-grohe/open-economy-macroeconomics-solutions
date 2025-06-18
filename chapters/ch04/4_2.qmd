@@ -1,0 +1,160 @@
+---
+title: "Exercise 4.2"
+subtitle: "Variation of the PAC Model"
+---
+<a class="return-button" href="index.qmd">⬅ Return</a>
+
+## Problem
+
+This exercise aims to establish whether formulating portfolio adjustment costs as a function of the deviation of the household’s debt position from an exogenous reference point, $d_t - \bar{d}$, or as a function of the change in its debt position, $d_t - d_{t-1}$, has consequences for the stationarity of the model.
+
+Consider a small open economy populated by a large number of infinitely-lived households with preferences described by the utility function
+
+$$
+E_0 \sum_{t=0}^\infty \beta^t \ln c_t,
+$$
+
+where $\beta \in (0,1)$ denotes the subjective discount factor, and $c_t$ denotes consumption in period $t$. Each period, households receive an exogenous and stochastic endowment, $y_t$, and can borrow from (or lend to) international financial markets at the gross interest rate $1 + r$. Let $d_t$ denote the stock of foreign debt held by households at the end of period $t$. Households are subject to a portfolio adjustment cost of the form $\frac{\phi}{2} (d_t - d_{t-1})^2$, where $\phi$ is a positive constant. Assume that $\beta(1 + r) = 1$.
+
+1. State the household’s period-by-period budget constraint.
+
+2. State the household’s utility maximization problem.
+
+3. Write the Lagrangian of the household’s problem.
+
+4. Define a competitive equilibrium of this economy.
+
+5. Suppose the endowment is nonstochastic and constant, $y_t = y$, for all $t$. Characterize the deterministic steady state. Does it exist? Is it unique? Hint: Consult appendix 4.14.2.
+
+6. Consider now a temporary endowment shock. Suppose $y_0 > y$ and $y_t = y$ for all $t > 0$ deterministically. Suppose that prior to period 0 the economy was in a deterministic steady state with $d_{-1} = d^*$. Is the economy stationary, that is, is $d_t$ expected to return to $d^*$? Provide intuition.
+
+## Answer
+
+#### 1.
+
+$$
+y_t + (1 + r) b_{t-1} = c_t + b_t + \frac{\phi}{2}(b_t - b_{t-1})^2
+$$
+
+#### 2.
+$$
+\max_{c_t, b_t} E_0 \sum_{t=0}^\infty \ln c_t
+$$
+
+subject to
+
+$$
+y_t + (1 + r)b_{t-1} = c_t + b_t + \frac{\phi}{2}(b_t - b_{t-1})^2
+$$
+
+and some no-Ponzi game constraint taking as given the initial condition $b_{-1}$, the exogenous process $\{y_t\}$, the interest rate $r$.
+
+#### 3.
+
+$$
+\mathcal{L} = E_0 \sum_{t=0}^\infty \beta^t \left\{ \ln c_t + \lambda_t \left[ y_t + (1 + r)b_{t-1} - c_t - b_t - \frac{\phi}{2}(b_t - b_{t-1})^2 \right] \right\}
+$$
+
+where $\lambda_t$ denote the Lagrange multiplier on the household’s period-by-period budget constraint.
+
+#### 4.
+
+A competitive equilibrium is a set of contingent plans $\{c_t, b_t, \lambda_t\}$ satisfying:
+
+$$
+\frac{1}{c_t} = \lambda_t
+$$
+
+$$
+\lambda_t (1 + \phi(b_t - b_{t-1})) = \beta E_t \lambda_{t+1}(1 + r + \phi(b_{t+1} - b_t))
+$$
+
+$$
+y_t + (1 + r)b_{t-1} = c_t + b_t + \frac{\phi}{2}(b_t - b_{t-1})^2
+$$
+
+and some no Ponzi game constraint, for given exogenous processes, $y_t$, and given initial conditions $b_{-1}$.
+
+#### 5.
+
+In the deterministic steady state all endogenous variables are by definition forever constant. Thus a deterministic steady state is a triple $\{c, \lambda, b\}$ that solves:
+
+$$
+\frac{1}{c} = \lambda
+$$
+
+$$
+\lambda = \lambda \beta(1 + r)
+$$
+
+$$
+y + rb = c
+$$
+
+Notice that the Euler equation does not impose a restriction, it just says $1 = 1$. Thus there exist a continuum of steady state equilibria. In fact any $b$ such that $c = y + rb > 0$ is a deterministic steady state. We do not need to check the no Ponzi restriction. It is satisfied because $b$ is constant and because $r > 0$.
+
+#### 6.
+
+Consider first the economy from period $t \geq 1$. In that case there is no uncertainty and one equilibrium is to set:
+
+$$
+b_t = b_0 \quad \forall t \geq 1
+$$
+
+$$
+c_t = y + rb_0
+$$
+
+$$
+\lambda = \frac{1}{y + rb_0}
+$$
+
+Now consider the economy in period $t = 0$:
+
+$$
+y_0 + (1 + r)b_{-1} = c_0 + b_0 + \frac{\phi}{2}(b_0 - b_{-1})^2
+$$
+
+and use the Euler equation:
+
+$$
+\frac{1}{c_0}(1 + \phi(b_0 - b_{-1})) = \frac{1}{c_1}(1 + r + \phi(b_1 - b_0))
+$$
+
+We already know that $b_1 = b_0$ so this expression becomes:
+
+$$
+\frac{1}{c_0}(1 + \phi(b_0 - b_{-1})) = \frac{1}{c_1}
+$$
+
+where we used $\beta(1 + r) = 1$ now use $c_1 = y + rb_0$ and rearrange:
+
+$$
+c_0 = (1 + \phi(b_0 - b_{-1}))(y + rb_0)
+$$
+
+Now use the sequential budget constraint for $t = 0$:
+
+$$
+c_0 + b_0 + \frac{\phi}{2}(b_0 - b_{-1})^2 = y_0 + (1 + r)b_{-1}
+$$
+
+Now for $b_t \to b_{-1}$, notice that $\lim_{t \to \infty} b_t = b_0$. Thus let’s try $b_0 = b_{-1}$. Then the above expression becomes:
+
+$$
+c_0 + b_{-1} = y_0 + (1 + r)b_{-1}
+$$
+
+and replace $c_0$ with the expression from the Euler equation
+
+$$
+c_0 = (1 + \phi(b_0 - b_{-1}))(y + rb_0) = y + rb_{-1}
+$$
+
+to get:
+
+$$
+y + rb_{-1} + b_{-1} = y_0 + (1 + r)b_{-1}
+$$
+
+This holds only if $y_0 = y$, which can never be the case. Thus the model is not stationary.

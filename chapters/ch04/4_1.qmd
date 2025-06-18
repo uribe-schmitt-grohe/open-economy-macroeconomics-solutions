@@ -1,0 +1,47 @@
+---
+title: "Exercise 4.1"
+subtitle: "Dynamics of a Linear Economy"
+---
+<a class="return-button" href="index.qmd">⬅ Return</a>
+
+## Problem
+
+Consider an economy whose equilibrium dynamics has the reduced form
+
+$$
+\hat{c}_{t+1} = \gamma_{11} \hat{c}_t
+$$
+
+and
+
+$$
+\hat{d}_t = \gamma_{21} \hat{c}_t + \gamma_{22} \hat{d}_{t-1},
+$$
+
+where $c_t$ denotes consumption, and $d_t$ denotes debt acquired in period $t$ and maturing in period $t+1$. A hat denotes deviation from steady state. The variable $d_{t-1}$ is an endogenous state and is predetermined in $t$, and the variable $c_t$ is a control variable determined in $t$. The coefficients $\gamma_{11}$, $\gamma_{21}$, and $\gamma_{22}$ are constant parameters. Suppose that $\gamma_{22} > 0$.
+
+1. Find conditions on the parameters of the model under which
+
+    \(a\) The economy has a unique equilibrium converging to the steady state,  
+    \(b\) debt converges monotonically to its steady-state value, and  
+    \(c\) consumption is strictly decreasing in debt (i.e., $c_t$ is a strictly decreasing function of $d_{t-1}$).
+
+
+
+2. Find the policy functions for debt and consumption that are consistent with the three conditions imposed in the previous item.
+
+## Answer
+
+#### 1.
+
+Hint: Consult Appendix 4.14.2.
+
+#### 2.
+
+Policy functions:  
+
+$$
+d_t = \gamma_{11} d_{t-1} \quad \text{and} \quad c_t = \frac{\gamma_{11} - \gamma_{22}}{\gamma_{21}}.
+$$
+
+Need $\gamma_{11} \in (0,1)$, $\gamma_{22} > 1$, and $\gamma_{21} > 0$.

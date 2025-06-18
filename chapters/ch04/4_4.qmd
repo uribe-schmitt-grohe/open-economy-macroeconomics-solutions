@@ -1,0 +1,64 @@
+---
+title: "Exercise 4.4"
+subtitle: "Complete Asset Markets and a Discrete Endowment Process"
+---
+<a class="return-button" href="index.qmd">⬅ Return</a>
+
+## Problem
+
+Consider an economy populated by a large number of identical consumers with preferences described by the utility function
+
+$$
+E_0 \sum_{t=0}^\infty \beta^t U(c_t),
+$$
+
+where $c_t$ denotes consumption in period $t$, $\beta \in (0, 1)$ denotes the subjective discount factor, $U(\cdot)$ is a strictly increasing and differentiable function, and $E_t$ denotes the mathematical expectations operator conditional on information available at time $t$. Suppose each consumer starts with an initial financial wealth equal to $b_0$ in period 0, measured in terms of consumption goods. Suppose that each period there are two possible states of nature, H and L, with transition probability matrix
+
+$$
+\Pi =
+\begin{bmatrix}
+\pi_{HH} & \pi_{HL} \\
+\pi_{LH} & \pi_{LL}
+\end{bmatrix},
+$$
+
+where $\pi_{ij}$, for $i, j \in \{H, L\}$, denotes the probability that the state of nature in period $t+1$ is $j$ conditional on the state of nature in period $t$ being $i$, for all $t \geq 0$. The consumer is endowed with $y_t$ units of consumption goods in period $t$, where $y_t$ is a random variable taking the values $y_H$ and $y_L$ in states H and L, respectively, with $y_H > y_L > 0$. Consumers have access to the world financial market, which offers a complete set of state-contingent claims. Let $p_{ij}$ be the price in units of consumption of period $t$ of a state-contingent claim that pays 1 unit of consumption in $t+1$ if the state of nature in period $t+1$ is $j$ conditional on the state of nature in period $t$ being $i$, for $i, j \in \{H, L\}$ and $t \geq 0$. Suppose further that $p_{ij} = \beta \pi_{ij}$. Suppose that the state of nature in period 0 is $H$.
+
+1. State the consumer’s maximization problem.
+
+2. Characterize the equilibrium process of consumption.
+
+3. Characterize the equilibrium process of the trade balance.
+
+4. Characterize the equilibrium process of the net foreign asset position (recall that in period 0 it is known and given by $b_0$).
+
+5. Characterize the equilibrium process of the current account starting in period 1.
+
+6. Compare the equilibrium processes of consumption, the trade balance, and the current account obtained above to those pertaining to another open economy that is identical to the one described above in all respects, except that its initial endowment is $y^L$.
+
+## Answer
+
+Consumption is constant and equal to
+
+$$
+c \equiv \frac{1}{1 - \beta} \left[ b_0 + y^H + \beta (I - \beta \Pi)^{-1} y \right],
+$$
+
+where $y \equiv [y_H \quad y_L]'$.  
+The trade balance in $t$ is then equal to $y_t - c$. Because this economy is stationary, it must be the case that $b_t = b_H = b_0$ if the state in period $t$ is $H$, since nothing distinguishes this economy from how it looked in the initial state.
+
+To obtain $b_L$, write the sequential budget constraint when the current state is $L$,
+
+$$
+c + p_{LH} b_H + p_{LL} b_L = b_L + y_L
+$$
+
+This is one equation in one unknown, $b_L$.
+
+Finally, let $ca_{ij}$ denote the current account if the state is $i$ in $t - 1$ and $j$ in $t$, for $i, j \in \{H, L\}$ and $t > 0$. Then,
+
+$$
+ca_{ij} = tb_j + b_j - P_i b,
+$$
+
+where $P_i \equiv [p_{iH} \quad p_{iL}]$ for $i \in \{H, L\}$ and $b \equiv [b_H \quad b_L]'$.

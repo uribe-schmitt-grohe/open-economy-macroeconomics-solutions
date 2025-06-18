@@ -4,14 +4,14 @@
     "href": "index.html",
     "title": "Open Economy Macroeconomics Solutions",
     "section": "",
-    "text": "This repository contains sketches of solutions to many (but not all) of the exercises in Open Economy Macroeconomics by Martín Uribe and Stephanie Schmitt-Grohé (Princeton University Press link). Please help us to improve the repository. If you have solutions or corrections or alternative approaches to solutions, please post them in the corresponding discussion thread in the Discussions tab.\n\n\n\nOpen Economy Macroeconomics cover\n\n\n\n\n\n\nChapter 2 – An Open Endowment Economy\nChapter 3 – An Open Economy with Capital\n\n\n\n\n\nEach solution page features an independent comment section. Feel free to share questions or feedback below each exercise, or browse [Discussions] for full threads."
+    "text": "This repository contains sketches of solutions to many (but not all) of the exercises in Open Economy Macroeconomics by Martín Uribe and Stephanie Schmitt-Grohé (Princeton University Press link). Please help us to improve the repository. If you have solutions or corrections or alternative approaches to solutions, please post them in the corresponding discussion thread in the Discussions tab.\n\n\n\nOpen Economy Macroeconomics cover\n\n\n\n\n\n\nChapter 2 – An Open Endowment Economy\nChapter 3 – An Open Economy with Capital\nChapter 4 – The Open Economy Real-Business-Cycle Model\n\n\n\n\n\nEach solution page features an independent comment section. Feel free to share questions or feedback below each exercise, or browse [Discussions] for full threads."
   },
   {
     "objectID": "index.html#chapters",
     "href": "index.html#chapters",
     "title": "Open Economy Macroeconomics Solutions",
     "section": "",
-    "text": "Chapter 2 – An Open Endowment Economy\nChapter 3 – An Open Economy with Capital"
+    "text": "Chapter 2 – An Open Endowment Economy\nChapter 3 – An Open Economy with Capital\nChapter 4 – The Open Economy Real-Business-Cycle Model"
   },
   {
     "objectID": "index.html#discussions",
@@ -586,5 +586,285 @@
     "title": "Exercise 2.18",
     "section": "Answer",
     "text": "Answer\n\n1.\n\\[\n\\begin{array}{l r}\n\\hline\n\\Delta y_1 & 0.518 \\\\\n           & (0.026) \\\\\n\\Delta y_2 & 0.169 \\\\\n           & (0.026) \\\\\n\\text{const.} & 0.000 \\\\\n              & (0.000) \\\\\n\\hline\n\\end{array}\n\\]\n\n\n2.\nThe conditions for AR(2) process stationarity are:\n\\[\\rho_2 &gt; -1\\]\n\\[\\rho_2 &lt; 1 - \\rho_1\\]\n\\[\\rho_2 &lt; 1 + \\rho_1\\]\nAll three conditions are satisfied.\n\n\n3.\nBegin Answer:\nAfter some algebra, the Beveridge–Nelson decomposition can be written as\n\\[\ny_t^c = - \\sum_{j=1}^{\\infty} E_t \\Delta y_{t+j}\n\\]\nLet \\[\nY_t = \\begin{bmatrix} \\Delta y_t \\\\ \\Delta y_{t-1} \\end{bmatrix}, \\quad\nR = \\begin{bmatrix} \\rho_1 & \\rho_2 \\\\ 1 & 0 \\end{bmatrix}\n\\]\nand rewrite the AR(2) process in a matrix form:\n\\[\nY_t = R Y_{t-1} + \\begin{bmatrix} \\varepsilon_t \\\\ 0 \\end{bmatrix}\n\\]\nThen \\[\nE_t Y_{t+j} = R^j Y_t\n\\]\nand the Beveridge–Nelson cyclical component becomes:\n\\[\ny_t^c = - \\begin{bmatrix} 1 & 0 \\end{bmatrix} \\sum_{j=1}^{\\infty} R^j Y_t\n= - \\begin{bmatrix} 1 & 0 \\end{bmatrix} R (I - R)^{-1} Y_t\n\\]\nThen we can obtain that:\n\\[\ny_t^c = - \\frac{1}{1 - \\rho_1 - \\rho_2} \\left( (\\rho_1 + \\rho_2) \\Delta y_t + \\rho_2 \\Delta y_{t-1} \\right)\n\\]\nCoefficients for \\(y_t^c\\): \\[\n\\begin{array}{l r}\n\\hline\n\\Delta y_t       & -2.194 \\\\\n\\Delta y_{t-1}   & -0.538 \\\\\n\\hline\n\\end{array}\n\\]\n\n\n4.\nRun the Stata code endowment_exercise_Beverage_nelson.do\nNote:endowment_exercise_Beverage_nelson.do is currently unavailable.\n\n\n5.\nRecall that:\n\\[\ny_t^p = \\frac{r}{1 + r} \\sum_{j=0}^{\\infty} \\frac{E_t y_{t+j}}{(1 + r)^j}\n\\]\nNote that \\(y_{t+j} = y_t + \\sum_{k=1}^j \\Delta y_{t+k}\\), so the expression above can be written as:\n\\[\n\\begin{aligned}\ny_t^p &= \\frac{r}{1 + r} \\sum_{j=0}^{\\infty} \\frac{y_t + \\sum_{k=1}^j E_t \\Delta y_{t+k}}{(1 + r)^j} \\\\\n&= y_t + \\frac{r}{1 + r} \\sum_{j=0}^{\\infty} \\frac{\\sum_{k=1}^j E_t \\Delta y_{t+k}}{(1 + r)^j}\n\\end{aligned}\n\\]\nRecall from the previous sections that \\(E_t \\Delta y_{t+k} = \\begin{bmatrix} 1 & 0 \\end{bmatrix} R^k Y_t\\).\nRemember additionally that the sum of geometric series can be expressed as:\n\\[\n\\sum_{k=1}^j E_t \\Delta y_{t+k} = \\sum_{k=1}^j \\begin{bmatrix} 1 & 0 \\end{bmatrix} R^k Y_t = \\begin{bmatrix} 1 & 0 \\end{bmatrix} R (I - R^j)(I - R)^{-1}\n\\]\nThen we can rewrite \\(y_t^p\\) as:\n\\[\ny_t^p = y_t + \\frac{r}{1 + r} \\sum_{j=0}^{\\infty} \\frac{\\sum_{k=1}^j E_t \\Delta y_{t+k}}{(1 + r)^j}\n= y_t + \\begin{bmatrix} 1 & 0 \\end{bmatrix} R(I - R)^{-1} Y_t\n+ \\begin{bmatrix} 1 & 0 \\end{bmatrix} R^2(I - R)^{-1} \\sum_{j=0}^{\\infty} \\frac{R^j}{(1 + r)^j} Y_t\n\\]\nTherefore, permanent income can be expressed as:\n\\[\ny_t^p = y_t + \\begin{bmatrix} 1 & 0 \\end{bmatrix} R(I - R)^{-1} Y_t\n+ \\begin{bmatrix} 1 & 0 \\end{bmatrix} R^2(I - R)^{-1}(I - R / (1 + r))^{-1} Y_t\n\\]\nThen we can simplify into:\n\\[\n\\begin{aligned}\ny_t^p = y_t &+ \\frac{1}{1 - \\rho_1 - \\rho_2} \\left( (\\rho_1 + \\rho_2) \\Delta y_t + \\rho_2 \\Delta y_{t-1} \\right) \\\\\n&+ \\frac{1 + r}{(1 - \\rho_1 - \\rho_2)(1 + r - \\rho_1 - \\rho_2)} \\left[\n((\\rho_1 + \\rho_2)^2 + \\rho_2) \\Delta y_t + \\left( \\rho_1 \\rho_2 + \\rho_2^2 + \\frac{\\rho_2^2}{1 + r} \\right) \\Delta y_{t-1}\n\\right]\n\\end{aligned}\n\\]\nCoefficients for \\(y_t^p\\):\n\\[\n\\begin{array}{l r}\n\\hline\n\\Delta y_t     & 8.681 \\\\\n\\Delta y_{t-1} & 1.998 \\\\\n\\hline\n\\end{array}\n\\]\n\n\n6.\nRun the Stata code endowment_exercise_Beverage_nelson.do\nNote:endowment_exercise_Beverage_nelson.do is currently unavailable.\n\n\n7.\nRecall that:\n\\[\nca_t = y_t - y^p_t\n\\]\nThe effect of \\(\\varepsilon_t\\) on the current account is equal to:\n\\[\nca_t = -\\left[\n\\frac{1}{1 - \\rho_1 - \\rho_2} (\\rho_1 + \\rho_2) +\n\\frac{1 + r}{(1 - \\rho_1 - \\rho_2)(1 + r - \\rho_1 - \\rho_2)} ((\\rho_1 + \\rho_2)^2 + \\rho_2)\n\\right] \\varepsilon_t = -\\mu \\varepsilon_t\n\\]\nSince coefficient is negative, the response of the current account is countercyclical.\n\n\n8.\nRecall that:\n\\[\n\\Delta c_t = \\Delta y_t^p\n\\]\nThen variance can be written as:\n\\[\n\\begin{aligned}\n\\text{var}(\\Delta c_t) &= \\text{var}(\\Delta y_t^p) \\\\\n&= \\text{var}(\\Delta y_t + \\mu(\\Delta y_t - \\Delta y_{t-1})) \\\\\n&= (1 + \\mu)^2 \\, \\text{var}(\\Delta y_t)\n\\end{aligned}\n\\]\n\\(\\mu &gt; 0\\), therefore, this process generates excess consumption volatility."
+  },
+  {
+    "objectID": "chapters/ch04/4_1.html",
+    "href": "chapters/ch04/4_1.html",
+    "title": "Exercise 4.1",
+    "section": "",
+    "text": "⬅ Return"
+  },
+  {
+    "objectID": "chapters/ch04/4_1.html#problem",
+    "href": "chapters/ch04/4_1.html#problem",
+    "title": "Exercise 4.1",
+    "section": "Problem",
+    "text": "Problem\nConsider an economy whose equilibrium dynamics has the reduced form\n\\[\n\\hat{c}_{t+1} = \\gamma_{11} \\hat{c}_t\n\\]\nand\n\\[\n\\hat{d}_t = \\gamma_{21} \\hat{c}_t + \\gamma_{22} \\hat{d}_{t-1},\n\\]\nwhere \\(c_t\\) denotes consumption, and \\(d_t\\) denotes debt acquired in period \\(t\\) and maturing in period \\(t+1\\). A hat denotes deviation from steady state. The variable \\(d_{t-1}\\) is an endogenous state and is predetermined in \\(t\\), and the variable \\(c_t\\) is a control variable determined in \\(t\\). The coefficients \\(\\gamma_{11}\\), \\(\\gamma_{21}\\), and \\(\\gamma_{22}\\) are constant parameters. Suppose that \\(\\gamma_{22} &gt; 0\\).\n\nFind conditions on the parameters of the model under which\n(a) The economy has a unique equilibrium converging to the steady state,\n(b) debt converges monotonically to its steady-state value, and\n(c) consumption is strictly decreasing in debt (i.e., \\(c_t\\) is a strictly decreasing function of \\(d_{t-1}\\)).\nFind the policy functions for debt and consumption that are consistent with the three conditions imposed in the previous item."
+  },
+  {
+    "objectID": "chapters/ch04/4_1.html#answer",
+    "href": "chapters/ch04/4_1.html#answer",
+    "title": "Exercise 4.1",
+    "section": "Answer",
+    "text": "Answer\n\n1.\nHint: Consult Appendix 4.14.2.\n\n\n2.\nPolicy functions:\n\\[\nd_t = \\gamma_{11} d_{t-1} \\quad \\text{and} \\quad c_t = \\frac{\\gamma_{11} - \\gamma_{22}}{\\gamma_{21}}.\n\\]\nNeed \\(\\gamma_{11} \\in (0,1)\\), \\(\\gamma_{22} &gt; 1\\), and \\(\\gamma_{21} &gt; 0\\)."
+  },
+  {
+    "objectID": "chapters/ch04/4_11.html",
+    "href": "chapters/ch04/4_11.html",
+    "title": "Exercise 4.",
+    "section": "",
+    "text": "⬅ Return"
+  },
+  {
+    "objectID": "chapters/ch04/4_11.html#problem",
+    "href": "chapters/ch04/4_11.html#problem",
+    "title": "Exercise 4.",
+    "section": "Problem",
+    "text": "Problem"
+  },
+  {
+    "objectID": "chapters/ch04/4_11.html#answer",
+    "href": "chapters/ch04/4_11.html#answer",
+    "title": "Exercise 4.",
+    "section": "Answer",
+    "text": "Answer"
+  },
+  {
+    "objectID": "chapters/ch04/4_12.html",
+    "href": "chapters/ch04/4_12.html",
+    "title": "Exercise 4.",
+    "section": "",
+    "text": "⬅ Return"
+  },
+  {
+    "objectID": "chapters/ch04/4_12.html#problem",
+    "href": "chapters/ch04/4_12.html#problem",
+    "title": "Exercise 4.",
+    "section": "Problem",
+    "text": "Problem"
+  },
+  {
+    "objectID": "chapters/ch04/4_12.html#answer",
+    "href": "chapters/ch04/4_12.html#answer",
+    "title": "Exercise 4.",
+    "section": "Answer",
+    "text": "Answer"
+  },
+  {
+    "objectID": "chapters/ch04/4_3.html",
+    "href": "chapters/ch04/4_3.html",
+    "title": "Exercise 4.3",
+    "section": "",
+    "text": "⬅ Return"
+  },
+  {
+    "objectID": "chapters/ch04/4_3.html#problem",
+    "href": "chapters/ch04/4_3.html#problem",
+    "title": "Exercise 4.3",
+    "section": "Problem",
+    "text": "Problem\nThis exercise analyzes the local stability of the equilibrium of the EDF model when the household’s subjective discount factor is assumed to be increasing in aggregate consumption, \\(\\theta'(c_t) &gt; 0\\), as opposed to decreasing, as is assumed in the baseline specification presented in section 4.10.3. Consider a small open economy populated by infinitely-lived agents. Let \\(c_t\\) denote consumption in period \\(t\\). Assume that the discount factor, denoted \\(\\beta_t\\), evolves over time according to \\(\\beta_{t+1} = \\theta(c_t)\\beta_t\\). Assume that the function \\(\\theta\\) is positive and bounded above by unity. Agents have access to international financial markets, where they can borrow or lend at the interest rate \\(r &gt; 0\\). Agents choose consumption and external debt, \\(d_t\\), so as to maximize lifetime utility given by \\(\\sum_{t=0}^\\infty \\beta_t U(c_t)\\), where \\(U(\\cdot)\\) is an increasing and strictly concave function. Agents are endowed with \\(y &gt; 0\\) units of goods each period. Agents enter period 0 with a stock \\(d_{-1}\\) of net foreign debt. Assume that \\(\\beta_0 = 1\\). Assume that households are subject to some borrowing constraint that prevents them from engaging in Ponzi schemes. Assume that agents fail to internalize that their consumption choices affect their discount factor.\n\nCharacterize the competitive equilibrium of this economy.\nCharacterize the steady state of this economy. Consider the following two cases:\n(i) \\(\\theta\\) is strictly increasing in \\(c\\) and\n(ii) \\(\\theta\\) is strictly decreasing in \\(c\\).\nWhat properties does the function \\(\\theta(\\cdot)\\) need to have in each case to ensure existence of a steady state? What properties does the function \\(\\theta(\\cdot)\\) need to have in each case to ensure that the steady state is unique? Provide an intuitive explanation for your results by comparing them to those you would obtain in an economy in which \\(\\theta(\\cdot)\\) is independent of \\(c_t\\). Which case, (i) or (ii) is more plausible to you and why?\nCharacterize the local stability of the economy in a small neighborhood around the steady state. Specifically, suppose that \\(d_{-1}\\) is not equal to the steady state. Under what conditions on the function \\(\\theta(\\cdot)\\) does there exist a unique perfect foresight equilibrium converging back to the steady state?\nAssume now, contrary to what was assumed above, that agents internalize that their own consumption choice in period \\(t\\) changes the discount factor, that is, they internalize that \\(\\theta\\) depends on \\(c_t\\). Characterize the competitive equilibrium of this economy. Give an intuitive explanation for the differences in equilibrium conditions in the economy with and without internalization.\nCharacterize the steady state of the economy described in question 4. Does it exist? Is it unique? Is it the same as in the economy without internalization?\nCharacterize the local stability of the steady state in the economy with internalization. Specifically, suppose that \\(d_{-1}\\) is not equal but is close to its steady state value. Under what conditions does there exist a unique perfect foresight equilibrium converging back to the steady state? Express your answer in terms of a condition involving the parameter \\(r\\) and the following four elasticities:\n\\(\\epsilon_\\theta \\equiv \\frac{\\theta'(c)}{\\theta(c)}\\)， \\(\\epsilon_{\\theta\\theta} \\equiv \\frac{\\theta''(c)}{\\theta'(c)}\\), \\(\\epsilon_c \\equiv \\frac{U'(c)}{U(c)}\\), \\(\\epsilon_{cc} \\equiv \\frac{U''(c)}{U'(c)}\\), evaluated at the steady state value of \\(c_t\\). Discuss how your result differs from that obtained in question 3 above."
+  },
+  {
+    "objectID": "chapters/ch04/4_3.html#answer",
+    "href": "chapters/ch04/4_3.html#answer",
+    "title": "Exercise 4.3",
+    "section": "Answer",
+    "text": "Answer\n\n1.\nHouseholds solve:\n\\[\n\\sum_{t=0}^\\infty \\beta_t U(c_t)\n\\]\nsubject to some borrowing limit and\n\\[\ny + (1 + r)b_{t-1} = c_t + b_t\n\\]\ntaking as exogenously given \\(\\beta_t\\), \\(y\\), \\(r\\), and \\(b_{-1}\\).\nThe Lagrangian is:\n\\[\n\\mathcal{L} = \\sum_{t=0}^\\infty \\beta_t \\left\\{ U(c_t) + \\lambda_t \\left[ y + (1 + r)b_{t-1} - c_t - b_t \\right] \\right\\}\n\\]\n\\[\n\\frac{\\partial \\mathcal{L}}{\\partial c_t} = U'(c_t) - \\lambda_t = 0\n\\]\n\\[\n\\frac{\\partial \\mathcal{L}}{\\partial b_t} = -\\beta_t \\lambda_t + \\beta_{t+1} \\lambda_{t+1}(1 + r) = 0\n\\]\nA competitive equilibrium are sequences \\(\\{c_t, b_t\\}_{t=0}^\\infty\\) satisfying for all \\(t \\geq 0\\)\n\\[\ny + (1 + r)b_{t-1} = c_t + b_t \\tag{1}\n\\]\n\\[\nU'(c_t) = \\theta(c_t)(1 + r)U'(c_{t+1}) \\tag{2}\n\\]\ngiven \\(b_{-1}\\) and some borrowing constraint.\n\n\n2.\nIn the steady state all endogenous and exogenous variables are constant. That is, we are asking does there exist a solution\n\\[\nc_t = c^{ss}, \\quad d_t = d^{ss}\n\\]\nEquations (1) and (2) become\n\\[\ny + rb^{ss} = c^{ss}\n\\]\n\\[\n\\frac{1}{1 + r} = \\theta(c^{ss})\n\\]\nA sufficient condition for existence and uniqueness is that \\(\\theta\\) is strictly decreasing and that \\(\\theta(0) &gt; 1/(1 + r)\\) and that \\(\\lim_{c \\to \\infty} \\theta(c) &lt; 1/(1 + r)\\). Alternatively, suppose that \\(\\theta\\) is strictly increasing, then we need that \\(\\theta(0) &lt; 1/(1 + r)\\) and that \\(\\lim_{c \\to \\infty} \\theta(c) &gt; 1/(1 + r)\\).\nIf \\(\\theta\\) was independent of \\(c_t\\) then the second steady state restriction does not give any restriction on the endogenous variables, and hence any combination of \\((c^{ss}, b^{ss})\\) that satisfies the budget constraint is a steady state. Of course, it also must be the case that \\(1 + r = \\theta\\). Else no steady state exists.\n\n\n3.\nWe have shown that a unique steady state exists. Now we will log-linearize the economy around the steady state \\((c^{ss}, b^{ss})\\). Let a hat over a variable denote percent deviations from the steady state.\n\\[\n(1 + r)\\hat{b}_{t-1} = \\frac{c^{ss}}{b^{ss}}\\hat{c}_t + \\hat{b}_t \\tag{3}\n\\]\n\\[\n\\epsilon_{cc} \\hat{c}_t = \\epsilon_\\theta \\hat{c}_t + \\epsilon_{cc} \\hat{c}_{t+1} \\tag{4}\n\\]\nwhere\n\\[\n\\epsilon_{cc} \\equiv \\frac{U''(c^{ss}) c^{ss}}{U'(c^{ss})} &lt; 0\n\\]\nThe inequality follows from our assumptions that the utility function is increasing and strictly concave.\n\\[\n\\epsilon_\\theta \\equiv \\frac{\\theta'(c^{ss}) c^{ss}}{\\theta(c^{ss})} &gt; 0\n\\]\nThe inequality follows from our assumption that \\(\\theta\\) is positive and increasing.\n\\[\n\\begin{bmatrix}\n\\hat{b}_t \\\\\n\\hat{c}_{t+1}\n\\end{bmatrix}\n=\nM\n\\begin{bmatrix}\n\\hat{b}_{t-1} \\\\\n\\hat{c}_t\n\\end{bmatrix}\n\\quad\n\\text{where }\nM \\equiv\n\\begin{bmatrix}\n1 + r & -c^{ss}/b^{ss} \\\\\n0 & 1 - \\epsilon_\\theta / \\epsilon_{cc}\n\\end{bmatrix}\n\\]\nThis is a system with one predetermined variable, \\(b_{t-1}\\), and one non-predetermined variable. Therefore, for local uniqueness, we need one root inside the unit circle and one outside. Since the matrix is lower triangular, its roots are:\n\\[\n\\lambda_1 = 1 + r &gt; 1\n\\]\n\\[\n\\lambda_2 = 1 - \\epsilon_\\theta / \\epsilon_{cc}\n\\]\nIt follows that no local equilibrium exists if \\(\\epsilon_\\theta &gt; 0\\), then the economy will never return to the steady state.\nSpecifically, we need:\n\\[\n\\epsilon_\\theta / \\epsilon_{cc} &lt; 2\n\\]\n\n\n4.\nHouseholds solve:\n\\[\n\\sum_{t=0}^\\infty \\beta_t U(c_t)\n\\]\nsubject to some borrowing limit and\n\\[\ny + (1 + r)b_{t-1} = c_t + b_t\n\\]\n\\[\n\\beta_{t+1} = \\theta(c_t) \\beta_t\n\\]\ntaking as exogenously given \\(y\\), \\(r\\), and the initial conditions \\(\\beta_0 = 1\\) and \\(b_{-1}\\).\nThe Lagrangian is:\n\\[\n\\mathcal{L} = \\sum_{t=0}^\\infty \\beta_t \\left\\{ U(c_t) + \\lambda_t \\left[ y + (1 + r)b_{t-1} - c_t - b_t \\right] + \\mu_t \\left[ \\theta(c_t) - \\frac{\\beta_{t+1}}{\\beta_t} \\right] \\right\\}\n\\]\nThe household chooses: \\(c_t\\), \\(b_t\\), and \\(\\beta_{t+1}\\)\n\\[\n\\frac{\\partial \\mathcal{L}}{\\partial c_t} = \\beta_t U'(c_t) - \\beta_t \\lambda_t + \\beta_t \\mu_t \\theta'(c_t) = 0\n\\]\n\\[\n\\frac{\\partial \\mathcal{L}}{\\partial b_t} = -\\beta_t \\lambda_t + \\beta_{t+1} \\lambda_{t+1}(1 + r) = 0\n\\]\n\\[\n\\frac{\\partial \\mathcal{L}}{\\partial \\beta_{t+1}} = U(c_{t+1}) - \\mu_t + \\beta_{t+1} \\mu_{t+1} \\frac{\\beta_{t+2}}{\\beta_{t+1}^2} = 0\n\\]\nA competitive equilibrium are sequences \\(\\{c_t, b_t, \\mu_t, \\lambda_t\\}_{t=0}^\\infty\\) satisfying for all \\(t \\geq 0\\)\n\\[\ny + (1 + r)b_{t-1} = c_t + b_t \\tag{5}\n\\]\n\\[\n\\lambda_t = \\theta(c_t)(1 + r)\\lambda_{t+1} \\tag{6}\n\\]\n\\[\n\\mu_t = U(c_{t+1}) + \\mu_{t+1} \\theta(c_{t+1}) \\tag{7}\n\\]\n\\[\nU'(c_t) + \\mu_t \\theta'(c_t) = \\lambda_t \\tag{8}\n\\]\ngiven \\(b_{-1}\\) and some borrowing constraint. End of definition of competitive equilibrium.\nNote: Solving forward we obtain:\n\\[\n\\mu_t = U(c_{t+1}) + \\theta(c_{t+1})[U(c_{t+2}) + \\mu_{t+2} \\theta(c_{t+2})] = \\sum_{s=1}^{\\infty} \\frac{\\beta_{t+s}}{\\beta_{t+1}} U(c_{t+s}) \\tag{9}\n\\]\nSo the interpretation of \\(\\mu_t\\) is the present discounted value of lifetime utility as of date \\(t+1\\).\n\n\n5.\nA steady state is the quadruple: \\(c^{ss}, b^{ss}, \\lambda^{ss}, \\mu^{ss}\\) such that\n\\[\ny + rb^{ss} = c^{ss}\n\\]\n\\[\n\\frac{1}{1 + r} = \\theta(c^{ss})\n\\]\n\\[\nU'(c^{ss}) + \\mu^{ss} \\theta'(c^{ss}) = \\lambda^{ss}\n\\]\n\\[\n\\mu^{ss}(1 - \\theta(c^{ss})) = U(c^{ss})\n\\]\nFrom the second SS equation we get unique value for \\(c^{ss}\\) by the same arguments as above. From the first equation we then get a unique value for \\(b^{ss}\\). The last equation then gives a unique value of \\(\\mu^{ss}\\), and the third equation gives a unique value of \\(\\lambda^{ss}\\). Notice that the steady state value of consumption and debt is the same in the economy with internalization and without.\n\n\n6.\nUse equation (8) to eliminate \\(\\lambda_t\\), so that the complete set of equilibrium conditions are given by the following three equations\n\\[\ny + (1 + r)b_{t-1} = c_t + b_t \\tag{1}\n\\]\n\\[\nU'(c_t) + \\mu_t \\theta'(c_t) = \\theta(c_t)(1 + r) \\left[ U'(c_{t+1}) + \\mu_{t+1} \\theta'(c_{t+1}) \\right] \\tag{10}\n\\]\n\\[\n\\mu_t = U(c_{t+1}) + \\mu_{t+1} \\theta(c_{t+1}) \\tag{7}\n\\]\nNotice that the first of those three equations is just equation (1). As we have just shown the steady states are the same. Therefore the log-linearization is the same as in the external case, that is, it is given by equation (3), which after some rearranging can be written as:\n\\[\n\\hat{b}_t = (1 + r) \\hat{b}_{t-1} - \\frac{c^{ss}}{b^{ss}} \\hat{c}_t \\tag{11}\n\\]\nFurther notice that the remaining two conditions, namely, (4.10) and (4.7) do not feature \\(b_t\\). Therefore, a log-linearization of the 3 conditions is of the form\n\\[\n\\begin{bmatrix}\n\\mu_{t+1} \\\\\n\\hat{c}_{t+1} \\\\\n\\hat{b}_t\n\\end{bmatrix}\n=\nM\n\\begin{bmatrix}\n\\mu_t \\\\\n\\hat{c}_t \\\\\n\\hat{b}_{t-1}\n\\end{bmatrix}\n\\quad\n\\text{with }\nM =\n\\begin{bmatrix}\nM_{11} & M_{12} & 0 \\\\\nM_{21} & M_{22} & 0 \\\\\n0 & -\\frac{c^{ss}}{b^{ss}} & 1 + r\n\\end{bmatrix}\n\\]\nThis is a system of 3 equations in three unknowns. One of the unknowns is predetermined, \\(b_{t-1}\\), and two of the unknowns are not predetermined, \\(\\mu_t\\) and \\(c_t\\). Thus the equilibrium is locally unique if the matrix \\(M\\) has two roots outside of the unit circle and one root inside the unit circle. Notice that the last column of \\(M\\) is \\([0, 0; (1 + r)]\\). Hence the eigenvalues of the matrix \\(M\\) are equal to the eigenvalues of the submatrix \\(\\begin{bmatrix}\nM_{11} & M_{12} \\\\\nM_{21} & M_{22}\n\\end{bmatrix}\\)\nand \\(1 + r\\). Because \\(1 + r &gt; 1\\), for local uniqueness we need that the submatrix has one root inside the unit circle and one root outside. This can only be the case if the roots are real, for if they were complex they would be of the same modulus.\nWe next turn to finding the terms \\(M_{11}, M_{12}, M_{21}, M_{22}\\).\nLog-linearize (7) first:\n\\[\n\\hat{\\mu}_t = \\left[ \\frac{r}{1 + r} \\epsilon_c + \\frac{1}{1 + r} \\epsilon_\\theta \\right] \\hat{c}_{t+1} + \\frac{1}{1 + r} \\hat{\\mu}_{t+1} \\tag{12}\n\\]\nSolve for \\(\\hat{\\mu}_{t+1}\\):\n\\[\n\\hat{\\mu}_{t+1} = (1 + r)\\hat{\\mu}_t - \\left[ r \\epsilon_c + \\epsilon_\\theta \\right] \\hat{c}_{t+1} \\tag{13}\n\\]\nNext log-linearize equation (10):\n\\[\n\\frac{1}{r \\epsilon_c + \\epsilon_\\theta} \\left[ r \\epsilon_c \\epsilon_{cc} \\hat{c}_t + \\epsilon_\\theta \\hat{\\mu}_t + \\epsilon_\\theta \\epsilon_{\\theta\\theta} \\hat{c}_t \\right] = \\epsilon_\\theta \\hat{c}_t + \\frac{1}{r \\epsilon_c + \\epsilon_\\theta} \\left[ r \\epsilon_c \\epsilon_{cc} \\hat{c}_{t+1} + \\epsilon_\\theta \\hat{\\mu}_{t+1} + \\epsilon_\\theta \\epsilon_{\\theta\\theta} \\hat{c}_{t+1} \\right] \\tag{14}\n\\]\nMultiply both sides by \\(r \\epsilon_c + \\epsilon_\\theta\\), and use (13) to eliminate \\(\\hat{\\mu}_{t+1}\\):\n\\[\n\\left[ r \\epsilon_c \\epsilon_{cc} + \\epsilon_\\theta \\epsilon_{\\theta\\theta} \\right] \\hat{c}_t - r \\epsilon_\\theta \\hat{\\mu}_t = \\left[ r \\epsilon_c \\epsilon_{cc} + \\epsilon_\\theta \\epsilon_{\\theta\\theta} \\right] \\hat{c}_{t+1} - \\epsilon_\\theta \\left[ (1 + r)\\hat{\\mu}_t - \\left( r \\epsilon_c + \\epsilon_\\theta \\right) \\hat{c}_{t+1} \\right] \\tag{15}\n\\]\nRearrange:\n\\[\n\\boxed{\n\\hat{c}_{t+1} = \\hat{c}_t - \\frac{r \\epsilon_\\theta}{r \\epsilon_c \\epsilon_{cc} + \\epsilon_\\theta \\epsilon_{\\theta\\theta} - (r \\epsilon_c + \\epsilon_\\theta)\\epsilon_\\theta} \\hat{\\mu}_t \\tag{17}\n}\n\\]\nThen use this expression to eliminate \\(\\hat{c}_{t+1}\\) from (13):\n\\[\n\\boxed{\n\\hat{\\mu}_{t+1} = -[r \\epsilon_c + \\epsilon_\\theta] \\hat{c}_t + \\left(1 + r + \\frac{r \\epsilon_\\theta (r \\epsilon_c + \\epsilon_\\theta)}{r \\epsilon_c \\epsilon_{cc} + \\epsilon_\\theta \\epsilon_{\\theta\\theta} - (r \\epsilon_c + \\epsilon_\\theta)\\epsilon_\\theta} \\right) \\hat{\\mu}_t\n}\n\\]\nLet:\n\\[\nX \\equiv \\frac{r \\epsilon_\\theta}{r \\epsilon_c \\epsilon_{cc} + \\epsilon_\\theta \\epsilon_{\\theta\\theta} - (r \\epsilon_c + \\epsilon_\\theta)\\epsilon_\\theta}\n\\]\nThen we have:\n\\[\n\\begin{bmatrix}\nM_{11} & M_{12} \\\\\nM_{21} & M_{22}\n\\end{bmatrix}\n=\n\\begin{bmatrix}\n1 + r + X (r \\epsilon_c + \\epsilon_\\theta) & -(r \\epsilon_c + \\epsilon_\\theta) \\\\\n-X & 1\n\\end{bmatrix}\n\\]\nThe determinant of this matrix is:\n\\[\n\\det = 1 + r\n\\]\nIt follows that at least one eigenvalue is greater than one in modulus. Thus we either have no local solution or a unique one. But we can rule out the case of indeterminacy. Notice that this result is independent of \\(\\theta'(c)\\). The trace of this matrix is equal to\n\\[\n\\text{trace} = 1 + 1 + r + X(r \\epsilon_c + \\epsilon_\\theta)\n\\]\nNow we want to know what conditions are needed for a unique equilibrium. Let the two eigenvalues of the matrix be given by \\(\\lambda_1\\) and \\(\\lambda_2\\). Then\n\\[\n\\lambda_1 + \\lambda_2 = \\text{trace}\n\\]\nand\n\\[\n\\lambda_1 \\lambda_2 = \\text{determinant}\n\\]\nAs we discussed above a unique equilibrium only exists if the roots are real. Therefore, we can use a graph, the horizontal axis is \\(\\lambda_2\\) and the vertical axis measures \\(\\lambda_1\\). Plot \\(\\lambda_1 = \\det / \\lambda_2\\). If \\(\\lambda_2 = 1 + r\\), then \\(\\lambda_1 = 1\\) and if \\(\\lambda_2 = 1\\), then \\(\\lambda_1 = 1 + r\\).\nNotice that this graph is completely independent of the function \\(\\theta\\). Now plot the trace: \\(\\lambda_1 = \\text{trace} - \\lambda_2\\). This is a downward sloping line, with slope equal to minus 1 and an intercept equal to the trace.\nConsider first the case that \\(\\epsilon_\\theta = 0\\), then we have\n\\[\n\\lambda_1 = 1, \\quad \\lambda_2 = 1 + r\n\\]\nThat is, the two lines intersect at \\(\\lambda_2 = 1\\) and at \\(\\lambda_2 = 1 + r\\). In this case the system has a unit root and is therefore nonstationary.\nNow consider the case that \\(\\epsilon_\\theta \\neq 0\\). In that case the intercept changes. How does the intercept have to change to get one intersection of the two lines for \\(\\lambda_2 &lt; 1\\) and one for \\(\\lambda_2 &gt; 1\\)? If the intercept goes down, we get two intersections for \\(\\lambda_2 &gt; 1\\) and no local equilibrium exists. Therefore a necessary and sufficient condition for a locally unique equilibrium is that the intercept increases, or that:\n\\[\n\\boxed{\\frac{r \\epsilon_\\theta}{r \\epsilon_c \\epsilon_{cc} + \\epsilon_\\theta \\epsilon_{\\theta\\theta} - (r \\epsilon_c + \\epsilon_\\theta)\\epsilon_\\theta} (r \\epsilon_c + \\epsilon_\\theta) &gt; 0}\n\\]"
+  },
+  {
+    "objectID": "chapters/ch04/4_5.html",
+    "href": "chapters/ch04/4_5.html",
+    "title": "Exercise 4.",
+    "section": "",
+    "text": "⬅ Return"
+  },
+  {
+    "objectID": "chapters/ch04/4_5.html#problem",
+    "href": "chapters/ch04/4_5.html#problem",
+    "title": "Exercise 4.",
+    "section": "Problem",
+    "text": "Problem"
+  },
+  {
+    "objectID": "chapters/ch04/4_5.html#answer",
+    "href": "chapters/ch04/4_5.html#answer",
+    "title": "Exercise 4.",
+    "section": "Answer",
+    "text": "Answer"
+  },
+  {
+    "objectID": "chapters/ch04/4_6.html",
+    "href": "chapters/ch04/4_6.html",
+    "title": "Exercise 4.6",
+    "section": "",
+    "text": "⬅ Return"
+  },
+  {
+    "objectID": "chapters/ch04/4_6.html#problem",
+    "href": "chapters/ch04/4_6.html#problem",
+    "title": "Exercise 4.6",
+    "section": "Problem",
+    "text": "Problem\nIn this exercise you are asked to show that the SOE-RBC model can predict consumption to be more volatile than output when the productivity shock follows an AR(2) process displaying a hump-shaped impulse response. The theoretical model to be used is the EDEIR model presented in section 4.1.1. Replace the AR(1) process with the following AR(2) specification:\n\\[\n\\ln A_{t+1} = 1.42 \\ln A_t - 0.43 \\ln A_{t-1} + \\epsilon_{t+1},\n\\]\nwhere \\(\\epsilon_t\\) is an i.i.d. random variable with mean zero and standard deviation \\(\\sigma_\\epsilon &gt; 0\\). Scale \\(\\sigma_\\epsilon\\) to ensure that the predicted standard deviation of output is 3.08, the value predicted by the AR(1) version of this model. Otherwise use the same calibration and functional forms as presented in the chapter.\nDownload the Matlab files for the EDEIR model from http://www.columbia.edu/~mu2166/closing.htm. Then modify them to accommodate the present specification.\n\nProduce a table displaying the unconditional standard deviation, serial correlation, and correlation with output of output, consumption, investment, hours, the trade-balance-to-output ratio, and the current-account-to-output ratio.\nProduce a 3 × 2 figure displaying the impulse responses of output, consumption, investment, hours, the trade-balance-to-output ratio, and TFP to a unit innovation in TFP.\nCompare and contrast the predictions of the model under the AR(1) and the AR(2) TFP processes. Provide intuition."
+  },
+  {
+    "objectID": "chapters/ch04/4_6.html#answer",
+    "href": "chapters/ch04/4_6.html#answer",
+    "title": "Exercise 4.6",
+    "section": "Answer",
+    "text": "Answer\n\n1.\n\n\n\n2."
+  },
+  {
+    "objectID": "chapters/ch04/4_8.html",
+    "href": "chapters/ch04/4_8.html",
+    "title": "Exercise 4.",
+    "section": "",
+    "text": "⬅ Return"
+  },
+  {
+    "objectID": "chapters/ch04/4_8.html#problem",
+    "href": "chapters/ch04/4_8.html#problem",
+    "title": "Exercise 4.",
+    "section": "Problem",
+    "text": "Problem"
+  },
+  {
+    "objectID": "chapters/ch04/4_8.html#answer",
+    "href": "chapters/ch04/4_8.html#answer",
+    "title": "Exercise 4.",
+    "section": "Answer",
+    "text": "Answer"
+  },
+  {
+    "objectID": "chapters/ch04/4_9.html",
+    "href": "chapters/ch04/4_9.html",
+    "title": "Exercise 4.",
+    "section": "",
+    "text": "⬅ Return"
+  },
+  {
+    "objectID": "chapters/ch04/4_9.html#problem",
+    "href": "chapters/ch04/4_9.html#problem",
+    "title": "Exercise 4.",
+    "section": "Problem",
+    "text": "Problem"
+  },
+  {
+    "objectID": "chapters/ch04/4_9.html#answer",
+    "href": "chapters/ch04/4_9.html#answer",
+    "title": "Exercise 4.",
+    "section": "Answer",
+    "text": "Answer"
+  },
+  {
+    "objectID": "chapters/ch04/4_7.html",
+    "href": "chapters/ch04/4_7.html",
+    "title": "Exercise 4.",
+    "section": "",
+    "text": "⬅ Return"
+  },
+  {
+    "objectID": "chapters/ch04/4_7.html#problem",
+    "href": "chapters/ch04/4_7.html#problem",
+    "title": "Exercise 4.",
+    "section": "Problem",
+    "text": "Problem"
+  },
+  {
+    "objectID": "chapters/ch04/4_7.html#answer",
+    "href": "chapters/ch04/4_7.html#answer",
+    "title": "Exercise 4.",
+    "section": "Answer",
+    "text": "Answer"
+  },
+  {
+    "objectID": "chapters/ch04/4_4.html",
+    "href": "chapters/ch04/4_4.html",
+    "title": "Exercise 4.4",
+    "section": "",
+    "text": "⬅ Return"
+  },
+  {
+    "objectID": "chapters/ch04/4_4.html#problem",
+    "href": "chapters/ch04/4_4.html#problem",
+    "title": "Exercise 4.4",
+    "section": "Problem",
+    "text": "Problem\nConsider an economy populated by a large number of identical consumers with preferences described by the utility function\n\\[\nE_0 \\sum_{t=0}^\\infty \\beta^t U(c_t),\n\\]\nwhere \\(c_t\\) denotes consumption in period \\(t\\), \\(\\beta \\in (0, 1)\\) denotes the subjective discount factor, \\(U(\\cdot)\\) is a strictly increasing and differentiable function, and \\(E_t\\) denotes the mathematical expectations operator conditional on information available at time \\(t\\). Suppose each consumer starts with an initial financial wealth equal to \\(b_0\\) in period 0, measured in terms of consumption goods. Suppose that each period there are two possible states of nature, H and L, with transition probability matrix\n\\[\n\\Pi =\n\\begin{bmatrix}\n\\pi_{HH} & \\pi_{HL} \\\\\n\\pi_{LH} & \\pi_{LL}\n\\end{bmatrix},\n\\]\nwhere \\(\\pi_{ij}\\), for \\(i, j \\in \\{H, L\\}\\), denotes the probability that the state of nature in period \\(t+1\\) is \\(j\\) conditional on the state of nature in period \\(t\\) being \\(i\\), for all \\(t \\geq 0\\). The consumer is endowed with \\(y_t\\) units of consumption goods in period \\(t\\), where \\(y_t\\) is a random variable taking the values \\(y_H\\) and \\(y_L\\) in states H and L, respectively, with \\(y_H &gt; y_L &gt; 0\\). Consumers have access to the world financial market, which offers a complete set of state-contingent claims. Let \\(p_{ij}\\) be the price in units of consumption of period \\(t\\) of a state-contingent claim that pays 1 unit of consumption in \\(t+1\\) if the state of nature in period \\(t+1\\) is \\(j\\) conditional on the state of nature in period \\(t\\) being \\(i\\), for \\(i, j \\in \\{H, L\\}\\) and \\(t \\geq 0\\). Suppose further that \\(p_{ij} = \\beta \\pi_{ij}\\). Suppose that the state of nature in period 0 is \\(H\\).\n\nState the consumer’s maximization problem.\nCharacterize the equilibrium process of consumption.\nCharacterize the equilibrium process of the trade balance.\nCharacterize the equilibrium process of the net foreign asset position (recall that in period 0 it is known and given by \\(b_0\\)).\nCharacterize the equilibrium process of the current account starting in period 1.\nCompare the equilibrium processes of consumption, the trade balance, and the current account obtained above to those pertaining to another open economy that is identical to the one described above in all respects, except that its initial endowment is \\(y^L\\)."
+  },
+  {
+    "objectID": "chapters/ch04/4_4.html#answer",
+    "href": "chapters/ch04/4_4.html#answer",
+    "title": "Exercise 4.4",
+    "section": "Answer",
+    "text": "Answer\nConsumption is constant and equal to\n\\[\nc \\equiv \\frac{1}{1 - \\beta} \\left[ b_0 + y^H + \\beta (I - \\beta \\Pi)^{-1} y \\right],\n\\]\nwhere \\(y \\equiv [y_H \\quad y_L]'\\).\nThe trade balance in \\(t\\) is then equal to \\(y_t - c\\). Because this economy is stationary, it must be the case that \\(b_t = b_H = b_0\\) if the state in period \\(t\\) is \\(H\\), since nothing distinguishes this economy from how it looked in the initial state.\nTo obtain \\(b_L\\), write the sequential budget constraint when the current state is \\(L\\),\n\\[\nc + p_{LH} b_H + p_{LL} b_L = b_L + y_L\n\\]\nThis is one equation in one unknown, \\(b_L\\).\nFinally, let \\(ca_{ij}\\) denote the current account if the state is \\(i\\) in \\(t - 1\\) and \\(j\\) in \\(t\\), for \\(i, j \\in \\{H, L\\}\\) and \\(t &gt; 0\\). Then,\n\\[\nca_{ij} = tb_j + b_j - P_i b,\n\\]\nwhere \\(P_i \\equiv [p_{iH} \\quad p_{iL}]\\) for \\(i \\in \\{H, L\\}\\) and \\(b \\equiv [b_H \\quad b_L]'\\)."
+  },
+  {
+    "objectID": "chapters/ch04/4_2.html",
+    "href": "chapters/ch04/4_2.html",
+    "title": "Exercise 4.2",
+    "section": "",
+    "text": "⬅ Return"
+  },
+  {
+    "objectID": "chapters/ch04/4_2.html#problem",
+    "href": "chapters/ch04/4_2.html#problem",
+    "title": "Exercise 4.2",
+    "section": "Problem",
+    "text": "Problem\nThis exercise aims to establish whether formulating portfolio adjustment costs as a function of the deviation of the household’s debt position from an exogenous reference point, \\(d_t - \\bar{d}\\), or as a function of the change in its debt position, \\(d_t - d_{t-1}\\), has consequences for the stationarity of the model.\nConsider a small open economy populated by a large number of infinitely-lived households with preferences described by the utility function\n\\[\nE_0 \\sum_{t=0}^\\infty \\beta^t \\ln c_t,\n\\]\nwhere \\(\\beta \\in (0,1)\\) denotes the subjective discount factor, and \\(c_t\\) denotes consumption in period \\(t\\). Each period, households receive an exogenous and stochastic endowment, \\(y_t\\), and can borrow from (or lend to) international financial markets at the gross interest rate \\(1 + r\\). Let \\(d_t\\) denote the stock of foreign debt held by households at the end of period \\(t\\). Households are subject to a portfolio adjustment cost of the form \\(\\frac{\\phi}{2} (d_t - d_{t-1})^2\\), where \\(\\phi\\) is a positive constant. Assume that \\(\\beta(1 + r) = 1\\).\n\nState the household’s period-by-period budget constraint.\nState the household’s utility maximization problem.\nWrite the Lagrangian of the household’s problem.\nDefine a competitive equilibrium of this economy.\nSuppose the endowment is nonstochastic and constant, \\(y_t = y\\), for all \\(t\\). Characterize the deterministic steady state. Does it exist? Is it unique? Hint: Consult appendix 4.14.2.\nConsider now a temporary endowment shock. Suppose \\(y_0 &gt; y\\) and \\(y_t = y\\) for all \\(t &gt; 0\\) deterministically. Suppose that prior to period 0 the economy was in a deterministic steady state with \\(d_{-1} = d^*\\). Is the economy stationary, that is, is \\(d_t\\) expected to return to \\(d^*\\)? Provide intuition."
+  },
+  {
+    "objectID": "chapters/ch04/4_2.html#answer",
+    "href": "chapters/ch04/4_2.html#answer",
+    "title": "Exercise 4.2",
+    "section": "Answer",
+    "text": "Answer\n\n1.\n\\[\ny_t + (1 + r) b_{t-1} = c_t + b_t + \\frac{\\phi}{2}(b_t - b_{t-1})^2\n\\]\n\n\n2.\n\\[\n\\max_{c_t, b_t} E_0 \\sum_{t=0}^\\infty \\ln c_t\n\\]\nsubject to\n\\[\ny_t + (1 + r)b_{t-1} = c_t + b_t + \\frac{\\phi}{2}(b_t - b_{t-1})^2\n\\]\nand some no-Ponzi game constraint taking as given the initial condition \\(b_{-1}\\), the exogenous process \\(\\{y_t\\}\\), the interest rate \\(r\\).\n\n\n3.\n\\[\n\\mathcal{L} = E_0 \\sum_{t=0}^\\infty \\beta^t \\left\\{ \\ln c_t + \\lambda_t \\left[ y_t + (1 + r)b_{t-1} - c_t - b_t - \\frac{\\phi}{2}(b_t - b_{t-1})^2 \\right] \\right\\}\n\\]\nwhere \\(\\lambda_t\\) denote the Lagrange multiplier on the household’s period-by-period budget constraint.\n\n\n4.\nA competitive equilibrium is a set of contingent plans \\(\\{c_t, b_t, \\lambda_t\\}\\) satisfying:\n\\[\n\\frac{1}{c_t} = \\lambda_t\n\\]\n\\[\n\\lambda_t (1 + \\phi(b_t - b_{t-1})) = \\beta E_t \\lambda_{t+1}(1 + r + \\phi(b_{t+1} - b_t))\n\\]\n\\[\ny_t + (1 + r)b_{t-1} = c_t + b_t + \\frac{\\phi}{2}(b_t - b_{t-1})^2\n\\]\nand some no Ponzi game constraint, for given exogenous processes, \\(y_t\\), and given initial conditions \\(b_{-1}\\).\n\n\n5.\nIn the deterministic steady state all endogenous variables are by definition forever constant. Thus a deterministic steady state is a triple \\(\\{c, \\lambda, b\\}\\) that solves:\n\\[\n\\frac{1}{c} = \\lambda\n\\]\n\\[\n\\lambda = \\lambda \\beta(1 + r)\n\\]\n\\[\ny + rb = c\n\\]\nNotice that the Euler equation does not impose a restriction, it just says \\(1 = 1\\). Thus there exist a continuum of steady state equilibria. In fact any \\(b\\) such that \\(c = y + rb &gt; 0\\) is a deterministic steady state. We do not need to check the no Ponzi restriction. It is satisfied because \\(b\\) is constant and because \\(r &gt; 0\\).\n\n\n6.\nConsider first the economy from period \\(t \\geq 1\\). In that case there is no uncertainty and one equilibrium is to set:\n\\[\nb_t = b_0 \\quad \\forall t \\geq 1\n\\]\n\\[\nc_t = y + rb_0\n\\]\n\\[\n\\lambda = \\frac{1}{y + rb_0}\n\\]\nNow consider the economy in period \\(t = 0\\):\n\\[\ny_0 + (1 + r)b_{-1} = c_0 + b_0 + \\frac{\\phi}{2}(b_0 - b_{-1})^2\n\\]\nand use the Euler equation:\n\\[\n\\frac{1}{c_0}(1 + \\phi(b_0 - b_{-1})) = \\frac{1}{c_1}(1 + r + \\phi(b_1 - b_0))\n\\]\nWe already know that \\(b_1 = b_0\\) so this expression becomes:\n\\[\n\\frac{1}{c_0}(1 + \\phi(b_0 - b_{-1})) = \\frac{1}{c_1}\n\\]\nwhere we used \\(\\beta(1 + r) = 1\\) now use \\(c_1 = y + rb_0\\) and rearrange:\n\\[\nc_0 = (1 + \\phi(b_0 - b_{-1}))(y + rb_0)\n\\]\nNow use the sequential budget constraint for \\(t = 0\\):\n\\[\nc_0 + b_0 + \\frac{\\phi}{2}(b_0 - b_{-1})^2 = y_0 + (1 + r)b_{-1}\n\\]\nNow for \\(b_t \\to b_{-1}\\), notice that \\(\\lim_{t \\to \\infty} b_t = b_0\\). Thus let’s try \\(b_0 = b_{-1}\\). Then the above expression becomes:\n\\[\nc_0 + b_{-1} = y_0 + (1 + r)b_{-1}\n\\]\nand replace \\(c_0\\) with the expression from the Euler equation\n\\[\nc_0 = (1 + \\phi(b_0 - b_{-1}))(y + rb_0) = y + rb_{-1}\n\\]\nto get:\n\\[\ny + rb_{-1} + b_{-1} = y_0 + (1 + r)b_{-1}\n\\]\nThis holds only if \\(y_0 = y\\), which can never be the case. Thus the model is not stationary."
+  },
+  {
+    "objectID": "chapters/ch04/4_13.html",
+    "href": "chapters/ch04/4_13.html",
+    "title": "Exercise 4.",
+    "section": "",
+    "text": "⬅ Return"
+  },
+  {
+    "objectID": "chapters/ch04/4_13.html#problem",
+    "href": "chapters/ch04/4_13.html#problem",
+    "title": "Exercise 4.",
+    "section": "Problem",
+    "text": "Problem"
+  },
+  {
+    "objectID": "chapters/ch04/4_13.html#answer",
+    "href": "chapters/ch04/4_13.html#answer",
+    "title": "Exercise 4.",
+    "section": "Answer",
+    "text": "Answer"
+  },
+  {
+    "objectID": "chapters/ch04/4_10.html",
+    "href": "chapters/ch04/4_10.html",
+    "title": "Exercise 4.",
+    "section": "",
+    "text": "⬅ Return"
+  },
+  {
+    "objectID": "chapters/ch04/4_10.html#problem",
+    "href": "chapters/ch04/4_10.html#problem",
+    "title": "Exercise 4.",
+    "section": "Problem",
+    "text": "Problem"
+  },
+  {
+    "objectID": "chapters/ch04/4_10.html#answer",
+    "href": "chapters/ch04/4_10.html#answer",
+    "title": "Exercise 4.",
+    "section": "Answer",
+    "text": "Answer"
+  },
+  {
+    "objectID": "chapters/ch04/index.html",
+    "href": "chapters/ch04/index.html",
+    "title": "Chapter 4 – The Open Economy Real-Business-Cycle Model",
+    "section": "",
+    "text": "-Exercise 4.1 (Dynamics of a Linear Economy)"
   }
 ]

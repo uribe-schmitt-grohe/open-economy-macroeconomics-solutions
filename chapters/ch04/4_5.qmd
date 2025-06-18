@@ -1,0 +1,33 @@
+---
+title: "Exercise 4.5"
+subtitle: "Complete Asset Markets and External Shocks"
+---
+<a class="return-button" href="index.qmd">⬅ Return</a>
+
+## Problem
+
+Consider the CAM model of section 4.9. Suppose that the productivity factor $A_t$ is constant and normalized to 1. Replace the equilibrium condition $U_c(c_t, h_t) = \psi_{CAM}$ with the expression
+
+$$
+U_c(c_t, h_t) = x_t,
+$$
+
+where $x_t$ is an exogenous and stochastic random variable, which can be interpreted as an external shock. Assume that the external shock follows a process of the form
+
+$$
+\hat{x}_t = \rho \hat{x}_{t-1} + \epsilon_t, \quad \epsilon_t \sim N(0, \sigma_\epsilon^2),
+$$
+
+where $\hat{x}_t \equiv \ln(x_t / \bar{x})$, and $\bar{x}$ denotes the nonstochastic steady-state level of $x_t$. Let $\rho = 0.9$ and $\sigma_\epsilon = 0.02$. Calibrate all other parameters of the model following the calibration of the CAM model presented in section 4.9. Finally, set the steady-state value of $x_t$ in such a way that the steady-state level of consumption equals the level of steady-state consumption in the version of the CAM model studied in the main text.
+
+1. Produce a table displaying the unconditional standard deviation, serial correlation, and correlation with output of $\hat{y}_t$, $\hat{c}_t$, $\hat{i}_t$, $\hat{h}_t$, and $tb_t / y_t$.
+
+2. Produce a figure with five plots depicting the impulse responses to an external shock (a unit innovation in $\epsilon_t$) of $\hat{y}_t$, $\hat{c}_t$, $\hat{i}_t$, $\hat{h}_t$, and $tb_t / y_t$.
+
+3. Now replace the values of $\rho$ and $\sigma_\epsilon$ given above with values such that the volatility and serial correlation of output implied by the model are the same as those reported for the Canadian economy in table 4.2. Answer questions 1 and 2 using these new parameter values.
+
+4. Based on your answer to question 3, evaluate the ability of external shocks (as defined here) to explain business cycles in Canada.
+
+## Answer
+
+To be added.

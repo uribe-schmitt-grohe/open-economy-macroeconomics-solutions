@@ -1,0 +1,33 @@
+---
+title: "Exercise 4.6"
+subtitle: "An AR(2) TFP Process And Excess Consumption Volatility"
+---
+<a class="return-button" href="index.qmd">⬅ Return</a>
+
+## Problem
+
+In this exercise you are asked to show that the SOE-RBC model can predict consumption to be more volatile than output when the productivity shock follows an AR(2) process displaying a hump-shaped impulse response. The theoretical model to be used is the EDEIR model presented in section 4.1.1. Replace the AR(1) process with the following AR(2) specification:
+
+$$
+\ln A_{t+1} = 1.42 \ln A_t - 0.43 \ln A_{t-1} + \epsilon_{t+1},
+$$
+
+where $\epsilon_t$ is an i.i.d. random variable with mean zero and standard deviation $\sigma_\epsilon > 0$. Scale $\sigma_\epsilon$ to ensure that the predicted standard deviation of output is 3.08, the value predicted by the AR(1) version of this model. Otherwise use the same calibration and functional forms as presented in the chapter.  
+Download the Matlab files for the EDEIR model from http://www.columbia.edu/~mu2166/closing.htm. Then modify them to accommodate the present specification.
+
+1. Produce a table displaying the unconditional standard deviation, serial correlation, and correlation with output of output, consumption, investment, hours, the trade-balance-to-output ratio, and the current-account-to-output ratio.
+
+2. Produce a 3 × 2 figure displaying the impulse responses of output, consumption, investment, hours, the trade-balance-to-output ratio, and TFP to a unit innovation in TFP.
+
+3. Compare and contrast the predictions of the model under the AR(1) and the AR(2) TFP processes. Provide intuition.
+
+
+## Answer
+
+#### 1.
+
+<img src="figures/4_6_1.png" alt="4_6 (1)" style="display:block; margin:auto; max-width:90%; border:1px solid #ccc; border-radius:8px;" />
+
+#### 2.
+
+<img src="figures/4_6_2.png" alt="4_6 (2)" style="display:block; margin:auto; max-width:90%; border:1px solid #ccc; border-radius:8px;" />
