@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Exercise 2.15 – Open Economy Macroeconomics - Solutions</title>
+<title>Exercise 2.15 – open economy macroeconomics by martín uribe and stephanie schmitt-grohé, PUP 2017</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -144,7 +144,7 @@ window.Quarto = {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="../../index.html">
-    <span class="navbar-title">Open Economy Macroeconomics - Solutions</span>
+    <span class="navbar-title">open economy macroeconomics by martín uribe and stephanie schmitt-grohé, <br>PUP 2017</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -231,46 +231,64 @@ Assume the functional form <span class="math inline">\(\rho(x) = \gamma \left[ \
 </section>
 <section id="answer" class="level2">
 <h2 class="anchored" data-anchor-id="answer">Answer</h2>
-<p><strong>Answer:</strong> The household’s problem is</p>
+<section id="section" class="level4">
+<h4 class="anchored" data-anchor-id="section">1.</h4>
+<p>The household’s problem is</p>
 <p><span class="math display">\[
-\max_{\{C_t, h_t\}} \sum_{t=0}^{\infty} \beta^t \ln \left( C_t - \frac{X_t}{2} h_t^2 \right),
+\max_{\{C_t, h_t\}} \sum_{t=0}^{\infty} \beta^t \ln\left( C_t - \frac{X_t}{2} h_t^2 \right),
 \]</span></p>
 <p>subject to</p>
 <p><span class="math display">\[
 C_t + D_{t-1}(1 + r_{t-1}) = X_t h_t + D_t,
 \]</span></p>
 <p><span class="math display">\[
-\lim_{j \to \infty} \frac{D_{t+j}}{\prod_{s=0}^{j-1} (1 + r_{t+s})} \leq 0
+\lim_{j \to \infty} \frac{D_{t+j}}{\prod_{s=0}^{j}(1 + r_{t+s})} \leq 0
 \]</span></p>
+</section>
+<section id="section-1" class="level4">
+<h4 class="anchored" data-anchor-id="section-1">2.</h4>
 <p>The associated first-order conditions are</p>
 <p><span class="math display">\[
 h_t = 1
 \]</span></p>
 <p><span class="math display">\[
-\left( C_{t+1} - \frac{X_{t+1}}{2} \right) = \beta(1 + r_t) \left( C_t - \frac{X_t}{2} \right)
+\left( C_{t+1} - \frac{X_{t+1}}{2} \right) = \beta (1 + r_t) \left( C_t - \frac{X_t}{2} \right)
 \]</span></p>
+</section>
+<section id="section-2" class="level4">
+<h4 class="anchored" data-anchor-id="section-2">3.</h4>
 <p>The complete set of equilibrium conditions in stationary form are</p>
 <p><span class="math display">\[
-c_{t+1} - 1/2 = \left[ 1 + \frac{e^{d_t - \bar{d}} - 1}{1 + r^*} \right] (c_t - 1/2)
+c_{t+1} - 1/2 = \left[ 1 + \gamma \frac{e^{d_t - \bar{d}} - 1}{1 + r^*} \right] (c_t - 1/2)
 \]</span></p>
 <p><span class="math display">\[
 c_t + d_{t-1} \left( \frac{1 + r_{t-1}}{\mu} \right) = 1 + d_t
 \]</span></p>
-<p>Since <span class="math inline">\(d_{t-1}(1 + r_{t-1}) = \bar{d}(1 + r^*)\)</span>, the equilibrium (i.e., a solution to the above system) is</p>
+</section>
+<section id="section-3" class="level4">
+<h4 class="anchored" data-anchor-id="section-3">4.</h4>
+<p>Since <span class="math inline">\(d_{-1}(1 + r_{-1}) = \bar{d}(1 + r^*)\)</span>, the equilibrium (i.e., a solution to the above system) is</p>
 <p><span class="math display">\[
 d_t = \bar{d}
 \]</span></p>
 <p><span class="math display">\[
-c_t = 1 + \bar{d}(1 - 1 / \beta)
+c_t = 1 + \bar{d}(1 - 1/\beta) &lt; 1
 \]</span></p>
 <p><span class="math display">\[
 r_t = r^*
 \]</span></p>
-<p>for all <span class="math inline">\(t \geq 0\)</span>. So both <span class="math inline">\(C_t\)</span> and <span class="math inline">\(D_t\)</span> are proportional to <span class="math inline">\(X_t\)</span>, which means that both variables grow at the gross rate <span class="math inline">\(\mu\)</span>.</p>
+<p><span class="math display">\[
+tb_t = 1 - c_t &gt; 0
+\]</span></p>
+<p><span class="math display">\[
+ca_t = \bar{d}(1/\mu - 1) &lt; 0
+\]</span></p>
+<p>for all <span class="math inline">\(t \geq 0\)</span>. So <span class="math inline">\(C_t\)</span>, <span class="math inline">\(D_t\)</span>, <span class="math inline">\(TB_t\)</span>, and <span class="math inline">\(CA_t\)</span> are proportional to <span class="math inline">\(X_t\)</span>, which means that they all grow at the gross rate <span class="math inline">\(\mu\)</span> which is less than <span class="math inline">\(1 + r^*\)</span>. The country is a debtor, runs a perpetual trade balance surplus and a perpetual current account deficit (tb surplus not enough to pay for all interest on the debt but enough to prevent debt growing at rate <span class="math inline">\(r^*\)</span>). Absent growth, debtor country would not be able to run a perpetual current account deficit.</p>
 
 
 <!-- -->
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -807,57 +825,73 @@ r_t = r^*
 <span id="cb1-52"><a href="#cb1-52"></a></span>
 <span id="cb1-53"><a href="#cb1-53"></a><span class="fu">## Answer</span></span>
 <span id="cb1-54"><a href="#cb1-54"></a></span>
-<span id="cb1-55"><a href="#cb1-55"></a>**Answer:** The household’s problem is</span>
+<span id="cb1-55"><a href="#cb1-55"></a><span class="fu">#### 1. </span></span>
 <span id="cb1-56"><a href="#cb1-56"></a></span>
-<span id="cb1-57"><a href="#cb1-57"></a>$$</span>
-<span id="cb1-58"><a href="#cb1-58"></a>\max_{<span class="sc">\{</span>C_t, h_t<span class="sc">\}</span>} \sum_{t=0}^{\infty} \beta^t \ln \left( C_t - \frac{X_t}{2} h_t^2 \right),</span>
+<span id="cb1-57"><a href="#cb1-57"></a>The household’s problem is</span>
+<span id="cb1-58"><a href="#cb1-58"></a></span>
 <span id="cb1-59"><a href="#cb1-59"></a>$$</span>
-<span id="cb1-60"><a href="#cb1-60"></a></span>
-<span id="cb1-61"><a href="#cb1-61"></a>subject to</span>
+<span id="cb1-60"><a href="#cb1-60"></a>\max_{<span class="sc">\{</span>C_t, h_t<span class="sc">\}</span>} \sum_{t=0}^{\infty} \beta^t \ln\left( C_t - \frac{X_t}{2} h_t^2 \right),</span>
+<span id="cb1-61"><a href="#cb1-61"></a>$$</span>
 <span id="cb1-62"><a href="#cb1-62"></a></span>
-<span id="cb1-63"><a href="#cb1-63"></a>$$</span>
-<span id="cb1-64"><a href="#cb1-64"></a>C_t + D_{t-1}(1 + r_{t-1}) = X_t h_t + D_t,</span>
+<span id="cb1-63"><a href="#cb1-63"></a>subject to</span>
+<span id="cb1-64"><a href="#cb1-64"></a></span>
 <span id="cb1-65"><a href="#cb1-65"></a>$$</span>
-<span id="cb1-66"><a href="#cb1-66"></a></span>
+<span id="cb1-66"><a href="#cb1-66"></a>C_t + D_{t-1}(1 + r_{t-1}) = X_t h_t + D_t,</span>
 <span id="cb1-67"><a href="#cb1-67"></a>$$</span>
-<span id="cb1-68"><a href="#cb1-68"></a>\lim_{j \to \infty} \frac{D_{t+j}}{\prod_{s=0}^{j-1} (1 + r_{t+s})} \leq 0</span>
+<span id="cb1-68"><a href="#cb1-68"></a></span>
 <span id="cb1-69"><a href="#cb1-69"></a>$$</span>
-<span id="cb1-70"><a href="#cb1-70"></a></span>
-<span id="cb1-71"><a href="#cb1-71"></a>The associated first-order conditions are</span>
+<span id="cb1-70"><a href="#cb1-70"></a>\lim_{j \to \infty} \frac{D_{t+j}}{\prod_{s=0}^{j}(1 + r_{t+s})} \leq 0</span>
+<span id="cb1-71"><a href="#cb1-71"></a>$$</span>
 <span id="cb1-72"><a href="#cb1-72"></a></span>
-<span id="cb1-73"><a href="#cb1-73"></a>$$</span>
-<span id="cb1-74"><a href="#cb1-74"></a>h_t = 1</span>
-<span id="cb1-75"><a href="#cb1-75"></a>$$</span>
+<span id="cb1-73"><a href="#cb1-73"></a><span class="fu">#### 2. </span></span>
+<span id="cb1-74"><a href="#cb1-74"></a></span>
+<span id="cb1-75"><a href="#cb1-75"></a>The associated first-order conditions are</span>
 <span id="cb1-76"><a href="#cb1-76"></a></span>
 <span id="cb1-77"><a href="#cb1-77"></a>$$</span>
-<span id="cb1-78"><a href="#cb1-78"></a>\left( C_{t+1} - \frac{X_{t+1}}{2} \right) = \beta(1 + r_t) \left( C_t - \frac{X_t}{2} \right)</span>
+<span id="cb1-78"><a href="#cb1-78"></a>h_t = 1</span>
 <span id="cb1-79"><a href="#cb1-79"></a>$$</span>
 <span id="cb1-80"><a href="#cb1-80"></a></span>
-<span id="cb1-81"><a href="#cb1-81"></a>The complete set of equilibrium conditions in stationary form are</span>
-<span id="cb1-82"><a href="#cb1-82"></a></span>
+<span id="cb1-81"><a href="#cb1-81"></a>$$</span>
+<span id="cb1-82"><a href="#cb1-82"></a>\left( C_{t+1} - \frac{X_{t+1}}{2} \right) = \beta (1 + r_t) \left( C_t - \frac{X_t}{2} \right)</span>
 <span id="cb1-83"><a href="#cb1-83"></a>$$</span>
-<span id="cb1-84"><a href="#cb1-84"></a>c_{t+1} - 1/2 = \left<span class="co">[</span><span class="ot"> 1 + \frac{e^{d_t - \bar{d}} - 1}{1 + r^*} \right</span><span class="co">]</span> (c_t - 1/2)</span>
-<span id="cb1-85"><a href="#cb1-85"></a>$$</span>
+<span id="cb1-84"><a href="#cb1-84"></a></span>
+<span id="cb1-85"><a href="#cb1-85"></a><span class="fu">#### 3. </span></span>
 <span id="cb1-86"><a href="#cb1-86"></a></span>
-<span id="cb1-87"><a href="#cb1-87"></a>$$</span>
-<span id="cb1-88"><a href="#cb1-88"></a>c_t + d_{t-1} \left( \frac{1 + r_{t-1}}{\mu} \right) = 1 + d_t</span>
+<span id="cb1-87"><a href="#cb1-87"></a>The complete set of equilibrium conditions in stationary form are</span>
+<span id="cb1-88"><a href="#cb1-88"></a></span>
 <span id="cb1-89"><a href="#cb1-89"></a>$$</span>
-<span id="cb1-90"><a href="#cb1-90"></a></span>
-<span id="cb1-91"><a href="#cb1-91"></a>Since $d_{t-1}(1 + r_{t-1}) = \bar{d}(1 + r^*)$, the equilibrium (i.e., a solution to the above system) is</span>
+<span id="cb1-90"><a href="#cb1-90"></a>c_{t+1} - 1/2 = \left<span class="co">[</span><span class="ot"> 1 + \gamma \frac{e^{d_t - \bar{d}} - 1}{1 + r^*} \right</span><span class="co">]</span> (c_t - 1/2)</span>
+<span id="cb1-91"><a href="#cb1-91"></a>$$</span>
 <span id="cb1-92"><a href="#cb1-92"></a></span>
 <span id="cb1-93"><a href="#cb1-93"></a>$$</span>
-<span id="cb1-94"><a href="#cb1-94"></a>d_t = \bar{d}</span>
+<span id="cb1-94"><a href="#cb1-94"></a>c_t + d_{t-1} \left( \frac{1 + r_{t-1}}{\mu} \right) = 1 + d_t</span>
 <span id="cb1-95"><a href="#cb1-95"></a>$$</span>
 <span id="cb1-96"><a href="#cb1-96"></a></span>
-<span id="cb1-97"><a href="#cb1-97"></a>$$</span>
-<span id="cb1-98"><a href="#cb1-98"></a>c_t = 1 + \bar{d}(1 - 1 / \beta)</span>
-<span id="cb1-99"><a href="#cb1-99"></a>$$</span>
+<span id="cb1-97"><a href="#cb1-97"></a><span class="fu">#### 4. </span></span>
+<span id="cb1-98"><a href="#cb1-98"></a></span>
+<span id="cb1-99"><a href="#cb1-99"></a>Since $d_{-1}(1 + r_{-1}) = \bar{d}(1 + r^*)$, the equilibrium (i.e., a solution to the above system) is</span>
 <span id="cb1-100"><a href="#cb1-100"></a></span>
 <span id="cb1-101"><a href="#cb1-101"></a>$$</span>
-<span id="cb1-102"><a href="#cb1-102"></a>r_t = r^*</span>
+<span id="cb1-102"><a href="#cb1-102"></a>d_t = \bar{d}</span>
 <span id="cb1-103"><a href="#cb1-103"></a>$$</span>
 <span id="cb1-104"><a href="#cb1-104"></a></span>
-<span id="cb1-105"><a href="#cb1-105"></a>for all $t \geq 0$. So both $C_t$ and $D_t$ are proportional to $X_t$, which means that both variables grow at the gross rate $\mu$.</span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
+<span id="cb1-105"><a href="#cb1-105"></a>$$</span>
+<span id="cb1-106"><a href="#cb1-106"></a>c_t = 1 + \bar{d}(1 - 1/\beta) &lt; 1</span>
+<span id="cb1-107"><a href="#cb1-107"></a>$$</span>
+<span id="cb1-108"><a href="#cb1-108"></a></span>
+<span id="cb1-109"><a href="#cb1-109"></a>$$</span>
+<span id="cb1-110"><a href="#cb1-110"></a>r_t = r^*</span>
+<span id="cb1-111"><a href="#cb1-111"></a>$$</span>
+<span id="cb1-112"><a href="#cb1-112"></a></span>
+<span id="cb1-113"><a href="#cb1-113"></a>$$</span>
+<span id="cb1-114"><a href="#cb1-114"></a>tb_t = 1 - c_t &gt; 0</span>
+<span id="cb1-115"><a href="#cb1-115"></a>$$</span>
+<span id="cb1-116"><a href="#cb1-116"></a></span>
+<span id="cb1-117"><a href="#cb1-117"></a>$$</span>
+<span id="cb1-118"><a href="#cb1-118"></a>ca_t = \bar{d}(1/\mu - 1) &lt; 0</span>
+<span id="cb1-119"><a href="#cb1-119"></a>$$</span>
+<span id="cb1-120"><a href="#cb1-120"></a></span>
+<span id="cb1-121"><a href="#cb1-121"></a>for all $t \geq 0$. So $C_t$, $D_t$, $TB_t$, and $CA_t$ are proportional to $X_t$, which means that they all grow at the gross rate $\mu$ which is less than $1 + r^*$. The country is a debtor, runs a perpetual trade balance surplus and a perpetual current account deficit (tb surplus not enough to pay for all interest on the debt but enough to prevent debt growing at rate $r^*$). Absent growth, debtor country would not be able to run a perpetual current account deficit.</span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 

@@ -2,7 +2,7 @@ project:
   type: website
 
 website:
-  title: "Open Economy Macroeconomics - Solutions"
+  title: "open economy macroeconomics by martín uribe and stephanie schmitt-grohé, <br>PUP 2017"
   navbar:
     right:
       - text: "Home"

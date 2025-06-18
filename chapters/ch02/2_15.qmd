@@ -52,10 +52,12 @@ $$
 
 ## Answer
 
-**Answer:** The household’s problem is
+#### 1. 
+
+The household’s problem is
 
 $$
-\max_{\{C_t, h_t\}} \sum_{t=0}^{\infty} \beta^t \ln \left( C_t - \frac{X_t}{2} h_t^2 \right),
+\max_{\{C_t, h_t\}} \sum_{t=0}^{\infty} \beta^t \ln\left( C_t - \frac{X_t}{2} h_t^2 \right),
 $$
 
 subject to
@@ -65,8 +67,10 @@ C_t + D_{t-1}(1 + r_{t-1}) = X_t h_t + D_t,
 $$
 
 $$
-\lim_{j \to \infty} \frac{D_{t+j}}{\prod_{s=0}^{j-1} (1 + r_{t+s})} \leq 0
+\lim_{j \to \infty} \frac{D_{t+j}}{\prod_{s=0}^{j}(1 + r_{t+s})} \leq 0
 $$
+
+#### 2. 
 
 The associated first-order conditions are
 
@@ -75,31 +79,43 @@ h_t = 1
 $$
 
 $$
-\left( C_{t+1} - \frac{X_{t+1}}{2} \right) = \beta(1 + r_t) \left( C_t - \frac{X_t}{2} \right)
+\left( C_{t+1} - \frac{X_{t+1}}{2} \right) = \beta (1 + r_t) \left( C_t - \frac{X_t}{2} \right)
 $$
+
+#### 3. 
 
 The complete set of equilibrium conditions in stationary form are
 
 $$
-c_{t+1} - 1/2 = \left[ 1 + \frac{e^{d_t - \bar{d}} - 1}{1 + r^*} \right] (c_t - 1/2)
+c_{t+1} - 1/2 = \left[ 1 + \gamma \frac{e^{d_t - \bar{d}} - 1}{1 + r^*} \right] (c_t - 1/2)
 $$
 
 $$
 c_t + d_{t-1} \left( \frac{1 + r_{t-1}}{\mu} \right) = 1 + d_t
 $$
 
-Since $d_{t-1}(1 + r_{t-1}) = \bar{d}(1 + r^*)$, the equilibrium (i.e., a solution to the above system) is
+#### 4. 
+
+Since $d_{-1}(1 + r_{-1}) = \bar{d}(1 + r^*)$, the equilibrium (i.e., a solution to the above system) is
 
 $$
 d_t = \bar{d}
 $$
 
 $$
-c_t = 1 + \bar{d}(1 - 1 / \beta)
+c_t = 1 + \bar{d}(1 - 1/\beta) < 1
 $$
 
 $$
 r_t = r^*
 $$
 
-for all $t \geq 0$. So both $C_t$ and $D_t$ are proportional to $X_t$, which means that both variables grow at the gross rate $\mu$.
+$$
+tb_t = 1 - c_t > 0
+$$
+
+$$
+ca_t = \bar{d}(1/\mu - 1) < 0
+$$
+
+for all $t \geq 0$. So $C_t$, $D_t$, $TB_t$, and $CA_t$ are proportional to $X_t$, which means that they all grow at the gross rate $\mu$ which is less than $1 + r^*$. The country is a debtor, runs a perpetual trade balance surplus and a perpetual current account deficit (tb surplus not enough to pay for all interest on the debt but enough to prevent debt growing at rate $r^*$). Absent growth, debtor country would not be able to run a perpetual current account deficit.
