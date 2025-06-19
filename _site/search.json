@@ -674,23 +674,23 @@
   {
     "objectID": "chapters/ch04/4_5.html",
     "href": "chapters/ch04/4_5.html",
-    "title": "Exercise 4.",
+    "title": "Exercise 4.5",
     "section": "",
     "text": "⬅ Return"
   },
   {
     "objectID": "chapters/ch04/4_5.html#problem",
     "href": "chapters/ch04/4_5.html#problem",
-    "title": "Exercise 4.",
+    "title": "Exercise 4.5",
     "section": "Problem",
-    "text": "Problem"
+    "text": "Problem\nConsider the CAM model of section 4.9. Suppose that the productivity factor \\(A_t\\) is constant and normalized to 1. Replace the equilibrium condition \\(U_c(c_t, h_t) = \\psi_{CAM}\\) with the expression\n\\[\nU_c(c_t, h_t) = x_t,\n\\]\nwhere \\(x_t\\) is an exogenous and stochastic random variable, which can be interpreted as an external shock. Assume that the external shock follows a process of the form\n\\[\n\\hat{x}_t = \\rho \\hat{x}_{t-1} + \\epsilon_t, \\quad \\epsilon_t \\sim N(0, \\sigma_\\epsilon^2),\n\\]\nwhere \\(\\hat{x}_t \\equiv \\ln(x_t / \\bar{x})\\), and \\(\\bar{x}\\) denotes the nonstochastic steady-state level of \\(x_t\\). Let \\(\\rho = 0.9\\) and \\(\\sigma_\\epsilon = 0.02\\). Calibrate all other parameters of the model following the calibration of the CAM model presented in section 4.9. Finally, set the steady-state value of \\(x_t\\) in such a way that the steady-state level of consumption equals the level of steady-state consumption in the version of the CAM model studied in the main text.\n\nProduce a table displaying the unconditional standard deviation, serial correlation, and correlation with output of \\(\\hat{y}_t\\), \\(\\hat{c}_t\\), \\(\\hat{i}_t\\), \\(\\hat{h}_t\\), and \\(tb_t / y_t\\).\nProduce a figure with five plots depicting the impulse responses to an external shock (a unit innovation in \\(\\epsilon_t\\)) of \\(\\hat{y}_t\\), \\(\\hat{c}_t\\), \\(\\hat{i}_t\\), \\(\\hat{h}_t\\), and \\(tb_t / y_t\\).\nNow replace the values of \\(\\rho\\) and \\(\\sigma_\\epsilon\\) given above with values such that the volatility and serial correlation of output implied by the model are the same as those reported for the Canadian economy in table 4.2. Answer questions 1 and 2 using these new parameter values.\nBased on your answer to question 3, evaluate the ability of external shocks (as defined here) to explain business cycles in Canada."
   },
   {
     "objectID": "chapters/ch04/4_5.html#answer",
     "href": "chapters/ch04/4_5.html#answer",
-    "title": "Exercise 4.",
+    "title": "Exercise 4.5",
     "section": "Answer",
-    "text": "Answer"
+    "text": "Answer\n 📥 Download Matlab Code (4_5_code.zip) \n\n1.\n\n\n\n2.\n\n\n\n3.\n\n\n\n\n4.\nThe model matches some key features of Canadian business cycles reasonably well. The volatility of output is calibrated to match the data (2.85% vs. 2.81%), and the standard deviations of consumption (1.75%) and hours worked (1.96%) are plausible and highly correlated with output.\nHowever, the model fails to generate realistic investment dynamics. The volatility of investment is only 4.59%, which is much lower than in the data, and its serial correlation is just 0.11, indicating almost no persistence. This suggests that the model lacks frictions such as capital adjustment costs.\nThe trade-balance-to-output ratio shows high persistence (0.86) and moderate volatility (0.97%), which are consistent with data from small open economies.\nOverall, the model performs well in capturing output, consumption, and external balance behavior, but does poorly in explaining investment volatility and persistence."
   },
   {
     "objectID": "chapters/ch04/4_6.html",
@@ -711,7 +711,7 @@
     "href": "chapters/ch04/4_6.html#answer",
     "title": "Exercise 4.6",
     "section": "Answer",
-    "text": "Answer\n\n1.\n\n\n\n2."
+    "text": "Answer\n 📥 Download Matlab Code (4_6_code.zip) \n\n1.\n\n\n\n2.\n\n\n\n3.\nRelative to the AR(1) specification (as in Table 4.2 and Figure 4.1), the AR(2) TFP process generates a more persistent shock. This increased persistence is present in the responses of output, consumption, investment and hours to shocks. The trade balance remains countercyclical. Comparing the standard deviations and correlations across models (while holding output volatility constant by construction), the AR(2) model yields more volatile consumption, significantly less volatile investment, and reduced volatility in the trade balance and current account. Serial correlation increases across all variables, as expected under a more persistent shock process. Additionally, output becomes more strongly correlated with consumption, investment, and hours worked, while its correlation with the trade balance and current account declines."
   },
   {
     "objectID": "chapters/ch04/4_8.html",
@@ -795,7 +795,7 @@
     "href": "chapters/ch04/4_4.html#answer",
     "title": "Exercise 4.4",
     "section": "Answer",
-    "text": "Answer\nConsumption is constant and equal to\n\\[\nc \\equiv \\frac{1}{1 - \\beta} \\left[ b_0 + y^H + \\beta (I - \\beta \\Pi)^{-1} y \\right],\n\\]\nwhere \\(y \\equiv [y_H \\quad y_L]'\\).\nThe trade balance in \\(t\\) is then equal to \\(y_t - c\\). Because this economy is stationary, it must be the case that \\(b_t = b_H = b_0\\) if the state in period \\(t\\) is \\(H\\), since nothing distinguishes this economy from how it looked in the initial state.\nTo obtain \\(b_L\\), write the sequential budget constraint when the current state is \\(L\\),\n\\[\nc + p_{LH} b_H + p_{LL} b_L = b_L + y_L\n\\]\nThis is one equation in one unknown, \\(b_L\\).\nFinally, let \\(ca_{ij}\\) denote the current account if the state is \\(i\\) in \\(t - 1\\) and \\(j\\) in \\(t\\), for \\(i, j \\in \\{H, L\\}\\) and \\(t &gt; 0\\). Then,\n\\[\nca_{ij} = tb_j + b_j - P_i b,\n\\]\nwhere \\(P_i \\equiv [p_{iH} \\quad p_{iL}]\\) for \\(i \\in \\{H, L\\}\\) and \\(b \\equiv [b_H \\quad b_L]'\\)."
+    "text": "Answer\n\n1.\nWe state the consumer maximization problem. For state of nature in period \\(t\\) being \\(i \\in \\{H, L\\}\\), the consumer decides\n\\[\n\\max_{c_t^i, b_{t+1}^i} E_0 \\sum_{t=0}^{\\infty} \\beta^t U(c_t)\n\\]\nsubject to\n\\[\nc_t^i + p_{iH} b_{t+1}^H + p_{iL} b_{t+1}^L \\leq b_t^i + y_i, \\quad i \\in \\{H, L\\}, t \\geq 0\n\\]\nGiven \\(b_0\\) and \\(y_0 = y_H\\).\n\n\n2.\nWe characterize the equilibrium process of consumption. We first derive the Euler equations (one for each \\(i\\), \\(j\\) combination):\n\\[\nU'(c_t^i) p_{ij} = \\beta \\pi_{ij} U'(c_{t+1}^j), \\quad i,j \\in \\{H, L\\}\n\\]\nGiven that \\(p_{ij} = \\beta \\pi_{ij}\\) by assumption, we get:\n\\[\nU'(c_t^i) = U'(c_{t+1}^j), \\quad i,j \\in \\{H, L\\}\n\\]\nHence \\(c_t^i = c = c_{t+1}^j\\). Since the economy is stationary, if the state is \\(H\\) we know the household will always borrow the same \\(b_H\\), and if state is \\(L\\) it will always borrow the same \\(b_L\\).\nWe then derive the intertemporal budget constraint in matrix form by stacking the budget constraints in both states:\n\\[\nc + \\beta \\pi_{iH} b_H + \\beta \\pi_{iL} b_L = b_i + y_i\n\\]\nThis becomes:\n\\[\nc + \\beta \\Pi b = b + y\n\\]\nThen:\n\\[\nb = (1 - \\beta \\Pi)^{-1}(c \\cdot \\mathbf{1} - y)\n\\]\nWe plug \\(b\\) into the time-0 budget constraint, given \\(e_H = \\begin{bmatrix} 1 \\\\ 0 \\end{bmatrix}\\):\n\\[\nc + \\beta \\pi_{HH} b_H + \\beta \\pi_{HL} b_L = b_0 + y_H\n\\]\n\\[\nc + \\beta e_H' \\Pi b = b_0 + y_H\n\\]\nPlugging in:\n\\[\nc + \\beta e_H' \\Pi (1 - \\beta \\Pi)^{-1}(c \\cdot \\mathbf{1} - y) = b_0 + y_H\n\\]\nSolve for \\(c\\):\n\\[\nc = \\frac{ \\beta e_H' \\Pi (1 - \\beta \\Pi)^{-1} y + b_0 + y_H }{ 1 + \\beta e_H' \\Pi (1 - \\beta \\Pi)^{-1} \\mathbf{1} }\n\\]\nWe can rewrite the denominator as (given that for Markov matrix \\(\\Pi \\mathbf{1} = \\mathbf{1}\\)):\n\\[\n1 + e_H' \\beta \\Pi (1 - \\beta \\Pi)^{-1} \\mathbf{1}\n= 1 + e_H' \\sum_{i=1}^{\\infty} \\beta^i \\Pi^i \\mathbf{1}\n= 1 + \\sum_{i=1}^{\\infty} \\beta^i = \\frac{1}{1 - \\beta}\n\\]\nTherefore, consumption is equal to:\n\\[\n\\boxed{ c = (1 - \\beta) \\left[ b_0 + y_H + \\beta e_H' \\Pi (I - \\beta \\Pi)^{-1} y \\right] }\n\\]\n\n\n3.\nThe trade balance in \\(t\\) is then equal to:\n\\[\ntb_t = y_t - c\n\\]\n\n\n4.\nBecause this economy is stationary, we have \\(b_t = b_H = b_0\\) if the state in period \\(t\\) is \\(H\\), since nothing distinguishes this economy from how it looked in the initial state.\nTo obtain \\(b_L\\), we use the budget constraint for \\(b_L\\):\n\\[\nc + p_{LH} b_H + p_{LL} b_L = b_L + y_L\n\\]\nThis is one equation in one unknown, \\(b_L\\). We can solve:\n\\[\n\\boxed{ b_L = \\frac{ c - y_L + \\beta \\pi_{LH} b_0 }{ 1 - \\beta \\pi_{LL} } }\n\\]\n\n\n5.\nWe let \\(ca_{ij}\\) denote the current account if the state is \\(i\\) in \\(t - 1\\) and \\(j\\) in \\(t\\), for \\(i,j \\in \\{H,L\\}\\) and \\(t &gt; 0\\). Then, we have:\n\\[\nca_{ij} = tb_j + b_j - P_i b\n\\]\nwhere \\(P_i = [p_{iH} \\quad p_{iL}]\\).\n\n\n6.\nWe now have consumption, given \\(e_L = \\begin{bmatrix} 0 \\\\ 1 \\end{bmatrix}\\):\n\\[\nc' = (1 - \\beta) \\left[ b_0 + y_L + \\beta e_L' \\Pi (I - \\beta \\Pi)^{-1} y \\right]\n\\]\nTrade balance, current account and net foreign asset position (in this case, \\(b_L = b_0\\) and we derive \\(b_H\\)) are defined relative to \\(c'\\)."
   },
   {
     "objectID": "chapters/ch04/4_2.html",

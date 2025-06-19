@@ -30,4 +30,33 @@ where $\hat{x}_t \equiv \ln(x_t / \bar{x})$, and $\bar{x}$ denotes the nonstocha
 
 ## Answer
 
-To be added.
+<a href="code/4_5_code.zip" download style="display:inline-block;padding:8px 16px;background:#007acc;color:white;text-decoration:none;border-radius:5px;">
+📥 Download Matlab Code (4_5_code.zip)
+</a>
+
+#### 1.
+
+<img src="figures/4_5_table1.png" alt="Table 1" style="display:block; margin:auto; max-width:90%;box-shadow:none; border:none;" />
+
+#### 2.
+
+<img src="figures/4_5_figure1.png" alt="Table 2" style="display:block; margin:auto; max-width:90%; box-shadow:none; border:none;" />
+
+
+#### 3.
+
+<img src="figures/4_5_table2.png" alt="Table 2" style="display:block; margin:auto; max-width:90%; box-shadow:none; border:none;" />
+
+<img src="figures/4_5_figure2.png" alt="Table 2" style="display:block; margin:auto; max-width:90%; box-shadow:none; border:none;" />
+
+
+
+#### 4.
+
+The model matches some key features of Canadian business cycles reasonably well. The volatility of output is calibrated to match the data (2.85% vs. 2.81%), and the standard deviations of consumption (1.75%) and hours worked (1.96%) are plausible and highly correlated with output.
+
+However, the model fails to generate realistic investment dynamics. The volatility of investment is only 4.59%, which is much lower than in the data, and its serial correlation is just 0.11, indicating almost no persistence. This suggests that the model lacks frictions such as capital adjustment costs.
+
+The trade-balance-to-output ratio shows high persistence (0.86) and moderate volatility (0.97%), which are consistent with data from small open economies.
+
+Overall, the model performs well in capturing output, consumption, and external balance behavior, but does poorly in explaining investment volatility and persistence.
