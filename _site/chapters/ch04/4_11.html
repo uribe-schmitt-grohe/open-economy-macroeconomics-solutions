@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.32">
+<meta name="generator" content="quarto-1.7.31">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Exercise 4. – open economy macroeconomics by martín uribe and stephanie schmitt-grohé, PUP 2017</title>
+<title>Exercise 4.11 – open economy macroeconomics by martín uribe and stephanie schmitt-grohé, PUP 2017</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -71,10 +71,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-991b1886d3c685c7aa2b62b80640c7af.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-a14e3238c51140e99ccc48519b6ed9ce.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -178,7 +178,8 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title">Exercise 4.</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+<div class="quarto-title-block"><div><h1 class="title">Exercise 4.11</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+<p class="subtitle lead">A Model of the U.S.-Canadian Business Cycle</p>
 </div>
 
 
@@ -198,6 +199,43 @@ window.Quarto = {
 <p><a class="return-button" href="../../chapters/ch04/index.html">⬅ Return</a></p>
 <section id="problem" class="level2">
 <h2 class="anchored" data-anchor-id="problem">Problem</h2>
+<p>Consider a world with two economies, Canada and the United States, indexed by <span class="math inline">\(i=Can,US\)</span>, respectively. Suppose that both economies are populated by a large number of identical households with preferences given by</p>
+<p><span class="math display">\[
+E_0 \sum_{t=0}^{\infty}
+\beta^t \frac{\left[
+c^i_t - \frac{
+(h^i_t)^{\omega}}{\omega}\right]^{1-\sigma} - 1}{1 - \sigma},
+\]</span></p>
+<p>where <span class="math inline">\(c^i_t\)</span> and <span class="math inline">\(h^i_t\)</span> denote, respectively, consumption and hours worked in country <span class="math inline">\(i\)</span> in period <span class="math inline">\(t\)</span>. In both countries, households operate a technology that produces output, denoted <span class="math inline">\(y^i_t\)</span>, using labor and capital, denoted <span class="math inline">\(k^i_t\)</span>. The production technology is Cobb-Douglas and is given by</p>
+<p><span class="math display">\[
+y^i_t = A^i_t (k^i_t)^{\alpha} (h^i_t)^{1-\alpha},
+\]</span></p>
+<p>where <span class="math inline">\(A^i_t\)</span> denotes a productivity shock in country <span class="math inline">\(i\)</span>, which evolves according to the following AR(1) process:</p>
+<p><span class="math display">\[
+\ln A^i_{t+1} = \rho^i \ln A^i_t + \eta^i \epsilon^i_{t+1},
+\]</span></p>
+<p>where <span class="math inline">\(\epsilon^i_t\)</span> is an i.i.d. innovation with mean zero and variance one, and <span class="math inline">\(\rho^i\)</span> and <span class="math inline">\(\eta^i\)</span> are country-specific parameters. Both countries produce the same good. The evolution of capital obeys the following law of motion:</p>
+<p><span class="math display">\[
+k^i_{t+1} = k^i_t + \frac{1}{\phi^i} \left[ \left( \frac{i^i_t}{\delta k^i_t} \right)^{\phi^i} - 1 \right] \delta k^i_t,
+\]</span></p>
+<p>where <span class="math inline">\(i^i_t\)</span> denotes investment in country <span class="math inline">\(i\)</span>, and <span class="math inline">\(\phi^i\)</span> is a country-specific parameter.</p>
+<p>Assume that asset markets are complete and that there exists free mobility of goods and financial assets between the United States and Canada, but that labor and installed capital are immobile across countries. Finally, assume that Canada has measure zero relative to the United States, so that the latter can be modeled as a closed economy.</p>
+<p>Consider the business cycle regularities for Canada for the period 1960–2011 shown in Exercise 4.10. The following table displays observed standard deviations, serial correlations, and correlations with output for the United States for 1960–2011. The data are annual and are expressed in per capita terms. The series <span class="math inline">\(y\)</span>, <span class="math inline">\(c\)</span>, and <span class="math inline">\(i\)</span> are in logs, and the series <span class="math inline">\(tb/y\)</span> is in levels. All series were quadratically detrended. Standard deviations are measured in percentage points.</p>
+<p><img src="figures/4_11_1.png" alt="4.11 （1）" style="display:block; margin:auto; max-width:90%;box-shadow:none; border:none;"></p>
+<p>Source: Own calculations based on data from World Development Indicators.</p>
+<ol type="1">
+<li><p>Calibrate the model as follows. Assume that the deterministic steady-state levels of consumption per capita are the same in Canada and the United States. Set <span class="math inline">\(\beta = 1/1.04\)</span>, <span class="math inline">\(\sigma = 2\)</span>, <span class="math inline">\(\omega = 1.455\)</span>, <span class="math inline">\(\alpha = 0.32\)</span>, and <span class="math inline">\(\delta = 0.10\)</span>. Set the remaining six parameters, <span class="math inline">\(\rho^i\)</span>, <span class="math inline">\(\eta^i\)</span>, and <span class="math inline">\(\phi^i\)</span>, for <span class="math inline">\(i = \text{Can, US}\)</span>, to match the observed standard deviations and serial correlations of output and the standard deviations of investment in Canada and the United States. Use a distance minimization procedure as in exercise 4.8.</p></li>
+<li><p>Approximate the equilibrium dynamics up to first order. Produce the theoretical counterparts of the two tables showing Canadian and U.S. business-cycle regularities.</p></li>
+<li><p>Comment on the ability of the model to explain observed business cycles in Canada and the United States.</p></li>
+<li><p>Plot the response of Canadian output, consumption, investment, hours, and the trade-balance-to-output ratio to a unit innovation in the Canadian productivity shock. On the same plot, show the response of the Canadian variables to a unit innovation to the U.S. productivity shock. Discuss the differences in the responses to a domestic and a foreign technology shock and provide intuition.</p></li>
+<li><p>Compare, by means of a graph and a discussion, the predicted responses of Canada and the United States to a unit innovation in the U.S. productivity shock. The graph should include the same variables as the one for the previous question.</p></li>
+<li><p>Compute the fraction of the volatilities of Canadian output and the trade-balance-to-output ratio explained by the U.S. productivity shock according to the present model. To this end, set <span class="math inline">\(\eta^{\text{Can}} = 0\)</span>, and compute the two standard deviations of interest. Then take the ratio of these standard deviations to their respective counterparts when both shocks are active.</p></li>
+<li><p>This question aims to quantify the importance of common shocks as drivers of the U.S.–Canadian business cycle. Replace the process for the Canadian productivity shock with the following one:</p></li>
+</ol>
+<p><span class="math display">\[
+\ln A^{\text{Can}}_{t+1} = \rho^{\text{Can}} \ln A^{\text{Can}}_t + \eta^{\text{Can}} \epsilon^{\text{Can}}_{t+1} + \nu \epsilon^{\text{US}}_{t+1}.
+\]</span></p>
+<p>All other aspects of the model are as before. Recalibrate the model using an augmented version of the strategy described above that includes an additional parameter, <span class="math inline">\(\nu\)</span>, and an additional target, the cross-country correlation of output, which in the sample used here is 0.64. Report the new set of calibrated parameters. Compute the variance of Canadian output. Now set <span class="math inline">\(\nu = 0\)</span>, keeping all other parameter values unchanged, and recalculate the variance of Canadian output. Explain.</p>
 </section>
 <section id="answer" class="level2">
 <h2 class="anchored" data-anchor-id="answer">Answer</h2>
@@ -672,7 +710,7 @@ window.Quarto = {
     const script = document.createElement("script");
     script.src = "https://giscus.app/client.js";
     script.async = true;
-    script.dataset.repo = "uribe-schmitt-grohe/open-economy-macroeconomics-solutions-2";
+    script.dataset.repo = "uribe-schmitt-grohe/open-economy-macroeconomics-solutions";
     script.dataset.repoId = "R_kgDOO6HT_w";
     script.dataset.category = "General";
     script.dataset.categoryId = "DIC_kwDOO6HT_84CrWvF";
@@ -689,16 +727,71 @@ window.Quarto = {
   loadGiscus();
 </script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
 <div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1"></a><span class="co">---</span></span>
-<span id="cb1-2"><a href="#cb1-2"></a><span class="an">title:</span><span class="co"> "Exercise 4."</span></span>
-<span id="cb1-3"><a href="#cb1-3"></a><span class="an">subtitle:</span><span class="co"> ""</span></span>
+<span id="cb1-2"><a href="#cb1-2"></a><span class="an">title:</span><span class="co"> "Exercise 4.11"</span></span>
+<span id="cb1-3"><a href="#cb1-3"></a><span class="an">subtitle:</span><span class="co"> "A Model of the U.S.-Canadian Business Cycle"</span></span>
 <span id="cb1-4"><a href="#cb1-4"></a><span class="co">---</span></span>
 <span id="cb1-5"><a href="#cb1-5"></a><span class="dt">&lt;</span><span class="kw">a</span><span class="ot"> class</span><span class="op">=</span><span class="st">"return-button"</span><span class="ot"> href</span><span class="op">=</span><span class="st">"index.qmd"</span><span class="dt">&gt;</span>⬅ Return<span class="dt">&lt;/</span><span class="kw">a</span><span class="dt">&gt;</span></span>
 <span id="cb1-6"><a href="#cb1-6"></a></span>
 <span id="cb1-7"><a href="#cb1-7"></a><span class="fu">## Problem</span></span>
 <span id="cb1-8"><a href="#cb1-8"></a></span>
-<span id="cb1-9"><a href="#cb1-9"></a></span>
+<span id="cb1-9"><a href="#cb1-9"></a>Consider a world with two economies, Canada and the United States, indexed by $i=Can,US$, respectively. Suppose that both economies are populated by a large number of identical households with preferences given by</span>
 <span id="cb1-10"><a href="#cb1-10"></a></span>
-<span id="cb1-11"><a href="#cb1-11"></a><span class="fu">## Answer</span></span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
+<span id="cb1-11"><a href="#cb1-11"></a>$$</span>
+<span id="cb1-12"><a href="#cb1-12"></a>E_0 \sum_{t=0}^{\infty} </span>
+<span id="cb1-13"><a href="#cb1-13"></a>\beta^t \frac{\left[</span>
+<span id="cb1-14"><a href="#cb1-14"></a>c^i_t - \frac{</span>
+<span id="cb1-15"><a href="#cb1-15"></a>(h^i_t)^{\omega}}{\omega}\right]^{1-\sigma} - 1}{1 - \sigma},</span>
+<span id="cb1-16"><a href="#cb1-16"></a>$$</span>
+<span id="cb1-17"><a href="#cb1-17"></a></span>
+<span id="cb1-18"><a href="#cb1-18"></a>where $c^i_t$ and $h^i_t$ denote, respectively, consumption and hours worked in country $i$ in period $t$. In both countries, households operate a technology that produces output, denoted $y^i_t$, using labor and capital, denoted $k^i_t$. The production technology is Cobb-Douglas and is given by</span>
+<span id="cb1-19"><a href="#cb1-19"></a></span>
+<span id="cb1-20"><a href="#cb1-20"></a>$$</span>
+<span id="cb1-21"><a href="#cb1-21"></a>y^i_t = A^i_t (k^i_t)^{\alpha} (h^i_t)^{1-\alpha},</span>
+<span id="cb1-22"><a href="#cb1-22"></a>$$</span>
+<span id="cb1-23"><a href="#cb1-23"></a></span>
+<span id="cb1-24"><a href="#cb1-24"></a>where $A^i_t$ denotes a productivity shock in country $i$, which evolves according to the following AR(1) process:</span>
+<span id="cb1-25"><a href="#cb1-25"></a></span>
+<span id="cb1-26"><a href="#cb1-26"></a>$$</span>
+<span id="cb1-27"><a href="#cb1-27"></a>\ln A^i_{t+1} = \rho^i \ln A^i_t + \eta^i \epsilon^i_{t+1},</span>
+<span id="cb1-28"><a href="#cb1-28"></a>$$</span>
+<span id="cb1-29"><a href="#cb1-29"></a></span>
+<span id="cb1-30"><a href="#cb1-30"></a>where $\epsilon^i_t$ is an i.i.d. innovation with mean zero and variance one, and $\rho^i$ and $\eta^i$ are country-specific parameters. Both countries produce the same good. The evolution of capital obeys the following law of motion:</span>
+<span id="cb1-31"><a href="#cb1-31"></a></span>
+<span id="cb1-32"><a href="#cb1-32"></a>$$</span>
+<span id="cb1-33"><a href="#cb1-33"></a>k^i_{t+1} = k^i_t + \frac{1}{\phi^i} \left<span class="co">[</span><span class="ot"> \left( \frac{i^i_t}{\delta k^i_t} \right)^{\phi^i} - 1 \right</span><span class="co">]</span> \delta k^i_t,</span>
+<span id="cb1-34"><a href="#cb1-34"></a>$$</span>
+<span id="cb1-35"><a href="#cb1-35"></a></span>
+<span id="cb1-36"><a href="#cb1-36"></a>where $i^i_t$ denotes investment in country $i$, and $\phi^i$ is a country-specific parameter.</span>
+<span id="cb1-37"><a href="#cb1-37"></a></span>
+<span id="cb1-38"><a href="#cb1-38"></a>Assume that asset markets are complete and that there exists free mobility of goods and financial assets between the United States and Canada, but that labor and installed capital are immobile across countries. Finally, assume that Canada has measure zero relative to the United States, so that the latter can be modeled as a closed economy.</span>
+<span id="cb1-39"><a href="#cb1-39"></a></span>
+<span id="cb1-40"><a href="#cb1-40"></a>Consider the business cycle regularities for Canada for the period 1960–2011 shown in Exercise 4.10. The following table displays observed standard deviations, serial correlations, and correlations with output for the United States for 1960–2011. The data are annual and are expressed in per capita terms. The series $y$, $c$, and $i$ are in logs, and the series $tb/y$ is in levels. All series were quadratically detrended. Standard deviations are measured in percentage points.</span>
+<span id="cb1-41"><a href="#cb1-41"></a></span>
+<span id="cb1-42"><a href="#cb1-42"></a><span class="dt">&lt;</span><span class="kw">img</span><span class="ot"> src</span><span class="op">=</span><span class="st">"figures/4_11_1.png"</span><span class="ot"> alt</span><span class="op">=</span><span class="st">"4.11 （1）"</span><span class="ot"> style</span><span class="op">=</span><span class="st">"display:block; margin:auto; max-width:90%;box-shadow:none; border:none;"</span><span class="ot"> </span><span class="dt">/&gt;</span></span>
+<span id="cb1-43"><a href="#cb1-43"></a></span>
+<span id="cb1-44"><a href="#cb1-44"></a>Source: Own calculations based on data from World Development Indicators.</span>
+<span id="cb1-45"><a href="#cb1-45"></a></span>
+<span id="cb1-46"><a href="#cb1-46"></a><span class="ss">1. </span>Calibrate the model as follows. Assume that the deterministic steady-state levels of consumption per capita are the same in Canada and the United States. Set $\beta = 1/1.04$, $\sigma = 2$, $\omega = 1.455$, $\alpha = 0.32$, and $\delta = 0.10$. Set the remaining six parameters, $\rho^i$, $\eta^i$, and $\phi^i$, for $i = \text{Can, US}$, to match the observed standard deviations and serial correlations of output and the standard deviations of investment in Canada and the United States. Use a distance minimization procedure as in exercise 4.8.</span>
+<span id="cb1-47"><a href="#cb1-47"></a></span>
+<span id="cb1-48"><a href="#cb1-48"></a><span class="ss">2. </span>Approximate the equilibrium dynamics up to first order. Produce the theoretical counterparts of the two tables showing Canadian and U.S. business-cycle regularities.</span>
+<span id="cb1-49"><a href="#cb1-49"></a></span>
+<span id="cb1-50"><a href="#cb1-50"></a><span class="ss">3. </span>Comment on the ability of the model to explain observed business cycles in Canada and the United States.</span>
+<span id="cb1-51"><a href="#cb1-51"></a></span>
+<span id="cb1-52"><a href="#cb1-52"></a><span class="ss">4. </span>Plot the response of Canadian output, consumption, investment, hours, and the trade-balance-to-output ratio to a unit innovation in the Canadian productivity shock. On the same plot, show the response of the Canadian variables to a unit innovation to the U.S. productivity shock. Discuss the differences in the responses to a domestic and a foreign technology shock and provide intuition.</span>
+<span id="cb1-53"><a href="#cb1-53"></a></span>
+<span id="cb1-54"><a href="#cb1-54"></a><span class="ss">5. </span>Compare, by means of a graph and a discussion, the predicted responses of Canada and the United States to a unit innovation in the U.S. productivity shock. The graph should include the same variables as the one for the previous question.</span>
+<span id="cb1-55"><a href="#cb1-55"></a></span>
+<span id="cb1-56"><a href="#cb1-56"></a><span class="ss">6. </span>Compute the fraction of the volatilities of Canadian output and the trade-balance-to-output ratio explained by the U.S. productivity shock according to the present model. To this end, set $\eta^{\text{Can}} = 0$, and compute the two standard deviations of interest. Then take the ratio of these standard deviations to their respective counterparts when both shocks are active.</span>
+<span id="cb1-57"><a href="#cb1-57"></a></span>
+<span id="cb1-58"><a href="#cb1-58"></a><span class="ss">7. </span>This question aims to quantify the importance of common shocks as drivers of the U.S.–Canadian business cycle. Replace the process for the Canadian productivity shock with the following one:</span>
+<span id="cb1-59"><a href="#cb1-59"></a>  </span>
+<span id="cb1-60"><a href="#cb1-60"></a>$$</span>
+<span id="cb1-61"><a href="#cb1-61"></a>\ln A^{\text{Can}}_{t+1} = \rho^{\text{Can}} \ln A^{\text{Can}}_t + \eta^{\text{Can}} \epsilon^{\text{Can}}_{t+1} + \nu \epsilon^{\text{US}}_{t+1}.</span>
+<span id="cb1-62"><a href="#cb1-62"></a>$$</span>
+<span id="cb1-63"><a href="#cb1-63"></a></span>
+<span id="cb1-64"><a href="#cb1-64"></a>All other aspects of the model are as before. Recalibrate the model using an augmented version of the strategy described above that includes an additional parameter, $\nu$, and an additional target, the cross-country correlation of output, which in the sample used here is 0.64. Report the new set of calibrated parameters. Compute the variance of Canadian output. Now set $\nu = 0$, keeping all other parameter values unchanged, and recalculate the variance of Canadian output. Explain.</span>
+<span id="cb1-65"><a href="#cb1-65"></a></span>
+<span id="cb1-66"><a href="#cb1-66"></a><span class="fu">## Answer</span></span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 

@@ -1,11 +1,29 @@
 ---
-title: "Exercise 4."
-subtitle: ""
+title: "Exercise 4.13"
+subtitle: "An SOE-RBC Model with Cobb-Douglas Preferences"
 ---
 <a class="return-button" href="index.qmd">⬅ Return</a>
 
 ## Problem
 
+Modify the period utility function of the EDEIR model as follows:
 
+$$
+U(c,h) = \frac{\left[
+c^{1-\omega}(1-h)^{\omega}
+\right]^{1-\sigma}-1}
+{1-\sigma}.
+$$
+
+All other features of the model are unchanged.
+
+1. Derive analytically the steady state of the model.
+
+2. Set all parameters of the model as in table~\ref{table:soe-rbc-calibration-SGU-JIE}, except for $\omega$.
+   Calibrate $\omega$ to ensure that in the deterministic steady state, hours equal 1/3 (i.e., ensure that in the steady state, households spend one-third of their time working). Calculate the implied value of $\omega$.
+
+3. Produce a table of predicted second moments similar to table~\ref{table:soe-rbc-edeir}. When performing this step, you might find it convenient to use as a starting point the Matlab programs for the EDEIR SOE-RBC model posted online.
+
+4. Compare the predictions of the present model with those of its GHH-preference counterpart.
 
 ## Answer

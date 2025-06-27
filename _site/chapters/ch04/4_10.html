@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.32">
+<meta name="generator" content="quarto-1.7.31">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Exercise 4. – open economy macroeconomics by martín uribe and stephanie schmitt-grohé, PUP 2017</title>
+<title>Exercise 4.10 – open economy macroeconomics by martín uribe and stephanie schmitt-grohé, PUP 2017</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -71,10 +71,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-991b1886d3c685c7aa2b62b80640c7af.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-a14e3238c51140e99ccc48519b6ed9ce.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -178,7 +178,8 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title">Exercise 4.</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+<div class="quarto-title-block"><div><h1 class="title">Exercise 4.10</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+<p class="subtitle lead">Calibrating the EDEIR Model Using Canadian Data Over the Period 1960–2011</p>
 </div>
 
 
@@ -198,9 +199,22 @@ window.Quarto = {
 <p><a class="return-button" href="../../chapters/ch04/index.html">⬅ Return</a></p>
 <section id="problem" class="level2">
 <h2 class="anchored" data-anchor-id="problem">Problem</h2>
+<p>In section 4.5, we calibrated the EDEIR model using second moments computed with Canadian data for 1946–1985. The middle panel of table 4.2 updates the empirical second moments for the period 1960–2011. The present exercise uses these empirical regularities to calibrate and evaluate the SOE-RBC model.</p>
+<ol type="1">
+<li><p>Calibrate the EDEIR model as follows. Set <span class="math inline">\(\beta = 1/1.04\)</span>, <span class="math inline">\(\sigma = 2\)</span>, <span class="math inline">\(\omega = 1.455\)</span>, <span class="math inline">\(\alpha = 0.32\)</span>, <span class="math inline">\(\delta = 0.10\)</span>, and <span class="math inline">\(\overline{d} = 0.7442\)</span>. Set the remaining four parameters, <span class="math inline">\(\rho\)</span>, <span class="math inline">\(\eta\)</span>, <span class="math inline">\(\phi\)</span>, and <span class="math inline">\(\psi_1\)</span>, to match the observed standard deviations and serial correlations of output and the standard deviations of investment and the trade-balance-to-output ratio in Canada during 1960–2011. Approximate the equilibrium dynamics up to first order, and use a distance minimization procedure similar to the one used in exercise 4.8. Compare the resulting values for <span class="math inline">\(\rho\)</span>, <span class="math inline">\(\tilde{\eta}\)</span>, <span class="math inline">\(\phi\)</span>, and <span class="math inline">\(\psi_1\)</span> with those reported in table 4.1.</p></li>
+<li><p>Compute theoretical second moments and present your findings as in the third panel of table 4.2.</p></li>
+<li><p>Comment on the ability of the model to explain observed business cycles in Canada during 1960–2011.</p></li>
+<li><p>Compute the unconditional standard deviation of the productivity shock, <span class="math inline">\(\ln A_t\)</span>, under the present calibration. Compare this number to the one corresponding to the 1946–1985 calibration presented in section 4.5. Now do the same with the standard deviation of output. Discuss and interpret your findings.</p></li>
+</ol>
 </section>
 <section id="answer" class="level2">
 <h2 class="anchored" data-anchor-id="answer">Answer</h2>
+<p><a href="code/4_10_code.zip" download="" style="display:inline-block;padding:8px 16px;background:#007acc;color:white;text-decoration:none;border-radius:5px;"> 📥 Download Matlab Code (4_10_code.zip) </a></p>
+<p>Period 1946–1985: <span class="math inline">\(\sigma_A = 0.0142\)</span>, <span class="math inline">\(\sigma_y = 3.0826\)</span>.</p>
+<p>Period 1960–2011: <span class="math inline">\(\sigma_A = 0.0133\)</span>, <span class="math inline">\(\sigma_y = 3.7245\)</span>.</p>
+<p>Puzzle: Let “old” denote the 1946–1985 calibration and “new” denote the 1960–2011 calibration. The predicted standard deviation of output under new is higher than under old. However, the predicted standard deviation of the tech. shock is lower under new than under old. How can that be, since the only source of volatility is the tech shock?</p>
+<p>Explanation: In the new data sample, observed output is more persistent. The predicted serial correlation depends on <span class="math inline">\(\rho\)</span> but not on <span class="math inline">\(\eta\)</span>. Therefore, the new calibration must feature a larger <span class="math inline">\(\rho\)</span>, since the serial correlation of output is a target moment. Now increasing <span class="math inline">\(\rho\)</span> all else constant causes the predicted variance of both the tech shock and output to increase. It turns out, that this increase in the volatility of output is so high that with <span class="math inline">\(\eta\)</span> unchanged the model would overpredict the new variance of output. Therefore, <span class="math inline">\(\eta\)</span> must be lower in new than in old, since the standard deviation of output is a target moment. It turns out that the volatility of the tech. shock under the new calibration ends up being lower than under the old calibration, which is somewhat surprising.</p>
+<p>We learned that increasing <span class="math inline">\(\rho\)</span> and at the same time lowering <span class="math inline">\(\eta\)</span> so as to keep the variance of <span class="math inline">\(\ln A_t\)</span> constant raises the variance of output. The intuition for why the volatility of output increases with <span class="math inline">\(\rho\)</span> holding the std. dev. of <span class="math inline">\(A_t\)</span> constant is that a more persistent tech. shock causes larger swings in investment and therefore in capital and therefore in output.</p>
 
 
 
@@ -672,7 +686,7 @@ window.Quarto = {
     const script = document.createElement("script");
     script.src = "https://giscus.app/client.js";
     script.async = true;
-    script.dataset.repo = "uribe-schmitt-grohe/open-economy-macroeconomics-solutions-2";
+    script.dataset.repo = "uribe-schmitt-grohe/open-economy-macroeconomics-solutions";
     script.dataset.repoId = "R_kgDOO6HT_w";
     script.dataset.category = "General";
     script.dataset.categoryId = "DIC_kwDOO6HT_84CrWvF";
@@ -689,16 +703,39 @@ window.Quarto = {
   loadGiscus();
 </script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
 <div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1"></a><span class="co">---</span></span>
-<span id="cb1-2"><a href="#cb1-2"></a><span class="an">title:</span><span class="co"> "Exercise 4."</span></span>
-<span id="cb1-3"><a href="#cb1-3"></a><span class="an">subtitle:</span><span class="co"> ""</span></span>
+<span id="cb1-2"><a href="#cb1-2"></a><span class="an">title:</span><span class="co"> "Exercise 4.10"</span></span>
+<span id="cb1-3"><a href="#cb1-3"></a><span class="an">subtitle:</span><span class="co"> "Calibrating the EDEIR Model Using Canadian Data Over the Period 1960–2011"</span></span>
 <span id="cb1-4"><a href="#cb1-4"></a><span class="co">---</span></span>
 <span id="cb1-5"><a href="#cb1-5"></a><span class="dt">&lt;</span><span class="kw">a</span><span class="ot"> class</span><span class="op">=</span><span class="st">"return-button"</span><span class="ot"> href</span><span class="op">=</span><span class="st">"index.qmd"</span><span class="dt">&gt;</span>⬅ Return<span class="dt">&lt;/</span><span class="kw">a</span><span class="dt">&gt;</span></span>
 <span id="cb1-6"><a href="#cb1-6"></a></span>
 <span id="cb1-7"><a href="#cb1-7"></a><span class="fu">## Problem</span></span>
 <span id="cb1-8"><a href="#cb1-8"></a></span>
-<span id="cb1-9"><a href="#cb1-9"></a></span>
+<span id="cb1-9"><a href="#cb1-9"></a>In section 4.5, we calibrated the EDEIR model using second moments computed with Canadian data for 1946–1985. The middle panel of table 4.2 updates the empirical second moments for the period 1960–2011. The present exercise uses these empirical regularities to calibrate and evaluate the SOE-RBC model.</span>
 <span id="cb1-10"><a href="#cb1-10"></a></span>
-<span id="cb1-11"><a href="#cb1-11"></a><span class="fu">## Answer</span></span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
+<span id="cb1-11"><a href="#cb1-11"></a><span class="ss">1. </span>Calibrate the EDEIR model as follows. Set $\beta = 1/1.04$, $\sigma = 2$, $\omega = 1.455$, $\alpha = 0.32$, $\delta = 0.10$, and $\overline{d} = 0.7442$. Set the remaining four parameters, $\rho$, $\eta$, $\phi$, and $\psi_1$, to match the observed standard deviations and serial correlations of output and the standard deviations of investment and the trade-balance-to-output ratio in Canada during 1960–2011. Approximate the equilibrium dynamics up to first order, and use a distance minimization procedure similar to the one used in exercise 4.8. Compare the resulting values for $\rho$, $\tilde{\eta}$, $\phi$, and $\psi_1$ with those reported in table 4.1.</span>
+<span id="cb1-12"><a href="#cb1-12"></a></span>
+<span id="cb1-13"><a href="#cb1-13"></a><span class="ss">2. </span>Compute theoretical second moments and present your findings as in the third panel of table 4.2.</span>
+<span id="cb1-14"><a href="#cb1-14"></a></span>
+<span id="cb1-15"><a href="#cb1-15"></a><span class="ss">3. </span>Comment on the ability of the model to explain observed business cycles in Canada during 1960–2011.</span>
+<span id="cb1-16"><a href="#cb1-16"></a></span>
+<span id="cb1-17"><a href="#cb1-17"></a><span class="ss">4. </span>Compute the unconditional standard deviation of the productivity shock, $\ln A_t$, under the present calibration. Compare this number to the one corresponding to the 1946–1985 calibration presented in section 4.5. Now do the same with the standard deviation of output. Discuss and interpret your findings.</span>
+<span id="cb1-18"><a href="#cb1-18"></a></span>
+<span id="cb1-19"><a href="#cb1-19"></a></span>
+<span id="cb1-20"><a href="#cb1-20"></a><span class="fu">## Answer</span></span>
+<span id="cb1-21"><a href="#cb1-21"></a></span>
+<span id="cb1-22"><a href="#cb1-22"></a><span class="dt">&lt;</span><span class="kw">a</span><span class="ot"> href</span><span class="op">=</span><span class="st">"code/4_10_code.zip"</span><span class="ot"> download style</span><span class="op">=</span><span class="st">"display:inline-block;padding:8px 16px;background:#007acc;color:white;text-decoration:none;border-radius:5px;"</span><span class="dt">&gt;</span></span>
+<span id="cb1-23"><a href="#cb1-23"></a>📥 Download Matlab Code (4_10_code.zip)</span>
+<span id="cb1-24"><a href="#cb1-24"></a><span class="dt">&lt;/</span><span class="kw">a</span><span class="dt">&gt;</span></span>
+<span id="cb1-25"><a href="#cb1-25"></a></span>
+<span id="cb1-26"><a href="#cb1-26"></a>Period 1946–1985: $\sigma_A = 0.0142$, $\sigma_y = 3.0826$.</span>
+<span id="cb1-27"><a href="#cb1-27"></a></span>
+<span id="cb1-28"><a href="#cb1-28"></a>Period 1960–2011: $\sigma_A = 0.0133$, $\sigma_y = 3.7245$.</span>
+<span id="cb1-29"><a href="#cb1-29"></a></span>
+<span id="cb1-30"><a href="#cb1-30"></a>Puzzle: Let “old” denote the 1946–1985 calibration and “new” denote the 1960–2011 calibration. The predicted standard deviation of output under new is higher than under old. However, the predicted standard deviation of the tech. shock is lower under new than under old. How can that be, since the only source of volatility is the tech shock?</span>
+<span id="cb1-31"><a href="#cb1-31"></a></span>
+<span id="cb1-32"><a href="#cb1-32"></a>Explanation: In the new data sample, observed output is more persistent. The predicted serial correlation depends on $\rho$ but not on $\eta$. Therefore, the new calibration must feature a larger $\rho$, since the serial correlation of output is a target moment. Now increasing $\rho$ all else constant causes the predicted variance of both the tech shock and output to increase. It turns out, that this increase in the volatility of output is so high that with $\eta$ unchanged the model would overpredict the new variance of output. Therefore, $\eta$ must be lower in new than in old, since the standard deviation of output is a target moment. It turns out that the volatility of the tech. shock under the new calibration ends up being lower than under the old calibration, which is somewhat surprising.</span>
+<span id="cb1-33"><a href="#cb1-33"></a></span>
+<span id="cb1-34"><a href="#cb1-34"></a>We learned that increasing $\rho$ and at the same time lowering $\eta$ so as to keep the variance of $\ln A_t$ constant raises the variance of output. The intuition for why the volatility of output increases with $\rho$ holding the std. dev. of $A_t$ constant is that a more persistent tech. shock causes larger swings in investment and therefore in capital and therefore in output.</span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 

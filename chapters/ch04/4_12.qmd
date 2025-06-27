@@ -1,11 +1,129 @@
 ---
-title: "Exercise 4."
-subtitle: ""
+title: "Exercise 4.12"
+subtitle: "GHH Preferences and No Capital"
 ---
 <a class="return-button" href="index.qmd">⬅ Return</a>
 
+
 ## Problem
+
+Consider a small open economy
+populated by an infinite number of identical households with preferences of the form
+
+$$
+(1-\sigma)^{-1}\sum_{t=0}^{\infty} \beta^t
+\left(c_t-\frac{h_t^{\omega}}{\omega}
+\right)^{1-\sigma},
+$$
+
+where $c_t$ denotes consumption of a perishable good in period $t$, $h_t$ denotes labor effort in period $t$, and $\beta\in(0,1)$, $\sigma>1$, and $\omega>1$ are parameters. Each household operates a technology 
+that produces consumption goods according to the relationship
+
+$$
+y_t = h_t^{\alpha},
+$$
+
+where $y_t$ denotes output, and  $\alpha\in(0,1)$ is a parameter. 
+The household can borrow or lend in international financial markets at the interest rate $r_t = r^*+p(\tilde{d}_t)$, where $r^*$ denotes the world interest rate and  satisfies $\beta(1+r^*)=1$. The function $p(\tilde{d}_t)$ is a country interest-rate premium in period $t$, satisfying $p(0)=0$, and $p(x)\neq0$ for $x\neq0$, where $\tilde{d}_t$ denotes the cross-sectional average debt holdings in period $t$ and is taken as given by the individual household. Let $d_t$ denote the household's debt holdings in period $t$ maturing in $t+1$. Households cannot play Ponzi games.
+
+1. Write down the household's optimization problem.
+
+2. Derive the first-order conditions associated with the household's optimization problem.
+
+3. Display the complete set of equilibrium conditions.
+
+4. Derive the steady state of the economy. In particular, compute the steady-state values of consumption, hours, output, the trade balance, the current account, and external debt, denoted, respectively, $c$, $h$, $y$, $tb$, $ca$, and $d$.
+
+5. Derive analytically a first-order approximation to the equilibrium conditions. Express it as a first-order difference equation in the vector $[\hat{d}_{t-1} \,\, \hat{c}_t]'$, where $\hat{d}_{t-1}\equiv d_{t-1}-d$, and $\hat{c}_t\equiv \ln(c_t/c)$.
+
+6. Derive conditions under which the perfect-foresight equilibrium is locally unique.
 
 
 
 ## Answer
+
+1. The household chooses $\{c_t, h_t, d_t\}_{t=0}^\infty$ to maximize
+$$
+\sum_{t=0}^{\infty} \beta^t \frac{\left(c_t - \frac{h_t^{\omega}}{\omega} \right)^{1 - \sigma}}{1 - \sigma}
+$$
+subject to the sequence of budget constraints:
+$$
+c_t + d_t = h_t^{\alpha} + (1 + r_{t-1}) d_{t-1},
+$$
+taking $r_t$ and $d_{-1}$ as given and satisfying the no-Ponzi condition.
+
+2. The first-order conditions are:
+- With respect to $c_t$:
+$$
+\left(c_t - \frac{h_t^{\omega}}{\omega}\right)^{-\sigma} = \lambda_t
+$$
+- With respect to $h_t$:
+$$
+\left(c_t - \frac{h_t^{\omega}}{\omega}\right)^{-\sigma} h_t^{\omega - 1} = \lambda_t \alpha h_t^{\alpha - 1}
+$$
+- With respect to $d_t$:
+$$
+\lambda_t = \beta (1 + r_t) \lambda_{t+1}
+$$
+
+3. The complete set of equilibrium conditions includes:
+- Intra-temporal optimality:
+$$
+\left(c_t - \frac{h_t^{\omega}}{\omega}\right)^{-\sigma} h_t^{\omega - 1} = \lambda_t \alpha h_t^{\alpha - 1}
+$$
+- Inter-temporal Euler equation:
+$$
+\lambda_t = \beta (1 + r_t) \lambda_{t+1}
+$$
+- Budget constraint:
+$$
+c_t + d_t = h_t^{\alpha} + (1 + r_{t-1}) d_{t-1}
+$$
+- Interest rate function:
+$$
+r_t = r^* + p(d_t)
+$$
+- No-Ponzi condition:
+$$
+\lim_{T \to \infty} \frac{d_T}{\prod_{s=0}^{T-1} (1 + r_s)} = 0
+$$
+
+4. In steady state, $r = r^*$, $d = 0$, and $h$ satisfies:
+$$
+h = \bar{h} = \alpha^{\frac{1}{\omega - \alpha}}
+$$
+Then,
+$$
+c = y = \bar{h}^{\alpha}, \quad tb = ca = d = 0
+$$
+
+5. Let $\hat{d}_{t-1} = d_{t-1}$ and $\hat{c}_t = \ln(c_t / c)$. Then the linearized system becomes:
+$$
+\hat{d}_t = \beta^{-1} \hat{d}_{t-1} + c \hat{c}_t
+$$
+$$
+\hat{c}_{t+1} = \frac{p'(0)}{\sigma } \cdot \frac{\omega - \alpha}{\omega}\hat{d}_{t-1} +\left(1+ c \cdot \frac{\beta p'(0)}{\sigma}\cdot\frac{\omega - \alpha}{\omega}\right) \hat{c}_t
+$$
+which can be written in matrix form:
+$$
+\begin{bmatrix}
+\hat{d}_{t} \\
+\hat{c}_{t+1}
+\end{bmatrix}
+=
+\begin{bmatrix}
+\beta^{-1} & c \\
+\frac{p'(0)}{\sigma } \cdot \frac{\omega - \alpha}{\omega} & 1+ c\beta \cdot \frac{p'(0)}{\sigma} \cdot \frac{\omega - \alpha}{\omega}
+\end{bmatrix}
+\begin{bmatrix}
+\hat{d}_{t-1} \\
+\hat{c}_t
+\end{bmatrix}
+$$
+
+6. For local uniqueness, the system must have one eigenvalue inside and one outside the unit circle. This requires:
+- $p'(0) > 0$
+- $\det(M) = \beta^{-1} > 1$
+- $\operatorname{tr}(M) = \beta^{-1} + 1 + c\beta X > 2$ where $X = \frac{p'(0)}{\sigma} \cdot \frac{\omega - \alpha}{\omega} > 0$
+
+This ensures a saddle-path stable equilibrium with a unique perfect foresight path.

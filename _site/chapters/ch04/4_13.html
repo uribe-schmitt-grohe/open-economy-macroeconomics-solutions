@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.32">
+<meta name="generator" content="quarto-1.7.31">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Exercise 4. – open economy macroeconomics by martín uribe and stephanie schmitt-grohé, PUP 2017</title>
+<title>Exercise 4.13 – open economy macroeconomics by martín uribe and stephanie schmitt-grohé, PUP 2017</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -71,10 +71,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-991b1886d3c685c7aa2b62b80640c7af.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-a14e3238c51140e99ccc48519b6ed9ce.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -178,7 +178,8 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title">Exercise 4.</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+<div class="quarto-title-block"><div><h1 class="title">Exercise 4.13</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+<p class="subtitle lead">An SOE-RBC Model with Cobb-Douglas Preferences</p>
 </div>
 
 
@@ -198,6 +199,20 @@ window.Quarto = {
 <p><a class="return-button" href="../../chapters/ch04/index.html">⬅ Return</a></p>
 <section id="problem" class="level2">
 <h2 class="anchored" data-anchor-id="problem">Problem</h2>
+<p>Modify the period utility function of the EDEIR model as follows:</p>
+<p><span class="math display">\[
+U(c,h) = \frac{\left[
+c^{1-\omega}(1-h)^{\omega}
+\right]^{1-\sigma}-1}
+{1-\sigma}.
+\]</span></p>
+<p>All other features of the model are unchanged.</p>
+<ol type="1">
+<li><p>Derive analytically the steady state of the model.</p></li>
+<li><p>Set all parameters of the model as in table~<span class="math inline">\(\ref{table:soe-rbc-calibration-SGU-JIE}\)</span>, except for <span class="math inline">\(\omega\)</span>. Calibrate <span class="math inline">\(\omega\)</span> to ensure that in the deterministic steady state, hours equal 1/3 (i.e., ensure that in the steady state, households spend one-third of their time working). Calculate the implied value of <span class="math inline">\(\omega\)</span>.</p></li>
+<li><p>Produce a table of predicted second moments similar to table~<span class="math inline">\(\ref{table:soe-rbc-edeir}\)</span>. When performing this step, you might find it convenient to use as a starting point the Matlab programs for the EDEIR SOE-RBC model posted online.</p></li>
+<li><p>Compare the predictions of the present model with those of its GHH-preference counterpart.</p></li>
+</ol>
 </section>
 <section id="answer" class="level2">
 <h2 class="anchored" data-anchor-id="answer">Answer</h2>
@@ -672,7 +687,7 @@ window.Quarto = {
     const script = document.createElement("script");
     script.src = "https://giscus.app/client.js";
     script.async = true;
-    script.dataset.repo = "uribe-schmitt-grohe/open-economy-macroeconomics-solutions-2";
+    script.dataset.repo = "uribe-schmitt-grohe/open-economy-macroeconomics-solutions";
     script.dataset.repoId = "R_kgDOO6HT_w";
     script.dataset.category = "General";
     script.dataset.categoryId = "DIC_kwDOO6HT_84CrWvF";
@@ -689,16 +704,34 @@ window.Quarto = {
   loadGiscus();
 </script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
 <div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1"></a><span class="co">---</span></span>
-<span id="cb1-2"><a href="#cb1-2"></a><span class="an">title:</span><span class="co"> "Exercise 4."</span></span>
-<span id="cb1-3"><a href="#cb1-3"></a><span class="an">subtitle:</span><span class="co"> ""</span></span>
+<span id="cb1-2"><a href="#cb1-2"></a><span class="an">title:</span><span class="co"> "Exercise 4.13"</span></span>
+<span id="cb1-3"><a href="#cb1-3"></a><span class="an">subtitle:</span><span class="co"> "An SOE-RBC Model with Cobb-Douglas Preferences"</span></span>
 <span id="cb1-4"><a href="#cb1-4"></a><span class="co">---</span></span>
 <span id="cb1-5"><a href="#cb1-5"></a><span class="dt">&lt;</span><span class="kw">a</span><span class="ot"> class</span><span class="op">=</span><span class="st">"return-button"</span><span class="ot"> href</span><span class="op">=</span><span class="st">"index.qmd"</span><span class="dt">&gt;</span>⬅ Return<span class="dt">&lt;/</span><span class="kw">a</span><span class="dt">&gt;</span></span>
 <span id="cb1-6"><a href="#cb1-6"></a></span>
 <span id="cb1-7"><a href="#cb1-7"></a><span class="fu">## Problem</span></span>
 <span id="cb1-8"><a href="#cb1-8"></a></span>
-<span id="cb1-9"><a href="#cb1-9"></a></span>
+<span id="cb1-9"><a href="#cb1-9"></a>Modify the period utility function of the EDEIR model as follows:</span>
 <span id="cb1-10"><a href="#cb1-10"></a></span>
-<span id="cb1-11"><a href="#cb1-11"></a><span class="fu">## Answer</span></span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
+<span id="cb1-11"><a href="#cb1-11"></a>$$</span>
+<span id="cb1-12"><a href="#cb1-12"></a>U(c,h) = \frac{\left[</span>
+<span id="cb1-13"><a href="#cb1-13"></a>c^{1-\omega}(1-h)^{\omega}</span>
+<span id="cb1-14"><a href="#cb1-14"></a>\right]^{1-\sigma}-1}</span>
+<span id="cb1-15"><a href="#cb1-15"></a>{1-\sigma}.</span>
+<span id="cb1-16"><a href="#cb1-16"></a>$$</span>
+<span id="cb1-17"><a href="#cb1-17"></a></span>
+<span id="cb1-18"><a href="#cb1-18"></a>All other features of the model are unchanged.</span>
+<span id="cb1-19"><a href="#cb1-19"></a></span>
+<span id="cb1-20"><a href="#cb1-20"></a><span class="ss">1. </span>Derive analytically the steady state of the model.</span>
+<span id="cb1-21"><a href="#cb1-21"></a></span>
+<span id="cb1-22"><a href="#cb1-22"></a><span class="ss">2. </span>Set all parameters of the model as in table~\ref{table:soe-rbc-calibration-SGU-JIE}, except for $\omega$.</span>
+<span id="cb1-23"><a href="#cb1-23"></a>   Calibrate $\omega$ to ensure that in the deterministic steady state, hours equal 1/3 (i.e., ensure that in the steady state, households spend one-third of their time working). Calculate the implied value of $\omega$.</span>
+<span id="cb1-24"><a href="#cb1-24"></a></span>
+<span id="cb1-25"><a href="#cb1-25"></a><span class="ss">3. </span>Produce a table of predicted second moments similar to table~\ref{table:soe-rbc-edeir}. When performing this step, you might find it convenient to use as a starting point the Matlab programs for the EDEIR SOE-RBC model posted online.</span>
+<span id="cb1-26"><a href="#cb1-26"></a></span>
+<span id="cb1-27"><a href="#cb1-27"></a><span class="ss">4. </span>Compare the predictions of the present model with those of its GHH-preference counterpart.</span>
+<span id="cb1-28"><a href="#cb1-28"></a></span>
+<span id="cb1-29"><a href="#cb1-29"></a><span class="fu">## Answer</span></span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 

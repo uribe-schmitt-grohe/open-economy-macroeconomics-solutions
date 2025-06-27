@@ -1,11 +1,187 @@
 ---
-title: "Exercise 4."
-subtitle: ""
+title: "Exercise 4.7"
+subtitle: "Durable Consumption, I"
 ---
 <a class="return-button" href="index.qmd">⬅ Return</a>
 
 ## Problem
 
+Consider a SOE model with nondurable and durable consumption goods. Let $c_{N,t}$ denote consumption of nondurables in period $t$, and let $c_{D,t}$ denote purchases of durables in period $t$. The stock of durable consumer goods, denoted $s_t$, is assumed to evolve over time as
+
+$$
+s_t = (1-\delta) s_{t-1} + c_{D,t},
+$$
+
+where $\delta \in (0,1]$ denotes the depreciation rate of durable goods. Households have preferences over consumption $c_t$ of the form
+
+$$
+\sum_{t=0}^{\infty} \beta^t U(c_t),
+$$
+
+where $U$ is increasing in consumption and concave. Consumption $c_t$ is a composite of nondurable consumption and the service flow provided by the stock of consumer durables. Specifically, assume that
+
+$$
+c_t =
+\left[
+(1-\alpha)^{\frac{1}{\eta}} c_{N,t}^{1 - \frac{1}{\eta}} +
+\alpha^{\frac{1}{\eta}} s_t^{1 - \frac{1}{\eta}}
+\right]^{\frac{1}{1 - \frac{1}{\eta}}},
+$$
+
+where $\eta > 0$ and $\alpha \in (0,1)$.
+
+Households have access to an internationally traded risk-free one-period bond, which pays the interest rate $r_t$ when held between periods $t$ and $t+1$. The relative price of durables in terms of nondurables is one. The household is subject to a borrowing limit that prevents it from engaging in Ponzi schemes. Output, denoted $y_t$, is produced with capital according to a production function of the form $y_t = F(k_t)$, where $k_t$ denotes physical capital. The capital stock evolves over time as
+
+$$
+k_{t+1} = (1 - \delta_k) k_t + i_t,
+$$
+
+where $i_t$ denotes investment in period $t$, and $\delta_k$ is the depreciation rate on physical capital. 
+
+
+1. Describe  the household's  budget set.
+
+2. State the optimization problem of the household.
+
+3. Present the complete set of equilibrium conditions.
+
+4. The interest rate is constant over time and equal to $r_t = r = \beta^{-1} -1$. Assume that up to period $-1$, the economy was in a steady state equilibrium in which all variables were constant and $d=\bar{d}>0$, where $d$ denotes net external debt in the steady state. Find the share of expenditures on durables in total consumption expenditures in the steady state in terms of the parameters $\delta$, $r$, $\alpha$, and $\eta$. Suggest a strategy for calibrating those four parameters.
+
+5. Assume that in period $0$ the economy unexpectedly receives a positive income shock as a consequence of the rest of the world forgiving part of the country's net foreign debt. Assume that the positive income shock results in a 1 percent increase in the consumption of nondurables in period 0. Find the percentage increase in purchases of durables and in total consumption expenditures in period 0. Compare your answer to the one you would have obtained if all consumption goods were nondurable.
+
+6. Continuing to assume that consumption of nondurables has increased by 1 percent, find the change in the trade balance in period 0 expressed as a share of steady-state consumption expenditures. Is the response of the trade balance countercyclical? Compare your findings to those you would have obtained if all consumption goods were nondurable. How much amplification is there due to the presence of durables?
+
 
 
 ## Answer
+
+#### 1.
+The household budget set consists in sequences $k_{t+1}$, $d_t$, $c_{N,t}$, $c_{D,t}$, $i_t$, $s_t$,  $c_t$ satisfying 
+$$
+ F(k_t) + d_t = (1+r_{t-1}) d_{t-1} + c_{N,t} + c_{D,t} + i_t \tag{1}
+$$
+$$
+k_{t+1} = (1-\delta_k) k_{t} + i_t, \tag{2}
+$$
+$$
+c_t =
+\left[
+(1-\alpha)^{\frac{1}{\eta}} c_{N,t}^{1-\frac{1}{\eta}} 
++
+\alpha^{\frac{1}{\eta}}
+ s_t^{1-\frac{1}{\eta}}
+\right]
+^{\frac{1}{1-\frac{1}{\eta}}}, \tag{3}
+$$
+$$
+s_t = (1-\delta) s_{t-1} + c_{D,t}, tag{4}
+$$
+$$
+\mbox{some borrowing limit}, tag{5}
+$$
+
+#### 2.
+
+Maximize:
+$$
+\sum_{t=0}^{\infty} \beta^t U(c_t)
+$$
+Subject to (1)–(5), given $k_0$, $d_{-1}$, $s_{-1}$, and a time path for $r_t$.
+
+#### 3.
+
+An equilibrium are sequences $c_t$, $c_{N,t}$, $s_t$, $k_{t+1}$, $d_t$ satisfying for $t\ge0$:
+
+$$
+\left(\frac{1-\alpha}{\alpha}\right)^{1/\eta} \left(\frac{c_{N,t}}{s_t}\right)^{-1/\eta} = \frac1{1-\left(\frac{1-\delta}{1+r_t}\right)} \tag{6}
+$$
+$$
+F'(k_{t+1}) +1 - \delta_k = 1+r_t \tag{7}
+$$
+$$
+F(k_t) + d_t = (1+r_{t-1}) d_{t-1} + c_{N,t} + (s_t - (1-\delta)s_{t-1}) + (k_{t+1} - (1-\delta_k)k_{t}) \tag{8}
+$$
+$$
+U'(c_t) \frac{\partial c_t}{\partial c_{N,t}} = \beta (1+r_t) U'(c_{t+1}) \frac{\partial c_{t+1}}{\partial c_{N,t+1}} \tag{9}
+$$
+$$
+c_t = \left[(1-\alpha)^{\frac{1}{\eta}} c_{N,t}^{1-\frac{1}{\eta}} + \alpha^{\frac{1}{\eta}} s_t^{1-\frac{1}{\eta}} \right]^{\frac{1}{1-\frac{1}{\eta}}} \tag{10}
+$$
+
+Given $s_{-1}$, $k_0$, $d_0$, and the process $\{r_{t-1}\}$.
+
+#### 4.
+
+Let:
+$$
+s_d = \frac{c_D}{c_D + c_N} = \frac{1}{1 + \frac{c_N}{c_D}}.
+$$
+In steady state, $c_D = \delta s$. Using this in (6):
+$$
+\left(\frac{1-\alpha}{\alpha}\right)^{1/\eta} \left(\frac{c_{N}}{1/\delta c_{D}}\right)^{-1/\eta} = \frac1{1-\left(\frac{1-\delta}{1+r}\right)}
+$$
+Solve for $\frac{c_N}{c_D}$:
+$$
+\left(\frac{1-\alpha}{\alpha}\right)^{-1} \left(\frac{c_{N}}{1/\delta c_{D}}\right) = \left(\frac{1}{1-\left(\frac{1-\delta}{1+r}\right)}\right)^{-\eta}
+$$
+$$
+\left(\frac{c_{N}}{c_{D}}\right) = \left(\frac{1-\alpha}{\delta \alpha}\right) \left(\frac{1+r}{r+\delta}\right)^{-\eta}
+$$
+
+Then,
+$$
+s_d = \frac{1}{1 + \left(\frac{1-\alpha}{\delta \alpha}\right) \left(\frac{\delta + r}{1 + r}\right)^{\eta}} = \frac{\alpha}{\alpha + (1 - \alpha) x},
+$$
+where
+$$
+x = \frac{1}{\delta} \left(\frac{\delta + r}{1 + r}\right)^{\eta}
+$$
+and
+$$
+\frac{\partial x}{\partial \delta} = x \left[ -\frac1{\delta} + \frac{\eta}{\delta + r} \right].
+$$
+
+**Calibration strategy:**
+
+- Use observed durable consumption share $s_d$.
+- Use observed interest rate $r$.
+- Use depreciation rate $\delta$ from data.
+- Remaining parameter $\eta$ could be identified from interest rate shocks using a log-linearized version of equation (6).
+
+#### 5.
+
+From (6), since $r$ unchanged:
+$$
+\hat{c}^N_0 = \hat{s}_0.
+$$
+From (4):
+$$
+\hat{s}_0 = (1-\delta) \hat{s}_{-1} + \delta \hat{c}^D_0 = \delta \hat{c}^D_0 \Rightarrow \hat{c}^D_0 = \frac{1}{\delta} \hat{c}^N_0.
+$$
+If $\hat{c}^N_0 = 1\%$, $\delta = 0.05$, then $\hat{c}^D_0 = 20\%$.
+
+Total consumption expenditures:
+$$
+E_t = c^N_t + c^D_t \Rightarrow \hat{E}_0 = \frac{c^N + \frac{1}{\delta} c^D}{c^N + c^D} \hat{c}^N_0.
+$$
+Thus $\hat{E}_0 > \hat{c}^N_0$.
+
+If all goods nondurable ($\delta = 1$), then $\hat{E}_0 = \hat{c}^N_0$.
+
+#### 6.
+
+$$
+tb_t = F(k_t) - i_t - c^N_t - c^D_t.
+$$
+Since $k_0$, $i_0$ unchanged:
+$$
+\frac{tb_0 - tb}{c^N + c^D} = - \hat{E}_0 = - \frac{c^N + \frac{1}{\delta} c^D}{c^N + c^D} \hat{c}^N_0.
+$$
+
+So trade balance worsens. If output unchanged, trade balance is countercyclical.
+
+**Amplification:**
+$$
+\text{amplification} = \frac{\alpha(1-\delta)}{\alpha \delta + \left(\frac{\delta + r}{1 + r}\right)^{\eta} (1 - \alpha)}.
+$$
+This is increasing as $\delta \to 0$.
