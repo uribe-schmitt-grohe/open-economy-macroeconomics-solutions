@@ -1032,7 +1032,7 @@ E_t \widehat{A}_{t+1} &gt; \frac{1}{15} \widehat{A}_t
 <span id="cb1-170"><a href="#cb1-170"></a></span>
 <span id="cb1-171"><a href="#cb1-171"></a><span class="fu">#### 6.</span></span>
 <span id="cb1-172"><a href="#cb1-172"></a></span>
-<span id="cb1-173"><a href="#cb1-173"></a><span class="ss">- </span>In Chapter 3’s incomplete markets model, productivity shocks create **income effects**, leading to consumption booms and trade deficits.</span>
+<span id="cb1-173"><a href="#cb1-173"></a><span class="ss">- </span>In the current model, productivity shocks create **income effects**, leading to consumption booms and trade deficits.</span>
 <span id="cb1-174"><a href="#cb1-174"></a></span>
 <span id="cb1-175"><a href="#cb1-175"></a><span class="ss">- </span>In this complete markets model, there’s no income effect — only **substitution** between consumption and leisure.</span>
 <span id="cb1-176"><a href="#cb1-176"></a></span>
@@ -1042,61 +1042,61 @@ E_t \widehat{A}_{t+1} &gt; \frac{1}{15} \widehat{A}_t
 <span id="cb1-180"><a href="#cb1-180"></a></span>
 <span id="cb1-181"><a href="#cb1-181"></a><span class="fu">#### 7.</span></span>
 <span id="cb1-182"><a href="#cb1-182"></a></span>
-<span id="cb1-183"><a href="#cb1-183"></a>We have:</span>
-<span id="cb1-184"><a href="#cb1-184"></a></span>
-<span id="cb1-185"><a href="#cb1-185"></a>$$</span>
-<span id="cb1-186"><a href="#cb1-186"></a>\widehat{y}_t - \frac{c}{y} \widehat{c}_t - \frac{i}{y} \widehat{i}_t =</span>
-<span id="cb1-187"><a href="#cb1-187"></a>\widehat{A}_t - \left( \frac{\omega}{\omega - 1} \right) \left( \frac{1}{1 - \alpha} \right) \left( \frac{\alpha}{\beta^{-1} - 1 + \delta} \right) E_t \widehat{A}_{t+1}</span>
-<span id="cb1-188"><a href="#cb1-188"></a>$$</span>
-<span id="cb1-189"><a href="#cb1-189"></a></span>
-<span id="cb1-190"><a href="#cb1-190"></a>So trade balance worsens if:</span>
-<span id="cb1-191"><a href="#cb1-191"></a></span>
-<span id="cb1-192"><a href="#cb1-192"></a>$$</span>
-<span id="cb1-193"><a href="#cb1-193"></a>\widehat{A}_t &lt; M E_t \widehat{A}_{t+1}</span>
+<span id="cb1-183"><a href="#cb1-183"></a>We begin with the expression for the trade balance response:</span>
+<span id="cb1-184"><a href="#cb1-184"></a>$$</span>
+<span id="cb1-185"><a href="#cb1-185"></a>\frac{tb_t - tb}{y} = \widehat{A}_t - \frac{\delta k}{y} \widehat{i}_t</span>
+<span id="cb1-186"><a href="#cb1-186"></a>$$</span>
+<span id="cb1-187"><a href="#cb1-187"></a></span>
+<span id="cb1-188"><a href="#cb1-188"></a>Eliminate $\widehat{i}_t$ using the law of motion for capital:</span>
+<span id="cb1-189"><a href="#cb1-189"></a>$$</span>
+<span id="cb1-190"><a href="#cb1-190"></a>\widehat{i}_t = \frac{1}{\delta} \widehat{k}_{t+1}</span>
+<span id="cb1-191"><a href="#cb1-191"></a>$$</span>
+<span id="cb1-192"><a href="#cb1-192"></a></span>
+<span id="cb1-193"><a href="#cb1-193"></a>Substitute the expression for $\widehat{k}_{t+1}$ derived earlier, and replace $k/y$ using the steady-state Euler equation:</span>
 <span id="cb1-194"><a href="#cb1-194"></a>$$</span>
-<span id="cb1-195"><a href="#cb1-195"></a></span>
-<span id="cb1-196"><a href="#cb1-196"></a>where:</span>
+<span id="cb1-195"><a href="#cb1-195"></a>\frac{k}{y} = \frac{\alpha}{\beta^{-1} - 1 + \delta}</span>
+<span id="cb1-196"><a href="#cb1-196"></a>$$</span>
 <span id="cb1-197"><a href="#cb1-197"></a></span>
-<span id="cb1-198"><a href="#cb1-198"></a>$$</span>
-<span id="cb1-199"><a href="#cb1-199"></a>M = \left( \frac{\omega}{\omega - 1} \right) \left( \frac{1}{1 - \alpha} \right) \left( \frac{\alpha}{\beta^{-1} - 1 + \delta} \right)</span>
-<span id="cb1-200"><a href="#cb1-200"></a>$$</span>
-<span id="cb1-201"><a href="#cb1-201"></a></span>
-<span id="cb1-202"><a href="#cb1-202"></a>Plug in:</span>
-<span id="cb1-203"><a href="#cb1-203"></a></span>
-<span id="cb1-204"><a href="#cb1-204"></a><span class="ss">- </span>$\omega = 1.5$</span>
-<span id="cb1-205"><a href="#cb1-205"></a><span class="ss">- </span>$\alpha = 1/3$</span>
-<span id="cb1-206"><a href="#cb1-206"></a><span class="ss">- </span>$\delta = 0.08$</span>
-<span id="cb1-207"><a href="#cb1-207"></a><span class="ss">- </span>$\beta^{-1} = 1.02$</span>
-<span id="cb1-208"><a href="#cb1-208"></a></span>
-<span id="cb1-209"><a href="#cb1-209"></a>Then:</span>
-<span id="cb1-210"><a href="#cb1-210"></a></span>
-<span id="cb1-211"><a href="#cb1-211"></a>$$</span>
-<span id="cb1-212"><a href="#cb1-212"></a>M = \frac{3}{1} \cdot \frac{3}{2} \cdot \frac{1}{3} \cdot 10 = 15</span>
-<span id="cb1-213"><a href="#cb1-213"></a>$$</span>
-<span id="cb1-214"><a href="#cb1-214"></a></span>
-<span id="cb1-215"><a href="#cb1-215"></a>So the condition becomes:</span>
-<span id="cb1-216"><a href="#cb1-216"></a></span>
-<span id="cb1-217"><a href="#cb1-217"></a>$$</span>
-<span id="cb1-218"><a href="#cb1-218"></a>E_t \widehat{A}_{t+1} &gt; \frac{1}{15} \widehat{A}_t</span>
-<span id="cb1-219"><a href="#cb1-219"></a>$$</span>
+<span id="cb1-198"><a href="#cb1-198"></a>Combining terms yields:</span>
+<span id="cb1-199"><a href="#cb1-199"></a>$$</span>
+<span id="cb1-200"><a href="#cb1-200"></a>\frac{tb_t - tb}{y} = \widehat{A}_t - \left( \frac{\omega}{\omega - 1} \cdot \frac{1}{1 - \alpha} \cdot \frac{\alpha}{\beta^{-1} - 1 + \delta} \right) E_t \widehat{A}_{t+1}</span>
+<span id="cb1-201"><a href="#cb1-201"></a>$$</span>
+<span id="cb1-202"><a href="#cb1-202"></a></span>
+<span id="cb1-203"><a href="#cb1-203"></a>Hence, the trade balance deteriorates if:</span>
+<span id="cb1-204"><a href="#cb1-204"></a>$$</span>
+<span id="cb1-205"><a href="#cb1-205"></a>\widehat{A}_t &lt; M E_t \widehat{A}_{t+1}</span>
+<span id="cb1-206"><a href="#cb1-206"></a>$$</span>
+<span id="cb1-207"><a href="#cb1-207"></a>where</span>
+<span id="cb1-208"><a href="#cb1-208"></a>$$</span>
+<span id="cb1-209"><a href="#cb1-209"></a>M = \left( \frac{\omega}{\omega - 1} \right) \left( \frac{1}{1 - \alpha} \right) \left( \frac{\alpha}{\beta^{-1} - 1 + \delta} \right)</span>
+<span id="cb1-210"><a href="#cb1-210"></a>$$</span>
+<span id="cb1-211"><a href="#cb1-211"></a></span>
+<span id="cb1-212"><a href="#cb1-212"></a>Plug in:</span>
+<span id="cb1-213"><a href="#cb1-213"></a></span>
+<span id="cb1-214"><a href="#cb1-214"></a><span class="ss">- </span>$\omega = 1.5$</span>
+<span id="cb1-215"><a href="#cb1-215"></a><span class="ss">- </span>$\alpha = 1/3$</span>
+<span id="cb1-216"><a href="#cb1-216"></a><span class="ss">- </span>$\delta = 0.08$</span>
+<span id="cb1-217"><a href="#cb1-217"></a><span class="ss">- </span>$\beta^{-1} = 1.02$</span>
+<span id="cb1-218"><a href="#cb1-218"></a></span>
+<span id="cb1-219"><a href="#cb1-219"></a>Then:</span>
 <span id="cb1-220"><a href="#cb1-220"></a></span>
-<span id="cb1-221"><a href="#cb1-221"></a><span class="fu">#### 8.</span></span>
-<span id="cb1-222"><a href="#cb1-222"></a></span>
-<span id="cb1-223"><a href="#cb1-223"></a><span class="ss">- </span>These results **support** Principle I: the **cyclicality of the trade balance** depends on the **persistence** of shocks and market structure.</span>
+<span id="cb1-221"><a href="#cb1-221"></a>$$</span>
+<span id="cb1-222"><a href="#cb1-222"></a>M = \frac{3}{1} \cdot \frac{3}{2} \cdot \frac{1}{3} \cdot 10 = 15</span>
+<span id="cb1-223"><a href="#cb1-223"></a>$$</span>
 <span id="cb1-224"><a href="#cb1-224"></a></span>
-<span id="cb1-225"><a href="#cb1-225"></a><span class="ss">- </span>Incomplete markets: income effects dominate → trade deficit even with temporary shock.</span>
+<span id="cb1-225"><a href="#cb1-225"></a>So the condition becomes:</span>
 <span id="cb1-226"><a href="#cb1-226"></a></span>
-<span id="cb1-227"><a href="#cb1-227"></a><span class="ss">- </span>Complete markets: substitution effects dominate → only **expected future productivity** drives investment and trade deficit.</span>
-<span id="cb1-228"><a href="#cb1-228"></a></span>
-<span id="cb1-229"><a href="#cb1-229"></a><span class="fu">#### 9.</span></span>
+<span id="cb1-227"><a href="#cb1-227"></a>$$</span>
+<span id="cb1-228"><a href="#cb1-228"></a>E_t \widehat{A}_{t+1} &gt; \frac{1}{15} \widehat{A}_t</span>
+<span id="cb1-229"><a href="#cb1-229"></a>$$</span>
 <span id="cb1-230"><a href="#cb1-230"></a></span>
-<span id="cb1-231"><a href="#cb1-231"></a>With **separable utility**, marginal utility of consumption is independent of labor:</span>
+<span id="cb1-231"><a href="#cb1-231"></a><span class="fu">#### 8.</span></span>
 <span id="cb1-232"><a href="#cb1-232"></a></span>
-<span id="cb1-233"><a href="#cb1-233"></a><span class="ss">- </span>No induced rise in consumption from increased labor effort.</span>
+<span id="cb1-233"><a href="#cb1-233"></a>Principle I states that the more persistent a productivity shock is, the more likely it is that the trade balance deteriorates on impact. Our findings support this principle: the greater the ratio $E_t \widehat{A}_{t+1} / \widehat{A}_t$, the more likely it is that the condition $\widehat{A}_t &lt; M E_t \widehat{A}_{t+1}$ holds, leading to a trade deficit. Moreover, the size of the trade deficit increases with the persistence of the shock.</span>
 <span id="cb1-234"><a href="#cb1-234"></a></span>
-<span id="cb1-235"><a href="#cb1-235"></a><span class="ss">- </span>Weakens link between productivity and consumption.</span>
+<span id="cb1-235"><a href="#cb1-235"></a><span class="fu">#### 9.</span></span>
 <span id="cb1-236"><a href="#cb1-236"></a></span>
-<span id="cb1-237"><a href="#cb1-237"></a><span class="ss">- </span>Therefore, trade balance more likely to improve unless expectations about $A_{t+1}$ drive investment.</span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
+<span id="cb1-237"><a href="#cb1-237"></a>If the period utility function is separable in consumption and hours, the answers to both Questions 5 and 7 would change. In this case, the marginal utility of consumption would depend only on consumption, so when the price of contingent claims remains constant (i.e., $q_{0,t} = \beta^t$), consumption does not respond to a temporary productivity shock. There would be neither a substitution effect nor an income effect on consumption, so consumption would remain constant. Labor supply, and hence output, would still increase following the shock, but the resulting increase in output will have to be absorbed entirely by either higher investment or a trade surplus (given the lack of an increase in consumption). Whether the trade balance deteriorates on impact will still depend on the strength of the investment response. However, since consumption no longer increases, a larger increase in investment is required to generate a trade deficit. This implies that a more persistent productivity process (i.e., a higher $E_t \widehat{A}_{t+1} / \widehat{A}_t$) is needed for the economy to run a trade deficit.</span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 
