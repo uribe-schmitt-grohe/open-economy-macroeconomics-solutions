@@ -210,16 +210,65 @@ window.Quarto = {
 <section id="answer" class="level2">
 <h2 class="anchored" data-anchor-id="answer">Answer</h2>
 <p><a href="code/4_10_code.zip" download="" style="display:inline-block;padding:8px 16px;background:#007acc;color:white;text-decoration:none;border-radius:5px;"> 📥 Download Matlab Code (4_10_code.zip) </a></p>
-<p>Period 1946–1985: <span class="math inline">\(\sigma_A = 0.0142\)</span>, <span class="math inline">\(\sigma_y = 3.0826\)</span>.</p>
-<p>Period 1960–2011: <span class="math inline">\(\sigma_A = 0.0133\)</span>, <span class="math inline">\(\sigma_y = 3.7245\)</span>.</p>
-<p>Puzzle: Let “old” denote the 1946–1985 calibration and “new” denote the 1960–2011 calibration. The predicted standard deviation of output under new is higher than under old. However, the predicted standard deviation of the tech. shock is lower under new than under old. How can that be, since the only source of volatility is the tech shock?</p>
-<p>Explanation: In the new data sample, observed output is more persistent. The predicted serial correlation depends on <span class="math inline">\(\rho\)</span> but not on <span class="math inline">\(\eta\)</span>. Therefore, the new calibration must feature a larger <span class="math inline">\(\rho\)</span>, since the serial correlation of output is a target moment. Now increasing <span class="math inline">\(\rho\)</span> all else constant causes the predicted variance of both the tech shock and output to increase. It turns out, that this increase in the volatility of output is so high that with <span class="math inline">\(\eta\)</span> unchanged the model would overpredict the new variance of output. Therefore, <span class="math inline">\(\eta\)</span> must be lower in new than in old, since the standard deviation of output is a target moment. It turns out that the volatility of the tech. shock under the new calibration ends up being lower than under the old calibration, which is somewhat surprising.</p>
-<p>We learned that increasing <span class="math inline">\(\rho\)</span> and at the same time lowering <span class="math inline">\(\eta\)</span> so as to keep the variance of <span class="math inline">\(\ln A_t\)</span> constant raises the variance of output. The intuition for why the volatility of output increases with <span class="math inline">\(\rho\)</span> holding the std. dev. of <span class="math inline">\(A_t\)</span> constant is that a more persistent tech. shock causes larger swings in investment and therefore in capital and therefore in output.</p>
+<section id="calibration-results" class="level4">
+<h4 class="anchored" data-anchor-id="calibration-results">1. Calibration Results</h4>
+<p>Using a distance minimization procedure similar to that in Exercise 4.8, we estimate the following parameters to match the 1960–2011 Canadian moments:</p>
+<ul>
+<li><span class="math inline">\(\rho = 0.3950\)</span></li>
+<li><span class="math inline">\(\tilde{\eta} = 0.0118\)</span></li>
+<li><span class="math inline">\(\phi = 0.0173\)</span></li>
+<li><span class="math inline">\(\psi_1 = 0.001071\)</span></li>
+</ul>
+<p>These should be compared to the earlier calibration in Table 4.1. The updated values reflect the need to match more persistent and volatile output.</p>
+</section>
+<section id="theoretical-second-moments" class="level4">
+<h4 class="anchored" data-anchor-id="theoretical-second-moments">2. Theoretical Second Moments</h4>
+<p>The model-implied second moments (standard deviations and serial correlations) are as follows:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Variable</th>
+<th>Std. Dev.</th>
+<th>Serial Corr.</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Output (<span class="math inline">\(y\)</span>)</td>
+<td>3.0826</td>
+<td>0.6170</td>
+</tr>
+<tr class="even">
+<td>Investment (<span class="math inline">\(i\)</span>)</td>
+<td>9.0391</td>
+<td>0.0686</td>
+</tr>
+<tr class="odd">
+<td>Trade balance / <span class="math inline">\(y\)</span></td>
+<td>7.9202</td>
+<td>0.9968</td>
+</tr>
+</tbody>
+</table>
+<p>These moments are in line with the third panel of Table 4.2 for 1960–2011.</p>
+</section>
+<section id="interpretation" class="level4">
+<h4 class="anchored" data-anchor-id="interpretation">3. Interpretation</h4>
+<p>The model does a reasonable job matching the key business cycle statistics. The higher persistence in the data led to a larger <span class="math inline">\(\rho\)</span> in the calibration, which increases output volatility through its effect on investment dynamics. The lower estimated <span class="math inline">\(\eta\)</span> offsets this by reducing overall shock volatility, helping the model match observed output variance.</p>
+</section>
+<section id="comparison-with-19461985-calibration" class="level4">
+<h4 class="anchored" data-anchor-id="comparison-with-19461985-calibration">4. Comparison with 1946–1985 Calibration</h4>
+<ul>
+<li>Period 1946–1985: <span class="math inline">\(\sigma_A = 0.0142\)</span>, <span class="math inline">\(\sigma_y = 3.0826\)</span></li>
+<li>Period 1960–2011: <span class="math inline">\(\sigma_A = 0.0133\)</span>, <span class="math inline">\(\sigma_y = 3.7245\)</span></li>
+</ul>
+<p>Despite a lower <span class="math inline">\(\sigma_A\)</span> in the later period, <span class="math inline">\(\sigma_y\)</span> is higher. This reflects that a more persistent shock process (higher <span class="math inline">\(\rho\)</span>) amplifies the effect of shocks on output via capital accumulation. To prevent overpredicting volatility, <span class="math inline">\(\eta\)</span> had to fall. Thus, increasing <span class="math inline">\(\rho\)</span> while reducing <span class="math inline">\(\eta\)</span> leads to higher output volatility even if technology volatility itself is lower.</p>
 
 
 
 <!-- -->
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -727,15 +776,39 @@ window.Quarto = {
 <span id="cb1-23"><a href="#cb1-23"></a>📥 Download Matlab Code (4_10_code.zip)</span>
 <span id="cb1-24"><a href="#cb1-24"></a><span class="dt">&lt;/</span><span class="kw">a</span><span class="dt">&gt;</span></span>
 <span id="cb1-25"><a href="#cb1-25"></a></span>
-<span id="cb1-26"><a href="#cb1-26"></a>Period 1946–1985: $\sigma_A = 0.0142$, $\sigma_y = 3.0826$.</span>
+<span id="cb1-26"><a href="#cb1-26"></a><span class="fu">#### 1. Calibration Results</span></span>
 <span id="cb1-27"><a href="#cb1-27"></a></span>
-<span id="cb1-28"><a href="#cb1-28"></a>Period 1960–2011: $\sigma_A = 0.0133$, $\sigma_y = 3.7245$.</span>
+<span id="cb1-28"><a href="#cb1-28"></a>Using a distance minimization procedure similar to that in Exercise 4.8, we estimate the following parameters to match the 1960–2011 Canadian moments:</span>
 <span id="cb1-29"><a href="#cb1-29"></a></span>
-<span id="cb1-30"><a href="#cb1-30"></a>Puzzle: Let “old” denote the 1946–1985 calibration and “new” denote the 1960–2011 calibration. The predicted standard deviation of output under new is higher than under old. However, the predicted standard deviation of the tech. shock is lower under new than under old. How can that be, since the only source of volatility is the tech shock?</span>
-<span id="cb1-31"><a href="#cb1-31"></a></span>
-<span id="cb1-32"><a href="#cb1-32"></a>Explanation: In the new data sample, observed output is more persistent. The predicted serial correlation depends on $\rho$ but not on $\eta$. Therefore, the new calibration must feature a larger $\rho$, since the serial correlation of output is a target moment. Now increasing $\rho$ all else constant causes the predicted variance of both the tech shock and output to increase. It turns out, that this increase in the volatility of output is so high that with $\eta$ unchanged the model would overpredict the new variance of output. Therefore, $\eta$ must be lower in new than in old, since the standard deviation of output is a target moment. It turns out that the volatility of the tech. shock under the new calibration ends up being lower than under the old calibration, which is somewhat surprising.</span>
-<span id="cb1-33"><a href="#cb1-33"></a></span>
-<span id="cb1-34"><a href="#cb1-34"></a>We learned that increasing $\rho$ and at the same time lowering $\eta$ so as to keep the variance of $\ln A_t$ constant raises the variance of output. The intuition for why the volatility of output increases with $\rho$ holding the std. dev. of $A_t$ constant is that a more persistent tech. shock causes larger swings in investment and therefore in capital and therefore in output.</span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
+<span id="cb1-30"><a href="#cb1-30"></a><span class="ss">- </span>$\rho = 0.3950$</span>
+<span id="cb1-31"><a href="#cb1-31"></a><span class="ss">- </span>$\tilde{\eta} = 0.0118$</span>
+<span id="cb1-32"><a href="#cb1-32"></a><span class="ss">- </span>$\phi = 0.0173$</span>
+<span id="cb1-33"><a href="#cb1-33"></a><span class="ss">- </span>$\psi_1 = 0.001071$</span>
+<span id="cb1-34"><a href="#cb1-34"></a></span>
+<span id="cb1-35"><a href="#cb1-35"></a>These should be compared to the earlier calibration in Table 4.1. The updated values reflect the need to match more persistent and volatile output.</span>
+<span id="cb1-36"><a href="#cb1-36"></a></span>
+<span id="cb1-37"><a href="#cb1-37"></a><span class="fu">#### 2. Theoretical Second Moments</span></span>
+<span id="cb1-38"><a href="#cb1-38"></a></span>
+<span id="cb1-39"><a href="#cb1-39"></a>The model-implied second moments (standard deviations and serial correlations) are as follows:</span>
+<span id="cb1-40"><a href="#cb1-40"></a></span>
+<span id="cb1-41"><a href="#cb1-41"></a><span class="pp">|</span> Variable            <span class="pp">|</span> Std. Dev. <span class="pp">|</span> Serial Corr. <span class="pp">|</span></span>
+<span id="cb1-42"><a href="#cb1-42"></a><span class="pp">|---------------------|-----------|--------------|</span></span>
+<span id="cb1-43"><a href="#cb1-43"></a><span class="pp">|</span> Output ($y$)        <span class="pp">|</span> 3.0826    <span class="pp">|</span> 0.6170       <span class="pp">|</span></span>
+<span id="cb1-44"><a href="#cb1-44"></a><span class="pp">|</span> Investment ($i$)    <span class="pp">|</span> 9.0391    <span class="pp">|</span> 0.0686       <span class="pp">|</span></span>
+<span id="cb1-45"><a href="#cb1-45"></a><span class="pp">|</span> Trade balance / $y$ <span class="pp">|</span> 7.9202    <span class="pp">|</span> 0.9968       <span class="pp">|</span></span>
+<span id="cb1-46"><a href="#cb1-46"></a></span>
+<span id="cb1-47"><a href="#cb1-47"></a>These moments are in line with the third panel of Table 4.2 for 1960–2011.</span>
+<span id="cb1-48"><a href="#cb1-48"></a></span>
+<span id="cb1-49"><a href="#cb1-49"></a><span class="fu">#### 3. Interpretation</span></span>
+<span id="cb1-50"><a href="#cb1-50"></a></span>
+<span id="cb1-51"><a href="#cb1-51"></a>The model does a reasonable job matching the key business cycle statistics. The higher persistence in the data led to a larger $\rho$ in the calibration, which increases output volatility through its effect on investment dynamics. The lower estimated $\eta$ offsets this by reducing overall shock volatility, helping the model match observed output variance.</span>
+<span id="cb1-52"><a href="#cb1-52"></a></span>
+<span id="cb1-53"><a href="#cb1-53"></a><span class="fu">#### 4. Comparison with 1946–1985 Calibration</span></span>
+<span id="cb1-54"><a href="#cb1-54"></a></span>
+<span id="cb1-55"><a href="#cb1-55"></a><span class="ss">- </span>Period 1946–1985: $\sigma_A = 0.0142$, $\sigma_y = 3.0826$</span>
+<span id="cb1-56"><a href="#cb1-56"></a><span class="ss">- </span>Period 1960–2011: $\sigma_A = 0.0133$, $\sigma_y = 3.7245$</span>
+<span id="cb1-57"><a href="#cb1-57"></a></span>
+<span id="cb1-58"><a href="#cb1-58"></a>Despite a lower $\sigma_A$ in the later period, $\sigma_y$ is higher. This reflects that a more persistent shock process (higher $\rho$) amplifies the effect of shocks on output via capital accumulation. To prevent overpredicting volatility, $\eta$ had to fall. Thus, increasing $\rho$ while reducing $\eta$ leads to higher output volatility even if technology volatility itself is lower.</span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 
