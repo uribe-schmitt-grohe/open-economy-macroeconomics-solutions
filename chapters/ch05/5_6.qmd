@@ -1,0 +1,14 @@
+---
+title: "Exercise 5.6"
+subtitle: "The Meaning of Variance Decomposition Under Imperfect Information"
+---
+<a class="return-button" href="index.qmd">⬅ Return</a>
+
+## Problem
+
+Following the notation introduced in the body of this chapter, the first-order approximation to the equilibrium laws of motion of the state and control vectors, respectively, are given by $Y_t = G_xY_t$ and $X_{t+1} = G_x X_t + [\emptyset;B]\epsilon_{t+1}$. One  aspect that distinguishes models with imperfect information from models with perfect information is that in the former the standard deviations of the exogenous disturbances, which define the matrix $B$, also appear in the matrices $H_x$ and $G_x$, where in the latter class of models $G_x$ and $H_x$ are independent of $B$. That is, the  relative volatility of the underlying shocks affects the transmission mechanism under imperfect information, but not under full information. In light of this fact, propose meaningful ways to evaluate the contribution of different shocks (in the context of the model laid out in section 5.7, noise shocks, productivity shocks, etc.) under imperfect information. Discuss the concept of `variance decomposition' in this context. 
+Apply your proposal to evaluating the contribution of different shocks in  the model estimated in section 5.7.
+
+
+## Answer
+

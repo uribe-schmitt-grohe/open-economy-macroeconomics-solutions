@@ -1,0 +1,99 @@
+---
+title: "Exercise 5.3"
+subtitle: "Slow Diffusion of  Technology Shocks to  the Country Premium, Household Production, and Government Spending"
+---
+<a class="return-button" href="index.qmd">⬅ Return</a>
+
+## Problem
+
+The model presented in section 5.3 assumes that permanent productivity shocks affect not only the productivity of labor and capital in producing market goods, but also the country premium, home production, and government spending. For instance, the assumption that the country interest rate depends on $\widetilde{D}_{t+1}/X_t$, implies  that a positive innovation in $X_t$ in period $t$, causes, all other things equal, a fall in the country premium. In this exercise, we attenuate this type of effect by reformulating the model. Let 
+
+$$
+\widetilde{X}_t = \widetilde{X}_{t-1}^{\zeta}X_t^{1-\zeta},
+$$
+
+with $\zeta\in[0,1)$. Note that the original formulation obtains when $\zeta=0$. Replace equations (5.3), (5.5), and (5.9), respectively, with
+
+$$
+E_0\sum_{t=0}^{\infty} \nu_t\beta^t
+\frac{\left[C_t - \omega^{-1}\widetilde{X}_{t-1} h_t^{\omega}\right]^{1-\gamma}-1}{1-\gamma},
+$$
+
+$$
+s_t =  \frac{S_t}{\widetilde{X}_{t-1}}, 
+$$
+
+and
+
+$$
+r_t = 
+r^* +  \psi \left(
+e^{(\widetilde{D}_{t+1}/\widetilde{X}_t-\overline{d})/ \overline{y}}  -1 \right)
++ e^{\mu_t-1}-1.
+$$
+
+Keep all other features of the  model as presented in section 5.3.
+
+1. Present the equilibrium conditions of the model in stationary form. 
+
+2. Using Bayesian techniques, reestimate the model adding $\zeta$ to the vector of estimated parameters. Assume a uniform prior distribution for $\zeta$ with support $[0,0.99]$ and produce 1 million draws from the posterior distribution of the parameter vector. 
+Present the estimation results in the form of a table like table 5.4. Discuss your findings. 
+
+3. Characterize numerically the predictions of the model. In particular, produce tables similar to tables 5.5 and 5.6. Discuss your results and provide intuition. 
+
+4. Compute the impulse responses of output, consumption, investment, the trade-balance-to-output ratio, and the country interest rate to a one-percent innovation in $g_t$ for three values of $\zeta$, namely, 0,   its posterior median, and 0.99.  
+
+
+
+## Answer
+
+#### 1. Stationary Form of the Equilibrium Conditions
+
+To obtain a stationary representation of the model, we normalize all real variables that grow with $\widetilde{X}_t$ or $X_t$. Define normalized variables using either $X_t$ or $\widetilde{X}_{t-1}$ as appropriate:
+
+- $c_t = C_t / \widetilde{X}_{t-1}$,
+- $s_t = S_t / \widetilde{X}_{t-1}$,
+- $\widetilde{x}_t = \widetilde{X}_t / X_t$ (implicitly defined),
+- $d_t = \widetilde{D}_t / \widetilde{X}_t$,
+- etc.
+
+The modified equations in stationary form are:
+
+- **Utility Function:**
+  $$
+  E_0\sum_{t=0}^{\infty} \nu_t\beta^t
+  \frac{\left[c_t - \omega^{-1} h_t^{\omega}\right]^{1-\gamma}-1}{1-\gamma}
+  $$
+
+- **Definition of $\widetilde{X}_t$:**
+  $$
+  \widetilde{X}_t = \widetilde{X}_{t-1}^{\zeta} X_t^{1-\zeta}
+  $$
+
+  Taking logs:
+  $$
+  \log \widetilde{X}_t = \zeta \log \widetilde{X}_{t-1} + (1 - \zeta) \log X_t
+  $$
+
+- **Normalized Government Spending:**
+  $$
+  s_t = \frac{S_t}{\widetilde{X}_{t-1}}
+  $$
+
+- **Interest Rate with Endogenous Spread and Risk Premium:**
+  $$
+  r_t = r^* + \psi \left(
+  \exp\left( \frac{d_{t+1} - \overline{d}}{\overline{y}} \right) - 1
+  \right) + \exp(\mu_t - 1) - 1
+  $$
+
+- **Euler Equation (normalized):**
+  $$
+  \left[c_t - \omega^{-1} h_t^{\omega} \right]^{-\gamma} = \beta (1 + r_t) E_t \left[ \left(c_{t+1} - \omega^{-1} h_{t+1}^\omega \right)^{-\gamma} \frac{1}{\widetilde{x}_{t+1}} \right]
+  $$
+
+- **Resource Constraints and Budget Constraints:**  
+  Normalize all remaining real variables (consumption, income, taxes, transfers, etc.) by the appropriate productivity term. The no-Ponzi condition must also be imposed on normalized debt $d_t$.
+
+All equations are now expressed in terms of stationary variables, and thus suitable for deterministic or stochastic steady-state computation and linearization.
+

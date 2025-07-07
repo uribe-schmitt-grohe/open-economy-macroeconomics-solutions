@@ -1,0 +1,33 @@
+---
+title: "Exercise 5.5"
+subtitle: "Letting Productivity, Noise, and Interest-Rate Shocks Compete"
+---
+<a class="return-button" href="index.qmd">⬅ Return</a>
+
+## Problem
+
+Augment the open economy model with imperfect information of section 5.7 to allow for an  interest rate shock  as in the GPU model of section 5.3. To this end proceed as follows:
+
+1. Reestimate the model using Bayesian techniques. Use the Mexican data and prior distributions used in section 5.7. Enlarge the vector of estimated parameters to include the parameter $\psi$ governing the debt-elasticity of the interest rate, and the standard deviation and serial correlation of the interest-rate shock. For these additional parameters, use the priors of section 5.3. 
+
+2. Produce a table displaying the lower and upper bounds of the prior distributions   along  with  the posterior mean, median,  standard deviation, and the 5-95 percent probability interval. 
+
+For the remaining questions, evaluate the model at the posterior median of
+ the  estimated parameters. 
+
+3. Report the share of the variance of the signal $s_t$ accounted for by  noise shock $n_t$ (i.e., the noise to signal ratio).  Comment. 
+
+4. Report the share of the variance of 
+TFP growth explained by the nonstationary productivity shock and contrast it to the case without interest-rate shocks and financial frictions. 
+
+5. Produce a table displaying the actual and predicted standard deviation, correlation with output growth, and serial correlation of 
+output growth,
+consumption growth,
+investment growth, 
+and the trade-balance-to-output ratio. Comment especially on the model's ability to explain the predicted volatility of the trade-balance-to-output ratio and the serial correlations of output and investment growth, which are the second moments that the version of the model   without interest-rate shocks or  financial frictions has the hardest time explaining. 
+
+6.  Add one more line per moment to this table, displaying the predicted second moment under perfect information. For this step, set $\sigma_n=0$ and reestimate the model. 
+Discuss your findings. 
+
+## Answer
+

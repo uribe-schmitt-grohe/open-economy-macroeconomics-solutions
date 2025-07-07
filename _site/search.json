@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Open Economy Macroeconomics Solutions",
     "section": "",
-    "text": "This repository contains sketches of solutions to many (but not all) of the exercises in Open Economy Macroeconomics by Martín Uribe and Stephanie Schmitt-Grohé (Princeton University Press link). Please help us to improve the repository. If you have solutions or corrections or alternative approaches to solutions, please post them in the corresponding discussion thread in the Discussions tab.\n\n\n\nOpen Economy Macroeconomics cover\n\n\n\n\n\n\nChapter 2 – An Open Endowment Economy\nChapter 3 – An Open Economy with Capital\nChapter 4 – The Open Economy Real-Business-Cycle Model\n\n\n\n\n\nEach solution page includes a comment section powered by Giscus. You are welcome to leave feedback or ask questions directly below each exercise. You can type plain text or simple math using LaTeX syntax (e.g., $y = c + i + g$). If you’d like to share screenshots or files, please upload them to a service like Google Drive or Dropbox and include a link in your comment.\nTo view all ongoing conversations, corrections, or contributions across chapters, visit the Discussions tab in the top navigation bar: Discussions. You can browse, reply to, or start new threads there."
+    "text": "This repository contains sketches of solutions to many (but not all) of the exercises in Open Economy Macroeconomics by Martín Uribe and Stephanie Schmitt-Grohé (Princeton University Press link). Please help us to improve the repository. If you have solutions or corrections or alternative approaches to solutions, please post them in the corresponding discussion thread in the Discussions tab.\n\n\n\nOpen Economy Macroeconomics cover\n\n\n\n\n\n\nChapter 2 – An Open Endowment Economy\nChapter 3 – An Open Economy with Capital\nChapter 4 – The Open Economy Real-Business-Cycle Model\nChapter 5 – Business Cycles in Emerging Countries: Productivity Shocks versus Financial Fricitions\n\n\n\n\n\nEach solution page includes a comment section powered by Giscus. You are welcome to leave feedback or ask questions directly below each exercise. You can type plain text or simple math using LaTeX syntax (e.g., $y = c + i + g$). If you’d like to share screenshots or files, please upload them to a service like Google Drive or Dropbox and include a link in your comment.\nTo view all ongoing conversations, corrections, or contributions across chapters, visit the Discussions tab in the top navigation bar: Discussions. You can browse, reply to, or start new threads there."
   },
   {
     "objectID": "index.html#chapters",
@@ -872,6 +872,139 @@
     "href": "index.html#solutions-by-chapters",
     "title": "Open Economy Macroeconomics Solutions",
     "section": "",
-    "text": "Chapter 2 – An Open Endowment Economy\nChapter 3 – An Open Economy with Capital\nChapter 4 – The Open Economy Real-Business-Cycle Model"
+    "text": "Chapter 2 – An Open Endowment Economy\nChapter 3 – An Open Economy with Capital\nChapter 4 – The Open Economy Real-Business-Cycle Model\nChapter 5 – Business Cycles in Emerging Countries: Productivity Shocks versus Financial Fricitions"
+  },
+  {
+    "objectID": "chapters/ch05/5_1.html",
+    "href": "chapters/ch05/5_1.html",
+    "title": "Exercise 5.1",
+    "section": "",
+    "text": "⬅ Return"
+  },
+  {
+    "objectID": "chapters/ch05/5_1.html#problem",
+    "href": "chapters/ch05/5_1.html#problem",
+    "title": "Exercise 5.1",
+    "section": "Problem",
+    "text": "Problem\nThe version of the GPU model estimated in this chapter predicts a negative first-order serial correlation of investment growth of -0.098 (see table 5.5). In contrast, the empirical counterpart is positive and significant, with a point estimate of 0.32. This empirical fact is also observed in other emerging countries over long horizons. For example, Miyamoto and Nguyen (2013) report serial correlations of investment growth greater than or equal to 0.2 for Brazil, Mexico, Peru, Turkey, and Venezuela using annual data covering the period 1900 to 2006.\n\nThink of a possible modification of the theoretical model that would result in an improvement of the model’s prediction along this dimension. Provide intuition.\nImplement your suggestion. Show the complete set of equilibrium conditions.\nReestimate your model using the data set for Argentina on which the GPU model of this chapter was estimated.\nSummarize your results by expanding table 5.5 with appropriate lines containing the predictions of your model.\nCompare the performance of your model with the data and with the predictions of the version of the GPU model analyzed in this chapter."
+  },
+  {
+    "objectID": "chapters/ch05/5_1.html#answer",
+    "href": "chapters/ch05/5_1.html#answer",
+    "title": "Exercise 5.1",
+    "section": "Answer",
+    "text": "Answer\nTry formulating adjustment costs in terms of the growth rate of investment, as in CEE (JPE, 2005), rather than in terms of the growth rate of capital."
+  },
+  {
+    "objectID": "chapters/ch05/5_2.html",
+    "href": "chapters/ch05/5_2.html",
+    "title": "Exercise 5.2",
+    "section": "",
+    "text": "⬅ Return"
+  },
+  {
+    "objectID": "chapters/ch05/5_2.html#problem",
+    "href": "chapters/ch05/5_2.html#problem",
+    "title": "Exercise 5.2",
+    "section": "Problem",
+    "text": "Problem\nThis exercise introduces nontradable goods a subject that we will take up in detail in chapter 8. You may choose to postpone working on this exercise until you have read that chapter. However, the tools developed in the current chapter should be sufficient to do this exercise. Consider an economy populated by a large number of identical households with preferences described by the utility function\n\\[\nE_0 \\sum_{t=0}^{\\infty} \\beta^t\n\\frac{[C_t^{\\gamma}(1-h_t)^{1-\\gamma}]^{1-\\sigma}-1}\n{1-\\sigma},\n\\]\nwhere \\(C_t\\) denotes consumption and \\(h_t\\) denotes hours worked.\nLet \\(A_t\\) denote domestic absorption. That is, \\(A_t\\) satisfies the identity\n\\[\nA_t = C_t + I_t,\n\\]\nwhere \\(I_t\\) denotes gross domestic investment. Assume that \\(A_t\\) is a composite of tradable and nontradable goods produced via the following aggregator function:\n\\[\nA_t = \\left[\n\\eta (A_t^T)^{1-1/\\mu} + (1-\\eta) (A^N_t)^{1-1/\\mu}\n\\right]^{1/(1-1/\\mu)},\n\\]\nwhere \\(A^T_t\\) and \\(A^N_t\\) denote, respectively, domestic absorptions of tradable and nontradable goods. Tradable and nontradable goods, denoted, respectively, \\(Y^T_t\\) and \\(Y^N_t\\), are produced under constant returns to scale using capital and labor as inputs:\n\\[\nY^T_t = z_t (K^T_t)^{1-\\alpha_T}\n(X_t h^T_t)^{\\alpha_T}\n\\]\nand\n\\[\nY^N_t = z_t (K^N_t)^{1-\\alpha_N}\n(X_t h^N_t)^{\\alpha_N},\n\\]\nwhere \\(K^i_t\\) and \\(h^i_t\\) denote, respectively, capital and labor services employed in sector \\(i\\), for \\(i=T,N\\). The variable \\(z_t\\) represents an exogenous, stationary, stochastic productivity shock and \\(X_t\\) represents an exogenous, stochastic, nonstationary productivity shock. The capital stocks evolve according to the following laws of motion:\n\\[\nK^T_{t+1} = (1-\\delta)K^T_t + I^T_t -\n\\frac{\\phi}2 \\left(\n\\frac{K^T_{t+1}}{K^T_t}-g\n\\right)^2K^T_t\n\\]\nand\n\\[\nK^N_{t+1} = (1-\\delta)K^N_t + I^N_t -\n\\frac{\\phi}2 \\left(\n\\frac{K^N_{t+1}}{K^N_t}-g\n\\right)^2K^N_t,\n\\]\nwhere \\(I^i_t\\) denotes investment in sector \\(i=T,N\\) and satisfies\n\\[\nI_t = I^T_t + I^N_t.\n\\]\nMarket clearing in the nontraded sector requires that domestic absorption equal production:\n\\[\nY^N_t = A^N_t.\n\\]\nAlso, market clearing in the labor market requires that\n\\[\nh_t = h^T_t + h^N_t.\n\\]\nAssume that the country has access to a single, one-period, internationally traded bond that pays the debt-elastic gross interest rate \\(R_t\\) when held between periods \\(t\\) and \\(t+1\\). The evolution of the household’s net foreign debt position, \\(D_t\\), is given by\n\\[\n\\frac{D_{t+1}}{R_t}\n= D_t  + A^T_t -Y^T_t,\n\\]\nwith\n\\[\nR_t = R^* + \\psi \\left[\ne^{\\tilde{D}_{t+1}/X_t-\\overline{d}}-1\n\\right],\n\\]\nwhere \\(\\tilde{D}_t\\) denotes average external debt per capita due in period \\(t\\). Because households are homogeneous, we have that in equilibrium the following condition must hold:\n\\[\n\\tilde{D}_t = D_t.\n\\]\nFinally, assume that the stationary productivity shock \\(z_t\\) follows an AR(1) process of the form\n\\[\n\\ln z_t = \\rho_z \\ln z_{t-1} + \\sigma_z \\epsilon^z_t.\n\\]\nAnd the nonstationary productivity shock evolves according to\n\\[\n\\ln (g_t/g) = \\rho_g \\ln(g_{t-1}/g) + \\sigma_g \\epsilon^g_t,\n\\]\nwhere\n\\[\ng_t \\equiv \\frac{X_t}{X_{t-1}},\n\\]\n\\(\\rho_z,\\rho_g\\in (-1,1)\\), \\(\\sigma_z,\\sigma_g&gt;0\\), and \\(\\epsilon^z_t\\) and \\(\\epsilon^g_t\\) are independent white noises distributed \\(N(0,1)\\).\nAssume that the time unit is one quarter. Use the following table to calibrate the model:\n\nGuidelines for calibrating the parameter \\(\\eta\\) are given below.\nWhen addressing the numerical portions of the following questions, write your answers to 4 decimal places.\n\nWrite down the complete set of equilibrium conditions. Count the number of variables and equations.\nLet \\(p^N_t\\) and \\(p_t\\) be the (shadow) relative prices of the nontradable good and the composite good in terms of tradable goods, respectively. Write down expressions for \\(p^N_t\\) and \\(p_t\\) in terms of \\(A^T_t\\) and \\(A^N_t\\). Are \\(p^N_t\\) and \\(p_t\\) stationary variables? Why?\nWrite down the complete set of equilibrium conditions in stationary form along a balanced-growth path.\nDerive a restriction on \\(R^*\\) that guarantees that the steady-state value of \\(d_{t+1} \\equiv D_{t+1}/X_t\\) along the balanced-growth path equals \\(\\overline{d}\\). Compute the steady state of the model. Set \\(\\eta\\) to ensure that the share of nontraded output in total output, defined as \\(p^N_tY^N_t/(p^N_tY^N_t+Y^T_t)\\) equals 0.65 in the steady state. Report the numerical value of \\(\\eta\\) and the steady-state values of all endogenous variables of the model.\nReport the numerical values of the eigenvalues of the matrix \\(h_x\\) defining the linearized equilibrium law of motion of the state vector.\nDefine GDP as \\(Y_t = (Y^T_t+p^N_tY^N_t)/p_t\\). Define the trade balance, \\(TB_t\\), as \\(TB_t = Y_t -C_t -I_t\\). Compute the unconditional standard deviations of the growth rates of consumption and output, defined, respectively, as \\(\\Delta C_t \\equiv \\log(C_t/C_{t-1})\\) and \\(\\Delta Y_t \\equiv \\log(Y_t/Y_{t-1})\\). Compute the correlation between \\(\\Delta Y_t\\) and the trade-balance-to-output ratio, defined as \\(tby_t \\equiv TB_t/Y_t\\).\nCompute other second moments of your choice and discuss whether they are in line with empirical regularities in emerging economies.\nExplain how you would reparameterize the model to make it coincide with the one-sector model studied in section 5.2. Answer the previous two questions under your proposed parameterization.\nBased on your answers to the previous three questions, evaluate the ability of the present traded-nontraded model to explain key stylized facts in emerging countries. Provide intuition making sure to emphasize the differences you can identify between the dynamics implied by the one-good SOE-RBC model and the present two-good SOE-RBC model."
+  },
+  {
+    "objectID": "chapters/ch05/5_2.html#answer",
+    "href": "chapters/ch05/5_2.html#answer",
+    "title": "Exercise 5.2",
+    "section": "Answer",
+    "text": "Answer\n\n1. Complete Set of Equilibrium Conditions and Variable Counting\nThe equilibrium of this two-sector open economy model is characterized by the following system of equations:\n\nAbsorption Identity: \\[\nA_t = C_t + I_t\n\\]\nComposite Good Aggregator: \\[\nA_t = \\left[\n  \\eta (A^T_t)^{1-1/\\mu} + (1-\\eta) (A^N_t)^{1-1/\\mu}\n\\right]^{1/(1-1/\\mu)}\n\\]\nCapital Accumulation (for \\(i = T, N\\)): \\[\nK^i_{t+1} = (1-\\delta)K^i_t + I^i_t - \\frac{\\phi}{2}\\left( \\frac{K^i_{t+1}}{K^i_t} - g \\right)^2 K^i_t\n\\]\nInvestment Decomposition: \\[\nI_t = I^T_t + I^N_t\n\\]\nProduction Functions: \\[\\begin{align*}\n  Y^T_t &= z_t (K^T_t)^{1 - \\alpha_T} (X_t h^T_t)^{\\alpha_T} \\\\\n  Y^N_t &= z_t (K^N_t)^{1 - \\alpha_N} (X_t h^N_t)^{\\alpha_N}\n\\end{align*}\\]\nMarket Clearing Conditions:\n\nNontraded goods: \\[\nY^N_t = A^N_t\n\\]\nLabor market: \\[\nh_t = h^T_t + h^N_t\n\\]\n\nExternal Budget Constraint: \\[\n\\frac{D_{t+1}}{R_t} = D_t + A^T_t - Y^T_t\n\\]\nInterest Rate Equation: \\[\nR_t = R^* + \\psi \\left[ \\exp\\left( \\frac{D_{t+1}}{X_t} - \\overline{d} \\right) - 1 \\right]\n\\]\nExogenous Shock Processes: \\[\\begin{align*}\n  \\ln z_t &= \\rho_z \\ln z_{t-1} + \\sigma_z \\epsilon^z_t \\\\\n  \\ln \\left( \\frac{g_t}{g} \\right) &= \\rho_g \\ln \\left( \\frac{g_{t-1}}{g} \\right) + \\sigma_g \\epsilon^g_t \\\\\n  g_t &= \\frac{X_t}{X_{t-1}}\n\\end{align*}\\]\n\nThe endogenous variables of the system include: \\(C_t, I_t, I^T_t, I^N_t, K^T_t, K^N_t, h_t, h^T_t, h^N_t, A^T_t, A^N_t, A_t, D_t, R_t, Y^T_t, Y^N_t, z_t, X_t\\), among others as required by the model (such as prices and additional auxiliary variables if needed). The number of independent equations matches the number of endogenous variables, ensuring a well-defined equilibrium system.\n\n\n2. Expressions for Relative Prices and Their Stationarity\nThe shadow relative prices can be derived from the CES aggregator:\n\nRelative Price of Nontraded Goods (in terms of traded goods): \\[\np^N_t = \\left( \\frac{1-\\eta}{\\eta} \\right) \\left( \\frac{A^T_t}{A^N_t} \\right)^{1/\\mu}\n\\]\nPrice of the Composite Good (in terms of traded goods): \\[\np_t = \\left[ \\eta + (1-\\eta)\\left( \\frac{A^N_t}{A^T_t} \\right)^{1 - 1/\\mu} \\right]^{1/(1 - 1/\\mu)}\n\\]\n\nStationarity:\nBoth \\(p^N_t\\) and \\(p_t\\) are stationary variables, provided that \\(A^T_t\\) and \\(A^N_t\\) grow at the same rate as the overall absorption \\(A_t\\). This is typically the case along a balanced growth path, where sectoral absorptions and outputs grow proportionally with the nonstationary component \\(X_t\\).\n\n\n3. Stationary (Balanced-Growth-Path) Form of the Equilibrium System\nTo express the equilibrium conditions in stationary form, we normalize all real variables by the level of nonstationary productivity, \\(X_t\\). Define lowercase variables as \\(c_t = C_t / X_t\\), \\(k^T_t = K^T_t / X_t\\), \\(d_t = D_t / X_t\\), etc.\nThe key stationary equilibrium conditions become:\n\nStationarized Production Functions: \\[\\begin{align*}\n  y^T_t &= z_t (k^T_t)^{1 - \\alpha_T} (h^T_t)^{\\alpha_T} \\\\\n  y^N_t &= z_t (k^N_t)^{1 - \\alpha_N} (h^N_t)^{\\alpha_N}\n\\end{align*}\\]\nStationarized Capital Accumulation (for \\(i = T, N\\)): \\[\nk^i_{t+1} = \\frac{1}{g_t} \\left[ (1 - \\delta) k^i_t + i^i_t - \\frac{\\phi}{2} \\left( \\frac{g_t k^i_{t+1}}{k^i_t} - g \\right)^2 k^i_t \\right]\n\\]\nStationarized Budget Constraint: \\[\n\\frac{d_{t+1}}{R_t} = d_t + a^T_t - y^T_t\n\\]\nStationarized Interest Rate: \\[\nR_t = R^* + \\psi \\left[ \\exp(d_{t+1} - \\overline{d}) - 1 \\right]\n\\]\n\nOther equilibrium conditions (such as the CES aggregator, labor market clearing, and the laws of motion for exogenous processes) are similarly rewritten in terms of stationary variables. This transformation ensures all variables are stationary and suitable for steady-state and dynamic analysis.\n\n\n4. Steady-State Restrictions and Calibration\nTo determine the steady state, impose that all stationary variables are constant over time and that the economy grows at the rate of the nonstationary productivity component, i.e., \\(g_t = g\\) and \\(d_{t+1} = \\overline{d}\\).\n\nRestriction on \\(R^*\\):\nTo ensure that the steady-state value of external debt per unit of productivity, \\(d_{t+1} \\equiv D_{t+1}/X_t\\), equals the target \\(\\overline{d}\\), set \\(R^* = 1/\\beta\\) (adjusted for growth and depreciation as required by the Euler equation in steady state).\nSteady-State Computation:\nSolve the stationary system for steady-state values of all endogenous variables: \\(c, i, i^T, i^N, k^T, k^N, h, h^T, h^N, a^T, a^N, a, d, r, y^T, y^N\\), etc.\nCalibration of \\(\\eta\\):\nChoose \\(\\eta\\) such that the steady-state share of nontraded output in total output matches the target: \\[\n\\frac{p^N Y^N}{p^N Y^N + Y^T} = 0.65\n\\] Numerically solve for \\(\\eta\\) to satisfy this condition, then report the computed value of \\(\\eta\\) and the steady-state values of all endogenous variables to four decimal places.\n\n\n\n5. Eigenvalues of the Linearized System\nLinearize the stationary equilibrium system around the steady state to obtain the Jacobian matrix \\(h_x\\) that describes the local dynamics of the state vector. Compute and report the numerical values of the eigenvalues of \\(h_x\\). These eigenvalues indicate the stability properties and dynamic responses of the system to shocks.\n\n\n6. Computation of Moments\nDefine the following variables for empirical analysis:\n\nGross Domestic Product (GDP): \\[\nY_t = \\frac{Y^T_t + p^N_t Y^N_t}{p_t}\n\\]\nTrade Balance: \\[\nTB_t = Y_t - C_t - I_t\n\\]\nGrowth Rates: \\[\\begin{align*}\n  \\Delta C_t &= \\log \\left( \\frac{C_t}{C_{t-1}} \\right) \\\\\n  \\Delta Y_t &= \\log \\left( \\frac{Y_t}{Y_{t-1}} \\right)\n\\end{align*}\\]\n\nCompute the unconditional standard deviations of \\(\\Delta C_t\\) and \\(\\Delta Y_t\\), denoted \\(\\text{std}(\\Delta C_t)\\) and \\(\\text{std}(\\Delta Y_t)\\), respectively. Also, calculate the correlation coefficient between output growth and the trade-balance-to-output ratio: \\[\ntby_t = \\frac{TB_t}{Y_t}\n\\] Report \\(\\text{corr}(\\Delta Y_t,\\ tby_t)\\)."
+  },
+  {
+    "objectID": "chapters/ch05/5_6.html",
+    "href": "chapters/ch05/5_6.html",
+    "title": "Exercise 5.6",
+    "section": "",
+    "text": "⬅ Return"
+  },
+  {
+    "objectID": "chapters/ch05/5_6.html#problem",
+    "href": "chapters/ch05/5_6.html#problem",
+    "title": "Exercise 5.6",
+    "section": "Problem",
+    "text": "Problem\nFollowing the notation introduced in the body of this chapter, the first-order approximation to the equilibrium laws of motion of the state and control vectors, respectively, are given by \\(Y_t = G_xY_t\\) and \\(X_{t+1} = G_x X_t + [\\emptyset;B]\\epsilon_{t+1}\\). One aspect that distinguishes models with imperfect information from models with perfect information is that in the former the standard deviations of the exogenous disturbances, which define the matrix \\(B\\), also appear in the matrices \\(H_x\\) and \\(G_x\\), where in the latter class of models \\(G_x\\) and \\(H_x\\) are independent of \\(B\\). That is, the relative volatility of the underlying shocks affects the transmission mechanism under imperfect information, but not under full information. In light of this fact, propose meaningful ways to evaluate the contribution of different shocks (in the context of the model laid out in section 5.7, noise shocks, productivity shocks, etc.) under imperfect information. Discuss the concept of `variance decomposition’ in this context. Apply your proposal to evaluating the contribution of different shocks in the model estimated in section 5.7."
+  },
+  {
+    "objectID": "chapters/ch05/5_6.html#answer",
+    "href": "chapters/ch05/5_6.html#answer",
+    "title": "Exercise 5.6",
+    "section": "Answer",
+    "text": "Answer"
+  },
+  {
+    "objectID": "chapters/ch05/5_5.html",
+    "href": "chapters/ch05/5_5.html",
+    "title": "Exercise 5.5",
+    "section": "",
+    "text": "⬅ Return"
+  },
+  {
+    "objectID": "chapters/ch05/5_5.html#problem",
+    "href": "chapters/ch05/5_5.html#problem",
+    "title": "Exercise 5.5",
+    "section": "Problem",
+    "text": "Problem\nAugment the open economy model with imperfect information of section 5.7 to allow for an interest rate shock as in the GPU model of section 5.3. To this end proceed as follows:\n\nReestimate the model using Bayesian techniques. Use the Mexican data and prior distributions used in section 5.7. Enlarge the vector of estimated parameters to include the parameter \\(\\psi\\) governing the debt-elasticity of the interest rate, and the standard deviation and serial correlation of the interest-rate shock. For these additional parameters, use the priors of section 5.3.\nProduce a table displaying the lower and upper bounds of the prior distributions along with the posterior mean, median, standard deviation, and the 5-95 percent probability interval.\n\nFor the remaining questions, evaluate the model at the posterior median of the estimated parameters.\n\nReport the share of the variance of the signal \\(s_t\\) accounted for by noise shock \\(n_t\\) (i.e., the noise to signal ratio). Comment.\nReport the share of the variance of TFP growth explained by the nonstationary productivity shock and contrast it to the case without interest-rate shocks and financial frictions.\nProduce a table displaying the actual and predicted standard deviation, correlation with output growth, and serial correlation of output growth, consumption growth, investment growth, and the trade-balance-to-output ratio. Comment especially on the model’s ability to explain the predicted volatility of the trade-balance-to-output ratio and the serial correlations of output and investment growth, which are the second moments that the version of the model without interest-rate shocks or financial frictions has the hardest time explaining.\nAdd one more line per moment to this table, displaying the predicted second moment under perfect information. For this step, set \\(\\sigma_n=0\\) and reestimate the model. Discuss your findings."
+  },
+  {
+    "objectID": "chapters/ch05/5_5.html#answer",
+    "href": "chapters/ch05/5_5.html#answer",
+    "title": "Exercise 5.5",
+    "section": "Answer",
+    "text": "Answer"
+  },
+  {
+    "objectID": "chapters/ch05/index.html",
+    "href": "chapters/ch05/index.html",
+    "title": "Chapter 5 – Business Cycles in Emerging Countries: Productivity Shocks versus Financial Fricitions",
+    "section": "",
+    "text": "Exercise 5.1 (Explaining the Serial Correlation of Investment Growth)\nExercise 5.2 (The Effect of Nonstationary Productivity Shocks on the Trade Balance in the Presence of Nontraded Goods)\nExercise 5.3 (Slow Diffusion of Technology Shocks to the Country Premium, Household Production, and Government Spending)\nExercise 5.4 (The Importance of Nonstationary Productivity Shocks in the GPU Model)\nExercise 5.5 (Letting Productivity, Noise, and Interest-Rate Shocks Compete)\nExercise 5.6 (The Meaning of Variance Decomposition Under Imperfect Information)"
+  },
+  {
+    "objectID": "chapters/ch05/5_4.html",
+    "href": "chapters/ch05/5_4.html",
+    "title": "Exercise 5.4",
+    "section": "",
+    "text": "⬅ Return"
+  },
+  {
+    "objectID": "chapters/ch05/5_4.html#problem",
+    "href": "chapters/ch05/5_4.html#problem",
+    "title": "Exercise 5.4",
+    "section": "Problem",
+    "text": "Problem\nThe model of section 5.3 introduces three modifications to the SOE-RBC model with stationary and nonstationary technology shocks of section 5.2, namely, a longer sample, additional shocks, and financial frictions. A result of section 5.3 is that once these modifications are put in place, nonstationary productivity shocks cease to play a central role in explaining business cycles. The goal of this exercise is to disentangle which of the three aforementioned modifications is responsible for this result. To this end, estimate, using Bayesian methods, one at the time, the following three variants of the model:\n\nShorter Sample: Use data from 1975-2005.\nOnly Technology Shocks: Set to zero the standard deviations of the preference shock, the country-interest-rate shock, and the spending shock.\nNo Financial Frictions: Set \\(\\psi=0.001\\) and \\(\\eta=0\\).\n\nUse the same priors as in the body of the chapter and produce MCMC chains of 1 million draws with an acceptance rate of 25 percent. In each case, report the implied variance decomposition of TFP, output growth, consumption growth, investment growth, and the trade-balance-to output ratio and measures of model fit, using the formats of tables 5.4, 5.5 and 5.6 and equation (5.13). Discuss your results."
+  },
+  {
+    "objectID": "chapters/ch05/5_4.html#answer",
+    "href": "chapters/ch05/5_4.html#answer",
+    "title": "Exercise 5.4",
+    "section": "Answer",
+    "text": "Answer"
+  },
+  {
+    "objectID": "chapters/ch05/5_3.html",
+    "href": "chapters/ch05/5_3.html",
+    "title": "Exercise 5.3",
+    "section": "",
+    "text": "⬅ Return"
+  },
+  {
+    "objectID": "chapters/ch05/5_3.html#problem",
+    "href": "chapters/ch05/5_3.html#problem",
+    "title": "Exercise 5.3",
+    "section": "Problem",
+    "text": "Problem\nThe model presented in section 5.3 assumes that permanent productivity shocks affect not only the productivity of labor and capital in producing market goods, but also the country premium, home production, and government spending. For instance, the assumption that the country interest rate depends on \\(\\widetilde{D}_{t+1}/X_t\\), implies that a positive innovation in \\(X_t\\) in period \\(t\\), causes, all other things equal, a fall in the country premium. In this exercise, we attenuate this type of effect by reformulating the model. Let\n\\[\n\\widetilde{X}_t = \\widetilde{X}_{t-1}^{\\zeta}X_t^{1-\\zeta},\n\\]\nwith \\(\\zeta\\in[0,1)\\). Note that the original formulation obtains when \\(\\zeta=0\\). Replace equations (5.3), (5.5), and (5.9), respectively, with\n\\[\nE_0\\sum_{t=0}^{\\infty} \\nu_t\\beta^t\n\\frac{\\left[C_t - \\omega^{-1}\\widetilde{X}_{t-1} h_t^{\\omega}\\right]^{1-\\gamma}-1}{1-\\gamma},\n\\]\n\\[\ns_t =  \\frac{S_t}{\\widetilde{X}_{t-1}},\n\\]\nand\n\\[\nr_t =\nr^* +  \\psi \\left(\ne^{(\\widetilde{D}_{t+1}/\\widetilde{X}_t-\\overline{d})/ \\overline{y}}  -1 \\right)\n+ e^{\\mu_t-1}-1.\n\\]\nKeep all other features of the model as presented in section 5.3.\n\nPresent the equilibrium conditions of the model in stationary form.\nUsing Bayesian techniques, reestimate the model adding \\(\\zeta\\) to the vector of estimated parameters. Assume a uniform prior distribution for \\(\\zeta\\) with support \\([0,0.99]\\) and produce 1 million draws from the posterior distribution of the parameter vector. Present the estimation results in the form of a table like table 5.4. Discuss your findings.\nCharacterize numerically the predictions of the model. In particular, produce tables similar to tables 5.5 and 5.6. Discuss your results and provide intuition.\nCompute the impulse responses of output, consumption, investment, the trade-balance-to-output ratio, and the country interest rate to a one-percent innovation in \\(g_t\\) for three values of \\(\\zeta\\), namely, 0, its posterior median, and 0.99."
+  },
+  {
+    "objectID": "chapters/ch05/5_3.html#answer",
+    "href": "chapters/ch05/5_3.html#answer",
+    "title": "Exercise 5.3",
+    "section": "Answer",
+    "text": "Answer\n\n1. Stationary Form of the Equilibrium Conditions\nTo obtain a stationary representation of the model, we normalize all real variables that grow with \\(\\widetilde{X}_t\\) or \\(X_t\\). Define normalized variables using either \\(X_t\\) or \\(\\widetilde{X}_{t-1}\\) as appropriate:\n\n\\(c_t = C_t / \\widetilde{X}_{t-1}\\),\n\\(s_t = S_t / \\widetilde{X}_{t-1}\\),\n\\(\\widetilde{x}_t = \\widetilde{X}_t / X_t\\) (implicitly defined),\n\\(d_t = \\widetilde{D}_t / \\widetilde{X}_t\\),\netc.\n\nThe modified equations in stationary form are:\n\nUtility Function: \\[\nE_0\\sum_{t=0}^{\\infty} \\nu_t\\beta^t\n\\frac{\\left[c_t - \\omega^{-1} h_t^{\\omega}\\right]^{1-\\gamma}-1}{1-\\gamma}\n\\]\nDefinition of \\(\\widetilde{X}_t\\): \\[\n\\widetilde{X}_t = \\widetilde{X}_{t-1}^{\\zeta} X_t^{1-\\zeta}\n\\]\nTaking logs: \\[\n\\log \\widetilde{X}_t = \\zeta \\log \\widetilde{X}_{t-1} + (1 - \\zeta) \\log X_t\n\\]\nNormalized Government Spending: \\[\ns_t = \\frac{S_t}{\\widetilde{X}_{t-1}}\n\\]\nInterest Rate with Endogenous Spread and Risk Premium: \\[\nr_t = r^* + \\psi \\left(\n\\exp\\left( \\frac{d_{t+1} - \\overline{d}}{\\overline{y}} \\right) - 1\n\\right) + \\exp(\\mu_t - 1) - 1\n\\]\nEuler Equation (normalized): \\[\n\\left[c_t - \\omega^{-1} h_t^{\\omega} \\right]^{-\\gamma} = \\beta (1 + r_t) E_t \\left[ \\left(c_{t+1} - \\omega^{-1} h_{t+1}^\\omega \\right)^{-\\gamma} \\frac{1}{\\widetilde{x}_{t+1}} \\right]\n\\]\nResource Constraints and Budget Constraints:\nNormalize all remaining real variables (consumption, income, taxes, transfers, etc.) by the appropriate productivity term. The no-Ponzi condition must also be imposed on normalized debt \\(d_t\\).\n\nAll equations are now expressed in terms of stationary variables, and thus suitable for deterministic or stochastic steady-state computation and linearization."
   }
 ]

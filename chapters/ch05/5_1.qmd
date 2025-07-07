@@ -1,0 +1,25 @@
+---
+title: "Exercise 5.1"
+subtitle: "Explaining the Serial Correlation of Investment Growth"
+---
+<a class="return-button" href="index.qmd">⬅ Return</a>
+
+## Problem
+
+The version of the GPU model estimated in this chapter predicts a negative first-order serial correlation of investment growth of -0.098 (see table 5.5). In contrast,  the empirical counterpart is positive and significant, with a point estimate of 0.32. This empirical fact is also observed in  other emerging countries over long horizons. For example,  Miyamoto and Nguyen (2013) report serial correlations of investment growth greater than or equal to 0.2 for Brazil, Mexico, Peru, Turkey, and Venezuela using annual data covering the period 1900 to 2006. 
+
+1. Think of a possible modification of the theoretical model that would result  in an improvement of the model's prediction along this dimension. Provide intuition.
+
+2. Implement your suggestion. Show the complete set of equilibrium conditions. 
+
+3. Reestimate  your model using the data set for Argentina on which the GPU model of this chapter was estimated. 
+
+4. Summarize your results by expanding  table 5.5 with appropriate lines containing the predictions of your model. 
+
+5. Compare the performance of your model  with the data and with the predictions of the version of the GPU model analyzed in this chapter.  
+
+
+## Answer
+
+Try  formulating adjustment costs in terms of the growth rate of investment, as in CEE (JPE, 2005), rather than in terms of the growth rate of capital. 
+

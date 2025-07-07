@@ -1,0 +1,21 @@
+---
+title: "Exercise 5.4"
+subtitle: "The Importance of Nonstationary Productivity Shocks in the GPU Model"
+---
+<a class="return-button" href="index.qmd">⬅ Return</a>
+
+## Problem
+
+The model of section 5.3 introduces three modifications to the SOE-RBC model with stationary and nonstationary technology shocks of section 5.2, namely, a longer sample, additional shocks, and financial frictions. A result of section 5.3 is that once these modifications are put in place, nonstationary productivity shocks cease to play a central role in explaining business cycles. The goal of this exercise is to disentangle which of the three aforementioned modifications is responsible for this result. To this end, estimate, using Bayesian methods, one at the time, the following three variants of the model:
+
+1. Shorter Sample: Use data from  1975-2005. 
+
+2. Only Technology Shocks: Set to zero the standard deviations of the preference shock, the country-interest-rate shock, and the spending shock. 
+
+3. No Financial Frictions: Set $\psi=0.001$ and $\eta=0$. 
+
+Use the same priors as in the body of the chapter and  produce MCMC chains of 1 million draws with an acceptance rate of 25 percent. 
+In each case, report the implied variance decomposition of TFP, output growth, consumption growth, investment growth, and the trade-balance-to output ratio and measures of model fit, using the formats of tables 5.4, 5.5 and 5.6 and equation (5.13). Discuss your results. 
+
+## Answer
+

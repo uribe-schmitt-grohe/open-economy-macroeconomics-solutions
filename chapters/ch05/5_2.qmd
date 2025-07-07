@@ -1,0 +1,323 @@
+---
+title: "Exercise 5.2"
+subtitle: "The Effect of Nonstationary Productivity Shocks on the Trade Balance in the Presence of Nontraded Goods"
+---
+<a class="return-button" href="index.qmd">⬅ Return</a>
+
+## Problem
+
+This exercise introduces nontradable goods a subject that we will take up in  detail in chapter 8. You may choose to postpone working on this exercise until you have read that chapter.  However, the tools developed in the current chapter should be sufficient to do  this exercise. 
+Consider an economy populated by a large number of identical households with preferences described by the utility function
+
+$$
+ E_0 \sum_{t=0}^{\infty} \beta^t
+\frac{[C_t^{\gamma}(1-h_t)^{1-\gamma}]^{1-\sigma}-1}
+{1-\sigma},
+$$
+
+where $C_t$ denotes consumption and $h_t$ denotes hours worked. 
+
+Let $A_t$ denote domestic absorption. That is, $A_t$ satisfies the identity
+
+$$
+A_t = C_t + I_t,
+$$
+
+where $I_t$ denotes gross domestic investment. Assume that $A_t$ is a composite of tradable and nontradable goods produced via the following aggregator function:
+
+$$
+A_t = \left[
+\eta (A_t^T)^{1-1/\mu} + (1-\eta) (A^N_t)^{1-1/\mu}
+\right]^{1/(1-1/\mu)},
+$$
+
+where $A^T_t$ and $A^N_t$ denote, respectively, domestic absorptions of tradable and nontradable goods. 
+Tradable and nontradable goods,
+denoted, respectively, 
+ $Y^T_t$ and $Y^N_t$, 
+are produced  under constant returns to scale using capital and labor as inputs: 
+
+$$
+Y^T_t = z_t (K^T_t)^{1-\alpha_T}
+(X_t h^T_t)^{\alpha_T}
+$$
+
+and
+
+$$
+Y^N_t = z_t (K^N_t)^{1-\alpha_N}
+(X_t h^N_t)^{\alpha_N},
+$$
+
+where $K^i_t$ and $h^i_t$ denote, respectively, capital and labor services employed in sector $i$, for $i=T,N$. 
+The variable $z_t$ represents an exogenous, stationary, stochastic productivity shock and $X_t$ represents an exogenous, stochastic, nonstationary productivity shock. 
+The capital stocks evolve according to the following laws of motion:
+
+$$
+K^T_{t+1} = (1-\delta)K^T_t + I^T_t - 
+\frac{\phi}2 \left(
+\frac{K^T_{t+1}}{K^T_t}-g
+\right)^2K^T_t
+$$
+
+and
+
+$$
+K^N_{t+1} = (1-\delta)K^N_t + I^N_t - 
+\frac{\phi}2 \left(
+\frac{K^N_{t+1}}{K^N_t}-g
+\right)^2K^N_t,
+$$
+
+where $I^i_t$ denotes investment in sector $i=T,N$ and satisfies
+
+$$
+I_t = I^T_t + I^N_t.
+$$
+
+Market clearing in the nontraded sector requires that domestic absorption  equal  production:
+
+$$
+Y^N_t = A^N_t.
+$$
+
+Also, market clearing in the labor market requires that
+
+$$
+h_t = h^T_t + h^N_t.
+$$ 
+
+Assume that the country has access to a single, one-period,  internationally traded bond that pays the debt-elastic gross interest rate $R_t$ when held between periods $t$ and $t+1$. The evolution of the household's net foreign debt position, $D_t$,  is given by
+
+$$
+\frac{D_{t+1}}{R_t}
+= D_t  + A^T_t -Y^T_t,
+$$
+
+with
+
+$$
+R_t = R^* + \psi \left[
+e^{\tilde{D}_{t+1}/X_t-\overline{d}}-1
+\right],
+$$
+
+where $\tilde{D}_t$ denotes average external debt per capita 
+due in period $t$. 
+Because households are homogeneous, 
+we have that in equilibrium the following condition must hold:
+
+$$
+\tilde{D}_t = D_t.
+$$
+
+Finally, assume that the  stationary productivity shock $z_t$ follows an AR(1) process of the form
+
+$$
+\ln z_t = \rho_z \ln z_{t-1} + \sigma_z \epsilon^z_t.
+$$
+
+And  the nonstationary productivity shock evolves according to
+
+$$
+\ln (g_t/g) = \rho_g \ln(g_{t-1}/g) + \sigma_g \epsilon^g_t,
+$$
+
+where
+
+$$
+g_t \equiv \frac{X_t}{X_{t-1}},
+$$
+
+ $\rho_z,\rho_g\in (-1,1)$, $\sigma_z,\sigma_g>0$, and $\epsilon^z_t$ and $\epsilon^g_t$ are independent white noises distributed $N(0,1)$.
+
+Assume that  the time unit is one quarter. Use the following table to calibrate the model:
+
+<img src="figures/5_2_1.png" alt="Table 1" style="display:block; margin:auto; max-width:90%;box-shadow:none; border:none;" />
+
+Guidelines for calibrating the parameter $\eta$ are given below. 
+
+
+When  addressing the numerical portions of the following questions, 
+write your answers to 4 decimal places. 
+
+1. Write down the complete set of equilibrium conditions. Count the number of variables and equations.
+
+
+2. Let $p^N_t$ and $p_t$ be the (shadow) relative prices of the nontradable good and the composite good in terms of tradable goods, respectively. Write down expressions for $p^N_t$ and $p_t$ in terms of $A^T_t$ and $A^N_t$. Are $p^N_t$ and $p_t$ stationary variables? Why?
+
+3. Write down the complete set of equilibrium conditions in stationary form along a balanced-growth path. 
+
+4. Derive a  restriction on $R^*$ that guarantees that the steady-state value of 
+$d_{t+1} \equiv D_{t+1}/X_t$ along the balanced-growth path equals $\overline{d}$. 
+Compute the steady state of the model. Set $\eta$ to ensure that the share of nontraded output in total output, defined as $p^N_tY^N_t/(p^N_tY^N_t+Y^T_t)$ equals 0.65  in the steady state. Report the numerical  value of $\eta$ and the steady-state values of all endogenous variables of the model. 
+
+5. Report the numerical values  of the eigenvalues of the matrix $h_x$  defining  the linearized equilibrium law of motion of the state vector. 
+
+6. Define GDP as $Y_t = (Y^T_t+p^N_tY^N_t)/p_t$.  Define the trade balance,  $TB_t$, as $TB_t = Y_t -C_t -I_t$. Compute the unconditional standard deviations of the growth rates of consumption and output, defined, respectively, as $\Delta C_t \equiv \log(C_t/C_{t-1})$ and $\Delta Y_t \equiv \log(Y_t/Y_{t-1})$. Compute the correlation between $\Delta Y_t$ and the trade-balance-to-output ratio, defined as $tby_t \equiv TB_t/Y_t$.
+
+7. Compute other second moments of your choice and discuss whether they are in line with empirical regularities in emerging economies. 
+
+8. Explain how you would reparameterize the model to make it coincide with the one-sector model studied in section 5.2. Answer the previous two questions under your proposed parameterization. 
+
+9. Based on your answers to the previous three questions, evaluate the ability of the 
+present traded-nontraded model to explain key stylized facts in emerging countries. Provide intuition making sure to emphasize the differences you can identify between the dynamics implied by the one-good SOE-RBC model and the present two-good SOE-RBC model. 
+
+
+## Answer
+
+#### 1. Complete Set of Equilibrium Conditions and Variable Counting
+
+The equilibrium of this two-sector open economy model is characterized by the following system of equations:
+
+- **Absorption Identity:**
+  $$
+  A_t = C_t + I_t
+  $$
+
+- **Composite Good Aggregator:**
+  $$
+  A_t = \left[
+    \eta (A^T_t)^{1-1/\mu} + (1-\eta) (A^N_t)^{1-1/\mu}
+  \right]^{1/(1-1/\mu)}
+  $$
+
+- **Capital Accumulation (for $i = T, N$):**
+  $$
+  K^i_{t+1} = (1-\delta)K^i_t + I^i_t - \frac{\phi}{2}\left( \frac{K^i_{t+1}}{K^i_t} - g \right)^2 K^i_t
+  $$
+
+- **Investment Decomposition:**
+  $$
+  I_t = I^T_t + I^N_t
+  $$
+
+- **Production Functions:**
+  \begin{align*}
+    Y^T_t &= z_t (K^T_t)^{1 - \alpha_T} (X_t h^T_t)^{\alpha_T} \\
+    Y^N_t &= z_t (K^N_t)^{1 - \alpha_N} (X_t h^N_t)^{\alpha_N}
+  \end{align*}
+
+- **Market Clearing Conditions:**
+  - Nontraded goods:
+    $$
+    Y^N_t = A^N_t
+    $$
+  - Labor market:
+    $$
+    h_t = h^T_t + h^N_t
+    $$
+
+- **External Budget Constraint:**
+  $$
+  \frac{D_{t+1}}{R_t} = D_t + A^T_t - Y^T_t
+  $$
+
+- **Interest Rate Equation:**
+  $$
+  R_t = R^* + \psi \left[ \exp\left( \frac{D_{t+1}}{X_t} - \overline{d} \right) - 1 \right]
+  $$
+
+- **Exogenous Shock Processes:**
+  \begin{align*}
+    \ln z_t &= \rho_z \ln z_{t-1} + \sigma_z \epsilon^z_t \\
+    \ln \left( \frac{g_t}{g} \right) &= \rho_g \ln \left( \frac{g_{t-1}}{g} \right) + \sigma_g \epsilon^g_t \\
+    g_t &= \frac{X_t}{X_{t-1}}
+  \end{align*}
+
+The endogenous variables of the system include: $C_t, I_t, I^T_t, I^N_t, K^T_t, K^N_t, h_t, h^T_t, h^N_t, A^T_t, A^N_t, A_t, D_t, R_t, Y^T_t, Y^N_t, z_t, X_t$, among others as required by the model (such as prices and additional auxiliary variables if needed). The number of independent equations matches the number of endogenous variables, ensuring a well-defined equilibrium system.
+
+#### 2. Expressions for Relative Prices and Their Stationarity
+
+The shadow relative prices can be derived from the CES aggregator:
+
+- **Relative Price of Nontraded Goods (in terms of traded goods):**
+  $$
+  p^N_t = \left( \frac{1-\eta}{\eta} \right) \left( \frac{A^T_t}{A^N_t} \right)^{1/\mu}
+  $$
+
+- **Price of the Composite Good (in terms of traded goods):**
+  $$
+  p_t = \left[ \eta + (1-\eta)\left( \frac{A^N_t}{A^T_t} \right)^{1 - 1/\mu} \right]^{1/(1 - 1/\mu)}
+  $$
+
+**Stationarity:**  
+Both $p^N_t$ and $p_t$ are stationary variables, provided that $A^T_t$ and $A^N_t$ grow at the same rate as the overall absorption $A_t$. This is typically the case along a balanced growth path, where sectoral absorptions and outputs grow proportionally with the nonstationary component $X_t$.
+
+#### 3. Stationary (Balanced-Growth-Path) Form of the Equilibrium System
+
+To express the equilibrium conditions in stationary form, we normalize all real variables by the level of nonstationary productivity, $X_t$. Define lowercase variables as $c_t = C_t / X_t$, $k^T_t = K^T_t / X_t$, $d_t = D_t / X_t$, etc.
+
+The key stationary equilibrium conditions become:
+
+- **Stationarized Production Functions:**
+  \begin{align*}
+    y^T_t &= z_t (k^T_t)^{1 - \alpha_T} (h^T_t)^{\alpha_T} \\
+    y^N_t &= z_t (k^N_t)^{1 - \alpha_N} (h^N_t)^{\alpha_N}
+  \end{align*}
+
+- **Stationarized Capital Accumulation (for $i = T, N$):**
+  $$
+  k^i_{t+1} = \frac{1}{g_t} \left[ (1 - \delta) k^i_t + i^i_t - \frac{\phi}{2} \left( \frac{g_t k^i_{t+1}}{k^i_t} - g \right)^2 k^i_t \right]
+  $$
+
+- **Stationarized Budget Constraint:**
+  $$
+  \frac{d_{t+1}}{R_t} = d_t + a^T_t - y^T_t
+  $$
+
+- **Stationarized Interest Rate:**
+  $$
+  R_t = R^* + \psi \left[ \exp(d_{t+1} - \overline{d}) - 1 \right]
+  $$
+
+Other equilibrium conditions (such as the CES aggregator, labor market clearing, and the laws of motion for exogenous processes) are similarly rewritten in terms of stationary variables. This transformation ensures all variables are stationary and suitable for steady-state and dynamic analysis.
+
+#### 4. Steady-State Restrictions and Calibration
+
+To determine the steady state, impose that all stationary variables are constant over time and that the economy grows at the rate of the nonstationary productivity component, i.e., $g_t = g$ and $d_{t+1} = \overline{d}$.
+
+- **Restriction on $R^*$:**  
+  To ensure that the steady-state value of external debt per unit of productivity, $d_{t+1} \equiv D_{t+1}/X_t$, equals the target $\overline{d}$, set $R^* = 1/\beta$ (adjusted for growth and depreciation as required by the Euler equation in steady state).
+
+- **Steady-State Computation:**  
+  Solve the stationary system for steady-state values of all endogenous variables: $c, i, i^T, i^N, k^T, k^N, h, h^T, h^N, a^T, a^N, a, d, r, y^T, y^N$, etc.
+
+- **Calibration of $\eta$:**  
+  Choose $\eta$ such that the steady-state share of nontraded output in total output matches the target:
+  $$
+  \frac{p^N Y^N}{p^N Y^N + Y^T} = 0.65
+  $$
+  Numerically solve for $\eta$ to satisfy this condition, then report the computed value of $\eta$ and the steady-state values of all endogenous variables to four decimal places.
+
+#### 5. Eigenvalues of the Linearized System
+
+Linearize the stationary equilibrium system around the steady state to obtain the Jacobian matrix $h_x$ that describes the local dynamics of the state vector. Compute and report the numerical values of the eigenvalues of $h_x$. These eigenvalues indicate the stability properties and dynamic responses of the system to shocks.
+
+#### 6. Computation of Moments
+
+Define the following variables for empirical analysis:
+
+- **Gross Domestic Product (GDP):**
+  $$
+  Y_t = \frac{Y^T_t + p^N_t Y^N_t}{p_t}
+  $$
+
+- **Trade Balance:**
+  $$
+  TB_t = Y_t - C_t - I_t
+  $$
+
+- **Growth Rates:**
+  \begin{align*}
+    \Delta C_t &= \log \left( \frac{C_t}{C_{t-1}} \right) \\
+    \Delta Y_t &= \log \left( \frac{Y_t}{Y_{t-1}} \right)
+  \end{align*}
+
+Compute the unconditional standard deviations of $\Delta C_t$ and $\Delta Y_t$, denoted $\text{std}(\Delta C_t)$ and $\text{std}(\Delta Y_t)$, respectively. Also, calculate the correlation coefficient between output growth and the trade-balance-to-output ratio:
+$$
+tby_t = \frac{TB_t}{Y_t}
+$$
+Report $\text{corr}(\Delta Y_t,\ tby_t)$.
+
+
