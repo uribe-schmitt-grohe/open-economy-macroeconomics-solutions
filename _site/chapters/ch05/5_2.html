@@ -316,10 +316,11 @@ K^i_{t+1} = (1-\delta)K^i_t + I^i_t - \frac{\phi}{2}\left( \frac{K^i_{t+1}}{K^i_
 <li><p><strong>Investment Decomposition:</strong> <span class="math display">\[
 I_t = I^T_t + I^N_t
 \]</span></p></li>
-<li><p><strong>Production Functions:</strong> <span class="math display">\[\begin{align*}
-  Y^T_t &amp;= z_t (K^T_t)^{1 - \alpha_T} (X_t h^T_t)^{\alpha_T} \\
-  Y^N_t &amp;= z_t (K^N_t)^{1 - \alpha_N} (X_t h^N_t)^{\alpha_N}
-\end{align*}\]</span></p></li>
+<li><p><strong>Production Functions:</strong> <span class="math display">\[
+Y^T_t = z_t (K^T_t)^{1 - \alpha_T} (X_t h^T_t)^{\alpha_T}
+\]</span> <span class="math display">\[
+Y^N_t = z_t (K^N_t)^{1 - \alpha_N} (X_t h^N_t)^{\alpha_N}
+\]</span></p></li>
 <li><p><strong>Market Clearing Conditions:</strong></p>
 <ul>
 <li>Nontraded goods: <span class="math display">\[
@@ -335,25 +336,83 @@ h_t = h^T_t + h^N_t
 <li><p><strong>Interest Rate Equation:</strong> <span class="math display">\[
 R_t = R^* + \psi \left[ \exp\left( \frac{D_{t+1}}{X_t} - \overline{d} \right) - 1 \right]
 \]</span></p></li>
-<li><p><strong>Exogenous Shock Processes:</strong> <span class="math display">\[\begin{align*}
-  \ln z_t &amp;= \rho_z \ln z_{t-1} + \sigma_z \epsilon^z_t \\
-  \ln \left( \frac{g_t}{g} \right) &amp;= \rho_g \ln \left( \frac{g_{t-1}}{g} \right) + \sigma_g \epsilon^g_t \\
-  g_t &amp;= \frac{X_t}{X_{t-1}}
-\end{align*}\]</span></p></li>
+<li><p><strong>Household First-Order Conditions:</strong></p>
+<ul>
+<li><p><strong>Intertemporal Euler Equation:</strong> <span class="math display">\[
+\frac{1}{C_t^{\sigma}} \left( \frac{1 - h_t}{C_t^{\gamma/(1-\gamma)}} \right)^{(1-\sigma)(1-\gamma)/\gamma} = \beta E_t \left[ \frac{R_t}{C_{t+1}^{\sigma}} \left( \frac{1 - h_{t+1}}{C_{t+1}^{\gamma/(1-\gamma)}} \right)^{(1-\sigma)(1-\gamma)/\gamma} \right]
+\]</span></p></li>
+<li><p><strong>Intratemporal Labor-Leisure Condition:</strong> <span class="math display">\[
+\frac{\gamma}{1-\gamma} \frac{1}{1 - h_t} = \frac{1}{C_t} w_t
+\]</span></p></li>
 </ul>
-<p>The endogenous variables of the system include: <span class="math inline">\(C_t, I_t, I^T_t, I^N_t, K^T_t, K^N_t, h_t, h^T_t, h^N_t, A^T_t, A^N_t, A_t, D_t, R_t, Y^T_t, Y^N_t, z_t, X_t\)</span>, among others as required by the model (such as prices and additional auxiliary variables if needed). The number of independent equations matches the number of endogenous variables, ensuring a well-defined equilibrium system.</p>
+<p>where <span class="math inline">\(w_t\)</span> is the aggregate real wage (to be defined below).</p></li>
+<li><p><strong>Firm Profit Maximization First-Order Conditions (for <span class="math inline">\(i = T, N\)</span>):</strong></p>
+<p>Firms in each sector rent capital and labor to maximize profits. The FOCs are:</p>
+<ul>
+<li><p><strong>Capital:</strong> <span class="math display">\[
+r^i_t = (1 - \alpha_i) z_t \left( \frac{X_t h^i_t}{K^i_t} \right)^{\alpha_i}
+\]</span></p></li>
+<li><p><strong>Labor:</strong> <span class="math display">\[
+w^i_t = \alpha_i z_t \left( \frac{K^i_t}{X_t h^i_t} \right)^{1 - \alpha_i} X_t
+\]</span></p></li>
+</ul></li>
+<li><p><strong>Prices and Wages:</strong></p>
+<p>The aggregate real wage <span class="math inline">\(w_t\)</span> is a weighted average of sectoral wages:</p>
+<p><span class="math display">\[
+w_t h_t = w^T_t h^T_t + w^N_t h^N_t
+\]</span></p></li>
+<li><p><strong>Exogenous Shock Processes:</strong> <span class="math display">\[
+\ln z_t = \rho_z \ln z_{t-1} + \sigma_z \epsilon^z_t
+\]</span> <span class="math display">\[
+\ln \left( \frac{g_t}{g} \right) = \rho_g \ln \left( \frac{g_{t-1}}{g} \right) + \sigma_g \epsilon^g_t
+\]</span> <span class="math display">\[
+g_t = \frac{X_t}{X_{t-1}}
+\]</span></p></li>
+</ul>
+<p>The endogenous variables include: <span class="math inline">\(C_t, I_t, I^T_t, I^N_t, K^T_t, K^N_t, h_t, h^T_t, h^N_t, A^T_t, A^N_t, A_t, D_t, R_t, Y^T_t, Y^N_t, w_t, w^T_t, w^N_t, r^T_t, r^N_t\)</span>, among others as required by the model. The number of independent equations matches the number of endogenous variables, ensuring a well-defined equilibrium system.</p>
 </section>
 <section id="expressions-for-relative-prices-and-their-stationarity" class="level4">
 <h4 class="anchored" data-anchor-id="expressions-for-relative-prices-and-their-stationarity">2. Expressions for Relative Prices and Their Stationarity</h4>
-<p>The shadow relative prices can be derived from the CES aggregator:</p>
-<ul>
-<li><p><strong>Relative Price of Nontraded Goods (in terms of traded goods):</strong> <span class="math display">\[
-p^N_t = \left( \frac{1-\eta}{\eta} \right) \left( \frac{A^T_t}{A^N_t} \right)^{1/\mu}
-\]</span></p></li>
-<li><p><strong>Price of the Composite Good (in terms of traded goods):</strong> <span class="math display">\[
-p_t = \left[ \eta + (1-\eta)\left( \frac{A^N_t}{A^T_t} \right)^{1 - 1/\mu} \right]^{1/(1 - 1/\mu)}
-\]</span></p></li>
-</ul>
+<p>The composite absorption good <span class="math inline">\(A_t\)</span> is a CES aggregator of tradable and nontradable goods:</p>
+<p><span class="math display">\[
+A_t = \left[ \eta (A^T_t)^{1 - \frac{1}{\mu}} + (1-\eta)(A^N_t)^{1 - \frac{1}{\mu}} \right]^{\frac{1}{1 - \frac{1}{\mu}}}.
+\]</span></p>
+<p>To find the relative prices, consider the cost minimization problem of choosing <span class="math inline">\((A^T_t, A^N_t)\)</span> to produce one unit of <span class="math inline">\(A_t\)</span> at minimum cost, given prices <span class="math inline">\(p^T_t\)</span> (normalized to 1 for tradables) and <span class="math inline">\(p^N_t\)</span>:</p>
+<p><span class="math display">\[
+\min_{A^T_t, A^N_t} p^T_t A^T_t + p^N_t A^N_t \quad \text{s.t.} \quad A_t = \left[ \eta (A^T_t)^{1 - \frac{1}{\mu}} + (1-\eta)(A^N_t)^{1 - \frac{1}{\mu}} \right]^{\frac{1}{1 - \frac{1}{\mu}}}.
+\]</span></p>
+<p>The Lagrangian is:</p>
+<p><span class="math display">\[
+\mathcal{L} = p^T_t A^T_t + p^N_t A^N_t - \lambda \left( \left[ \eta (A^T_t)^{1 - \frac{1}{\mu}} + (1-\eta)(A^N_t)^{1 - \frac{1}{\mu}} \right]^{\frac{1}{1 - \frac{1}{\mu}}} - A_t \right).
+\]</span></p>
+<p>Taking first-order conditions with respect to <span class="math inline">\(A^T_t\)</span> and <span class="math inline">\(A^N_t\)</span> gives:</p>
+<p><span class="math display">\[
+p^T_t = \lambda \frac{\partial A_t}{\partial A^T_t}, \quad p^N_t = \lambda \frac{\partial A_t}{\partial A^N_t}.
+\]</span></p>
+<p>Compute the partial derivatives:</p>
+<p><span class="math display">\[
+\frac{\partial A_t}{\partial A^T_t} = \left[ \eta (A^T_t)^{1 - \frac{1}{\mu}} + (1-\eta)(A^N_t)^{1 - \frac{1}{\mu}} \right]^{\frac{\frac{1}{\mu}}{1 - \frac{1}{\mu}}} \cdot \eta \left(1 - \frac{1}{\mu}\right) (A^T_t)^{-\frac{1}{\mu}},
+\]</span></p>
+<p>and similarly for <span class="math inline">\(A^N_t\)</span>:</p>
+<p><span class="math display">\[
+\frac{\partial A_t}{\partial A^N_t} = \left[ \eta (A^T_t)^{1 - \frac{1}{\mu}} + (1-\eta)(A^N_t)^{1 - \frac{1}{\mu}} \right]^{\frac{\frac{1}{\mu}}{1 - \frac{1}{\mu}}} \cdot (1-\eta) \left(1 - \frac{1}{\mu}\right) (A^N_t)^{-\frac{1}{\mu}}.
+\]</span></p>
+<p>Using these, the ratio of prices is:</p>
+<p><span class="math display">\[
+\frac{p^N_t}{p^T_t} = \frac{(1-\eta)(A^N_t)^{-\frac{1}{\mu}}}{\eta (A^T_t)^{-\frac{1}{\mu}}} = \frac{1-\eta}{\eta} \left( \frac{A^T_t}{A^N_t} \right)^{\frac{1}{\mu}}.
+\]</span></p>
+<p>Since <span class="math inline">\(p^T_t\)</span> is normalized to 1, this gives:</p>
+<p><span class="math display">\[
+p^N_t = \left( \frac{1-\eta}{\eta} \right) \left( \frac{A^T_t}{A^N_t} \right)^{1/\mu}.
+\]</span></p>
+<p>The price of the composite good in terms of tradable goods is the unit cost of producing one unit of <span class="math inline">\(A_t\)</span>:</p>
+<p><span class="math display">\[
+p_t = \left[ \eta (A^T_t)^{1 - \frac{1}{\mu}} + (1-\eta)(A^N_t)^{1 - \frac{1}{\mu}} \right]^{\frac{1}{1 - \frac{1}{\mu}} - 1} \times \left[ \eta (1) (A^T_t)^{-\frac{1}{\mu}} + (1-\eta) p^N_t (A^N_t)^{-\frac{1}{\mu}} \right].
+\]</span></p>
+<p>Simplifying, this reduces to:</p>
+<p><span class="math display">\[
+p_t = \left[ \eta + (1-\eta) \left( \frac{A^N_t}{A^T_t} \right)^{1 - \frac{1}{\mu}} \right]^{\frac{1}{1 - \frac{1}{\mu}}}.
+\]</span></p>
 <p><strong>Stationarity:</strong><br>
 Both <span class="math inline">\(p^N_t\)</span> and <span class="math inline">\(p_t\)</span> are stationary variables, provided that <span class="math inline">\(A^T_t\)</span> and <span class="math inline">\(A^N_t\)</span> grow at the same rate as the overall absorption <span class="math inline">\(A_t\)</span>. This is typically the case along a balanced growth path, where sectoral absorptions and outputs grow proportionally with the nonstationary component <span class="math inline">\(X_t\)</span>.</p>
 </section>
@@ -362,10 +421,11 @@ Both <span class="math inline">\(p^N_t\)</span> and <span class="math inline">\(
 <p>To express the equilibrium conditions in stationary form, we normalize all real variables by the level of nonstationary productivity, <span class="math inline">\(X_t\)</span>. Define lowercase variables as <span class="math inline">\(c_t = C_t / X_t\)</span>, <span class="math inline">\(k^T_t = K^T_t / X_t\)</span>, <span class="math inline">\(d_t = D_t / X_t\)</span>, etc.</p>
 <p>The key stationary equilibrium conditions become:</p>
 <ul>
-<li><p><strong>Stationarized Production Functions:</strong> <span class="math display">\[\begin{align*}
-  y^T_t &amp;= z_t (k^T_t)^{1 - \alpha_T} (h^T_t)^{\alpha_T} \\
-  y^N_t &amp;= z_t (k^N_t)^{1 - \alpha_N} (h^N_t)^{\alpha_N}
-\end{align*}\]</span></p></li>
+<li><p><strong>Stationarized Production Functions:</strong> <span class="math display">\[
+y^T_t = z_t (k^T_t)^{1 - \alpha_T} (h^T_t)^{\alpha_T}
+\]</span> <span class="math display">\[
+y^N_t = z_t (k^N_t)^{1 - \alpha_N} (h^N_t)^{\alpha_N}
+\]</span></p></li>
 <li><p><strong>Stationarized Capital Accumulation (for <span class="math inline">\(i = T, N\)</span>):</strong> <span class="math display">\[
 k^i_{t+1} = \frac{1}{g_t} \left[ (1 - \delta) k^i_t + i^i_t - \frac{\phi}{2} \left( \frac{g_t k^i_{t+1}}{k^i_t} - g \right)^2 k^i_t \right]
 \]</span></p></li>
@@ -383,37 +443,14 @@ R_t = R^* + \psi \left[ \exp(d_{t+1} - \overline{d}) - 1 \right]
 <p>To determine the steady state, impose that all stationary variables are constant over time and that the economy grows at the rate of the nonstationary productivity component, i.e., <span class="math inline">\(g_t = g\)</span> and <span class="math inline">\(d_{t+1} = \overline{d}\)</span>.</p>
 <ul>
 <li><p><strong>Restriction on <span class="math inline">\(R^*\)</span>:</strong><br>
-To ensure that the steady-state value of external debt per unit of productivity, <span class="math inline">\(d_{t+1} \equiv D_{t+1}/X_t\)</span>, equals the target <span class="math inline">\(\overline{d}\)</span>, set <span class="math inline">\(R^* = 1/\beta\)</span> (adjusted for growth and depreciation as required by the Euler equation in steady state).</p></li>
-<li><p><strong>Steady-State Computation:</strong><br>
-Solve the stationary system for steady-state values of all endogenous variables: <span class="math inline">\(c, i, i^T, i^N, k^T, k^N, h, h^T, h^N, a^T, a^N, a, d, r, y^T, y^N\)</span>, etc.</p></li>
+To ensure that the steady-state value of external debt per unit of productivity, <span class="math inline">\(d_{t+1} \equiv D_{t+1}/X_t\)</span>, equals the target <span class="math inline">\(\overline{d}\)</span>, the gross interest rate <span class="math inline">\(R^*\)</span> must satisfy the household Euler equation condition consistent with the steady-state growth rate and discount factor.</p></li>
 <li><p><strong>Calibration of <span class="math inline">\(\eta\)</span>:</strong><br>
-Choose <span class="math inline">\(\eta\)</span> such that the steady-state share of nontraded output in total output matches the target: <span class="math display">\[
-\frac{p^N Y^N}{p^N Y^N + Y^T} = 0.65
-\]</span> Numerically solve for <span class="math inline">\(\eta\)</span> to satisfy this condition, then report the computed value of <span class="math inline">\(\eta\)</span> and the steady-state values of all endogenous variables to four decimal places.</p></li>
+The parameter <span class="math inline">\(\eta\)</span> is chosen to satisfy the steady-state condition that the share of nontraded output in total output equals 0.65, i.e.,</p>
+<p><span class="math display">\[
+\frac{p^N Y^N}{p^N Y^N + Y^T} = 0.65.
+\]</span></p>
+<p>This condition defines an implicit equation for <span class="math inline">\(\eta\)</span> given other parameters and steady-state values. The exact numerical value of <span class="math inline">\(\eta\)</span> is determined by solving this equation but is not computed here.</p></li>
 </ul>
-</section>
-<section id="eigenvalues-of-the-linearized-system" class="level4">
-<h4 class="anchored" data-anchor-id="eigenvalues-of-the-linearized-system">5. Eigenvalues of the Linearized System</h4>
-<p>Linearize the stationary equilibrium system around the steady state to obtain the Jacobian matrix <span class="math inline">\(h_x\)</span> that describes the local dynamics of the state vector. Compute and report the numerical values of the eigenvalues of <span class="math inline">\(h_x\)</span>. These eigenvalues indicate the stability properties and dynamic responses of the system to shocks.</p>
-</section>
-<section id="computation-of-moments" class="level4">
-<h4 class="anchored" data-anchor-id="computation-of-moments">6. Computation of Moments</h4>
-<p>Define the following variables for empirical analysis:</p>
-<ul>
-<li><p><strong>Gross Domestic Product (GDP):</strong> <span class="math display">\[
-Y_t = \frac{Y^T_t + p^N_t Y^N_t}{p_t}
-\]</span></p></li>
-<li><p><strong>Trade Balance:</strong> <span class="math display">\[
-TB_t = Y_t - C_t - I_t
-\]</span></p></li>
-<li><p><strong>Growth Rates:</strong> <span class="math display">\[\begin{align*}
-  \Delta C_t &amp;= \log \left( \frac{C_t}{C_{t-1}} \right) \\
-  \Delta Y_t &amp;= \log \left( \frac{Y_t}{Y_{t-1}} \right)
-\end{align*}\]</span></p></li>
-</ul>
-<p>Compute the unconditional standard deviations of <span class="math inline">\(\Delta C_t\)</span> and <span class="math inline">\(\Delta Y_t\)</span>, denoted <span class="math inline">\(\text{std}(\Delta C_t)\)</span> and <span class="math inline">\(\text{std}(\Delta Y_t)\)</span>, respectively. Also, calculate the correlation coefficient between output growth and the trade-balance-to-output ratio: <span class="math display">\[
-tby_t = \frac{TB_t}{Y_t}
-\]</span> Report <span class="math inline">\(\text{corr}(\Delta Y_t,\ tby_t)\)</span>.</p>
 
 
 
@@ -1097,133 +1134,193 @@ tby_t = \frac{TB_t}{Y_t}
 <span id="cb1-193"><a href="#cb1-193"></a>  $$</span>
 <span id="cb1-194"><a href="#cb1-194"></a></span>
 <span id="cb1-195"><a href="#cb1-195"></a><span class="ss">- </span>**Production Functions:**</span>
-<span id="cb1-196"><a href="#cb1-196"></a>  \begin{align*}</span>
-<span id="cb1-197"><a href="#cb1-197"></a>    Y^T_t &amp;= z_t (K^T_t)^{1 - \alpha_T} (X_t h^T_t)^{\alpha_T} <span class="sc">\\</span></span>
-<span id="cb1-198"><a href="#cb1-198"></a>    Y^N_t &amp;= z_t (K^N_t)^{1 - \alpha_N} (X_t h^N_t)^{\alpha_N}</span>
-<span id="cb1-199"><a href="#cb1-199"></a>  \end{align*}</span>
-<span id="cb1-200"><a href="#cb1-200"></a></span>
-<span id="cb1-201"><a href="#cb1-201"></a><span class="ss">- </span>**Market Clearing Conditions:**</span>
-<span id="cb1-202"><a href="#cb1-202"></a><span class="ss">  - </span>Nontraded goods:</span>
-<span id="cb1-203"><a href="#cb1-203"></a>    $$</span>
-<span id="cb1-204"><a href="#cb1-204"></a>    Y^N_t = A^N_t</span>
+<span id="cb1-196"><a href="#cb1-196"></a>  $$</span>
+<span id="cb1-197"><a href="#cb1-197"></a>  Y^T_t = z_t (K^T_t)^{1 - \alpha_T} (X_t h^T_t)^{\alpha_T}</span>
+<span id="cb1-198"><a href="#cb1-198"></a>  $$</span>
+<span id="cb1-199"><a href="#cb1-199"></a>  $$</span>
+<span id="cb1-200"><a href="#cb1-200"></a>  Y^N_t = z_t (K^N_t)^{1 - \alpha_N} (X_t h^N_t)^{\alpha_N}</span>
+<span id="cb1-201"><a href="#cb1-201"></a>  $$</span>
+<span id="cb1-202"><a href="#cb1-202"></a></span>
+<span id="cb1-203"><a href="#cb1-203"></a><span class="ss">- </span>**Market Clearing Conditions:**</span>
+<span id="cb1-204"><a href="#cb1-204"></a><span class="ss">  - </span>Nontraded goods:</span>
 <span id="cb1-205"><a href="#cb1-205"></a>    $$</span>
-<span id="cb1-206"><a href="#cb1-206"></a><span class="ss">  - </span>Labor market:</span>
+<span id="cb1-206"><a href="#cb1-206"></a>    Y^N_t = A^N_t</span>
 <span id="cb1-207"><a href="#cb1-207"></a>    $$</span>
-<span id="cb1-208"><a href="#cb1-208"></a>    h_t = h^T_t + h^N_t</span>
+<span id="cb1-208"><a href="#cb1-208"></a><span class="ss">  - </span>Labor market:</span>
 <span id="cb1-209"><a href="#cb1-209"></a>    $$</span>
-<span id="cb1-210"><a href="#cb1-210"></a></span>
-<span id="cb1-211"><a href="#cb1-211"></a><span class="ss">- </span>**External Budget Constraint:**</span>
-<span id="cb1-212"><a href="#cb1-212"></a>  $$</span>
-<span id="cb1-213"><a href="#cb1-213"></a>  \frac{D_{t+1}}{R_t} = D_t + A^T_t - Y^T_t</span>
+<span id="cb1-210"><a href="#cb1-210"></a>    h_t = h^T_t + h^N_t</span>
+<span id="cb1-211"><a href="#cb1-211"></a>    $$</span>
+<span id="cb1-212"><a href="#cb1-212"></a></span>
+<span id="cb1-213"><a href="#cb1-213"></a><span class="ss">- </span>**External Budget Constraint:**</span>
 <span id="cb1-214"><a href="#cb1-214"></a>  $$</span>
-<span id="cb1-215"><a href="#cb1-215"></a></span>
-<span id="cb1-216"><a href="#cb1-216"></a><span class="ss">- </span>**Interest Rate Equation:**</span>
-<span id="cb1-217"><a href="#cb1-217"></a>  $$</span>
-<span id="cb1-218"><a href="#cb1-218"></a>  R_t = R^* + \psi \left[ \exp\left( \frac{D_{t+1}}{X_t} - \overline{d} \right) - 1 \right]</span>
+<span id="cb1-215"><a href="#cb1-215"></a>  \frac{D_{t+1}}{R_t} = D_t + A^T_t - Y^T_t</span>
+<span id="cb1-216"><a href="#cb1-216"></a>  $$</span>
+<span id="cb1-217"><a href="#cb1-217"></a></span>
+<span id="cb1-218"><a href="#cb1-218"></a><span class="ss">- </span>**Interest Rate Equation:**</span>
 <span id="cb1-219"><a href="#cb1-219"></a>  $$</span>
-<span id="cb1-220"><a href="#cb1-220"></a></span>
-<span id="cb1-221"><a href="#cb1-221"></a><span class="ss">- </span>**Exogenous Shock Processes:**</span>
-<span id="cb1-222"><a href="#cb1-222"></a>  \begin{align*}</span>
-<span id="cb1-223"><a href="#cb1-223"></a>    \ln z_t &amp;= \rho_z \ln z_{t-1} + \sigma_z \epsilon^z_t <span class="sc">\\</span></span>
-<span id="cb1-224"><a href="#cb1-224"></a>    \ln \left( \frac{g_t}{g} \right) &amp;= \rho_g \ln \left( \frac{g_{t-1}}{g} \right) + \sigma_g \epsilon^g_t <span class="sc">\\</span></span>
-<span id="cb1-225"><a href="#cb1-225"></a>    g_t &amp;= \frac{X_t}{X_{t-1}}</span>
-<span id="cb1-226"><a href="#cb1-226"></a>  \end{align*}</span>
-<span id="cb1-227"><a href="#cb1-227"></a></span>
-<span id="cb1-228"><a href="#cb1-228"></a>The endogenous variables of the system include: $C_t, I_t, I^T_t, I^N_t, K^T_t, K^N_t, h_t, h^T_t, h^N_t, A^T_t, A^N_t, A_t, D_t, R_t, Y^T_t, Y^N_t, z_t, X_t$, among others as required by the model (such as prices and additional auxiliary variables if needed). The number of independent equations matches the number of endogenous variables, ensuring a well-defined equilibrium system.</span>
+<span id="cb1-220"><a href="#cb1-220"></a>  R_t = R^* + \psi \left[ \exp\left( \frac{D_{t+1}}{X_t} - \overline{d} \right) - 1 \right]</span>
+<span id="cb1-221"><a href="#cb1-221"></a>  $$</span>
+<span id="cb1-222"><a href="#cb1-222"></a></span>
+<span id="cb1-223"><a href="#cb1-223"></a><span class="ss">- </span>**Household First-Order Conditions:**</span>
+<span id="cb1-224"><a href="#cb1-224"></a></span>
+<span id="cb1-225"><a href="#cb1-225"></a><span class="ss">  - </span>**Intertemporal Euler Equation:**</span>
+<span id="cb1-226"><a href="#cb1-226"></a>    $$</span>
+<span id="cb1-227"><a href="#cb1-227"></a>    \frac{1}{C_t^{\sigma}} \left( \frac{1 - h_t}{C_t^{\gamma/(1-\gamma)}} \right)^{(1-\sigma)(1-\gamma)/\gamma} = \beta E_t \left[ \frac{R_t}{C_{t+1}^{\sigma}} \left( \frac{1 - h_{t+1}}{C_{t+1}^{\gamma/(1-\gamma)}} \right)^{(1-\sigma)(1-\gamma)/\gamma} \right]</span>
+<span id="cb1-228"><a href="#cb1-228"></a>    $$</span>
 <span id="cb1-229"><a href="#cb1-229"></a></span>
-<span id="cb1-230"><a href="#cb1-230"></a><span class="fu">#### 2. Expressions for Relative Prices and Their Stationarity</span></span>
-<span id="cb1-231"><a href="#cb1-231"></a></span>
-<span id="cb1-232"><a href="#cb1-232"></a>The shadow relative prices can be derived from the CES aggregator:</span>
-<span id="cb1-233"><a href="#cb1-233"></a></span>
-<span id="cb1-234"><a href="#cb1-234"></a><span class="ss">- </span>**Relative Price of Nontraded Goods (in terms of traded goods):**</span>
-<span id="cb1-235"><a href="#cb1-235"></a>  $$</span>
-<span id="cb1-236"><a href="#cb1-236"></a>  p^N_t = \left( \frac{1-\eta}{\eta} \right) \left( \frac{A^T_t}{A^N_t} \right)^{1/\mu}</span>
-<span id="cb1-237"><a href="#cb1-237"></a>  $$</span>
+<span id="cb1-230"><a href="#cb1-230"></a><span class="ss">  - </span>**Intratemporal Labor-Leisure Condition:**</span>
+<span id="cb1-231"><a href="#cb1-231"></a>    $$</span>
+<span id="cb1-232"><a href="#cb1-232"></a>    \frac{\gamma}{1-\gamma} \frac{1}{1 - h_t} = \frac{1}{C_t} w_t</span>
+<span id="cb1-233"><a href="#cb1-233"></a>    $$</span>
+<span id="cb1-234"><a href="#cb1-234"></a></span>
+<span id="cb1-235"><a href="#cb1-235"></a>  where $w_t$ is the aggregate real wage (to be defined below).</span>
+<span id="cb1-236"><a href="#cb1-236"></a></span>
+<span id="cb1-237"><a href="#cb1-237"></a><span class="ss">- </span>**Firm Profit Maximization First-Order Conditions (for $i = T, N$):**</span>
 <span id="cb1-238"><a href="#cb1-238"></a></span>
-<span id="cb1-239"><a href="#cb1-239"></a><span class="ss">- </span>**Price of the Composite Good (in terms of traded goods):**</span>
-<span id="cb1-240"><a href="#cb1-240"></a>  $$</span>
-<span id="cb1-241"><a href="#cb1-241"></a>  p_t = \left<span class="co">[</span><span class="ot"> \eta + (1-\eta)\left( \frac{A^N_t}{A^T_t} \right)^{1 - 1/\mu} \right</span><span class="co">]</span>^{1/(1 - 1/\mu)}</span>
-<span id="cb1-242"><a href="#cb1-242"></a>  $$</span>
-<span id="cb1-243"><a href="#cb1-243"></a></span>
-<span id="cb1-244"><a href="#cb1-244"></a>**Stationarity:**  </span>
-<span id="cb1-245"><a href="#cb1-245"></a>Both $p^N_t$ and $p_t$ are stationary variables, provided that $A^T_t$ and $A^N_t$ grow at the same rate as the overall absorption $A_t$. This is typically the case along a balanced growth path, where sectoral absorptions and outputs grow proportionally with the nonstationary component $X_t$.</span>
-<span id="cb1-246"><a href="#cb1-246"></a></span>
-<span id="cb1-247"><a href="#cb1-247"></a><span class="fu">#### 3. Stationary (Balanced-Growth-Path) Form of the Equilibrium System</span></span>
-<span id="cb1-248"><a href="#cb1-248"></a></span>
-<span id="cb1-249"><a href="#cb1-249"></a>To express the equilibrium conditions in stationary form, we normalize all real variables by the level of nonstationary productivity, $X_t$. Define lowercase variables as $c_t = C_t / X_t$, $k^T_t = K^T_t / X_t$, $d_t = D_t / X_t$, etc.</span>
+<span id="cb1-239"><a href="#cb1-239"></a>  Firms in each sector rent capital and labor to maximize profits. The FOCs are:</span>
+<span id="cb1-240"><a href="#cb1-240"></a></span>
+<span id="cb1-241"><a href="#cb1-241"></a><span class="ss">  - </span>**Capital:**</span>
+<span id="cb1-242"><a href="#cb1-242"></a>    $$</span>
+<span id="cb1-243"><a href="#cb1-243"></a>    r^i_t = (1 - \alpha_i) z_t \left( \frac{X_t h^i_t}{K^i_t} \right)^{\alpha_i}</span>
+<span id="cb1-244"><a href="#cb1-244"></a>    $$</span>
+<span id="cb1-245"><a href="#cb1-245"></a></span>
+<span id="cb1-246"><a href="#cb1-246"></a><span class="ss">  - </span>**Labor:**</span>
+<span id="cb1-247"><a href="#cb1-247"></a>    $$</span>
+<span id="cb1-248"><a href="#cb1-248"></a>    w^i_t = \alpha_i z_t \left( \frac{K^i_t}{X_t h^i_t} \right)^{1 - \alpha_i} X_t</span>
+<span id="cb1-249"><a href="#cb1-249"></a>    $$</span>
 <span id="cb1-250"><a href="#cb1-250"></a></span>
-<span id="cb1-251"><a href="#cb1-251"></a>The key stationary equilibrium conditions become:</span>
+<span id="cb1-251"><a href="#cb1-251"></a><span class="ss">- </span>**Prices and Wages:**</span>
 <span id="cb1-252"><a href="#cb1-252"></a></span>
-<span id="cb1-253"><a href="#cb1-253"></a><span class="ss">- </span>**Stationarized Production Functions:**</span>
-<span id="cb1-254"><a href="#cb1-254"></a>  \begin{align*}</span>
-<span id="cb1-255"><a href="#cb1-255"></a>    y^T_t &amp;= z_t (k^T_t)^{1 - \alpha_T} (h^T_t)^{\alpha_T} <span class="sc">\\</span></span>
-<span id="cb1-256"><a href="#cb1-256"></a>    y^N_t &amp;= z_t (k^N_t)^{1 - \alpha_N} (h^N_t)^{\alpha_N}</span>
-<span id="cb1-257"><a href="#cb1-257"></a>  \end{align*}</span>
+<span id="cb1-253"><a href="#cb1-253"></a>  The aggregate real wage $w_t$ is a weighted average of sectoral wages:</span>
+<span id="cb1-254"><a href="#cb1-254"></a></span>
+<span id="cb1-255"><a href="#cb1-255"></a>  $$</span>
+<span id="cb1-256"><a href="#cb1-256"></a>  w_t h_t = w^T_t h^T_t + w^N_t h^N_t</span>
+<span id="cb1-257"><a href="#cb1-257"></a>  $$</span>
 <span id="cb1-258"><a href="#cb1-258"></a></span>
-<span id="cb1-259"><a href="#cb1-259"></a><span class="ss">- </span>**Stationarized Capital Accumulation (for $i = T, N$):**</span>
+<span id="cb1-259"><a href="#cb1-259"></a><span class="ss">- </span>**Exogenous Shock Processes:**</span>
 <span id="cb1-260"><a href="#cb1-260"></a>  $$</span>
-<span id="cb1-261"><a href="#cb1-261"></a>  k^i_{t+1} = \frac{1}{g_t} \left[ (1 - \delta) k^i_t + i^i_t - \frac{\phi}{2} \left( \frac{g_t k^i_{t+1}}{k^i_t} - g \right)^2 k^i_t \right]</span>
+<span id="cb1-261"><a href="#cb1-261"></a>  \ln z_t = \rho_z \ln z_{t-1} + \sigma_z \epsilon^z_t</span>
 <span id="cb1-262"><a href="#cb1-262"></a>  $$</span>
-<span id="cb1-263"><a href="#cb1-263"></a></span>
-<span id="cb1-264"><a href="#cb1-264"></a><span class="ss">- </span>**Stationarized Budget Constraint:**</span>
+<span id="cb1-263"><a href="#cb1-263"></a>  $$</span>
+<span id="cb1-264"><a href="#cb1-264"></a>  \ln \left( \frac{g_t}{g} \right) = \rho_g \ln \left( \frac{g_{t-1}}{g} \right) + \sigma_g \epsilon^g_t</span>
 <span id="cb1-265"><a href="#cb1-265"></a>  $$</span>
-<span id="cb1-266"><a href="#cb1-266"></a>  \frac{d_{t+1}}{R_t} = d_t + a^T_t - y^T_t</span>
-<span id="cb1-267"><a href="#cb1-267"></a>  $$</span>
-<span id="cb1-268"><a href="#cb1-268"></a></span>
-<span id="cb1-269"><a href="#cb1-269"></a><span class="ss">- </span>**Stationarized Interest Rate:**</span>
-<span id="cb1-270"><a href="#cb1-270"></a>  $$</span>
-<span id="cb1-271"><a href="#cb1-271"></a>  R_t = R^* + \psi \left[ \exp(d_{t+1} - \overline{d}) - 1 \right]</span>
-<span id="cb1-272"><a href="#cb1-272"></a>  $$</span>
+<span id="cb1-266"><a href="#cb1-266"></a>  $$</span>
+<span id="cb1-267"><a href="#cb1-267"></a>  g_t = \frac{X_t}{X_{t-1}}</span>
+<span id="cb1-268"><a href="#cb1-268"></a>  $$</span>
+<span id="cb1-269"><a href="#cb1-269"></a></span>
+<span id="cb1-270"><a href="#cb1-270"></a>The endogenous variables include: $C_t, I_t, I^T_t, I^N_t, K^T_t, K^N_t, h_t, h^T_t, h^N_t, A^T_t, A^N_t, A_t, D_t, R_t, Y^T_t, Y^N_t, w_t, w^T_t, w^N_t, r^T_t, r^N_t$, among others as required by the model. The number of independent equations matches the number of endogenous variables, ensuring a well-defined equilibrium system.</span>
+<span id="cb1-271"><a href="#cb1-271"></a></span>
+<span id="cb1-272"><a href="#cb1-272"></a><span class="fu">#### 2. Expressions for Relative Prices and Their Stationarity</span></span>
 <span id="cb1-273"><a href="#cb1-273"></a></span>
-<span id="cb1-274"><a href="#cb1-274"></a>Other equilibrium conditions (such as the CES aggregator, labor market clearing, and the laws of motion for exogenous processes) are similarly rewritten in terms of stationary variables. This transformation ensures all variables are stationary and suitable for steady-state and dynamic analysis.</span>
+<span id="cb1-274"><a href="#cb1-274"></a>The composite absorption good $A_t$ is a CES aggregator of tradable and nontradable goods:</span>
 <span id="cb1-275"><a href="#cb1-275"></a></span>
-<span id="cb1-276"><a href="#cb1-276"></a><span class="fu">#### 4. Steady-State Restrictions and Calibration</span></span>
-<span id="cb1-277"><a href="#cb1-277"></a></span>
-<span id="cb1-278"><a href="#cb1-278"></a>To determine the steady state, impose that all stationary variables are constant over time and that the economy grows at the rate of the nonstationary productivity component, i.e., $g_t = g$ and $d_{t+1} = \overline{d}$.</span>
+<span id="cb1-276"><a href="#cb1-276"></a>$$</span>
+<span id="cb1-277"><a href="#cb1-277"></a>A_t = \left<span class="co">[</span><span class="ot"> \eta (A^T_t)^{1 - \frac{1}{\mu}} + (1-\eta)(A^N_t)^{1 - \frac{1}{\mu}} \right</span><span class="co">]</span>^{\frac{1}{1 - \frac{1}{\mu}}}.</span>
+<span id="cb1-278"><a href="#cb1-278"></a>$$</span>
 <span id="cb1-279"><a href="#cb1-279"></a></span>
-<span id="cb1-280"><a href="#cb1-280"></a><span class="ss">- </span>**Restriction on $R^*$:**  </span>
-<span id="cb1-281"><a href="#cb1-281"></a>  To ensure that the steady-state value of external debt per unit of productivity, $d_{t+1} \equiv D_{t+1}/X_t$, equals the target $\overline{d}$, set $R^* = 1/\beta$ (adjusted for growth and depreciation as required by the Euler equation in steady state).</span>
-<span id="cb1-282"><a href="#cb1-282"></a></span>
-<span id="cb1-283"><a href="#cb1-283"></a><span class="ss">- </span>**Steady-State Computation:**  </span>
-<span id="cb1-284"><a href="#cb1-284"></a>  Solve the stationary system for steady-state values of all endogenous variables: $c, i, i^T, i^N, k^T, k^N, h, h^T, h^N, a^T, a^N, a, d, r, y^T, y^N$, etc.</span>
+<span id="cb1-280"><a href="#cb1-280"></a>To find the relative prices, consider the cost minimization problem of choosing $(A^T_t, A^N_t)$ to produce one unit of $A_t$ at minimum cost, given prices $p^T_t$ (normalized to 1 for tradables) and $p^N_t$:</span>
+<span id="cb1-281"><a href="#cb1-281"></a></span>
+<span id="cb1-282"><a href="#cb1-282"></a>$$</span>
+<span id="cb1-283"><a href="#cb1-283"></a>\min_{A^T_t, A^N_t} p^T_t A^T_t + p^N_t A^N_t \quad \text{s.t.} \quad A_t = \left<span class="co">[</span><span class="ot"> \eta (A^T_t)^{1 - \frac{1}{\mu}} + (1-\eta)(A^N_t)^{1 - \frac{1}{\mu}} \right</span><span class="co">]</span>^{\frac{1}{1 - \frac{1}{\mu}}}.</span>
+<span id="cb1-284"><a href="#cb1-284"></a>$$</span>
 <span id="cb1-285"><a href="#cb1-285"></a></span>
-<span id="cb1-286"><a href="#cb1-286"></a><span class="ss">- </span>**Calibration of $\eta$:**  </span>
-<span id="cb1-287"><a href="#cb1-287"></a>  Choose $\eta$ such that the steady-state share of nontraded output in total output matches the target:</span>
-<span id="cb1-288"><a href="#cb1-288"></a>  $$</span>
-<span id="cb1-289"><a href="#cb1-289"></a>  \frac{p^N Y^N}{p^N Y^N + Y^T} = 0.65</span>
-<span id="cb1-290"><a href="#cb1-290"></a>  $$</span>
-<span id="cb1-291"><a href="#cb1-291"></a>  Numerically solve for $\eta$ to satisfy this condition, then report the computed value of $\eta$ and the steady-state values of all endogenous variables to four decimal places.</span>
-<span id="cb1-292"><a href="#cb1-292"></a></span>
-<span id="cb1-293"><a href="#cb1-293"></a><span class="fu">#### 5. Eigenvalues of the Linearized System</span></span>
-<span id="cb1-294"><a href="#cb1-294"></a></span>
-<span id="cb1-295"><a href="#cb1-295"></a>Linearize the stationary equilibrium system around the steady state to obtain the Jacobian matrix $h_x$ that describes the local dynamics of the state vector. Compute and report the numerical values of the eigenvalues of $h_x$. These eigenvalues indicate the stability properties and dynamic responses of the system to shocks.</span>
-<span id="cb1-296"><a href="#cb1-296"></a></span>
-<span id="cb1-297"><a href="#cb1-297"></a><span class="fu">#### 6. Computation of Moments</span></span>
-<span id="cb1-298"><a href="#cb1-298"></a></span>
-<span id="cb1-299"><a href="#cb1-299"></a>Define the following variables for empirical analysis:</span>
-<span id="cb1-300"><a href="#cb1-300"></a></span>
-<span id="cb1-301"><a href="#cb1-301"></a><span class="ss">- </span>**Gross Domestic Product (GDP):**</span>
-<span id="cb1-302"><a href="#cb1-302"></a>  $$</span>
-<span id="cb1-303"><a href="#cb1-303"></a>  Y_t = \frac{Y^T_t + p^N_t Y^N_t}{p_t}</span>
-<span id="cb1-304"><a href="#cb1-304"></a>  $$</span>
+<span id="cb1-286"><a href="#cb1-286"></a>The Lagrangian is:</span>
+<span id="cb1-287"><a href="#cb1-287"></a></span>
+<span id="cb1-288"><a href="#cb1-288"></a>$$</span>
+<span id="cb1-289"><a href="#cb1-289"></a>\mathcal{L} = p^T_t A^T_t + p^N_t A^N_t - \lambda \left( \left<span class="co">[</span><span class="ot"> \eta (A^T_t)^{1 - \frac{1}{\mu}} + (1-\eta)(A^N_t)^{1 - \frac{1}{\mu}} \right</span><span class="co">]</span>^{\frac{1}{1 - \frac{1}{\mu}}} - A_t \right).</span>
+<span id="cb1-290"><a href="#cb1-290"></a>$$</span>
+<span id="cb1-291"><a href="#cb1-291"></a></span>
+<span id="cb1-292"><a href="#cb1-292"></a>Taking first-order conditions with respect to $A^T_t$ and $A^N_t$ gives:</span>
+<span id="cb1-293"><a href="#cb1-293"></a></span>
+<span id="cb1-294"><a href="#cb1-294"></a>$$</span>
+<span id="cb1-295"><a href="#cb1-295"></a>p^T_t = \lambda \frac{\partial A_t}{\partial A^T_t}, \quad p^N_t = \lambda \frac{\partial A_t}{\partial A^N_t}.</span>
+<span id="cb1-296"><a href="#cb1-296"></a>$$</span>
+<span id="cb1-297"><a href="#cb1-297"></a></span>
+<span id="cb1-298"><a href="#cb1-298"></a>Compute the partial derivatives:</span>
+<span id="cb1-299"><a href="#cb1-299"></a></span>
+<span id="cb1-300"><a href="#cb1-300"></a>$$</span>
+<span id="cb1-301"><a href="#cb1-301"></a>\frac{\partial A_t}{\partial A^T_t} = \left<span class="co">[</span><span class="ot"> \eta (A^T_t)^{1 - \frac{1}{\mu}} + (1-\eta)(A^N_t)^{1 - \frac{1}{\mu}} \right</span><span class="co">]</span>^{\frac{\frac{1}{\mu}}{1 - \frac{1}{\mu}}} \cdot \eta \left(1 - \frac{1}{\mu}\right) (A^T_t)^{-\frac{1}{\mu}},</span>
+<span id="cb1-302"><a href="#cb1-302"></a>$$</span>
+<span id="cb1-303"><a href="#cb1-303"></a></span>
+<span id="cb1-304"><a href="#cb1-304"></a>and similarly for $A^N_t$:</span>
 <span id="cb1-305"><a href="#cb1-305"></a></span>
-<span id="cb1-306"><a href="#cb1-306"></a><span class="ss">- </span>**Trade Balance:**</span>
-<span id="cb1-307"><a href="#cb1-307"></a>  $$</span>
-<span id="cb1-308"><a href="#cb1-308"></a>  TB_t = Y_t - C_t - I_t</span>
-<span id="cb1-309"><a href="#cb1-309"></a>  $$</span>
-<span id="cb1-310"><a href="#cb1-310"></a></span>
-<span id="cb1-311"><a href="#cb1-311"></a><span class="ss">- </span>**Growth Rates:**</span>
-<span id="cb1-312"><a href="#cb1-312"></a>  \begin{align*}</span>
-<span id="cb1-313"><a href="#cb1-313"></a>    \Delta C_t &amp;= \log \left( \frac{C_t}{C_{t-1}} \right) <span class="sc">\\</span></span>
-<span id="cb1-314"><a href="#cb1-314"></a>    \Delta Y_t &amp;= \log \left( \frac{Y_t}{Y_{t-1}} \right)</span>
-<span id="cb1-315"><a href="#cb1-315"></a>  \end{align*}</span>
-<span id="cb1-316"><a href="#cb1-316"></a></span>
-<span id="cb1-317"><a href="#cb1-317"></a>Compute the unconditional standard deviations of $\Delta C_t$ and $\Delta Y_t$, denoted $\text{std}(\Delta C_t)$ and $\text{std}(\Delta Y_t)$, respectively. Also, calculate the correlation coefficient between output growth and the trade-balance-to-output ratio:</span>
+<span id="cb1-306"><a href="#cb1-306"></a>$$</span>
+<span id="cb1-307"><a href="#cb1-307"></a>\frac{\partial A_t}{\partial A^N_t} = \left<span class="co">[</span><span class="ot"> \eta (A^T_t)^{1 - \frac{1}{\mu}} + (1-\eta)(A^N_t)^{1 - \frac{1}{\mu}} \right</span><span class="co">]</span>^{\frac{\frac{1}{\mu}}{1 - \frac{1}{\mu}}} \cdot (1-\eta) \left(1 - \frac{1}{\mu}\right) (A^N_t)^{-\frac{1}{\mu}}.</span>
+<span id="cb1-308"><a href="#cb1-308"></a>$$</span>
+<span id="cb1-309"><a href="#cb1-309"></a></span>
+<span id="cb1-310"><a href="#cb1-310"></a>Using these, the ratio of prices is:</span>
+<span id="cb1-311"><a href="#cb1-311"></a></span>
+<span id="cb1-312"><a href="#cb1-312"></a>$$</span>
+<span id="cb1-313"><a href="#cb1-313"></a>\frac{p^N_t}{p^T_t} = \frac{(1-\eta)(A^N_t)^{-\frac{1}{\mu}}}{\eta (A^T_t)^{-\frac{1}{\mu}}} = \frac{1-\eta}{\eta} \left( \frac{A^T_t}{A^N_t} \right)^{\frac{1}{\mu}}.</span>
+<span id="cb1-314"><a href="#cb1-314"></a>$$</span>
+<span id="cb1-315"><a href="#cb1-315"></a></span>
+<span id="cb1-316"><a href="#cb1-316"></a>Since $p^T_t$ is normalized to 1, this gives:</span>
+<span id="cb1-317"><a href="#cb1-317"></a></span>
 <span id="cb1-318"><a href="#cb1-318"></a>$$</span>
-<span id="cb1-319"><a href="#cb1-319"></a>tby_t = \frac{TB_t}{Y_t}</span>
+<span id="cb1-319"><a href="#cb1-319"></a>p^N_t = \left( \frac{1-\eta}{\eta} \right) \left( \frac{A^T_t}{A^N_t} \right)^{1/\mu}.</span>
 <span id="cb1-320"><a href="#cb1-320"></a>$$</span>
-<span id="cb1-321"><a href="#cb1-321"></a>Report $\text{corr}(\Delta Y_t,\ tby_t)$.</span>
-<span id="cb1-322"><a href="#cb1-322"></a></span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
+<span id="cb1-321"><a href="#cb1-321"></a></span>
+<span id="cb1-322"><a href="#cb1-322"></a>The price of the composite good in terms of tradable goods is the unit cost of producing one unit of $A_t$:</span>
+<span id="cb1-323"><a href="#cb1-323"></a></span>
+<span id="cb1-324"><a href="#cb1-324"></a>$$</span>
+<span id="cb1-325"><a href="#cb1-325"></a>p_t = \left<span class="co">[</span><span class="ot"> \eta (A^T_t)^{1 - \frac{1}{\mu}} + (1-\eta)(A^N_t)^{1 - \frac{1}{\mu}} \right</span><span class="co">]</span>^{\frac{1}{1 - \frac{1}{\mu}} - 1} \times \left<span class="co">[</span><span class="ot"> \eta (1) (A^T_t)^{-\frac{1}{\mu}} + (1-\eta) p^N_t (A^N_t)^{-\frac{1}{\mu}} \right</span><span class="co">]</span>.</span>
+<span id="cb1-326"><a href="#cb1-326"></a>$$</span>
+<span id="cb1-327"><a href="#cb1-327"></a></span>
+<span id="cb1-328"><a href="#cb1-328"></a>Simplifying, this reduces to:</span>
+<span id="cb1-329"><a href="#cb1-329"></a></span>
+<span id="cb1-330"><a href="#cb1-330"></a>$$</span>
+<span id="cb1-331"><a href="#cb1-331"></a>p_t = \left<span class="co">[</span><span class="ot"> \eta + (1-\eta) \left( \frac{A^N_t}{A^T_t} \right)^{1 - \frac{1}{\mu}} \right</span><span class="co">]</span>^{\frac{1}{1 - \frac{1}{\mu}}}.</span>
+<span id="cb1-332"><a href="#cb1-332"></a>$$</span>
+<span id="cb1-333"><a href="#cb1-333"></a></span>
+<span id="cb1-334"><a href="#cb1-334"></a>**Stationarity:**  </span>
+<span id="cb1-335"><a href="#cb1-335"></a>Both $p^N_t$ and $p_t$ are stationary variables, provided that $A^T_t$ and $A^N_t$ grow at the same rate as the overall absorption $A_t$. This is typically the case along a balanced growth path, where sectoral absorptions and outputs grow proportionally with the nonstationary component $X_t$.</span>
+<span id="cb1-336"><a href="#cb1-336"></a></span>
+<span id="cb1-337"><a href="#cb1-337"></a><span class="fu">#### 3. Stationary (Balanced-Growth-Path) Form of the Equilibrium System</span></span>
+<span id="cb1-338"><a href="#cb1-338"></a></span>
+<span id="cb1-339"><a href="#cb1-339"></a>To express the equilibrium conditions in stationary form, we normalize all real variables by the level of nonstationary productivity, $X_t$. Define lowercase variables as $c_t = C_t / X_t$, $k^T_t = K^T_t / X_t$, $d_t = D_t / X_t$, etc.</span>
+<span id="cb1-340"><a href="#cb1-340"></a></span>
+<span id="cb1-341"><a href="#cb1-341"></a>The key stationary equilibrium conditions become:</span>
+<span id="cb1-342"><a href="#cb1-342"></a></span>
+<span id="cb1-343"><a href="#cb1-343"></a><span class="ss">- </span>**Stationarized Production Functions:**</span>
+<span id="cb1-344"><a href="#cb1-344"></a>  $$</span>
+<span id="cb1-345"><a href="#cb1-345"></a>  y^T_t = z_t (k^T_t)^{1 - \alpha_T} (h^T_t)^{\alpha_T}</span>
+<span id="cb1-346"><a href="#cb1-346"></a>  $$</span>
+<span id="cb1-347"><a href="#cb1-347"></a>  $$</span>
+<span id="cb1-348"><a href="#cb1-348"></a>  y^N_t = z_t (k^N_t)^{1 - \alpha_N} (h^N_t)^{\alpha_N}</span>
+<span id="cb1-349"><a href="#cb1-349"></a>  $$</span>
+<span id="cb1-350"><a href="#cb1-350"></a></span>
+<span id="cb1-351"><a href="#cb1-351"></a><span class="ss">- </span>**Stationarized Capital Accumulation (for $i = T, N$):**</span>
+<span id="cb1-352"><a href="#cb1-352"></a>  $$</span>
+<span id="cb1-353"><a href="#cb1-353"></a>  k^i_{t+1} = \frac{1}{g_t} \left[ (1 - \delta) k^i_t + i^i_t - \frac{\phi}{2} \left( \frac{g_t k^i_{t+1}}{k^i_t} - g \right)^2 k^i_t \right]</span>
+<span id="cb1-354"><a href="#cb1-354"></a>  $$</span>
+<span id="cb1-355"><a href="#cb1-355"></a></span>
+<span id="cb1-356"><a href="#cb1-356"></a><span class="ss">- </span>**Stationarized Budget Constraint:**</span>
+<span id="cb1-357"><a href="#cb1-357"></a>  $$</span>
+<span id="cb1-358"><a href="#cb1-358"></a>  \frac{d_{t+1}}{R_t} = d_t + a^T_t - y^T_t</span>
+<span id="cb1-359"><a href="#cb1-359"></a>  $$</span>
+<span id="cb1-360"><a href="#cb1-360"></a></span>
+<span id="cb1-361"><a href="#cb1-361"></a><span class="ss">- </span>**Stationarized Interest Rate:**</span>
+<span id="cb1-362"><a href="#cb1-362"></a>  $$</span>
+<span id="cb1-363"><a href="#cb1-363"></a>  R_t = R^* + \psi \left[ \exp(d_{t+1} - \overline{d}) - 1 \right]</span>
+<span id="cb1-364"><a href="#cb1-364"></a>  $$</span>
+<span id="cb1-365"><a href="#cb1-365"></a></span>
+<span id="cb1-366"><a href="#cb1-366"></a>Other equilibrium conditions (such as the CES aggregator, labor market clearing, and the laws of motion for exogenous processes) are similarly rewritten in terms of stationary variables. This transformation ensures all variables are stationary and suitable for steady-state and dynamic analysis.</span>
+<span id="cb1-367"><a href="#cb1-367"></a></span>
+<span id="cb1-368"><a href="#cb1-368"></a><span class="fu">#### 4. Steady-State Restrictions and Calibration</span></span>
+<span id="cb1-369"><a href="#cb1-369"></a></span>
+<span id="cb1-370"><a href="#cb1-370"></a>To determine the steady state, impose that all stationary variables are constant over time and that the economy grows at the rate of the nonstationary productivity component, i.e., $g_t = g$ and $d_{t+1} = \overline{d}$.</span>
+<span id="cb1-371"><a href="#cb1-371"></a></span>
+<span id="cb1-372"><a href="#cb1-372"></a><span class="ss">- </span>**Restriction on $R^*$:**  </span>
+<span id="cb1-373"><a href="#cb1-373"></a>  To ensure that the steady-state value of external debt per unit of productivity, $d_{t+1} \equiv D_{t+1}/X_t$, equals the target $\overline{d}$, the gross interest rate $R^*$ must satisfy the household Euler equation condition consistent with the steady-state growth rate and discount factor.</span>
+<span id="cb1-374"><a href="#cb1-374"></a></span>
+<span id="cb1-375"><a href="#cb1-375"></a><span class="ss">- </span>**Calibration of $\eta$:**  </span>
+<span id="cb1-376"><a href="#cb1-376"></a>  The parameter $\eta$ is chosen to satisfy the steady-state condition that the share of nontraded output in total output equals 0.65, i.e.,</span>
+<span id="cb1-377"><a href="#cb1-377"></a></span>
+<span id="cb1-378"><a href="#cb1-378"></a>  $$</span>
+<span id="cb1-379"><a href="#cb1-379"></a>  \frac{p^N Y^N}{p^N Y^N + Y^T} = 0.65.</span>
+<span id="cb1-380"><a href="#cb1-380"></a>  $$</span>
+<span id="cb1-381"><a href="#cb1-381"></a></span>
+<span id="cb1-382"><a href="#cb1-382"></a>  This condition defines an implicit equation for $\eta$ given other parameters and steady-state values. The exact numerical value of $\eta$ is determined by solving this equation but is not computed here.</span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 

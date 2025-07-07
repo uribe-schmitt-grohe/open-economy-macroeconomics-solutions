@@ -193,10 +193,12 @@ The equilibrium of this two-sector open economy model is characterized by the fo
   $$
 
 - **Production Functions:**
-  \begin{align*}
-    Y^T_t &= z_t (K^T_t)^{1 - \alpha_T} (X_t h^T_t)^{\alpha_T} \\
-    Y^N_t &= z_t (K^N_t)^{1 - \alpha_N} (X_t h^N_t)^{\alpha_N}
-  \end{align*}
+  $$
+  Y^T_t = z_t (K^T_t)^{1 - \alpha_T} (X_t h^T_t)^{\alpha_T}
+  $$
+  $$
+  Y^N_t = z_t (K^N_t)^{1 - \alpha_N} (X_t h^N_t)^{\alpha_N}
+  $$
 
 - **Market Clearing Conditions:**
   - Nontraded goods:
@@ -218,28 +220,116 @@ The equilibrium of this two-sector open economy model is characterized by the fo
   R_t = R^* + \psi \left[ \exp\left( \frac{D_{t+1}}{X_t} - \overline{d} \right) - 1 \right]
   $$
 
-- **Exogenous Shock Processes:**
-  \begin{align*}
-    \ln z_t &= \rho_z \ln z_{t-1} + \sigma_z \epsilon^z_t \\
-    \ln \left( \frac{g_t}{g} \right) &= \rho_g \ln \left( \frac{g_{t-1}}{g} \right) + \sigma_g \epsilon^g_t \\
-    g_t &= \frac{X_t}{X_{t-1}}
-  \end{align*}
+- **Household First-Order Conditions:**
 
-The endogenous variables of the system include: $C_t, I_t, I^T_t, I^N_t, K^T_t, K^N_t, h_t, h^T_t, h^N_t, A^T_t, A^N_t, A_t, D_t, R_t, Y^T_t, Y^N_t, z_t, X_t$, among others as required by the model (such as prices and additional auxiliary variables if needed). The number of independent equations matches the number of endogenous variables, ensuring a well-defined equilibrium system.
+  - **Intertemporal Euler Equation:**
+    $$
+    \frac{1}{C_t^{\sigma}} \left( \frac{1 - h_t}{C_t^{\gamma/(1-\gamma)}} \right)^{(1-\sigma)(1-\gamma)/\gamma} = \beta E_t \left[ \frac{R_t}{C_{t+1}^{\sigma}} \left( \frac{1 - h_{t+1}}{C_{t+1}^{\gamma/(1-\gamma)}} \right)^{(1-\sigma)(1-\gamma)/\gamma} \right]
+    $$
+
+  - **Intratemporal Labor-Leisure Condition:**
+    $$
+    \frac{\gamma}{1-\gamma} \frac{1}{1 - h_t} = \frac{1}{C_t} w_t
+    $$
+
+  where $w_t$ is the aggregate real wage (to be defined below).
+
+- **Firm Profit Maximization First-Order Conditions (for $i = T, N$):**
+
+  Firms in each sector rent capital and labor to maximize profits. The FOCs are:
+
+  - **Capital:**
+    $$
+    r^i_t = (1 - \alpha_i) z_t \left( \frac{X_t h^i_t}{K^i_t} \right)^{\alpha_i}
+    $$
+
+  - **Labor:**
+    $$
+    w^i_t = \alpha_i z_t \left( \frac{K^i_t}{X_t h^i_t} \right)^{1 - \alpha_i} X_t
+    $$
+
+- **Prices and Wages:**
+
+  The aggregate real wage $w_t$ is a weighted average of sectoral wages:
+
+  $$
+  w_t h_t = w^T_t h^T_t + w^N_t h^N_t
+  $$
+
+- **Exogenous Shock Processes:**
+  $$
+  \ln z_t = \rho_z \ln z_{t-1} + \sigma_z \epsilon^z_t
+  $$
+  $$
+  \ln \left( \frac{g_t}{g} \right) = \rho_g \ln \left( \frac{g_{t-1}}{g} \right) + \sigma_g \epsilon^g_t
+  $$
+  $$
+  g_t = \frac{X_t}{X_{t-1}}
+  $$
+
+The endogenous variables include: $C_t, I_t, I^T_t, I^N_t, K^T_t, K^N_t, h_t, h^T_t, h^N_t, A^T_t, A^N_t, A_t, D_t, R_t, Y^T_t, Y^N_t, w_t, w^T_t, w^N_t, r^T_t, r^N_t$, among others as required by the model. The number of independent equations matches the number of endogenous variables, ensuring a well-defined equilibrium system.
 
 #### 2. Expressions for Relative Prices and Their Stationarity
 
-The shadow relative prices can be derived from the CES aggregator:
+The composite absorption good $A_t$ is a CES aggregator of tradable and nontradable goods:
 
-- **Relative Price of Nontraded Goods (in terms of traded goods):**
-  $$
-  p^N_t = \left( \frac{1-\eta}{\eta} \right) \left( \frac{A^T_t}{A^N_t} \right)^{1/\mu}
-  $$
+$$
+A_t = \left[ \eta (A^T_t)^{1 - \frac{1}{\mu}} + (1-\eta)(A^N_t)^{1 - \frac{1}{\mu}} \right]^{\frac{1}{1 - \frac{1}{\mu}}}.
+$$
 
-- **Price of the Composite Good (in terms of traded goods):**
-  $$
-  p_t = \left[ \eta + (1-\eta)\left( \frac{A^N_t}{A^T_t} \right)^{1 - 1/\mu} \right]^{1/(1 - 1/\mu)}
-  $$
+To find the relative prices, consider the cost minimization problem of choosing $(A^T_t, A^N_t)$ to produce one unit of $A_t$ at minimum cost, given prices $p^T_t$ (normalized to 1 for tradables) and $p^N_t$:
+
+$$
+\min_{A^T_t, A^N_t} p^T_t A^T_t + p^N_t A^N_t \quad \text{s.t.} \quad A_t = \left[ \eta (A^T_t)^{1 - \frac{1}{\mu}} + (1-\eta)(A^N_t)^{1 - \frac{1}{\mu}} \right]^{\frac{1}{1 - \frac{1}{\mu}}}.
+$$
+
+The Lagrangian is:
+
+$$
+\mathcal{L} = p^T_t A^T_t + p^N_t A^N_t - \lambda \left( \left[ \eta (A^T_t)^{1 - \frac{1}{\mu}} + (1-\eta)(A^N_t)^{1 - \frac{1}{\mu}} \right]^{\frac{1}{1 - \frac{1}{\mu}}} - A_t \right).
+$$
+
+Taking first-order conditions with respect to $A^T_t$ and $A^N_t$ gives:
+
+$$
+p^T_t = \lambda \frac{\partial A_t}{\partial A^T_t}, \quad p^N_t = \lambda \frac{\partial A_t}{\partial A^N_t}.
+$$
+
+Compute the partial derivatives:
+
+$$
+\frac{\partial A_t}{\partial A^T_t} = \left[ \eta (A^T_t)^{1 - \frac{1}{\mu}} + (1-\eta)(A^N_t)^{1 - \frac{1}{\mu}} \right]^{\frac{\frac{1}{\mu}}{1 - \frac{1}{\mu}}} \cdot \eta \left(1 - \frac{1}{\mu}\right) (A^T_t)^{-\frac{1}{\mu}},
+$$
+
+and similarly for $A^N_t$:
+
+$$
+\frac{\partial A_t}{\partial A^N_t} = \left[ \eta (A^T_t)^{1 - \frac{1}{\mu}} + (1-\eta)(A^N_t)^{1 - \frac{1}{\mu}} \right]^{\frac{\frac{1}{\mu}}{1 - \frac{1}{\mu}}} \cdot (1-\eta) \left(1 - \frac{1}{\mu}\right) (A^N_t)^{-\frac{1}{\mu}}.
+$$
+
+Using these, the ratio of prices is:
+
+$$
+\frac{p^N_t}{p^T_t} = \frac{(1-\eta)(A^N_t)^{-\frac{1}{\mu}}}{\eta (A^T_t)^{-\frac{1}{\mu}}} = \frac{1-\eta}{\eta} \left( \frac{A^T_t}{A^N_t} \right)^{\frac{1}{\mu}}.
+$$
+
+Since $p^T_t$ is normalized to 1, this gives:
+
+$$
+p^N_t = \left( \frac{1-\eta}{\eta} \right) \left( \frac{A^T_t}{A^N_t} \right)^{1/\mu}.
+$$
+
+The price of the composite good in terms of tradable goods is the unit cost of producing one unit of $A_t$:
+
+$$
+p_t = \left[ \eta (A^T_t)^{1 - \frac{1}{\mu}} + (1-\eta)(A^N_t)^{1 - \frac{1}{\mu}} \right]^{\frac{1}{1 - \frac{1}{\mu}} - 1} \times \left[ \eta (1) (A^T_t)^{-\frac{1}{\mu}} + (1-\eta) p^N_t (A^N_t)^{-\frac{1}{\mu}} \right].
+$$
+
+Simplifying, this reduces to:
+
+$$
+p_t = \left[ \eta + (1-\eta) \left( \frac{A^N_t}{A^T_t} \right)^{1 - \frac{1}{\mu}} \right]^{\frac{1}{1 - \frac{1}{\mu}}}.
+$$
 
 **Stationarity:**  
 Both $p^N_t$ and $p_t$ are stationary variables, provided that $A^T_t$ and $A^N_t$ grow at the same rate as the overall absorption $A_t$. This is typically the case along a balanced growth path, where sectoral absorptions and outputs grow proportionally with the nonstationary component $X_t$.
@@ -251,10 +341,12 @@ To express the equilibrium conditions in stationary form, we normalize all real 
 The key stationary equilibrium conditions become:
 
 - **Stationarized Production Functions:**
-  \begin{align*}
-    y^T_t &= z_t (k^T_t)^{1 - \alpha_T} (h^T_t)^{\alpha_T} \\
-    y^N_t &= z_t (k^N_t)^{1 - \alpha_N} (h^N_t)^{\alpha_N}
-  \end{align*}
+  $$
+  y^T_t = z_t (k^T_t)^{1 - \alpha_T} (h^T_t)^{\alpha_T}
+  $$
+  $$
+  y^N_t = z_t (k^N_t)^{1 - \alpha_N} (h^N_t)^{\alpha_N}
+  $$
 
 - **Stationarized Capital Accumulation (for $i = T, N$):**
   $$
@@ -278,46 +370,13 @@ Other equilibrium conditions (such as the CES aggregator, labor market clearing,
 To determine the steady state, impose that all stationary variables are constant over time and that the economy grows at the rate of the nonstationary productivity component, i.e., $g_t = g$ and $d_{t+1} = \overline{d}$.
 
 - **Restriction on $R^*$:**  
-  To ensure that the steady-state value of external debt per unit of productivity, $d_{t+1} \equiv D_{t+1}/X_t$, equals the target $\overline{d}$, set $R^* = 1/\beta$ (adjusted for growth and depreciation as required by the Euler equation in steady state).
-
-- **Steady-State Computation:**  
-  Solve the stationary system for steady-state values of all endogenous variables: $c, i, i^T, i^N, k^T, k^N, h, h^T, h^N, a^T, a^N, a, d, r, y^T, y^N$, etc.
+  To ensure that the steady-state value of external debt per unit of productivity, $d_{t+1} \equiv D_{t+1}/X_t$, equals the target $\overline{d}$, the gross interest rate $R^*$ must satisfy the household Euler equation condition consistent with the steady-state growth rate and discount factor.
 
 - **Calibration of $\eta$:**  
-  Choose $\eta$ such that the steady-state share of nontraded output in total output matches the target:
+  The parameter $\eta$ is chosen to satisfy the steady-state condition that the share of nontraded output in total output equals 0.65, i.e.,
+
   $$
-  \frac{p^N Y^N}{p^N Y^N + Y^T} = 0.65
-  $$
-  Numerically solve for $\eta$ to satisfy this condition, then report the computed value of $\eta$ and the steady-state values of all endogenous variables to four decimal places.
-
-#### 5. Eigenvalues of the Linearized System
-
-Linearize the stationary equilibrium system around the steady state to obtain the Jacobian matrix $h_x$ that describes the local dynamics of the state vector. Compute and report the numerical values of the eigenvalues of $h_x$. These eigenvalues indicate the stability properties and dynamic responses of the system to shocks.
-
-#### 6. Computation of Moments
-
-Define the following variables for empirical analysis:
-
-- **Gross Domestic Product (GDP):**
-  $$
-  Y_t = \frac{Y^T_t + p^N_t Y^N_t}{p_t}
+  \frac{p^N Y^N}{p^N Y^N + Y^T} = 0.65.
   $$
 
-- **Trade Balance:**
-  $$
-  TB_t = Y_t - C_t - I_t
-  $$
-
-- **Growth Rates:**
-  \begin{align*}
-    \Delta C_t &= \log \left( \frac{C_t}{C_{t-1}} \right) \\
-    \Delta Y_t &= \log \left( \frac{Y_t}{Y_{t-1}} \right)
-  \end{align*}
-
-Compute the unconditional standard deviations of $\Delta C_t$ and $\Delta Y_t$, denoted $\text{std}(\Delta C_t)$ and $\text{std}(\Delta Y_t)$, respectively. Also, calculate the correlation coefficient between output growth and the trade-balance-to-output ratio:
-$$
-tby_t = \frac{TB_t}{Y_t}
-$$
-Report $\text{corr}(\Delta Y_t,\ tby_t)$.
-
-
+  This condition defines an implicit equation for $\eta$ given other parameters and steady-state values. The exact numerical value of $\eta$ is determined by solving this equation but is not computed here.
