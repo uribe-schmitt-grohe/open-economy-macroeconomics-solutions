@@ -409,26 +409,26 @@ The stationary equilibrium conditions are:
 
 **Household Euler equation:**
 
-    $$
-    \frac{1}{c_t} = \beta E_t \left[ \frac{1 + R_{t+1}}{c_{t+1}} \right]
-    $$
+  $$
+  \frac{1}{c_t} = \beta E_t \left[ \frac{1 + R_{t+1}}{c_{t+1}} \right]
+  $$
 
 **Labor-leisure intratemporal condition:**
 
-    $$
-    \frac{\gamma}{1 - \gamma} \cdot \frac{1}{1 - h_t} = \frac{w_t}{c_t}
-    $$
+  $$
+  \frac{\gamma}{1 - \gamma} \cdot \frac{1}{1 - h_t} = \frac{w_t}{c_t}
+  $$
 
 **Firm FOCs for capital (common rental rate $r_t$):**
 
-    $$
-    r_t = z_t (1 - \alpha_i) (k^i_t)^{-\alpha_i} (h^i_t)^{\alpha_i}
-    $$
+  $$
+  r_t = z_t (1 - \alpha_i) (k^i_t)^{-\alpha_i} (h^i_t)^{\alpha_i}
+  $$
 
 **Firm FOCs for labor (common wage $w_t$):**
 
-    $$
-    w_t = z_t \alpha_i (k^i_t)^{1 - \alpha_i} (h^i_t)^{\alpha_i - 1}
-    $$
+  $$
+  w_t = z_t \alpha_i (k^i_t)^{1 - \alpha_i} (h^i_t)^{\alpha_i - 1}
+  $$
 
 These equations characterize the stationary balanced-growth equilibrium of the model.
