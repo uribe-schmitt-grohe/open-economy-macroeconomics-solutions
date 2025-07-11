@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Open Economy Macroeconomics Solutions",
     "section": "",
-    "text": "This repository contains sketches of solutions to many (but not all) of the exercises in Open Economy Macroeconomics by Martín Uribe and Stephanie Schmitt-Grohé (Princeton University Press link). Please help us to improve the repository. If you have solutions or corrections or alternative approaches to solutions, please post them in the corresponding discussion thread in the Discussions tab.\n\n\n\nOpen Economy Macroeconomics cover\n\n\n\n\n\n\nChapter 2 – An Open Endowment Economy\nChapter 3 – An Open Economy with Capital\nChapter 4 – The Open Economy Real-Business-Cycle Model\nChapter 5 – Business Cycles in Emerging Countries: Productivity Shocks versus Financial Fricitions\nChapter 6 – Interest-Rate Shocks\n\n\n\n\n\nEach solution page includes a comment section powered by Giscus. You are welcome to leave feedback or ask questions directly below each exercise. You can type plain text or simple math using LaTeX syntax (e.g., $y = c + i + g$). If you’d like to share screenshots or files, please upload them to a service like Google Drive or Dropbox and include a link in your comment.\nTo view all ongoing conversations, corrections, or contributions across chapters, visit the Discussions tab in the top navigation bar: Discussions. You can browse, reply to, or start new threads there."
+    "text": "This repository contains sketches of solutions to many (but not all) of the exercises in Open Economy Macroeconomics by Martín Uribe and Stephanie Schmitt-Grohé (Princeton University Press link). Please help us to improve the repository. If you have solutions or corrections or alternative approaches to solutions, please post them in the corresponding discussion thread in the Discussions tab.\n\n\n\nOpen Economy Macroeconomics cover\n\n\n\n\n\n\nChapter 2 – An Open Endowment Economy\nChapter 3 – An Open Economy with Capital\nChapter 4 – The Open Economy Real-Business-Cycle Model\nChapter 5 – Business Cycles in Emerging Countries: Productivity Shocks versus Financial Fricitions\nChapter 6 – Interest-Rate Shocks\nChapter 7 – Importable Goods, Exportable Goods, and the Terms of Trade\n\n\n\n\n\nEach solution page includes a comment section powered by Giscus. You are welcome to leave feedback or ask questions directly below each exercise. You can type plain text or simple math using LaTeX syntax (e.g., $y = c + i + g$). If you’d like to share screenshots or files, please upload them to a service like Google Drive or Dropbox and include a link in your comment.\nTo view all ongoing conversations, corrections, or contributions across chapters, visit the Discussions tab in the top navigation bar: Discussions. You can browse, reply to, or start new threads there."
   },
   {
     "objectID": "index.html#chapters",
@@ -872,7 +872,7 @@
     "href": "index.html#solutions-by-chapters",
     "title": "Open Economy Macroeconomics Solutions",
     "section": "",
-    "text": "Chapter 2 – An Open Endowment Economy\nChapter 3 – An Open Economy with Capital\nChapter 4 – The Open Economy Real-Business-Cycle Model\nChapter 5 – Business Cycles in Emerging Countries: Productivity Shocks versus Financial Fricitions\nChapter 6 – Interest-Rate Shocks"
+    "text": "Chapter 2 – An Open Endowment Economy\nChapter 3 – An Open Economy with Capital\nChapter 4 – The Open Economy Real-Business-Cycle Model\nChapter 5 – Business Cycles in Emerging Countries: Productivity Shocks versus Financial Fricitions\nChapter 6 – Interest-Rate Shocks\nChapter 7 – Importable Goods, Exportable Goods, and the Terms of Trade"
   },
   {
     "objectID": "chapters/ch05/5_1.html",
@@ -1040,7 +1040,7 @@
     "href": "chapters/ch07/index.html",
     "title": "Chapter 7 – Importable Goods, Exportable Goods, and the Terms of Trade",
     "section": "",
-    "text": "Exercise 5.1 (Explaining the Serial Correlation of Investment Growth)\nExercise 5.2 (The Effect of Nonstationary Productivity Shocks on the Trade Balance in the Presence of Nontraded Goods)\nExercise 5.3 (Slow Diffusion of Technology Shocks to the Country Premium, Household Production, and Government Spending)\nExercise 5.4 (The Importance of Nonstationary Productivity Shocks in the GPU Model)\nExercise 5.5 (Letting Productivity, Noise, and Interest-Rate Shocks Compete)\nExercise 5.6 (The Meaning of Variance Decomposition Under Imperfect Information)"
+    "text": "Exercise 7.1 (Testing The Univariate Specification For The Terms Of Trade)\nExercise 7.2 (HP-Filtered Terms-Of-Trade Process)\nExercise 7.3 (Special Cases of the CES Armington Aggregator)\nExercise 7.4 (Export Commodity Prices)\nExercise 7.5 (Time-To-Build And The Effects of Terms of Trade Shocks)\nExercise 7.4 (Tariffs And The Effects Of Terms Of Trade Shocks)"
   },
   {
     "objectID": "chapters/ch06/6_2.html",
@@ -1228,6 +1228,27 @@
     "objectID": "chapters/ch07/7_5.html#answer",
     "href": "chapters/ch07/7_5.html#answer",
     "title": "Exercise 7.5",
+    "section": "Answer",
+    "text": "Answer\nTo be added."
+  },
+  {
+    "objectID": "chapters/ch07/7_6.html",
+    "href": "chapters/ch07/7_6.html",
+    "title": "Exercise 7.6",
+    "section": "",
+    "text": "⬅ Return"
+  },
+  {
+    "objectID": "chapters/ch07/7_6.html#problem",
+    "href": "chapters/ch07/7_6.html#problem",
+    "title": "Exercise 7.6",
+    "section": "Problem",
+    "text": "Problem\nContinuing with the theme of the previous two exercises, one possible explanation behind the mismatch between the predictions of the theoretical and empirical models regarding the importance of terms-of-trade shocks is the presence of trade tariffs. To the extent that trade taxes move systematically in the opposite direction as the terms of trade, the domestic relative price of exportables and importables will be insensitive to movements in their world counterparts, which, in turn, may attenuate the effects of terms-of-trade shocks on domestic activity. Continue to assume that \\(p^x_t\\) and \\(p^m_t\\) denote the domestic prices of exportables and importables, respectively, in terms of final goods, and that \\(tot_t\\equiv p^x_t/p^m_t\\) denotes the domestic terms of trade. The novelty in the present setting is that there is a tax that introduces a wedge, denoted \\(\\gamma_t\\), between the domestic and the foreign terms of trade. Specifically, assume that\n\\[\ntot_t = tot^*_t \\gamma_t,\n\\]\nwhere \\(tot^*_t\\) denotes the foreign terms of trade. The wedge \\(\\gamma_t\\) is one minus a proportional trade barrier, which might take the form of a combination of import and export taxes. As before, the country takes the evolution of the foreign terms of trade as given. Assume that \\(tot^*_t\\) follows the AR(1) process\n\\[\n\\ln\\left(\n\\frac{tot^*_t}\n{tot^*}\\right)\n= \\rho \\ln\n\\left(\\frac{tot^*_{t-1}}\n{tot^*}\\right)\n+ \\pi \\epsilon^{tot*}_t,\n\\]\nwhere \\(tot^*\\) denotes the steady-state value of \\(tot^*_t\\). Assume that the government increases taxes on exports (or reduces taxes on imports) when the foreign terms of trade improves. Specifically, assume that\n\\[\n\\gamma_t = \\left(\\frac{tot^*_t}{tot^*}\\right)^{-\\eta},\n\\]\nwith \\(\\eta&gt;0\\). Finally, assume that the government rebates the proceeds of trade taxes to households in a lump-sum fashion. Calibrate the model using the values for the structural parameters given in Table 7.5 and the cross-country medians of \\(\\rho\\), \\(\\pi\\), \\(\\phi\\), and \\(\\psi\\), given in Tables 7.1 and 7.4. Consider different values of \\(\\eta\\) ranging from 0 to 1. For each value of \\(\\eta\\) compute the variances of output, consumption, investment, and the trade balance due to terms-of-trade shocks. Discuss your results."
+  },
+  {
+    "objectID": "chapters/ch07/7_6.html#answer",
+    "href": "chapters/ch07/7_6.html#answer",
+    "title": "Exercise 7.6",
     "section": "Answer",
     "text": "Answer\nTo be added."
   }
