@@ -1125,5 +1125,110 @@
     "title": "Exercise 6.5",
     "section": "Answer",
     "text": "Answer\nTo be added."
+  },
+  {
+    "objectID": "chapters/ch07/7_1.html",
+    "href": "chapters/ch07/7_1.html",
+    "title": "Exercise 7.1",
+    "section": "",
+    "text": "⬅ Return"
+  },
+  {
+    "objectID": "chapters/ch07/7_1.html#problem",
+    "href": "chapters/ch07/7_1.html#problem",
+    "title": "Exercise 7.1",
+    "section": "Problem",
+    "text": "Problem\nThroughout the chapter we have assumed that the typical poor or emerging country is too small to affect its terms of trade. This exercise aims at scrutinizing this assumption. For each of the 51 countries in the panel underlying the empirical analysis of Section 7.4, test the null hypothesis that the terms of trade follow a univariate process against the alternative hypothesis that they also depend on one-period lagged values of output, consumption, investment, and the trade balance. Always include a constant in your regressions. Report the countries for which the null hypothesis can be rejected at the 95% confidence level. In completing this exercise, you might find it useful to consult an econometrics textbook, such as Hamilton (1994, section 11.2)."
+  },
+  {
+    "objectID": "chapters/ch07/7_1.html#answer",
+    "href": "chapters/ch07/7_1.html#answer",
+    "title": "Exercise 7.1",
+    "section": "Answer",
+    "text": "Answer\nTo be added."
+  },
+  {
+    "objectID": "chapters/ch07/7_3.html",
+    "href": "chapters/ch07/7_3.html",
+    "title": "Exercise 7.3",
+    "section": "",
+    "text": "⬅ Return"
+  },
+  {
+    "objectID": "chapters/ch07/7_3.html#problem",
+    "href": "chapters/ch07/7_3.html#problem",
+    "title": "Exercise 7.3",
+    "section": "Problem",
+    "text": "Problem\nConsider the CES Armington aggregator\n\\[\nA(a^m,a^x) =\n\\left[\n\\chi\n\\left(a^m\\right)^{1-\\frac1{\\mu}}\n+ (1-\\chi)\n\\left(a^x\\right)^{1-\\frac1{\\mu}}\n\\right]^{\\frac{1}{1-\\frac{1}{\\mu}}}.\n\\]\nShow that\n\\[\n\\lim_{\\mu\\rightarrow1}A(a^m,a^x)= (a^m)^{\\chi}(a^x)^{1-\\chi}.\n\\]\n\\[\n\\lim_{\\mu\\rightarrow0}A(a^m,a^x)=\n\\min\\{ a^m,a^x\\}.\n\\]\nand\n\\[\n\\lim_{\\mu\\rightarrow\\infty}A(a^m,a^x)=\n\\chi a^m + (1-\\chi)a^x.\n\\]\nNote that the share parameter \\(\\chi\\) drops from the Armington aggregator as \\(\\mu\\rightarrow 0\\). This may be an undesirable property for certain applications. Provide an alternative specification of the CES aggregator such that\n\\[\n\\lim_{\\mu\\rightarrow0}A(a^m,a^x)=\n\\min\\{ \\chi a^m,(1-\\chi)a^x\\}.\n\\]"
+  },
+  {
+    "objectID": "chapters/ch07/7_3.html#answer",
+    "href": "chapters/ch07/7_3.html#answer",
+    "title": "Exercise 7.3",
+    "section": "Answer",
+    "text": "Answer\n\n1.\nuse\n\\[\n\\ln A(a^m,a^x) = \\frac{\\ln \\left[\n\\chi\n\\left(a^m\\right)^{1-\\frac1{\\mu}}\n+ (1-\\chi)\n\\left(a^x\\right)^{1-\\frac1{\\mu}}\n\\right]}{1-\\frac{1}{\\mu}}\n\\]\nFor \\(\\mu=1\\) this is not defined because the denominator is \\(0\\). Thus let’s apply the l’Hospital rule.\n\\[\n\\begin{eqnarray*}\n&\\lim_{\\mu\\rightarrow 1} \\frac{\\ln \\left[\n\\chi\n\\left(a^m\\right)^{1-\\frac1{\\mu}}\n+ (1-\\chi)\n\\left(a^x\\right)^{1-\\frac1{\\mu}}\n\\right]}{1-\\frac{1}{\\mu}}\n\\\\\n=&\\lim_{\\mu\\rightarrow 1}\n\\frac{\\frac1{ \\left[\n\\chi\n\\left(a^m\\right)^{1-\\frac1{\\mu}}\n+ (1-\\chi)\n\\left(a^x\\right)^{1-\\frac1{\\mu}}\n\\right]} \\left[\\chi \\ln a^m \\frac1{\\mu^2} \\left(a^m\\right)^{1-\\frac1{\\mu}}\n+ (1-\\chi) \\ln a^x \\frac1{\\mu^2} \\left(a^x\\right)^{1-\\frac1{\\mu}}\\right]}{\\frac{1}{\\mu^2}}\\\\\n=&\\chi \\ln a^m + (1-\\chi) \\ln a^x\n\\\\\n=&\\ln\\left[ \\left(a^m\\right)^{\\chi}\\left(a^x\\right)^{(1-\\chi)} \\right]\n\\end{eqnarray*}\n\\]\n\n\n2.\nNote that\n\\[\n\\lim_{\\mu\\rightarrow 0} \\frac{1}{1-\\frac{1}{\\mu}} =\n\\lim_{\\mu\\rightarrow 0} \\frac{\\mu}{\\mu -1} =  \\frac{0}{-1} =0\n\\]\nand that\n\\[\n\\lim_{\\mu\\rightarrow 0} \\left(1-\\frac{1}{\\mu}\\right) = -\\infty\n\\]\nSuppose that \\(a^m/a^x&gt;1\\), so that \\((a^m/a^x)^{-\\infty} =0\\) Take out \\(a^x\\)\n\\[\nA(a^m,a^x) = a^x\n\\left[\n\\chi  \\left(a^m/a^x\n\\right)^{1-\\frac1{\\mu}}\n+ (1-\\chi)\n\\right]^\\frac1{{1-\\frac{1}{\\mu}}}\n\\]\nNow the part in the square brackets is well defined as \\(\\mu\\rightarrow 0\\) so that\n\\[\n\\lim_{\\mu\\rightarrow 0} \\left[\n\\chi  \\left(a^m/a^x\n\\right)^{1-\\frac1{\\mu}}\n+ (1-\\chi)\n\\right]^\\frac1{{1-\\frac{1}{\\mu}}}\n= \\left[\n(1-\\chi)\n\\right]^0\n= 1\n\\]\nand hence if \\(a^m/a^x&gt;1\\), then\n\\[\n\\lim_{\\mu \\rightarrow 0} A(a^m,a^x) = a^x\n\\]\nBy the same argument we have that if if \\(a^m/a^x&lt;1\\), then\n\\[\n\\lim_{\\mu \\rightarrow 0} A(a^m,a^x) = a^m\n\\]\nIt follows that\n\\[\n\\lim_{\\mu \\rightarrow 0} A(a^m,a^x) = \\min\\{a^m, a^x\\},\n\\]\nwhich is what we were asked to show.\n\n\n3.\nThe claim follows from the facts that\n\\[\n\\lim_{\\mu\\rightarrow \\infty} \\frac{1}{1-\\frac{1}{\\mu}} = 1\n\\]\nand\n\\[\n\\lim_{\\mu\\rightarrow \\infty} \\left(1-\\frac{1}{\\mu}\\right) = 1.\n\\]\n\n\n4.\nLet\n\\[\nA(a^m,a^x) =\n\\left[\n\\left(\n\\chi  a^m\n\\right)^{1-\\frac1{\\mu}}\n+ \\left(\n(1-\\chi)  a^x \\right)^{1-\\frac1{\\mu}}\n\\right]\n^\\frac1{{1-\\frac{1}{\\mu}}}\n\\]\nSuppose \\(\\chi a^m&lt;(1-\\chi) a^x\\), then we have:\n\\[\nA(a^m,a^x) =  \\chi a^m\n\\left[\n1\n+\n\\left(\\frac{\n(1-\\chi)  a^x\n}\n{\\chi a^m}\n\\right)^{1-\\frac1{\\mu}}\n\\right]\n^\\frac1{{1-\\frac{1}{\\mu}}}\n\\]\nFor the rest proceed as above."
+  },
+  {
+    "objectID": "chapters/ch07/7_2.html",
+    "href": "chapters/ch07/7_2.html",
+    "title": "Exercise 7.2",
+    "section": "",
+    "text": "⬅ Return"
+  },
+  {
+    "objectID": "chapters/ch07/7_2.html#problem",
+    "href": "chapters/ch07/7_2.html#problem",
+    "title": "Exercise 7.2",
+    "section": "Problem",
+    "text": "Problem\nUse the HP filler with smoothing parameter \\(\\lambda=100\\) to obtain the cyclical component of the terms of trade for the 51 countries considered in Section 7.1. See Section 1.5 of Chapter 1 for a discussion of the HP filter. Then estimate equation (7.1) country by country. Report your findings in a format similar to Table 7.1. Compare the estimated process under quadratic and HP detrending."
+  },
+  {
+    "objectID": "chapters/ch07/7_2.html#answer",
+    "href": "chapters/ch07/7_2.html#answer",
+    "title": "Exercise 7.2",
+    "section": "Answer",
+    "text": "Answer\nTo be added."
+  },
+  {
+    "objectID": "chapters/ch07/7_4.html",
+    "href": "chapters/ch07/7_4.html",
+    "title": "Exercise 7.4",
+    "section": "",
+    "text": "⬅ Return"
+  },
+  {
+    "objectID": "chapters/ch07/7_4.html#problem",
+    "href": "chapters/ch07/7_4.html#problem",
+    "title": "Exercise 7.4",
+    "section": "Problem",
+    "text": "Problem\nThe SVAR evidence presented in Section 7.4 suggests that the terms of trade play a small role in explaining business cycles in emerging and poor countries. Some have argued that for commodity exporting countries world commodity prices can be an important driver of aggregate activity. To test this hypothesis, consider the case of Chile, a country for which about half of its exports are concentrated in a single commodity, namely, copper. The present exercise consists in replacing the terms of trade with the real price of copper in the SVAR analysis of Section 7.4. To this end, download the time series of the spot price of copper in dollars at the London Market at an annual frequency from the IMF-IFS dataset. Deflate this series using the U.S. CPI index. Remove a quadratic time trend from the natural logarithm of the real copper price. Use the raw data corresponding to Chile contained in the file data_annual.xls (posted with the materials for Chapter 1) for the remaining four variables of the SVAR. Apply the same detrending and transformations of the variables as in the body of the chapter. Then estimate the SVAR system, equations(7.8) and (7.9), for Chile with your commodity price index taking the place of \\(tot_t\\). The sample should be 1980 to 2011. Plot impulse responses of all variables in the SVAR to a ten-percent copper-price increase. Finally, estimate the share of the variance of each variable in the SVAR system explained by copper price shocks. Discuss your findings and compare them to those reported in Section 7.4(especially Table 7.2) for the case of Chile. Is the price of copper a more important driver of Chilean business cycles than the Chilean terms of trade?"
+  },
+  {
+    "objectID": "chapters/ch07/7_4.html#answer",
+    "href": "chapters/ch07/7_4.html#answer",
+    "title": "Exercise 7.4",
+    "section": "Answer",
+    "text": "Answer\nTo be added."
+  },
+  {
+    "objectID": "chapters/ch07/7_5.html",
+    "href": "chapters/ch07/7_5.html",
+    "title": "Exercise 7.5",
+    "section": "",
+    "text": "⬅ Return"
+  },
+  {
+    "objectID": "chapters/ch07/7_5.html#problem",
+    "href": "chapters/ch07/7_5.html#problem",
+    "title": "Exercise 7.5",
+    "section": "Problem",
+    "text": "Problem\nAn important problem of the MX model of Section 7.5 is that it exaggerates the role of the terms of trade relative to the predictions of the empirical SVAR model. Consider the possibility of bringing model and data closer together by introducing delays in the process of capital accumulation. Here, the hope is that if building capital takes time, terms-of-trade shocks may not induce large increases in investment because by the time investment becomes capital, much of the shock might have faded away (recall that the cross-country median value of \\(\\rho\\), implying a half life of terms-of-trade shocks is only one year). Specifically, assume that investment goods take \\(i\\) years rather than one year to become productive capital, that is, model the law of motion of the capital stocks as\n\\[\nk^j_{t+1} = (1-\\delta)k^j_t + i^j_{t-i},\n\\]\nfor \\(j=m,x\\). Calibrate the model using the parameter values given in Table 7.5 and the cross-country medians of \\(\\rho\\), \\(\\pi\\), \\(\\phi\\), and \\(\\psi\\), given in Tables 7.1 and 7.4. Consider three specifications, \\(i=1,2,\\) and \\(3\\). Plot the associated impulse responses of all variables of interest to a one-percent increase in the terms of trade. Explain the results. Now, for each value of \\(i\\), compute the predicted variances of output, consumption, investment, and the trade balance due to terms of trade shocks. Discuss your answer placing emphasis on the potential of the proposed channel."
+  },
+  {
+    "objectID": "chapters/ch07/7_5.html#answer",
+    "href": "chapters/ch07/7_5.html#answer",
+    "title": "Exercise 7.5",
+    "section": "Answer",
+    "text": "Answer\nTo be added."
   }
 ]

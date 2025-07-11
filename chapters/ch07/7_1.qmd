@@ -1,0 +1,13 @@
+---
+title: "Exercise 7.1"
+subtitle: "Testing The Univariate Specification For The Terms Of Trade"
+---
+<a class="return-button" href="index.qmd">⬅ Return</a>
+
+## Problem
+
+Throughout the chapter we have assumed that the typical poor or emerging country is too small to affect its terms of trade. This exercise aims at scrutinizing this assumption. For each of the 51 countries in the panel underlying the empirical analysis of Section 7.4, test the null hypothesis that the terms of trade  follow a univariate process against the alternative hypothesis that they also  depend on one-period lagged  values of  output, consumption, investment, and the trade balance. Always include a constant in your regressions.  Report the countries for which the null hypothesis can be rejected at the 95\% confidence level.  In completing this exercise, you might find it useful to consult an econometrics textbook, such as Hamilton (1994, section 11.2). 
+
+## Answer
+
+_To be added._

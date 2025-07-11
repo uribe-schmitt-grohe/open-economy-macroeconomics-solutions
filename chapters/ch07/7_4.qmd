@@ -1,0 +1,13 @@
+---
+title: "Exercise 7.4"
+subtitle: "Export Commodity Prices"
+---
+<a class="return-button" href="index.qmd">⬅ Return</a>
+
+## Problem
+
+The SVAR evidence presented in Section 7.4 suggests that the terms of trade play a small role in explaining business cycles in emerging and poor countries. Some have argued that for commodity exporting countries world commodity prices can be an important driver of aggregate activity. To test this hypothesis, consider the case of Chile, a country for which about half of its exports are concentrated in a single commodity, namely, copper. The present exercise consists in replacing the terms of trade with the real price of copper in the SVAR analysis of Section 7.4. To this end, download the  time series of the spot price of copper in dollars at the London Market at an annual frequency  from  the IMF-IFS dataset. Deflate this series using the U.S.\ CPI index. Remove a quadratic time trend from the natural logarithm of the real copper price. Use the raw data corresponding to Chile contained in the file data\_annual.xls (posted with the materials for Chapter 1) for the remaining four variables of the SVAR. Apply the same detrending and transformations of the variables as in the body of the chapter. Then estimate the SVAR system, equations(7.8) and (7.9),  for Chile with your commodity price index taking the place of $tot_t$. The sample should be 1980 to 2011. Plot impulse responses of all variables in the SVAR to a ten-percent copper-price increase. Finally, estimate the share of the variance of each variable in the SVAR system explained by copper price shocks. Discuss your findings and compare them to those reported in Section 7.4(especially Table 7.2) for the case of Chile. Is the price of copper a more important driver of Chilean business cycles than the Chilean terms of trade? 
+
+## Answer
+
+_To be added._

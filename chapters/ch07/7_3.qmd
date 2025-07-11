@@ -1,0 +1,192 @@
+---
+title: "Exercise 7.3"
+subtitle: "Special Cases of the CES Armington Aggregator"
+---
+<a class="return-button" href="index.qmd">⬅ Return</a>
+
+## Problem
+
+Consider the  CES Armington aggregator 
+
+$$
+A(a^m,a^x) = 
+\left[
+\chi 
+\left(a^m\right)^{1-\frac1{\mu}}
++ (1-\chi)
+\left(a^x\right)^{1-\frac1{\mu}}
+\right]^{\frac{1}{1-\frac{1}{\mu}}}.
+$$
+
+Show that 
+
+$$
+\lim_{\mu\rightarrow1}A(a^m,a^x)= (a^m)^{\chi}(a^x)^{1-\chi}.
+$$
+
+$$
+\lim_{\mu\rightarrow0}A(a^m,a^x)= 
+\min\{ a^m,a^x\}. 
+$$
+
+and
+
+$$
+\lim_{\mu\rightarrow\infty}A(a^m,a^x)= 
+\chi a^m + (1-\chi)a^x.
+$$
+
+Note that the share parameter $\chi$ drops from the Armington aggregator as $\mu\rightarrow 0$. This may be an undesirable property for  certain applications. Provide an alternative specification of the CES aggregator such that 
+
+$$
+\lim_{\mu\rightarrow0}A(a^m,a^x)= 
+\min\{ \chi a^m,(1-\chi)a^x\}.
+$$
+
+## Answer
+
+#### 1.
+use 
+
+$$ 
+\ln A(a^m,a^x) = \frac{\ln \left[
+\chi 
+\left(a^m\right)^{1-\frac1{\mu}}
++ (1-\chi)
+\left(a^x\right)^{1-\frac1{\mu}}
+\right]}{1-\frac{1}{\mu}}
+$$
+
+For $\mu=1$ this is not defined because the denominator is $0$. Thus let's apply the  l'Hospital rule.
+
+$$
+\begin{eqnarray*}
+&\lim_{\mu\rightarrow 1} \frac{\ln \left[
+\chi 
+\left(a^m\right)^{1-\frac1{\mu}}
++ (1-\chi)
+\left(a^x\right)^{1-\frac1{\mu}}
+\right]}{1-\frac{1}{\mu}} 
+ \\
+=&\lim_{\mu\rightarrow 1} 
+\frac{\frac1{ \left[
+\chi 
+\left(a^m\right)^{1-\frac1{\mu}}
++ (1-\chi)
+\left(a^x\right)^{1-\frac1{\mu}}
+\right]} \left[\chi \ln a^m \frac1{\mu^2} \left(a^m\right)^{1-\frac1{\mu}}
++ (1-\chi) \ln a^x \frac1{\mu^2} \left(a^x\right)^{1-\frac1{\mu}}\right]}{\frac{1}{\mu^2}}\\
+=&\chi \ln a^m + (1-\chi) \ln a^x 
+\\
+=&\ln\left[ \left(a^m\right)^{\chi}\left(a^x\right)^{(1-\chi)} \right]
+\end{eqnarray*}
+$$
+
+#### 2.
+
+Note that 
+
+$$
+\lim_{\mu\rightarrow 0} \frac{1}{1-\frac{1}{\mu}} = 
+\lim_{\mu\rightarrow 0} \frac{\mu}{\mu -1} =  \frac{0}{-1} =0
+$$
+
+and that 
+
+$$
+\lim_{\mu\rightarrow 0} \left(1-\frac{1}{\mu}\right) = -\infty
+$$
+
+Suppose that $a^m/a^x>1$, so that $(a^m/a^x)^{-\infty} =0$
+Take out $a^x$
+
+$$
+A(a^m,a^x) = a^x
+\left[
+\chi  \left(a^m/a^x
+\right)^{1-\frac1{\mu}}
++ (1-\chi)
+\right]^\frac1{{1-\frac{1}{\mu}}}
+$$
+
+Now the part in the square brackets is well defined as $\mu\rightarrow 0$ so that 
+
+$$
+\lim_{\mu\rightarrow 0} \left[
+\chi  \left(a^m/a^x
+\right)^{1-\frac1{\mu}}
++ (1-\chi)
+\right]^\frac1{{1-\frac{1}{\mu}}}
+= \left[
+ (1-\chi)
+\right]^0
+= 1
+$$
+
+and hence if $a^m/a^x>1$, then  
+
+$$
+\lim_{\mu \rightarrow 0} A(a^m,a^x) = a^x
+$$
+
+By the same argument we have that if if $a^m/a^x<1$, then  
+
+$$
+\lim_{\mu \rightarrow 0} A(a^m,a^x) = a^m
+$$
+
+It follows that 
+
+$$
+\lim_{\mu \rightarrow 0} A(a^m,a^x) = \min\{a^m, a^x\}, 
+$$
+
+which is what we were asked to show. 
+
+#### 3.
+
+The claim follows from the facts that 
+
+$$
+\lim_{\mu\rightarrow \infty} \frac{1}{1-\frac{1}{\mu}} = 1
+$$
+
+and 
+
+$$
+\lim_{\mu\rightarrow \infty} \left(1-\frac{1}{\mu}\right) = 1.
+$$
+
+#### 4.
+
+Let 
+
+$$
+A(a^m,a^x) = 
+\left[
+\left(
+\chi  a^m 
+\right)^{1-\frac1{\mu}}
++ \left(
+(1-\chi)  a^x \right)^{1-\frac1{\mu}}
+\right]
+^\frac1{{1-\frac{1}{\mu}}}
+$$
+
+Suppose $\chi a^m<(1-\chi) a^x$, then we have: 
+
+$$
+A(a^m,a^x) =  \chi a^m
+\left[
+1 
++ 
+\left(\frac{
+(1-\chi)  a^x 
+}
+{\chi a^m}
+\right)^{1-\frac1{\mu}}
+\right]
+^\frac1{{1-\frac{1}{\mu}}}
+$$
+
+For the rest proceed as above. 

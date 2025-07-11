@@ -1,0 +1,19 @@
+---
+title: "Exercise 7.5"
+subtitle: "Time-To-Build And The Effects of Terms of Trade Shocks"
+---
+<a class="return-button" href="index.qmd">⬅ Return</a>
+
+## Problem
+
+An important problem of  the MX model of Section 7.5 is that it exaggerates the role of the terms of trade relative to the predictions of the empirical SVAR model. Consider the possibility of bringing model and data closer together by introducing delays in the process of capital accumulation. Here, the hope is that if building capital takes time, terms-of-trade shocks may not induce large increases in investment because by the time investment becomes capital, much of the shock might have faded away (recall that the cross-country median value of $\rho$, implying a half life of terms-of-trade shocks is only one year). Specifically, assume that investment goods take $i$ years rather than one year to become productive capital, that is, model the law of motion of the capital stocks as
+
+$$
+k^j_{t+1} = (1-\delta)k^j_t + i^j_{t-i},
+$$
+
+for $j=m,x$. Calibrate the model using the parameter values given in Table 7.5 and the cross-country medians of $\rho$, $\pi$, $\phi$, and $\psi$, given in Tables 7.1 and 7.4. Consider three specifications, $i=1,2,$ and $3$. Plot the associated impulse responses of all variables of interest to a one-percent increase in the terms of trade. Explain the results. Now, for each value of $i$, compute the predicted variances of output, consumption, investment, and the trade balance due to terms of trade shocks. Discuss  your answer placing emphasis on the potential of the proposed channel. 
+
+## Answer
+
+_To be added._

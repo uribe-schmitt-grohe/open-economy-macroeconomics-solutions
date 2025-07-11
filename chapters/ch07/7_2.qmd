@@ -1,0 +1,13 @@
+---
+title: "Exercise 7.2"
+subtitle: "HP-Filtered Terms-Of-Trade Process"
+---
+<a class="return-button" href="index.qmd">⬅ Return</a>
+
+## Problem
+
+Use the HP filler with  smoothing parameter $\lambda=100$ to obtain the cyclical component of the terms of trade for the 51 countries considered in Section 7.1. See Section 1.5 of Chapter 1 for a discussion of the HP filter. Then estimate equation (7.1) country by country. Report your findings in a format similar to Table 7.1. Compare the estimated process under quadratic and HP detrending. 
+
+## Answer
+
+_To be added._

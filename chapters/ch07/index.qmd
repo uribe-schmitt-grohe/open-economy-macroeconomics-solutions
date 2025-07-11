@@ -3,9 +3,9 @@ title: "Chapter 7 – Importable Goods, Exportable Goods, and the Terms of Trade
 comments: False
 ---
 
-- [Exercise 5.1 (Explaining the Serial Correlation of Investment Growth)](5_1.qmd)
-- [Exercise 5.2 (The Effect of Nonstationary Productivity Shocks on the Trade Balance in the Presence of Nontraded Goods)](5_2.qmd)
-- [Exercise 5.3 (Slow Diffusion of  Technology Shocks to  the Country Premium, Household Production, and Government Spending)](5_3.qmd)
-- [Exercise 5.4 (The Importance of Nonstationary Productivity Shocks in the GPU Model)](5_4.qmd)
-- [Exercise 5.5 (Letting Productivity, Noise, and Interest-Rate Shocks Compete)](5_5.qmd)
-- [Exercise 5.6 (The Meaning of Variance Decomposition Under Imperfect Information)](5_6.qmd)
+- [Exercise 7.1 (Testing The Univariate Specification For The Terms Of Trade)](7_1.qmd)
+- [Exercise 7.2 (HP-Filtered Terms-Of-Trade Process)](7_2.qmd)
+- [Exercise 7.3 (Special Cases of the CES Armington Aggregator)](7_3.qmd)
+- [Exercise 7.4 (Export Commodity Prices)](7_4.qmd)
+- [Exercise 7.5 (Time-To-Build And The Effects of Terms of Trade Shocks)](7_5.qmd)
+- [Exercise 7.4 (Tariffs And The Effects Of Terms Of Trade Shocks)](7_6.qmd)

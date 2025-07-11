@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Chapter 7 – Importable Goods, Exportable Goods, and the Terms of Trade – open economy macroeconomics by martín uribe and stephanie schmitt-grohé, PUP 2017</title>
+<title>Exercise 7.4 – open economy macroeconomics by martín uribe and stephanie schmitt-grohé, PUP 2017</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -178,7 +178,8 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title">Chapter 7 – Importable Goods, Exportable Goods, and the Terms of Trade</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+<div class="quarto-title-block"><div><h1 class="title">Exercise 7.4</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+<p class="subtitle lead">Export Commodity Prices</p>
 </div>
 
 
@@ -195,14 +196,20 @@ window.Quarto = {
 </header>
 
 
-<ul>
-<li></li>
-</ul>
+<p><a class="return-button" href="../../chapters/ch07/index.html">⬅ Return</a></p>
+<section id="problem" class="level2">
+<h2 class="anchored" data-anchor-id="problem">Problem</h2>
+<p>The SVAR evidence presented in Section 7.4 suggests that the terms of trade play a small role in explaining business cycles in emerging and poor countries. Some have argued that for commodity exporting countries world commodity prices can be an important driver of aggregate activity. To test this hypothesis, consider the case of Chile, a country for which about half of its exports are concentrated in a single commodity, namely, copper. The present exercise consists in replacing the terms of trade with the real price of copper in the SVAR analysis of Section 7.4. To this end, download the time series of the spot price of copper in dollars at the London Market at an annual frequency from the IMF-IFS dataset. Deflate this series using the U.S.&nbsp;CPI index. Remove a quadratic time trend from the natural logarithm of the real copper price. Use the raw data corresponding to Chile contained in the file data_annual.xls (posted with the materials for Chapter 1) for the remaining four variables of the SVAR. Apply the same detrending and transformations of the variables as in the body of the chapter. Then estimate the SVAR system, equations(7.8) and (7.9), for Chile with your commodity price index taking the place of <span class="math inline">\(tot_t\)</span>. The sample should be 1980 to 2011. Plot impulse responses of all variables in the SVAR to a ten-percent copper-price increase. Finally, estimate the share of the variance of each variable in the SVAR system explained by copper price shocks. Discuss your findings and compare them to those reported in Section 7.4(especially Table 7.2) for the case of Chile. Is the price of copper a more important driver of Chilean business cycles than the Chilean terms of trade?</p>
+</section>
+<section id="answer" class="level2">
+<h2 class="anchored" data-anchor-id="answer">Answer</h2>
+<p><em>To be added.</em></p>
 
 
 
 <!-- -->
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -654,13 +661,49 @@ window.Quarto = {
       }
     }
   });
-  </script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
+  </script>
+<input type="hidden" id="giscus-base-theme" value="light">
+<input type="hidden" id="giscus-alt-theme" value="dark">
+<script>
+  function loadGiscus() {
+    // Function to get the theme based on body class
+    const getTheme = () => {
+      let baseTheme = document.getElementById('giscus-base-theme').value;
+      let altTheme = document.getElementById('giscus-alt-theme').value;
+      return document.body.classList.contains('quarto-dark') ? altTheme : baseTheme;
+    };
+    const script = document.createElement("script");
+    script.src = "https://giscus.app/client.js";
+    script.async = true;
+    script.dataset.repo = "uribe-schmitt-grohe/open-economy-macroeconomics-solutions";
+    script.dataset.repoId = "R_kgDOO6HT_w";
+    script.dataset.category = "General";
+    script.dataset.categoryId = "DIC_kwDOO6HT_84CrWvF";
+    script.dataset.mapping = "pathname";
+    script.dataset.reactionsEnabled = "1";
+    script.dataset.emitMetadata = "0";
+    script.dataset.inputPosition = "bottom";
+    script.dataset.theme = getTheme();
+    script.dataset.lang = "en";
+    script.crossOrigin = "anonymous";
+    // Append the script to the desired div instead of at the end of the body
+    document.getElementById("quarto-content").appendChild(script);
+  }
+  loadGiscus();
+</script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
 <div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1"></a><span class="co">---</span></span>
-<span id="cb1-2"><a href="#cb1-2"></a><span class="an">title:</span><span class="co"> "Chapter 7 – Importable Goods, Exportable Goods, and the Terms of Trade"</span></span>
-<span id="cb1-3"><a href="#cb1-3"></a><span class="an">comments:</span><span class="co"> False</span></span>
+<span id="cb1-2"><a href="#cb1-2"></a><span class="an">title:</span><span class="co"> "Exercise 7.4"</span></span>
+<span id="cb1-3"><a href="#cb1-3"></a><span class="an">subtitle:</span><span class="co"> "Export Commodity Prices"</span></span>
 <span id="cb1-4"><a href="#cb1-4"></a><span class="co">---</span></span>
-<span id="cb1-5"><a href="#cb1-5"></a></span>
-<span id="cb1-6"><a href="#cb1-6"></a><span class="ss">- </span></span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
+<span id="cb1-5"><a href="#cb1-5"></a><span class="dt">&lt;</span><span class="kw">a</span><span class="ot"> class</span><span class="op">=</span><span class="st">"return-button"</span><span class="ot"> href</span><span class="op">=</span><span class="st">"index.qmd"</span><span class="dt">&gt;</span>⬅ Return<span class="dt">&lt;/</span><span class="kw">a</span><span class="dt">&gt;</span></span>
+<span id="cb1-6"><a href="#cb1-6"></a></span>
+<span id="cb1-7"><a href="#cb1-7"></a><span class="fu">## Problem</span></span>
+<span id="cb1-8"><a href="#cb1-8"></a></span>
+<span id="cb1-9"><a href="#cb1-9"></a>The SVAR evidence presented in Section 7.4 suggests that the terms of trade play a small role in explaining business cycles in emerging and poor countries. Some have argued that for commodity exporting countries world commodity prices can be an important driver of aggregate activity. To test this hypothesis, consider the case of Chile, a country for which about half of its exports are concentrated in a single commodity, namely, copper. The present exercise consists in replacing the terms of trade with the real price of copper in the SVAR analysis of Section 7.4. To this end, download the  time series of the spot price of copper in dollars at the London Market at an annual frequency  from  the IMF-IFS dataset. Deflate this series using the U.S.\ CPI index. Remove a quadratic time trend from the natural logarithm of the real copper price. Use the raw data corresponding to Chile contained in the file data<span class="sc">\_</span>annual.xls (posted with the materials for Chapter 1) for the remaining four variables of the SVAR. Apply the same detrending and transformations of the variables as in the body of the chapter. Then estimate the SVAR system, equations(7.8) and (7.9),  for Chile with your commodity price index taking the place of $tot_t$. The sample should be 1980 to 2011. Plot impulse responses of all variables in the SVAR to a ten-percent copper-price increase. Finally, estimate the share of the variance of each variable in the SVAR system explained by copper price shocks. Discuss your findings and compare them to those reported in Section 7.4(especially Table 7.2) for the case of Chile. Is the price of copper a more important driver of Chilean business cycles than the Chilean terms of trade? </span>
+<span id="cb1-10"><a href="#cb1-10"></a></span>
+<span id="cb1-11"><a href="#cb1-11"></a><span class="fu">## Answer</span></span>
+<span id="cb1-12"><a href="#cb1-12"></a></span>
+<span id="cb1-13"><a href="#cb1-13"></a>_To be added._</span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 
