@@ -243,8 +243,6 @@ c_{t+1} = c_1,
 <p><span class="math display">\[
 c_1 = \beta(1+r^H)c_0&gt;c_0. \tag{1}
 \]</span></p>
-<section id="section" class="level4">
-<h4 class="anchored" data-anchor-id="section">1.</h4>
 <p>To determine the quantities <span class="math inline">\(c_0\)</span> and <span class="math inline">\(c_1\)</span>, conjecture that <span class="math display">\[
 d_t = d_0
 \]</span></p>
@@ -271,24 +269,17 @@ d_1=0.
 d_0 =-y \frac{\beta(1+r^H)-1}
 {(1+r^H)(1-\beta)}&lt;0
 \]</span></p>
-</section>
-<section id="section-1" class="level4">
-<h4 class="anchored" data-anchor-id="section-1">2.</h4>
 <p>Summarizing, we deduced that</p>
 <p>(1) Consumption is lower than <span class="math inline">\(y\)</span> in even periods and higher than <span class="math inline">\(y\)</span> in odd periods.</p>
 <p>(2) The trade balance is positive in even periods and negative in odd periods.</p>
 <p>(3) Debt is negative in even periods and nil in odd periods.</p>
 <p>(4) The current account is positive in even periods and negative in odd periods.</p>
-</section>
-<section id="section-2" class="level4">
-<h4 class="anchored" data-anchor-id="section-2">3.</h4>
 <p>The intuition is that when the interest rate is high (even periods) it pays to contract consumption and save, and the reverse when the interest rate is low (odd periods).</p>
 
 
 
 <!-- -->
 
-</section>
 </section>
 
 </main> <!-- /main -->
@@ -839,61 +830,55 @@ d_0 =-y \frac{\beta(1+r^H)-1}
 <span id="cb1-66"><a href="#cb1-66"></a>c_1 = \beta(1+r^H)c_0&gt;c_0. \tag{1}</span>
 <span id="cb1-67"><a href="#cb1-67"></a>$$</span>
 <span id="cb1-68"><a href="#cb1-68"></a></span>
-<span id="cb1-69"><a href="#cb1-69"></a><span class="fu">#### 1.</span></span>
-<span id="cb1-70"><a href="#cb1-70"></a></span>
-<span id="cb1-71"><a href="#cb1-71"></a>To determine the quantities $c_0$ and $c_1$, conjecture that </span>
+<span id="cb1-69"><a href="#cb1-69"></a>To determine the quantities $c_0$ and $c_1$, conjecture that </span>
+<span id="cb1-70"><a href="#cb1-70"></a>$$</span>
+<span id="cb1-71"><a href="#cb1-71"></a>d_t = d_0</span>
 <span id="cb1-72"><a href="#cb1-72"></a>$$</span>
-<span id="cb1-73"><a href="#cb1-73"></a>d_t = d_0</span>
-<span id="cb1-74"><a href="#cb1-74"></a>$$</span>
+<span id="cb1-73"><a href="#cb1-73"></a></span>
+<span id="cb1-74"><a href="#cb1-74"></a>and that </span>
 <span id="cb1-75"><a href="#cb1-75"></a></span>
-<span id="cb1-76"><a href="#cb1-76"></a>and that </span>
-<span id="cb1-77"><a href="#cb1-77"></a></span>
+<span id="cb1-76"><a href="#cb1-76"></a>$$</span>
+<span id="cb1-77"><a href="#cb1-77"></a>d_{t+1} = d_1</span>
 <span id="cb1-78"><a href="#cb1-78"></a>$$</span>
-<span id="cb1-79"><a href="#cb1-79"></a>d_{t+1} = d_1</span>
-<span id="cb1-80"><a href="#cb1-80"></a>$$</span>
+<span id="cb1-79"><a href="#cb1-79"></a></span>
+<span id="cb1-80"><a href="#cb1-80"></a>for $t\ge 0$. To find the quantities $c_0$, $c_1$, $d_0$, and $d_1$, write the sequential budget constraints for periods 0, 1, and 2 to get, respectively (recall that $d_{-1}=0$)</span>
 <span id="cb1-81"><a href="#cb1-81"></a></span>
-<span id="cb1-82"><a href="#cb1-82"></a>for $t\ge 0$. To find the quantities $c_0$, $c_1$, $d_0$, and $d_1$, write the sequential budget constraints for periods 0, 1, and 2 to get, respectively (recall that $d_{-1}=0$)</span>
-<span id="cb1-83"><a href="#cb1-83"></a></span>
+<span id="cb1-82"><a href="#cb1-82"></a>$$</span>
+<span id="cb1-83"><a href="#cb1-83"></a>c_0 = y +d_0 \tag{2}</span>
 <span id="cb1-84"><a href="#cb1-84"></a>$$</span>
-<span id="cb1-85"><a href="#cb1-85"></a>c_0 = y +d_0 \tag{2}</span>
+<span id="cb1-85"><a href="#cb1-85"></a></span>
 <span id="cb1-86"><a href="#cb1-86"></a>$$</span>
-<span id="cb1-87"><a href="#cb1-87"></a></span>
+<span id="cb1-87"><a href="#cb1-87"></a>c_1 +(1+r^H)d_0 = y - d_1, \tag{3}</span>
 <span id="cb1-88"><a href="#cb1-88"></a>$$</span>
-<span id="cb1-89"><a href="#cb1-89"></a>c_1 +(1+r^H)d_0 = y - d_1, \tag{3}</span>
+<span id="cb1-89"><a href="#cb1-89"></a></span>
 <span id="cb1-90"><a href="#cb1-90"></a>$$</span>
-<span id="cb1-91"><a href="#cb1-91"></a></span>
+<span id="cb1-91"><a href="#cb1-91"></a>c_0 + (1+r^L)d_1 = y +d_0 \tag{4}</span>
 <span id="cb1-92"><a href="#cb1-92"></a>$$</span>
-<span id="cb1-93"><a href="#cb1-93"></a>c_0 + (1+r^L)d_1 = y +d_0 \tag{4}</span>
-<span id="cb1-94"><a href="#cb1-94"></a>$$</span>
+<span id="cb1-93"><a href="#cb1-93"></a></span>
+<span id="cb1-94"><a href="#cb1-94"></a>Expressions (2) and (4) imply that </span>
 <span id="cb1-95"><a href="#cb1-95"></a></span>
-<span id="cb1-96"><a href="#cb1-96"></a>Expressions (2) and (4) imply that </span>
-<span id="cb1-97"><a href="#cb1-97"></a></span>
+<span id="cb1-96"><a href="#cb1-96"></a>$$</span>
+<span id="cb1-97"><a href="#cb1-97"></a>d_1=0.</span>
 <span id="cb1-98"><a href="#cb1-98"></a>$$</span>
-<span id="cb1-99"><a href="#cb1-99"></a>d_1=0.</span>
-<span id="cb1-100"><a href="#cb1-100"></a>$$</span>
+<span id="cb1-99"><a href="#cb1-99"></a></span>
+<span id="cb1-100"><a href="#cb1-100"></a>This result along with (1) and (3) yield the following solution for the equilibrium level of debt assumed in periods $t=0, 2, \dots$</span>
 <span id="cb1-101"><a href="#cb1-101"></a></span>
-<span id="cb1-102"><a href="#cb1-102"></a>This result along with (1) and (3) yield the following solution for the equilibrium level of debt assumed in periods $t=0, 2, \dots$</span>
-<span id="cb1-103"><a href="#cb1-103"></a></span>
-<span id="cb1-104"><a href="#cb1-104"></a>$$</span>
-<span id="cb1-105"><a href="#cb1-105"></a>d_0 =-y \frac{\beta(1+r^H)-1}</span>
-<span id="cb1-106"><a href="#cb1-106"></a>{(1+r^H)(1-\beta)}&lt;0</span>
-<span id="cb1-107"><a href="#cb1-107"></a>$$</span>
+<span id="cb1-102"><a href="#cb1-102"></a>$$</span>
+<span id="cb1-103"><a href="#cb1-103"></a>d_0 =-y \frac{\beta(1+r^H)-1}</span>
+<span id="cb1-104"><a href="#cb1-104"></a>{(1+r^H)(1-\beta)}&lt;0</span>
+<span id="cb1-105"><a href="#cb1-105"></a>$$</span>
+<span id="cb1-106"><a href="#cb1-106"></a></span>
+<span id="cb1-107"><a href="#cb1-107"></a>Summarizing,  we deduced that </span>
 <span id="cb1-108"><a href="#cb1-108"></a></span>
-<span id="cb1-109"><a href="#cb1-109"></a><span class="fu">#### 2.</span></span>
+<span id="cb1-109"><a href="#cb1-109"></a><span class="sc">\(</span>1<span class="sc">\)</span> Consumption is lower  than $y$ in even periods  and higher than $y$ in odd periods.</span>
 <span id="cb1-110"><a href="#cb1-110"></a></span>
-<span id="cb1-111"><a href="#cb1-111"></a>Summarizing,  we deduced that </span>
+<span id="cb1-111"><a href="#cb1-111"></a><span class="sc">\(</span>2<span class="sc">\)</span> The trade balance is positive  in even periods  and negative in odd periods.</span>
 <span id="cb1-112"><a href="#cb1-112"></a></span>
-<span id="cb1-113"><a href="#cb1-113"></a><span class="sc">\(</span>1<span class="sc">\)</span> Consumption is lower  than $y$ in even periods  and higher than $y$ in odd periods.</span>
+<span id="cb1-113"><a href="#cb1-113"></a><span class="sc">\(</span>3<span class="sc">\)</span> Debt is negative in even periods and nil in odd periods.</span>
 <span id="cb1-114"><a href="#cb1-114"></a></span>
-<span id="cb1-115"><a href="#cb1-115"></a><span class="sc">\(</span>2<span class="sc">\)</span> The trade balance is positive  in even periods  and negative in odd periods.</span>
+<span id="cb1-115"><a href="#cb1-115"></a><span class="sc">\(</span>4<span class="sc">\)</span> The current account is positive in even periods and negative in odd periods. </span>
 <span id="cb1-116"><a href="#cb1-116"></a></span>
-<span id="cb1-117"><a href="#cb1-117"></a><span class="sc">\(</span>3<span class="sc">\)</span> Debt is negative in even periods and nil in odd periods.</span>
-<span id="cb1-118"><a href="#cb1-118"></a></span>
-<span id="cb1-119"><a href="#cb1-119"></a><span class="sc">\(</span>4<span class="sc">\)</span> The current account is positive in even periods and negative in odd periods. </span>
-<span id="cb1-120"><a href="#cb1-120"></a></span>
-<span id="cb1-121"><a href="#cb1-121"></a><span class="fu">#### 3.</span></span>
-<span id="cb1-122"><a href="#cb1-122"></a></span>
-<span id="cb1-123"><a href="#cb1-123"></a>The intuition is that  when the interest rate is high (even periods) it pays to contract consumption and save, and the reverse when the interest rate is low (odd periods). </span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
+<span id="cb1-117"><a href="#cb1-117"></a>The intuition is that  when the interest rate is high (even periods) it pays to contract consumption and save, and the reverse when the interest rate is low (odd periods). </span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 
