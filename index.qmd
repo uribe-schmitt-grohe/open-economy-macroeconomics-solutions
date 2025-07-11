@@ -17,6 +17,7 @@ This repository contains sketches of solutions to many (but not all) of the exer
 - [Chapter 3 – An Open Economy with Capital](chapters/ch03/index.qmd)
 - [Chapter 4 – The Open Economy Real-Business-Cycle Model](chapters/ch04/index.qmd)
 - [Chapter 5 – Business Cycles in Emerging Countries: Productivity Shocks versus Financial Fricitions](chapters/ch05/index.qmd)
+- [Chapter 6 – Interest-Rate Shocks](chapters/ch06/index.qmd)
 
 ---
 

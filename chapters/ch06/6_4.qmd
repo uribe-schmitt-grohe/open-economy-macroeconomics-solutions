@@ -1,0 +1,203 @@
+---
+title: "Exercise 6.4"
+subtitle: "Interest-Rate Uncertainty"
+---
+<a class="return-button" href="index.qmd">⬅ Return</a>
+
+## Problem
+
+Consider a two-period economy inhabited by a large number of identical households with preferences described by the utility function
+
+$$
+\ln C_1 + \ln C_2,
+$$
+
+where $C_1$ and $C_2$ denote consumption in periods 1 and 2, respectively. Households are endowed with $Q>0$ units of consumption goods each period,  and  start period 1 with no assets or debt carried over from the past.
+
+In period 1, households can borrow or lend by means of a bond, denoted $B$, that pays the world interest rate, denoted $r^*$. Assume that $r^*=0$. The household is  subject to a no-Ponzi-game constraint that prevents it from holding any debt at the end of period 2. 
+
+1. Write down the budget constraint of the household in periods 1 and 2. 
+
+2. Derive the household's  intertemporal budget constraint. 
+
+3. Use the intertemporal budget constraint to eliminate $C_2$ from the utility function. 
+
+4. Derive the optimal levels of consumption in periods 1 and 2, as functions of exogenous parameters only. Derive the equilibrium levels of the trade balance and the current account. 
+
+5. Provide intuition. 
+
+Now assume that the world interest rate is not known with certainty in period 1, that is, the one-period bond carries a floating rate. Specifically, assume that $r^*$ is given by
+
+$$
+r^* = 
+\left\{
+\begin{array}{rl}
+\sigma &\mbox{ with probability 1/2}\\
+-\sigma &\mbox{ with probability 1/2}\\
+\end{array}
+\right.,
+$$
+
+where $\sigma\in (0,1)$ is a parameter.  In this economy, financial markets are incomplete, because agents have access to a single bond in period 1. Preferences are described by the utility function
+
+$$
+\ln C_1 + E_1\ln C_2,
+$$
+
+where $E_1$ denotes the mathematical expectations operator conditional on information available in period 1. The present economy nests the no-uncertainty economy described above as a special case in which $\sigma=0$. 
+
+6. Write down the household's budget constraint in periods 1 and 2. To this end, let $C^1_2$ and $C^2_2$ denote consumption in period 2  when the world interest rate is $\sigma$ and $-\sigma$, respectively.  Note that the budget constraint in period 2 is state contingent. 
+
+7. Write down the household's intertemporal budget constraint. This is also a state-contingent object. 
+
+8. Derive the optimality conditions associated with the household's problem. 
+
+9. Show whether the equilibrium level of consumption in period 1 is greater than, less than, or equal to the one that arises when $\sigma=0$. 
+
+10. Find the sign of the trade balance in equilibrium. Compare your answer to the one for the case $\sigma=0$ and provide intuition. In particular, discuss why a mean preserving increase in interest-rate uncertainty affects the trade balance in period 1 the way it does. 
+
+11. Are the results obtained above due to the particular  (logarithmic) preference specification considered? To address this question, show that all of the results obtained above continue to obtain under a  more general class of  preferences, namely, the class of CRRA preferences
+$$
+\frac{C_1^{1-\gamma}-1}{1-\gamma} + E_1  \frac{C_2^{1-\gamma}-1}{1-\gamma} , 
+$$
+for $\gamma>0$, which emcompasses the log specification  as a special case when  $\gamma\rightarrow 1$. 
+
+12. Finally, show that interest rate uncertainty does have real effects when the desired asset position in the absence of uncertainty is  nonzero. To this end, return to the log preference specification and assume that the endowment in period 1 is zero and that the endowment in period 2 is $Q>0$. How does the trade balance in period 1 compare under no uncertainty ($\sigma=0$) and under uncertainty ($\sigma>0$)?
+
+
+## Answer
+
+> **Note:** This answer was drafted by Neo and has not yet been double-checked.
+
+#### 1. Budget Constraints
+
+In period 1:  
+$$
+C_1 + B = Q
+$$  
+In period 2:  
+$$
+C_2 = Q + (1 + r^*)B
+$$  
+Given $r^* = 0$, we have:  
+$$
+C_2 = Q + B
+$$
+
+#### 2. Intertemporal Budget Constraint
+
+Substitute $B = Q - C_1$ into period 2 constraint:  
+$$
+C_2 = Q + (Q - C_1) = 2Q - C_1
+$$  
+Then the intertemporal budget constraint is:  
+$$
+C_1 + C_2 = 2Q
+$$
+
+#### 3. Substituting Out $C_2$
+
+From intertemporal constraint:  
+$$
+C_2 = 2Q - C_1
+$$  
+Then utility becomes:  
+$$
+\ln C_1 + \ln(2Q - C_1)
+$$
+
+#### 4. Optimal Consumption and External Variables
+
+Maximize:  
+$$
+\ln C_1 + \ln(2Q - C_1)
+$$  
+FOC:  
+$$
+\frac{1}{C_1} - \frac{1}{2Q - C_1} = 0 \Rightarrow C_1 = C_2 = Q
+$$  
+From period 1 constraint:  
+$$
+B = Q - C_1 = 0
+$$  
+Thus:
+- Trade Balance: $TB = Q - C_1 = 0$
+- Current Account: $CA = TB + r^* B = 0$
+
+#### 5. Intuition
+
+With logarithmic utility, the agent smooths consumption across periods. Since endowments are constant and interest rate is zero, optimal consumption equals endowment each period: $C_1 = C_2 = Q$.
+
+#### 6. State-Contingent Budget Constraints
+
+Period 1:  
+$$
+C_1 + B = Q
+$$  
+Period 2 (two states):  
+- If $r^* = \sigma$: $C_2^1 = Q + (1 + \sigma)B$
+- If $r^* = -\sigma$: $C_2^2 = Q + (1 - \sigma)B$
+
+#### 7. Intertemporal Budget Constraint under Uncertainty
+
+Expected discounted consumption:  
+$$
+C_1 + \frac{1}{2(1 + \sigma)}C_2^1 + \frac{1}{2(1 - \sigma)}C_2^2 = Q + \frac{1}{2}C_2^1 + \frac{1}{2}C_2^2
+$$  
+Or rearranged using bond and budget constraints:  
+$$
+C_1 + \frac{1}{2} \cdot \frac{Q + (1 + \sigma)B}{1 + \sigma} + \frac{1}{2} \cdot \frac{Q + (1 - \sigma)B}{1 - \sigma} = Q
+$$
+
+#### 8. Optimality Conditions under Uncertainty
+
+Maximize:  
+$$
+\ln C_1 + \frac{1}{2} \ln C_2^1 + \frac{1}{2} \ln C_2^2
+$$  
+subject to budget constraints. First-order condition:  
+$$
+\frac{1}{C_1} = \frac{1}{2} \cdot \frac{1 + \sigma}{C_2^1} + \frac{1}{2} \cdot \frac{1 - \sigma}{C_2^2}
+$$
+
+#### 9. Comparison of $C_1$ under $\sigma>0$ vs $\sigma=0$
+
+Uncertainty increases the marginal value of savings (due to concavity of $\ln$), thus the agent consumes **less** in period 1.  
+So:  
+$$
+C_1^{\sigma > 0} < C_1^{\sigma = 0}
+$$
+
+#### 10. Trade Balance Sign and Intuition under Uncertainty
+
+Since $C_1 < Q$, the trade balance:  
+$$
+TB = Q - C_1 > 0
+$$  
+Under $\sigma = 0$, $C_1 = Q$ ⇒ $TB = 0$  
+Thus, interest-rate uncertainty leads to a **trade surplus** in period 1.  
+**Intuition:** precautionary saving motives increase saving (i.e., net exports).
+
+#### 11. Generalization to CRRA Preferences
+
+Use utility:  
+$$
+\frac{C_1^{1 - \gamma} - 1}{1 - \gamma} + E_1 \left[ \frac{C_2^{1 - \gamma} - 1}{1 - \gamma} \right]
+$$  
+Similar results hold as long as $\gamma > 0$ (risk aversion):  
+- $C_1$ falls with uncertainty
+- $TB > 0$  
+The results stem from **concavity** of the utility function, not log form per se.
+
+#### 12. Effects of Uncertainty under Zero First-Period Endowment
+
+Now $Q_1 = 0$, $Q_2 = Q$  
+Under certainty ($\sigma = 0$):  
+- Agent borrows: $C_1 > 0$ ⇒ $TB = -C_1 < 0$
+
+Under uncertainty ($\sigma > 0$):  
+- Agent borrows less due to precaution ⇒ $C_1^\sigma < C_1^0$
+- Thus, $TB^\sigma > TB^0$ (less negative)
+
+**Conclusion:** Interest-rate uncertainty reduces borrowing and mitigates trade deficits when initial endowment is zero.
+

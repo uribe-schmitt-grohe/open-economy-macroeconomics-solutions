@@ -1,0 +1,37 @@
+---
+title: "Exercise 6.5"
+subtitle: "Inducing Stationarity and Interest-Rate Shocks"
+---
+<a class="return-button" href="index.qmd">⬅ Return</a>
+
+## Problem
+
+Chapter 4 shows that the business cycle implied by the SOE-RBC model is not affected by the method used to induce stationarity. This result, however, was derived in the context of a model driven by technology shocks. The present exercise aims to establish whether this finding  is robust to assuming that business cycles are driven by world-interest-rate shocks. 
+
+1. Consider the  external debt-elastic interest-rate (EDEIR) model of Section 4.1.1 of Chapter 4. Shut down the productivity shock by setting $\widetilde{\eta}=0$. Replace equation (4.14) with 
+
+    $$
+    r_t = r^*_t + p(\widetilde{d}_t),
+    $$
+
+    and 
+
+    $$
+    r^*_t  = r^* + \xi (r^*_{t-1} - r^*) + \mu_t,
+    $$
+
+    where $\mu_t \sim N(0,\sigma_{\mu}^2)$. Set $\xi=0.8$ and $\sigma_{\mu}=0.012$. Calibrate  all other parameters of the model at the values given in Table 4.1. Using this version of the EDEIR model, compute the statistics considered in Table 4.4 and make a table.  Make a figure showing impulse responses of output, consumption, hours, investment, the trade-balance-to-output ratio, and the current-account-to-output ratio implied by the EDEIR model driven by interest-rate shocks. Provide intuition for these results. 
+
+2. Now consider the internal discount factor (IDF) model of Section 4.10.4. Again, set $\widetilde{\eta}=0$. Replace the assumption that $r_t = r^*$ with 
+
+    $$
+    r_t  = r^* + \xi (r_{t-1} - r^*) + \mu_t. 
+    $$
+
+    Calibrate $\xi$,  $\sigma_{\mu}$, and all common parameters as in the previous question. Calibrate $\psi_3$ as in Section 4.10.4. Use the resulting calibrated model to compute unconditional second moments and impulse responses. Provide intuition for your results. To facilitate comparison, place the information generated here in the same table and figure produced in the previous question. 
+
+3. Compare the predictions of the  EDEIR and IDF models driven by interest rate shocks.  Does the stationarity-inducing mechanism make any difference for the business-cycles implied by the SOE model driven by interest-rate shocks? 
+
+## Answer
+
+_To be added._

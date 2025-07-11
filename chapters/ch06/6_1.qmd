@@ -1,0 +1,172 @@
+---
+title: "Exercise 6.1"
+subtitle: "Countercyclical Interest Rate Shocks"
+---
+<a class="return-button" href="index.qmd">⬅ Return</a>
+
+## Problem
+
+Consider a two-period small open endowment economy. Household preferences are given by: 
+
+$$
+\log c_1 + \log c_2,
+$$
+
+where $c_1$ and $c_2$ denote consumption in periods 1 and 2, respectively.  Let $y_1$ and $y_2$ denote the endowments in periods 1 and 2, respectively. Households enter period 1 with zero net foreign assets, $d_0=0$. Assume free international capital mobility. The world interest rate is $r^*$ and households are subject to a  no-Ponzi-game constraint of the form $d_2\le0$, where $d_t$ for $t=1,2$ denotes one-period debt assumed in period $t$ and due in $t+1$.
+
+1. Write down the household's budget constraints in periods 1 and 2.
+
+2. Derive the household's intertemporal budget constraint.
+
+3. Write down the household's utility maximization problem.
+
+4. Characterize the equilibrium allocation of consumption and the trade balance in periods 1 and 2.
+
+5. Now assume that in period 1 the economy is hit by a negative (and purely temporary) endowment shock. Find the change consumption and the trade balance in period 1.   Is the response of  the trade balance in period 1 pro- or countercyclical. Explain your findings.
+
+6. As documented earlier in this chapter, in  emerging economies the country interest rate tends to be countercyclical. To reflect this regularity assume now that when $y_1$ falls, $r^*$ increases. 
+Let $\eta\equiv -\frac{d\ln(1+r^*)}{d\ln y_1}$ denote the elasticity of the gross interest rate with respect to the period-1 endowment. Find conditions, in terms of $\eta$, $y_1$, $y_2$, and $r^*$,  that guarantee that consumption moves procyclically and  the trade balance moves countercyclically in period 1 in response to a period-1 endowment shock. Provide an intuitive explanations for your findings. 
+
+
+
+## Answer
+
+> **Note:** This answer was drafted by Neo and has not yet been double-checked.
+
+#### 1. Budget Constraints
+
+In period 1, the household's budget constraint is:
+
+$$
+c_1 + d_1 = y_1
+$$
+
+In period 2, the budget constraint is:
+
+$$
+c_2 = y_2 - (1 + r^*)d_1
+$$
+
+Note that $d_1$ represents borrowing (if positive) or saving (if negative) in period 1, repaid in period 2 with interest.
+
+
+#### 2. Intertemporal Budget Constraint
+
+Substitute $d_1 = y_1 - c_1$ into the period 2 constraint:
+
+$$
+c_2 = y_2 - (1 + r^*)(y_1 - c_1)
+$$
+
+Rewriting:
+
+$$
+c_2 = y_2 - (1 + r^*)y_1 + (1 + r^*)c_1
+$$
+
+Move all consumption terms to one side:
+
+$$
+c_1 + \frac{c_2}{1 + r^*} = y_1 + \frac{y_2}{1 + r^*}
+$$
+
+This is the intertemporal budget constraint.
+
+
+#### 3. Utility Maximization Problem
+
+The household chooses $\{c_1, c_2\}$ to:
+
+$$
+\max_{c_1, c_2} \log c_1 + \log c_2
+$$
+
+subject to:
+
+$$
+c_1 + \frac{c_2}{1 + r^*} = y_1 + \frac{y_2}{1 + r^*}
+$$
+
+
+#### 4. Equilibrium Allocation
+
+Form the Lagrangian:
+
+$$
+\mathcal{L} = \log c_1 + \log c_2 + \lambda \left( y_1 + \frac{y_2}{1 + r^*} - c_1 - \frac{c_2}{1 + r^*} \right)
+$$
+
+First-order conditions:
+
+- $\frac{1}{c_1} = \lambda$
+- $\frac{1}{c_2} = \lambda \cdot \frac{1}{1 + r^*}$
+
+Divide the two conditions:
+
+$$
+\frac{1 / c_1}{1 / c_2} = (1 + r^*) \Rightarrow \frac{c_2}{c_1} = 1 + r^*
+$$
+
+This is the Euler equation.
+
+Using the intertemporal budget constraint and the Euler equation, solve for $c_1$ and $c_2$:
+
+- $c_2 = (1 + r^*)c_1$
+- Plug into budget: $c_1 + \frac{(1 + r^*)c_1}{1 + r^*} = c_1 + c_1 = 2c_1 = y_1 + \frac{y_2}{1 + r^*}$
+
+Thus:
+
+$$
+c_1 = \frac{1}{2} \left( y_1 + \frac{y_2}{1 + r^*} \right), \quad c_2 = \frac{1 + r^*}{2} \left( y_1 + \frac{y_2}{1 + r^*} \right)
+$$
+
+**Trade balance (period 1):**
+
+$$
+TB_1 = y_1 - c_1 = \frac{1}{2} \left( y_1 - \frac{y_2}{1 + r^*} \right)
+$$
+
+#### 5. Response to Temporary Negative Shock
+
+A temporary negative shock means $y_1$ decreases, but $y_2$ is unchanged.
+
+Since consumption is smoothed:
+
+- $c_1$ decreases slightly, but not one-for-one with $y_1$
+- So $c_1 > y_1$ ⇒ the country borrows: $TB_1 = y_1 - c_1 < 0$
+
+**Trade balance deteriorates** in period 1 ⇒ **countercyclical**
+
+#### 6. Countercyclical Interest Rate Shock
+
+Now, assume $r^*$ increases when $y_1$ falls. Let:
+
+$$
+\eta \equiv -\frac{d\ln(1 + r^*)}{d\ln y_1} > 0
+$$
+
+From the Euler equation and budget constraint:
+
+- Higher $r^*$ implies higher intertemporal price ⇒ future consumption is more expensive
+- This induces substitution toward $c_1$
+
+But if $y_1$ falls and $r^*$ rises, $c_1$ may fall less or even rise
+
+**Condition for procyclical consumption:**
+
+Consumption $c_1$ increases in $y_1$ if:
+
+$$
+\frac{\partial c_1}{\partial y_1} > 0
+$$
+
+A sufficient condition is:
+
+$$
+\eta > \frac{(1 + r^*) y_1}{y_2}
+$$
+
+**Intuition:**
+
+- If interest rate increases strongly enough when $y_1$ falls (i.e., large $\eta$), the substitution effect outweighs income effect
+- Then consumption moves **procyclically** and trade balance **countercyclically**

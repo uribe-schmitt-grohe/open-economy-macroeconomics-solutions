@@ -1,0 +1,10 @@
+---
+title: "Chapter 6 – Interest-Rate Shocks"
+comments: False
+---
+
+- [Exercise 6.1 (Countercyclical Interest Rate Shocks)](6_1.qmd)
+- [Exercise 6.2 (Interest-Rate Shocks, Investment, And the Trade Balance)](6_2.qmd)
+- [Exercise 6.3 (An Economy With Periodic Interest-Rate Shocks)](6_3.qmd)
+- [Exercise 6.4 (Interest-Rate Uncertainty)](6_4.qmd)
+- [Exercise 6.5 (Inducing Stationarity and Interest-Rate Shocks)](6_5.qmd)
