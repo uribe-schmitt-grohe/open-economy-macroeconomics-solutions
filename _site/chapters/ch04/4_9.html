@@ -319,7 +319,7 @@ y_t = c_t + i_t + tb_t
 <section id="section-5" class="level4">
 <h4 class="anchored" data-anchor-id="section-5">6.</h4>
 <ul>
-<li><p>In Chapter 3’s incomplete markets model, productivity shocks create <strong>income effects</strong>, leading to consumption booms and trade deficits.</p></li>
+<li><p>In the current model, productivity shocks create <strong>income effects</strong>, leading to consumption booms and trade deficits.</p></li>
 <li><p>In this complete markets model, there’s no income effect — only <strong>substitution</strong> between consumption and leisure.</p></li>
 <li><p>Intertemporal prices <span class="math inline">\(q_{t,t+1}\)</span> are fixed and not influenced by <span class="math inline">\(E_t A_{t+1}\)</span>, unlike in incomplete markets.</p></li>
 <li><p>Trade balance dynamics now depend more heavily on <strong>expectations of future productivity</strong> and capital accumulation.</p></li>
@@ -327,17 +327,21 @@ y_t = c_t + i_t + tb_t
 </section>
 <section id="section-6" class="level4">
 <h4 class="anchored" data-anchor-id="section-6">7.</h4>
-<p>We have:</p>
-<p><span class="math display">\[
-\widehat{y}_t - \frac{c}{y} \widehat{c}_t - \frac{i}{y} \widehat{i}_t =
-\widehat{A}_t - \left( \frac{\omega}{\omega - 1} \right) \left( \frac{1}{1 - \alpha} \right) \left( \frac{\alpha}{\beta^{-1} - 1 + \delta} \right) E_t \widehat{A}_{t+1}
+<p>We begin with the expression for the trade balance response: <span class="math display">\[
+\frac{tb_t - tb}{y} = \widehat{A}_t - \frac{\delta k}{y} \widehat{i}_t
 \]</span></p>
-<p>So trade balance worsens if:</p>
-<p><span class="math display">\[
+<p>Eliminate <span class="math inline">\(\widehat{i}_t\)</span> using the law of motion for capital: <span class="math display">\[
+\widehat{i}_t = \frac{1}{\delta} \widehat{k}_{t+1}
+\]</span></p>
+<p>Substitute the expression for <span class="math inline">\(\widehat{k}_{t+1}\)</span> derived earlier, and replace <span class="math inline">\(k/y\)</span> using the steady-state Euler equation: <span class="math display">\[
+\frac{k}{y} = \frac{\alpha}{\beta^{-1} - 1 + \delta}
+\]</span></p>
+<p>Combining terms yields: <span class="math display">\[
+\frac{tb_t - tb}{y} = \widehat{A}_t - \left( \frac{\omega}{\omega - 1} \cdot \frac{1}{1 - \alpha} \cdot \frac{\alpha}{\beta^{-1} - 1 + \delta} \right) E_t \widehat{A}_{t+1}
+\]</span></p>
+<p>Hence, the trade balance deteriorates if: <span class="math display">\[
 \widehat{A}_t &lt; M E_t \widehat{A}_{t+1}
-\]</span></p>
-<p>where:</p>
-<p><span class="math display">\[
+\]</span> where <span class="math display">\[
 M = \left( \frac{\omega}{\omega - 1} \right) \left( \frac{1}{1 - \alpha} \right) \left( \frac{\alpha}{\beta^{-1} - 1 + \delta} \right)
 \]</span></p>
 <p>Plug in:</p>
@@ -358,20 +362,11 @@ E_t \widehat{A}_{t+1} &gt; \frac{1}{15} \widehat{A}_t
 </section>
 <section id="section-7" class="level4">
 <h4 class="anchored" data-anchor-id="section-7">8.</h4>
-<ul>
-<li><p>These results <strong>support</strong> Principle I: the <strong>cyclicality of the trade balance</strong> depends on the <strong>persistence</strong> of shocks and market structure.</p></li>
-<li><p>Incomplete markets: income effects dominate → trade deficit even with temporary shock.</p></li>
-<li><p>Complete markets: substitution effects dominate → only <strong>expected future productivity</strong> drives investment and trade deficit.</p></li>
-</ul>
+<p>Principle I states that the more persistent a productivity shock is, the more likely it is that the trade balance deteriorates on impact. Our findings support this principle: the greater the ratio <span class="math inline">\(E_t \widehat{A}_{t+1} / \widehat{A}_t\)</span>, the more likely it is that the condition <span class="math inline">\(\widehat{A}_t &lt; M E_t \widehat{A}_{t+1}\)</span> holds, leading to a trade deficit. Moreover, the size of the trade deficit increases with the persistence of the shock.</p>
 </section>
 <section id="section-8" class="level4">
 <h4 class="anchored" data-anchor-id="section-8">9.</h4>
-<p>With <strong>separable utility</strong>, marginal utility of consumption is independent of labor:</p>
-<ul>
-<li><p>No induced rise in consumption from increased labor effort.</p></li>
-<li><p>Weakens link between productivity and consumption.</p></li>
-<li><p>Therefore, trade balance more likely to improve unless expectations about <span class="math inline">\(A_{t+1}\)</span> drive investment.</p></li>
-</ul>
+<p>If the period utility function is separable in consumption and hours, the answers to both Questions 5 and 7 would change. In this case, the marginal utility of consumption would depend only on consumption, so when the price of contingent claims remains constant (i.e., <span class="math inline">\(q_{0,t} = \beta^t\)</span>), consumption does not respond to a temporary productivity shock. There would be neither a substitution effect nor an income effect on consumption, so consumption would remain constant. Labor supply, and hence output, would still increase following the shock, but the resulting increase in output will have to be absorbed entirely by either higher investment or a trade surplus (given the lack of an increase in consumption). Whether the trade balance deteriorates on impact will still depend on the strength of the investment response. However, since consumption no longer increases, a larger increase in investment is required to generate a trade deficit. This implies that a more persistent productivity process (i.e., a higher <span class="math inline">\(E_t \widehat{A}_{t+1} / \widehat{A}_t\)</span>) is needed for the economy to run a trade deficit.</p>
 
 
 

@@ -64,3 +64,5 @@ $$
 All other aspects of the model are as before. Recalibrate the model using an augmented version of the strategy described above that includes an additional parameter, $\nu$, and an additional target, the cross-country correlation of output, which in the sample used here is 0.64. Report the new set of calibrated parameters. Compute the variance of Canadian output. Now set $\nu = 0$, keeping all other parameter values unchanged, and recalculate the variance of Canadian output. Explain.
 
 ## Answer
+
+_No solution has been posted yet. If you have a solution, we invite you to share it in the comment box at the bottom of this page._
