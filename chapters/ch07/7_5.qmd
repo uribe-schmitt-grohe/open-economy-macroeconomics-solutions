@@ -16,4 +16,4 @@ for $j=m,x$. Calibrate the model using the parameter values given in Table 7.5 a
 
 ## Answer
 
-_To be added._
+_No solution has been posted yet. If you have a solution, we invite you to share it in the comment box at the bottom of this page._

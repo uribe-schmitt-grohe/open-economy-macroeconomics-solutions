@@ -1026,7 +1026,7 @@
     "href": "chapters/ch06/6_1.html#answer",
     "title": "Exercise 6.1",
     "section": "Answer",
-    "text": "Answer\n\nNote: This answer was drafted by Neo and has not yet been double-checked.\n\n\n1. Budget Constraints\nIn period 1, the household’s budget constraint is:\n\\[\nc_1 + d_1 = y_1\n\\]\nIn period 2, the budget constraint is:\n\\[\nc_2 = y_2 - (1 + r^*)d_1\n\\]\nNote that \\(d_1\\) represents borrowing (if positive) or saving (if negative) in period 1, repaid in period 2 with interest.\n\n\n2. Intertemporal Budget Constraint\nSubstitute \\(d_1 = y_1 - c_1\\) into the period 2 constraint:\n\\[\nc_2 = y_2 - (1 + r^*)(y_1 - c_1)\n\\]\nRewriting:\n\\[\nc_2 = y_2 - (1 + r^*)y_1 + (1 + r^*)c_1\n\\]\nMove all consumption terms to one side:\n\\[\nc_1 + \\frac{c_2}{1 + r^*} = y_1 + \\frac{y_2}{1 + r^*}\n\\]\nThis is the intertemporal budget constraint.\n\n\n3. Utility Maximization Problem\nThe household chooses \\(\\{c_1, c_2\\}\\) to:\n\\[\n\\max_{c_1, c_2} \\log c_1 + \\log c_2\n\\]\nsubject to:\n\\[\nc_1 + \\frac{c_2}{1 + r^*} = y_1 + \\frac{y_2}{1 + r^*}\n\\]\n\n\n4. Equilibrium Allocation\nForm the Lagrangian:\n\\[\n\\mathcal{L} = \\log c_1 + \\log c_2 + \\lambda \\left( y_1 + \\frac{y_2}{1 + r^*} - c_1 - \\frac{c_2}{1 + r^*} \\right)\n\\]\nFirst-order conditions:\n\n\\(\\frac{1}{c_1} = \\lambda\\)\n\\(\\frac{1}{c_2} = \\lambda \\cdot \\frac{1}{1 + r^*}\\)\n\nDivide the two conditions:\n\\[\n\\frac{1 / c_1}{1 / c_2} = (1 + r^*) \\Rightarrow \\frac{c_2}{c_1} = 1 + r^*\n\\]\nThis is the Euler equation.\nUsing the intertemporal budget constraint and the Euler equation, solve for \\(c_1\\) and \\(c_2\\):\n\n\\(c_2 = (1 + r^*)c_1\\)\nPlug into budget: \\(c_1 + \\frac{(1 + r^*)c_1}{1 + r^*} = c_1 + c_1 = 2c_1 = y_1 + \\frac{y_2}{1 + r^*}\\)\n\nThus:\n\\[\nc_1 = \\frac{1}{2} \\left( y_1 + \\frac{y_2}{1 + r^*} \\right), \\quad c_2 = \\frac{1 + r^*}{2} \\left( y_1 + \\frac{y_2}{1 + r^*} \\right)\n\\]\nTrade balance (period 1):\n\\[\nTB_1 = y_1 - c_1 = \\frac{1}{2} \\left( y_1 - \\frac{y_2}{1 + r^*} \\right)\n\\]\n\n\n5. Response to Temporary Negative Shock\nA temporary negative shock means \\(y_1\\) decreases, but \\(y_2\\) is unchanged.\nSince consumption is smoothed:\n\n\\(c_1\\) decreases slightly, but not one-for-one with \\(y_1\\)\nSo \\(c_1 &gt; y_1\\) ⇒ the country borrows: \\(TB_1 = y_1 - c_1 &lt; 0\\)\n\nTrade balance deteriorates in period 1 ⇒ countercyclical\n\n\n6. Countercyclical Interest Rate Shock\nNow, assume \\(r^*\\) increases when \\(y_1\\) falls. Let:\n\\[\n\\eta \\equiv -\\frac{d\\ln(1 + r^*)}{d\\ln y_1} &gt; 0\n\\]\nFrom the Euler equation and budget constraint:\n\nHigher \\(r^*\\) implies higher intertemporal price ⇒ future consumption is more expensive\nThis induces substitution toward \\(c_1\\)\n\nBut if \\(y_1\\) falls and \\(r^*\\) rises, \\(c_1\\) may fall less or even rise\nCondition for procyclical consumption:\nConsumption \\(c_1\\) increases in \\(y_1\\) if:\n\\[\n\\frac{\\partial c_1}{\\partial y_1} &gt; 0\n\\]\nA sufficient condition is:\n\\[\n\\eta &gt; \\frac{(1 + r^*) y_1}{y_2}\n\\]\nIntuition:\n\nIf interest rate increases strongly enough when \\(y_1\\) falls (i.e., large \\(\\eta\\)), the substitution effect outweighs income effect\nThen consumption moves procyclically and trade balance countercyclically"
+    "text": "Answer\nNo solution has been posted yet. If you have a solution, we invite you to share it in the comment box at the bottom of this page."
   },
   {
     "objectID": "chapters/ch06/index.html",
@@ -1145,7 +1145,7 @@
     "href": "chapters/ch07/7_1.html#answer",
     "title": "Exercise 7.1",
     "section": "Answer",
-    "text": "Answer\nTo be added."
+    "text": "Answer\nNo solution has been posted yet. If you have a solution, we invite you to share it in the comment box at the bottom of this page."
   },
   {
     "objectID": "chapters/ch07/7_3.html",
@@ -1187,7 +1187,7 @@
     "href": "chapters/ch07/7_2.html#answer",
     "title": "Exercise 7.2",
     "section": "Answer",
-    "text": "Answer\nTo be added."
+    "text": "Answer\nNo solution has been posted yet. If you have a solution, we invite you to share it in the comment box at the bottom of this page."
   },
   {
     "objectID": "chapters/ch07/7_4.html",
@@ -1208,7 +1208,7 @@
     "href": "chapters/ch07/7_4.html#answer",
     "title": "Exercise 7.4",
     "section": "Answer",
-    "text": "Answer\nTo be added."
+    "text": "Answer\nNo solution has been posted yet. If you have a solution, we invite you to share it in the comment box at the bottom of this page."
   },
   {
     "objectID": "chapters/ch07/7_5.html",
@@ -1229,7 +1229,7 @@
     "href": "chapters/ch07/7_5.html#answer",
     "title": "Exercise 7.5",
     "section": "Answer",
-    "text": "Answer\nTo be added."
+    "text": "Answer\nNo solution has been posted yet. If you have a solution, we invite you to share it in the comment box at the bottom of this page."
   },
   {
     "objectID": "chapters/ch07/7_6.html",
@@ -1250,6 +1250,6 @@
     "href": "chapters/ch07/7_6.html#answer",
     "title": "Exercise 7.6",
     "section": "Answer",
-    "text": "Answer\nTo be added."
+    "text": "Answer\nNo solution has been posted yet. If you have a solution, we invite you to share it in the comment box at the bottom of this page."
   }
 ]
