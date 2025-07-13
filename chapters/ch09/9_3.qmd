@@ -1,0 +1,141 @@
+---
+title: "Exercise 9.3"
+subtitle: "Is More Wage Rigidity desirable?"
+---
+<a class="return-button" href="index.qmd">⬅ Return</a>
+
+## Problem
+
+Modify the example of Section 9.2.3 to allow for wage rigidity in both directions: downward and upward. Characterize the economy's response to a temporary decline in the interest rate. Show that welfare is higher under full wage rigidity than under downward wage rigidity. Provide intuition. 
+
+## Answer
+
+Start by making a graphical analysis. Keep in mind that $c_t$ and $d_{t+1}$ is independent of monetary policy and the wage rigidity. 
+Then do the algebra. 
+
+First recall that with DNWR the solution as given in Section 9.2.3 was: 
+
+$$
+h_0 = 1 ;\quad \mbox{ and } c^N_0 = 1
+$$
+
+$$
+w_t = \alpha c^T_0>\alpha y^T=w_{-1}
+$$
+
+for all $t\ge 0$. 
+
+$$
+p_0=c^T_0>y^T=p_{-1}
+$$
+
+$$
+h_t=
+\frac{1+\underline{r}}{1+r}<1. 
+$$
+
+for all $t\ge 1$
+
+$$
+c^N_t = \left(\frac{1+\underline{r}}{1+r}\right)^{\alpha }<1
+$$
+
+and finally 
+
+$$
+p_t = \frac{c^T_t}{c^N_t} =\frac{y^T \left[\frac{1}{1+r} +\frac{r}{1+r} \frac{1+\underline{r}}{1+r}\right]}{\left(\frac{1+\underline{r}}{1+r}\right)^{\alpha }} 
+$$
+
+Now characterize the economy's response to the temporary decline in the interest rate under the assumption of full wage rigidity, that is, under the assumption that $W_t = W_{t-1}$ for all $t\ge0$.  Continue to assume that for a given wage, the equilibrium level of hours is the minimum between the supply of hours and the demand for hours. 
+
+Traded allocations are the same as they are independent of the wage rigidity because intra temp elast is the same as inter temp elast.
+
+Now what will happen in the NT sector?
+
+Since wages don't move there will be excess demand for labor. Hence we have
+
+$$
+h_0 = 1 ;\quad \mbox{ and } c^N_0 = 1
+$$
+
+$$
+w_t = w_{-1}
+$$
+
+for all $t\ge 0$. In period 0, there is a real appreciation
+
+$$
+p_0=c^T_0>y^T=p_{-1}
+$$
+
+From period 1 onward traded absorption is smaller than in period 0 and, more importantly, smaller than in the steady state prior to period 0. Why? Because the economy enters period 1 with debt, $d_1>0$, and hence  must use some of its traded endowment to service the external debt.  Therefore the full employment wage is lower than the period-0 wage
+
+$$
+w^{full}_1 = c^T_1 \alpha <  \alpha y^T = w_{1}
+$$
+
+Since wages are inflexible
+
+$$
+w_t = w_{-1}  
+$$
+
+for all $t$.
+At that wage hours solve
+
+$$
+h^{fixed}_t = c^T_t \alpha / (w_t) = \alpha c^T_t / \alpha y^T = \frac{c^T_t}{y^T_t} = 
+\left[\frac1{1+r} + \frac{r}{1+r} \frac{1+\underline{r}}{1+r}\right]<1
+$$
+
+It follows that the fixed wage economy also suffers involuntary unemployment from period 1 onwards. 
+
+Finally show that welfare is higher under full wage rigidity than under only  downward wage rigidity. 
+
+We have just shown that the eqm for $c^T_t$ and for $h_0$ is the same in the dnwr and the fixed wage economy. 
+
+Welfare in the DNWR economy: 
+
+$$
+W^{dnwr} = \ln c^T_0 + \frac{\beta}{1-\beta} \ln c^T_1 + \alpha \ln h_0 + \frac{\alpha \beta}{1-\beta} \ln h_1^{dnwr}
+$$
+
+Welfare in the fixed wage economy: 
+
+$$
+W^{fixed} = \ln c^T_0 + \frac{\beta}{1-\beta} \ln c^T_1 + \alpha \ln h_0 + \frac{\alpha \beta}{1-\beta} \ln h_1^{fixed}
+$$
+
+Thus we have that: 
+
+$$
+W^{fixed}-W^{dnwr}   \frac{\alpha \beta}{1-\beta} \left[ \ln h_1^{fixed} - \ln h_1^{dnwr} \right] 
+$$
+
+Welfare will be higher is employment from period 1 onwards is higher in the fixed wage economy. To see that this is indeed the case: 
+Recall 
+
+$$
+h^{fixed}_t = c^T_t \alpha / (w_t) = \alpha c^T_t / \alpha y^T = \frac{c^T_t}{y^T_t} = 
+\left[\frac1{1+r} + \frac{r}{1+r} \frac{1+\underline{r}}{1+r}\right]<1
+$$
+
+Compare that to the case of only downward wage rigidity
+
+$$
+h^{dnwr}_t = \frac{1+\underline{r}}{1+r}<1. 
+$$
+
+for all $t\ge 1$
+
+Notice that $h^{fixed}_t$ is a weighted average between 1 and $h^{dnwr}<1$ with weights that add up to one, namely,  $1/(1+r) $ on 1 and weight $r/(1+r)$ on $h^{dnwr}$. Therefore we have that 
+
+$$
+\fbox{$1> h^{fixed} > h^{dnwr}>0$}
+$$
+
+This says that in the fixed wage economy there is also unemployment but less unemployment than in the DNWR economy. 
+
+It then follows immediately, that  welfare is higher in the fixed wage economy than in the dnwr economy, under a temporary interest rate decline. 
+
+Why is this so? Because under fixed wages, wages do not rise during the boom phase, period 0, and hence when aggregate demand slows beginning in period 1, the real wage is not that high, and with a lower past wage employment, given lower demand, can be higher. To put it into more general language due to the externality, if wage rigidity is stronger, then wages never rise to a level that curtails future employment by as much as it would had wages risen. 

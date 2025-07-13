@@ -1,0 +1,22 @@
+---
+title: "Exercise 9.1"
+subtitle: "The Demand Schedule Of Nontradables"
+---
+<a class="return-button" href="index.qmd">⬅ Return</a>
+
+## Problem
+
+In section 9.1, we assume that the aggregator function, $A(c^T,c^N)$,  given in (9.2), is increasing, concave, and linearly homogeneous. 
+
+1. Show that these assumptions are sufficient to ensure that the demand schedule of nontradables, given in equation (9.5) and depicted in figure 9.2, is downward sloping in the space $(c^N,p)$, holding constant $c^T$.
+
+2. Show that the aforementioned   assumptions about the aggregator  $A(c^T,c^N)$ are sufficient to guarantee that increases (decreases) in $c^T$ shift the demand schedule up and to the right (down and to the left). 
+
+3. Assume that the aggregator function takes the  Cobb-Douglas form   $A(c^T,c^N) =\sqrt{c^T c^N}$. Find the demand function of nontradables. 
+
+4. Now assume the CES form $A(c^T,c^N) = \left[a (c^T)^{1-\frac{1}{\xi}} + (1-a) (c^N)^{1-\frac{1}{\xi}}\right]^{\frac1{1-\frac1{\xi}}}$. Derive the demand function of nontradables. Interpret the parameter $\xi$. 
+
+
+## Answer
+
+_No solution has been posted yet. If you have a solution, we invite you to share it in the comment box at the bottom of this page._

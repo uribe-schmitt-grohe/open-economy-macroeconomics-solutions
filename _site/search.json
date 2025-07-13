@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Open Economy Macroeconomics Solutions",
     "section": "",
-    "text": "This repository contains sketches of solutions to many (but not all) of the exercises in Open Economy Macroeconomics by Martín Uribe and Stephanie Schmitt-Grohé (Princeton University Press link). Please help us to improve the repository. If you have solutions or corrections or alternative approaches to solutions, please post them in the corresponding discussion thread in the Discussions tab.\n\n\n\nOpen Economy Macroeconomics cover\n\n\n\n\n\n\nChapter 2 – An Open Endowment Economy\nChapter 3 – An Open Economy with Capital\nChapter 4 – The Open Economy Real-Business-Cycle Model\nChapter 5 – Business Cycles in Emerging Countries: Productivity Shocks versus Financial Fricitions\nChapter 6 – Interest-Rate Shocks\nChapter 7 – Importable Goods, Exportable Goods, and the Terms of Trade\nChapter 8 – Notradable Goods and the Real Exchange Rate\n\n\n\n\n\nEach solution page includes a comment section powered by Giscus. You are welcome to leave feedback or ask questions directly below each exercise. You can type plain text or simple math using LaTeX syntax (e.g., $y = c + i + g$). If you’d like to share screenshots or files, please upload them to a service like Google Drive or Dropbox and include a link in your comment.\nTo view all ongoing conversations, corrections, or contributions across chapters, visit the Discussions tab in the top navigation bar: Discussions. You can browse, reply to, or start new threads there."
+    "text": "This repository contains sketches of solutions to many (but not all) of the exercises in Open Economy Macroeconomics by Martín Uribe and Stephanie Schmitt-Grohé (Princeton University Press link). Please help us to improve the repository. If you have solutions or corrections or alternative approaches to solutions, please post them in the corresponding discussion thread in the Discussions tab.\n\n\n\nOpen Economy Macroeconomics cover\n\n\n\n\n\n\nChapter 2 – An Open Endowment Economy\nChapter 3 – An Open Economy with Capital\nChapter 4 – The Open Economy Real-Business-Cycle Model\nChapter 5 – Business Cycles in Emerging Countries: Productivity Shocks versus Financial Fricitions\nChapter 6 – Interest-Rate Shocks\nChapter 7 – Importable Goods, Exportable Goods, and the Terms of Trade\nChapter 8 – Notradable Goods and the Real Exchange Rate\nChapter 9 – Nominal Rigidity, Exchange Rates, and Unemployment\n\n\n\n\n\nEach solution page includes a comment section powered by Giscus. You are welcome to leave feedback or ask questions directly below each exercise. You can type plain text or simple math using LaTeX syntax (e.g., $y = c + i + g$). If you’d like to share screenshots or files, please upload them to a service like Google Drive or Dropbox and include a link in your comment.\nTo view all ongoing conversations, corrections, or contributions across chapters, visit the Discussions tab in the top navigation bar: Discussions. You can browse, reply to, or start new threads there."
   },
   {
     "objectID": "index.html#chapters",
@@ -872,7 +872,7 @@
     "href": "index.html#solutions-by-chapters",
     "title": "Open Economy Macroeconomics Solutions",
     "section": "",
-    "text": "Chapter 2 – An Open Endowment Economy\nChapter 3 – An Open Economy with Capital\nChapter 4 – The Open Economy Real-Business-Cycle Model\nChapter 5 – Business Cycles in Emerging Countries: Productivity Shocks versus Financial Fricitions\nChapter 6 – Interest-Rate Shocks\nChapter 7 – Importable Goods, Exportable Goods, and the Terms of Trade\nChapter 8 – Notradable Goods and the Real Exchange Rate"
+    "text": "Chapter 2 – An Open Endowment Economy\nChapter 3 – An Open Economy with Capital\nChapter 4 – The Open Economy Real-Business-Cycle Model\nChapter 5 – Business Cycles in Emerging Countries: Productivity Shocks versus Financial Fricitions\nChapter 6 – Interest-Rate Shocks\nChapter 7 – Importable Goods, Exportable Goods, and the Terms of Trade\nChapter 8 – Notradable Goods and the Real Exchange Rate\nChapter 9 – Nominal Rigidity, Exchange Rates, and Unemployment"
   },
   {
     "objectID": "chapters/ch05/5_1.html",
@@ -1384,5 +1384,348 @@
     "title": "Chapter 8 – Notradable Goods and the Real Exchange Rate",
     "section": "",
     "text": "Exercise 8.1 (Properties of the Armington Aggregator)\nExercise 8.2 (Secular Trend in the Real Exchange Rate)\nExercise 8.3 (A Two-Period TNT Economy with Production)\nExercise 8.4 (The Real Exchange Rate and The Price of Nontradables in the MXN Model)\nExercise 8.5 (An Economy With a Leontief Aggregator)\nExercise 8.6 (Dutch Disease and De-Industrialization)"
+  },
+  {
+    "objectID": "chapters/ch09/9_1.html",
+    "href": "chapters/ch09/9_1.html",
+    "title": "Exercise 9.1",
+    "section": "",
+    "text": "⬅ Return"
+  },
+  {
+    "objectID": "chapters/ch09/9_1.html#problem",
+    "href": "chapters/ch09/9_1.html#problem",
+    "title": "Exercise 9.1",
+    "section": "Problem",
+    "text": "Problem\nIn section 9.1, we assume that the aggregator function, \\(A(c^T,c^N)\\), given in (9.2), is increasing, concave, and linearly homogeneous.\n\nShow that these assumptions are sufficient to ensure that the demand schedule of nontradables, given in equation (9.5) and depicted in figure 9.2, is downward sloping in the space \\((c^N,p)\\), holding constant \\(c^T\\).\nShow that the aforementioned assumptions about the aggregator \\(A(c^T,c^N)\\) are sufficient to guarantee that increases (decreases) in \\(c^T\\) shift the demand schedule up and to the right (down and to the left).\nAssume that the aggregator function takes the Cobb-Douglas form \\(A(c^T,c^N) =\\sqrt{c^T c^N}\\). Find the demand function of nontradables.\nNow assume the CES form \\(A(c^T,c^N) = \\left[a (c^T)^{1-\\frac{1}{\\xi}} + (1-a) (c^N)^{1-\\frac{1}{\\xi}}\\right]^{\\frac1{1-\\frac1{\\xi}}}\\). Derive the demand function of nontradables. Interpret the parameter \\(\\xi\\)."
+  },
+  {
+    "objectID": "chapters/ch09/9_1.html#answer",
+    "href": "chapters/ch09/9_1.html#answer",
+    "title": "Exercise 9.1",
+    "section": "Answer",
+    "text": "Answer\nNo solution has been posted yet. If you have a solution, we invite you to share it in the comment box at the bottom of this page."
+  },
+  {
+    "objectID": "chapters/ch09/9_8.html",
+    "href": "chapters/ch09/9_8.html",
+    "title": "Exercise 9.8",
+    "section": "",
+    "text": "⬅ Return"
+  },
+  {
+    "objectID": "chapters/ch09/9_8.html#problem",
+    "href": "chapters/ch09/9_8.html#problem",
+    "title": "Exercise 9.8",
+    "section": "Problem",
+    "text": "Problem\nAssume that the foreign price of tradable goods, \\(P^{T*}_t\\), grows at the deterministic gross rate, \\(\\pi^*\\), that is, \\(P^{T*}_{t+1}/P^{T*}_t=\\pi^*\\). How do the equilibrium conditions (9.9)-(9.19) change with the introduction of this assumption?"
+  },
+  {
+    "objectID": "chapters/ch09/9_8.html#answer",
+    "href": "chapters/ch09/9_8.html#answer",
+    "title": "Exercise 9.8",
+    "section": "Answer",
+    "text": "Answer\nNo solution has been posted yet. If you have a solution, we invite you to share it in the comment box at the bottom of this page."
+  },
+  {
+    "objectID": "chapters/ch09/index.html",
+    "href": "chapters/ch09/index.html",
+    "title": "Chapter 9 – Nominal Rigidity, Exchange Rates, and Unemployment",
+    "section": "",
+    "text": "Exercise 9.1 (The Demand Schedule Of Nontradables)\nExercise 9.2 (Unwanted Positive Shocks)\nExercise 9.3 (Is More Wage Rigidity desirable?)\nExercise 9.4 (Properties of the Full-Employment Real Wage)\nExercise 9.5 (Pareto Optimality of the Flexible-Wage Equilibrium)\nExercise 9.6 (Optimality of Constant Nominal Interest Rates)\nExercise 9.7 (Optimality of Constant Nominal Interest Rates, Continued)\nExercise 9.8 (Foreign Inflation)\nExercise 9.9 (Trend Growth)\nExercise 9.10 (Exchange-Rate Policy and GDP in Terms of Tradables)\nExercise 9.11 (The CPI Index)\nExercise 9.12 (Optimal Exchange-rate Policy Under Price Or Wage Stickiness)\nExercise 9.13 (Productivity Shocks in the Nontraded Sector)\nExercise 9.14 (Optimal Policy With Initial Price Dispersion (Yun, 2005))\nExercise 9.15 (The Importance of Interest-Rate and Endowment Shocks)\nExercise 9.16 (Exchange-Rate Overshooting)"
+  },
+  {
+    "objectID": "chapters/ch09/9_11.html",
+    "href": "chapters/ch09/9_11.html",
+    "title": "Exercise 9.11",
+    "section": "",
+    "text": "⬅ Return"
+  },
+  {
+    "objectID": "chapters/ch09/9_11.html#problem",
+    "href": "chapters/ch09/9_11.html#problem",
+    "title": "Exercise 9.11",
+    "section": "Problem",
+    "text": "Problem\nShow that if the technology for producing the composite consumption given in (9.2) is of the CES form, then the consumption price level, \\(P_t\\), can be expressed as a CES function of the nominal prices of tradable and nontradables, \\(\\mathcal{E}_t\\) and \\(P^N_t\\), respectively."
+  },
+  {
+    "objectID": "chapters/ch09/9_11.html#answer",
+    "href": "chapters/ch09/9_11.html#answer",
+    "title": "Exercise 9.11",
+    "section": "Answer",
+    "text": "Answer\nThe Aggretator is:\n\\[\nc = \\left[\na (c^T)^{1-\\frac{1}{\\xi}}\n+ (1-a) (c^N)^{1-\\frac{1}{\\xi}}\n\\right]^{\\frac1{1-\\frac1{\\xi}}} \\tag{*}\n\\]\nDefine the CPI index as the solution to\n\\[\nP c = P^T c^T + P^Nc^N\n\\]\nwhere \\(\\{c^T, c^N\\}\\) solves\n\\[\n\\min_{c^T, c^N} P^T c^T + P^N c^N\n\\]\nsubject to (*)\nThe solution to this problem is\n\\[\nP = \\left[a^{\\xi}{P^T}^{1-\\xi}\n+ (1-a)^{\\xi}{P^N}^{1-\\xi}\n\\right]^{\\frac{1}{1-\\xi}}\n\\]"
+  },
+  {
+    "objectID": "chapters/ch09/9_14.html",
+    "href": "chapters/ch09/9_14.html",
+    "title": "Exercise 9.14",
+    "section": "",
+    "text": "⬅ Return"
+  },
+  {
+    "objectID": "chapters/ch09/9_14.html#problem",
+    "href": "chapters/ch09/9_14.html#problem",
+    "title": "Exercise 9.14",
+    "section": "Problem",
+    "text": "Problem\nConsider the staggered-price model of Section 9.16. Suppose that \\(s_{-1}&lt;1\\). Show that there is an exchange-rate policy that supports the flexible-price equilibrium. Characterize the path of nontradable inflation induced by this (optimal) exchange-rate policy. Provide intuition."
+  },
+  {
+    "objectID": "chapters/ch09/9_14.html#answer",
+    "href": "chapters/ch09/9_14.html#answer",
+    "title": "Exercise 9.14",
+    "section": "Answer",
+    "text": "Answer\nNo solution has been posted yet. If you have a solution, we invite you to share it in the comment box at the bottom of this page."
+  },
+  {
+    "objectID": "chapters/ch09/9_16.html",
+    "href": "chapters/ch09/9_16.html",
+    "title": "Exercise 9.16",
+    "section": "",
+    "text": "⬅ Return"
+  },
+  {
+    "objectID": "chapters/ch09/9_16.html#problem",
+    "href": "chapters/ch09/9_16.html#problem",
+    "title": "Exercise 9.16",
+    "section": "Problem",
+    "text": "Problem\nDornbusch’s (1976) celebrated exchange-rate overshooting result states that an unanticipated monetary expansion causes a larger depreciation of the nominal exchange rate in the short run than in the long run. The present exercise aims to ascertain whether the neo-Keynesian model of Section 9.16 captures this effect. To this end, assume that monetary policy is neither a currency peg nor the optimal exchange-rate policy (the two polar cases analyzed in Section~ 9.16) but instead takes the form of the following Taylor-type interest-rate feedback rule:\n\\[\n\\hat{i}_t = 1.5 \\hat{\\pi}_t + 0.125 \\hat{y}_t + \\eta_t,\n\\]\nwhere \\(i_t\\) denotes the gross domestic nominal interest rate, \\(\\pi_t\\) denotes the gross consumer price inflation rate, and \\(y_t\\), denotes real output. As before, a hat over a variable denotes log-deviation from the deterministic steady state. The variable \\(\\eta_t\\) denotes an exogenous monetary-policy shock and is assumed to be i.i.d. with mean zero and standard deviation \\(\\sigma_{\\eta}\\). Note that the variables \\(i_t\\), \\(\\pi_t\\), and \\(y_t\\) were not defined in the model of Section 9.16, so you have to properly define these variables and derive additional equilibrium conditions linking them to the variables of the original model. For example, for \\(i_t\\) assume that households have access to a nominally risk-free one-period bond and derive the household’s first-order condition associated with holdings of this bond. Use a log-linearized version of the model calibrated as in Section 9.16. Plot the impulse response of the devaluation rate, \\(\\epsilon_t\\), to a 1 percentage-point decline in \\(\\eta_t\\). We would say that the model captures the overshooting effect if \\(\\hat{\\epsilon}_t\\) initially jumps up and later falls below zero and converges to its steady-state value from below. Provide intuition."
+  },
+  {
+    "objectID": "chapters/ch09/9_16.html#answer",
+    "href": "chapters/ch09/9_16.html#answer",
+    "title": "Exercise 9.16",
+    "section": "Answer",
+    "text": "Answer\nThe solution to this problem produced with:\n\n\nIntuition: Covered interest rate parity hold. Domestic interest rate falls, but foreign rate is unchanged. For Covered interest rate parity to hold it must be that the domestic currency is expected to appreciate.\nThe expansionary monetary policy shock leads to a more depreciated exchange rate in the long run. (Why?) Thus the impact effect which is followed by appreciation, must be a larger depreciation than the long run effect."
+  },
+  {
+    "objectID": "chapters/ch09/9_4.html",
+    "href": "chapters/ch09/9_4.html",
+    "title": "Exercise 9.4",
+    "section": "",
+    "text": "⬅ Return"
+  },
+  {
+    "objectID": "chapters/ch09/9_4.html#problem",
+    "href": "chapters/ch09/9_4.html#problem",
+    "title": "Exercise 9.4",
+    "section": "Problem",
+    "text": "Problem\nShow that \\(\\omega'(c^T_t)\\) is positive."
+  },
+  {
+    "objectID": "chapters/ch09/9_4.html#answer",
+    "href": "chapters/ch09/9_4.html#answer",
+    "title": "Exercise 9.4",
+    "section": "Answer",
+    "text": "Answer\nNo solution has been posted yet. If you have a solution, we invite you to share it in the comment box at the bottom of this page."
+  },
+  {
+    "objectID": "chapters/ch09/9_7.html",
+    "href": "chapters/ch09/9_7.html",
+    "title": "Exercise 9.7",
+    "section": "",
+    "text": "⬅ Return"
+  },
+  {
+    "objectID": "chapters/ch09/9_7.html#problem",
+    "href": "chapters/ch09/9_7.html#problem",
+    "title": "Exercise 9.7",
+    "section": "Problem",
+    "text": "Problem\nShow that any constant interest-rate rule of the form \\(R_t=\\delta\\), where \\(\\delta\\) is a parameter, supports the full-employment equilibrium, provided \\(\\delta\\ge \\gamma/\\beta\\)."
+  },
+  {
+    "objectID": "chapters/ch09/9_7.html#answer",
+    "href": "chapters/ch09/9_7.html#answer",
+    "title": "Exercise 9.7",
+    "section": "Answer",
+    "text": "Answer\nIn full employment eqm: \\(h_t = \\bar{h}\\) for all \\(t\\) and \\(w_t = p_t F'(\\bar{h})\\) for all \\(t\\).\nStart with the DNWR constraint: \\(W_{t+1}  \\ge  \\gamma W_t\\). This can be written as\n\\[\n\\begin{eqnarray*}\n\\frac{\n\\mathcal{E}_{t+1}\n}\n{\n\\mathcal{E}_t\n}\n\\ge \\gamma \\frac{w_t}{w_{t+1}} = \\gamma \\frac{p_t}{p_{t+1}} = \\gamma \\left(\\frac{c^T_t}{c^T_{t+1}}\\right)^{1/\\xi}\n\\end{eqnarray*}\n\\]\nwhere the last equality uses the facts that \\(U\\) is CRRA and \\(A\\) is CES with \\(\\sigma = 1/\\xi\\) and that \\(C^N_t = F(\\bar{h})\\).\nUse the fact that the law of one price holds and that the foreign price of the traded good is unity, \\(\\mathcal{E}_t =P^T_t\\), to eliminate \\(\\mathcal{E}_t\\) from the above expression and rearrange to obtain:\n\\[\n\\begin{eqnarray*}\n\\frac1\\gamma \\left(\\frac{c^T_{t+1}}{c^T_{t}}\\right)^{1/\\xi} \\ge \\frac{P^T_t}{P^T_{t+1}}\n\\end{eqnarray*}\n\\]\nThe Euler equation is:\n\\[\n(c^T_t)^{-1/\\xi}\n= \\beta R_t\nE_t (c^T_{t+1})^{-1/\\xi}\n\\frac{P^T_t}\n{P^T_{t+1} }\n\\]\nRearrange terms to get\n\\[\n\\frac1R_t\n= \\beta\nE_t (c^T_{t+1})^{-1/\\xi} (c^T_t)^{1/\\xi}\n\\frac{P^T_t}\n{P^T_{t+1} }\n\\le\n\\frac{\\beta}{\\gamma }\n\\]\nThus, we have shown that \\(R_t \\ge \\gamma/\\beta\\) for all \\(t\\) is consistent with the full employment equilibrium."
+  },
+  {
+    "objectID": "chapters/ch09/9_2.html",
+    "href": "chapters/ch09/9_2.html",
+    "title": "Exercise 9.2",
+    "section": "",
+    "text": "⬅ Return"
+  },
+  {
+    "objectID": "chapters/ch09/9_2.html#problem",
+    "href": "chapters/ch09/9_2.html#problem",
+    "title": "Exercise 9.2",
+    "section": "Problem",
+    "text": "Problem\nShow that in the example of Section 9.2.3, the fall in the interest rate can is welfare decreasing under downward nominal wage rigidity but is welfare increasing under flexible wages. How can this be"
+  },
+  {
+    "objectID": "chapters/ch09/9_2.html#answer",
+    "href": "chapters/ch09/9_2.html#answer",
+    "title": "Exercise 9.2",
+    "section": "Answer",
+    "text": "Answer\nThe preferences are separable in \\(c^T_t\\) and \\(c^N_t\\). Therefore the equilibrium path of \\(c^T_t\\) under flexible wages is the same as the one given for the DNWR economy in Section 9.2.3. There is full employment, \\(h_t =1\\), hence \\(c^N_t=1\\).\nLet \\(W^f\\) denote welfare in the flex wage economy. Then we have\n\\[\nW^f = \\ln c^T_0 + \\frac{\\beta}{1-\\beta} \\ln c^T_1 = \\frac{1+r}{r}\\ln c^T_0 + \\frac1r \\ln \\frac{1+\\underline{r}}{1+r}\n\\]\nwhere we used \\(c^T_1 = \\beta (1+\\underline{r}) c^T_0\\)\n\\[\n\\begin{eqnarray*}\n\\frac{\\partial W^f}{\\partial(1+\\underline{r})} &=& \\frac{1+r}{r} \\frac{1}{c^T_0} \\frac{\\partial c^T_0}{\\partial(1+\\underline{r})}\n+ \\frac1r \\frac1{1+\\underline{r}}\n\\\\\n&=&\n- \\frac{1+r}{r} \\frac1{(1+\\underline{r})^2} \\frac{1}{\\frac{1}{1+\\underline{r} } + \\frac{r}{1+r}}\n+ \\frac1r \\frac1{1+\\underline{r}}  \n\\\\\n&=&\n\\frac1r \\, \\frac1{1+\\underline{r}}  \n- \\frac1r \\,  \\frac{1+r}{1+\\underline{r}}  \\frac{1}{1  + \\frac{r (1+\\underline{r})}{(1+r)}}\n\\\\\n&=&\n\\frac1r \\, \\frac1{1+\\underline{r}}\n\\left[  \n1\n-   \\frac{1+r}{1  + \\frac{r (1+\\underline{r})}{(1+r)}}\n\\right]\n\\\\\n\\end{eqnarray*}\n\\]\nwhere the penultimate equality uses the fact that\n\\[\n\\frac{\\partial c^T_0}{\\partial(1+\\underline{r})} = - y^T \\frac1{(1+\\underline{r})^2}\n\\]\nIf we evaluate this derivative at some \\(\\underline{r}&lt;r\\) then we have:\n\\[\n\\frac{\\partial W^f}{\\partial(1+\\underline{r})} &lt;0\n\\]\nWe have therefore shown that a further fall in the interest rate is welfare increasing in the flex wage economy.\nBy the way, note that\n\\[\n\\left.\n\\frac{\\partial W^f}{\\partial(1+\\underline{r})}\\right|_{\\underline{r} = r} =0\n;\\quad \\mbox{ and that  }\n\\left.\n\\frac{\\partial W^f}{\\partial(1+\\underline{r})}\\right|_{\\underline{r} &gt;r} &gt;0\n\\]\nso that at \\(\\underline{r}=r\\) the derivative is zero and at \\(\\underline{r}&lt;r\\) the derivative is negative, implying that a further decline is welfare increasing. At the same time if \\(\\underline{r}&gt;r\\), then the partial derivative is positive and a further increase in \\(\\underline{r}\\) is also welfare increasing. For the purpose of this exercise, we are interested in the partial derivative of welfare for the case that \\(\\underline{r}&lt;r\\).\nWhat about the DNWR economy? Note that\n\\[\nW^{dnwr} = W^f + \\frac{\\beta}{1-\\beta} \\ln \\left(\n\\frac{1+\\underline{r}}\n{1+r}\n\\right)^{\\alpha}\n\\]\nIt follows that\n\\[\n\\begin{eqnarray*}\n\\frac{\\partial W^{dnwr}}{\\partial(1+\\underline{r})}\n&=&\n\\frac{\\partial W^{f}}{\\partial(1+\\underline{r})}\n+ \\alpha \\frac{\\beta}{1-\\beta} \\frac{1}{1+\\underline{r}}\n\\\\\n&=&\n\\frac1r \\, \\frac1{1+\\underline{r}}  - \\frac1r \\,  \n\\frac{1+r}{1+\\underline{r}}  \n\\frac{1}{1  +\n\\frac{r (1+\\underline{r})}{(1+r)}}\n+ \\alpha \\frac{1}{r} \\frac{1}{1+\\underline{r}}\n\\\\\n&=&\n\\frac1r \\, \\frac1{1+\\underline{r}}\n\\left[\n(1 + \\alpha)  -\n\\frac{(1+r)}{1  +\n\\frac{r (1+\\underline{r})}{(1+r)}}\n\\right]\n\\end{eqnarray*}\n\\]\nIf \\(\\underline{r}=r\\), then\n\\[\n\\left.\n\\frac{\\partial W^{dnwr}}{\\partial(1+\\underline{r})} \\right\\vert_{\\underline{r}=r}\n&gt;0\n\\]\nIt follows that a temporary decline in the interest rate is welfare decreasing. [Recall that under optimal policy the partial derivative was zero. so that a temporary interest rate decline was NOT welfare decreasing.]\nIf \\(\\underline{r}&lt;r\\), then\n\\[\n\\left.\n\\frac{\\partial W^{dnwr}}{\\partial(1+\\underline{r})} \\right\\vert_{\\underline{r}&lt;r}\n=\n\\frac1r \\, \\frac1{1+\\underline{r}}\n\\left[\n(1 + \\alpha)  -\n\\frac{(1+r)}{1  +\n\\frac{r (1+\\underline{r})}{(1+r)}}\n\\right]\n\\]\nwhich is positive as long as\n\\[\n\\alpha &gt; r  \\frac{1-\\frac{(1+\\underline{r})}{(1+r)}}{1+ r \\frac{(1+\\underline{r})}{1+r}}\n\\]\nA sufficient condition therefore is that\n\\[\n\\alpha &gt;r\n\\]\nwhich should be true for the labor share is larger than the rate of interest. Thus we have shown that it can be the case that the fall in interest rates is welfare decreasing in the DNWR economy. As we will see in chapter 10, this result is the reason why capital control taxes can be welfare increasing in this economy. The interest rate decline stimulates current absorption. This drives up wages in period 0. When the rates go back up, domestic absorption falls. For full employment we need lower real wages then. But with a peg and DNWR real wages cannot come back down, so we get unemployment instead. A social planner might be willing to impose a capital control tax that households do not take advantage of the temporarily lower rates and do not borrow that much more. and this would make agents better off because it would prevent wages from rising that high."
+  },
+  {
+    "objectID": "chapters/ch09/9_3.html",
+    "href": "chapters/ch09/9_3.html",
+    "title": "Exercise 9.3",
+    "section": "",
+    "text": "⬅ Return"
+  },
+  {
+    "objectID": "chapters/ch09/9_3.html#problem",
+    "href": "chapters/ch09/9_3.html#problem",
+    "title": "Exercise 9.3",
+    "section": "Problem",
+    "text": "Problem\nModify the example of Section 9.2.3 to allow for wage rigidity in both directions: downward and upward. Characterize the economy’s response to a temporary decline in the interest rate. Show that welfare is higher under full wage rigidity than under downward wage rigidity. Provide intuition."
+  },
+  {
+    "objectID": "chapters/ch09/9_3.html#answer",
+    "href": "chapters/ch09/9_3.html#answer",
+    "title": "Exercise 9.3",
+    "section": "Answer",
+    "text": "Answer\nStart by making a graphical analysis. Keep in mind that \\(c_t\\) and \\(d_{t+1}\\) is independent of monetary policy and the wage rigidity. Then do the algebra.\nFirst recall that with DNWR the solution as given in Section 9.2.3 was:\n\\[\nh_0 = 1 ;\\quad \\mbox{ and } c^N_0 = 1\n\\]\n\\[\nw_t = \\alpha c^T_0&gt;\\alpha y^T=w_{-1}\n\\]\nfor all \\(t\\ge 0\\).\n\\[\np_0=c^T_0&gt;y^T=p_{-1}\n\\]\n\\[\nh_t=\n\\frac{1+\\underline{r}}{1+r}&lt;1.\n\\]\nfor all \\(t\\ge 1\\)\n\\[\nc^N_t = \\left(\\frac{1+\\underline{r}}{1+r}\\right)^{\\alpha }&lt;1\n\\]\nand finally\n\\[\np_t = \\frac{c^T_t}{c^N_t} =\\frac{y^T \\left[\\frac{1}{1+r} +\\frac{r}{1+r} \\frac{1+\\underline{r}}{1+r}\\right]}{\\left(\\frac{1+\\underline{r}}{1+r}\\right)^{\\alpha }}\n\\]\nNow characterize the economy’s response to the temporary decline in the interest rate under the assumption of full wage rigidity, that is, under the assumption that \\(W_t = W_{t-1}\\) for all \\(t\\ge0\\). Continue to assume that for a given wage, the equilibrium level of hours is the minimum between the supply of hours and the demand for hours.\nTraded allocations are the same as they are independent of the wage rigidity because intra temp elast is the same as inter temp elast.\nNow what will happen in the NT sector?\nSince wages don’t move there will be excess demand for labor. Hence we have\n\\[\nh_0 = 1 ;\\quad \\mbox{ and } c^N_0 = 1\n\\]\n\\[\nw_t = w_{-1}\n\\]\nfor all \\(t\\ge 0\\). In period 0, there is a real appreciation\n\\[\np_0=c^T_0&gt;y^T=p_{-1}\n\\]\nFrom period 1 onward traded absorption is smaller than in period 0 and, more importantly, smaller than in the steady state prior to period 0. Why? Because the economy enters period 1 with debt, \\(d_1&gt;0\\), and hence must use some of its traded endowment to service the external debt. Therefore the full employment wage is lower than the period-0 wage\n\\[\nw^{full}_1 = c^T_1 \\alpha &lt;  \\alpha y^T = w_{1}\n\\]\nSince wages are inflexible\n\\[\nw_t = w_{-1}  \n\\]\nfor all \\(t\\). At that wage hours solve\n\\[\nh^{fixed}_t = c^T_t \\alpha / (w_t) = \\alpha c^T_t / \\alpha y^T = \\frac{c^T_t}{y^T_t} =\n\\left[\\frac1{1+r} + \\frac{r}{1+r} \\frac{1+\\underline{r}}{1+r}\\right]&lt;1\n\\]\nIt follows that the fixed wage economy also suffers involuntary unemployment from period 1 onwards.\nFinally show that welfare is higher under full wage rigidity than under only downward wage rigidity.\nWe have just shown that the eqm for \\(c^T_t\\) and for \\(h_0\\) is the same in the dnwr and the fixed wage economy.\nWelfare in the DNWR economy:\n\\[\nW^{dnwr} = \\ln c^T_0 + \\frac{\\beta}{1-\\beta} \\ln c^T_1 + \\alpha \\ln h_0 + \\frac{\\alpha \\beta}{1-\\beta} \\ln h_1^{dnwr}\n\\]\nWelfare in the fixed wage economy:\n\\[\nW^{fixed} = \\ln c^T_0 + \\frac{\\beta}{1-\\beta} \\ln c^T_1 + \\alpha \\ln h_0 + \\frac{\\alpha \\beta}{1-\\beta} \\ln h_1^{fixed}\n\\]\nThus we have that:\n\\[\nW^{fixed}-W^{dnwr}   \\frac{\\alpha \\beta}{1-\\beta} \\left[ \\ln h_1^{fixed} - \\ln h_1^{dnwr} \\right]\n\\]\nWelfare will be higher is employment from period 1 onwards is higher in the fixed wage economy. To see that this is indeed the case: Recall\n\\[\nh^{fixed}_t = c^T_t \\alpha / (w_t) = \\alpha c^T_t / \\alpha y^T = \\frac{c^T_t}{y^T_t} =\n\\left[\\frac1{1+r} + \\frac{r}{1+r} \\frac{1+\\underline{r}}{1+r}\\right]&lt;1\n\\]\nCompare that to the case of only downward wage rigidity\n\\[\nh^{dnwr}_t = \\frac{1+\\underline{r}}{1+r}&lt;1.\n\\]\nfor all \\(t\\ge 1\\)\nNotice that \\(h^{fixed}_t\\) is a weighted average between 1 and \\(h^{dnwr}&lt;1\\) with weights that add up to one, namely, $1/(1+r) $ on 1 and weight \\(r/(1+r)\\) on \\(h^{dnwr}\\). Therefore we have that\n\\[\n\\fbox{$1&gt; h^{fixed} &gt; h^{dnwr}&gt;0$}\n\\]\nThis says that in the fixed wage economy there is also unemployment but less unemployment than in the DNWR economy.\nIt then follows immediately, that welfare is higher in the fixed wage economy than in the dnwr economy, under a temporary interest rate decline.\nWhy is this so? Because under fixed wages, wages do not rise during the boom phase, period 0, and hence when aggregate demand slows beginning in period 1, the real wage is not that high, and with a lower past wage employment, given lower demand, can be higher. To put it into more general language due to the externality, if wage rigidity is stronger, then wages never rise to a level that curtails future employment by as much as it would had wages risen."
+  },
+  {
+    "objectID": "chapters/ch09/9_6.html",
+    "href": "chapters/ch09/9_6.html",
+    "title": "Exercise 9.6",
+    "section": "",
+    "text": "⬅ Return"
+  },
+  {
+    "objectID": "chapters/ch09/9_6.html#problem",
+    "href": "chapters/ch09/9_6.html#problem",
+    "title": "Exercise 9.6",
+    "section": "Problem",
+    "text": "Problem\nConsider the devaluation rate rule\n\\[\n\\epsilon_t = \\frac{w_{t-1}}{\\omega(c^T_t)}.\n\\]\nSuppose that all other features of the model are as in the body of the chapter. In particular, assume that the period utility function is given by equation 9.28, that the Armington aggregator is given by equation 9.29, with \\(\\xi = 1/\\sigma\\), and that \\(P^{T*}_t=1\\) for all \\(t\\).\n\nShow that for \\(\\gamma&lt;1\\), this policy is optimal.\nShow that under this policy the nominal wage, \\(W_t\\), and the nominal price of nontradables, \\(P^N_t\\), are constant in equilibrium.\nLet \\(R_t\\) denote the gross nominal interest rate on a risk-free, one period, nominal bond denominated in domestic currency held from period \\(t\\) to \\(t+1\\). In other words, one unit of domestic currency invested in this bond in period \\(t\\) always pays \\(R_t\\) units of domestic currency in period \\(t+1\\) in interest plus principal. Show that under the devaluation rule specified above, the equilibrium interest rate is constant and equal to \\(1/\\beta\\). Provide intuition."
+  },
+  {
+    "objectID": "chapters/ch09/9_6.html#answer",
+    "href": "chapters/ch09/9_6.html#answer",
+    "title": "Exercise 9.6",
+    "section": "Answer",
+    "text": "Answer\n\n1.\nIn the body of the chapter it is shown that any devaluation rule satisfying:\n\\[\n\\epsilon_t \\ge \\gamma  \\frac{w_{t-1}}{\\omega(c^T_t)}.\n\\]\nis consistent with the optimal allocation. Since \\(\\gamma&lt;1\\), the proposed rule belongs to this class.\n\n\n2.\n\\[\n\\begin{eqnarray*}\n\\epsilon_t &=& \\frac{w_{t-1}}{\\omega(c^T_t)}\\\\\n\\frac{\\mathcal{E}_t} {\\mathcal{E}_{t-1}}\n&=& \\frac{W_{t-1}}{\\mathcal{E}_{t-1} \\omega(c^T_t)}\\\\\n\\frac{\\mathcal{E}_t} {1}\n&=& \\frac{W_{t-1}}{1} \\frac{\\mathcal{E}_t}{W_t}\\\\\nW_t &=& W_{t-1}\n\\end{eqnarray*}\n\\]\nUse\n\\[\nW_t /\\mathcal{E}_t = \\omega(c^T_t)=\\frac{P^N_t}{\\mathcal{E}_t}F'(\\bar{h})\n\\]\nwhich implies that\n\\[\nP^N_t = W_t / F'(\\bar{h})\n\\]\nAs we just showed \\(W_t\\) is constant over time and hence so is \\(P^N_t\\)\n\n\n3.\nEuler equation to price this bond:\n\\[\n\\lambda_t/P^T_t = \\beta R_t E_t \\lambda_{t+1}/P^{T}_{t+1}\n\\]\nUnder our prefernces: \\(\\lambda_t = a (c^T_t)^{-1/\\xi}\\) Law of one price\n\\[\nP^T_t = \\mathcal{E}_t P^*_t = \\mathcal{E}_t\n\\]\nUnder optimal policy \\(C^N_t=F(\\bar{h})\\) and \\(W_t/\\mathcal{E}_t = \\omega(c^T_t)\\) and \\(\\epsilon_t = w_{t-1}/\\omega(c^T_t)\\).\nthus we have that the Euler equation becomes\n\\[\n\\begin{eqnarray*}\n(c^T_t)^{-1/\\xi}\n&=& \\beta R_t\nE_t (c^T_{t+1})^{1/\\xi}\n\\frac{P^T_t}\n{P^T_{t+1} }\n\\\\\n&=&\n\\beta R_t E_t (c^T_{t+1})^{1/\\xi}\n\\frac\n{\\mathcal{E}_t}\n{\\mathcal{E}_{t+1}}\n\\\\\n&=&\n\\beta R_t E_t (c^T_{t+1})^{1/\\xi}  \\frac{\\omega(c^T_{t+1})}{W_t/\\mathcal{E}_t}\n\\\\\n&=& \\beta R_t E_t (c^T_{t+1})^{-1/\\xi}  \\frac{(c^T_{t+1})^{1/\\xi}}{(c^T_{t})^{1/\\xi}}\n\\\\1&=&\\beta R_t\n\\end{eqnarray*}\n\\]\nA pure interest rate peg is consistent with optimal policy and full stablization of the nominal price of nontradables. (And a volatile nominal exchange rate.)"
+  },
+  {
+    "objectID": "chapters/ch09/9_5.html",
+    "href": "chapters/ch09/9_5.html",
+    "title": "Exercise 9.5",
+    "section": "",
+    "text": "⬅ Return"
+  },
+  {
+    "objectID": "chapters/ch09/9_5.html#problem",
+    "href": "chapters/ch09/9_5.html#problem",
+    "title": "Exercise 9.5",
+    "section": "Problem",
+    "text": "Problem\nDemonstrate that when nominal wages are fully flexible, the competitive equilibrium is Pareto optimal for any exchange-rate policy."
+  },
+  {
+    "objectID": "chapters/ch09/9_5.html#answer",
+    "href": "chapters/ch09/9_5.html#answer",
+    "title": "Exercise 9.5",
+    "section": "Answer",
+    "text": "Answer\nBecause nominal rigidity is the only friction in the present model, it should be intuitive that if we were to remove this friction, the resulting competitive equilibrium would coincide with the Pareto optimal allocation for any exchange-rate policy. To see this formally, set \\(\\gamma=0\\). Then, equilibrium condition~(\\(\\ref{eq:dnwr_DNWR-competitive}\\)) collapses to \\(w_t\\ge0\\). This condition is superfluous because, by condition (\\(\\ref{eq:dnwr_labor-demand-competitive}\\)) and the fact that \\(p_t\\) and \\(F'(h_t)\\) are both positive, we have that \\(w_t&gt;0\\). It then follows from the slackness condition~(\\(\\ref{eq:dnwr_slackness-h-competitive}\\)) that \\(h_t=\\bar{h}\\) for all \\(t\\). Therefore, employment in the competitive equilibrium with \\(\\gamma=0\\) is the same as in the Pareto optimal allocation. To see that the competitive equilibrium with \\(\\gamma=0\\) can also support the Pareto optimal processes for \\(c^T_t\\) and \\(d_{t+1}\\) for \\(t\\ge0\\), note that the last six first-order conditions of the Pareto problem listed above also appear in the set of competitive equilibrium conditions (namely, conditions (\\(\\ref{eq:dnwr_market-clearing-traded-competitive}\\)), (\\(\\ref{eq:dnwr_dbar-competitive}\\)), (\\(\\ref{eq:dnwr_lambda-competitive}\\)), (\\(\\ref{eq:dnwr_Euler-competitive}\\)), (\\(\\ref{eq:dnwr_mu-competitive}\\)), and (\\(\\ref{eq:dnwr_slackness-mu-competitive}\\)))."
+  },
+  {
+    "objectID": "chapters/ch09/9_15.html",
+    "href": "chapters/ch09/9_15.html",
+    "title": "Exercise 9.15",
+    "section": "",
+    "text": "⬅ Return"
+  },
+  {
+    "objectID": "chapters/ch09/9_15.html#problem",
+    "href": "chapters/ch09/9_15.html#problem",
+    "title": "Exercise 9.15",
+    "section": "Problem",
+    "text": "Problem\nConsider the two-sector open economy with staggered price setting `a la Calvo-Yun studied in Section 9.16. As an identification assumption, postulate that interest-rate shocks can affect \\(r_t\\) and \\(y^T_t\\) contemporaneously and that output shocks can affect \\(y^T_t\\) but not \\(r_t\\) contemporaneously.\n\nCompute the matrix \\(\\Gamma\\) under this identification scheme.\nCompute the share of the variances of tradable output, \\(y^T_t\\); hours, \\(h_t\\); consumption, \\(c_t\\); the real exchange rate, \\(p_t\\); and the trade-balance-to-output ratio, \\(tb_t/(y^T_t+p_ty^N_t)\\) explained by interest-rate shocks under the two alternative exchange-rate policies considered in that Section 9.16, the optimal exchange-rate policy and a currency peg. Comment.\nProduce two figures, similar to Figure 9.19, displaying the dynamics of a typical external crisis, conditional on each of the two shocks. Provide intuition.\nWhat fraction of the welfare costs of currency pegs reported in Table 9.9 is attributable to interest-rate shocks?\nAnswer the questions 1-4 above under the alternative identification assumption that output shocks can affect the interest contemporaneously but not vice versa."
+  },
+  {
+    "objectID": "chapters/ch09/9_15.html#answer",
+    "href": "chapters/ch09/9_15.html#answer",
+    "title": "Exercise 9.15",
+    "section": "Answer",
+    "text": "Answer\nNo solution has been posted yet. If you have a solution, we invite you to share it in the comment box at the bottom of this page."
+  },
+  {
+    "objectID": "chapters/ch09/9_10.html",
+    "href": "chapters/ch09/9_10.html",
+    "title": "Exercise 9.10",
+    "section": "",
+    "text": "⬅ Return"
+  },
+  {
+    "objectID": "chapters/ch09/9_10.html#problem",
+    "href": "chapters/ch09/9_10.html#problem",
+    "title": "Exercise 9.10",
+    "section": "Problem",
+    "text": "Problem\nTake a look at the two bottom panels of Figure 9.12 showing the behavior of the trade-balance-to-output ratio and the debt-to-output ratio predicted by the model of Section 9.1 during an external crisis under a currency peg and under the optimal exchange-rate policy. Note that these responses differ across the two exchange-rate regimes, even though the responses of the levels of the trade balance and the external debt are identical across exchange-rate policies, due to the assumption \\(\\sigma=1/\\xi\\). Of course, all differences must be due to the fact that output (measured in terms of tradables) behaves differently across exchange-rate regimes. Explain analytically the nature of these differences. Consider in particular the cases \\(\\xi=1\\) and \\(\\xi&gt;1\\) under the maintained assumption \\(\\sigma=1/\\xi\\)."
+  },
+  {
+    "objectID": "chapters/ch09/9_10.html#answer",
+    "href": "chapters/ch09/9_10.html#answer",
+    "title": "Exercise 9.10",
+    "section": "Answer",
+    "text": "Answer\nNo solution has been posted yet. If you have a solution, we invite you to share it in the comment box at the bottom of this page."
+  },
+  {
+    "objectID": "chapters/ch09/9_13.html",
+    "href": "chapters/ch09/9_13.html",
+    "title": "Exercise 9.13",
+    "section": "",
+    "text": "⬅ Return"
+  },
+  {
+    "objectID": "chapters/ch09/9_13.html#problem",
+    "href": "chapters/ch09/9_13.html#problem",
+    "title": "Exercise 9.13",
+    "section": "Problem",
+    "text": "Problem\nConsider an economy like the one developed in Section 9.1, in which the nontraded good is produced with the technology \\(y^N_t= e^{z_t} h_t^{\\alpha}\\), where \\(z_t\\) denotes an exogenous and stochastic productivity shock. Assume that \\(z_t\\) evolves according to the law of motion \\(z_t = \\rho z_{t-1} + \\mu_t\\), where \\(\\rho\\in [0,1)\\) is a parameter and \\(\\mu_t\\) is an i.i.d. disturbance with mean zero and standard deviation \\(\\sigma_\\mu\\). Suppose that the endowment of tradables is constant and equal to \\(y^T&gt;0\\) and that the interest rate is constant and equal to \\(r\\). Assume that \\(r\\) satisfies \\(\\beta(1+r)=1\\). Assume that the period utility function and the aggregator function are given by (9.28) and (9.29), respectively, with \\(\\xi = 1/\\sigma&lt;1\\). Suppose that \\(d_0=0\\) and that the economy was operating at full employment in \\(t=-1\\).\n\nFind the equilibrium process of consumption of tradables, \\(c^T_t\\).\nDerive the optimal devaluation rate, \\(\\epsilon_t\\), as a function of present and past values of the productivity shock.\nProvide a graphical analysis of the effect of an increase in productivity (\\(z_0&gt;z_{-1}\\)) under the optimal exchange-rate policy and under a currency peg. Provide intuition.\nSuppose that the monetary authority follows the optimal exchange-rate policy that makes the domestic currency as strong as possible relative to the foreign currency at all times. Find the unconditional correlation between the net devaluation rate, \\(\\ln \\epsilon_t\\) and the growth rate of productivity, \\(z_t/z_{t-1}\\). Provide intuition.\nHow would the sign of the correlation obtained in question 4 and the intuition behind it change in the case \\(\\xi = 1/\\sigma&gt;1\\)."
+  },
+  {
+    "objectID": "chapters/ch09/9_13.html#answer",
+    "href": "chapters/ch09/9_13.html#answer",
+    "title": "Exercise 9.13",
+    "section": "Answer",
+    "text": "Answer\nNo solution has been posted yet. If you have a solution, we invite you to share it in the comment box at the bottom of this page."
+  },
+  {
+    "objectID": "chapters/ch09/9_12.html",
+    "href": "chapters/ch09/9_12.html",
+    "title": "Exercise 9.12",
+    "section": "",
+    "text": "⬅ Return"
+  },
+  {
+    "objectID": "chapters/ch09/9_12.html#problem",
+    "href": "chapters/ch09/9_12.html#problem",
+    "title": "Exercise 9.12",
+    "section": "Problem",
+    "text": "Problem\nCompare the optimal exchange-rate policies implied by the model with downward nominal wage rigidity developed in Section 9.1 and the model with downward product price rigidity developed in Section 9.15.\n\nShow that the families of optimal exchange-rate policies are identical under downward price rigidity and downward wage rigidity provided that: \\(\\gamma=\\gamma_p\\), the economy was in full employment in period \\(-1\\), and that the sources of uncertainty are stochastic disturbances in \\(r_t\\) and \\(y^T_t\\).\nShow that, in particular, it is optimal to fully stabilize the nominal wage or the nominal price of nontradables.\nShow how these results would change in the presence of productivity shocks in the nontraded sector."
+  },
+  {
+    "objectID": "chapters/ch09/9_12.html#answer",
+    "href": "chapters/ch09/9_12.html#answer",
+    "title": "Exercise 9.12",
+    "section": "Answer",
+    "text": "Answer\nNo solution has been posted yet. If you have a solution, we invite you to share it in the comment box at the bottom of this page."
+  },
+  {
+    "objectID": "chapters/ch09/9_9.html",
+    "href": "chapters/ch09/9_9.html",
+    "title": "Exercise 9.9",
+    "section": "",
+    "text": "⬅ Return"
+  },
+  {
+    "objectID": "chapters/ch09/9_9.html#problem",
+    "href": "chapters/ch09/9_9.html#problem",
+    "title": "Exercise 9.9",
+    "section": "Problem",
+    "text": "Problem\nContinue to assume, as in exercise 9.8, that the foreign price of tradables grows at the rate \\(\\pi^*\\). In addition, assume that the production of nontradables is given by \\(Y^N_t = X_t F(h_t)\\) and that the endowment of tradables is given by \\(Y^T_t=X_t y^T_t\\), where \\(X_t\\) is a deterministic trend that grows at the gross rate \\(g\\), that is, \\(X_{t+1}/X_t=g\\). Again, show how equilibrium conditions (9.9)-(9.19) are modified by the imposition of this assumption. Hint: As in the model of Chapter 5, you will have to transform some variables appropriately to make them stationary. The equilibrium conditions should include only stationary variables."
+  },
+  {
+    "objectID": "chapters/ch09/9_9.html#answer",
+    "href": "chapters/ch09/9_9.html#answer",
+    "title": "Exercise 9.9",
+    "section": "Answer",
+    "text": "Answer\nNo solution has been posted yet. If you have a solution, we invite you to share it in the comment box at the bottom of this page."
   }
 ]

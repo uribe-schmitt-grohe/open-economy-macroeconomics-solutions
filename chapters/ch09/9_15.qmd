@@ -1,0 +1,23 @@
+---
+title: "Exercise 9.15"
+subtitle: "The Importance of Interest-Rate and Endowment Shocks"
+---
+<a class="return-button" href="index.qmd">⬅ Return</a>
+
+## Problem
+
+Consider the two-sector open economy with staggered price setting \`a la Calvo-Yun studied in Section 9.16. As an identification assumption, postulate that interest-rate shocks can affect $r_t$ and $y^T_t$ contemporaneously and that output shocks can affect $y^T_t$ but not $r_t$ contemporaneously. 
+
+1. Compute the matrix $\Gamma$ under this identification scheme. 
+
+2. Compute the share of the variances of tradable output, $y^T_t$; hours, $h_t$;  consumption, $c_t$; the real exchange rate, $p_t$; and the trade-balance-to-output ratio, $tb_t/(y^T_t+p_ty^N_t)$ explained by interest-rate shocks under the two alternative exchange-rate policies considered in that Section 9.16, the optimal exchange-rate policy and a currency peg. Comment. 
+
+3. Produce two figures, similar to Figure 9.19, displaying the dynamics of a typical external crisis, conditional on each of the two shocks. Provide intuition. 
+
+4. What fraction of the welfare costs of currency pegs reported in Table 9.9 is attributable to interest-rate shocks? 
+
+5. Answer the questions 1-4 above under the alternative identification assumption that output shocks can affect the interest contemporaneously but not vice versa. 
+
+## Answer
+
+_No solution has been posted yet. If you have a solution, we invite you to share it in the comment box at the bottom of this page._

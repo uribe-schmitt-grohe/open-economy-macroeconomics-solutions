@@ -1,0 +1,13 @@
+---
+title: "Exercise 9.14"
+subtitle: "Optimal Policy With Initial Price Dispersion (Yun, 2005)"
+---
+<a class="return-button" href="index.qmd">⬅ Return</a>
+
+## Problem
+
+Consider the staggered-price model of Section 9.16. Suppose that $s_{-1}<1$. Show that there is an exchange-rate policy that supports the flexible-price equilibrium. Characterize the path of nontradable inflation induced by this (optimal) exchange-rate policy. Provide intuition.
+
+## Answer
+
+_No solution has been posted yet. If you have a solution, we invite you to share it in the comment box at the bottom of this page._

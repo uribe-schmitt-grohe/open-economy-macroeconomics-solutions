@@ -1,0 +1,19 @@
+---
+title: "Exercise 9.12"
+subtitle: "Optimal Exchange-rate Policy Under Price Or Wage Stickiness"
+---
+<a class="return-button" href="index.qmd">⬅ Return</a>
+
+## Problem
+
+Compare the optimal exchange-rate policies implied by the model with downward nominal wage rigidity developed in Section 9.1 and the model with downward product price rigidity developed in Section 9.15.
+
+1. Show that the families of optimal exchange-rate policies are identical under downward  price rigidity and downward wage rigidity provided that: $\gamma=\gamma_p$, the economy was in full employment in period $-1$, and that the sources of uncertainty are stochastic disturbances in $r_t$ and $y^T_t$. 
+
+2. Show that, in particular, it is optimal to fully stabilize the nominal wage or the nominal price of nontradables.
+
+3. Show how these results would change in the presence of productivity shocks in the nontraded sector. 
+
+## Answer
+
+_No solution has been posted yet. If you have a solution, we invite you to share it in the comment box at the bottom of this page._

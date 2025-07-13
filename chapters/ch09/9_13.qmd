@@ -1,0 +1,24 @@
+---
+title: "Exercise 9.13"
+subtitle: "Productivity Shocks in the Nontraded Sector"
+---
+<a class="return-button" href="index.qmd">⬅ Return</a>
+
+## Problem
+
+Consider an economy like the one developed in Section 9.1, in which the nontraded good is produced with the technology $y^N_t= e^{z_t} h_t^{\alpha}$, where $z_t$ denotes an exogenous and stochastic productivity shock. Assume that $z_t$ evolves according to the law of motion $z_t = \rho z_{t-1} + \mu_t$, where $\rho\in [0,1)$ is a parameter and $\mu_t$ is an i.i.d.\ disturbance with mean zero and standard deviation $\sigma_\mu$.
+Suppose that the endowment of tradables is constant and equal to $y^T>0$ and that the interest rate is  constant and equal to $r$. Assume that $r$ satisfies $\beta(1+r)=1$.  Assume that the period utility function and the aggregator function are given by (9.28) and (9.29), respectively, with $\xi = 1/\sigma<1$. Suppose that $d_0=0$ and that the economy was operating at full employment in $t=-1$.  
+
+1. Find the equilibrium process of consumption of tradables, $c^T_t$. 
+
+2. Derive the optimal devaluation rate, $\epsilon_t$, as a function of present and past values of the productivity shock.  
+
+3. Provide a graphical analysis of the effect of an increase in productivity ($z_0>z_{-1}$) under the optimal exchange-rate policy and under a currency peg. Provide intuition. 
+
+4. Suppose that the monetary authority follows the optimal exchange-rate policy that makes the domestic currency as strong as possible relative to the foreign currency at all times. Find the unconditional correlation between the net devaluation rate, $\ln \epsilon_t$ and the growth rate of productivity, $z_t/z_{t-1}$. Provide intuition.
+
+5. How would the sign of the correlation obtained in question 4 and the intuition behind it change in the case $\xi = 1/\sigma>1$.  
+
+## Answer
+
+_No solution has been posted yet. If you have a solution, we invite you to share it in the comment box at the bottom of this page._

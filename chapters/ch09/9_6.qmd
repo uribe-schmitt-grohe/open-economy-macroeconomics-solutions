@@ -1,0 +1,103 @@
+---
+title: "Exercise 9.6"
+subtitle: "Optimality of Constant Nominal Interest Rates"
+---
+<a class="return-button" href="index.qmd">⬅ Return</a>
+
+## Problem
+
+Consider the devaluation rate rule
+
+$$
+\epsilon_t = \frac{w_{t-1}}{\omega(c^T_t)}.
+$$
+
+Suppose that all other features of the model are as in the body of the chapter. In particular, assume that the period utility function is given by equation 9.28, that the Armington aggregator is given by equation 9.29, with $\xi = 1/\sigma$, and that $P^{T*}_t=1$ for all $t$. 
+
+1. Show that for $\gamma<1$, this policy is optimal. 
+
+2. Show that under this policy the nominal wage, $W_t$, and the nominal price of nontradables, $P^N_t$, are constant in equilibrium.
+
+3. Let $R_t$ denote the gross nominal interest rate on a risk-free, one period, nominal bond denominated in domestic currency held from period $t$ to $t+1$. In other words, one unit of domestic currency invested in this bond in period $t$ always pays $R_t$ units of domestic currency in period $t+1$ in interest plus principal. Show that under the devaluation rule specified above, the equilibrium interest rate is constant and equal to $1/\beta$. Provide intuition. 
+
+## Answer
+
+#### 1.
+
+In the body of the chapter it is shown that any devaluation rule satisfying: 
+
+$$
+\epsilon_t \ge \gamma  \frac{w_{t-1}}{\omega(c^T_t)}.
+$$
+
+is consistent with the optimal allocation. Since $\gamma<1$, the proposed rule belongs to this class. 
+
+#### 2.
+
+$$
+\begin{eqnarray*}
+\epsilon_t &=& \frac{w_{t-1}}{\omega(c^T_t)}\\
+\frac{\mathcal{E}_t} {\mathcal{E}_{t-1}}
+&=& \frac{W_{t-1}}{\mathcal{E}_{t-1} \omega(c^T_t)}\\
+\frac{\mathcal{E}_t} {1}
+&=& \frac{W_{t-1}}{1} \frac{\mathcal{E}_t}{W_t}\\
+W_t &=& W_{t-1}
+\end{eqnarray*}
+$$
+
+Use 
+
+$$
+W_t /\mathcal{E}_t = \omega(c^T_t)=\frac{P^N_t}{\mathcal{E}_t}F'(\bar{h})
+$$
+
+which implies that
+
+$$
+P^N_t = W_t / F'(\bar{h}) 
+$$
+
+As we just showed $W_t$ is constant over time and hence so is $P^N_t$
+
+#### 3.
+
+Euler equation to price this bond: 
+
+$$
+\lambda_t/P^T_t = \beta R_t E_t \lambda_{t+1}/P^{T}_{t+1}
+$$
+
+Under our prefernces: $\lambda_t = a (c^T_t)^{-1/\xi}$
+Law of one price
+
+$$
+P^T_t = \mathcal{E}_t P^*_t = \mathcal{E}_t
+$$
+
+Under optimal policy $C^N_t=F(\bar{h})$ and $W_t/\mathcal{E}_t = \omega(c^T_t)$ and $\epsilon_t = w_{t-1}/\omega(c^T_t)$. 
+
+thus we have that the Euler equation becomes
+
+$$
+\begin{eqnarray*}
+(c^T_t)^{-1/\xi} 
+&=& \beta R_t 
+E_t (c^T_{t+1})^{1/\xi}
+\frac{P^T_t}
+{P^T_{t+1} }
+\\
+&=&
+\beta R_t E_t (c^T_{t+1})^{1/\xi} 
+\frac
+{\mathcal{E}_t}
+{\mathcal{E}_{t+1}} 
+\\
+&=& 
+\beta R_t E_t (c^T_{t+1})^{1/\xi}  \frac{\omega(c^T_{t+1})}{W_t/\mathcal{E}_t} 
+\\
+&=& \beta R_t E_t (c^T_{t+1})^{-1/\xi}  \frac{(c^T_{t+1})^{1/\xi}}{(c^T_{t})^{1/\xi}}
+\\1&=&\beta R_t 
+\end{eqnarray*}
+$$
+
+A pure interest rate peg is consistent with optimal policy and full stablization of the nominal price of nontradables. (And a volatile nominal exchange rate.)

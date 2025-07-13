@@ -1,0 +1,15 @@
+---
+title: "Exercise 9.10"
+subtitle: "Exchange-Rate Policy and GDP in Terms of Tradables"
+---
+<a class="return-button" href="index.qmd">⬅ Return</a>
+
+## Problem
+
+Take a look at the two bottom panels of Figure 9.12 showing the behavior of the
+trade-balance-to-output ratio and the debt-to-output ratio  predicted by the model of Section 9.1 during an external crisis under a currency peg and under the optimal exchange-rate policy. Note that these responses differ across the two exchange-rate regimes, even though the responses of the levels of the trade balance and the external debt are identical across exchange-rate policies, due to the assumption $\sigma=1/\xi$. 
+Of course, all differences must be due to the fact that output (measured in terms of tradables) behaves differently across exchange-rate regimes. Explain analytically the nature of these differences. Consider in particular the cases $\xi=1$ and $\xi>1$ under the maintained assumption $\sigma=1/\xi$.
+
+## Answer
+
+_No solution has been posted yet. If you have a solution, we invite you to share it in the comment box at the bottom of this page._

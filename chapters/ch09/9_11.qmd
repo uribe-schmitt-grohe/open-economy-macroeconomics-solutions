@@ -1,0 +1,42 @@
+---
+title: "Exercise 9.11"
+subtitle: "The CPI Index"
+---
+<a class="return-button" href="index.qmd">⬅ Return</a>
+
+## Problem
+
+Show that if the technology for producing the composite consumption given in (9.2) is of the CES form, then the consumption price level, $P_t$, can be expressed as a CES function of the nominal prices of tradable and nontradables, $\mathcal{E}_t$ and $P^N_t$, respectively. 
+
+## Answer
+
+The Aggretator is: 
+
+$$
+c = \left[
+a (c^T)^{1-\frac{1}{\xi}}
++ (1-a) (c^N)^{1-\frac{1}{\xi}}
+\right]^{\frac1{1-\frac1{\xi}}} \tag{*}
+$$
+
+Define the CPI index as the solution to 
+
+$$
+P c = P^T c^T + P^Nc^N
+$$
+
+where $\{c^T, c^N\}$ solves 
+
+$$
+\min_{c^T, c^N} P^T c^T + P^N c^N 
+$$
+
+subject to (\*)
+
+The solution to this problem is 
+
+$$
+P = \left[a^{\xi}{P^T}^{1-\xi}
++ (1-a)^{\xi}{P^N}^{1-\xi}
+\right]^{\frac{1}{1-\xi}}
+$$

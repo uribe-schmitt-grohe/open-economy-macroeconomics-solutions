@@ -1,0 +1,61 @@
+---
+title: "Exercise 9.7"
+subtitle: "Optimality of Constant Nominal Interest Rates, Continued"
+---
+<a class="return-button" href="index.qmd">⬅ Return</a>
+
+## Problem
+
+Show that any constant interest-rate rule of the form $R_t=\delta$, where $\delta$ is a parameter, supports the full-employment equilibrium, provided $\delta\ge \gamma/\beta$. 
+
+## Answer
+
+In full employment eqm:  $h_t = \bar{h}$ for all $t$ and $w_t = p_t F'(\bar{h})$ for all $t$.
+
+Start with the DNWR constraint: $W_{t+1}  \ge  \gamma W_t$. This can be written as
+
+$$
+\begin{eqnarray*}
+\frac{
+\mathcal{E}_{t+1}
+}
+{
+\mathcal{E}_t
+}
+\ge \gamma \frac{w_t}{w_{t+1}} = \gamma \frac{p_t}{p_{t+1}} = \gamma \left(\frac{c^T_t}{c^T_{t+1}}\right)^{1/\xi}
+\end{eqnarray*}
+$$
+
+where the last equality uses the facts that  $U$ is CRRA and $A$ is CES with $\sigma = 1/\xi$ and that $C^N_t = F(\bar{h})$.
+
+Use the fact that the law of one price holds and that the foreign price of the traded good is unity, $\mathcal{E}_t =P^T_t$, to eliminate $\mathcal{E}_t$ from the above expression and rearrange to obtain: 
+
+$$
+\begin{eqnarray*}
+\frac1\gamma \left(\frac{c^T_{t+1}}{c^T_{t}}\right)^{1/\xi} \ge \frac{P^T_t}{P^T_{t+1}}
+\end{eqnarray*}
+$$
+
+The Euler equation is: 
+
+$$
+(c^T_t)^{-1/\xi} 
+= \beta R_t 
+E_t (c^T_{t+1})^{-1/\xi}
+\frac{P^T_t}
+{P^T_{t+1} }
+$$
+
+Rearrange terms to get 
+
+$$
+\frac1R_t 
+= \beta 
+E_t (c^T_{t+1})^{-1/\xi} (c^T_t)^{1/\xi} 
+\frac{P^T_t}
+{P^T_{t+1} }
+\le 
+\frac{\beta}{\gamma }
+$$
+
+Thus, we have shown that $R_t \ge \gamma/\beta$ for all $t$ is consistent with the full employment equilibrium. 

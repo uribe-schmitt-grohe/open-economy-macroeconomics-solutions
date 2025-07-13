@@ -1,0 +1,21 @@
+---
+title: "Chapter 9 – Nominal Rigidity, Exchange Rates, and Unemployment"
+comments: False
+---
+
+- [Exercise 9.1 (The Demand Schedule Of Nontradables)](9_1.qmd)
+- [Exercise 9.2 (Unwanted Positive Shocks)](9_2.qmd)
+- [Exercise 9.3 (Is More Wage Rigidity desirable?)](9_3.qmd)
+- [Exercise 9.4 (Properties of the Full-Employment Real Wage)](9_4.qmd)
+- [Exercise 9.5 (Pareto Optimality of the Flexible-Wage Equilibrium)](9_5.qmd)
+- [Exercise 9.6 (Optimality of Constant Nominal Interest Rates)](9_6.qmd)
+- [Exercise 9.7 (Optimality of Constant Nominal Interest Rates, Continued)](9_7.qmd)
+- [Exercise 9.8 (Foreign Inflation)](9_8.qmd)
+- [Exercise 9.9 (Trend Growth)](9_9.qmd)
+- [Exercise 9.10 (Exchange-Rate Policy and GDP in Terms of Tradables)](9_10.qmd)
+- [Exercise 9.11 (The CPI Index)](9_11.qmd)
+- [Exercise 9.12 (Optimal Exchange-rate Policy Under Price Or Wage Stickiness)](9_12.qmd)
+- [Exercise 9.13 (Productivity Shocks in the Nontraded Sector)](9_13.qmd)
+- [Exercise 9.14 (Optimal Policy With Initial Price Dispersion (Yun, 2005))](9_14.qmd)
+- [Exercise 9.15 (The Importance of Interest-Rate and Endowment Shocks)](9_15.qmd)
+- [Exercise 9.16 (Exchange-Rate Overshooting)](9_16.qmd)

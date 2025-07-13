@@ -1,0 +1,146 @@
+---
+title: "Exercise 9.2"
+subtitle: "Unwanted Positive Shocks"
+---
+<a class="return-button" href="index.qmd">⬅ Return</a>
+
+## Problem
+
+Show that in the example of Section 9.2.3, the fall in the interest rate can is welfare decreasing under downward nominal wage rigidity but is welfare increasing under flexible wages. How can this be
+
+## Answer
+
+The preferences are separable in $c^T_t$ and $c^N_t$. Therefore the equilibrium path of $c^T_t$ under flexible wages is the same as the one given for the DNWR economy in Section 9.2.3. There is full employment, $h_t =1$, hence $c^N_t=1$. 
+
+Let $W^f$ denote welfare in the flex wage economy. Then we have
+
+$$
+W^f = \ln c^T_0 + \frac{\beta}{1-\beta} \ln c^T_1 = \frac{1+r}{r}\ln c^T_0 + \frac1r \ln \frac{1+\underline{r}}{1+r}
+$$
+
+where we used $c^T_1 = \beta (1+\underline{r}) c^T_0$
+
+$$
+\begin{eqnarray*}
+\frac{\partial W^f}{\partial(1+\underline{r})} &=& \frac{1+r}{r} \frac{1}{c^T_0} \frac{\partial c^T_0}{\partial(1+\underline{r})}
++ \frac1r \frac1{1+\underline{r}} 
+\\
+&=&
+- \frac{1+r}{r} \frac1{(1+\underline{r})^2} \frac{1}{\frac{1}{1+\underline{r} } + \frac{r}{1+r}}
++ \frac1r \frac1{1+\underline{r}}  
+\\
+&=&
+ \frac1r \, \frac1{1+\underline{r}}  
+- \frac1r \,  \frac{1+r}{1+\underline{r}}  \frac{1}{1  + \frac{r (1+\underline{r})}{(1+r)}}
+\\
+&=&
+ \frac1r \, \frac1{1+\underline{r}} 
+\left[  
+1
+-   \frac{1+r}{1  + \frac{r (1+\underline{r})}{(1+r)}}
+\right]
+\\
+\end{eqnarray*}
+$$
+
+where the penultimate equality uses the fact that 
+
+$$
+\frac{\partial c^T_0}{\partial(1+\underline{r})} = - y^T \frac1{(1+\underline{r})^2}
+$$
+
+If we evaluate this derivative at some $\underline{r}<r$
+then we have: 
+
+$$
+\frac{\partial W^f}{\partial(1+\underline{r})} <0
+$$
+
+We have therefore shown that a further fall in the interest rate is welfare increasing in the flex wage economy. 
+
+By the way, note that 
+
+$$
+\left.
+\frac{\partial W^f}{\partial(1+\underline{r})}\right|_{\underline{r} = r} =0
+;\quad \mbox{ and that  }
+\left.
+\frac{\partial W^f}{\partial(1+\underline{r})}\right|_{\underline{r} >r} >0
+$$
+
+so that at $\underline{r}=r$ the derivative is zero and at $\underline{r}<r$ the derivative is negative, implying that a further decline is welfare increasing. At the same time if $\underline{r}>r$, then the partial derivative is positive and a further increase in $\underline{r}$ is also welfare increasing. For the purpose of this exercise, we are interested in the partial derivative of welfare for the case that $\underline{r}<r$. 
+
+What about the DNWR economy? Note that
+
+$$
+W^{dnwr} = W^f + \frac{\beta}{1-\beta} \ln \left(
+\frac{1+\underline{r}}
+{1+r}
+\right)^{\alpha}
+$$
+
+It follows that 
+
+$$
+\begin{eqnarray*}
+\frac{\partial W^{dnwr}}{\partial(1+\underline{r})} 
+&=& 
+\frac{\partial W^{f}}{\partial(1+\underline{r})} 
++ \alpha \frac{\beta}{1-\beta} \frac{1}{1+\underline{r}}
+\\
+&=&
+\frac1r \, \frac1{1+\underline{r}}  - \frac1r \,  
+\frac{1+r}{1+\underline{r}}  
+\frac{1}{1  + 
+\frac{r (1+\underline{r})}{(1+r)}}
++ \alpha \frac{1}{r} \frac{1}{1+\underline{r}}
+\\
+&=&
+\frac1r \, \frac1{1+\underline{r}} 
+\left[
+(1 + \alpha)  - 
+\frac{(1+r)}{1  + 
+\frac{r (1+\underline{r})}{(1+r)}}
+\right]
+\end{eqnarray*}
+$$
+
+If $\underline{r}=r$, then 
+
+$$
+\left. 
+\frac{\partial W^{dnwr}}{\partial(1+\underline{r})} \right\vert_{\underline{r}=r}
+>0
+$$
+
+It follows that a  temporary decline in the interest rate is welfare decreasing. [Recall that under optimal policy the partial derivative was zero. so that a temporary interest rate decline was NOT welfare decreasing.]
+
+If $\underline{r}<r$, then  
+
+$$
+\left. 
+\frac{\partial W^{dnwr}}{\partial(1+\underline{r})} \right\vert_{\underline{r}<r}
+= 
+\frac1r \, \frac1{1+\underline{r}} 
+\left[
+(1 + \alpha)  - 
+\frac{(1+r)}{1  + 
+\frac{r (1+\underline{r})}{(1+r)}}
+\right]
+$$
+
+which is positive as long as 
+
+$$
+\alpha > r  \frac{1-\frac{(1+\underline{r})}{(1+r)}}{1+ r \frac{(1+\underline{r})}{1+r}}
+$$
+
+A sufficient condition therefore is that 
+
+$$
+\alpha >r
+$$
+
+which should be true for the labor share is larger than the rate of interest. 
+Thus we have shown that it <u>can</u> be the case that the fall in interest rates is welfare decreasing in the DNWR economy.
+As we will see in chapter 10, this result is the reason why capital control taxes can be welfare increasing in this economy. The interest rate decline stimulates current absorption. This drives up wages in period 0. When the rates go back up, domestic absorption falls. For full employment we need lower real wages then. But with a peg and DNWR real wages cannot come back down, so we get unemployment instead. A social planner might be willing to impose a capital control tax  that households do not take advantage of the temporarily lower rates and do not borrow that much more. and this would make agents better off because it would prevent wages from rising that high. 

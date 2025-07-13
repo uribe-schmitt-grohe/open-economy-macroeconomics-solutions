@@ -1,0 +1,13 @@
+---
+title: "Exercise 9.9"
+subtitle: "Trend Growth"
+---
+<a class="return-button" href="index.qmd">⬅ Return</a>
+
+## Problem
+
+Continue to assume, as in exercise 9.8, that the foreign price of tradables grows at the rate $\pi^*$. In addition, assume that the production of nontradables is given by $Y^N_t = X_t F(h_t)$ and that the endowment of tradables is given by $Y^T_t=X_t y^T_t$, where $X_t$ is a deterministic trend that grows at the gross rate $g$, that is, $X_{t+1}/X_t=g$. Again, show how equilibrium conditions (9.9)-(9.19) are modified by the imposition of this assumption. Hint: As in the model of Chapter 5, you will have to transform some variables appropriately to make them stationary. The equilibrium conditions should include only stationary variables. 
+
+## Answer
+
+_No solution has been posted yet. If you have a solution, we invite you to share it in the comment box at the bottom of this page._

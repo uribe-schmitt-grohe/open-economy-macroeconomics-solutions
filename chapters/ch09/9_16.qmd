@@ -1,0 +1,28 @@
+---
+title: "Exercise 9.16"
+subtitle: "Exchange-Rate Overshooting"
+---
+<a class="return-button" href="index.qmd">⬅ Return</a>
+
+## Problem
+
+Dornbusch's (1976) celebrated exchange-rate overshooting result states that an unanticipated monetary expansion causes a larger depreciation of the nominal exchange rate in the short run than in the long run. The present exercise aims to ascertain whether the neo-Keynesian model of Section 9.16 captures this effect. To this end, 
+assume that monetary policy is neither a currency peg nor the optimal exchange-rate policy (the two polar cases analyzed in Section~ 9.16) but instead takes the form of the following Taylor-type interest-rate feedback rule:
+
+$$
+\hat{i}_t = 1.5 \hat{\pi}_t + 0.125 \hat{y}_t + \eta_t,
+$$
+
+where $i_t$ denotes the gross domestic nominal interest rate, $\pi_t$ denotes the gross consumer price inflation rate, and $y_t$, denotes real output. As before, a hat over a variable denotes log-deviation from the deterministic steady state. The variable $\eta_t$  denotes an exogenous monetary-policy shock and is assumed to be i.i.d.\ with mean zero and standard deviation $\sigma_{\eta}$. Note that the variables $i_t$, $\pi_t$, and $y_t$ were not defined in the model of Section 9.16, so you have 
+to properly define these variables and derive additional equilibrium conditions linking them to the variables of the original model. For example, for $i_t$ assume that households have access to a nominally risk-free one-period bond and derive the household's first-order condition associated with holdings of this bond. Use a log-linearized version of the model calibrated as in Section 9.16. Plot the impulse response of the devaluation rate, $\epsilon_t$, to a 1 percentage-point decline in $\eta_t$. We would say that the model captures the overshooting effect if $\hat{\epsilon}_t$ initially jumps up  and later falls below zero and converges to its steady-state value from below. Provide intuition.
+
+## Answer
+
+The solution to this problem produced with:
+
+<!-- calvo_dornbusch.m in the directory  -->
+<!-- Z:\uribe\book\dnwr\calvo\Exercise_Dornbusch -->
+
+Intuition: Covered interest rate parity hold. Domestic interest rate falls, but foreign rate is unchanged. For Covered interest rate parity to hold it must be that the domestic currency is expected to appreciate. 
+
+The expansionary monetary policy shock leads to a more depreciated exchange rate in the long run. (Why?) Thus the impact effect which is followed by appreciation, must be a larger depreciation than the long run effect. 
