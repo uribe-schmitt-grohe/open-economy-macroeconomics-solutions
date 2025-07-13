@@ -1,0 +1,82 @@
+---
+title: "Exercise 10.1"
+subtitle: "Sudden Stops"
+---
+<a class="return-button" href="index.qmd">⬅ Return</a>
+
+## Problem
+
+Consider an open economy that lasts for only two periods, denoted 1 and 2. Households are endowed with 10 units of tradables in period 1 and 13.2 units in period 2 ($y^T_1=10$ and $y^T_2=13.2$). The country interest rate is 10 percent, or $r=0.1$, the nominal exchange rate, defined as the price of foreign currency in terms of domestic currency, is fixed and equal to 1 in both periods ($\mathcal{E}_1=\mathcal{E}_2=1$). Suppose that the foreign-currency price of tradable goods is constant and equal to one in both periods, and that the law of one price holds for tradable goods in both periods. Nominal wages are downwardly rigid. Specifically, assume that the nominal wage, measured in terms of domestic currency, is subject to the constraint
+
+$$
+W_t \ge W_{t-1}
+$$
+
+for $t=1,2$, with  $W_{0} = 8.25$. Suppose the economy starts period 1 with no assets or debts carried over from the past ($d_1=0$). Households are subject to the no-Ponzi-game constraint $d_3\le 0$. 
+
+Suppose that the household's preferences are defined over consumption of tradable and nontradable goods in periods 1 and 2, and are described by the following utility function,
+
+$$
+\ln C^T_1 + \ln C^N_1 + \ln C^T_2 + \ln C^N_2,
+$$
+
+where $C^T_i$ and $C^N_i$ denote, respectively, consumption of tradables and nontradables in period $i=1,2$. Let $p_1$ and $p_2$ denote the relative prices of nontradables in terms of tradables in periods 1 and 2, respectively. Households supply inelastically  $\bar{h}=1$ units of labor to the market each period. Finally, firms produce nontradable goods using labor as the sole input. The production technology is given by
+
+$$
+y^N_t = h_t^{\alpha}
+$$
+
+for $t=1,2$ where $y^N_t$ and $h_t$ denote, respectively, nontradable output and hours employed in period $t=1,2$. The parameter $\alpha$ is equal to 0.75. 
+
+1. Compute the equilibrium levels of consumption of tradables and the trade balance in periods 1 and 2.
+
+2. Compute the equilibrium levels of employment, nontradable output, and the relative price of nontradables in periods 1 and 2. 
+
+3. Suppose now that the country interest rate increases to 32 percent. Calculate the equilibrium levels of consumption of tradables, the trade balance, consumption of nontradables, the level of unemployment, and the relative price of nontradables in periods 1 and 2. Provide intuition. 
+
+4. Given the situation in the previous question, calculate the minimum devaluation rates in periods 1 and 2 consistent with full employment in both periods. To answer this question, assume that the nominal exchange rate in period 0 was also fixed at unity. Explain. 
+
+5. Continue to assume that $W_0=8.25$ and that the interest rate is 32 percent. Assume also that the government is not willing to devalue the domestic currency, so that $\mathcal{E}_1=\mathcal{E}_2=1$. Instead, the government chooses to apply capital controls in period 1. Specifically, let $d_2/(1+r_1)$ denote the amount of funds borrowed in period 1, which generate the obligation to pay $d_2$ in period 2. Suppose that in period 1 the government imposes a proportional tax/subsidy $\tau_1$ on borrowed funds, so that the amount received by the household is $(1-\tau_1)d_2/(1+r_1)$. Suppose that this tax/subsidy is rebated/financed in a lump-sum fashion. Calculate the Ramsey optimal level of $\tau_1$. 
+
+
+## Answer
+
+<!-- Matlab file \verb7 z:\uribe\book\capital_controls\exercise_10_1.m 7 -->
+
+#### 1.
+
+by law of one price, $P^T_t =1$. 
+
+$$
+c^T_1 = \frac12\left(y^T_1 + \frac{y^T_2}{1+r}\right) = 11
+$$
+
+$$
+c^T_2 = (1+r) c^T_1 = 12.1
+$$
+
+$$
+tb_1 = y^T_1 - c^T_1 = -1
+$$
+
+$$
+tb_2 = y^T_2 -c^T_2 = 1.1
+$$
+
+#### 2.
+
+$h_t = \bar{h}$, $c^N_t = y^N_t = h_t^{\alpha} = 1$, $w_1 = W_0 = 8.25$; $p_1 = c^N_1/c^T_1 = 11$; $p_2 = 12.1$; $w_2 = 9.075$
+
+#### 3.
+
+$r=0.32$. $c^T_1=10$; $c^T_2 = 13.2$; $tb_1 = 0$; $tb_2 = 0$; $w_1= 8.25$, $w_2= 9.9$; $h_1 = 0.93$; $h_2 = 1$; $p_1 = 10.74$; $p_2 = 13.2$
+
+Intuition: r higher so $c^T_1$ falls, demand for N falls, but price cannot fall because of DNWR. Involuntary unemployment of seven percent emerges. 
+
+#### 4.
+
+$\omega(c^T_1) = (\alpha c^T_1)^{-1} = 7.5$; so need to devalue by 10 percent: $\mathcal{E}_1/\mathcal{E}_0 = W_0/\omega(c^T_1) = 1.1$. Intuition: To bring the real wage in period 1 down to the full employment rate, there has to be devaluation. 
+
+#### 5.
+
+Without capital controls unemployment in period 1. So want to have a subsidy to make $c^T_1$ bigger. Conjecture that in period 1 binding and in period 2 slack. Get $\tau = -2/9$. and utility goes to 4.87 from 4.81. 

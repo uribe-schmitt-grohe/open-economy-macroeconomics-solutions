@@ -1,0 +1,13 @@
+---
+title: "Exercise 10.2"
+subtitle: "Labor Subsidies"
+---
+<a class="return-button" href="index.qmd">⬅ Return</a>
+
+## Problem
+
+Modify the model of Section 10.1.1 by assuming that households have preferences of the type given in equation (9.34) of Chapter 9. Show that a labor subsidy at the firm level   financed by a proportional income tax at the household level(i.e., the fiscal scheme studied in Section 10.1.1) can support the Pareto optimal allocation. 
+
+## Answer
+
+_No solution has been posted yet. If you have a solution, we invite you to share it in the comment box at the bottom of this page._

@@ -1,0 +1,13 @@
+---
+title: "Exercise 10.4"
+subtitle: "Equivalence Between Capital Controls and Consumption Taxes"
+---
+<a class="return-button" href="index.qmd">⬅ Return</a>
+
+## Problem
+
+Show that the allocation under Ramsey optimal capital controls characterized in Section 10.3 can be replicated with a Ramsey optimal consumption tax scheme in which the tax rate on next period's consumption is determined in the current period.
+
+## Answer
+
+The allocation induced by the Ramsey optimal capital control policy can also be supported through consumption taxes. Specifically, assume that instead of taxing external debt, the government taxes total consumption expenditures, $c^T_t+p_tc^N_t$ at the rate $\tau^c_{t-1}$, so that the after-tax cost of consumption in period $t$ is $(c^T_t+p_tc^N_t)(1+\tau^c_{t-1})$. The consumption tax rate is determined one period in advance. That is, in period $t$ the government announces the tax rate on consumption expenditures in period $t+1$. One can show that the Ramsey allocation can be supported by a consumption-tax-rate process of the form $1+\tau^c_t = (1-\tau^d_t)(1+\tau^c_{t-1})$, for any initial condition $\tau^c_{-1}>-1$, where $\tau^d_t$ represents the Ramsey optimal tax rate on external debt given in equation (10.25).

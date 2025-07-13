@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Open Economy Macroeconomics Solutions",
     "section": "",
-    "text": "This repository contains sketches of solutions to many (but not all) of the exercises in Open Economy Macroeconomics by Martín Uribe and Stephanie Schmitt-Grohé (Princeton University Press link). Please help us to improve the repository. If you have solutions or corrections or alternative approaches to solutions, please post them in the corresponding discussion thread in the Discussions tab.\n\n\n\nOpen Economy Macroeconomics cover\n\n\n\n\n\n\nChapter 2 – An Open Endowment Economy\nChapter 3 – An Open Economy with Capital\nChapter 4 – The Open Economy Real-Business-Cycle Model\nChapter 5 – Business Cycles in Emerging Countries: Productivity Shocks versus Financial Fricitions\nChapter 6 – Interest-Rate Shocks\nChapter 7 – Importable Goods, Exportable Goods, and the Terms of Trade\nChapter 8 – Notradable Goods and the Real Exchange Rate\nChapter 9 – Nominal Rigidity, Exchange Rates, and Unemployment\n\n\n\n\n\nEach solution page includes a comment section powered by Giscus. You are welcome to leave feedback or ask questions directly below each exercise. You can type plain text or simple math using LaTeX syntax (e.g., $y = c + i + g$). If you’d like to share screenshots or files, please upload them to a service like Google Drive or Dropbox and include a link in your comment.\nTo view all ongoing conversations, corrections, or contributions across chapters, visit the Discussions tab in the top navigation bar: Discussions. You can browse, reply to, or start new threads there."
+    "text": "This repository contains sketches of solutions to many (but not all) of the exercises in Open Economy Macroeconomics by Martín Uribe and Stephanie Schmitt-Grohé (Princeton University Press link). Please help us to improve the repository. If you have solutions or corrections or alternative approaches to solutions, please post them in the corresponding discussion thread in the Discussions tab.\n\n\n\nOpen Economy Macroeconomics cover\n\n\n\n\n\n\nChapter 2 – An Open Endowment Economy\nChapter 3 – An Open Economy with Capital\nChapter 4 – The Open Economy Real-Business-Cycle Model\nChapter 5 – Business Cycles in Emerging Countries: Productivity Shocks versus Financial Fricitions\nChapter 6 – Interest-Rate Shocks\nChapter 7 – Importable Goods, Exportable Goods, and the Terms of Trade\nChapter 8 – Notradable Goods and the Real Exchange Rate\nChapter 9 – Nominal Rigidity, Exchange Rates, and Unemployment\nChapter 10 – Exchange-Rate Policy and Capital Controls\n\n\n\n\n\nEach solution page includes a comment section powered by Giscus. You are welcome to leave feedback or ask questions directly below each exercise. You can type plain text or simple math using LaTeX syntax (e.g., $y = c + i + g$). If you’d like to share screenshots or files, please upload them to a service like Google Drive or Dropbox and include a link in your comment.\nTo view all ongoing conversations, corrections, or contributions across chapters, visit the Discussions tab in the top navigation bar: Discussions. You can browse, reply to, or start new threads there."
   },
   {
     "objectID": "index.html#chapters",
@@ -872,7 +872,7 @@
     "href": "index.html#solutions-by-chapters",
     "title": "Open Economy Macroeconomics Solutions",
     "section": "",
-    "text": "Chapter 2 – An Open Endowment Economy\nChapter 3 – An Open Economy with Capital\nChapter 4 – The Open Economy Real-Business-Cycle Model\nChapter 5 – Business Cycles in Emerging Countries: Productivity Shocks versus Financial Fricitions\nChapter 6 – Interest-Rate Shocks\nChapter 7 – Importable Goods, Exportable Goods, and the Terms of Trade\nChapter 8 – Notradable Goods and the Real Exchange Rate\nChapter 9 – Nominal Rigidity, Exchange Rates, and Unemployment"
+    "text": "Chapter 2 – An Open Endowment Economy\nChapter 3 – An Open Economy with Capital\nChapter 4 – The Open Economy Real-Business-Cycle Model\nChapter 5 – Business Cycles in Emerging Countries: Productivity Shocks versus Financial Fricitions\nChapter 6 – Interest-Rate Shocks\nChapter 7 – Importable Goods, Exportable Goods, and the Terms of Trade\nChapter 8 – Notradable Goods and the Real Exchange Rate\nChapter 9 – Nominal Rigidity, Exchange Rates, and Unemployment\nChapter 10 – Exchange-Rate Policy and Capital Controls"
   },
   {
     "objectID": "chapters/ch05/5_1.html",
@@ -1725,6 +1725,118 @@
     "objectID": "chapters/ch09/9_9.html#answer",
     "href": "chapters/ch09/9_9.html#answer",
     "title": "Exercise 9.9",
+    "section": "Answer",
+    "text": "Answer\nNo solution has been posted yet. If you have a solution, we invite you to share it in the comment box at the bottom of this page."
+  },
+  {
+    "objectID": "chapters/ch10/10_1.html",
+    "href": "chapters/ch10/10_1.html",
+    "title": "Exercise 10.1",
+    "section": "",
+    "text": "⬅ Return"
+  },
+  {
+    "objectID": "chapters/ch10/10_1.html#problem",
+    "href": "chapters/ch10/10_1.html#problem",
+    "title": "Exercise 10.1",
+    "section": "Problem",
+    "text": "Problem\nConsider an open economy that lasts for only two periods, denoted 1 and 2. Households are endowed with 10 units of tradables in period 1 and 13.2 units in period 2 (\\(y^T_1=10\\) and \\(y^T_2=13.2\\)). The country interest rate is 10 percent, or \\(r=0.1\\), the nominal exchange rate, defined as the price of foreign currency in terms of domestic currency, is fixed and equal to 1 in both periods (\\(\\mathcal{E}_1=\\mathcal{E}_2=1\\)). Suppose that the foreign-currency price of tradable goods is constant and equal to one in both periods, and that the law of one price holds for tradable goods in both periods. Nominal wages are downwardly rigid. Specifically, assume that the nominal wage, measured in terms of domestic currency, is subject to the constraint\n\\[\nW_t \\ge W_{t-1}\n\\]\nfor \\(t=1,2\\), with \\(W_{0} = 8.25\\). Suppose the economy starts period 1 with no assets or debts carried over from the past (\\(d_1=0\\)). Households are subject to the no-Ponzi-game constraint \\(d_3\\le 0\\).\nSuppose that the household’s preferences are defined over consumption of tradable and nontradable goods in periods 1 and 2, and are described by the following utility function,\n\\[\n\\ln C^T_1 + \\ln C^N_1 + \\ln C^T_2 + \\ln C^N_2,\n\\]\nwhere \\(C^T_i\\) and \\(C^N_i\\) denote, respectively, consumption of tradables and nontradables in period \\(i=1,2\\). Let \\(p_1\\) and \\(p_2\\) denote the relative prices of nontradables in terms of tradables in periods 1 and 2, respectively. Households supply inelastically \\(\\bar{h}=1\\) units of labor to the market each period. Finally, firms produce nontradable goods using labor as the sole input. The production technology is given by\n\\[\ny^N_t = h_t^{\\alpha}\n\\]\nfor \\(t=1,2\\) where \\(y^N_t\\) and \\(h_t\\) denote, respectively, nontradable output and hours employed in period \\(t=1,2\\). The parameter \\(\\alpha\\) is equal to 0.75.\n\nCompute the equilibrium levels of consumption of tradables and the trade balance in periods 1 and 2.\nCompute the equilibrium levels of employment, nontradable output, and the relative price of nontradables in periods 1 and 2.\nSuppose now that the country interest rate increases to 32 percent. Calculate the equilibrium levels of consumption of tradables, the trade balance, consumption of nontradables, the level of unemployment, and the relative price of nontradables in periods 1 and 2. Provide intuition.\nGiven the situation in the previous question, calculate the minimum devaluation rates in periods 1 and 2 consistent with full employment in both periods. To answer this question, assume that the nominal exchange rate in period 0 was also fixed at unity. Explain.\nContinue to assume that \\(W_0=8.25\\) and that the interest rate is 32 percent. Assume also that the government is not willing to devalue the domestic currency, so that \\(\\mathcal{E}_1=\\mathcal{E}_2=1\\). Instead, the government chooses to apply capital controls in period 1. Specifically, let \\(d_2/(1+r_1)\\) denote the amount of funds borrowed in period 1, which generate the obligation to pay \\(d_2\\) in period 2. Suppose that in period 1 the government imposes a proportional tax/subsidy \\(\\tau_1\\) on borrowed funds, so that the amount received by the household is \\((1-\\tau_1)d_2/(1+r_1)\\). Suppose that this tax/subsidy is rebated/financed in a lump-sum fashion. Calculate the Ramsey optimal level of \\(\\tau_1\\)."
+  },
+  {
+    "objectID": "chapters/ch10/10_1.html#answer",
+    "href": "chapters/ch10/10_1.html#answer",
+    "title": "Exercise 10.1",
+    "section": "Answer",
+    "text": "Answer\n\n\n1.\nby law of one price, \\(P^T_t =1\\).\n\\[\nc^T_1 = \\frac12\\left(y^T_1 + \\frac{y^T_2}{1+r}\\right) = 11\n\\]\n\\[\nc^T_2 = (1+r) c^T_1 = 12.1\n\\]\n\\[\ntb_1 = y^T_1 - c^T_1 = -1\n\\]\n\\[\ntb_2 = y^T_2 -c^T_2 = 1.1\n\\]\n\n\n2.\n\\(h_t = \\bar{h}\\), \\(c^N_t = y^N_t = h_t^{\\alpha} = 1\\), \\(w_1 = W_0 = 8.25\\); \\(p_1 = c^N_1/c^T_1 = 11\\); \\(p_2 = 12.1\\); \\(w_2 = 9.075\\)\n\n\n3.\n\\(r=0.32\\). \\(c^T_1=10\\); \\(c^T_2 = 13.2\\); \\(tb_1 = 0\\); \\(tb_2 = 0\\); \\(w_1= 8.25\\), \\(w_2= 9.9\\); \\(h_1 = 0.93\\); \\(h_2 = 1\\); \\(p_1 = 10.74\\); \\(p_2 = 13.2\\)\nIntuition: r higher so \\(c^T_1\\) falls, demand for N falls, but price cannot fall because of DNWR. Involuntary unemployment of seven percent emerges.\n\n\n4.\n\\(\\omega(c^T_1) = (\\alpha c^T_1)^{-1} = 7.5\\); so need to devalue by 10 percent: \\(\\mathcal{E}_1/\\mathcal{E}_0 = W_0/\\omega(c^T_1) = 1.1\\). Intuition: To bring the real wage in period 1 down to the full employment rate, there has to be devaluation.\n\n\n5.\nWithout capital controls unemployment in period 1. So want to have a subsidy to make \\(c^T_1\\) bigger. Conjecture that in period 1 binding and in period 2 slack. Get \\(\\tau = -2/9\\). and utility goes to 4.87 from 4.81."
+  },
+  {
+    "objectID": "chapters/ch10/index.html",
+    "href": "chapters/ch10/index.html",
+    "title": "Chapter 10 – Exchange-Rate Policy and Capital Controls",
+    "section": "",
+    "text": "Exercise 10.1 (Sudden Stops)\nExercise 10.2 (Labor Subsidies)\nExercise 10.3 (Optimal Lump-Sum Transfers and Hand-to-Mouth Consumers)\nExercise 10.4 (Equivalence Between Capital Controls and Consumption Taxes)\nExercise 10.5 (Interest-Rate Shocks, Capital Controls, And Unemployment)"
+  },
+  {
+    "objectID": "chapters/ch10/10_2.html",
+    "href": "chapters/ch10/10_2.html",
+    "title": "Exercise 10.2",
+    "section": "",
+    "text": "⬅ Return"
+  },
+  {
+    "objectID": "chapters/ch10/10_2.html#problem",
+    "href": "chapters/ch10/10_2.html#problem",
+    "title": "Exercise 10.2",
+    "section": "Problem",
+    "text": "Problem\nModify the model of Section 10.1.1 by assuming that households have preferences of the type given in equation (9.34) of Chapter 9. Show that a labor subsidy at the firm level financed by a proportional income tax at the household level(i.e., the fiscal scheme studied in Section 10.1.1) can support the Pareto optimal allocation."
+  },
+  {
+    "objectID": "chapters/ch10/10_2.html#answer",
+    "href": "chapters/ch10/10_2.html#answer",
+    "title": "Exercise 10.2",
+    "section": "Answer",
+    "text": "Answer\nNo solution has been posted yet. If you have a solution, we invite you to share it in the comment box at the bottom of this page."
+  },
+  {
+    "objectID": "chapters/ch10/10_3.html",
+    "href": "chapters/ch10/10_3.html",
+    "title": "Exercise 10.3",
+    "section": "",
+    "text": "⬅ Return"
+  },
+  {
+    "objectID": "chapters/ch10/10_3.html#problem",
+    "href": "chapters/ch10/10_3.html#problem",
+    "title": "Exercise 10.3",
+    "section": "Problem",
+    "text": "Problem\nConsider an economy in which the government can participate in the international financial market but households cannot. Assume further that the only fiscal policy instrument available to the government are lump-sum taxes or transfers. The exchange-rate regime is a currency peg. The government sets the level of external debt and lump-sum taxes or transfers in a Ramsey optimal fashion. All other aspects of the model are as in Section 9.1. Show that the equilibrium real allocation is identical to the one obtained in Section 10.3 under Ramsey optimal capital control policy."
+  },
+  {
+    "objectID": "chapters/ch10/10_3.html#answer",
+    "href": "chapters/ch10/10_3.html#answer",
+    "title": "Exercise 10.3",
+    "section": "Answer",
+    "text": "Answer\nNo solution has been posted yet. If you have a solution, we invite you to share it in the comment box at the bottom of this page."
+  },
+  {
+    "objectID": "chapters/ch10/10_4.html",
+    "href": "chapters/ch10/10_4.html",
+    "title": "Exercise 10.4",
+    "section": "",
+    "text": "⬅ Return"
+  },
+  {
+    "objectID": "chapters/ch10/10_4.html#problem",
+    "href": "chapters/ch10/10_4.html#problem",
+    "title": "Exercise 10.4",
+    "section": "Problem",
+    "text": "Problem\nShow that the allocation under Ramsey optimal capital controls characterized in Section 10.3 can be replicated with a Ramsey optimal consumption tax scheme in which the tax rate on next period’s consumption is determined in the current period."
+  },
+  {
+    "objectID": "chapters/ch10/10_4.html#answer",
+    "href": "chapters/ch10/10_4.html#answer",
+    "title": "Exercise 10.4",
+    "section": "Answer",
+    "text": "Answer\nThe allocation induced by the Ramsey optimal capital control policy can also be supported through consumption taxes. Specifically, assume that instead of taxing external debt, the government taxes total consumption expenditures, \\(c^T_t+p_tc^N_t\\) at the rate \\(\\tau^c_{t-1}\\), so that the after-tax cost of consumption in period \\(t\\) is \\((c^T_t+p_tc^N_t)(1+\\tau^c_{t-1})\\). The consumption tax rate is determined one period in advance. That is, in period \\(t\\) the government announces the tax rate on consumption expenditures in period \\(t+1\\). One can show that the Ramsey allocation can be supported by a consumption-tax-rate process of the form \\(1+\\tau^c_t = (1-\\tau^d_t)(1+\\tau^c_{t-1})\\), for any initial condition \\(\\tau^c_{-1}&gt;-1\\), where \\(\\tau^d_t\\) represents the Ramsey optimal tax rate on external debt given in equation (10.25)."
+  },
+  {
+    "objectID": "chapters/ch10/10_5.html",
+    "href": "chapters/ch10/10_5.html",
+    "title": "Exercise 10.5",
+    "section": "",
+    "text": "⬅ Return"
+  },
+  {
+    "objectID": "chapters/ch10/10_5.html#problem",
+    "href": "chapters/ch10/10_5.html#problem",
+    "title": "Exercise 10.5",
+    "section": "Problem",
+    "text": "Problem\nConsider the analytical example of Section 10.4. In that example, in response to a temporary decline in the interest rate from \\(r\\) to \\(\\underline{r}\\), the Ramsey optimal capital control policy induces a constant path for tradable consumption and ensures full employment at all times. The Ramsey planner achieves this allocation by imposing capital controls in period 0 to make the effective interest rate perceived by domestic households, \\((1+\\underline{r})/(1-\\tau^d_0)\\), insensitive to the change in the world interest rate. These results hinge on the assumption \\(\\alpha&gt;r\\). Redo the analysis of Section 10.4 assuming that \\(\\alpha&lt;r\\). Provide intuition."
+  },
+  {
+    "objectID": "chapters/ch10/10_5.html#answer",
+    "href": "chapters/ch10/10_5.html#answer",
+    "title": "Exercise 10.5",
     "section": "Answer",
     "text": "Answer\nNo solution has been posted yet. If you have a solution, we invite you to share it in the comment box at the bottom of this page."
   }

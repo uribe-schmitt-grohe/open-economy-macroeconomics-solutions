@@ -1,0 +1,13 @@
+---
+title: "Exercise 10.3"
+subtitle: "Optimal Lump-Sum Transfers and Hand-to-Mouth Consumers"
+---
+<a class="return-button" href="index.qmd">⬅ Return</a>
+
+## Problem
+
+Consider an economy in which the government can participate in the international financial market but households cannot. Assume further that the only fiscal policy instrument available to the government are lump-sum taxes or transfers. The exchange-rate regime is a currency peg. The government sets the level of external debt and lump-sum taxes or transfers in a Ramsey optimal fashion. All other aspects of the model are as in Section 9.1. Show that the equilibrium real allocation is identical to the one obtained in Section 10.3 under Ramsey optimal capital control policy. 
+
+## Answer
+
+_No solution has been posted yet. If you have a solution, we invite you to share it in the comment box at the bottom of this page._

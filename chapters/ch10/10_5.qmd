@@ -1,0 +1,13 @@
+---
+title: "Exercise 10.5"
+subtitle: "Interest-Rate Shocks, Capital Controls, And Unemployment"
+---
+<a class="return-button" href="index.qmd">⬅ Return</a>
+
+## Problem
+
+Consider the analytical example of Section 10.4. In that example, in response to a temporary decline in the interest rate from $r$ to $\underline{r}$, the Ramsey optimal capital control policy induces a constant path for tradable consumption and ensures full employment at all times. The Ramsey planner achieves this allocation by imposing capital controls in period 0 to make the effective interest rate perceived by domestic households, $(1+\underline{r})/(1-\tau^d_0)$, insensitive to the change in the world interest rate. These results hinge on the assumption $\alpha>r$. Redo the analysis of Section 10.4 assuming that $\alpha<r$. Provide intuition. 
+
+## Answer
+
+_No solution has been posted yet. If you have a solution, we invite you to share it in the comment box at the bottom of this page._

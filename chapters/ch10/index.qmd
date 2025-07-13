@@ -1,0 +1,10 @@
+---
+title: "Chapter 10 – Exchange-Rate Policy and Capital Controls"
+comments: False
+---
+
+- [Exercise 10.1 (Sudden Stops)](10_1.qmd)
+- [Exercise 10.2 (Labor Subsidies)](10_2.qmd)
+- [Exercise 10.3 (Optimal Lump-Sum Transfers and Hand-to-Mouth Consumers)](10_3.qmd)
+- [Exercise 10.4 (Equivalence Between Capital Controls and Consumption Taxes)](10_4.qmd)
+- [Exercise 10.5 (Interest-Rate Shocks, Capital Controls, And Unemployment)](10_5.qmd)
