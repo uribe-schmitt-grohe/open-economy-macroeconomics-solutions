@@ -1,0 +1,255 @@
+---
+title: "Exercise 8.6"
+subtitle: "Dutch Disease and De-Industrialization"
+---
+<a class="return-button" href="index.qmd">⬅ Return</a>
+
+## Problem
+
+Consider a small open economy populated by a large number of identical households with preferences given by the utility function
+
+$$
+ \,\sum_{t=0}^{\infty} \beta^t [\ln c^T_t +\ln c^N_t],
+$$
+
+where $c^T_t$ and $c^N_t$ denote consumption of tradable and nontradable goods, respectively, and $\beta\in (0,1)$ is the  subjective discount factor. Households start period 0 with debt obligations 
+equal to $d_0$ units of tradable goods (assets if $d_0<0$). In any period $t$, households can issue  debt. Specifically, the promise to pay $d_{t+1}$ units of tradable goods in period $t+1$ provides $d_{t+1}/(1+r)$ units of tradables in period $t$, with $r$ denoting a constant interest rate. Assume that the market and subjective discount factors are the same, that is, let 
+
+$$
+\beta(1+r)=1.
+$$
+
+Borrowing is limited by a no-Ponzi-game constraint of the form $\lim_{t\rightarrow\infty}d_{t+1}/(1+r)^t \le 0$. Each period, the household is endowed with one unit of labor, which it fully allocates to
+the production of tradable and nontradable goods using the technologies
+
+$$
+y^T_t = A^T h^T_t
+$$
+
+and 
+
+$$
+y^N_t = A^N h^N_t,
+$$
+
+where $y^T_t$ and $y^N_t$ denote tradable and nontradable output, $h^T_t$ and $h^N_t$ denote the fraction of time allocated to tradable and nontradable production, and $A^T$ and $A^N$ are parameters defining sectoral productivity. For the purpose of this exercise, think of the traded sector as the industrial sector and of the nontraded sector as the service sector. Let $p_t$ denote the relative price of nontradables in terms of tradables, which we will refer to as the real exchange rate. 
+
+1. Write down the household's utility maximization problem (i.e., objective function, choice variables, and budget constraints). 
+
+2. Derive the first-order optimality conditions associated with the household's optimization problem. 
+
+3. Assuming that both goods are produced in equilibrium, derive the equilibrium levels of consumption of tradable and nontradable goods, sectoral employment, and the real exchange rate. Hint: All of these equilibrium values are functions of the initial level of debt and of the structural parameters of the model.
+
+4. Characterize the effect of an increase in the initial level of debt, $d_0$, on consumption of tradables and nontradables, sectoral employment, and the real exchange rate. Provide intuition. 
+
+5. We say that the economy de-industrializes when the share of employment allocated to the tradable sector falls permanently. Show that there exists a level of initial external debt, which we will denote by $\bar{d}_0$, below which the economy becomes completely de-industrialized (i.e., $h^T_t=0$ for all $t$). Derive $\bar{d}_0$ as a function of the structural parameters of the model. The country's net debt position can be driven below $\bar{d}_0$ by a sequence of temporary shocks of any nature. When a sequence of possibly temporary shocks causes a permanent decline in the size of a large productive sector of the economy we say that the economy suffered a case of Dutch Disease. More specifically, economist refer to Dutch disease when the temporary shocks are linked to commodity prices and the sector that shrinks is the industrial or manufacturing sector. 
+
+6. Suppose now that $d_0$ is such that the economy is completely de-industrialized. Derive the equilibrium level of the real exchange rate.  Discuss intuitively how $d_0$ affects the real exchange rate under these circumstances. Make a comparison with the case in which both goods are produced in equilibrium. 
+
+## Answer
+
+#### 1.
+
+Pick $c^T_t, c^N_t, h_t^T, d_{t+1}$ to 
+
+$$
+\max \,\sum_{t=0}^{\infty} \beta^t [\ln c^T_t +\ln c^N_t]
+$$
+
+subject to
+
+$$
+c^T_t+p_t c^N_t + d_t  = y^T_t +p_ty^N_t + \frac{d_{t+1}}{1+r}
+$$
+
+$$
+y^T_t = A^T h^T_t
+$$
+
+$$
+y^N_t = A^N h^N_t
+$$
+
+$$
+h^T_t+h^N_t = 1
+$$
+
+$$
+h^T_t, h^N_t \in[0,1]
+$$
+
+and the no Ponzi game constraint, taking as given $p_t$ and the initial condition $d_0$. 
+
+#### 2.
+
+Pick $c^T_t, c^N_t, h_t^T, d_{t+1}$ to 
+
+$$
+\max \,\sum_{t=0}^{\infty} \beta^t [\ln c^T_t +\ln c^N_t]
+$$
+
+subject to
+
+$$
+c^T_t+p_t c^N_t + d_t  = A^Th^T_t +p_t(1-h^T_t) + \frac{d_{t+1}}{1+r}
+$$
+
+$$
+h^T_t \in[0,1)
+$$
+
+and the no Ponzi. Note that to ensure that $c^N_t>0$, we  require that $h^T_t<1$. 
+
+The first-order optimality conditions are: 
+
+$$
+\frac{1}{c^T_t} = \lambda_t
+$$
+
+$$
+\frac{1}{c^N_t} = \lambda_t p_t
+$$
+
+$$
+\lambda_t = \beta (1+r) \lambda_{t+1}
+$$
+
+and 
+
+$$
+\lambda_t \left(A^T -p_t A^N \right) \left\{ \begin{array}{cc}
+=0& \mbox{if } h^T_t\in(0,1)\\
+<0& \mbox{if } h^T_t=0\\
+\end{array}\right.
+$$
+
+and no Ponzi with =.
+
+An equilibrium are the 5 sequences $c^N_t$, $c^T_t$, $h^T_t$, $d_{t+1}$, and $p_t$ such that 
+
+$$
+c^N_t = A^N (1-h^T_t)
+$$
+
+$$
+p_t = \frac{c^T_t}{c^N_t}
+$$
+
+$$
+\left(A^T -p_t A^N \right)  \left\{ \begin{array}{cc}
+=0& \mbox{if } h^T_t\in(0,1)\\
+<0& \mbox{if } h^T_t=0\\
+\end{array}\right.
+$$
+
+$$
+c^T_t = c^T_0 ; \quad \forall t\ge 0
+$$
+
+and 
+
+$$
+\sum_{t=0}^{\infty} \frac{c^T_t - A^T h^T_t}{(1+r)^t} = - d_0
+$$
+
+#### 3.
+
+$$
+c^T_t = c^T_0 = \frac12\left[A^T - r/(1+r) d_0\right]
+$$
+
+$$
+h^T_t = \frac{1}{2} \left[ 1+ \frac{r}{A^T(1+r)} d_0\right]
+$$
+
+$$
+h^N_t = 1 -h^T_t 
+$$
+
+$$
+c^N_t = A^N h^N_t
+$$
+
+$$
+p_t = A^T/A^N
+$$
+
+To make sure $h^T_t >0$ we need that $-d_0<(1+r)/rA^T$. This means that the country cannot have too many assets. This makes sense because if assets are very large, then by an income effect both $c^T_t$ and $c^N_t$ should be very large. But $c^N_t$ cannot be bigger than $A^N$. Thus we need that the country is not too rich. 
+
+#### 4.
+
+When $d_0\uparrow$, then $c^T_0$  and $h^T_0$ fall, $c^N_t$ and $h^N_t$ increase, and the real exchange rate remains unchanged. Intuiton: More debt, negative income effect pushes consumption of both goods down, the labor freed up in the N sector is used to produce more tradables which in turn do not go into consumption but into servicing the higher debt. 
+
+#### 5.
+
+$$
+p_t =-r/(1+r) d_0/ A^N
+$$
+
+The more assets the country has (that is, the larger is $-d_0>0$), the more households demand of both goods. But the supply of the N good is bounded above by $A^N$, so once the country is de-industrialized an increase in $-d_0$ will drive up $p_t$, that is the real exchange rate appreciates, or the country becomes more expensive. By contrast in the case of an interior solution a decrease in debt (or an increase assets) will not affect the real exchange rate. Instead the economy will adjust by producing more N goods and fewer T goods. In that case the real exchange rate is solely a function of technology $p=A^T/A^N$. 
+(As a comment on the literature, in this case, Balassa Samuelson breaks down.)
+
+#### 6.
+
+The household's maximization problem is
+
+$$
+\max \,\sum_{t=0}^{\infty} \beta^t [\ln c^T_t +\ln c^N_t]
+$$
+
+subject to
+
+$$
+c^T_t+p_t c^N_t + d_t  = y^T_t +p_ty^N_t + \frac{d_{t+1}}{1+r}
+$$
+
+$$
+y^T_t = A^T h^T_t
+$$
+
+$$
+y^N_t = A^N h^N_t
+$$
+
+$$
+h^T_t+h^N_t = 1
+$$
+
+**Equilibrium With Production in Both Sectors**
+
+$$
+p = \frac{A^T}{A^N}
+$$
+
+$$
+c^N = A^NL^N
+$$
+
+$$
+c^T = A^T(1-L^N)-r/(1+r)d_0
+$$
+
+$$
+\frac{c^T}{c^N}=p
+$$
+
+$$
+\Rightarrow  \fbox{$
+\frac{A^T(1-L^N) - r/(1+r)d_0}{A^NL^N}=\frac{A^T}{A^N}$}
+$$
+
+$\Rightarrow$ Any temporary shock that changes the desired net asset  position, $b$, will produce a permanent reallocation of labor. 
+
+**Complete De-Industrialization**
+
+If the net asset position is large enough, then  
+
+$$
+L^N = 1
+$$
+
+$$
+p = \frac{-r/(1+r)d_0}{A^L}
+$$
+
+$\Rightarrow$ The economy exhibits complete  de-industrialization, and the real exchange rate ceases to be determined by technological factors alone.  (Note that the economy mut be a net creditor, $d_0<0$.)

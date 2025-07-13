@@ -1,0 +1,101 @@
+---
+title: "Exercise 8.5"
+subtitle: "An Economy With a Leontief Aggregator"
+---
+<a class="return-button" href="index.qmd">⬅ Return</a>
+
+## Problem
+
+Consider a small open economy inhabited by identical consumers with preferences described by the utility function
+
+$$
+\sum_{t=0}^{\infty} \beta^t[ \ln c_t - \gamma h_t],
+$$
+
+where $c_t$ denotes consumption, $h_t$ denotes hours worked, and $\beta\in (0,1)$ and $\gamma>0$ are parameters. The consumption good is a composite made of tradable and nontradable consumption goods via a Leontief aggregator. Formally,
+
+$$
+c_t = \min\{c^T_t,c^N_t\},
+$$
+
+where $c^T_t$ and $c^N_t$ denote, respectively, domestic absorption of tradables and nontradables in period $t$. To produce his nontraded consumption, each consumer operates a linear technology that uses labor as the sole input:
+
+$$
+c^N_t = A h_t,
+$$
+
+where $A>0$ is a parameter. In addition, households can borrow or lend in the international financial market at the rate $r>0$. Their sequential budget constraint is given by
+
+$$
+d_t = (1+r) d_{t-1} + c^T_t - y^T,
+$$
+
+where $d_t$ denotes the level of net external debt assumed in period $t$ and maturing in period $t+1$, and $y^T>0$ denotes a constant endowment of tradable goods. In period 0, households start with outstanding debt equal to $d_{-1}>0$. Finally, households are subject to a no-Ponzi-game constraint of the form 
+
+$$
+\lim_{t\rightarrow \infty} (1+r)^{-t}d_t \le 0.
+$$
+
+1. Characterize  the equilibrium levels  of consumption, consumption of nontradables, and hours worked. 
+
+2. Suppose that in period 0 and unexpectedly, foreign lenders decide to forgive an amount $\Delta^d>0$ of the debt.  Assuming that $\Delta^d$ is relatively small, characterize the effect of this debt forgiveness shock on consumption, consumption of nontradables, and hours worked. 
+
+3. Now suppose that $\Delta^d=0$. Instead, assume that in period 0  the nontraded sector experiences a permanent increase in productivity. Specifically the productivity factor $A$ increases by $\Delta^A>0$. Characterize the effect of this positive productivity shock on consumption, consumption of nontradables, and hours worked. 
+
+## Answer
+
+#### 1.
+
+Note first that in equilibrium $c_t=c^N_t$. To see this,  assume, on the contrary, that in some period $t\ge 0$ $c_t=c^T_t<c^N_t$. This level of nontradable consumption is welfare dominated by $c^N_t=c^T_t$ because it requires less labor to be produced and utility is strictly decreasing in effort. Therefore, the equilibrium can be characterized as the pair of sequences $\{h_t,c^T_t\}$ that solves
+
+$$
+\max \sum_{t=0}^{\infty} \beta^t [\ln A + \ln h_t - \gamma h_t]
+$$
+
+subject to 
+
+$$
+c^T_t \ge Ah_t \tag{*}
+$$
+
+$$
+d_t = (1+r) d_{t-1} +c^T_t -y^T \tag{**}
+$$
+
+$$
+\lim_{t\rightarrow \infty} (1+r)^{-t}d_t \le 0 \tag{***}
+$$
+
+Consider the less constrained problem consisting in chosing the sequence $\{h_t\}$ so as to 
+
+$$
+\max \sum_{t=0}^{\infty} \beta^t [\ln A + \ln h_t - \gamma h_t]
+$$
+
+The solution to this problem is
+
+$$
+h_t = \frac 1 {\gamma}
+$$
+
+Clearly, if this solution satisfies (*)-(***), then we have found the equilibrium. This will be the case if
+
+$$
+y^T - rd_{-1}\ge \frac A {\gamma}
+$$
+
+Thus, the equilibrium is characterized as follows:
+
+(I) If $y^T-rd_{-1}\ge A/\gamma$, then  $h_t = 1/\gamma$, $c^N_t=A/\gamma$,  $c_t=A/\gamma$,  if $y^T-rd_{-1}\ge A/\gamma$. In this case, $c^T_t \ge A/\gamma$ and is bounded by \(\*\*\) and \(\*\*\*\), but is otherwise indetermined. 
+
+(II) If $y^T-rd_{-1}<A/\gamma$, then $c^T_t=y^T-rd_{-1}$, 
+$c^N_t = y^T-rd_{-1}$, 
+$h_t = (y^T-rd_{-1})/A$, 
+
+#### 2.
+
+If $y^T-rd_{-1}>A/\gamma$ the debt forgiveness has no effect  on consumption, consumption of nontradables, or hours. Otherwise, consumption of tradables increases by $r\Delta^d$ and so does consumption of nontradables and totoal consumption. In this case, hours increase by $r\Delta^d/A$.
+
+#### 3.
+
+If $y^T-rd_{-1}>A/\gamma$, then consumption of nontradables,  and total consumption increase by $\Delta^A/\gamma$ and hours are unchanged. Otherwise, neither consumption (of any type) nor hours change. 

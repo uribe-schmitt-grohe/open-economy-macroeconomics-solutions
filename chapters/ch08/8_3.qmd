@@ -1,0 +1,50 @@
+---
+title: "Exercise 8.3"
+subtitle: "A Two-Period TNT Economy with Production"
+---
+<a class="return-button" href="index.qmd">⬅ Return</a>
+
+## Problem
+
+Consider a two-period economy populated by identical households with preferences defined by the utility function
+
+$$
+\ln c_1 + \ln c_2
+$$
+
+where $c_1$ and $c_2$ denote consumption in periods 1 and 2, respectively. Suppose that consumption is a composite of tradable and nontradable goods given by 
+
+$$
+c_t = \sqrt{c^T_tc^N_t},
+$$
+
+for $t=1,2$, where $c^T_t$ and $c^N_t$ denote consumption of tradables and nontradables in period $t$, respectively. Let $p_t$ denote the relative price of nontradables in terms of tradables. Household are endowed with 2 units of labor per period, which they supply to the market inelastically. Let $w_t$ denote the wage rate in period $t$ expressed in terms of tradables. Households are the owners of firms, from which they receive profits each period. Assume also that households start period 1 without any assets or liabilities and can borrow or lend in the international credit market at a zero interest rate.
+
+Tradable and nontradable goods are produced using labor as the sole input, via the technologies
+
+$$
+y^T_t = \sqrt{h^T_t}
+$$
+
+and 
+
+$$
+y^N_t = \sqrt{h^N_t},
+$$ 
+
+where $y^i_t$ and $h^i_t$ denote output and employment in sector $i$ in period $t$ for $i=T,N$ and $t=1,2$. Firms in both sectors behave competitively. They pay the wage $w_t$ per unit of labor and distribute  profits to households.
+
+
+1. Write down the household's utility maximization problem. 
+
+2. Derive the optimality conditions associated with the household's problem. 
+
+3. Write down the firms' profit maximization problems and derive the associated optimality conditions. 
+
+4. Write down the market clearing conditions in this economy. 
+
+5. Calculate the equilibrium values of consumption of tradables, consumption of nontradables, the wage rate, the relative price of nontradables, the trade balance, and the current account in periods 1 and 2. The answer to this question are 12 numbers, but show your work. Provide intuition for the temporal behavior of the relative price of nontradables and the current account. 
+
+## Answer
+
+_No solution has been posted yet. If you have a solution, we invite you to share it in the comment box at the bottom of this page._

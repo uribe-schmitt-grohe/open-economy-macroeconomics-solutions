@@ -1,0 +1,13 @@
+---
+title: "Exercise 8.1"
+subtitle: "Properties of the Armington Aggregator"
+---
+<a class="return-button" href="index.qmd">⬅ Return</a>
+
+## Problem
+
+Assume that  the Armington aggregator $A(x,y)$  is increasing in both arguments, homogeneous of degree one, and concave. Show that $A_2(x,y)/A_1(x,y)$ can be written as $P(x/y)$, with $P'(\cdot)>0$.
+
+## Answer
+
+_No solution has been posted yet. If you have a solution, we invite you to share it in the comment box at the bottom of this page._

@@ -1,0 +1,11 @@
+---
+title: "Chapter 8 – Notradable Goods and the Real Exchange Rate"
+comments: False
+---
+
+- [Exercise 8.1 (Properties of the Armington Aggregator)](8_1.qmd)
+- [Exercise 8.2 (Secular Trend in the Real Exchange Rate)](8_2.qmd)
+- [Exercise 8.3 (A Two-Period TNT Economy with Production)](8_3.qmd)
+- [Exercise 8.4 (The Real Exchange Rate and The Price of Nontradables in the MXN Model)](8_4.qmd)
+- [Exercise 8.5 (An Economy With a Leontief Aggregator)](8_5.qmd)
+- [Exercise 8.6 (Dutch Disease and De-Industrialization)](8_6.qmd)

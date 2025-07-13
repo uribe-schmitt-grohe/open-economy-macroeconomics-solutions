@@ -1,0 +1,14 @@
+---
+title: "Exercise 8.4"
+subtitle: "The Real Exchange Rate and The Price of Nontradables in the MXN Model"
+---
+<a class="return-button" href="index.qmd">⬅ Return</a>
+
+## Problem
+
+Show that in the MXN model there is a one-to-one negative relationship between $RER_t$ and $p^n_t$. Demonstrate that this negative relationship holds for any  positive value of the intratemporal elasticity of substitution between tradables and nontradables, $\mu_{\tau n}$.  
+
+## Answer
+
+_No solution has been posted yet. If you have a solution, we invite you to share it in the comment box at the bottom of this page._
+

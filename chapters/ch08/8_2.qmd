@@ -1,0 +1,13 @@
+---
+title: "Exercise 8.2"
+subtitle: "Secular Trend in the Real Exchange Rate"
+---
+<a class="return-button" href="index.qmd">⬅ Return</a>
+
+## Problem
+
+Modify the endowment economy of Section 8.2 by assuming that $\beta<1/(1+r)$. Characterize the equilibrium dynamics. Provide intuition for the equilibrium behavior of the real exchange rate.
+
+## Answer
+
+_No solution has been posted yet. If you have a solution, we invite you to share it in the comment box at the bottom of this page._
