@@ -1,0 +1,68 @@
+---
+title: "Exercise 11.1"
+subtitle: "Welfare Cost of Lack of Credibility"
+---
+<a class="return-button" href="index.qmd">⬅ Return</a>
+
+## Problem
+
+Consider a small open perfect-foresight economy populated by a large number of identical infinitely-lived consumers with preferences described by the utility function 
+
+$$
+\sum_{t=0}^{\infty} \beta^t\ln c_t,
+$$
+
+where $c_t$ denotes consumption, and $\beta\in(0,1)$ denotes the subjective discount factor. Consumption is a composite good made of traded and nontradable goods, denoted $c^T_t$ and $c^N_t$, respectively, via the aggregator function
+
+$$
+c_t = \sqrt{c^T_tc^N_t}.
+$$
+
+The sequential budget constraint of the representative household is given by
+
+$$
+d^h_t = (1+r) d^h_{t-1} +  (1+\tau_t)(c^T_t+ p_t c^N_t) -w_t h_t  - y^T - s_t,
+$$
+
+where $d^h_t$ denotes debt acquired in period $t$ and maturing in $t+1$, $h_t$ denotes hours worked, $\tau_t$ is a proportional consumption tax, $w_t$ denotes the real wage in terms of tradables, $p_t$ denotes the relative price of nontradables in terms of tradables, $y^T=1$ is an endowment of tradable goods, and $s_t$ denotes a lump-sum transfer received from the government. The parameter $r$ denotes the real interest rate and is assumed to satisfy $1+r=\beta^{-1}=1.04$. Debt is denominated in terms of tradables. Households are subject to the no-Ponzi-game constraint
+
+$$
+\lim_{j\rightarrow\infty}\frac{d^h_{t+j}}{(1+r)^j}\le 0.
+$$
+
+Assume that the household's initial debt position is nil ($d^h_{-1}=0$). Households supply inelastically 1 unit of labor to the market each period. Suppose that the law of one price holds for tradables, so that $P^T_t=P^{T*}_t\mathcal{E}_t$, where $P^T_t$ denotes the domestic-currency price of tradables; $\mathcal{E}_t$ denotes the nominal exchange rate, defined as the price of foreign currency in terms of domestic currency; and $P^{T*}_t$ denotes the foreign-currency price of tradables. Assume that $P^{T*}_t$ is constant and equal to unity for all $t$. Let $W_t$ and $P^N_t$ denote the nominal wage rate and the nominal price of nontradables, respectively. Then the real wage and the relative price of nontradables are defined as $w_t = W_t/P^T_t$ and $p_t = P^N_t/P^T_t$. 
+
+Firms in the nontraded sector produce goods by means of the linear technology $y^N_t=h_t$, where $y^N_t$ denotes output of nontradables. Firms are price takers in product and labor markets, and there is free entry, so that all firms make zero profits at all times.  
+
+The government starts period 0 with no debt or assets outstanding and runs a balanced budget period by period, that is, $s_t = \tau_t( c^T_t+p_tc^N_t)$. The monetary authority pegs the exchange rate at unity, so that $\mathcal{E}_t=1$ for all $t$.  
+
+Suppose that nominal wages are flexible and that before period 0 the economy was in a steady state with constant consumption of tradables and nontradables and no external debt. 
+
+1. Compute the equilibrium paths of $c^T_t$, $w_t$, $W_t$, $p_t$, the trade balance, and the current account under two alternative tax policies:
+
+    $$
+    \mbox{Policy 1: }\tau_t = 0,  \forall t
+    $$
+
+    and
+
+    $$
+    \mbox{Policy 2: } \tau_t = \left\{
+    \begin{array}{ll}
+    0&0\le t\le 11\\
+    0.3&t\ge  12
+    \end{array}.
+    \right.
+    $$
+
+2. Compute the welfare cost of policy 2 relative to policy 1, defined as the percentage increase in the consumption stream of a consumer living under policy 2 required to make him as well off as living under policy 1. Formally, the welfare cost of policy 2 relative to policy 1 is given by $\lambda\times 100$, where $\lambda$ is implicitly given by
+
+    $$
+    \sum_{t=0}^{\infty}\beta^t \ln[ c^{p2}_t(1+\lambda)] = \sum_{t=0}^{\infty} \beta^t \ln c^{p1}_t,
+    $$
+
+    where $c^{p1}_t$ and $c^{p2}_t$ denote consumption in period $t$ under policies 1 and 2, respectively. 
+
+## Answer
+
+_No solution has been posted yet. If you have a solution, we invite you to share it in the comment box at the bottom of this page._

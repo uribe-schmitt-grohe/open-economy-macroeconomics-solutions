@@ -1,0 +1,15 @@
+---
+title: "Exercise 11.4"
+subtitle: "Non Equivalence of Temporariness and Lack of Credibility"
+---
+<a class="return-button" href="index.qmd">⬅ Return</a>
+
+## Problem
+
+In the body of this chapter, we established the equivalence of temporariness and lack of credibility in the context of a model with a consumption tax (with tradable and nontradable consumption taxed at the same rate). How does this equivalence result change
+in the economy of exercise 11.3, in which $\tau_t$ is a tax on tradable consumption only?
+Specifically, establish whether policy 2 induces the same equilibrium paths of consumption and the real exchange rate as policy 1 when households incorrectly believe that the government will abandon this policy in period $T=12$ in favor of policy 2. Consider separately the cases of flexible and downwardly rigid nominal wages.  
+
+## Answer
+
+_No solution has been posted yet. If you have a solution, we invite you to share it in the comment box at the bottom of this page._

@@ -1,0 +1,15 @@
+---
+title: "Exercise 11.2"
+subtitle: "Welfare Cost of Lack of Credibility with Wage Rigidity"
+---
+<a class="return-button" href="index.qmd">⬅ Return</a>
+
+## Problem
+
+Modify the economy of exercise 11.1 by introducing downward nominal wage rigidity as in Chapter 9. Specifically, assume that $W_t\ge W_{t-1}$ for all $t\ge 0$. 
+
+Answer the questions of exercise 11.1 in this new environment. To this end, first compute $W_{-1}$ under the assumption that before period 0 the economy was in a steady state with constant consumption of tradables and nontradables, full employment, no debt, and a nominal exchange rate equal to unity. 
+
+## Answer
+
+_No solution has been posted yet. If you have a solution, we invite you to share it in the comment box at the bottom of this page._

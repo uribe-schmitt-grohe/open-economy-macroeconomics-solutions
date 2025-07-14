@@ -1,0 +1,36 @@
+---
+title: "Exercise 11.6"
+subtitle: "BOP Crisis: A Numerical Example"
+---
+<a class="return-button" href="index.qmd">⬅ Return</a>
+
+## Problem
+
+Consider the model of BOP crises of Section 11.5. Suppose $c^T=y^T$, where $y^T$ denotes output, assumed to be constant. Suppose that the initial stock of foreign reserves, $k_0$, is 10 percent of output; the lower bound on reserves, $k_L$, is 0; the fiscal deficit, $g$, is 2 percent of output; and the money demand function is given by $c^T(a-bi)$, with $a=0.2$ and $b=0.25$. Find the date of the BOP crisis, denoted $T$, and the  devaluation rate post BOP crisis, denoted $\epsilon^H$. 
+
+## Answer
+
+The post BOP crisis devaluation rate is given by
+
+$$
+\epsilon^H(0.2-0.25\epsilon^H)=0.02
+$$
+
+Solving this quadratic polynomial for the smallest root (for we want to be on the upward-sloping side of the Laffer curve) yields 
+
+$$
+\epsilon^H=11\%. 
+$$
+
+Then $T$ is given by 
+
+$$
+\begin{eqnarray*}
+T &=& \frac{(k_0-k_L)-yb\epsilon^H}{g}
+\\
+&=&
+ \frac{0.1-0.25\cdot 0.11}{0.02}
+\\
+&=&3.6 \mbox{ years}.
+\end{eqnarray*}
+$$

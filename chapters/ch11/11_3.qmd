@@ -1,0 +1,13 @@
+---
+title: "Exercise 11.3"
+subtitle: "Lack of Credibility and Tariff Reforms"
+---
+<a class="return-button" href="index.qmd">⬅ Return</a>
+
+## Problem
+
+How would your answers to exercises 11.1 and 11.2 change if $\tau_t$ was a tax only on consumption of tradables (i.e., a trade tariff)? Provide a quantitative answer and intuition. 
+
+## Answer
+
+_No solution has been posted yet. If you have a solution, we invite you to share it in the comment box at the bottom of this page._

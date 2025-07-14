@@ -1,0 +1,30 @@
+---
+title: "Exercise 11.5"
+subtitle: "A BOP Crisis with Linear Money Demand"
+---
+<a class="return-button" href="index.qmd">⬅ Return</a>
+
+## Problem
+
+Consider an economy in which the demand for money is of the form 
+
+$$
+L(\epsilon,c) =  c-\frac{\epsilon_t}2,
+$$
+
+where $\epsilon_t$ denotes the devaluation rate, and $c$ denotes a constant level of consumption. Suppose that $c$ equals 2. Time is continuous, and the analysis starts at time 0. Let $g$ denote a constant flow of government primary deficits. Suppose $g=1.5$. At time 0, the government implements a currency peg. Let $k_t$ denote the stock of 
+(non-interest-bearing) foreign reserves held by the government. At time 0, and after any portfolio recomposition that the announcement of a currency peg might have caused, 
+the level of reserves held at the central bank, $k_0$, equals 10. The government is determined to defend the peg until it runs out of reserves. At that point, it switches to a constant rate of devaluation, high enough to finance the deficit. 
+
+1. Calculate the rate of devaluation prevailing in this economy after the demise of the  currency peg. 
+
+2. Calculate the loss of reserves suffered by the government at the time of the BOP crisis. 
+
+3. Calculate the length of the currency peg, denoted $T$. 
+
+4. Assume alternatively that at time 0 everybody understands that when the government runs out of reserves it will implement a fiscal reform whereby the primary deficit is fully eliminated. When does the government run out of reserves in this case? Is there a BOP crisis at time $T$, that is, does the government lose a discrete amount of reserves at time $T$? Provide intuition. 
+
+
+## Answer
+
+_No solution has been posted yet. If you have a solution, we invite you to share it in the comment box at the bottom of this page._

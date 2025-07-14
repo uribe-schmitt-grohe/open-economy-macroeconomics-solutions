@@ -22,6 +22,7 @@ This repository contains sketches of solutions to many (but not all) of the exer
 - [Chapter 8 – Notradable Goods and the Real Exchange Rate](chapters/ch08/index.qmd)
 - [Chapter 9 – Nominal Rigidity, Exchange Rates, and Unemployment](chapters/ch09/index.qmd)
 - [Chapter 10 – Exchange-Rate Policy and Capital Controls](chapters/ch10/index.qmd)
+- [Chapter 11 – Policy Credibility and Balance-of-Payments Crises](chapters/ch11/index.qmd)
 
 ---
 

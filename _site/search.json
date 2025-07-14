@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Open Economy Macroeconomics Solutions",
     "section": "",
-    "text": "This repository contains sketches of solutions to many (but not all) of the exercises in Open Economy Macroeconomics by Martín Uribe and Stephanie Schmitt-Grohé (Princeton University Press link). Please help us to improve the repository. If you have solutions or corrections or alternative approaches to solutions, please post them in the corresponding discussion thread in the Discussions tab.\n\n\n\nOpen Economy Macroeconomics cover\n\n\n\n\n\n\nChapter 2 – An Open Endowment Economy\nChapter 3 – An Open Economy with Capital\nChapter 4 – The Open Economy Real-Business-Cycle Model\nChapter 5 – Business Cycles in Emerging Countries: Productivity Shocks versus Financial Fricitions\nChapter 6 – Interest-Rate Shocks\nChapter 7 – Importable Goods, Exportable Goods, and the Terms of Trade\nChapter 8 – Notradable Goods and the Real Exchange Rate\nChapter 9 – Nominal Rigidity, Exchange Rates, and Unemployment\nChapter 10 – Exchange-Rate Policy and Capital Controls\n\n\n\n\n\nEach solution page includes a comment section powered by Giscus. You are welcome to leave feedback or ask questions directly below each exercise. You can type plain text or simple math using LaTeX syntax (e.g., $y = c + i + g$). If you’d like to share screenshots or files, please upload them to a service like Google Drive or Dropbox and include a link in your comment.\nTo view all ongoing conversations, corrections, or contributions across chapters, visit the Discussions tab in the top navigation bar: Discussions. You can browse, reply to, or start new threads there."
+    "text": "This repository contains sketches of solutions to many (but not all) of the exercises in Open Economy Macroeconomics by Martín Uribe and Stephanie Schmitt-Grohé (Princeton University Press link). Please help us to improve the repository. If you have solutions or corrections or alternative approaches to solutions, please post them in the corresponding discussion thread in the Discussions tab.\n\n\n\nOpen Economy Macroeconomics cover\n\n\n\n\n\n\nChapter 2 – An Open Endowment Economy\nChapter 3 – An Open Economy with Capital\nChapter 4 – The Open Economy Real-Business-Cycle Model\nChapter 5 – Business Cycles in Emerging Countries: Productivity Shocks versus Financial Fricitions\nChapter 6 – Interest-Rate Shocks\nChapter 7 – Importable Goods, Exportable Goods, and the Terms of Trade\nChapter 8 – Notradable Goods and the Real Exchange Rate\nChapter 9 – Nominal Rigidity, Exchange Rates, and Unemployment\nChapter 10 – Exchange-Rate Policy and Capital Controls\nChapter 11 – Policy Credibility and Balance-of-Payments Crises\n\n\n\n\n\nEach solution page includes a comment section powered by Giscus. You are welcome to leave feedback or ask questions directly below each exercise. You can type plain text or simple math using LaTeX syntax (e.g., $y = c + i + g$). If you’d like to share screenshots or files, please upload them to a service like Google Drive or Dropbox and include a link in your comment.\nTo view all ongoing conversations, corrections, or contributions across chapters, visit the Discussions tab in the top navigation bar: Discussions. You can browse, reply to, or start new threads there."
   },
   {
     "objectID": "index.html#chapters",
@@ -872,7 +872,7 @@
     "href": "index.html#solutions-by-chapters",
     "title": "Open Economy Macroeconomics Solutions",
     "section": "",
-    "text": "Chapter 2 – An Open Endowment Economy\nChapter 3 – An Open Economy with Capital\nChapter 4 – The Open Economy Real-Business-Cycle Model\nChapter 5 – Business Cycles in Emerging Countries: Productivity Shocks versus Financial Fricitions\nChapter 6 – Interest-Rate Shocks\nChapter 7 – Importable Goods, Exportable Goods, and the Terms of Trade\nChapter 8 – Notradable Goods and the Real Exchange Rate\nChapter 9 – Nominal Rigidity, Exchange Rates, and Unemployment\nChapter 10 – Exchange-Rate Policy and Capital Controls"
+    "text": "Chapter 2 – An Open Endowment Economy\nChapter 3 – An Open Economy with Capital\nChapter 4 – The Open Economy Real-Business-Cycle Model\nChapter 5 – Business Cycles in Emerging Countries: Productivity Shocks versus Financial Fricitions\nChapter 6 – Interest-Rate Shocks\nChapter 7 – Importable Goods, Exportable Goods, and the Terms of Trade\nChapter 8 – Notradable Goods and the Real Exchange Rate\nChapter 9 – Nominal Rigidity, Exchange Rates, and Unemployment\nChapter 10 – Exchange-Rate Policy and Capital Controls\nChapter 11 – Policy Credibility and Balance-of-Payments Crises"
   },
   {
     "objectID": "chapters/ch05/5_1.html",
@@ -1837,6 +1837,160 @@
     "objectID": "chapters/ch10/10_5.html#answer",
     "href": "chapters/ch10/10_5.html#answer",
     "title": "Exercise 10.5",
+    "section": "Answer",
+    "text": "Answer\nNo solution has been posted yet. If you have a solution, we invite you to share it in the comment box at the bottom of this page."
+  },
+  {
+    "objectID": "chapters/ch11/11_1.html",
+    "href": "chapters/ch11/11_1.html",
+    "title": "Exercise 11.1",
+    "section": "",
+    "text": "⬅ Return"
+  },
+  {
+    "objectID": "chapters/ch11/11_1.html#problem",
+    "href": "chapters/ch11/11_1.html#problem",
+    "title": "Exercise 11.1",
+    "section": "Problem",
+    "text": "Problem\nConsider a small open perfect-foresight economy populated by a large number of identical infinitely-lived consumers with preferences described by the utility function\n\\[\n\\sum_{t=0}^{\\infty} \\beta^t\\ln c_t,\n\\]\nwhere \\(c_t\\) denotes consumption, and \\(\\beta\\in(0,1)\\) denotes the subjective discount factor. Consumption is a composite good made of traded and nontradable goods, denoted \\(c^T_t\\) and \\(c^N_t\\), respectively, via the aggregator function\n\\[\nc_t = \\sqrt{c^T_tc^N_t}.\n\\]\nThe sequential budget constraint of the representative household is given by\n\\[\nd^h_t = (1+r) d^h_{t-1} +  (1+\\tau_t)(c^T_t+ p_t c^N_t) -w_t h_t  - y^T - s_t,\n\\]\nwhere \\(d^h_t\\) denotes debt acquired in period \\(t\\) and maturing in \\(t+1\\), \\(h_t\\) denotes hours worked, \\(\\tau_t\\) is a proportional consumption tax, \\(w_t\\) denotes the real wage in terms of tradables, \\(p_t\\) denotes the relative price of nontradables in terms of tradables, \\(y^T=1\\) is an endowment of tradable goods, and \\(s_t\\) denotes a lump-sum transfer received from the government. The parameter \\(r\\) denotes the real interest rate and is assumed to satisfy \\(1+r=\\beta^{-1}=1.04\\). Debt is denominated in terms of tradables. Households are subject to the no-Ponzi-game constraint\n\\[\n\\lim_{j\\rightarrow\\infty}\\frac{d^h_{t+j}}{(1+r)^j}\\le 0.\n\\]\nAssume that the household’s initial debt position is nil (\\(d^h_{-1}=0\\)). Households supply inelastically 1 unit of labor to the market each period. Suppose that the law of one price holds for tradables, so that \\(P^T_t=P^{T*}_t\\mathcal{E}_t\\), where \\(P^T_t\\) denotes the domestic-currency price of tradables; \\(\\mathcal{E}_t\\) denotes the nominal exchange rate, defined as the price of foreign currency in terms of domestic currency; and \\(P^{T*}_t\\) denotes the foreign-currency price of tradables. Assume that \\(P^{T*}_t\\) is constant and equal to unity for all \\(t\\). Let \\(W_t\\) and \\(P^N_t\\) denote the nominal wage rate and the nominal price of nontradables, respectively. Then the real wage and the relative price of nontradables are defined as \\(w_t = W_t/P^T_t\\) and \\(p_t = P^N_t/P^T_t\\).\nFirms in the nontraded sector produce goods by means of the linear technology \\(y^N_t=h_t\\), where \\(y^N_t\\) denotes output of nontradables. Firms are price takers in product and labor markets, and there is free entry, so that all firms make zero profits at all times.\nThe government starts period 0 with no debt or assets outstanding and runs a balanced budget period by period, that is, \\(s_t = \\tau_t( c^T_t+p_tc^N_t)\\). The monetary authority pegs the exchange rate at unity, so that \\(\\mathcal{E}_t=1\\) for all \\(t\\).\nSuppose that nominal wages are flexible and that before period 0 the economy was in a steady state with constant consumption of tradables and nontradables and no external debt.\n\nCompute the equilibrium paths of \\(c^T_t\\), \\(w_t\\), \\(W_t\\), \\(p_t\\), the trade balance, and the current account under two alternative tax policies:\n\\[\n\\mbox{Policy 1: }\\tau_t = 0,  \\forall t\n\\]\nand\n\\[\n\\mbox{Policy 2: } \\tau_t = \\left\\{\n\\begin{array}{ll}\n0&0\\le t\\le 11\\\\\n0.3&t\\ge  12\n\\end{array}.\n\\right.\n\\]\nCompute the welfare cost of policy 2 relative to policy 1, defined as the percentage increase in the consumption stream of a consumer living under policy 2 required to make him as well off as living under policy 1. Formally, the welfare cost of policy 2 relative to policy 1 is given by \\(\\lambda\\times 100\\), where \\(\\lambda\\) is implicitly given by\n\\[\n\\sum_{t=0}^{\\infty}\\beta^t \\ln[ c^{p2}_t(1+\\lambda)] = \\sum_{t=0}^{\\infty} \\beta^t \\ln c^{p1}_t,\n\\]\nwhere \\(c^{p1}_t\\) and \\(c^{p2}_t\\) denote consumption in period \\(t\\) under policies 1 and 2, respectively."
+  },
+  {
+    "objectID": "chapters/ch11/11_1.html#answer",
+    "href": "chapters/ch11/11_1.html#answer",
+    "title": "Exercise 11.1",
+    "section": "Answer",
+    "text": "Answer\nNo solution has been posted yet. If you have a solution, we invite you to share it in the comment box at the bottom of this page."
+  },
+  {
+    "objectID": "chapters/ch11/index.html",
+    "href": "chapters/ch11/index.html",
+    "title": "Chapter 11 – Policy Credibility and Balance-of-Payments Crises",
+    "section": "",
+    "text": "Exercise 11.1 (Welfare Cost of Lack of Credibility)\nExercise 11.2 (Welfare Cost of Lack of Credibility with Wage Rigidity)\nExercise 11.3 (Lack of Credibility and Tariff Reforms)\nExercise 11.4 (Non Equivalence of Temporariness and Lack of Credibility)\nExercise 11.5 (A BOP Crisis with Linear Money Demand)\nExercise 11.6 (BOP Crisis: A Numerical Example)\nExercise 11.7 (BOP Crisis With Interest-Bearing Reserves)"
+  },
+  {
+    "objectID": "chapters/ch11/11_2.html",
+    "href": "chapters/ch11/11_2.html",
+    "title": "Exercise 11.2",
+    "section": "",
+    "text": "⬅ Return"
+  },
+  {
+    "objectID": "chapters/ch11/11_2.html#problem",
+    "href": "chapters/ch11/11_2.html#problem",
+    "title": "Exercise 11.2",
+    "section": "Problem",
+    "text": "Problem\nModify the economy of exercise 11.1 by introducing downward nominal wage rigidity as in Chapter 9. Specifically, assume that \\(W_t\\ge W_{t-1}\\) for all \\(t\\ge 0\\).\nAnswer the questions of exercise 11.1 in this new environment. To this end, first compute \\(W_{-1}\\) under the assumption that before period 0 the economy was in a steady state with constant consumption of tradables and nontradables, full employment, no debt, and a nominal exchange rate equal to unity."
+  },
+  {
+    "objectID": "chapters/ch11/11_2.html#answer",
+    "href": "chapters/ch11/11_2.html#answer",
+    "title": "Exercise 11.2",
+    "section": "Answer",
+    "text": "Answer\nNo solution has been posted yet. If you have a solution, we invite you to share it in the comment box at the bottom of this page."
+  },
+  {
+    "objectID": "chapters/ch11/11_4.html",
+    "href": "chapters/ch11/11_4.html",
+    "title": "Exercise 11.4",
+    "section": "",
+    "text": "⬅ Return"
+  },
+  {
+    "objectID": "chapters/ch11/11_4.html#problem",
+    "href": "chapters/ch11/11_4.html#problem",
+    "title": "Exercise 11.4",
+    "section": "Problem",
+    "text": "Problem\nIn the body of this chapter, we established the equivalence of temporariness and lack of credibility in the context of a model with a consumption tax (with tradable and nontradable consumption taxed at the same rate). How does this equivalence result change in the economy of exercise 11.3, in which \\(\\tau_t\\) is a tax on tradable consumption only? Specifically, establish whether policy 2 induces the same equilibrium paths of consumption and the real exchange rate as policy 1 when households incorrectly believe that the government will abandon this policy in period \\(T=12\\) in favor of policy 2. Consider separately the cases of flexible and downwardly rigid nominal wages."
+  },
+  {
+    "objectID": "chapters/ch11/11_4.html#answer",
+    "href": "chapters/ch11/11_4.html#answer",
+    "title": "Exercise 11.4",
+    "section": "Answer",
+    "text": "Answer\nNo solution has been posted yet. If you have a solution, we invite you to share it in the comment box at the bottom of this page."
+  },
+  {
+    "objectID": "chapters/ch11/11_7.html",
+    "href": "chapters/ch11/11_7.html",
+    "title": "Exercise 11.7",
+    "section": "",
+    "text": "⬅ Return"
+  },
+  {
+    "objectID": "chapters/ch11/11_7.html#problem",
+    "href": "chapters/ch11/11_7.html#problem",
+    "title": "Exercise 11.7",
+    "section": "Problem",
+    "text": "Problem\nConsider the model of BOP crises of Section 11.5, but now assume that foreign reserves held by the central bank, \\(k_t\\), earn interest at the rate \\(r\\). Provide an implicit expression for the post collapse rate of devaluation, \\(\\epsilon^H\\), and derive an expression for the time of the crisis, \\(T\\)."
+  },
+  {
+    "objectID": "chapters/ch11/11_7.html#answer",
+    "href": "chapters/ch11/11_7.html#answer",
+    "title": "Exercise 11.7",
+    "section": "Answer",
+    "text": "Answer\nNo solution has been posted yet. If you have a solution, we invite you to share it in the comment box at the bottom of this page."
+  },
+  {
+    "objectID": "chapters/ch11/11_6.html",
+    "href": "chapters/ch11/11_6.html",
+    "title": "Exercise 11.6",
+    "section": "",
+    "text": "⬅ Return"
+  },
+  {
+    "objectID": "chapters/ch11/11_6.html#problem",
+    "href": "chapters/ch11/11_6.html#problem",
+    "title": "Exercise 11.6",
+    "section": "Problem",
+    "text": "Problem\nConsider the model of BOP crises of Section 11.5. Suppose \\(c^T=y^T\\), where \\(y^T\\) denotes output, assumed to be constant. Suppose that the initial stock of foreign reserves, \\(k_0\\), is 10 percent of output; the lower bound on reserves, \\(k_L\\), is 0; the fiscal deficit, \\(g\\), is 2 percent of output; and the money demand function is given by \\(c^T(a-bi)\\), with \\(a=0.2\\) and \\(b=0.25\\). Find the date of the BOP crisis, denoted \\(T\\), and the devaluation rate post BOP crisis, denoted \\(\\epsilon^H\\)."
+  },
+  {
+    "objectID": "chapters/ch11/11_6.html#answer",
+    "href": "chapters/ch11/11_6.html#answer",
+    "title": "Exercise 11.6",
+    "section": "Answer",
+    "text": "Answer\nThe post BOP crisis devaluation rate is given by\n\\[\n\\epsilon^H(0.2-0.25\\epsilon^H)=0.02\n\\]\nSolving this quadratic polynomial for the smallest root (for we want to be on the upward-sloping side of the Laffer curve) yields\n\\[\n\\epsilon^H=11\\%.\n\\]\nThen \\(T\\) is given by\n\\[\n\\begin{eqnarray*}\nT &=& \\frac{(k_0-k_L)-yb\\epsilon^H}{g}\n\\\\\n&=&\n\\frac{0.1-0.25\\cdot 0.11}{0.02}\n\\\\\n&=&3.6 \\mbox{ years}.\n\\end{eqnarray*}\n\\]"
+  },
+  {
+    "objectID": "chapters/ch11/11_5.html",
+    "href": "chapters/ch11/11_5.html",
+    "title": "Exercise 11.5",
+    "section": "",
+    "text": "⬅ Return"
+  },
+  {
+    "objectID": "chapters/ch11/11_5.html#problem",
+    "href": "chapters/ch11/11_5.html#problem",
+    "title": "Exercise 11.5",
+    "section": "Problem",
+    "text": "Problem\nConsider an economy in which the demand for money is of the form\n\\[\nL(\\epsilon,c) =  c-\\frac{\\epsilon_t}2,\n\\]\nwhere \\(\\epsilon_t\\) denotes the devaluation rate, and \\(c\\) denotes a constant level of consumption. Suppose that \\(c\\) equals 2. Time is continuous, and the analysis starts at time 0. Let \\(g\\) denote a constant flow of government primary deficits. Suppose \\(g=1.5\\). At time 0, the government implements a currency peg. Let \\(k_t\\) denote the stock of (non-interest-bearing) foreign reserves held by the government. At time 0, and after any portfolio recomposition that the announcement of a currency peg might have caused, the level of reserves held at the central bank, \\(k_0\\), equals 10. The government is determined to defend the peg until it runs out of reserves. At that point, it switches to a constant rate of devaluation, high enough to finance the deficit.\n\nCalculate the rate of devaluation prevailing in this economy after the demise of the currency peg.\nCalculate the loss of reserves suffered by the government at the time of the BOP crisis.\nCalculate the length of the currency peg, denoted \\(T\\).\nAssume alternatively that at time 0 everybody understands that when the government runs out of reserves it will implement a fiscal reform whereby the primary deficit is fully eliminated. When does the government run out of reserves in this case? Is there a BOP crisis at time \\(T\\), that is, does the government lose a discrete amount of reserves at time \\(T\\)? Provide intuition."
+  },
+  {
+    "objectID": "chapters/ch11/11_5.html#answer",
+    "href": "chapters/ch11/11_5.html#answer",
+    "title": "Exercise 11.5",
+    "section": "Answer",
+    "text": "Answer\nNo solution has been posted yet. If you have a solution, we invite you to share it in the comment box at the bottom of this page."
+  },
+  {
+    "objectID": "chapters/ch11/11_3.html",
+    "href": "chapters/ch11/11_3.html",
+    "title": "Exercise 11.3",
+    "section": "",
+    "text": "⬅ Return"
+  },
+  {
+    "objectID": "chapters/ch11/11_3.html#problem",
+    "href": "chapters/ch11/11_3.html#problem",
+    "title": "Exercise 11.3",
+    "section": "Problem",
+    "text": "Problem\nHow would your answers to exercises 11.1 and 11.2 change if \\(\\tau_t\\) was a tax only on consumption of tradables (i.e., a trade tariff)? Provide a quantitative answer and intuition."
+  },
+  {
+    "objectID": "chapters/ch11/11_3.html#answer",
+    "href": "chapters/ch11/11_3.html#answer",
+    "title": "Exercise 11.3",
     "section": "Answer",
     "text": "Answer\nNo solution has been posted yet. If you have a solution, we invite you to share it in the comment box at the bottom of this page."
   }

@@ -1,0 +1,13 @@
+---
+title: "Exercise 11.7"
+subtitle: "BOP Crisis With Interest-Bearing Reserves"
+---
+<a class="return-button" href="index.qmd">⬅ Return</a>
+
+## Problem
+
+Consider the model of BOP crises of Section 11.5, but now assume that foreign reserves held by the central bank, $k_t$, earn interest at the rate $r$. Provide an implicit expression for the post collapse rate of devaluation, $\epsilon^H$, and derive an expression for the time of the crisis, $T$. 
+
+## Answer
+
+_No solution has been posted yet. If you have a solution, we invite you to share it in the comment box at the bottom of this page._
