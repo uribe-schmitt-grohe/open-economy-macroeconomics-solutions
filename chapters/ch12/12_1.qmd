@@ -1,0 +1,86 @@
+---
+title: "Exercise 12.1"
+subtitle: "Transversality Condition In Collateral-Constrained Economies"
+---
+<a class="return-button" href="index.qmd">⬅ Return</a>
+
+## Problem
+
+Consider the economy of Section 12.1. Show that if sequences $c_t,$ $d_{t+1},$ and $k_{t+1}$ satisfy optimality conditions (12.1)-(12.8) but not the transversality condition (12.9), then there exists a welfare dominating set of sequences that is also feasible(i.e., it satisfies (12.1)-(12.3)). 
+
+## Answer
+
+The proof is by contradiction. Let 
+
+$$
+Z_t \equiv \frac{\kappa q_t k_{t+1} - d_{t+1}}{(1+r)^t}
+$$
+
+Assume that contrary to the claim (12.9) does not hold. In particular, assume that 
+
+$$
+\lim_{t\rightarrow \infty} Z_t = Z >0. 
+$$
+
+Then for every $\epsilon>0$, there exists a $T_{\epsilon}$ such that 
+
+$$
+-\epsilon < Z_t - Z < \epsilon
+$$
+
+for all $t \ge T_{\epsilon}$. 
+
+Pick $\epsilon>0$ such that $0<\epsilon<Z$. Then we have that 
+$$
+Z_t  = \frac{\kappa q_t k_{t+1} - d_{t+1}}{(1+r)^t} > Z - \epsilon >0 
+$$
+
+for all $t\ge T_{\epsilon}$. It follows that the collateral constraint holds with a strict inequality for all $t \ge T_{\epsilon}$, that is, $\mu_t = 0$ for all $t\ge T_{\epsilon}$.
+
+Now consider the following alternative consumption and debt paths whereby we increase consumption in period $T_{\epsilon}$ but leaving it unchanged in all other periods.  We finance this increase in consumption in period $T_{\epsilon}$ by issuing debt and then rolling over this additional debt forever. And we leave the path for $k_{t+1}$ unchanged. We want to know if this alternative path for $d_{t+1}$ is feasible. Let the change in $d_{T_{\epsilon}+1}$ be equal to $z>0$, that is, $\tilde{d}_{T_{\epsilon}+1} = d_{T_{\epsilon}+1} + z$. Then consumption increases in period $T_{\epsilon}$ by $z/(1+r)>0$.  
+
+This strategy is feasible in period $T_{\epsilon}$, that is, it does not violate the collateral constraint (12.3), as long as, 
+
+$$
+z< (1+r)^{T_{\epsilon}} (Z-\epsilon).
+$$
+
+We need to show that this new path of debt also does not violate the collateral constraint for any $t>T_{\epsilon}$. The new level of debt in any period $t>T_{\epsilon}$, denoted $\tilde{d}_{t+1}$, can be found by subtracting the sequential budget constraint for any period ${T_{\epsilon}+j}$ under the original plan and the alternative plan. Note that for $t>T_{\epsilon}$, $c_t$ and $k_{t}$ are the same under the original and alternative plans. This yields: 
+
+$$
+\tilde{d}_{t+1} -  d_{t+1} = (1+r) (\tilde{d}_{t} -  d_{t})
+$$
+
+or 
+
+$$
+\tilde{d}_{T_{\epsilon}+j+1} -  d_{T_{\epsilon}+j+1} = 
+(1+r)^j (\tilde{d}_{T_{\epsilon}+1} -  d_{T_{\epsilon}+1})
+$$
+
+
+Now recall from above that for any $t\ge T_{\epsilon}$
+
+$$
+\begin{eqnarray*}
+\kappa q_t k_{t+1} - d_{t+1} &>& {(1+r)^t}[Z - \epsilon]\\
+\kappa q_t k_{t+1} - \tilde{d}_{t+1} + (\tilde{d}_{t+1} -  d_{t+1})
+&>& {(1+r)^t}[Z - \epsilon]
+\\
+\kappa q_t k_{t+1} - \tilde{d}_{t+1}   &>&
+ (1+r)^t[Z - \epsilon] -
+ (\tilde{d}_{t+1} -  d_{t+1})
+\\
+&=& (1+r)^t[Z - \epsilon -
+(1+r)^{-T_{\epsilon}} (\tilde{d}_{T_{\epsilon}+1} -  d_{T_{\epsilon}+1})]\\
+ &>& 0
+\end{eqnarray*}
+$$
+
+The last inequality follows from the assumption that 
+
+$$
+(1+r)^{-T_{\epsilon}} (\tilde{d}_{T_{\epsilon}+1} -  d_{T_{\epsilon}+1}) = (1+r)^{-T_{\epsilon}} z < Z - \epsilon.
+$$
+
+This completes the proof that the alternative sequence $\tilde{d}_{t+1}$ if feasible. Clearly it is associated with higher welfare because consumption in period $T_{\epsilon}$ is higher. Therefore, the original sequence could not have been a solution to the household maximization problem. Thus we have arrived at a contradiction. Therefore, it must be the case that under household maximization the transversality condition (12.9) hold.

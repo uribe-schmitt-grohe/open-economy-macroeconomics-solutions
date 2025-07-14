@@ -1,0 +1,179 @@
+---
+title: "Exercise 12.6"
+subtitle: "Overborrowing in a Two-Period Economy"
+---
+<a class="return-button" href="index.qmd">⬅ Return</a>
+
+## Problem
+
+Consider a two-period endowment economy populated by identical households with preferences defined over consumption of tradable and nontradable goods and described by the following utility function:
+
+$$
+\ln c^T_1 + \ln c^N_1 + \ln c^T_2 + \ln c^N_2, 
+$$
+
+where $c^T_i$ and $c^N_i$ denote, respectively, consumption of tradables and nontradables in period $i=1,2$. Households are born with no debts and receive endowments of tradables and nontradables in periods 1 and 2 denoted $y^T_i$ and $y^N_i$, respectively, for $i=1,2$. In period 1, households can borrow or lend in the international financial market in a one-period bond denominated in tradable goods that pays the world interest rate $r>0$. 
+Assume that $(1+r)y^T_1<y^T_2$. Borrowing is limited by two constraints. One is a no-Ponzi-game constraint that prevents households from holding any debt at the end of period 2. The other borrowing constraint takes the form of a flow collateral constraint. It limits the amount of debt a household can assume in period 1 to a fraction $\alpha>0$ of the value of its endowment:
+
+$$
+d_1 \le \alpha (y^T_1 + p_1y^N_1),
+$$
+
+where $p_i$ denotes the relative price of nontradables in terms of tradables in period $i=1,2$. We will refer to increases in $p_i$ as real exchange-rate appreciations and to decreases as real exchange-rate depreciations.
+
+1. Compute the unconstrained equilibrium, defined as the equilibrium in which the collateral constraint is not imposed. Express the equilibrium values of $c^T_1$, $c^N_1$, $d_1$, and $p_1$ as functions of the underlying economic fundamentals (i.e., as functions of endowments and the world interest rate). 
+
+2. Derive a range of values of $\alpha$, in terms of economic fundamentals, for which the collateral constraint binds.
+
+3. Suppose $\alpha$ takes a value within the range derived in question 2. Compute the resulting constrained equilibrium. Again, express the equilibrium levels of consumption of each good, external debt, and the relative price of nontradables in period 1 as functions of the economic fundamentals. 
+
+4. Which of the two equilibria characterized above, the constrained or the unconstrained equilibrium, delivers a more appreciated real exchange rate? Provide intuition. 
+
+5. Derive a shadow  domestic interest rate in the constrained equilibrium.
+
+6. Now consider a benevolent social planner who, like households, faces the collateral  constraint and the no-Ponzi-game constraint. Derive the unconstrained social planner's equilibrium (i.e., the social planner's equilibrium in which the collateral constraint is not imposed). Compare your answer to the one you obtained for the unconstrained competitive equilibrium.
+
+7. Now assume that the planner in question 6 is also subject to the collateral constraint. Derive the constrained social planner's equilibrium, and compare it to the constrained competitive equilibrium. 
+
+8. Is there overborrowing in this economy? Provide intuition.
+
+## Answer
+
+#### 1.
+
+$$
+\max  \sum_{j=T,N}\sum_{i=1,2} \ln c^j_i
+$$
+
+subject to
+
+$$
+c^T_1 + p_1 c^N_1 \le y^T_1 + p_1y^N_1 + d_1
+$$
+
+$$
+c^T_2 + p_2 c^N_2 + (1+r) d_1\le  y^T_2 + p_2y^N_2
+$$
+
+Combine these expressions to obtain
+
+$$
+c^T_1 + p_1 c^N_1 + \frac{c^T_2+p_2c^N_2}{1+r}\le y^T_1 + p_1 y^N_1 + \frac{y^T_2+p_2y^N_2}{1+r}
+$$
+
+After solving this problem, impose market clearing for nontraded goods:
+
+$$
+c^N_i = y^N_i; \quad i=1,2.
+$$
+
+Then, one obtains the following equilibrium solution
+
+$$
+c^T_1 = \frac12 \left[y^T_1 + \frac{y^T_2}{1+r}\right]
+$$
+
+$$
+c^T_2 = \frac{1+r}2 \left[y^T_1 + \frac{y^T_2}{1+r}\right] 
+$$
+
+$$
+d_1 = \frac12 \left[\frac{y^T_2}{1+r}-y^T_1 \right]
+$$
+
+$$
+p_1 = \frac{1}{2y^N_1} \left[y^T_1 + \frac{y^T_2}{1+r}\right] 
+$$
+
+#### 2.
+
+$$
+\alpha \le \frac{y^T_2-(1+r)y^T_1}{y^T_2+3(1+r)y^T_1}
+$$
+
+#### 3.
+
+$$
+c^T_1 = \frac{1+\alpha}{1-\alpha}y^T_1
+$$
+
+$$
+d_1 = \frac{2\alpha}{1-\alpha}y^T_1
+$$
+
+$$
+p_1 = \frac{1+\alpha}{1-\alpha}\frac{y^T_1}{y^N_1}
+$$
+
+#### 4.
+
+The unconstrained equilibrium delivers a more appreciated real exchange rate. To see this, note that if the collateral constraint binds, then an increase in $\alpha$ brings the allocation closer to the unconstrained equilibrium. Now the real exchange rate under the constrained equilibrium, given by 
+
+$$
+p_1 = \frac{1+\alpha}{1-\alpha}\frac{y^T_1}{y^N_1},
+$$
+
+is strictly increasing in $\alpha$. This means that $p_1$ is higher in the unconstrained equilibrium than under the constrained equilibirum.
+
+#### 5.
+
+The domestidc  interest rate solves
+
+$$
+1+r_1 = \frac{c_2}{c_1}
+$$
+
+In turn, $c^T_2$ satisfies
+
+$$
+c^T_2 = y^T_2 - (1+r)d_1
+$$
+
+Using the solution for $d_1$, we get
+
+$$
+c^T_2 = y^T_2 - \frac{2\alpha(1+r)}{1-\alpha}y^T_1
+$$
+
+Then, we have
+
+$$
+1+r = \frac{y^T_2 - \frac{2\alpha(1+r)}{1-\alpha}y^T_1}{\frac{1+\alpha}{1-\alpha}y^T_1}
+$$
+
+#### 6.
+
+In the unconstrained equilibrium, the planner sets $c^N_i=y^N_i$ for $i=1,2$ and determines consumption of tradables as the solution to the following problem
+
+$$
+\max \ln c^T_1 + \ln c^T_2
+$$
+
+subject to
+
+$$
+c^T_1 + \frac{c^T_2}{1+r}=y^T_1 + \frac{y^T_2}{1+r}.
+$$
+
+The solution is identical to the unconstrained competitive equilibrium. 
+
+#### 7.
+
+In the constrained equilibrium, the social planner sets $c^N_i=y^N_i$ for $i=1,2$,  and 
+internalizes the fact that the relative price of nontradables satisfies the condition $p_1y^N_1=c^T_1$ and uses it to replace $p_1y^N_1$ for $c^T_1$ in the borrowing constraint, which becomes
+
+$$
+d_1 \le \alpha (y^T_1+c^T_1)
+$$
+
+Combining this condition with the budget constraint in period 1 (i.e., $c^T_1=y^T_1+d_1$), we obtain
+
+$$
+c^T_1 = y^T_1 + \alpha(y^T_1+c^T_1)
+$$
+
+whose solution delivers the same values as the constrained competitive equilibrium. 
+
+#### 8.
+
+No.

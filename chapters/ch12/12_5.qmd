@@ -1,0 +1,160 @@
+---
+title: "Exercise 12.5"
+subtitle: "A Two-Period Economy with a Flow Collateral Constraint"
+---
+<a class="return-button" href="index.qmd">⬅ Return</a>
+
+## Problem
+
+Consider a two-period small open endowment economy populated by identical households with preferences given by
+
+$$
+\ln c^T_1 + \ln c^N_1 + \beta  \ln c^T_2,
+$$
+
+where $c^T_1$ and $c^T_2$ denote consumption of traded goods in periods 1 and 2, respectively;  $c^N_1$ denotes consumption of nontraded goods in period 1; and $\beta\in(0,1)$ is the subjective discount factor. The  household's budget constraints in periods 1 and 2 are, respectively, 
+
+$$
+c^T_1 + p_1 c^N_1  = y^T_1 + p_1 y^N_1 + \frac{d_1}{1+r}
+$$
+
+and 
+
+$$
+c^T_2 + d_1 = y^T_2 ,
+$$
+
+where $p_1$ denotes the relative price of nontradable in period 1; $y^T_i$ denotes the endowment of tradables in period $i=1,2$; $y^N_1$ denotes the endowment of nontradables in period 1;  $d_1$ denotes debt due in period 2; and $r$ denotes the interest rate at which the country can borrow internationally. Assume that $\beta(1+r)=1$. Implicit in the period-2 constraint is the requirement that the debt position at the end of period 2 be nil. Debt accumulation in period 1 is subject to the following flow collateral constraint:
+
+$$
+\frac{d_1}{1+r} \le \kappa [y^T_1 + p_1 y^N_1]
+$$
+
+where $0<\kappa$ is a parameter. 
+
+1. Derive the first-order conditions associated with the household's optimization problem.
+
+2. Derive the complete set of equilibrium conditions. 
+
+3. Find conditions on the structural parameters of the model, ($\beta$, $r,$ $\kappa$, $y^T_1$, $y^T_2,$ and $y^N_1$), such that an equilibrium exists in which the collateral constraint is slack.
+
+4. Under those conditions, does there also exist an equilibrium in which the collateral constraint is binding, that is, an equilibrium with a self-fulfilling financial crisis. If so, discuss whether  there is underborrowing in the financial crisis and  whether in the crisis the value of collateral suffers a Fisherian deflation. 
+
+
+## Answer
+
+#### 1.
+
+$$
+\begin{eqnarray*}\mathcal{L} & =&  \ln c^T_1 + \ln c^N_1 + \beta  \ln c^T_2\\
+& +& \lambda_1 \left[ y^T_1 + p_1 y^N_1 + \frac{d_1}{1+r} - c^T_1 - p_1 c^N_1 \right]\\
+& +& \lambda_2 \left[ y^T_2 - c^T_2 - d_1\right]\\
+& +& \mu\left[ \kappa [y^T_1 + p_1 y^N_1] - \frac{d_1}{1+r} \right]
+\end{eqnarray*}
+$$
+
+FOCs:
+
+$$
+\begin{eqnarray*}
+\frac{1}{c^T_1} = \lambda_1 \\
+\frac{1}{c^N_1} = \lambda_1 p_1\\
+\beta \frac{1}{c^T_2} = \lambda_2\\
+\lambda_1  \frac{1}{1+r} =\lambda_2 + \mu \frac{1}{1+r}\\
+\mu\ge0\\
+\mu\left[ \kappa [y^T_1 + p_1 y^N_1] - \frac{d_1}{1+r} \right]=0\\
+\kappa [y^T_1 + p_1 y^N_1] \ge \frac{d_1}{1+r} \\
+c^T_1 + p_1 c^N_1=y^T_1 + p_1 y^N_1 + \frac{d_1}{1+r}  \\
+c^T_2 + d_1 = y^T_2  
+\end{eqnarray*}
+$$
+
+#### 2.
+
+Short answer HH optimality conditions plus $c^N_1 = y^N_1$. Long answer combines some of the conditions to eliminate some variables. A competitive equilibrium are values $\{c^T_1, c^T_2, d_1, p_1, \mu\}$ satisfying $c^T_1, c^T_2 >0$, and 
+
+$$
+\begin{eqnarray}
+\frac{c^T_1}{y^N_1} =  p_1 \tag{1} \\
+\frac{1}{c^T_1}  =\frac{1}{c^T_2} + \mu \tag{2}\\
+\mu\ge0 \tag{3} \\
+\mu\left[ \kappa [y^T_1 + p_1 y^N_1] - \frac{d_1}{1+r} \right]=0 \tag{4} \\
+\kappa [y^T_1 + p_1 y^N_1] \ge \frac{d_1}{1+r} \tag{5} \\
+c^T_1 =y^T_1 + \frac{d_1}{1+r} \tag{6} \\
+c^T_2 + d_1 = y^T_2  \tag{7}
+\end{eqnarray}
+$$
+
+#### 3.
+
+Collateral constraint slack means $\mu=0$. 
+
+By (2), $c^T_1=c^T_2$. By (6) and (7) $c^T_1 (1 + 1/(1+r)) = y^T_1 + y^T_2/(1+r)$, solving yields
+
+$$
+c^T_1 = \frac{1+r}{2+r}\left[y^T_1 + y^T_2/(1+r)\right]
+$$
+
+This is always positive as long as at least 1 of the 2 endowments is strictly positive.  The associated value of $d_1$ can be read off from (7)
+
+$$
+\frac{d_1}{1+r}  =  c^T_1 - y^T_1  =  \frac{1}{2+r}\left(y^T_2-y^T_1\right)
+$$
+
+This is intuitive. Debt is positive, ie, you borrow against future income, when future income exceeds current income. 
+
+When does that value of $d_1$ satisfy the collateral constraint (5), That is, we need that
+
+$$
+\begin{eqnarray*}
+\frac{d_1}{1+r}  &\le& \kappa [y^T_1 + p_1 y^N_1]\\ 
+\frac{1}{2+r}\left(y^T_2-y^T_1\right)& \le& \kappa [y^T_1 + c^T_1]\\
+\frac{1}{2+r}\left(y^T_2-y^T_1\right)& \le& \kappa [y^T_1 + \frac{1+r}{2+r}\left[y^T_1 + \frac{y^T_2}{1+r}\right]]\\
+\left(y^T_2-y^T_1\right)& \le& \kappa [(2+r)y^T_1 + \left[(1+r)y^T_1 + y^T_2\right]]\\
+\left(y^T_2-y^T_1\right)& \le& \kappa [(3+2r)y^T_1 +  y^T_2]
+\end{eqnarray*}
+$$
+
+Thus an equilibrium with a nonbinding constraint exists if
+
+$$
+\fbox{$(1-\kappa)y^T_2 \le (1+ \kappa (3+2r))y^T_1 \tag{8}
+$}
+$$
+
+Suppose $\kappa\ge1$, then this condition is always satisfied. Suppose $y^T_1=0$, then this condition can only be satisfied by a $\kappa>1$. As we saw before debt is only positive in the unconstrained equilibrium if $y^T_2>y^T_1$. 
+
+#### 4.
+
+If the collateral constraint binds,we have by (5), 
+
+$$
+\frac{d_1}{1+r} =\kappa [y^T_1 + p_1 y^N_1] 
+$$
+
+Recall that $p_1 y^N_1 = c^T_1$ and that by (6) $c^T_1 = y^T_1 + d_1/(1+r)$. Thus we can write: $c^T_1 - y^T_1 =\kappa [y^T_1 + c^T_1]$ or 
+
+$$
+\fbox{$
+c^T_1 = \frac{1+\kappa}{1-\kappa} y^T_1 
+$}
+$$
+
+Thus a binding constraint with a positive $c^T_1$ exists only if $0<\kappa<1$. In this case $c^T_1>y^T_1$, that is, $d_1>0$. 
+
+Start with (7)
+
+$$
+\begin{eqnarray*}
+c^T_2 & = & y^T_2 - d_1\\
+&=&y^T_2 - (1+r) \kappa (y^T_1 + c^T_1)\\
+&=&y^T_2 - (1+r) \kappa (y^T_1 + \frac{1+\kappa}{1-\kappa} y^T_1 )\\
+&=&y^T_2 - (1+r) \kappa ( \frac{2}{1-\kappa} y^T_1 )\\
+&=&\frac1{1-\kappa}\left((1-\kappa)y^T_2 - (1+r)2 \kappa  y^T_1 \right)\\
+&\le &\frac1{1-\kappa}\left(1+\kappa(3+2r) - (1+r)2 \kappa \right)y^T_1\\
+&= &\frac1{1-\kappa}\left(1+\kappa   \right)y^T_1 \\
+&= &c^T_1
+\end{eqnarray*}
+$$
+
+The inequality follows from (8). Thus we have that if the collateral constraint binds, then $c^T_1\ge c^T_2$. This implies by (2) that $\mu\le0$. It follows that **no** equilibrium with $\mu>0$ exists. We have shown that if an unconstrained equilibrium exists, then there does not exist a second equilibrium in which the constraint binds and $\mu>0$. That is, no second equilibrium with a financial crisis exists. 

@@ -1,0 +1,13 @@
+---
+title: "Exercise 12.4"
+subtitle: "Financial Amplification"
+---
+<a class="return-button" href="index.qmd">⬅ Return</a>
+
+## Problem
+
+Consider the economy of Section 12.4, which features two equilibria, one in which the collateral constraint never binds (point $A$ in Figure 12.4), and one in which the collateral constraint binds in period 0 (point $B$ in the same figure). Suppose that the endowment of tradables, $y^T_t$, increases permanently in period 0. Suppose that the increase in $y^T_t$ is sufficiently small to ensure that the constrained equilibrium continues to exist. Show that in the unconstrained equilibrium, traded consumption in period 0, $c^T_0$, increases one-for-one with $y^T_0$, whereas in the constrained equilibrium, $c^T_0$ increases by more than one-for-one with $y^T_0$. Provide intuition. Comment on the responses of the trade balance, the current account, and the real exchange rate in the constrained and unconstrained equilibria.    
+
+## Answer
+
+_No solution has been posted yet. If you have a solution, we invite you to share it in the comment box at the bottom of this page._

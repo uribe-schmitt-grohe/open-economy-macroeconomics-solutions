@@ -1,0 +1,13 @@
+---
+title: "Exercise 12.8"
+subtitle: "A Stochastic Economy With A Unique Equilibrium"
+---
+<a class="return-button" href="index.qmd">⬅ Return</a>
+
+## Problem
+
+Consider the model economy with a flow collateral constraint of Section 12.5. Calibrate the model using the parameter values and shock process used by Bianchi (2011). Apply the Matlab program constrained.m to establish that the two equilibrium selection criteria (B)and (C) presented in Section 12.5.2 deliver identical policy functions.
+
+## Answer
+
+_No solution has been posted yet. If you have a solution, we invite you to share it in the comment box at the bottom of this page._

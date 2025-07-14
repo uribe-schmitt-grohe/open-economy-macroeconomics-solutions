@@ -1,0 +1,13 @@
+---
+title: "Exercise 12.11"
+subtitle: "Optimality of a Constant Tax on Tradable Consumption"
+---
+<a class="return-button" href="index.qmd">⬅ Return</a>
+
+## Problem
+
+In Section 12.10, we showed that the unconstrained equilibrium can be supported by a subsidy on nontradable consumption financed by lump-sum taxes. Show that the unconstrained equilibrium can also be supported by a tax on tradable consumption financed with lump-sum taxes. Show that unlike the scheme based on nontradable taxation, the present scheme must feature a constant tax rate in general.
+
+## Answer
+
+_No solution has been posted yet. If you have a solution, we invite you to share it in the comment box at the bottom of this page._

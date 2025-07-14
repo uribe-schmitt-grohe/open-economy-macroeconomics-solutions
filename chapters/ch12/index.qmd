@@ -1,0 +1,16 @@
+---
+title: "Chapter 12 – Financial Frictions and Aggregate Instability"
+comments: False
+---
+
+- [Exercise 12.1 (Transversality Condition In Collateral-Constrained Economies)](12_1.qmd)
+- [Exercise 12.2 (Self-Fulfilling Financial Crises In A Two-Period Economy)](12_2.qmd)
+- [Exercise 12.3 (Collateral Constraints and Impatient Consumers)](12_3.qmd)
+- [Exercise 12.4 (Financial Amplification)](12_4.qmd)
+- [Exercise 12.5 (A Two-Period Economy with a Flow Collateral Constraint)](12_5.qmd)
+- [Exercise 12.6 (Overborrowing in a Two-Period Economy)](12_6.qmd)
+- [Exercise 12.7 (Flow Collateral Constraints and Multiple Equilibria in a Calibrated Economy)](12_7.qmd)
+- [Exercise 12.8 (A Stochastic Economy With A Unique Equilibrium)](12_8.qmd)
+- [Exercise 12.9 (Time Unit and Equilibrium Indeterminacy)](12_9.qmd)
+- [Exercise 12.10 (Optimality of a Constant Tax on Nontradable Consumption)](12_10.qmd)
+- [Exercise 12.11 (Optimality of a Constant Tax on Tradable Consumption)](12_11.qmd)

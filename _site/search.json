@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Open Economy Macroeconomics Solutions",
     "section": "",
-    "text": "This repository contains sketches of solutions to many (but not all) of the exercises in Open Economy Macroeconomics by Martín Uribe and Stephanie Schmitt-Grohé (Princeton University Press link). Please help us to improve the repository. If you have solutions or corrections or alternative approaches to solutions, please post them in the corresponding discussion thread in the Discussions tab.\n\n\n\nOpen Economy Macroeconomics cover\n\n\n\n\n\n\nChapter 2 – An Open Endowment Economy\nChapter 3 – An Open Economy with Capital\nChapter 4 – The Open Economy Real-Business-Cycle Model\nChapter 5 – Business Cycles in Emerging Countries: Productivity Shocks versus Financial Fricitions\nChapter 6 – Interest-Rate Shocks\nChapter 7 – Importable Goods, Exportable Goods, and the Terms of Trade\nChapter 8 – Notradable Goods and the Real Exchange Rate\nChapter 9 – Nominal Rigidity, Exchange Rates, and Unemployment\nChapter 10 – Exchange-Rate Policy and Capital Controls\nChapter 11 – Policy Credibility and Balance-of-Payments Crises\n\n\n\n\n\nEach solution page includes a comment section powered by Giscus. You are welcome to leave feedback or ask questions directly below each exercise. You can type plain text or simple math using LaTeX syntax (e.g., $y = c + i + g$). If you’d like to share screenshots or files, please upload them to a service like Google Drive or Dropbox and include a link in your comment.\nTo view all ongoing conversations, corrections, or contributions across chapters, visit the Discussions tab in the top navigation bar: Discussions. You can browse, reply to, or start new threads there."
+    "text": "This repository contains sketches of solutions to many (but not all) of the exercises in Open Economy Macroeconomics by Martín Uribe and Stephanie Schmitt-Grohé (Princeton University Press link). Please help us to improve the repository. If you have solutions or corrections or alternative approaches to solutions, please post them in the corresponding discussion thread in the Discussions tab.\n\n\n\nOpen Economy Macroeconomics cover\n\n\n\n\n\n\nChapter 2 – An Open Endowment Economy\nChapter 3 – An Open Economy with Capital\nChapter 4 – The Open Economy Real-Business-Cycle Model\nChapter 5 – Business Cycles in Emerging Countries: Productivity Shocks versus Financial Fricitions\nChapter 6 – Interest-Rate Shocks\nChapter 7 – Importable Goods, Exportable Goods, and the Terms of Trade\nChapter 8 – Notradable Goods and the Real Exchange Rate\nChapter 9 – Nominal Rigidity, Exchange Rates, and Unemployment\nChapter 10 – Exchange-Rate Policy and Capital Controls\nChapter 11 – Policy Credibility and Balance-of-Payments Crises\nChapter 12 – Financial Frictions and Aggregate Instability\n\n\n\n\n\nEach solution page includes a comment section powered by Giscus. You are welcome to leave feedback or ask questions directly below each exercise. You can type plain text or simple math using LaTeX syntax (e.g., $y = c + i + g$). If you’d like to share screenshots or files, please upload them to a service like Google Drive or Dropbox and include a link in your comment.\nTo view all ongoing conversations, corrections, or contributions across chapters, visit the Discussions tab in the top navigation bar: Discussions. You can browse, reply to, or start new threads there."
   },
   {
     "objectID": "index.html#chapters",
@@ -872,7 +872,7 @@
     "href": "index.html#solutions-by-chapters",
     "title": "Open Economy Macroeconomics Solutions",
     "section": "",
-    "text": "Chapter 2 – An Open Endowment Economy\nChapter 3 – An Open Economy with Capital\nChapter 4 – The Open Economy Real-Business-Cycle Model\nChapter 5 – Business Cycles in Emerging Countries: Productivity Shocks versus Financial Fricitions\nChapter 6 – Interest-Rate Shocks\nChapter 7 – Importable Goods, Exportable Goods, and the Terms of Trade\nChapter 8 – Notradable Goods and the Real Exchange Rate\nChapter 9 – Nominal Rigidity, Exchange Rates, and Unemployment\nChapter 10 – Exchange-Rate Policy and Capital Controls\nChapter 11 – Policy Credibility and Balance-of-Payments Crises"
+    "text": "Chapter 2 – An Open Endowment Economy\nChapter 3 – An Open Economy with Capital\nChapter 4 – The Open Economy Real-Business-Cycle Model\nChapter 5 – Business Cycles in Emerging Countries: Productivity Shocks versus Financial Fricitions\nChapter 6 – Interest-Rate Shocks\nChapter 7 – Importable Goods, Exportable Goods, and the Terms of Trade\nChapter 8 – Notradable Goods and the Real Exchange Rate\nChapter 9 – Nominal Rigidity, Exchange Rates, and Unemployment\nChapter 10 – Exchange-Rate Policy and Capital Controls\nChapter 11 – Policy Credibility and Balance-of-Payments Crises\nChapter 12 – Financial Frictions and Aggregate Instability"
   },
   {
     "objectID": "chapters/ch05/5_1.html",
@@ -1991,6 +1991,244 @@
     "objectID": "chapters/ch11/11_3.html#answer",
     "href": "chapters/ch11/11_3.html#answer",
     "title": "Exercise 11.3",
+    "section": "Answer",
+    "text": "Answer\nNo solution has been posted yet. If you have a solution, we invite you to share it in the comment box at the bottom of this page."
+  },
+  {
+    "objectID": "chapters/ch12/index.html",
+    "href": "chapters/ch12/index.html",
+    "title": "Chapter 12 – Financial Frictions and Aggregate Instability",
+    "section": "",
+    "text": "Exercise 12.1 (Transversality Condition In Collateral-Constrained Economies)\nExercise 12.2 (Self-Fulfilling Financial Crises In A Two-Period Economy)\nExercise 12.3 (Collateral Constraints and Impatient Consumers)\nExercise 12.4 (Financial Amplification)\nExercise 12.5 (A Two-Period Economy with a Flow Collateral Constraint)\nExercise 12.6 (Overborrowing in a Two-Period Economy)\nExercise 12.7 (Flow Collateral Constraints and Multiple Equilibria in a Calibrated Economy)\nExercise 12.8 (A Stochastic Economy With A Unique Equilibrium)\nExercise 12.9 (Time Unit and Equilibrium Indeterminacy)\nExercise 12.10 (Optimality of a Constant Tax on Nontradable Consumption)\nExercise 12.11 (Optimality of a Constant Tax on Tradable Consumption)"
+  },
+  {
+    "objectID": "chapters/ch12/12_1.html",
+    "href": "chapters/ch12/12_1.html",
+    "title": "Exercise 12.1",
+    "section": "",
+    "text": "⬅ Return"
+  },
+  {
+    "objectID": "chapters/ch12/12_1.html#problem",
+    "href": "chapters/ch12/12_1.html#problem",
+    "title": "Exercise 12.1",
+    "section": "Problem",
+    "text": "Problem\nConsider the economy of Section 12.1. Show that if sequences \\(c_t,\\) \\(d_{t+1},\\) and \\(k_{t+1}\\) satisfy optimality conditions (12.1)-(12.8) but not the transversality condition (12.9), then there exists a welfare dominating set of sequences that is also feasible(i.e., it satisfies (12.1)-(12.3))."
+  },
+  {
+    "objectID": "chapters/ch12/12_1.html#answer",
+    "href": "chapters/ch12/12_1.html#answer",
+    "title": "Exercise 12.1",
+    "section": "Answer",
+    "text": "Answer\nThe proof is by contradiction. Let\n\\[\nZ_t \\equiv \\frac{\\kappa q_t k_{t+1} - d_{t+1}}{(1+r)^t}\n\\]\nAssume that contrary to the claim (12.9) does not hold. In particular, assume that\n\\[\n\\lim_{t\\rightarrow \\infty} Z_t = Z &gt;0.\n\\]\nThen for every \\(\\epsilon&gt;0\\), there exists a \\(T_{\\epsilon}\\) such that\n\\[\n-\\epsilon &lt; Z_t - Z &lt; \\epsilon\n\\]\nfor all \\(t \\ge T_{\\epsilon}\\).\nPick \\(\\epsilon&gt;0\\) such that \\(0&lt;\\epsilon&lt;Z\\). Then we have that \\[\nZ_t  = \\frac{\\kappa q_t k_{t+1} - d_{t+1}}{(1+r)^t} &gt; Z - \\epsilon &gt;0\n\\]\nfor all \\(t\\ge T_{\\epsilon}\\). It follows that the collateral constraint holds with a strict inequality for all \\(t \\ge T_{\\epsilon}\\), that is, \\(\\mu_t = 0\\) for all \\(t\\ge T_{\\epsilon}\\).\nNow consider the following alternative consumption and debt paths whereby we increase consumption in period \\(T_{\\epsilon}\\) but leaving it unchanged in all other periods. We finance this increase in consumption in period \\(T_{\\epsilon}\\) by issuing debt and then rolling over this additional debt forever. And we leave the path for \\(k_{t+1}\\) unchanged. We want to know if this alternative path for \\(d_{t+1}\\) is feasible. Let the change in \\(d_{T_{\\epsilon}+1}\\) be equal to \\(z&gt;0\\), that is, \\(\\tilde{d}_{T_{\\epsilon}+1} = d_{T_{\\epsilon}+1} + z\\). Then consumption increases in period \\(T_{\\epsilon}\\) by \\(z/(1+r)&gt;0\\).\nThis strategy is feasible in period \\(T_{\\epsilon}\\), that is, it does not violate the collateral constraint (12.3), as long as,\n\\[\nz&lt; (1+r)^{T_{\\epsilon}} (Z-\\epsilon).\n\\]\nWe need to show that this new path of debt also does not violate the collateral constraint for any \\(t&gt;T_{\\epsilon}\\). The new level of debt in any period \\(t&gt;T_{\\epsilon}\\), denoted \\(\\tilde{d}_{t+1}\\), can be found by subtracting the sequential budget constraint for any period \\({T_{\\epsilon}+j}\\) under the original plan and the alternative plan. Note that for \\(t&gt;T_{\\epsilon}\\), \\(c_t\\) and \\(k_{t}\\) are the same under the original and alternative plans. This yields:\n\\[\n\\tilde{d}_{t+1} -  d_{t+1} = (1+r) (\\tilde{d}_{t} -  d_{t})\n\\]\nor\n\\[\n\\tilde{d}_{T_{\\epsilon}+j+1} -  d_{T_{\\epsilon}+j+1} =\n(1+r)^j (\\tilde{d}_{T_{\\epsilon}+1} -  d_{T_{\\epsilon}+1})\n\\]\nNow recall from above that for any \\(t\\ge T_{\\epsilon}\\)\n\\[\n\\begin{eqnarray*}\n\\kappa q_t k_{t+1} - d_{t+1} &&gt;& {(1+r)^t}[Z - \\epsilon]\\\\\n\\kappa q_t k_{t+1} - \\tilde{d}_{t+1} + (\\tilde{d}_{t+1} -  d_{t+1})\n&&gt;& {(1+r)^t}[Z - \\epsilon]\n\\\\\n\\kappa q_t k_{t+1} - \\tilde{d}_{t+1}   &&gt;&\n(1+r)^t[Z - \\epsilon] -\n(\\tilde{d}_{t+1} -  d_{t+1})\n\\\\\n&=& (1+r)^t[Z - \\epsilon -\n(1+r)^{-T_{\\epsilon}} (\\tilde{d}_{T_{\\epsilon}+1} -  d_{T_{\\epsilon}+1})]\\\\\n&&gt;& 0\n\\end{eqnarray*}\n\\]\nThe last inequality follows from the assumption that\n\\[\n(1+r)^{-T_{\\epsilon}} (\\tilde{d}_{T_{\\epsilon}+1} -  d_{T_{\\epsilon}+1}) = (1+r)^{-T_{\\epsilon}} z &lt; Z - \\epsilon.\n\\]\nThis completes the proof that the alternative sequence \\(\\tilde{d}_{t+1}\\) if feasible. Clearly it is associated with higher welfare because consumption in period \\(T_{\\epsilon}\\) is higher. Therefore, the original sequence could not have been a solution to the household maximization problem. Thus we have arrived at a contradiction. Therefore, it must be the case that under household maximization the transversality condition (12.9) hold."
+  },
+  {
+    "objectID": "chapters/ch12/12_8.html",
+    "href": "chapters/ch12/12_8.html",
+    "title": "Exercise 12.8",
+    "section": "",
+    "text": "⬅ Return"
+  },
+  {
+    "objectID": "chapters/ch12/12_8.html#problem",
+    "href": "chapters/ch12/12_8.html#problem",
+    "title": "Exercise 12.8",
+    "section": "Problem",
+    "text": "Problem\nConsider the model economy with a flow collateral constraint of Section 12.5. Calibrate the model using the parameter values and shock process used by Bianchi (2011). Apply the Matlab program constrained.m to establish that the two equilibrium selection criteria (B)and (C) presented in Section 12.5.2 deliver identical policy functions."
+  },
+  {
+    "objectID": "chapters/ch12/12_8.html#answer",
+    "href": "chapters/ch12/12_8.html#answer",
+    "title": "Exercise 12.8",
+    "section": "Answer",
+    "text": "Answer\nNo solution has been posted yet. If you have a solution, we invite you to share it in the comment box at the bottom of this page."
+  },
+  {
+    "objectID": "chapters/ch12/12_2.html",
+    "href": "chapters/ch12/12_2.html",
+    "title": "Exercise 12.2",
+    "section": "",
+    "text": "⬅ Return"
+  },
+  {
+    "objectID": "chapters/ch12/12_2.html#problem",
+    "href": "chapters/ch12/12_2.html#problem",
+    "title": "Exercise 12.2",
+    "section": "Problem",
+    "text": "Problem\nConsider a two-period small open economy populated by identical households with preferences given by\n\\[\n\\ln c_1 +  \\ln c_2,\n\\]\nwhere \\(c_1\\) and \\(c_2\\) denote consumption in periods 1 and 2, respectively. The household’s budget constraints in periods 1 and 2 are, respectively,\n\\[\nd_2 = d_1 + c_1 + q (k_1-k) - F(k)\n\\]\nand\n\\[\nc_2 = F(k_1) -d_2,\n\\]\nwhere \\(d_1\\) denotes debt due in period 1 and \\(d_2\\) the debt assumed in period 1 and due in period 2, \\(k\\) denotes an exogenous initial stock of capital, \\(k_1\\) denotes capital purchased in period 1, \\(q\\) denotes the relative price of capital in terms of consumption, and \\(F(\\cdot)\\) is an increasing and concave production function. Implicit in the period-2 constraint is the requirement that the debt position at the end of period 2 be nil. Debt accumulation in period 1 is subject to the following collateral constraint:\n\\[\nd_2 \\le \\kappa q k_1\n\\]\nwhere \\(\\kappa&lt;1\\) is a parameter.\n\nDerive the first-order conditions associated with the household’s optimization problem.\nAssume that the aggregate stock of capital is fixed. Derive the complete set of equilibrium conditions.\nCharacterize the range of initial debt positions, \\(d_1\\), for which the collateral constraint does not bind in equilibrium.\nFind sufficient conditions on the initial level of debt, \\(d_1\\), for which the economy possesses multiple equilibria (in particular, at least one equilibrium in which the collateral constraint binds and one equilibrium in which it does not)."
+  },
+  {
+    "objectID": "chapters/ch12/12_2.html#answer",
+    "href": "chapters/ch12/12_2.html#answer",
+    "title": "Exercise 12.2",
+    "section": "Answer",
+    "text": "Answer\n\n1.\nThe first-order conditions are the constraints and\n\\[\nc_2 (1-\\mu) =  c_1\n\\]\n\\[\nc_2 q (1-\\kappa\\mu) =  c_1 F'(k_1)\n\\]\n\\[\n\\mu\\ge 0; \\mu (\\kappa q k_1-d_2) =0\n\\]\n\n\n2.\nIn equilibrium, \\(k_1=k\\). So we have\n\\[\n\\begin{eqnarray}\nd_2 = d_1 + c_1  - F(k)\n\\\\\nc_1 + c_2 = 2F(k)-d_1\n\\\\\n\\tag{*}\nc_2 (1-\\mu) = c_1\n\\\\\nc_2 q (1-\\kappa\\mu) =  c_1 F'(k)\n\\\\\n\\mu\\ge 0\n\\\\\nd_2 \\le \\kappa q k\n\\\\\n\\mu (\\kappa q k-d_2) =0\n\\end{eqnarray}\n\\]\n\n\n3.\nSet \\(\\mu=0\\). Then by Euler consumption\n\\[\nc_1 = c_2\n\\]\nFrom the PVBC\n\\[\nd_2 = \\frac12 d_1\n\\]\nThen from the BC in period 1\n\\[\nc_1 = F(k) - \\frac12 d_1\n\\]\nand from the BC in period 2\n\\[\nc_2 = c_1\n\\]\nA requirement of equilibrium is that \\(c_1,c_2&gt;0\\), thus an unconstrained equilibrium exists only if\n\\[\n\\fbox{$F(k) - \\frac12 d_1 &gt;0$}\n\\]\nFrom the Euler for capital\n\\[\nq= F'(k) \\ge 0\n\\]\nFinally, check that the collateral constraint is satisfied, that is, does \\(\\frac12 d_1 \\le \\kappa F'(K) K\\) hold. This is not true in general thus, we need to impose:\n\\[\n\\fbox{$\n\\frac12 d_1 \\le \\kappa F'(K) K\n$}\n\\]\nThis restriction is the tighter one of the two, because \\(\\kappa &lt;1\\) and because \\(F(K)&gt; F'(K) K\\).\nThus, the answer is that an unconstrained equilibrium exists for any \\(d_1\\) satisfying \\(\\frac12 d_1 \\le \\kappa F'(K) K\\).\n\n\n4.\nWe want to show that there exists an equilibrium in which \\(\\mu &gt;0\\).\nCombining the 2 Euler equations yields\n\\[\nq = \\frac{1-\\mu}{1-\\kappa \\mu} F'(K) &lt; F'(K)\n\\]\nThe last inequality follows from the facts that \\(\\kappa&lt;1\\). Thus, we have already shown that should an equilibrium exist with \\(\\mu&gt;0\\), then \\(q\\) is lower. Now solve this equation for \\(1-\\mu\\) to obtain\n\\[\n1- \\mu = \\frac{q -\\kappa q}{F'(K) - \\kappa q}\n\\]\nAt \\(q=F'(K)\\) (which is the max value that \\(q\\) can take), we have \\(1-\\mu =1\\). At \\(q=0\\) (which is the min value that \\(q\\) can take), we have \\(1-\\mu = 0\\). What is the slope for values of \\(q\\) between 0 and \\(F'(k)\\)?\n\\[\n\\frac{\\partial (1-\\mu)}{\\partial q} = \\frac{F'(K) (1-\\kappa)}{F'(K) - \\kappa q}&gt;0\n\\]\nThe last inequality follows from \\(\\kappa&lt;1\\) and from \\(q&lt;F'(K)\\).\nNow plot this function in the space \\((q, 1-\\mu)\\). It is an upward sloping function that is zero at \\(q=0\\) and is 1 at \\(q=F'(K)\\).\nNext we combine the remaining equilibrium conditions to obtain a second relationship between $q $ and \\(1-\\mu\\).\nBecause \\(\\mu&gt;0\\), the collateral constraint must bind:\n\\[\nd_2 = \\kappa q K\n\\]\nUsing the period 1 and period 2 budget constraints, we then have\n\\[\nc_1 = F(K) +\\kappa q K - d_1\n\\]\nand\n\\[\nc_2 = F(K) - \\kappa q K\n\\]\nThe Euler for debt, (*), is\n\\[\nc_1 = (1-\\mu) c_2\n\\]\nUsing the solution for \\(c_1\\) and \\(c_2\\) in this expression yields\n\\[\n(1-\\mu ) = \\frac{c_1}{c_2} = \\frac{F(K) +\\kappa q K - d_1}{ F(K) - \\kappa q K}\n\\]\nNotice that if \\(\\mu&gt;0\\), then it must be the case that \\(c_1&lt;c_2\\). Also \\(\\mu\\) must be less than 1. Draw this relation in the space \\((q, 1-\\mu)\\) for values of \\(q\\) between \\(q=0\\) and \\(q=F'(K)\\), the highest value it can take, namely the one associated with the unconstrained equilibrium.\nConsider \\(q=0\\), then \\(1-\\mu = (F(K) - d_1)/ F(K)\\). Suppose that\n\\[\nF(K) &lt; d_1\n\\]\nThen the intercept is negative.\nConsider \\(q=F'(K)\\), then \\(1-\\mu = \\frac{F(K) +\\kappa F'(K) K - d_1}{ F(K) - \\kappa F'(K) K}\\) this will be greater than 1 as long as \\(\\kappa F'(K) K &gt; \\frac12 d_1\\), which holds as long as an unconstrained equilibrium exists in which the collateral constraint is slack. What is the slope?\n\\[\n\\frac{\\partial (1-\\mu)}{\\partial q} = \\frac{\\kappa K (c_1+c_2)}{c_2^2}&gt;0\n\\]\nTherefore this locus must intersect the line given in equation xxx at least once. \nIn summary and equilibrium in which collateral constraint binds exists if:\n\\[\n2 \\kappa F'(K) K &gt;  d_1 &gt; F(K)\n\\]\nSuppose \\(F(K) = K^{\\alpha}\\), then this condition is:\n\\[\n2 \\kappa \\alpha  F(K) &gt;  d_1 &gt; F(K)\n\\]\nThat is we need \\(2 \\kappa \\alpha &gt;1\\). This is possible eventhough both $$ and \\(\\alpha\\) are less than 1."
+  },
+  {
+    "objectID": "chapters/ch12/12_4.html",
+    "href": "chapters/ch12/12_4.html",
+    "title": "Exercise 12.4",
+    "section": "",
+    "text": "⬅ Return"
+  },
+  {
+    "objectID": "chapters/ch12/12_4.html#problem",
+    "href": "chapters/ch12/12_4.html#problem",
+    "title": "Exercise 12.4",
+    "section": "Problem",
+    "text": "Problem\nConsider the economy of Section 12.4, which features two equilibria, one in which the collateral constraint never binds (point \\(A\\) in Figure 12.4), and one in which the collateral constraint binds in period 0 (point \\(B\\) in the same figure). Suppose that the endowment of tradables, \\(y^T_t\\), increases permanently in period 0. Suppose that the increase in \\(y^T_t\\) is sufficiently small to ensure that the constrained equilibrium continues to exist. Show that in the unconstrained equilibrium, traded consumption in period 0, \\(c^T_0\\), increases one-for-one with \\(y^T_0\\), whereas in the constrained equilibrium, \\(c^T_0\\) increases by more than one-for-one with \\(y^T_0\\). Provide intuition. Comment on the responses of the trade balance, the current account, and the real exchange rate in the constrained and unconstrained equilibria."
+  },
+  {
+    "objectID": "chapters/ch12/12_4.html#answer",
+    "href": "chapters/ch12/12_4.html#answer",
+    "title": "Exercise 12.4",
+    "section": "Answer",
+    "text": "Answer\nNo solution has been posted yet. If you have a solution, we invite you to share it in the comment box at the bottom of this page."
+  },
+  {
+    "objectID": "chapters/ch12/12_7.html",
+    "href": "chapters/ch12/12_7.html",
+    "title": "Exercise 12.7",
+    "section": "",
+    "text": "⬅ Return"
+  },
+  {
+    "objectID": "chapters/ch12/12_7.html#problem",
+    "href": "chapters/ch12/12_7.html#problem",
+    "title": "Exercise 12.7",
+    "section": "Problem",
+    "text": "Problem\nConsider a calibrated version of the economy studied in Section 12.4 Specifically, following the calibration presented in Section 12.5, assume that the time unit is one quarter. Assume also that borrowing cannot exceed 30 percent of annual output, that is, set \\(\\kappa^T=\\kappa^N=0.3\\times 4\\). In addition, set \\(y^T=y^N=1\\), \\(\\sigma=1/\\xi=2\\), \\(a=0.26\\), \\(r=0.0316\\), and \\(\\beta=1/(1+r)\\).\n\nCompute the natural debt limit, denoted \\(\\bar{d}\\).\nCompute the debt level \\(\\tilde{d}\\), defined as the largest value of debt that can be supported as a steady-state equilibrium.\nCompute the range of initial debt levels, \\(d_0&lt;\\tilde{d}\\), for which a second equilibrium exists with a self-fulfilling financial crisis in period 0 of the type studied in Section 12.4. Let \\(\\underline{d}_0\\) denote the lower bound of this range.\nCalculate the value of \\(d_1\\) associated with \\(\\underline{d}_0\\) in a self-fulfilling financial crisis. How much deleveraging does this imply (i.e., report \\((d_1/\\underline{d}_0-1)\\times 100\\))? What is the implied contraction in private consumption of tradables?\nCharacterize the range of values of \\(d_0\\) larger than \\(\\underline{d}_0\\) and smaller than \\(\\tilde{d}\\) for which there are two equilibria with self-fulfilling financial crises in period 0 of the type studied in Section 12.4. Denote the upper bound of this range by \\(\\hat{d}_0\\). Solve analytically for \\(\\hat{d}_0\\) in terms of the structural parameters of the model, taking into account that \\(\\sigma=1/\\xi\\) and that \\(\\beta (1+r)=1\\)."
+  },
+  {
+    "objectID": "chapters/ch12/12_7.html#answer",
+    "href": "chapters/ch12/12_7.html#answer",
+    "title": "Exercise 12.7",
+    "section": "Answer",
+    "text": "Answer\nThe natural debt limit is \\((1+r)/r y^T = 32.6\\). \\(\\tilde{d} = 3.85\\). The smallest d0 is 2.0877."
+  },
+  {
+    "objectID": "chapters/ch12/12_11.html",
+    "href": "chapters/ch12/12_11.html",
+    "title": "Exercise 12.11",
+    "section": "",
+    "text": "⬅ Return"
+  },
+  {
+    "objectID": "chapters/ch12/12_11.html#problem",
+    "href": "chapters/ch12/12_11.html#problem",
+    "title": "Exercise 12.11",
+    "section": "Problem",
+    "text": "Problem\nIn Section 12.10, we showed that the unconstrained equilibrium can be supported by a subsidy on nontradable consumption financed by lump-sum taxes. Show that the unconstrained equilibrium can also be supported by a tax on tradable consumption financed with lump-sum taxes. Show that unlike the scheme based on nontradable taxation, the present scheme must feature a constant tax rate in general."
+  },
+  {
+    "objectID": "chapters/ch12/12_11.html#answer",
+    "href": "chapters/ch12/12_11.html#answer",
+    "title": "Exercise 12.11",
+    "section": "Answer",
+    "text": "Answer\nNo solution has been posted yet. If you have a solution, we invite you to share it in the comment box at the bottom of this page."
+  },
+  {
+    "objectID": "chapters/ch12/12_6.html",
+    "href": "chapters/ch12/12_6.html",
+    "title": "Exercise 12.6",
+    "section": "",
+    "text": "⬅ Return"
+  },
+  {
+    "objectID": "chapters/ch12/12_6.html#problem",
+    "href": "chapters/ch12/12_6.html#problem",
+    "title": "Exercise 12.6",
+    "section": "Problem",
+    "text": "Problem\nConsider a two-period endowment economy populated by identical households with preferences defined over consumption of tradable and nontradable goods and described by the following utility function:\n\\[\n\\ln c^T_1 + \\ln c^N_1 + \\ln c^T_2 + \\ln c^N_2,\n\\]\nwhere \\(c^T_i\\) and \\(c^N_i\\) denote, respectively, consumption of tradables and nontradables in period \\(i=1,2\\). Households are born with no debts and receive endowments of tradables and nontradables in periods 1 and 2 denoted \\(y^T_i\\) and \\(y^N_i\\), respectively, for \\(i=1,2\\). In period 1, households can borrow or lend in the international financial market in a one-period bond denominated in tradable goods that pays the world interest rate \\(r&gt;0\\). Assume that \\((1+r)y^T_1&lt;y^T_2\\). Borrowing is limited by two constraints. One is a no-Ponzi-game constraint that prevents households from holding any debt at the end of period 2. The other borrowing constraint takes the form of a flow collateral constraint. It limits the amount of debt a household can assume in period 1 to a fraction \\(\\alpha&gt;0\\) of the value of its endowment:\n\\[\nd_1 \\le \\alpha (y^T_1 + p_1y^N_1),\n\\]\nwhere \\(p_i\\) denotes the relative price of nontradables in terms of tradables in period \\(i=1,2\\). We will refer to increases in \\(p_i\\) as real exchange-rate appreciations and to decreases as real exchange-rate depreciations.\n\nCompute the unconstrained equilibrium, defined as the equilibrium in which the collateral constraint is not imposed. Express the equilibrium values of \\(c^T_1\\), \\(c^N_1\\), \\(d_1\\), and \\(p_1\\) as functions of the underlying economic fundamentals (i.e., as functions of endowments and the world interest rate).\nDerive a range of values of \\(\\alpha\\), in terms of economic fundamentals, for which the collateral constraint binds.\nSuppose \\(\\alpha\\) takes a value within the range derived in question 2. Compute the resulting constrained equilibrium. Again, express the equilibrium levels of consumption of each good, external debt, and the relative price of nontradables in period 1 as functions of the economic fundamentals.\nWhich of the two equilibria characterized above, the constrained or the unconstrained equilibrium, delivers a more appreciated real exchange rate? Provide intuition.\nDerive a shadow domestic interest rate in the constrained equilibrium.\nNow consider a benevolent social planner who, like households, faces the collateral constraint and the no-Ponzi-game constraint. Derive the unconstrained social planner’s equilibrium (i.e., the social planner’s equilibrium in which the collateral constraint is not imposed). Compare your answer to the one you obtained for the unconstrained competitive equilibrium.\nNow assume that the planner in question 6 is also subject to the collateral constraint. Derive the constrained social planner’s equilibrium, and compare it to the constrained competitive equilibrium.\nIs there overborrowing in this economy? Provide intuition."
+  },
+  {
+    "objectID": "chapters/ch12/12_6.html#answer",
+    "href": "chapters/ch12/12_6.html#answer",
+    "title": "Exercise 12.6",
+    "section": "Answer",
+    "text": "Answer\n\n1.\n\\[\n\\max  \\sum_{j=T,N}\\sum_{i=1,2} \\ln c^j_i\n\\]\nsubject to\n\\[\nc^T_1 + p_1 c^N_1 \\le y^T_1 + p_1y^N_1 + d_1\n\\]\n\\[\nc^T_2 + p_2 c^N_2 + (1+r) d_1\\le  y^T_2 + p_2y^N_2\n\\]\nCombine these expressions to obtain\n\\[\nc^T_1 + p_1 c^N_1 + \\frac{c^T_2+p_2c^N_2}{1+r}\\le y^T_1 + p_1 y^N_1 + \\frac{y^T_2+p_2y^N_2}{1+r}\n\\]\nAfter solving this problem, impose market clearing for nontraded goods:\n\\[\nc^N_i = y^N_i; \\quad i=1,2.\n\\]\nThen, one obtains the following equilibrium solution\n\\[\nc^T_1 = \\frac12 \\left[y^T_1 + \\frac{y^T_2}{1+r}\\right]\n\\]\n\\[\nc^T_2 = \\frac{1+r}2 \\left[y^T_1 + \\frac{y^T_2}{1+r}\\right]\n\\]\n\\[\nd_1 = \\frac12 \\left[\\frac{y^T_2}{1+r}-y^T_1 \\right]\n\\]\n\\[\np_1 = \\frac{1}{2y^N_1} \\left[y^T_1 + \\frac{y^T_2}{1+r}\\right]\n\\]\n\n\n2.\n\\[\n\\alpha \\le \\frac{y^T_2-(1+r)y^T_1}{y^T_2+3(1+r)y^T_1}\n\\]\n\n\n3.\n\\[\nc^T_1 = \\frac{1+\\alpha}{1-\\alpha}y^T_1\n\\]\n\\[\nd_1 = \\frac{2\\alpha}{1-\\alpha}y^T_1\n\\]\n\\[\np_1 = \\frac{1+\\alpha}{1-\\alpha}\\frac{y^T_1}{y^N_1}\n\\]\n\n\n4.\nThe unconstrained equilibrium delivers a more appreciated real exchange rate. To see this, note that if the collateral constraint binds, then an increase in \\(\\alpha\\) brings the allocation closer to the unconstrained equilibrium. Now the real exchange rate under the constrained equilibrium, given by\n\\[\np_1 = \\frac{1+\\alpha}{1-\\alpha}\\frac{y^T_1}{y^N_1},\n\\]\nis strictly increasing in \\(\\alpha\\). This means that \\(p_1\\) is higher in the unconstrained equilibrium than under the constrained equilibirum.\n\n\n5.\nThe domestidc interest rate solves\n\\[\n1+r_1 = \\frac{c_2}{c_1}\n\\]\nIn turn, \\(c^T_2\\) satisfies\n\\[\nc^T_2 = y^T_2 - (1+r)d_1\n\\]\nUsing the solution for \\(d_1\\), we get\n\\[\nc^T_2 = y^T_2 - \\frac{2\\alpha(1+r)}{1-\\alpha}y^T_1\n\\]\nThen, we have\n\\[\n1+r = \\frac{y^T_2 - \\frac{2\\alpha(1+r)}{1-\\alpha}y^T_1}{\\frac{1+\\alpha}{1-\\alpha}y^T_1}\n\\]\n\n\n6.\nIn the unconstrained equilibrium, the planner sets \\(c^N_i=y^N_i\\) for \\(i=1,2\\) and determines consumption of tradables as the solution to the following problem\n\\[\n\\max \\ln c^T_1 + \\ln c^T_2\n\\]\nsubject to\n\\[\nc^T_1 + \\frac{c^T_2}{1+r}=y^T_1 + \\frac{y^T_2}{1+r}.\n\\]\nThe solution is identical to the unconstrained competitive equilibrium.\n\n\n7.\nIn the constrained equilibrium, the social planner sets \\(c^N_i=y^N_i\\) for \\(i=1,2\\), and internalizes the fact that the relative price of nontradables satisfies the condition \\(p_1y^N_1=c^T_1\\) and uses it to replace \\(p_1y^N_1\\) for \\(c^T_1\\) in the borrowing constraint, which becomes\n\\[\nd_1 \\le \\alpha (y^T_1+c^T_1)\n\\]\nCombining this condition with the budget constraint in period 1 (i.e., \\(c^T_1=y^T_1+d_1\\)), we obtain\n\\[\nc^T_1 = y^T_1 + \\alpha(y^T_1+c^T_1)\n\\]\nwhose solution delivers the same values as the constrained competitive equilibrium.\n\n\n8.\nNo."
+  },
+  {
+    "objectID": "chapters/ch12/12_10.html",
+    "href": "chapters/ch12/12_10.html",
+    "title": "Exercise 12.10",
+    "section": "",
+    "text": "⬅ Return"
+  },
+  {
+    "objectID": "chapters/ch12/12_10.html#problem",
+    "href": "chapters/ch12/12_10.html#problem",
+    "title": "Exercise 12.10",
+    "section": "Problem",
+    "text": "Problem\nIn Section 12.10, we characterized a time-varying subsidy on nontraded consumption that achieves the unconstrained equilibrium. Show that the unconstrained equilibrium can also be supported by a time-invariant subsidy on nontradable consumption."
+  },
+  {
+    "objectID": "chapters/ch12/12_10.html#answer",
+    "href": "chapters/ch12/12_10.html#answer",
+    "title": "Exercise 12.10",
+    "section": "Answer",
+    "text": "Answer\nNo solution has been posted yet. If you have a solution, we invite you to share it in the comment box at the bottom of this page."
+  },
+  {
+    "objectID": "chapters/ch12/12_5.html",
+    "href": "chapters/ch12/12_5.html",
+    "title": "Exercise 12.5",
+    "section": "",
+    "text": "⬅ Return"
+  },
+  {
+    "objectID": "chapters/ch12/12_5.html#problem",
+    "href": "chapters/ch12/12_5.html#problem",
+    "title": "Exercise 12.5",
+    "section": "Problem",
+    "text": "Problem\nConsider a two-period small open endowment economy populated by identical households with preferences given by\n\\[\n\\ln c^T_1 + \\ln c^N_1 + \\beta  \\ln c^T_2,\n\\]\nwhere \\(c^T_1\\) and \\(c^T_2\\) denote consumption of traded goods in periods 1 and 2, respectively; \\(c^N_1\\) denotes consumption of nontraded goods in period 1; and \\(\\beta\\in(0,1)\\) is the subjective discount factor. The household’s budget constraints in periods 1 and 2 are, respectively,\n\\[\nc^T_1 + p_1 c^N_1  = y^T_1 + p_1 y^N_1 + \\frac{d_1}{1+r}\n\\]\nand\n\\[\nc^T_2 + d_1 = y^T_2 ,\n\\]\nwhere \\(p_1\\) denotes the relative price of nontradable in period 1; \\(y^T_i\\) denotes the endowment of tradables in period \\(i=1,2\\); \\(y^N_1\\) denotes the endowment of nontradables in period 1; \\(d_1\\) denotes debt due in period 2; and \\(r\\) denotes the interest rate at which the country can borrow internationally. Assume that \\(\\beta(1+r)=1\\). Implicit in the period-2 constraint is the requirement that the debt position at the end of period 2 be nil. Debt accumulation in period 1 is subject to the following flow collateral constraint:\n\\[\n\\frac{d_1}{1+r} \\le \\kappa [y^T_1 + p_1 y^N_1]\n\\]\nwhere \\(0&lt;\\kappa\\) is a parameter.\n\nDerive the first-order conditions associated with the household’s optimization problem.\nDerive the complete set of equilibrium conditions.\nFind conditions on the structural parameters of the model, (\\(\\beta\\), \\(r,\\) \\(\\kappa\\), \\(y^T_1\\), \\(y^T_2,\\) and \\(y^N_1\\)), such that an equilibrium exists in which the collateral constraint is slack.\nUnder those conditions, does there also exist an equilibrium in which the collateral constraint is binding, that is, an equilibrium with a self-fulfilling financial crisis. If so, discuss whether there is underborrowing in the financial crisis and whether in the crisis the value of collateral suffers a Fisherian deflation."
+  },
+  {
+    "objectID": "chapters/ch12/12_5.html#answer",
+    "href": "chapters/ch12/12_5.html#answer",
+    "title": "Exercise 12.5",
+    "section": "Answer",
+    "text": "Answer\n\n1.\n\\[\n\\begin{eqnarray*}\\mathcal{L} & =&  \\ln c^T_1 + \\ln c^N_1 + \\beta  \\ln c^T_2\\\\\n& +& \\lambda_1 \\left[ y^T_1 + p_1 y^N_1 + \\frac{d_1}{1+r} - c^T_1 - p_1 c^N_1 \\right]\\\\\n& +& \\lambda_2 \\left[ y^T_2 - c^T_2 - d_1\\right]\\\\\n& +& \\mu\\left[ \\kappa [y^T_1 + p_1 y^N_1] - \\frac{d_1}{1+r} \\right]\n\\end{eqnarray*}\n\\]\nFOCs:\n\\[\n\\begin{eqnarray*}\n\\frac{1}{c^T_1} = \\lambda_1 \\\\\n\\frac{1}{c^N_1} = \\lambda_1 p_1\\\\\n\\beta \\frac{1}{c^T_2} = \\lambda_2\\\\\n\\lambda_1  \\frac{1}{1+r} =\\lambda_2 + \\mu \\frac{1}{1+r}\\\\\n\\mu\\ge0\\\\\n\\mu\\left[ \\kappa [y^T_1 + p_1 y^N_1] - \\frac{d_1}{1+r} \\right]=0\\\\\n\\kappa [y^T_1 + p_1 y^N_1] \\ge \\frac{d_1}{1+r} \\\\\nc^T_1 + p_1 c^N_1=y^T_1 + p_1 y^N_1 + \\frac{d_1}{1+r}  \\\\\nc^T_2 + d_1 = y^T_2  \n\\end{eqnarray*}\n\\]\n\n\n2.\nShort answer HH optimality conditions plus \\(c^N_1 = y^N_1\\). Long answer combines some of the conditions to eliminate some variables. A competitive equilibrium are values \\(\\{c^T_1, c^T_2, d_1, p_1, \\mu\\}\\) satisfying \\(c^T_1, c^T_2 &gt;0\\), and\n\\[\n\\begin{eqnarray}\n\\frac{c^T_1}{y^N_1} =  p_1 \\tag{1} \\\\\n\\frac{1}{c^T_1}  =\\frac{1}{c^T_2} + \\mu \\tag{2}\\\\\n\\mu\\ge0 \\tag{3} \\\\\n\\mu\\left[ \\kappa [y^T_1 + p_1 y^N_1] - \\frac{d_1}{1+r} \\right]=0 \\tag{4} \\\\\n\\kappa [y^T_1 + p_1 y^N_1] \\ge \\frac{d_1}{1+r} \\tag{5} \\\\\nc^T_1 =y^T_1 + \\frac{d_1}{1+r} \\tag{6} \\\\\nc^T_2 + d_1 = y^T_2  \\tag{7}\n\\end{eqnarray}\n\\]\n\n\n3.\nCollateral constraint slack means \\(\\mu=0\\).\nBy (2), \\(c^T_1=c^T_2\\). By (6) and (7) \\(c^T_1 (1 + 1/(1+r)) = y^T_1 + y^T_2/(1+r)\\), solving yields\n\\[\nc^T_1 = \\frac{1+r}{2+r}\\left[y^T_1 + y^T_2/(1+r)\\right]\n\\]\nThis is always positive as long as at least 1 of the 2 endowments is strictly positive. The associated value of \\(d_1\\) can be read off from (7)\n\\[\n\\frac{d_1}{1+r}  =  c^T_1 - y^T_1  =  \\frac{1}{2+r}\\left(y^T_2-y^T_1\\right)\n\\]\nThis is intuitive. Debt is positive, ie, you borrow against future income, when future income exceeds current income.\nWhen does that value of \\(d_1\\) satisfy the collateral constraint (5), That is, we need that\n\\[\n\\begin{eqnarray*}\n\\frac{d_1}{1+r}  &\\le& \\kappa [y^T_1 + p_1 y^N_1]\\\\\n\\frac{1}{2+r}\\left(y^T_2-y^T_1\\right)& \\le& \\kappa [y^T_1 + c^T_1]\\\\\n\\frac{1}{2+r}\\left(y^T_2-y^T_1\\right)& \\le& \\kappa [y^T_1 + \\frac{1+r}{2+r}\\left[y^T_1 + \\frac{y^T_2}{1+r}\\right]]\\\\\n\\left(y^T_2-y^T_1\\right)& \\le& \\kappa [(2+r)y^T_1 + \\left[(1+r)y^T_1 + y^T_2\\right]]\\\\\n\\left(y^T_2-y^T_1\\right)& \\le& \\kappa [(3+2r)y^T_1 +  y^T_2]\n\\end{eqnarray*}\n\\]\nThus an equilibrium with a nonbinding constraint exists if\n\\[\n\\fbox{$(1-\\kappa)y^T_2 \\le (1+ \\kappa (3+2r))y^T_1 \\tag{8}\n$}\n\\]\nSuppose \\(\\kappa\\ge1\\), then this condition is always satisfied. Suppose \\(y^T_1=0\\), then this condition can only be satisfied by a \\(\\kappa&gt;1\\). As we saw before debt is only positive in the unconstrained equilibrium if \\(y^T_2&gt;y^T_1\\).\n\n\n4.\nIf the collateral constraint binds,we have by (5),\n\\[\n\\frac{d_1}{1+r} =\\kappa [y^T_1 + p_1 y^N_1]\n\\]\nRecall that \\(p_1 y^N_1 = c^T_1\\) and that by (6) \\(c^T_1 = y^T_1 + d_1/(1+r)\\). Thus we can write: \\(c^T_1 - y^T_1 =\\kappa [y^T_1 + c^T_1]\\) or\n\\[\n\\fbox{$\nc^T_1 = \\frac{1+\\kappa}{1-\\kappa} y^T_1\n$}\n\\]\nThus a binding constraint with a positive \\(c^T_1\\) exists only if \\(0&lt;\\kappa&lt;1\\). In this case \\(c^T_1&gt;y^T_1\\), that is, \\(d_1&gt;0\\).\nStart with (7)\n\\[\n\\begin{eqnarray*}\nc^T_2 & = & y^T_2 - d_1\\\\\n&=&y^T_2 - (1+r) \\kappa (y^T_1 + c^T_1)\\\\\n&=&y^T_2 - (1+r) \\kappa (y^T_1 + \\frac{1+\\kappa}{1-\\kappa} y^T_1 )\\\\\n&=&y^T_2 - (1+r) \\kappa ( \\frac{2}{1-\\kappa} y^T_1 )\\\\\n&=&\\frac1{1-\\kappa}\\left((1-\\kappa)y^T_2 - (1+r)2 \\kappa  y^T_1 \\right)\\\\\n&\\le &\\frac1{1-\\kappa}\\left(1+\\kappa(3+2r) - (1+r)2 \\kappa \\right)y^T_1\\\\\n&= &\\frac1{1-\\kappa}\\left(1+\\kappa   \\right)y^T_1 \\\\\n&= &c^T_1\n\\end{eqnarray*}\n\\]\nThe inequality follows from (8). Thus we have that if the collateral constraint binds, then \\(c^T_1\\ge c^T_2\\). This implies by (2) that \\(\\mu\\le0\\). It follows that no equilibrium with \\(\\mu&gt;0\\) exists. We have shown that if an unconstrained equilibrium exists, then there does not exist a second equilibrium in which the constraint binds and \\(\\mu&gt;0\\). That is, no second equilibrium with a financial crisis exists."
+  },
+  {
+    "objectID": "chapters/ch12/12_3.html",
+    "href": "chapters/ch12/12_3.html",
+    "title": "Exercise 12.3",
+    "section": "",
+    "text": "⬅ Return"
+  },
+  {
+    "objectID": "chapters/ch12/12_3.html#problem",
+    "href": "chapters/ch12/12_3.html#problem",
+    "title": "Exercise 12.3",
+    "section": "Problem",
+    "text": "Problem\nThe starting point of this exercise is the endowment economy with impatient households studied in exercise 2.11 of Chapter 2. Modify that environment by assuming that households are subject to a borrowing limit of the form\n\\[\nd_t \\le \\bar{d},\n\\]\nConsider two alternative scenarios: one in which this borrowing constraint is not binding in period 0 and one in which it is. Under both scenarios characterize the equilibrium paths of consumption, net external debt, and the trade balance."
+  },
+  {
+    "objectID": "chapters/ch12/12_3.html#answer",
+    "href": "chapters/ch12/12_3.html#answer",
+    "title": "Exercise 12.3",
+    "section": "Answer",
+    "text": "Answer\n\\[\n\\max_{\\{c_t, d_t\\}}  \\quad \\sum_{t=0}^{\\infty} \\beta^t \\ln c_t\n\\]\nsubject to\n\\[\nc_t + (1+r) d_{t-1} = y +d_t\n\\]\nand\n\\[\nd_t \\le \\bar{d}\n\\]\ngiven \\(d_{-1} = 0\\).\nAn eqm are sequences \\(\\{c_t, d_t, \\mu_t\\}_{t=0}^{t=\\infty}\\) satisfying for all \\(t\\ge 0\\)\n\\[\n\\frac{c_{t+1}}{c_t} =\\frac{\\beta (1+r)}{1-\\mu_t} \\tag{1}\n\\]\n\\[\n\\mu_t (\\bar{d}-d_t) =0; \\quad \\mu_t\\ge 0;\\quad d_t\\le\\bar{d} \\tag{2}\n\\]\n\\[\nc_t + (1+r) d_{t-1} = y +d_t, \\tag{3}\n\\]\ngiven \\(d_{-1} =0\\). The variable \\(\\mu_t\\) is the Lagrange multiplier associated with the collateral constraint.\nRecall that \\(\\beta(1+r) &lt;1\\) and that \\(\\bar{d}\\) is less than the natural debt limit.\nScenario 1: The collateral constraint is binding in period 0, that is, \\(d_0 = \\bar{d}\\). By (3), \\(c_0 = y+\\bar{d}\\). And \\(tb_0 = y-c_0 = -\\bar{d} &lt;0\\). We are going to guess an eqm and then verify that all eqm conditions are satisfied. Guess that for \\(t\\ge1\\), \\(c_t = y - r\\bar{d}\\), \\(d_t = \\bar{d}\\), and \\(1-\\mu_t = \\beta(1+r)\\). It follows that all eqm conditions are satisfied for \\(t\\ge1\\). What about period \\(t=0\\). It remains to show that \\(\\mu_0\\ge 0\\). By (1), \\(c_1/c_0 =\\frac{\\beta (1+r)}{1-\\mu_0}\\), substitute the proposed values for \\(c_0\\) and \\(c_1\\) to obtain \\(y-r\\bar{d}/(y+\\bar{d})=\\frac{\\beta (1+r)}{1-\\mu_0}\\). This implies that \\(\\mu_0\\ge 0\\) only if \\(\\beta (1+r) \\frac{y+\\bar{d}}{y-r\\bar{d}} \\le 1\\). For example, this would hold if \\(\\bar{d}=0\\). And it would not hold for \\(\\bar{d}\\) close to the natural debt limit. Thus, there do exist positive values of \\(\\bar{d}\\) (and less than the ndl) such that \\(\\mu_0\\ge0\\) and the collateral constraint binds in period 0. Let us turn to Scenario 2 now, namely, the case that in period 0 the collateral constraint is slack.\nScenario 2: The collateral constraint is slack in period 0, that is, \\(d_0 &lt; \\bar{d}\\). Note that an equilibrium in which the collateral constraint is never binding does not exist. As we have shown in EX2.11, when the constraint never binds, then \\(d_t\\) converges to the natural debt limit, which contradict the assumption that the CC never binds. Let \\(T\\ge 1\\) be the period in which the collateral constraint binds for the first time, that is, \\(\\mu_T\\ge0\\), \\(d_T =\\bar{d}\\) and \\(d_t&lt;\\bar{d}\\) for all \\(t&lt;T\\). Assume further that the collateral constraint then binds forever, that is, \\(d_t = \\bar{d}\\) for all \\(t\\ge T\\). We wish to show that such an equilibrium exists. Let’s first characterize the eqm for all \\(t&gt;T\\): \\(d_t=\\bar{d}\\), \\(c_t = y-r\\bar{d}&gt;0\\), and by (1) \\(\\mu_t &gt;0\\). Therefore all eqm conditions are satisfied for \\(t&gt;T\\). Now consider period \\(t=T\\). By definition of \\(T\\), \\(d_{T-1}&lt;\\bar{d}\\) and \\(d_T = \\bar{d}\\). Evaluating (3) at \\(t=T\\) and at \\(t=T+1\\), it follows that \\(c_{T+1}&lt;c_T\\).\nNow consider \\(t&lt;T\\). By definition of \\(T\\), the collateral constraint is slack, so that \\(\\mu_t=0\\) for all \\(t&lt;T\\). For \\(t=0\\) to \\(t=T-1\\), we have and \\(c_{t+1} = \\beta (1+r) c_t\\). (This means that \\(c_t\\) is decreasing until period \\(t=T+1\\) from then on it is constant. So we have characterized \\(c_t\\) but for an explicit solution for \\(c_0\\) and an explicit expression for \\(T\\)) Replace \\(c_t\\) by (3) to obtain the following system of \\(T\\) equation in the following \\(T\\) unknowns: \\(d_0, d_1, \\dots, d_{T-1}\\)\n\\[\n\\begin{eqnarray*}\ny+d_1 -(1+r) d0 &= &\\beta (1+r) (y + d_0 - (1+r) d_{-1})\\\\\ny+d_2 -(1+r) d1 &= &\\beta (1+r) (y + d_1 - (1+r) d_0)\\\\\n\\vdots\\\\\ny+d_T-(1+r) d_{T-1}&=& \\beta(1+r) (y + d_{T-1} - (1+r) d_{T-2})\\\\\n\\end{eqnarray*}\n\\]\nDo we know whether \\(d_t\\) is increasing over time, that is, \\(d_{t} &gt; d_{t-1}\\)? We are starting with \\(d_0&lt;\\bar{d}\\) by the assumption of scenario 2. We have already established that eventually \\(d_t\\) must go up and hit \\(\\bar{d}\\). Suppose it were to fall and then at some point it must go up so at some point it must be true that \\(d_t \\ge d_{t+1}&lt;d_{t+2}\\). This implies that \\(y+d_{t+2}- (1+r) d_{t+1} &gt; y+d_{t+1}-(1+r) d_t\\), or \\(c_{t+1}&gt;c_t\\). So this can never be the case. We have therefore established that for all \\(t&lt;T\\), \\(d_t&gt;d_{t-1}\\). It then follows that debt is monotonically increasing until period \\(T\\) and constant thereafter, that is, \\(d_t = \\bar{d}\\) for all \\(t\\ge T\\).\nWhat about the dynamics of \\(c_t\\)? Consumption is falling for all \\(t \\le T+1\\) and constant thereafter. Because consumption is declining the trade balance is increasing. Starting in \\(T+1\\) the trade balance is constant and equal to \\(TB_t = r \\bar{d} &gt;0\\) for all \\(t&gt;T\\). Also because in the long-run \\(c_t&lt;y\\), we know that \\(c_0\\) must be greater than \\(y\\), that is, we know that \\(d_0&gt;0\\).\nFor scenario 2, below are graph of the dynamics of \\(c_t\\), \\(tb_t\\), and \\(d_t\\)"
+  },
+  {
+    "objectID": "chapters/ch12/12_9.html",
+    "href": "chapters/ch12/12_9.html",
+    "title": "Exercise 12.9",
+    "section": "",
+    "text": "⬅ Return"
+  },
+  {
+    "objectID": "chapters/ch12/12_9.html#problem",
+    "href": "chapters/ch12/12_9.html#problem",
+    "title": "Exercise 12.9",
+    "section": "Problem",
+    "text": "Problem\nThe stochastic economy with a flow collateral constraint of Section 12.5 is cast at a quarterly frequency. The purpose of the present exercise is to ascertain whether the model continues to display multiple equilibria when the time unit is set to 1 year. This alteration introduces profound changes in the economic environment. First, it means that households reoptimize consumption spending once a year instead of once a quarter. Second, it means that the collateral constraint must hold only year by year, instead of quarter by quarter. To carry out the change of frequency, answer the following questions.\n\nList all of the parameters of the model (see Table 12.1) that are frequency dependent. Provide the new values corresponding to an annual frequency.\nSimulate the quarterly version of the model (using the program simu.m) for 1 million periods to obtain artificial time series for \\(y^T_t\\) and \\(r_t\\). Aggregate these time series to annual frequency. This should reduce their length to 250,000. Now, use these artificial data to estimate a new transition probability matrix using 21 grid points for \\(y^T_t\\) and 11 points for \\(r_t\\). Here you have to be careful and make sure that all variables are expressed in the correct units. (Be mindful about logs, deviations from means, etc…. Remember that the devil is in the details!). Note: To estimate the transition probability matrix, you can use the Matlab program tpm.m, available on the authors’ website (Schmitt-Groh'e and Uribe, 2009).\nFinally, apply the Matlab program constrained.m to establish whether the two equilibrium selection criteria ((B) and (C)) presented in Section 12.5.2 deliver identical policy functions."
+  },
+  {
+    "objectID": "chapters/ch12/12_9.html#answer",
+    "href": "chapters/ch12/12_9.html#answer",
+    "title": "Exercise 12.9",
     "section": "Answer",
     "text": "Answer\nNo solution has been posted yet. If you have a solution, we invite you to share it in the comment box at the bottom of this page."
   }

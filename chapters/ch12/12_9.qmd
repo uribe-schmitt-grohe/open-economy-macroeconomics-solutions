@@ -1,0 +1,19 @@
+---
+title: "Exercise 12.9"
+subtitle: "Time Unit and Equilibrium Indeterminacy"
+---
+<a class="return-button" href="index.qmd">⬅ Return</a>
+
+## Problem
+
+The stochastic economy with a flow collateral constraint of Section 12.5 is cast at a quarterly frequency. The purpose of the present exercise is to ascertain whether the model continues to display multiple equilibria when the time unit is set to 1 year. This alteration introduces profound changes in the economic environment. First, it means that households reoptimize consumption spending once a year instead of once a quarter. Second, it means that the collateral constraint must hold only year by year, instead of quarter by quarter. To carry out the change of frequency, answer the following questions.
+
+1. List all of the parameters of the model (see Table 12.1) that are frequency dependent. Provide the new values corresponding to an annual frequency. 
+
+2. Simulate the quarterly version of the model (using the program simu.m) for 1 million periods to obtain artificial time series for $y^T_t$ and $r_t$. Aggregate these time series to annual frequency. This should reduce their length to 250,000. Now, use these artificial data to estimate a new transition probability matrix using 21 grid points for $y^T_t$ and 11 points for $r_t$. Here you have to be careful and make sure that all variables are expressed in the correct units. (Be mindful about logs, deviations from means, etc.... Remember that the devil is in the details!). *Note:* To estimate the transition probability matrix, you can use the Matlab program tpm.m, available on the authors' website (Schmitt-Groh\'e and Uribe, 2009).
+
+3. Finally, apply the Matlab program constrained.m to establish whether the two equilibrium selection criteria ((B) and (C)) presented in Section 12.5.2 deliver identical policy functions.
+
+## Answer
+
+_No solution has been posted yet. If you have a solution, we invite you to share it in the comment box at the bottom of this page._

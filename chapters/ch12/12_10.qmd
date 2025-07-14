@@ -1,0 +1,13 @@
+---
+title: "Exercise 12.10"
+subtitle: "Optimality of a Constant Tax on Nontradable Consumption"
+---
+<a class="return-button" href="index.qmd">⬅ Return</a>
+
+## Problem
+
+In Section 12.10, we characterized a time-varying subsidy on nontraded consumption that achieves the unconstrained equilibrium. Show that the unconstrained equilibrium can also be supported by a time-invariant subsidy on nontradable consumption. 
+
+## Answer
+
+_No solution has been posted yet. If you have a solution, we invite you to share it in the comment box at the bottom of this page._

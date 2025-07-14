@@ -1,0 +1,24 @@
+---
+title: "Exercise 12.7"
+subtitle: "Flow Collateral Constraints and Multiple Equilibria in a Calibrated Economy"
+---
+<a class="return-button" href="index.qmd">⬅ Return</a>
+
+## Problem
+
+Consider a calibrated version of the economy studied in Section 12.4 Specifically, following the calibration presented in Section 12.5, assume that the time unit is one quarter. Assume also that borrowing cannot exceed 30 percent of annual output, that is, set $\kappa^T=\kappa^N=0.3\times 4$. In addition, set  $y^T=y^N=1$, $\sigma=1/\xi=2$, $a=0.26$, $r=0.0316$, and $\beta=1/(1+r)$. 
+
+1. Compute the natural debt limit, denoted $\bar{d}$.
+
+2. Compute the debt level $\tilde{d}$, defined as the largest value of debt that can be supported as a steady-state equilibrium. 
+
+3. Compute the range of initial debt levels, $d_0<\tilde{d}$, for which a second equilibrium exists with a self-fulfilling financial crisis in period 0 of the type studied in Section 12.4. Let $\underline{d}_0$ denote the lower bound of this range.
+
+4. Calculate the value of $d_1$ associated with $\underline{d}_0$ in a self-fulfilling financial crisis. How much deleveraging does this imply (i.e., report $(d_1/\underline{d}_0-1)\times 100$)? What is the implied contraction in private consumption of tradables?
+
+5. Characterize the range of values of $d_0$ larger than $\underline{d}_0$ and smaller than $\tilde{d}$ for which there are two equilibria with self-fulfilling financial crises in period 0 of the type studied in Section 12.4. Denote the upper bound of this range by $\hat{d}_0$. Solve analytically for $\hat{d}_0$ in terms of the structural parameters of the model, taking into account that $\sigma=1/\xi$ and that $\beta (1+r)=1$.
+
+## Answer
+
+The natural debt limit is $(1+r)/r y^T = 32.6$. $\tilde{d} = 3.85$. The smallest d0 is 2.0877. 
+<!-- See Matlab program  \verb7\uribe\book\overborrowing\flowcc_analytical\exercise.m7 -->
