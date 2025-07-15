@@ -10,11 +10,41 @@ Demonstrate that when nominal wages are fully flexible, the competitive equilibr
 
 ## Answer
 
-Because nominal rigidity is the only friction in the present model, it should be intuitive that if we were to remove this friction, the resulting competitive equilibrium would coincide with the Pareto optimal allocation for any exchange-rate policy. To see this formally, set $\gamma=0$. Then,  equilibrium condition~(\ref{eq:dnwr_DNWR-competitive}) collapses to $w_t\ge0$.  This condition is superfluous because, by condition (\ref{eq:dnwr_labor-demand-competitive}) and the fact that $p_t$ and $F'(h_t)$ are both  positive, we have that $w_t>0$. It then follows from the slackness condition~(\ref{eq:dnwr_slackness-h-competitive}) that $h_t=\bar{h}$ for all $t$. 
-Therefore, employment in the competitive equilibrium with $\gamma=0$ is the same as in the Pareto optimal allocation. To see that the competitive equilibrium with $\gamma=0$ can also support the Pareto optimal processes for $c^T_t$ and $d_{t+1}$ for $t\ge0$, note that the last six first-order conditions of the Pareto problem listed above also appear in the set of competitive equilibrium conditions (namely, conditions (\ref{eq:dnwr_market-clearing-traded-competitive}), 
-(\ref{eq:dnwr_dbar-competitive}),
-(\ref{eq:dnwr_lambda-competitive}),
-(\ref{eq:dnwr_Euler-competitive}),
-(\ref{eq:dnwr_mu-competitive}), 
+Because nominal rigidity is the only friction in the present model, it should be intuitive that if we were to remove this friction, the resulting competitive equilibrium would coincide with the Pareto optimal allocation for any exchange-rate policy. 
+
+In Section 9.3.2,  we present the Pareto optimal allocation. There we show that it features $h_t = \bar{h}$.
+
+To see that in a competitive eqm with wage flexibility it is also true that $h_t = \bar{h}$, set $\gamma=0$. Then, equilibrium condition (9.17) collapses to $w_t\ge0$. This condition is superfluous because, by eqm condition (9.16) and the fact that $p_t$ and $F'(h_t)$ are both  positive, we have that $w_t>0$. It then follows from the slackness condition (9.19) that $h_t=\bar{h}$ for all $t$. Therefore, employment in the competitive equilibrium with $\gamma=0$ is the same as in the Pareto optimal allocation.
+
+We need to check that the solution to the remaining competitive eqm conditions also satisfy the conditions of the Pareto optimal allocation. Those first order conditions are given in section 9.3.2. But since those  are unnumbered we reproduce them here from section 9.3.2: The Pareto optimal allocation satisfies the first-order conditions of the social planners problem  with respect  $\lambda_t$, $\mu_t$, $c^T_t$, and $d_{t+1}$ are
+
+$$
+c^T_t + d_t = y^T_t + \frac{d_{t+1}}{1+r_t},
+$$
+
+$$
+d_{t+1} \le  \bar{d},
+$$
+
+$$
+\lambda_t = U'(A(c^T_t,F(h_t)))A_1(c^T_t,F(h_t)),
+$$
+
+$$
+\frac{\lambda_t}{1+r_t} = \beta E_t \lambda_{t+1} + \mu_t,
+$$
+
+with
+
+$$
+\mu_t \ge 0,
+$$
+
 and
-(\ref{eq:dnwr_slackness-mu-competitive})). 
+
+$$
+\mu_t (d_{t+1}-\bar{d})=0.
+$$
+
+
+To see that the competitive equilibrium with $\gamma=0$ can also support the Pareto optimal processes for $c^T_t$ and $d_{t+1}$ for $t\ge0$, note that the last six first-order conditions of the Pareto problem, which are the ones  listed above, also appear in the set of competitive equilibrium conditions (namely, conditions (9.9), (9.10), (9.13), (9.14), (9.11), and (9.12)). 

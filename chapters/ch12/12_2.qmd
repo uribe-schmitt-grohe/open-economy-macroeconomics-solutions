@@ -134,20 +134,20 @@ $$
 The last inequality follows from the facts that $\kappa<1$. Thus, we have already shown that should an equilibrium exist with $\mu>0$, then $q$ is lower. Now solve this equation for $1-\mu$ to obtain
 
 $$
-1- \mu = \frac{q -\kappa q}{F'(K) - \kappa q} \tag{8}
+1- \mu = \frac{q -\kappa q}{F'(k) - \kappa q} \tag{8}
 $$
 
-At $q=F'(K)$ (which is the max value that $q$ can take), we have $1-\mu =1$. 
+At $q=F'(k)$ (which is the max value that $q$ can take), we have $1-\mu =1$. 
 At $q=0$ (which is the min value that $q$ can take), we have $1-\mu = 0$. 
 What is the slope for values of $q$ between 0 and $F'(k)$? 
 
 $$
-\frac{\partial (1-\mu)}{\partial q} = \frac{F'(K) (1-\kappa)}{(F'(K) - \kappa q)^2}>0
+\frac{\partial (1-\mu)}{\partial q} = \frac{F'(k) (1-\kappa)}{(F'(k) - \kappa q)^2}>0
 $$
 
 The last inequality follows from $\kappa<1$. 
 
-Now plot (8) in the space $(q, 1-\mu)$. It is an upward sloping function that is zero at $q=0$ and is 1 at $q=F'(K)$. 
+Now plot (8) in the space $(q, 1-\mu)$. It is an upward sloping function that is zero at $q=0$ and is 1 at $q=F'(k)$. 
 
 Next we combine the remaining equilibrium conditions to obtain a second relationship between $q $ and $1-\mu$. 
 
