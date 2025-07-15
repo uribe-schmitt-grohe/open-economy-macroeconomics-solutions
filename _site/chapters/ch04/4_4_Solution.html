@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Exercise 4.4 – open economy macroeconomics by martín uribe and stephanie schmitt-grohé, PUP 2017</title>
+<title>Exercise 4.4 - Solution – open economy macroeconomics by martín uribe and stephanie schmitt-grohé, PUP 2017</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -178,7 +178,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title">Exercise 4.4</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+<div class="quarto-title-block"><div><h1 class="title">Exercise 4.4 - Solution</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
 <p class="subtitle lead">Complete Asset Markets and a Discrete Endowment Process</p>
 </div>
 
@@ -196,7 +196,7 @@ window.Quarto = {
 </header>
 
 
-<p><a class="return-button" href="../../chapters/ch04/index.html">⬅ Return</a></p>
+<p><a class="return-button" href="../../chapters/ch04/4_4.html">⬅ Return</a></p>
 <section id="problem" class="level2">
 <h2 class="anchored" data-anchor-id="problem">Problem</h2>
 <p>Consider an economy populated by a large number of identical consumers with preferences described by the utility function</p>
@@ -223,16 +223,66 @@ E_0 \sum_{t=0}^\infty \beta^t U(c_t),
 </section>
 <section id="answer" class="level2">
 <h2 class="anchored" data-anchor-id="answer">Answer</h2>
-<p>This exercise has two alternative solutions:</p>
-<ul>
-<li><a href="../../chapters/ch04/4_4_Solution.html">Solution</a></li>
-<li><a href="../../chapters/ch04/4_4_Solution_state_space.html">Solution in state space notation</a></li>
-</ul>
+<section id="section" class="level4">
+<h4 class="anchored" data-anchor-id="section">1.</h4>
+<p>Use the notation of Chapter 4.9.</p>
+<p><span class="math display">\[
+\max E_0 \sum_{t=0}^{\infty} \beta^t U(c_t)  \quad \mbox{s.t. } \quad c_t + E_tq_{t,t+1} b_{t+1} = y_t + b_t
+\]</span></p>
+<p>given <span class="math inline">\(y_0=y_H\)</span> and <span class="math inline">\(b_0\)</span> and a no-Ponzi game constraint <span class="math inline">\(\lim_{j \rightarrow \infty} E_t q_{t,t+j} b_{t+j}=0\)</span> for all dates and states.</p>
+</section>
+<section id="section-1" class="level4">
+<h4 class="anchored" data-anchor-id="section-1">2.</h4>
+<p>FOC under complete markets</p>
+<p><span class="math display">\[
+U'(c_t) q_{t,t+1} = \beta U'(c_{t+1})
+\]</span></p>
+<p>In this problem it is given that <span class="math inline">\(q_{t,t+1} = \beta\)</span>, thus consumption is constant over dates and states, or <span class="math inline">\(c_t = c\)</span>.</p>
+<p>Multiply budget constraint by <span class="math inline">\(q_{0,t}\)</span>, take <span class="math inline">\(E_0\)</span>, sum for <span class="math inline">\(t=0\)</span> to <span class="math inline">\(t=T\)</span>,</p>
+<p><span class="math display">\[
+\sum_{t=0}^{T} q_{0,t} E_0 c_t + E_0q_{0,T+1} b_{T+1} = \sum_{t=0}^{T} q_{0,t} E_0 y_t + b_0
+\]</span></p>
+<p>Take limit for <span class="math inline">\(T\rightarrow \infty\)</span>, use no-Ponzi, use <span class="math inline">\(c_t =c\)</span>, use <span class="math inline">\(q_{0,t} = \beta^t\)</span>:</p>
+<p><span class="math display">\[
+\frac{ c}{1-\beta}  = \sum_{t=0}^{\infty}  E_0 \beta^t y_t + b_0
+\]</span></p>
+<p>where <span class="math inline">\(b_0\)</span> is given, <span class="math inline">\(y_0 = y_H\)</span>, and <span class="math inline">\(E_0 \sum_{t=0}^{\infty}  E_0 \beta^t y_t  = Y^H \equiv \left[\begin{array}{cc}1 &amp; 0\end{array}\right] [I-\beta \Pi]^{-1} \left[\begin{array}{cc} y_H &amp; y_L\end{array}\right]'\)</span></p>
+<p>Note that the present value budget constraint must also hold at any future date, that is, for any date <span class="math inline">\(t&gt;0\)</span> and any state (high or low) it must be that</p>
+<p><span class="math display">\[
+\frac{ c}{1-\beta}  = \sum_{j=0}^{\infty}  E_t \beta^j y_{t+j} + b_t
+\]</span></p>
+<p>Notice that $ <em>{j=0}^{} E_t ^j y</em>{t+j}$ takes only 2 values, <span class="math inline">\(Y^H\)</span> or <span class="math inline">\(Y^L\equiv  \left[\begin{array}{cc}0 &amp; 1 \end{array}\right] [I-\beta \Pi]^{-1} \left[ \begin{array}{cc} y_H &amp; y_L\end{array}\right]'\)</span> depending on whether the current state is <span class="math inline">\(H\)</span> or <span class="math inline">\(L\)</span>. It follows that <span class="math inline">\(b_t\)</span> also only takes two values, either <span class="math inline">\(b_H\equiv \frac{ c}{1-\beta} - Y^H\)</span> or <span class="math inline">\(b_L \equiv \frac{ c}{1-\beta} - Y^L\)</span>. Note that <span class="math inline">\(b_H&lt;b_L\)</span>, which means that contingent claim pays less in the state H than in the state L. Furthermore, evaluating the present value budget constraint in period 0, we see that <span class="math inline">\(b_0=b_H\)</span>.</p>
+</section>
+<section id="section-2" class="level4">
+<h4 class="anchored" data-anchor-id="section-2">3.</h4>
+<p>Trade balance in period t: <span class="math inline">\(tb_t = y_t -c\)</span>. When <span class="math inline">\(y_t=y_H\)</span>, <span class="math inline">\(tb_t = y_H - c\)</span> and when <span class="math inline">\(y_t = y_L\)</span>, then <span class="math inline">\(tb_t = y_L-c\)</span>, which means that the trade balance is procyclical.</p>
+</section>
+<section id="section-3" class="level4">
+<h4 class="anchored" data-anchor-id="section-3">4.</h4>
+<p>Using the notation of section 4.9.1, we denote the net foreign asset position in period <span class="math inline">\(t\)</span> as <span class="math inline">\(s_t = E_tq_{t,t+1} b_{t+1}= \beta E_t b_{t+1}\)</span>. Since <span class="math inline">\(b_t\)</span> takes only 2 values, we have $’ = ’ $</p>
+</section>
+<section id="section-4" class="level4">
+<h4 class="anchored" data-anchor-id="section-4">5.</h4>
+<p>The current account is <span class="math inline">\(ca_t = s_t - s_{t-1}\)</span>. If the states in period <span class="math inline">\(t-1\)</span> and period <span class="math inline">\(t\)</span> are the same, the current account in period <span class="math inline">\(t\)</span> is zero. If the state in period <span class="math inline">\(t-1\)</span> was <span class="math inline">\(y_L\)</span> and in period <span class="math inline">\(t\)</span> it is <span class="math inline">\(y_H\)</span>, then <span class="math inline">\(ca_t = s_H-s_L&gt;0\)</span>. And if in period <span class="math inline">\(t-1\)</span>, the state was <span class="math inline">\(y_H\)</span> and in period <span class="math inline">\(t\)</span> the state is <span class="math inline">\(y_L\)</span>, then <span class="math inline">\(ca_t = s_L -s_H&lt;0\)</span>. This is intuitive. If the state is <span class="math inline">\(y_H\)</span> and was <span class="math inline">\(y_L\)</span> before, then the country should run a current account surplus as it accumulates net foreign assets. At the same time, if in the current period the endowment is low, <span class="math inline">\(y_L\)</span>, but was high in the previous period, <span class="math inline">\(y_H\)</span>, then the country should run a current account deficit ie running down its stock of net foreign assets. This behavior of the current account is a consequence market completeness. Getting a high realization of the endowment in period <span class="math inline">\(t\)</span> has no effect on future consumption as the windfall was already fully insured.</p>
+</section>
+<section id="section-5" class="level4">
+<h4 class="anchored" data-anchor-id="section-5">6.</h4>
+<p>Now assume that the state in period <span class="math inline">\(0\)</span> is <span class="math inline">\(L\)</span> and the initial asset position is the same, namely, <span class="math inline">\(b_0\)</span>. Let a hat over the variable denote the equilibrium. Then we have <span class="math inline">\(\hat{c}/(1-\beta) = Y^L +b_0\)</span>. Because <span class="math inline">\(Y^L&lt; Y^H\)</span>, <span class="math inline">\(\hat{c}&lt;c\)</span>, so consumption is constant but lower. <span class="math inline">\(\hat{tb}_H = y_H-\hat{c} &gt;tb_H\)</span> and <span class="math inline">\(\hat{tb}_L = y_L-\hat{c} &gt;tb_L\)</span>. Now <span class="math inline">\(\hat{b}_L= b_0=b_H&lt;b_L\)</span> and <span class="math inline">\(\hat{b}_H= \hat{c}/(1-\beta) -Y^H&lt;b_H=b_0\)</span>This means that contingent claims are now less in both states. This makes sense because the initial present value of this economy is lower by <span class="math inline">\(Y^H-Y^L\)</span>. What are net foreign assets?</p>
+<p><span class="math display">\[
+\left[\begin{array}{cc}
+\hat{s}_H &amp;
+\hat{s}_L\end{array}\right]' = \beta \Pi
+\left[\begin{array}{cc}
+\hat{b}_H &amp;
+\hat{b}_L\end{array}\right]'
+\]</span></p>
+<p>So $_H&lt;s_H $ and <span class="math inline">\(\hat{s}_L &lt; s_L\)</span>, in both states net foreign assets are lower. Again <span class="math inline">\(ca_t=0\)</span> when the state in <span class="math inline">\(t-1\)</span> and <span class="math inline">\(t\)</span> are the same. When <span class="math inline">\(t-1\)</span> is L and <span class="math inline">\(t\)</span> is H, then <span class="math inline">\(\hat{ca}_t = \hat{s}_H - \hat{s}_L\)</span> and vice versa. Finally, if the initial value of <span class="math inline">\(b_0\)</span> in this case was instead <span class="math inline">\(b_L\)</span>, then consumption would be identical to the case characterized in questions 1-5 above. Why? Because of full insurance via complete markets. This means that we only get a differenct consumption allocation in this question because <span class="math inline">\(b_0\)</span> was not state contingent.</p>
 
 
 
 <!-- -->
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -716,10 +766,10 @@ E_0 \sum_{t=0}^\infty \beta^t U(c_t),
   loadGiscus();
 </script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
 <div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1"></a><span class="co">---</span></span>
-<span id="cb1-2"><a href="#cb1-2"></a><span class="an">title:</span><span class="co"> "Exercise 4.4"</span></span>
+<span id="cb1-2"><a href="#cb1-2"></a><span class="an">title:</span><span class="co"> "Exercise 4.4 - Solution"</span></span>
 <span id="cb1-3"><a href="#cb1-3"></a><span class="an">subtitle:</span><span class="co"> "Complete Asset Markets and a Discrete Endowment Process"</span></span>
 <span id="cb1-4"><a href="#cb1-4"></a><span class="co">---</span></span>
-<span id="cb1-5"><a href="#cb1-5"></a><span class="dt">&lt;</span><span class="kw">a</span><span class="ot"> class</span><span class="op">=</span><span class="st">"return-button"</span><span class="ot"> href</span><span class="op">=</span><span class="st">"index.qmd"</span><span class="dt">&gt;</span>⬅ Return<span class="dt">&lt;/</span><span class="kw">a</span><span class="dt">&gt;</span></span>
+<span id="cb1-5"><a href="#cb1-5"></a><span class="dt">&lt;</span><span class="kw">a</span><span class="ot"> class</span><span class="op">=</span><span class="st">"return-button"</span><span class="ot"> href</span><span class="op">=</span><span class="st">"4_4.qmd"</span><span class="dt">&gt;</span>⬅ Return<span class="dt">&lt;/</span><span class="kw">a</span><span class="dt">&gt;</span></span>
 <span id="cb1-6"><a href="#cb1-6"></a></span>
 <span id="cb1-7"><a href="#cb1-7"></a><span class="fu">## Problem</span></span>
 <span id="cb1-8"><a href="#cb1-8"></a></span>
@@ -755,10 +805,79 @@ E_0 \sum_{t=0}^\infty \beta^t U(c_t),
 <span id="cb1-38"><a href="#cb1-38"></a></span>
 <span id="cb1-39"><a href="#cb1-39"></a><span class="fu">## Answer</span></span>
 <span id="cb1-40"><a href="#cb1-40"></a></span>
-<span id="cb1-41"><a href="#cb1-41"></a>This exercise has two alternative solutions:</span>
+<span id="cb1-41"><a href="#cb1-41"></a><span class="fu">#### 1.</span></span>
 <span id="cb1-42"><a href="#cb1-42"></a></span>
-<span id="cb1-43"><a href="#cb1-43"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Solution</span><span class="co">](4_4_Solution.qmd)</span></span>
-<span id="cb1-44"><a href="#cb1-44"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Solution in state space notation</span><span class="co">](4_4_Solution_state_space.qmd)</span></span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
+<span id="cb1-43"><a href="#cb1-43"></a>Use the notation of Chapter 4.9. </span>
+<span id="cb1-44"><a href="#cb1-44"></a></span>
+<span id="cb1-45"><a href="#cb1-45"></a>$$</span>
+<span id="cb1-46"><a href="#cb1-46"></a>\max E_0 \sum_{t=0}^{\infty} \beta^t U(c_t)  \quad \mbox{s.t. } \quad c_t + E_tq_{t,t+1} b_{t+1} = y_t + b_t </span>
+<span id="cb1-47"><a href="#cb1-47"></a>$$</span>
+<span id="cb1-48"><a href="#cb1-48"></a></span>
+<span id="cb1-49"><a href="#cb1-49"></a>given $y_0=y_H$ and $b_0$ and a no-Ponzi game constraint $\lim_{j \rightarrow \infty} E_t q_{t,t+j} b_{t+j}=0$ for all dates and states. </span>
+<span id="cb1-50"><a href="#cb1-50"></a></span>
+<span id="cb1-51"><a href="#cb1-51"></a></span>
+<span id="cb1-52"><a href="#cb1-52"></a><span class="fu">#### 2.</span></span>
+<span id="cb1-53"><a href="#cb1-53"></a></span>
+<span id="cb1-54"><a href="#cb1-54"></a>FOC under complete markets</span>
+<span id="cb1-55"><a href="#cb1-55"></a></span>
+<span id="cb1-56"><a href="#cb1-56"></a>$$</span>
+<span id="cb1-57"><a href="#cb1-57"></a>U'(c_t) q_{t,t+1} = \beta U'(c_{t+1})</span>
+<span id="cb1-58"><a href="#cb1-58"></a>$$</span>
+<span id="cb1-59"><a href="#cb1-59"></a></span>
+<span id="cb1-60"><a href="#cb1-60"></a>In this problem it is given that $q_{t,t+1} = \beta$, thus consumption is constant over dates and states, or  $c_t = c$.  </span>
+<span id="cb1-61"><a href="#cb1-61"></a></span>
+<span id="cb1-62"><a href="#cb1-62"></a>Multiply budget constraint by $q_{0,t}$, take $E_0$, sum for $t=0$ to $t=T$, </span>
+<span id="cb1-63"><a href="#cb1-63"></a></span>
+<span id="cb1-64"><a href="#cb1-64"></a>$$</span>
+<span id="cb1-65"><a href="#cb1-65"></a>\sum_{t=0}^{T} q_{0,t} E_0 c_t + E_0q_{0,T+1} b_{T+1} = \sum_{t=0}^{T} q_{0,t} E_0 y_t + b_0 </span>
+<span id="cb1-66"><a href="#cb1-66"></a>$$</span>
+<span id="cb1-67"><a href="#cb1-67"></a></span>
+<span id="cb1-68"><a href="#cb1-68"></a>Take limit for $T\rightarrow \infty$, use no-Ponzi, use $c_t =c$, use $q_{0,t} = \beta^t$: </span>
+<span id="cb1-69"><a href="#cb1-69"></a></span>
+<span id="cb1-70"><a href="#cb1-70"></a>$$</span>
+<span id="cb1-71"><a href="#cb1-71"></a>\frac{ c}{1-\beta}  = \sum_{t=0}^{\infty}  E_0 \beta^t y_t + b_0 </span>
+<span id="cb1-72"><a href="#cb1-72"></a>$$</span>
+<span id="cb1-73"><a href="#cb1-73"></a></span>
+<span id="cb1-74"><a href="#cb1-74"></a>where $b_0$ is given, $y_0 = y_H$, and $E_0 \sum_{t=0}^{\infty}  E_0 \beta^t y_t  = Y^H \equiv \left<span class="co">[</span><span class="ot">\begin{array}{cc}1 &amp; 0\end{array}\right</span><span class="co">] [I-\beta \Pi]</span>^{-1} \left<span class="co">[</span><span class="ot">\begin{array}{cc} y_H &amp; y_L\end{array}\right</span><span class="co">]</span>'$</span>
+<span id="cb1-75"><a href="#cb1-75"></a></span>
+<span id="cb1-76"><a href="#cb1-76"></a>Note that the present value budget constraint  must also hold at any future date, that is, for any date $t&gt;0$ and any state (high or low) it must be that </span>
+<span id="cb1-77"><a href="#cb1-77"></a></span>
+<span id="cb1-78"><a href="#cb1-78"></a>$$</span>
+<span id="cb1-79"><a href="#cb1-79"></a>\frac{ c}{1-\beta}  = \sum_{j=0}^{\infty}  E_t \beta^j y_{t+j} + b_t </span>
+<span id="cb1-80"><a href="#cb1-80"></a>$$</span>
+<span id="cb1-81"><a href="#cb1-81"></a></span>
+<span id="cb1-82"><a href="#cb1-82"></a>Notice that $ \sum_{j=0}^{\infty}  E_t \beta^j y_{t+j}$ takes only  2 values, $Y^H$ or </span>
+<span id="cb1-83"><a href="#cb1-83"></a>$Y^L\equiv  \left<span class="co">[</span><span class="ot">\begin{array}{cc}0 &amp; 1 \end{array}\right</span><span class="co">] [I-\beta \Pi]</span>^{-1} \left<span class="co">[</span><span class="ot"> \begin{array}{cc} y_H &amp; y_L\end{array}\right</span><span class="co">]</span>'$ depending on whether the current state is $H$ or $L$. It follows that $b_t$ also only takes two values, either $b_H\equiv \frac{ c}{1-\beta} - Y^H$ or $b_L \equiv \frac{ c}{1-\beta} - Y^L$. Note that $b_H&lt;b_L$, which means that contingent claim pays less in the state H than in the state L. Furthermore, evaluating the present value budget constraint in period 0, we see that $b_0=b_H$.</span>
+<span id="cb1-84"><a href="#cb1-84"></a></span>
+<span id="cb1-85"><a href="#cb1-85"></a><span class="fu">#### 3.</span></span>
+<span id="cb1-86"><a href="#cb1-86"></a></span>
+<span id="cb1-87"><a href="#cb1-87"></a>Trade balance in period t: $tb_t = y_t -c$. When $y_t=y_H$,  $tb_t = y_H - c$ and when $y_t = y_L$, then $tb_t = y_L-c$, which means that the trade balance is procyclical.  </span>
+<span id="cb1-88"><a href="#cb1-88"></a></span>
+<span id="cb1-89"><a href="#cb1-89"></a><span class="fu">#### 4.</span></span>
+<span id="cb1-90"><a href="#cb1-90"></a></span>
+<span id="cb1-91"><a href="#cb1-91"></a>Using the notation of  section 4.9.1, we denote the net foreign asset position in period $t$ as $s_t = E_tq_{t,t+1} b_{t+1}= \beta E_t b_{t+1}$. Since $b_t$ takes only 2 values, we have $\left<span class="co">[</span><span class="ot">\begin{array}{cc} s_H &amp; s_L\end{array}\right</span><span class="co">]</span>' = \beta \Pi \left<span class="co">[</span><span class="ot">\begin{array}{cc} b_H &amp; b_L\end{array}\right</span><span class="co">]</span>' $</span>
+<span id="cb1-92"><a href="#cb1-92"></a></span>
+<span id="cb1-93"><a href="#cb1-93"></a><span class="fu">#### 5.</span></span>
+<span id="cb1-94"><a href="#cb1-94"></a></span>
+<span id="cb1-95"><a href="#cb1-95"></a>The current account is $ca_t = s_t - s_{t-1}$. If the states in period $t-1$ and period $t$ are the same, the current account in period $t$ is zero. If the state in period $t-1$ was $y_L$ and in period $t$ it is $y_H$, then $ca_t = s_H-s_L&gt;0$. And if in period $t-1$, the state was $y_H$ and in period $t$ the state is $y_L$, then $ca_t = s_L -s_H&lt;0$. This is intuitive. If the state is $y_H$ and was $y_L$ before, then the country should run a current account surplus as it accumulates net foreign assets. At the same time, if in the current period the endowment is low,  $y_L$, but was high in the previous period, $y_H$, then the country should run a current account deficit ie running down its stock of net foreign assets. This behavior of the current account is a consequence market completeness. Getting a high realization of the endowment in period $t$ has no effect on future consumption as the windfall was already fully insured. </span>
+<span id="cb1-96"><a href="#cb1-96"></a></span>
+<span id="cb1-97"><a href="#cb1-97"></a><span class="fu">#### 6.</span></span>
+<span id="cb1-98"><a href="#cb1-98"></a></span>
+<span id="cb1-99"><a href="#cb1-99"></a>Now assume that the state in period $0$ is $L$ and the initial asset position is the same, namely, $b_0$.  Let a hat over the variable denote the equilibrium. Then we have </span>
+<span id="cb1-100"><a href="#cb1-100"></a>$\hat{c}/(1-\beta) = Y^L +b_0$. Because $Y^L&lt; Y^H$, $\hat{c}&lt;c$, so consumption is constant but lower. $\hat{tb}_H = y_H-\hat{c} &gt;tb_H$ and $\hat{tb}_L = y_L-\hat{c} &gt;tb_L$. Now $\hat{b}_L= b_0=b_H&lt;b_L$ and $\hat{b}_H= \hat{c}/(1-\beta) -Y^H&lt;b_H=b_0$This means that contingent claims are now less in both states. This makes sense because the initial present value of this economy is lower by $Y^H-Y^L$.  What are net foreign assets? </span>
+<span id="cb1-101"><a href="#cb1-101"></a></span>
+<span id="cb1-102"><a href="#cb1-102"></a>$$</span>
+<span id="cb1-103"><a href="#cb1-103"></a>\left[\begin{array}{cc}</span>
+<span id="cb1-104"><a href="#cb1-104"></a>\hat{s}_H &amp;</span>
+<span id="cb1-105"><a href="#cb1-105"></a>\hat{s}_L\end{array}\right]' = \beta \Pi </span>
+<span id="cb1-106"><a href="#cb1-106"></a>\left[\begin{array}{cc}</span>
+<span id="cb1-107"><a href="#cb1-107"></a>\hat{b}_H &amp;</span>
+<span id="cb1-108"><a href="#cb1-108"></a>\hat{b}_L\end{array}\right]'</span>
+<span id="cb1-109"><a href="#cb1-109"></a>$$</span>
+<span id="cb1-110"><a href="#cb1-110"></a></span>
+<span id="cb1-111"><a href="#cb1-111"></a>So $\hat{s}_H<span class="dt">&lt;</span><span class="kw">s_H</span><span class="ot"> </span><span class="er">$</span><span class="ot"> and </span><span class="er">$\</span><span class="ot">hat</span><span class="er">{</span><span class="ot">s</span><span class="er">}</span><span class="ot">_L </span><span class="er">&lt;</span><span class="ot"> s_L</span><span class="er">$,</span><span class="ot"> in both states net foreign assets are lower. </span></span>
+<span id="cb1-112"><a href="#cb1-112"></a><span class="ot">Again </span><span class="er">$</span><span class="ot">ca_t</span><span class="op">=</span><span class="st">0$</span><span class="ot"> when the state in </span><span class="er">$</span><span class="ot">t-1</span><span class="er">$</span><span class="ot"> and </span><span class="er">$</span><span class="ot">t</span><span class="er">$</span><span class="ot"> are the same. When </span><span class="er">$</span><span class="ot">t-1</span><span class="er">$</span><span class="ot"> is L and </span><span class="er">$</span><span class="ot">t</span><span class="er">$</span><span class="ot"> is H</span><span class="er">,</span><span class="ot"> then </span><span class="er">$\</span><span class="ot">hat</span><span class="er">{</span><span class="ot">ca</span><span class="er">}</span><span class="ot">_t </span><span class="op">=</span> <span class="st">\hat{s}_H</span><span class="ot"> </span><span class="er">-</span><span class="ot"> </span><span class="er">\</span><span class="ot">hat</span><span class="er">{</span><span class="ot">s</span><span class="er">}</span><span class="ot">_L</span><span class="er">$</span><span class="ot"> and vice versa. </span></span>
+<span id="cb1-113"><a href="#cb1-113"></a><span class="ot">Finally</span><span class="er">,</span><span class="ot"> if the initial value of </span><span class="er">$</span><span class="ot">b_0</span><span class="er">$</span><span class="ot"> in this case was instead </span><span class="er">$</span><span class="ot">b_L</span><span class="er">$,</span><span class="ot"> then consumption would be identical to the case characterized in questions </span><span class="er">1-5</span><span class="ot"> above. Why</span><span class="er">?</span><span class="ot"> Because of full insurance via complete markets. This means that we only get a differenct consumption allocation in this question because </span><span class="er">$</span><span class="ot">b_0</span><span class="er">$</span><span class="ot"> was not state contingent. </span></span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 

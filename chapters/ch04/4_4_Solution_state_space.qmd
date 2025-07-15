@@ -1,0 +1,174 @@
+---
+title: "Exercise 4.4 - Solution in State Space Notation"
+subtitle: "Complete Asset Markets and a Discrete Endowment Process"
+---
+<a class="return-button" href="4_4.qmd">⬅ Return</a>
+
+## Problem
+
+Consider an economy populated by a large number of identical consumers with preferences described by the utility function
+
+$$
+E_0 \sum_{t=0}^\infty \beta^t U(c_t),
+$$
+
+where $c_t$ denotes consumption in period $t$, $\beta \in (0, 1)$ denotes the subjective discount factor, $U(\cdot)$ is a strictly increasing and differentiable function, and $E_t$ denotes the mathematical expectations operator conditional on information available at time $t$. Suppose each consumer starts with an initial financial wealth equal to $b_0$ in period 0, measured in terms of consumption goods. Suppose that each period there are two possible states of nature, H and L, with transition probability matrix
+
+$$
+\Pi =
+\begin{bmatrix}
+\pi_{HH} & \pi_{HL} \\
+\pi_{LH} & \pi_{LL}
+\end{bmatrix},
+$$
+
+where $\pi_{ij}$, for $i, j \in \{H, L\}$, denotes the probability that the state of nature in period $t+1$ is $j$ conditional on the state of nature in period $t$ being $i$, for all $t \geq 0$. The consumer is endowed with $y_t$ units of consumption goods in period $t$, where $y_t$ is a random variable taking the values $y_H$ and $y_L$ in states H and L, respectively, with $y_H > y_L > 0$. Consumers have access to the world financial market, which offers a complete set of state-contingent claims. Let $p_{ij}$ be the price in units of consumption of period $t$ of a state-contingent claim that pays 1 unit of consumption in $t+1$ if the state of nature in period $t+1$ is $j$ conditional on the state of nature in period $t$ being $i$, for $i, j \in \{H, L\}$ and $t \geq 0$. Suppose further that $p_{ij} = \beta \pi_{ij}$. Suppose that the state of nature in period 0 is $H$.
+
+1. State the consumer’s maximization problem.
+
+2. Characterize the equilibrium process of consumption.
+
+3. Characterize the equilibrium process of the trade balance.
+
+4. Characterize the equilibrium process of the net foreign asset position (recall that in period 0 it is known and given by $b_0$).
+
+5. Characterize the equilibrium process of the current account starting in period 1.
+
+6. Compare the equilibrium processes of consumption, the trade balance, and the current account obtained above to those pertaining to another open economy that is identical to the one described above in all respects, except that its initial endowment is $y_L$.
+
+## Answer
+
+#### 1.
+
+We state the consumer maximization problem. For state of nature in period $t$ being $i \in \{H, L\}$, the consumer decides
+
+$$
+\max_{c_t^i, b_{t+1}^i} E_0 \sum_{t=0}^{\infty} \beta^t U(c_t)
+$$
+
+subject to
+
+$$
+c_t^i + p_{iH} b_{t+1}^H + p_{iL} b_{t+1}^L \leq b_t^i + y_i, \quad i \in \{H, L\}, t \geq 0
+$$
+
+Given $b_0$ and $y_0 = y_H$.
+
+
+#### 2.
+
+We characterize the equilibrium process of consumption. We first derive the Euler equations (one for each $i$, $j$ combination):
+
+$$
+U'(c_t^i) p_{ij} = \beta \pi_{ij} U'(c_{t+1}^j), \quad i,j \in \{H, L\}
+$$
+
+Given that $p_{ij} = \beta \pi_{ij}$ by assumption, we get:
+
+$$
+U'(c_t^i) = U'(c_{t+1}^j), \quad i,j \in \{H, L\}
+$$
+
+Hence $c_t^i = c = c_{t+1}^j$. Since the economy is stationary, if the state is $H$ we know the household will always borrow the same $b_H$, and if state is $L$ it will always borrow the same $b_L$.
+
+We then derive the intertemporal budget constraint in matrix form by stacking the budget constraints in both states:
+
+$$
+c + \beta \pi_{iH} b_H + \beta \pi_{iL} b_L = b_i + y_i
+$$
+
+This becomes:
+
+$$
+c + \beta \Pi b = b + y
+$$
+
+Then:
+
+$$
+b = (1 - \beta \Pi)^{-1}(c \cdot \mathbf{1} - y)
+$$
+
+We plug $b$ into the time-0 budget constraint, given $e_H = \begin{bmatrix} 1 \\ 0 \end{bmatrix}$:
+
+$$
+c + \beta \pi_{HH} b_H + \beta \pi_{HL} b_L = b_0 + y_H
+$$
+
+$$
+c + \beta e_H' \Pi b = b_0 + y_H
+$$
+
+Plugging in:
+
+$$
+c + \beta e_H' \Pi (1 - \beta \Pi)^{-1}(c \cdot \mathbf{1} - y) = b_0 + y_H
+$$
+
+Solve for $c$:
+
+$$
+c = \frac{ \beta e_H' \Pi (1 - \beta \Pi)^{-1} y + b_0 + y_H }{ 1 + \beta e_H' \Pi (1 - \beta \Pi)^{-1} \mathbf{1} }
+$$
+
+We can rewrite the denominator as (given that for Markov matrix $\Pi \mathbf{1} = \mathbf{1}$):
+
+$$
+1 + e_H' \beta \Pi (1 - \beta \Pi)^{-1} \mathbf{1}
+= 1 + e_H' \sum_{i=1}^{\infty} \beta^i \Pi^i \mathbf{1}
+= 1 + \sum_{i=1}^{\infty} \beta^i = \frac{1}{1 - \beta}
+$$
+
+Therefore, consumption is equal to:
+
+$$
+\boxed{ c = (1 - \beta) \left[ b_0 + y_H + \beta e_H' \Pi (I - \beta \Pi)^{-1} y \right] }
+$$
+
+
+#### 3.
+
+The trade balance in $t$ is then equal to:
+
+$$
+tb_t = y_t - c
+$$
+
+
+#### 4.
+
+Because this economy is stationary, we have $b_t = b_H = b_0$ if the state in period $t$ is $H$, since nothing distinguishes this economy from how it looked in the initial state.
+
+To obtain $b_L$, we use the budget constraint for $b_L$:
+
+$$
+c + p_{LH} b_H + p_{LL} b_L = b_L + y_L
+$$
+
+This is one equation in one unknown, $b_L$. We can solve:
+
+$$
+\boxed{ b_L = \frac{ c - y_L + \beta \pi_{LH} b_0 }{ 1 - \beta \pi_{LL} } }
+$$
+
+
+#### 5.
+
+We let $ca_{ij}$ denote the current account if the state is $i$ in $t - 1$ and $j$ in $t$, for $i,j \in \{H,L\}$ and $t > 0$. Then, we have:
+
+$$
+ca_{ij} = tb_j + b_j - P_i b
+$$
+
+where $P_i = [p_{iH} \quad p_{iL}]$.
+
+
+#### 6.
+
+We now have consumption, given $e_L = \begin{bmatrix} 0 \\ 1 \end{bmatrix}$:
+
+$$
+c' = (1 - \beta) \left[ b_0 + y_L + \beta e_L' \Pi (I - \beta \Pi)^{-1} y \right]
+$$
+
+Trade balance, current account and net foreign asset position (in this case, $b_L = b_0$ and we derive $b_H$) are defined relative to $c'$.
