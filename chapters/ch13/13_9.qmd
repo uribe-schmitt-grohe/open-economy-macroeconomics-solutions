@@ -1,0 +1,13 @@
+---
+title: "Exercise 13.9"
+subtitle: "The Current Account in the Eaton-Gersovitz Model"
+---
+<a class="return-button" href="index.qmd">⬅ Return</a>
+
+## Problem
+
+Show that in the default model of Section 13.4, the current account, denoted $ca$, can be written as $ca=q(d)d-q(d')d'$.
+
+## Answer
+
+_No solution has been posted yet. If you have a solution, we invite you to share it in the comment box at the bottom of this page._

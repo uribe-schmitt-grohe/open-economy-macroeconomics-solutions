@@ -47,53 +47,5 @@ Present the estimation results in the form of a table like table 5.4. Discuss yo
 
 ## Answer
 
-#### 1. Stationary Form of the Equilibrium Conditions
-
-To obtain a stationary representation of the model, we normalize all real variables that grow with $\widetilde{X}_t$ or $X_t$. Define normalized variables using either $X_t$ or $\widetilde{X}_{t-1}$ as appropriate:
-
-- $c_t = C_t / \widetilde{X}_{t-1}$,
-- $s_t = S_t / \widetilde{X}_{t-1}$,
-- $\widetilde{x}_t = \widetilde{X}_t / X_t$ (implicitly defined),
-- $d_t = \widetilde{D}_t / \widetilde{X}_t$,
-- etc.
-
-The modified equations in stationary form are:
-
-- **Utility Function:**
-  $$
-  E_0\sum_{t=0}^{\infty} \nu_t\beta^t
-  \frac{\left[c_t - \omega^{-1} h_t^{\omega}\right]^{1-\gamma}-1}{1-\gamma}
-  $$
-
-- **Definition of $\widetilde{X}_t$:**
-  $$
-  \widetilde{X}_t = \widetilde{X}_{t-1}^{\zeta} X_t^{1-\zeta}
-  $$
-
-  Taking logs:
-  $$
-  \log \widetilde{X}_t = \zeta \log \widetilde{X}_{t-1} + (1 - \zeta) \log X_t
-  $$
-
-- **Normalized Government Spending:**
-  $$
-  s_t = \frac{S_t}{\widetilde{X}_{t-1}}
-  $$
-
-- **Interest Rate with Endogenous Spread and Risk Premium:**
-  $$
-  r_t = r^* + \psi \left(
-  \exp\left( \frac{d_{t+1} - \overline{d}}{\overline{y}} \right) - 1
-  \right) + \exp(\mu_t - 1) - 1
-  $$
-
-- **Euler Equation (normalized):**
-  $$
-  \left[c_t - \omega^{-1} h_t^{\omega} \right]^{-\gamma} = \beta (1 + r_t) E_t \left[ \left(c_{t+1} - \omega^{-1} h_{t+1}^\omega \right)^{-\gamma} \frac{1}{\widetilde{x}_{t+1}} \right]
-  $$
-
-- **Resource Constraints and Budget Constraints:**  
-  Normalize all remaining real variables (consumption, income, taxes, transfers, etc.) by the appropriate productivity term. The no-Ponzi condition must also be imposed on normalized debt $d_t$.
-
-All equations are now expressed in terms of stationary variables, and thus suitable for deterministic or stochastic steady-state computation and linearization.
+_No solution has been posted yet. If you have a solution, we invite you to share it in the comment box at the bottom of this page._
 

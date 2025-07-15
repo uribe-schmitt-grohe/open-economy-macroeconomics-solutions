@@ -1,0 +1,17 @@
+---
+title: "Exercise 13.13"
+subtitle: "Duration in the Random-Maturity Model"
+---
+<a class="return-button" href="index.qmd">⬅ Return</a>
+
+## Problem
+
+Consider the sovereign debt model with random maturity studied in Section 13.10.1. 
+
+1. Compute the duration of the current portfolio of debt. 
+
+2. Compute the duration of a single bond in the current portfolio of debt. 
+
+## Answer
+
+_No solution has been posted yet. If you have a solution, we invite you to share it in the comment box at the bottom of this page._

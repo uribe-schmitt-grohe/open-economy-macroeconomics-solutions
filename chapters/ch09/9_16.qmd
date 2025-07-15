@@ -18,11 +18,4 @@ to properly define these variables and derive additional equilibrium conditions 
 
 ## Answer
 
-The solution to this problem produced with:
-
-<!-- calvo_dornbusch.m in the directory  -->
-<!-- Z:\uribe\book\dnwr\calvo\Exercise_Dornbusch -->
-
-Intuition: Covered interest rate parity hold. Domestic interest rate falls, but foreign rate is unchanged. For Covered interest rate parity to hold it must be that the domestic currency is expected to appreciate. 
-
-The expansionary monetary policy shock leads to a more depreciated exchange rate in the long run. (Why?) Thus the impact effect which is followed by appreciation, must be a larger depreciation than the long run effect. 
+_No solution has been posted yet. If you have a solution, we invite you to share it in the comment box at the bottom of this page._

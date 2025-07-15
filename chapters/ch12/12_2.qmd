@@ -31,7 +31,7 @@ $$
 d_2 \le \kappa q k_1
 $$
 
-where $\kappa<1$ is a parameter. 
+where $0<\kappa<1$ is a parameter. 
 
 1. Derive the first-order conditions associated with the household's optimization problem. 
 
@@ -45,7 +45,7 @@ where $\kappa<1$ is a parameter.
 
 #### 1.
 
-The first-order conditions are the constraints and 
+The first-order conditions are the 2 sequential budget constraints and 
 
 $$
 c_2 (1-\mu) =  c_1
@@ -59,53 +59,42 @@ $$
 \mu\ge 0; \mu (\kappa q k_1-d_2) =0
 $$
 
+given initial conditions $k$ and  $d_1$ and also taking as given the equilibrium price of capital $q$. 
+
 #### 2.
 
 In equilibrium, $k_1=k$. So we have
 
 $$
 \begin{eqnarray}
-d_2 = d_1 + c_1  - F(k)
-\\
-c_1 + c_2 = 2F(k)-d_1
-\\
-\tag{*}
-c_2 (1-\mu) = c_1
-\\
-c_2 q (1-\kappa\mu) =  c_1 F'(k)
-\\
-\mu\ge 0
-\\
-d_2 \le \kappa q k
-\\
- \mu (\kappa q k-d_2) =0
+d_2 = d_1 + c_1  - F(k) \tag{1}\\
+c_1 + c_2 = 2F(k)-d_1 \tag{2} \\
+c_2 (1-\mu) = c_1 \tag{3}\\
+c_2 q (1-\kappa\mu) =  c_1 F'(k) \tag{4}\\
+\mu\ge 0 \tag{5} \\
+d_2 \le \kappa q k \tag{6}\\
+\mu (\kappa q k-d_2) =0 \tag{7}
 \end{eqnarray}
 $$
 
 #### 3.
 
-Set $\mu=0$. Then by Euler consumption
+Set $\mu=0$. Then by equation (3), 
 
 $$
-c_1 = c_2
+c_1 = c_2.
 $$
 
-From the PVBC 
-
-$$
-d_2 = \frac12 d_1
-$$
-
-Then from the BC in period 1
+and by (2)
 
 $$
 c_1 = F(k) - \frac12 d_1
 $$
 
-and from the BC in period 2
+and by (1)
 
 $$
-c_2 = c_1
+d_2 = \frac12 d_1
 $$
 
 A requirement of equilibrium is that $c_1,c_2>0$, thus an unconstrained equilibrium exists only if 
@@ -114,71 +103,73 @@ $$
 \fbox{$F(k) - \frac12 d_1 >0$}
 $$
 
-From the Euler for capital
+From (4)
 
 $$
 q= F'(k) \ge 0
 $$
 
-Finally, check that the collateral constraint is satisfied, that is, does $\frac12 d_1 \le \kappa F'(K) K$ hold. This is not true in general thus, we need to impose: 
+Finally, check that the collateral constraint (6) is satisfied, that is, does $\frac12 d_1 \le \kappa F'(k) k$ hold. But this is not true in general thus, we need to impose: 
 
 $$
 \fbox{$
-\frac12 d_1 \le \kappa F'(K) K
+\frac12 d_1 \le \kappa F'(k) k
 $}
 $$
 
-This restriction is the tighter one of the two, because $\kappa <1$ and because $F(K)> F'(K) K$. 
+This restriction is the tighter one of the two, because $\kappa <1$ and because $F(k)> F'(k) k$. 
 
-Thus, the answer is that an unconstrained equilibrium exists for any $d_1$ satisfying $\frac12 d_1 \le \kappa F'(K) K$. 
+Thus, the answer is that an unconstrained equilibrium exists for any $d_1$ satisfying $\frac12 d_1 \le \kappa F'(k) k$. 
 
 #### 4.
 
 We want to show that there exists an equilibrium in which $\mu >0$. 
 
-Combining the 2 Euler equations yields
+Combining the 2 Euler equations, (3) and (4) yields
 
 $$
-q = \frac{1-\mu}{1-\kappa \mu} F'(K) < F'(K)
+q = \frac{1-\mu}{1-\kappa \mu} F'(k) < F'(k)
 $$
 
-The last inequality follows from the facts that  $\kappa<1$. Thus, we have already shown that should an equilibrium exist with $\mu>0$, then $q$ is lower. Now solve this equation for $1-\mu$ to obtain
+The last inequality follows from the facts that $\kappa<1$. Thus, we have already shown that should an equilibrium exist with $\mu>0$, then $q$ is lower. Now solve this equation for $1-\mu$ to obtain
 
 $$
-1- \mu = \frac{q -\kappa q}{F'(K) - \kappa q}
+1- \mu = \frac{q -\kappa q}{F'(K) - \kappa q} \tag{8}
 $$
 
-At $q=F'(K)$ (which is the max value that $q$ can take), we have $1-\mu =1$. At $q=0$ (which is the min value that $q$ can take), we have $1-\mu = 0$. What is the slope for values of $q$ between 0 and $F'(k)$? 
+At $q=F'(K)$ (which is the max value that $q$ can take), we have $1-\mu =1$. 
+At $q=0$ (which is the min value that $q$ can take), we have $1-\mu = 0$. 
+What is the slope for values of $q$ between 0 and $F'(k)$? 
 
 $$
-\frac{\partial (1-\mu)}{\partial q} = \frac{F'(K) (1-\kappa)}{F'(K) - \kappa q}>0
+\frac{\partial (1-\mu)}{\partial q} = \frac{F'(K) (1-\kappa)}{(F'(K) - \kappa q)^2}>0
 $$
 
-The last inequality follows from $\kappa<1$ and from $q<F'(K)$. 
+The last inequality follows from $\kappa<1$. 
 
-Now plot this function in the space $(q, 1-\mu)$. It is an upward sloping function that is zero at $q=0$ and is 1 at $q=F'(K)$. 
+Now plot (8) in the space $(q, 1-\mu)$. It is an upward sloping function that is zero at $q=0$ and is 1 at $q=F'(K)$. 
 
 Next we combine the remaining equilibrium conditions to obtain a second relationship between $q $ and $1-\mu$. 
 
 Because $\mu>0$, the collateral constraint must bind: 
 
 $$
-d_2 = \kappa q K 
+d_2 = \kappa q k 
 $$
 
 Using the period 1 and period 2 budget constraints, we then have 
 
 $$
-c_1 = F(K) +\kappa q K - d_1
+c_1 = F(k) +\kappa q k - d_1
 $$
 
 and
 
 $$
-c_2 = F(K) - \kappa q K
+c_2 = F(k) - \kappa q k
 $$
 
-The Euler for debt, (\*), is
+The Euler for debt, (3), is
 
 $$
 c_1 = (1-\mu) c_2
@@ -187,39 +178,39 @@ $$
 Using the solution for $c_1$ and $c_2$ in this expression yields
 
 $$
-(1-\mu ) = \frac{c_1}{c_2} = \frac{F(K) +\kappa q K - d_1}{ F(K) - \kappa q K}
+(1-\mu ) = \frac{c_1}{c_2} = \frac{F(k) +\kappa q k - d_1}{ F(k) - \kappa q k} \tag{9}
 $$
 
-Notice that if $\mu>0$, then it must be the case that $c_1<c_2$. Also $\mu$ must be less than 1. Draw this relation in the space $(q, 1-\mu)$ for values of $q$ between $q=0$ and $q=F'(K)$, the highest value it can take, namely  the one associated with the unconstrained equilibrium. 
+Notice that if $\mu>0$, then it must be the case that $c_1<c_2$. Also $\mu$ must be less than 1. 
+Draw this relation in the space $(q, 1-\mu)$ for values of $q$ between $q=0$ and $q=F'(k)$, the highest value it can take, namely  the one associated with the unconstrained equilibrium. 
 
-Consider $q=0$, then $1-\mu = (F(K) - d_1)/ F(K)$. Suppose that 
+Consider $q=0$, then $1-\mu = (F(k) - d_1)/ F(k)$. Suppose that 
 
 $$
-F(K) < d_1 
+F(k) < d_1 
 $$
 
 Then the intercept is negative. 
 
-Consider $q=F'(K)$, then $1-\mu = \frac{F(K) +\kappa F'(K) K - d_1}{ F(K) - \kappa F'(K) K}$ this will be greater than 1 as long as $\kappa F'(K) K > \frac12 d_1$, which holds as long as an unconstrained equilibrium exists in which the collateral constraint is slack. 
+Consider $q=F'(k)$, then $1-\mu = \frac{F(k) +\kappa F'(k) k - d_1}{ F(k) - \kappa F'(k) k}$ this will be greater than 1 as long as $\kappa F'(k) k > \frac12 d_1$, which holds as long as an unconstrained equilibrium exists in which the collateral constraint is slack. 
 What is the slope?
 
 $$
-\frac{\partial (1-\mu)}{\partial q} = \frac{\kappa K (c_1+c_2)}{c_2^2}>0
+\frac{\partial (1-\mu)}{\partial q} = \frac{\kappa k (c_1+c_2)}{c_2^2}>0
 $$
 
-Therefore this locus must intersect the line given in equation xxx at least once. 
-<!-- Not sure about xxx, I guess is (1-\mu ) = \frac{c_1}{c_2} = \frac{F(K) +\kappa q K - d_1}{ F(K) - \kappa q K} -->
+Therefore this locus, ie (9), must intersect the locus given in equation (8) at least once. 
 
-In summary and equilibrium in which collateral constraint binds exists if: 
-
-$$
-2 \kappa F'(K) K >  d_1 > F(K) 
-$$
-
-Suppose $F(K) = K^{\alpha}$, then this condition is: 
+In summary an equilibrium in which collateral constraint binds exists if: 
 
 $$
-2 \kappa \alpha  F(K) >  d_1 > F(K) 
+2 \kappa F'(k) k >  d_1 > F(k) 
 $$
 
-That is we need $2 \kappa \alpha >1$. This is possible eventhough both $\kappa $ and $\alpha$ are less than 1. 
+Suppose $F(k) = k^{\alpha}$, then this condition is: 
+
+$$
+2 \kappa \alpha  F(k) >  d_1 > F(k) 
+$$
+
+That is we need $2 \kappa \alpha >1$. This is possible even though both $\kappa$ and $\alpha$ are less than 1. 

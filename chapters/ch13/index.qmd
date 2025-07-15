@@ -1,0 +1,21 @@
+---
+title: "Chapter 13 – Quantitative Analysis of the Eaton-Gersovitz Model"
+comments: False
+---
+
+- [Exercise 13.1 (Default Clusters)](13_1.qmd)
+- [Exercise 13.2 (Capital-To-Output Ratio Around Defaults)](13_2.qmd)
+- [Exercise 13.3 (No Excessive Punishment)](13_3.qmd)
+- [Exercise 13.4 (Proportional Sanctions)](13_4.qmd)
+- [Exercise 13.5 (Moral Sanctions)](13_5.qmd)
+- [Exercise 13.6 (State-Contingent Sanctions)](13_6.qmd)
+- [Exercise 13.7 (Nonzero Opportunity Cost of Lending)](13_7.qmd)
+- [Exercise 13.8 (Reputation, Complete Asset Markets, And Reentry)](13_8.qmd)
+- [Exercise 13.9 (The Current Account in the Eaton-Gersovitz Model)](13_9.qmd)
+- [Exercise 13.10 (Default Risk and Trade Balance Surpluses With Correlated Shocks)](13_10.qmd)
+- [Exercise 13.11 (Breakdown of Reputational Lending)](13_11.qmd)
+- [Exercise 13.12 (Proportional Output Loss Function)](13_12.qmd)
+- [Exercise 13.13 (Duration in the Random-Maturity Model)](13_13.qmd)
+- [Exercise 13.14 (Optimality of Wage Stability)](13_14.qmd)
+- [Exercise 13.15 (Eaton-Gersovitz Model As Special Case of Debt-Renegotiation Model)](13_15.qmd)
+- [Exercise 13.16 (Recalibration of the Debt Renegotiation Model)](13_16.qmd)

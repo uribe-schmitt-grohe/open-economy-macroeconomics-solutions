@@ -1,0 +1,13 @@
+---
+title: "Exercise 13.15"
+subtitle: "Eaton-Gersovitz Model As Special Case of Debt-Renegotiation Model"
+---
+<a class="return-button" href="index.qmd">⬅ Return</a>
+
+## Problem
+
+Consider the debt-renegotiation model of Section 13.11. Investigate analytically whether for $\alpha=1$, the equilibrium dynamics collapse to those of the standard Eaton-Gersovitz model studied in Section 13.6.
+
+## Answer
+
+_No solution has been posted yet. If you have a solution, we invite you to share it in the comment box at the bottom of this page._

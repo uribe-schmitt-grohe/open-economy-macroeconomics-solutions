@@ -1,0 +1,13 @@
+---
+title: "Exercise 13.16"
+subtitle: "Recalibration of the Debt Renegotiation Model"
+---
+<a class="return-button" href="index.qmd">⬅ Return</a>
+
+## Problem
+
+In the model of debt renegotiation studied in Section 13.11, calibrate the parameters $\beta$, $a_1$, $a_2$, and $\alpha$ to match a quarterly debt-to-output ratio of 60 percent in periods of good financial standing, a default frequency of 2.6 times per century, an average output cost of 7 percent per period conditional on being in bad standing, and an average haircut of 40 percent. Discuss the differences with the calibration used in Section 13.11.2, with emphasis on the parameters $\beta$ and $\alpha$. Use the Matlab scripts egr.m, simur.m and statistics\_modelr.m (or your own code) to produce tables and graphs like those presented in Section 13.11.2. Discuss your findings. 
+
+## Answer
+
+_No solution has been posted yet. If you have a solution, we invite you to share it in the comment box at the bottom of this page._

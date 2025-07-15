@@ -1,0 +1,163 @@
+---
+title: "Exercise 13.6"
+subtitle: "State-Contingent Sanctions"
+---
+<a class="return-button" href="index.qmd">⬅ Return</a>
+
+## Problem
+
+Consider a one-period economy facing a stochastic endowment given by $y=\overline{y} + \epsilon$, where $\overline{y}>0$ is a constant, and $\epsilon$ is a mean-zero random variable with density $\pi(\epsilon)$ defined over the interval $[ \epsilon^L, \epsilon^H]$. Before $\epsilon$ is realized the country can buy state-contingent contracts, $d(\epsilon)$, from foreign investors who are risk neutral and who face an opportunity cost of funds of zero. The participation constraint for foreign lenders is $\int_{\epsilon_L}^{\epsilon^H} d(\epsilon)\pi(\epsilon) d\epsilon = 0$. The country cannot commit to repay. In case of default foreign creditors impose state-contingent sanctions, $k(\epsilon)$. Assume that $k(\epsilon) = \max\{0, \epsilon - \alpha\}$ and that $0 \le \alpha < \epsilon^H$.
+The objective of the country is to pick the debt contract optimally. Welfare of the representative household is given by $\int_{\epsilon_L}^{\epsilon^H} u(c(\epsilon))\pi(\epsilon) d\epsilon,$ where $c(\epsilon)$ denotes consumption, and $u(.)$ is a strictly increasing and strictly concave function. The budget constraint of the household, conditional on honoring its debt, is $c(\epsilon) = \overline{y} +\epsilon - d(\epsilon)$. 
+  
+1. Explain in words the difference between  the type of sanctions described above and constant sanctions,  $k(\epsilon) = {k}>0$ with $0<k<\epsilon^H$. Which specification can potentially provide more insurance and why.
+
+2. Assume that  $\alpha=0$. Find the optimal debt contract, $d(\epsilon)$. Find the  contingent plan for consumption, $c(\epsilon)$. Provide an intuitive explanation for your findings.
+
+3. For the remainder of this problem  assume that $\alpha>0$. Characterize the optimal debt contract, $d(\epsilon)$, and provide a verbal discussion of its properties. Proceed as follows. Find the incentive compatibility constraint. State the maximization problem the country solves to find the optimal debt contract. State the Lagrangian of the problem. State the optimality conditions. Then characterize the optimal debt contract.
+
+4. Characterize the optimal consumption plan, $c(\epsilon)$， and provide an intuitive interpretation of your findings. 
+
+5. Compare and contrast your findings to the case of a constant and positive sanction, $k=\alpha$. Which specification of sanctions provides more insurance, and why？ 
+
+## Answer
+
+#### 1.
+
+#### 2.
+
+Sanctions then are $k(\epsilon) = \max\{0, \epsilon\}$. This means that the first best is possible. That is, specify, $d(\epsilon) = \epsilon$. This is feasible, satisfies the participation constraint and the incentive compatibility constraint. The associated path of consumption is $c(\epsilon) = \overline{y}$. There is perfect consumption smoothing. This can be enforced because households are willing to repay $d(\epsilon)=\epsilon$ even when $\epsilon>0$ because the sanctions are also equal to $\epsilon$ in this case.
+
+#### 3.
+
+$$
+d(\epsilon)\le k(\epsilon)\equiv \max\{0, \epsilon - \alpha\}
+$$
+
+$$
+\int_{\epsilon_L}^{\epsilon^H} u(c(\epsilon))\pi(\epsilon) d\epsilon
+$$
+
+subject to 
+
+$$
+c(\epsilon) = \overline{y} +\epsilon - d(\epsilon)
+$$
+
+$$
+\int_{\epsilon_L}^{\epsilon^H} d(\epsilon)\pi(\epsilon) d\epsilon = 0
+$$
+
+$$
+d(\epsilon)\le k(\epsilon)
+$$
+
+maximize
+
+$$
+\mathcal{L} = \int_{\epsilon_L}^{\epsilon^H}\left\{u(\overline{y} +\epsilon - d(\epsilon))+ \lambda d(\epsilon) + \gamma(\epsilon)\left[k(\epsilon)-d(\epsilon)\right]\right\}\pi(\epsilon) d\epsilon
+$$
+
+$\lambda$ is the Lagrange multiplier on the participation constraint. It is non-state contingent. $\gamma(\epsilon)$ is the Lagrange multiplier on the inventive compatibility constraint. It is state contingent. 
+
+$$
+u'(\overline{y}+\epsilon - d(\epsilon)) = \lambda - \gamma(\epsilon)
+$$
+
+$$
+\gamma(\epsilon) [k(\epsilon) - d(\epsilon)]= 0
+$$
+
+$$
+\gamma(\epsilon) \ge 0
+$$
+
+$$
+d(\epsilon) \le k(\epsilon) \equiv \max\{0, \epsilon - \alpha\}
+$$
+
+$$
+\int_{\epsilon_L}^{\epsilon^H} d(\epsilon)\pi(\epsilon) d\epsilon = 0
+$$
+
+Suppose the IC is not binding. Then $\gamma(\epsilon) = 0$. It follows immediately that consumption is constant,  $c(\epsilon) = c_L$ for those cases that the constraint is not binding. And hence 
+
+$$
+d(\epsilon)= \overline{y}+\epsilon - c_L 
+$$
+
+with $d'(\epsilon) = 1$ which is at least for all those $\epsilon$ full (marginal) insurance. Conjecture that the IC is not binding for all $\epsilon \in(\epsilon^L, \underline{\epsilon})$ for some $\underline{\epsilon}$.  
+
+Next assume that the IC is binding binding for all $\epsilon>\underline{\epsilon}$. But that there are 2 regions. When  $\epsilon \ge\overline{\epsilon} \equiv \alpha >0$, $k(\epsilon) = \epsilon -\alpha>0$ and because the IC is binding we have
+
+$$
+d(\epsilon ) = k(\epsilon ) = \epsilon -\alpha >0
+$$
+
+That is, the country is making payments to the foreign lenders. 
+
+It follows that  
+
+$$
+c(\epsilon) = \overline{y} + \alpha>\overline{y}.
+$$ 
+
+That is,  consumption is constant and bigger than the mean. It follows that $\gamma(\epsilon)$ is also constant for that range of $\epsilon$. 
+
+Finally for $\underline{\epsilon}<\epsilon<\overline{\epsilon}$ the IC is also binding, but now $\epsilon -\alpha <0$ so that 
+
+$$
+k(\epsilon) = 0
+$$
+
+If there are no sanctions, then $d(\epsilon)$ must be non-positive. Since the IC is binding, we have that in this range of
+
+$$
+d(\epsilon) = 0
+$$
+
+and 
+
+$$
+c(\epsilon) = \overline{y}+\epsilon 
+$$
+
+So in this intermediate range there is no insurance at all. 
+
+Thus far we have the country making payments and having to make zero payments. To satisfy the IC the country also much receive payments in some states. Conjecture that it receives payments in the low $\epsilon$ states, namely in all the states in which $\epsilon<\underline{\epsilon}$. 
+
+To summarize we have
+
+$$
+d(\epsilon ) =\left\{ \begin{array}{ll} \epsilon - \alpha & \mbox{if } \epsilon \ge \alpha\\
+0& \mbox{if } \underline{\epsilon} \le \epsilon\le \alpha\\
+\epsilon - \underline{\epsilon} & \mbox{if } \epsilon \le \underline{\epsilon}
+\end{array}\right.
+$$
+
+We have not yet determined  $\underline{\epsilon}$. It can be found by plugging the proposed optimal contract $d(\epsilon)$ into the participation constraint 
+
+$$
+\int_{\epsilon_L}^{\epsilon^H} d(\epsilon)\pi(\epsilon) d\epsilon = 0
+$$
+
+$$
+\int_{\epsilon_L}^{\underline{\epsilon}} (\epsilon - \underline{\epsilon})\pi(\epsilon) d\epsilon + \int_{\alpha}^{\epsilon^H} (\epsilon - \alpha)\pi(\epsilon) d\epsilon  = 0
+$$
+
+$$
+\int_{\alpha}^{\epsilon^H} (\epsilon - \alpha)\pi(\epsilon) d\epsilon  = \int_{\epsilon_L}^{\underline{\epsilon}} ( \underline{\epsilon}-\epsilon )\pi(\epsilon) d\epsilon 
+$$
+
+#### 4.
+
+$$
+c(\epsilon ) =\left\{ \begin{array}{ll} \overline{y} +  \alpha & \mbox{if } \epsilon \ge \alpha\\
+\overline{y} + \epsilon & \mbox{if } \underline{\epsilon} \le \epsilon\le \alpha\\
+\overline{y} +  \underline{\epsilon} & \mbox{if } \epsilon \le \underline{\epsilon}
+\end{array}\right.
+$$
+
+It should be that $\underline{\epsilon}<0$. And if the distribution of $\epsilon $ is symmetric around zero, then my first try would be $\underline{\epsilon} = - \alpha <0.$
+
+#### 5.
+

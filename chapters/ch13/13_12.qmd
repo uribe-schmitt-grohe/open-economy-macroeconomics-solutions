@@ -1,0 +1,13 @@
+---
+title: "Exercise 13.12"
+subtitle: "Proportional Output Loss Function"
+---
+<a class="return-button" href="index.qmd">⬅ Return</a>
+
+## Problem
+
+Modify the Eaton-Gersovitz model of Section 13.6.4 to allow for a proportional output loss function of the form $L(y)=a_1y$. Calibrate $a_1$ to match an average output loss due to default of about 7 percent of output per period conditional on the country being in bad financial standing. Use appropriately modified versions of the Matlab scripts eg.m and simu.m, or write your own code, to produce quantitative predictions of the model along the lines of Tables 13.8 and 13.9 and Figure 13.9. Discuss your findings, paying particular attention to how the present output loss specification affects the model's ability to predict that countries default in bad times.
+
+## Answer
+
+_No solution has been posted yet. If you have a solution, we invite you to share it in the comment box at the bottom of this page._

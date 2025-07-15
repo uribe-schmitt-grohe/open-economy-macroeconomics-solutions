@@ -228,49 +228,12 @@ e^{(\widetilde{D}_{t+1}/\widetilde{X}_t-\overline{d})/ \overline{y}}  -1 \right)
 </section>
 <section id="answer" class="level2">
 <h2 class="anchored" data-anchor-id="answer">Answer</h2>
-<section id="stationary-form-of-the-equilibrium-conditions" class="level4">
-<h4 class="anchored" data-anchor-id="stationary-form-of-the-equilibrium-conditions">1. Stationary Form of the Equilibrium Conditions</h4>
-<p>To obtain a stationary representation of the model, we normalize all real variables that grow with <span class="math inline">\(\widetilde{X}_t\)</span> or <span class="math inline">\(X_t\)</span>. Define normalized variables using either <span class="math inline">\(X_t\)</span> or <span class="math inline">\(\widetilde{X}_{t-1}\)</span> as appropriate:</p>
-<ul>
-<li><span class="math inline">\(c_t = C_t / \widetilde{X}_{t-1}\)</span>,</li>
-<li><span class="math inline">\(s_t = S_t / \widetilde{X}_{t-1}\)</span>,</li>
-<li><span class="math inline">\(\widetilde{x}_t = \widetilde{X}_t / X_t\)</span> (implicitly defined),</li>
-<li><span class="math inline">\(d_t = \widetilde{D}_t / \widetilde{X}_t\)</span>,</li>
-<li>etc.</li>
-</ul>
-<p>The modified equations in stationary form are:</p>
-<ul>
-<li><p><strong>Utility Function:</strong> <span class="math display">\[
-E_0\sum_{t=0}^{\infty} \nu_t\beta^t
-\frac{\left[c_t - \omega^{-1} h_t^{\omega}\right]^{1-\gamma}-1}{1-\gamma}
-\]</span></p></li>
-<li><p><strong>Definition of <span class="math inline">\(\widetilde{X}_t\)</span>:</strong> <span class="math display">\[
-\widetilde{X}_t = \widetilde{X}_{t-1}^{\zeta} X_t^{1-\zeta}
-\]</span></p>
-<p>Taking logs: <span class="math display">\[
-\log \widetilde{X}_t = \zeta \log \widetilde{X}_{t-1} + (1 - \zeta) \log X_t
-\]</span></p></li>
-<li><p><strong>Normalized Government Spending:</strong> <span class="math display">\[
-s_t = \frac{S_t}{\widetilde{X}_{t-1}}
-\]</span></p></li>
-<li><p><strong>Interest Rate with Endogenous Spread and Risk Premium:</strong> <span class="math display">\[
-r_t = r^* + \psi \left(
-\exp\left( \frac{d_{t+1} - \overline{d}}{\overline{y}} \right) - 1
-\right) + \exp(\mu_t - 1) - 1
-\]</span></p></li>
-<li><p><strong>Euler Equation (normalized):</strong> <span class="math display">\[
-\left[c_t - \omega^{-1} h_t^{\omega} \right]^{-\gamma} = \beta (1 + r_t) E_t \left[ \left(c_{t+1} - \omega^{-1} h_{t+1}^\omega \right)^{-\gamma} \frac{1}{\widetilde{x}_{t+1}} \right]
-\]</span></p></li>
-<li><p><strong>Resource Constraints and Budget Constraints:</strong><br>
-Normalize all remaining real variables (consumption, income, taxes, transfers, etc.) by the appropriate productivity term. The no-Ponzi condition must also be imposed on normalized debt <span class="math inline">\(d_t\)</span>.</p></li>
-</ul>
-<p>All equations are now expressed in terms of stationary variables, and thus suitable for deterministic or stochastic steady-state computation and linearization.</p>
+<p><em>No solution has been posted yet. If you have a solution, we invite you to share it in the comment box at the bottom of this page.</em></p>
 
 
 
 <!-- -->
 
-</section>
 </section>
 
 </main> <!-- /main -->
@@ -802,55 +765,7 @@ Normalize all remaining real variables (consumption, income, taxes, transfers, e
 <span id="cb1-47"><a href="#cb1-47"></a></span>
 <span id="cb1-48"><a href="#cb1-48"></a><span class="fu">## Answer</span></span>
 <span id="cb1-49"><a href="#cb1-49"></a></span>
-<span id="cb1-50"><a href="#cb1-50"></a><span class="fu">#### 1. Stationary Form of the Equilibrium Conditions</span></span>
-<span id="cb1-51"><a href="#cb1-51"></a></span>
-<span id="cb1-52"><a href="#cb1-52"></a>To obtain a stationary representation of the model, we normalize all real variables that grow with $\widetilde{X}_t$ or $X_t$. Define normalized variables using either $X_t$ or $\widetilde{X}_{t-1}$ as appropriate:</span>
-<span id="cb1-53"><a href="#cb1-53"></a></span>
-<span id="cb1-54"><a href="#cb1-54"></a><span class="ss">- </span>$c_t = C_t / \widetilde{X}_{t-1}$,</span>
-<span id="cb1-55"><a href="#cb1-55"></a><span class="ss">- </span>$s_t = S_t / \widetilde{X}_{t-1}$,</span>
-<span id="cb1-56"><a href="#cb1-56"></a><span class="ss">- </span>$\widetilde{x}_t = \widetilde{X}_t / X_t$ (implicitly defined),</span>
-<span id="cb1-57"><a href="#cb1-57"></a><span class="ss">- </span>$d_t = \widetilde{D}_t / \widetilde{X}_t$,</span>
-<span id="cb1-58"><a href="#cb1-58"></a><span class="ss">- </span>etc.</span>
-<span id="cb1-59"><a href="#cb1-59"></a></span>
-<span id="cb1-60"><a href="#cb1-60"></a>The modified equations in stationary form are:</span>
-<span id="cb1-61"><a href="#cb1-61"></a></span>
-<span id="cb1-62"><a href="#cb1-62"></a><span class="ss">- </span>**Utility Function:**</span>
-<span id="cb1-63"><a href="#cb1-63"></a>  $$</span>
-<span id="cb1-64"><a href="#cb1-64"></a>  E_0\sum_{t=0}^{\infty} \nu_t\beta^t</span>
-<span id="cb1-65"><a href="#cb1-65"></a>  \frac{\left<span class="co">[</span><span class="ot">c_t - \omega^{-1} h_t^{\omega}\right</span><span class="co">]</span>^{1-\gamma}-1}{1-\gamma}</span>
-<span id="cb1-66"><a href="#cb1-66"></a>  $$</span>
-<span id="cb1-67"><a href="#cb1-67"></a></span>
-<span id="cb1-68"><a href="#cb1-68"></a><span class="ss">- </span>**Definition of $\widetilde{X}_t$:**</span>
-<span id="cb1-69"><a href="#cb1-69"></a>  $$</span>
-<span id="cb1-70"><a href="#cb1-70"></a>  \widetilde{X}_t = \widetilde{X}_{t-1}^{\zeta} X_t^{1-\zeta}</span>
-<span id="cb1-71"><a href="#cb1-71"></a>  $$</span>
-<span id="cb1-72"><a href="#cb1-72"></a></span>
-<span id="cb1-73"><a href="#cb1-73"></a>  Taking logs:</span>
-<span id="cb1-74"><a href="#cb1-74"></a>  $$</span>
-<span id="cb1-75"><a href="#cb1-75"></a>  \log \widetilde{X}_t = \zeta \log \widetilde{X}_{t-1} + (1 - \zeta) \log X_t</span>
-<span id="cb1-76"><a href="#cb1-76"></a>  $$</span>
-<span id="cb1-77"><a href="#cb1-77"></a></span>
-<span id="cb1-78"><a href="#cb1-78"></a><span class="ss">- </span>**Normalized Government Spending:**</span>
-<span id="cb1-79"><a href="#cb1-79"></a>  $$</span>
-<span id="cb1-80"><a href="#cb1-80"></a>  s_t = \frac{S_t}{\widetilde{X}_{t-1}}</span>
-<span id="cb1-81"><a href="#cb1-81"></a>  $$</span>
-<span id="cb1-82"><a href="#cb1-82"></a></span>
-<span id="cb1-83"><a href="#cb1-83"></a><span class="ss">- </span>**Interest Rate with Endogenous Spread and Risk Premium:**</span>
-<span id="cb1-84"><a href="#cb1-84"></a>  $$</span>
-<span id="cb1-85"><a href="#cb1-85"></a>  r_t = r^* + \psi \left(</span>
-<span id="cb1-86"><a href="#cb1-86"></a>  \exp\left( \frac{d_{t+1} - \overline{d}}{\overline{y}} \right) - 1</span>
-<span id="cb1-87"><a href="#cb1-87"></a>  \right) + \exp(\mu_t - 1) - 1</span>
-<span id="cb1-88"><a href="#cb1-88"></a>  $$</span>
-<span id="cb1-89"><a href="#cb1-89"></a></span>
-<span id="cb1-90"><a href="#cb1-90"></a><span class="ss">- </span>**Euler Equation (normalized):**</span>
-<span id="cb1-91"><a href="#cb1-91"></a>  $$</span>
-<span id="cb1-92"><a href="#cb1-92"></a>  \left<span class="co">[</span><span class="ot">c_t - \omega^{-1} h_t^{\omega} \right</span><span class="co">]</span>^{-\gamma} = \beta (1 + r_t) E_t \left[ \left(c_{t+1} - \omega^{-1} h_{t+1}^\omega \right)^{-\gamma} \frac{1}{\widetilde{x}_{t+1}} \right]</span>
-<span id="cb1-93"><a href="#cb1-93"></a>  $$</span>
-<span id="cb1-94"><a href="#cb1-94"></a></span>
-<span id="cb1-95"><a href="#cb1-95"></a><span class="ss">- </span>**Resource Constraints and Budget Constraints:**  </span>
-<span id="cb1-96"><a href="#cb1-96"></a>  Normalize all remaining real variables (consumption, income, taxes, transfers, etc.) by the appropriate productivity term. The no-Ponzi condition must also be imposed on normalized debt $d_t$.</span>
-<span id="cb1-97"><a href="#cb1-97"></a></span>
-<span id="cb1-98"><a href="#cb1-98"></a>All equations are now expressed in terms of stationary variables, and thus suitable for deterministic or stochastic steady-state computation and linearization.</span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
+<span id="cb1-50"><a href="#cb1-50"></a>_No solution has been posted yet. If you have a solution, we invite you to share it in the comment box at the bottom of this page._</span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 

@@ -24,6 +24,7 @@ This repository contains sketches of solutions to many (but not all) of the exer
 - [Chapter 10 – Exchange-Rate Policy and Capital Controls](chapters/ch10/index.qmd)
 - [Chapter 11 – Policy Credibility and Balance-of-Payments Crises](chapters/ch11/index.qmd)
 - [Chapter 12 – Financial Frictions and Aggregate Instability](chapters/ch12/index.qmd)
+- [Chapter 13 – Quantitative Analysis of the Eaton-Gersovitz Model](chapters/ch13/index.qmd)
 
 ---
 

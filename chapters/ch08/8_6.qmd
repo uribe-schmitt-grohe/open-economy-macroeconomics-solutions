@@ -182,74 +182,13 @@ When $d_0\uparrow$, then $c^T_0$  and $h^T_0$ fall, $c^N_t$ and $h^N_t$ increase
 
 #### 5.
 
+
+
+#### 6.
+
 $$
 p_t =-r/(1+r) d_0/ A^N
 $$
 
 The more assets the country has (that is, the larger is $-d_0>0$), the more households demand of both goods. But the supply of the N good is bounded above by $A^N$, so once the country is de-industrialized an increase in $-d_0$ will drive up $p_t$, that is the real exchange rate appreciates, or the country becomes more expensive. By contrast in the case of an interior solution a decrease in debt (or an increase assets) will not affect the real exchange rate. Instead the economy will adjust by producing more N goods and fewer T goods. In that case the real exchange rate is solely a function of technology $p=A^T/A^N$. 
 (As a comment on the literature, in this case, Balassa Samuelson breaks down.)
-
-#### 6.
-
-The household's maximization problem is
-
-$$
-\max \,\sum_{t=0}^{\infty} \beta^t [\ln c^T_t +\ln c^N_t]
-$$
-
-subject to
-
-$$
-c^T_t+p_t c^N_t + d_t  = y^T_t +p_ty^N_t + \frac{d_{t+1}}{1+r}
-$$
-
-$$
-y^T_t = A^T h^T_t
-$$
-
-$$
-y^N_t = A^N h^N_t
-$$
-
-$$
-h^T_t+h^N_t = 1
-$$
-
-**Equilibrium With Production in Both Sectors**
-
-$$
-p = \frac{A^T}{A^N}
-$$
-
-$$
-c^N = A^NL^N
-$$
-
-$$
-c^T = A^T(1-L^N)-r/(1+r)d_0
-$$
-
-$$
-\frac{c^T}{c^N}=p
-$$
-
-$$
-\Rightarrow  \fbox{$
-\frac{A^T(1-L^N) - r/(1+r)d_0}{A^NL^N}=\frac{A^T}{A^N}$}
-$$
-
-$\Rightarrow$ Any temporary shock that changes the desired net asset  position, $b$, will produce a permanent reallocation of labor. 
-
-**Complete De-Industrialization**
-
-If the net asset position is large enough, then  
-
-$$
-L^N = 1
-$$
-
-$$
-p = \frac{-r/(1+r)d_0}{A^L}
-$$
-
-$\Rightarrow$ The economy exhibits complete  de-industrialization, and the real exchange rate ceases to be determined by technological factors alone.  (Note that the economy mut be a net creditor, $d_0<0$.)

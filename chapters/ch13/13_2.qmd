@@ -1,0 +1,33 @@
+---
+title: "Exercise 13.2"
+subtitle: "Capital-To-Output Ratio Around Defaults"
+---
+<a class="return-button" href="index.qmd">⬅ Return</a>
+
+## Problem
+
+Figure 13.5 shows that the capital-output ratio in Argentina peaked in the run-up to defaults of 1982 and 2001 and fell significantly thereafter. This exercise aims at establishing whether this finding holds more generally.
+
+1. Use the World Development Indicators data base to download data on real GDP per capita and real gross capital formation per capita (i.e., investment). The primary series to use here are GDP per capita in constant local currency units (NY.GDP.PCAP.KN) and gross capital formation in percent of GDP (NE.GDI.TOTL.ZS). Let $Y_{it}$ and $I_{it}$ denote, respectively, real per capita output and real per capita investment in country $i$ in year $t$.
+
+2. For each country, compute the average growth rate of real per capita output, denoted $g_i$ (i.e., $g_i=0.02$ means 2 percent).
+
+3. Assume that the capital stock in country $i$ evolves according to 
+
+    $$
+    K_{it+1}= (1-\delta)K_{it}+I_{it}, \tag{13.80}
+    $$
+
+    where $\delta$ denotes the depreciation rate, which is assumed to be the same in all countries. Use this expression to construct a time series for capital. Set $\delta=0.1$ (or 10\%). You need an initial value for the capital stock, $K_{i1}$. Assume that $K_{i2}=(1+g_i)K_{i1}$, that is, assume that between periods 1 and 2, the capital stock grew at the average growth rate of the economy. Use this assumption, equation (13.80), and $I_{i1}$ to obtain $K_{i1}$. 
+
+4. Now use $K_{i1}$, the time series $I_{it}$, and iterations on equation (13.80) to derive a time series for $K_{it}$. 
+
+5. For each country $i$, use the time series for capital, $K_{it}$, and output, $Y_{it}$, to construct a time series for the capital-output ratio, $K_{it}/Y_{it}$. 
+
+6. Combine the data on the capital-to-output ratio with the data on default dates from Table 13.19 to produce a figure (in the spirit of Figure 13.12) displaying the typical behavior of the (demeaned) capital-to-output ratio around default episodes. 
+
+7. Discuss to what extend the behavior of the capital-to-output ratio pre- and post default in Argentina is representative of what happens during the typical default episode. 
+
+## Answer
+
+_No solution has been posted yet. If you have a solution, we invite you to share it in the comment box at the bottom of this page._

@@ -1,0 +1,44 @@
+---
+title: "Exercise 13.8"
+subtitle: "Reputation, Complete Asset Markets, And Reentry"
+---
+<a class="return-button" href="index.qmd">⬅ Return</a>
+
+## Problem
+
+Extend the reputational model of Section 13.3.4 by allowing for the possibility of regaining access to international capital markets after default. Specifically, assume that with constant probability $\delta\in(0,1)$ defaulters can reentry capital markets the next period. 
+
+1. Derive the value function of a country in bad financial standing, $v^b(\epsilon)$, as a function of current and future expected values of $u(\bar{y}+\epsilon)$ and $u(\bar{y}+\epsilon-d(\epsilon))$ only. 
+
+2. Write down the incentive-compatibility constraint. 
+
+3. Write down the optimization problem of the country and its associated Lagrangian. 
+
+4. Derive the optimality conditions of the country's problem. 
+
+5. Show that all of the results of Section 13.3.4 pertaining to the reputation model hold under this extension. 
+
+6. It is intuitively obvious that if $\delta=1$, lending breaks down, since in this case lenders have no way to punish delinquent debtors. Show this result formally.  
+
+## Answer
+
+$$
+\begin{eqnarray}
+v^b(\epsilon) &\equiv& u(\bar{y}+\epsilon) + \beta
+\int_{\epsilon^L}^{\epsilon^H}
+[(1-\delta)v^b(\epsilon') + \delta v^g(\epsilon')]
+\pi(\epsilon')d\epsilon'
+\nonumber
+\\
+&=& u(\bar{y}+\epsilon) + \beta
+\int_{\epsilon^L}^{\epsilon^H} 
+[(1-\delta)v^b(\epsilon') + \delta v^c(\epsilon')]
+\pi(\epsilon')d\epsilon'
+\nonumber
+\\\nonumber
+&=& u(\bar{y}+\epsilon) + 
+\frac{\beta(1-\delta)}{1-\beta(1-\delta)}
+\int_{\epsilon^L}^{\epsilon^H} u(\bar{y}+\epsilon')\pi(\epsilon')d\epsilon'
++ \frac{\beta\delta}{1-\beta}\int_{\epsilon^L}^{\epsilon^H} u(\bar{y}+\epsilon'-d(\epsilon'))\pi(\epsilon')d\epsilon'.
+\end{eqnarray}
+$$

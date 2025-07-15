@@ -215,7 +215,7 @@ c_2 = F(k_1) -d_2,
 <p><span class="math display">\[
 d_2 \le \kappa q k_1
 \]</span></p>
-<p>where <span class="math inline">\(\kappa&lt;1\)</span> is a parameter.</p>
+<p>where <span class="math inline">\(0&lt;\kappa&lt;1\)</span> is a parameter.</p>
 <ol type="1">
 <li><p>Derive the first-order conditions associated with the household’s optimization problem.</p></li>
 <li><p>Assume that the aggregate stock of capital is fixed. Derive the complete set of equilibrium conditions.</p></li>
@@ -227,7 +227,7 @@ d_2 \le \kappa q k_1
 <h2 class="anchored" data-anchor-id="answer">Answer</h2>
 <section id="section" class="level4">
 <h4 class="anchored" data-anchor-id="section">1.</h4>
-<p>The first-order conditions are the constraints and</p>
+<p>The first-order conditions are the 2 sequential budget constraints and</p>
 <p><span class="math display">\[
 c_2 (1-\mu) =  c_1
 \]</span></p>
@@ -237,122 +237,112 @@ c_2 q (1-\kappa\mu) =  c_1 F'(k_1)
 <p><span class="math display">\[
 \mu\ge 0; \mu (\kappa q k_1-d_2) =0
 \]</span></p>
+<p>given initial conditions <span class="math inline">\(k\)</span> and <span class="math inline">\(d_1\)</span> and also taking as given the equilibrium price of capital <span class="math inline">\(q\)</span>.</p>
 </section>
 <section id="section-1" class="level4">
 <h4 class="anchored" data-anchor-id="section-1">2.</h4>
 <p>In equilibrium, <span class="math inline">\(k_1=k\)</span>. So we have</p>
 <p><span class="math display">\[
 \begin{eqnarray}
-d_2 = d_1 + c_1  - F(k)
-\\
-c_1 + c_2 = 2F(k)-d_1
-\\
-\tag{*}
-c_2 (1-\mu) = c_1
-\\
-c_2 q (1-\kappa\mu) =  c_1 F'(k)
-\\
-\mu\ge 0
-\\
-d_2 \le \kappa q k
-\\
-\mu (\kappa q k-d_2) =0
+d_2 = d_1 + c_1  - F(k) \tag{1}\\
+c_1 + c_2 = 2F(k)-d_1 \tag{2} \\
+c_2 (1-\mu) = c_1 \tag{3}\\
+c_2 q (1-\kappa\mu) =  c_1 F'(k) \tag{4}\\
+\mu\ge 0 \tag{5} \\
+d_2 \le \kappa q k \tag{6}\\
+\mu (\kappa q k-d_2) =0 \tag{7}
 \end{eqnarray}
 \]</span></p>
 </section>
 <section id="section-2" class="level4">
 <h4 class="anchored" data-anchor-id="section-2">3.</h4>
-<p>Set <span class="math inline">\(\mu=0\)</span>. Then by Euler consumption</p>
+<p>Set <span class="math inline">\(\mu=0\)</span>. Then by equation (3),</p>
 <p><span class="math display">\[
-c_1 = c_2
+c_1 = c_2.
 \]</span></p>
-<p>From the PVBC</p>
-<p><span class="math display">\[
-d_2 = \frac12 d_1
-\]</span></p>
-<p>Then from the BC in period 1</p>
+<p>and by (2)</p>
 <p><span class="math display">\[
 c_1 = F(k) - \frac12 d_1
 \]</span></p>
-<p>and from the BC in period 2</p>
+<p>and by (1)</p>
 <p><span class="math display">\[
-c_2 = c_1
+d_2 = \frac12 d_1
 \]</span></p>
 <p>A requirement of equilibrium is that <span class="math inline">\(c_1,c_2&gt;0\)</span>, thus an unconstrained equilibrium exists only if</p>
 <p><span class="math display">\[
 \fbox{$F(k) - \frac12 d_1 &gt;0$}
 \]</span></p>
-<p>From the Euler for capital</p>
+<p>From (4)</p>
 <p><span class="math display">\[
 q= F'(k) \ge 0
 \]</span></p>
-<p>Finally, check that the collateral constraint is satisfied, that is, does <span class="math inline">\(\frac12 d_1 \le \kappa F'(K) K\)</span> hold. This is not true in general thus, we need to impose:</p>
+<p>Finally, check that the collateral constraint (6) is satisfied, that is, does <span class="math inline">\(\frac12 d_1 \le \kappa F'(k) k\)</span> hold. But this is not true in general thus, we need to impose:</p>
 <p><span class="math display">\[
 \fbox{$
-\frac12 d_1 \le \kappa F'(K) K
+\frac12 d_1 \le \kappa F'(k) k
 $}
 \]</span></p>
-<p>This restriction is the tighter one of the two, because <span class="math inline">\(\kappa &lt;1\)</span> and because <span class="math inline">\(F(K)&gt; F'(K) K\)</span>.</p>
-<p>Thus, the answer is that an unconstrained equilibrium exists for any <span class="math inline">\(d_1\)</span> satisfying <span class="math inline">\(\frac12 d_1 \le \kappa F'(K) K\)</span>.</p>
+<p>This restriction is the tighter one of the two, because <span class="math inline">\(\kappa &lt;1\)</span> and because <span class="math inline">\(F(k)&gt; F'(k) k\)</span>.</p>
+<p>Thus, the answer is that an unconstrained equilibrium exists for any <span class="math inline">\(d_1\)</span> satisfying <span class="math inline">\(\frac12 d_1 \le \kappa F'(k) k\)</span>.</p>
 </section>
 <section id="section-3" class="level4">
 <h4 class="anchored" data-anchor-id="section-3">4.</h4>
 <p>We want to show that there exists an equilibrium in which <span class="math inline">\(\mu &gt;0\)</span>.</p>
-<p>Combining the 2 Euler equations yields</p>
+<p>Combining the 2 Euler equations, (3) and (4) yields</p>
 <p><span class="math display">\[
-q = \frac{1-\mu}{1-\kappa \mu} F'(K) &lt; F'(K)
+q = \frac{1-\mu}{1-\kappa \mu} F'(k) &lt; F'(k)
 \]</span></p>
 <p>The last inequality follows from the facts that <span class="math inline">\(\kappa&lt;1\)</span>. Thus, we have already shown that should an equilibrium exist with <span class="math inline">\(\mu&gt;0\)</span>, then <span class="math inline">\(q\)</span> is lower. Now solve this equation for <span class="math inline">\(1-\mu\)</span> to obtain</p>
 <p><span class="math display">\[
-1- \mu = \frac{q -\kappa q}{F'(K) - \kappa q}
+1- \mu = \frac{q -\kappa q}{F'(K) - \kappa q} \tag{8}
 \]</span></p>
 <p>At <span class="math inline">\(q=F'(K)\)</span> (which is the max value that <span class="math inline">\(q\)</span> can take), we have <span class="math inline">\(1-\mu =1\)</span>. At <span class="math inline">\(q=0\)</span> (which is the min value that <span class="math inline">\(q\)</span> can take), we have <span class="math inline">\(1-\mu = 0\)</span>. What is the slope for values of <span class="math inline">\(q\)</span> between 0 and <span class="math inline">\(F'(k)\)</span>?</p>
 <p><span class="math display">\[
-\frac{\partial (1-\mu)}{\partial q} = \frac{F'(K) (1-\kappa)}{F'(K) - \kappa q}&gt;0
+\frac{\partial (1-\mu)}{\partial q} = \frac{F'(K) (1-\kappa)}{(F'(K) - \kappa q)^2}&gt;0
 \]</span></p>
-<p>The last inequality follows from <span class="math inline">\(\kappa&lt;1\)</span> and from <span class="math inline">\(q&lt;F'(K)\)</span>.</p>
-<p>Now plot this function in the space <span class="math inline">\((q, 1-\mu)\)</span>. It is an upward sloping function that is zero at <span class="math inline">\(q=0\)</span> and is 1 at <span class="math inline">\(q=F'(K)\)</span>.</p>
+<p>The last inequality follows from <span class="math inline">\(\kappa&lt;1\)</span>.</p>
+<p>Now plot (8) in the space <span class="math inline">\((q, 1-\mu)\)</span>. It is an upward sloping function that is zero at <span class="math inline">\(q=0\)</span> and is 1 at <span class="math inline">\(q=F'(K)\)</span>.</p>
 <p>Next we combine the remaining equilibrium conditions to obtain a second relationship between $q $ and <span class="math inline">\(1-\mu\)</span>.</p>
 <p>Because <span class="math inline">\(\mu&gt;0\)</span>, the collateral constraint must bind:</p>
 <p><span class="math display">\[
-d_2 = \kappa q K
+d_2 = \kappa q k
 \]</span></p>
 <p>Using the period 1 and period 2 budget constraints, we then have</p>
 <p><span class="math display">\[
-c_1 = F(K) +\kappa q K - d_1
+c_1 = F(k) +\kappa q k - d_1
 \]</span></p>
 <p>and</p>
 <p><span class="math display">\[
-c_2 = F(K) - \kappa q K
+c_2 = F(k) - \kappa q k
 \]</span></p>
-<p>The Euler for debt, (*), is</p>
+<p>The Euler for debt, (3), is</p>
 <p><span class="math display">\[
 c_1 = (1-\mu) c_2
 \]</span></p>
 <p>Using the solution for <span class="math inline">\(c_1\)</span> and <span class="math inline">\(c_2\)</span> in this expression yields</p>
 <p><span class="math display">\[
-(1-\mu ) = \frac{c_1}{c_2} = \frac{F(K) +\kappa q K - d_1}{ F(K) - \kappa q K}
+(1-\mu ) = \frac{c_1}{c_2} = \frac{F(k) +\kappa q k - d_1}{ F(k) - \kappa q k} \tag{9}
 \]</span></p>
-<p>Notice that if <span class="math inline">\(\mu&gt;0\)</span>, then it must be the case that <span class="math inline">\(c_1&lt;c_2\)</span>. Also <span class="math inline">\(\mu\)</span> must be less than 1. Draw this relation in the space <span class="math inline">\((q, 1-\mu)\)</span> for values of <span class="math inline">\(q\)</span> between <span class="math inline">\(q=0\)</span> and <span class="math inline">\(q=F'(K)\)</span>, the highest value it can take, namely the one associated with the unconstrained equilibrium.</p>
-<p>Consider <span class="math inline">\(q=0\)</span>, then <span class="math inline">\(1-\mu = (F(K) - d_1)/ F(K)\)</span>. Suppose that</p>
+<p>Notice that if <span class="math inline">\(\mu&gt;0\)</span>, then it must be the case that <span class="math inline">\(c_1&lt;c_2\)</span>. Also <span class="math inline">\(\mu\)</span> must be less than 1. Draw this relation in the space <span class="math inline">\((q, 1-\mu)\)</span> for values of <span class="math inline">\(q\)</span> between <span class="math inline">\(q=0\)</span> and <span class="math inline">\(q=F'(k)\)</span>, the highest value it can take, namely the one associated with the unconstrained equilibrium.</p>
+<p>Consider <span class="math inline">\(q=0\)</span>, then <span class="math inline">\(1-\mu = (F(k) - d_1)/ F(k)\)</span>. Suppose that</p>
 <p><span class="math display">\[
-F(K) &lt; d_1
+F(k) &lt; d_1
 \]</span></p>
 <p>Then the intercept is negative.</p>
-<p>Consider <span class="math inline">\(q=F'(K)\)</span>, then <span class="math inline">\(1-\mu = \frac{F(K) +\kappa F'(K) K - d_1}{ F(K) - \kappa F'(K) K}\)</span> this will be greater than 1 as long as <span class="math inline">\(\kappa F'(K) K &gt; \frac12 d_1\)</span>, which holds as long as an unconstrained equilibrium exists in which the collateral constraint is slack. What is the slope?</p>
+<p>Consider <span class="math inline">\(q=F'(k)\)</span>, then <span class="math inline">\(1-\mu = \frac{F(k) +\kappa F'(k) k - d_1}{ F(k) - \kappa F'(k) k}\)</span> this will be greater than 1 as long as <span class="math inline">\(\kappa F'(k) k &gt; \frac12 d_1\)</span>, which holds as long as an unconstrained equilibrium exists in which the collateral constraint is slack. What is the slope?</p>
 <p><span class="math display">\[
-\frac{\partial (1-\mu)}{\partial q} = \frac{\kappa K (c_1+c_2)}{c_2^2}&gt;0
+\frac{\partial (1-\mu)}{\partial q} = \frac{\kappa k (c_1+c_2)}{c_2^2}&gt;0
 \]</span></p>
-<p>Therefore this locus must intersect the line given in equation xxx at least once. <!-- Not sure about xxx, I guess is (1-\mu ) = \frac{c_1}{c_2} = \frac{F(K) +\kappa q K - d_1}{ F(K) - \kappa q K} --></p>
-<p>In summary and equilibrium in which collateral constraint binds exists if:</p>
+<p>Therefore this locus, ie (9), must intersect the locus given in equation (8) at least once.</p>
+<p>In summary an equilibrium in which collateral constraint binds exists if:</p>
 <p><span class="math display">\[
-2 \kappa F'(K) K &gt;  d_1 &gt; F(K)
+2 \kappa F'(k) k &gt;  d_1 &gt; F(k)
 \]</span></p>
-<p>Suppose <span class="math inline">\(F(K) = K^{\alpha}\)</span>, then this condition is:</p>
+<p>Suppose <span class="math inline">\(F(k) = k^{\alpha}\)</span>, then this condition is:</p>
 <p><span class="math display">\[
-2 \kappa \alpha  F(K) &gt;  d_1 &gt; F(K)
+2 \kappa \alpha  F(k) &gt;  d_1 &gt; F(k)
 \]</span></p>
-<p>That is we need <span class="math inline">\(2 \kappa \alpha &gt;1\)</span>. This is possible eventhough both $$ and <span class="math inline">\(\alpha\)</span> are less than 1.</p>
+<p>That is we need <span class="math inline">\(2 \kappa \alpha &gt;1\)</span>. This is possible even though both <span class="math inline">\(\kappa\)</span> and <span class="math inline">\(\alpha\)</span> are less than 1.</p>
 
 
 
@@ -874,7 +864,7 @@ F(K) &lt; d_1
 <span id="cb1-31"><a href="#cb1-31"></a>d_2 \le \kappa q k_1</span>
 <span id="cb1-32"><a href="#cb1-32"></a>$$</span>
 <span id="cb1-33"><a href="#cb1-33"></a></span>
-<span id="cb1-34"><a href="#cb1-34"></a>where $\kappa&lt;1$ is a parameter. </span>
+<span id="cb1-34"><a href="#cb1-34"></a>where $0&lt;\kappa&lt;1$ is a parameter. </span>
 <span id="cb1-35"><a href="#cb1-35"></a></span>
 <span id="cb1-36"><a href="#cb1-36"></a><span class="ss">1. </span>Derive the first-order conditions associated with the household's optimization problem. </span>
 <span id="cb1-37"><a href="#cb1-37"></a></span>
@@ -888,7 +878,7 @@ F(K) &lt; d_1
 <span id="cb1-45"><a href="#cb1-45"></a></span>
 <span id="cb1-46"><a href="#cb1-46"></a><span class="fu">#### 1.</span></span>
 <span id="cb1-47"><a href="#cb1-47"></a></span>
-<span id="cb1-48"><a href="#cb1-48"></a>The first-order conditions are the constraints and </span>
+<span id="cb1-48"><a href="#cb1-48"></a>The first-order conditions are the 2 sequential budget constraints and </span>
 <span id="cb1-49"><a href="#cb1-49"></a></span>
 <span id="cb1-50"><a href="#cb1-50"></a>$$</span>
 <span id="cb1-51"><a href="#cb1-51"></a>c_2 (1-\mu) =  c_1</span>
@@ -902,170 +892,161 @@ F(K) &lt; d_1
 <span id="cb1-59"><a href="#cb1-59"></a>\mu\ge 0; \mu (\kappa q k_1-d_2) =0</span>
 <span id="cb1-60"><a href="#cb1-60"></a>$$</span>
 <span id="cb1-61"><a href="#cb1-61"></a></span>
-<span id="cb1-62"><a href="#cb1-62"></a><span class="fu">#### 2.</span></span>
+<span id="cb1-62"><a href="#cb1-62"></a>given initial conditions $k$ and  $d_1$ and also taking as given the equilibrium price of capital $q$. </span>
 <span id="cb1-63"><a href="#cb1-63"></a></span>
-<span id="cb1-64"><a href="#cb1-64"></a>In equilibrium, $k_1=k$. So we have</span>
+<span id="cb1-64"><a href="#cb1-64"></a><span class="fu">#### 2.</span></span>
 <span id="cb1-65"><a href="#cb1-65"></a></span>
-<span id="cb1-66"><a href="#cb1-66"></a>$$</span>
-<span id="cb1-67"><a href="#cb1-67"></a>\begin{eqnarray}</span>
-<span id="cb1-68"><a href="#cb1-68"></a>d_2 = d_1 + c_1  - F(k)</span>
-<span id="cb1-69"><a href="#cb1-69"></a><span class="sc">\\</span></span>
-<span id="cb1-70"><a href="#cb1-70"></a>c_1 + c_2 = 2F(k)-d_1</span>
-<span id="cb1-71"><a href="#cb1-71"></a><span class="sc">\\</span></span>
-<span id="cb1-72"><a href="#cb1-72"></a>\tag{*}</span>
-<span id="cb1-73"><a href="#cb1-73"></a>c_2 (1-\mu) = c_1</span>
-<span id="cb1-74"><a href="#cb1-74"></a><span class="sc">\\</span></span>
-<span id="cb1-75"><a href="#cb1-75"></a>c_2 q (1-\kappa\mu) =  c_1 F'(k)</span>
-<span id="cb1-76"><a href="#cb1-76"></a><span class="sc">\\</span></span>
-<span id="cb1-77"><a href="#cb1-77"></a>\mu\ge 0</span>
-<span id="cb1-78"><a href="#cb1-78"></a><span class="sc">\\</span></span>
-<span id="cb1-79"><a href="#cb1-79"></a>d_2 \le \kappa q k</span>
-<span id="cb1-80"><a href="#cb1-80"></a><span class="sc">\\</span></span>
-<span id="cb1-81"><a href="#cb1-81"></a> \mu (\kappa q k-d_2) =0</span>
-<span id="cb1-82"><a href="#cb1-82"></a>\end{eqnarray}</span>
-<span id="cb1-83"><a href="#cb1-83"></a>$$</span>
-<span id="cb1-84"><a href="#cb1-84"></a></span>
-<span id="cb1-85"><a href="#cb1-85"></a><span class="fu">#### 3.</span></span>
-<span id="cb1-86"><a href="#cb1-86"></a></span>
-<span id="cb1-87"><a href="#cb1-87"></a>Set $\mu=0$. Then by Euler consumption</span>
-<span id="cb1-88"><a href="#cb1-88"></a></span>
-<span id="cb1-89"><a href="#cb1-89"></a>$$</span>
-<span id="cb1-90"><a href="#cb1-90"></a>c_1 = c_2</span>
-<span id="cb1-91"><a href="#cb1-91"></a>$$</span>
-<span id="cb1-92"><a href="#cb1-92"></a></span>
-<span id="cb1-93"><a href="#cb1-93"></a>From the PVBC </span>
-<span id="cb1-94"><a href="#cb1-94"></a></span>
-<span id="cb1-95"><a href="#cb1-95"></a>$$</span>
-<span id="cb1-96"><a href="#cb1-96"></a>d_2 = \frac12 d_1</span>
-<span id="cb1-97"><a href="#cb1-97"></a>$$</span>
-<span id="cb1-98"><a href="#cb1-98"></a></span>
-<span id="cb1-99"><a href="#cb1-99"></a>Then from the BC in period 1</span>
-<span id="cb1-100"><a href="#cb1-100"></a></span>
-<span id="cb1-101"><a href="#cb1-101"></a>$$</span>
-<span id="cb1-102"><a href="#cb1-102"></a>c_1 = F(k) - \frac12 d_1</span>
-<span id="cb1-103"><a href="#cb1-103"></a>$$</span>
-<span id="cb1-104"><a href="#cb1-104"></a></span>
-<span id="cb1-105"><a href="#cb1-105"></a>and from the BC in period 2</span>
-<span id="cb1-106"><a href="#cb1-106"></a></span>
-<span id="cb1-107"><a href="#cb1-107"></a>$$</span>
-<span id="cb1-108"><a href="#cb1-108"></a>c_2 = c_1</span>
-<span id="cb1-109"><a href="#cb1-109"></a>$$</span>
-<span id="cb1-110"><a href="#cb1-110"></a></span>
-<span id="cb1-111"><a href="#cb1-111"></a>A requirement of equilibrium is that $c_1,c_2&gt;0$, thus an unconstrained equilibrium exists only if </span>
-<span id="cb1-112"><a href="#cb1-112"></a></span>
-<span id="cb1-113"><a href="#cb1-113"></a>$$</span>
-<span id="cb1-114"><a href="#cb1-114"></a>\fbox{$F(k) - \frac12 d_1 &gt;0$}</span>
-<span id="cb1-115"><a href="#cb1-115"></a>$$</span>
-<span id="cb1-116"><a href="#cb1-116"></a></span>
-<span id="cb1-117"><a href="#cb1-117"></a>From the Euler for capital</span>
-<span id="cb1-118"><a href="#cb1-118"></a></span>
-<span id="cb1-119"><a href="#cb1-119"></a>$$</span>
-<span id="cb1-120"><a href="#cb1-120"></a>q= F'(k) \ge 0</span>
-<span id="cb1-121"><a href="#cb1-121"></a>$$</span>
-<span id="cb1-122"><a href="#cb1-122"></a></span>
-<span id="cb1-123"><a href="#cb1-123"></a>Finally, check that the collateral constraint is satisfied, that is, does $\frac12 d_1 \le \kappa F'(K) K$ hold. This is not true in general thus, we need to impose: </span>
-<span id="cb1-124"><a href="#cb1-124"></a></span>
-<span id="cb1-125"><a href="#cb1-125"></a>$$</span>
-<span id="cb1-126"><a href="#cb1-126"></a>\fbox{$</span>
-<span id="cb1-127"><a href="#cb1-127"></a>\frac12 d_1 \le \kappa F'(K) K</span>
-<span id="cb1-128"><a href="#cb1-128"></a>$}</span>
-<span id="cb1-129"><a href="#cb1-129"></a>$$</span>
-<span id="cb1-130"><a href="#cb1-130"></a></span>
-<span id="cb1-131"><a href="#cb1-131"></a>This restriction is the tighter one of the two, because $\kappa &lt;1$ and because $F(K)&gt; F'(K) K$. </span>
-<span id="cb1-132"><a href="#cb1-132"></a></span>
-<span id="cb1-133"><a href="#cb1-133"></a>Thus, the answer is that an unconstrained equilibrium exists for any $d_1$ satisfying $\frac12 d_1 \le \kappa F'(K) K$. </span>
-<span id="cb1-134"><a href="#cb1-134"></a></span>
-<span id="cb1-135"><a href="#cb1-135"></a><span class="fu">#### 4.</span></span>
-<span id="cb1-136"><a href="#cb1-136"></a></span>
-<span id="cb1-137"><a href="#cb1-137"></a>We want to show that there exists an equilibrium in which $\mu &gt;0$. </span>
-<span id="cb1-138"><a href="#cb1-138"></a></span>
-<span id="cb1-139"><a href="#cb1-139"></a>Combining the 2 Euler equations yields</span>
-<span id="cb1-140"><a href="#cb1-140"></a></span>
-<span id="cb1-141"><a href="#cb1-141"></a>$$</span>
-<span id="cb1-142"><a href="#cb1-142"></a>q = \frac{1-\mu}{1-\kappa \mu} F'(K) &lt; F'(K)</span>
-<span id="cb1-143"><a href="#cb1-143"></a>$$</span>
-<span id="cb1-144"><a href="#cb1-144"></a></span>
-<span id="cb1-145"><a href="#cb1-145"></a>The last inequality follows from the facts that  $\kappa&lt;1$. Thus, we have already shown that should an equilibrium exist with $\mu&gt;0$, then $q$ is lower. Now solve this equation for $1-\mu$ to obtain</span>
-<span id="cb1-146"><a href="#cb1-146"></a></span>
-<span id="cb1-147"><a href="#cb1-147"></a>$$</span>
-<span id="cb1-148"><a href="#cb1-148"></a>1- \mu = \frac{q -\kappa q}{F'(K) - \kappa q}</span>
-<span id="cb1-149"><a href="#cb1-149"></a>$$</span>
-<span id="cb1-150"><a href="#cb1-150"></a></span>
-<span id="cb1-151"><a href="#cb1-151"></a>At $q=F'(K)$ (which is the max value that $q$ can take), we have $1-\mu =1$. At $q=0$ (which is the min value that $q$ can take), we have $1-\mu = 0$. What is the slope for values of $q$ between 0 and $F'(k)$? </span>
-<span id="cb1-152"><a href="#cb1-152"></a></span>
-<span id="cb1-153"><a href="#cb1-153"></a>$$</span>
-<span id="cb1-154"><a href="#cb1-154"></a>\frac{\partial (1-\mu)}{\partial q} = \frac{F'(K) (1-\kappa)}{F'(K) - \kappa q}&gt;0</span>
-<span id="cb1-155"><a href="#cb1-155"></a>$$</span>
-<span id="cb1-156"><a href="#cb1-156"></a></span>
-<span id="cb1-157"><a href="#cb1-157"></a>The last inequality follows from $\kappa&lt;1$ and from $q&lt;F'(K)$. </span>
-<span id="cb1-158"><a href="#cb1-158"></a></span>
-<span id="cb1-159"><a href="#cb1-159"></a>Now plot this function in the space $(q, 1-\mu)$. It is an upward sloping function that is zero at $q=0$ and is 1 at $q=F'(K)$. </span>
-<span id="cb1-160"><a href="#cb1-160"></a></span>
-<span id="cb1-161"><a href="#cb1-161"></a>Next we combine the remaining equilibrium conditions to obtain a second relationship between $q $ and $1-\mu$. </span>
-<span id="cb1-162"><a href="#cb1-162"></a></span>
-<span id="cb1-163"><a href="#cb1-163"></a>Because $\mu&gt;0$, the collateral constraint must bind: </span>
-<span id="cb1-164"><a href="#cb1-164"></a></span>
-<span id="cb1-165"><a href="#cb1-165"></a>$$</span>
-<span id="cb1-166"><a href="#cb1-166"></a>d_2 = \kappa q K </span>
-<span id="cb1-167"><a href="#cb1-167"></a>$$</span>
-<span id="cb1-168"><a href="#cb1-168"></a></span>
-<span id="cb1-169"><a href="#cb1-169"></a>Using the period 1 and period 2 budget constraints, we then have </span>
-<span id="cb1-170"><a href="#cb1-170"></a></span>
-<span id="cb1-171"><a href="#cb1-171"></a>$$</span>
-<span id="cb1-172"><a href="#cb1-172"></a>c_1 = F(K) +\kappa q K - d_1</span>
-<span id="cb1-173"><a href="#cb1-173"></a>$$</span>
-<span id="cb1-174"><a href="#cb1-174"></a></span>
-<span id="cb1-175"><a href="#cb1-175"></a>and</span>
-<span id="cb1-176"><a href="#cb1-176"></a></span>
-<span id="cb1-177"><a href="#cb1-177"></a>$$</span>
-<span id="cb1-178"><a href="#cb1-178"></a>c_2 = F(K) - \kappa q K</span>
-<span id="cb1-179"><a href="#cb1-179"></a>$$</span>
-<span id="cb1-180"><a href="#cb1-180"></a></span>
-<span id="cb1-181"><a href="#cb1-181"></a>The Euler for debt, (<span class="sc">\*</span>), is</span>
-<span id="cb1-182"><a href="#cb1-182"></a></span>
-<span id="cb1-183"><a href="#cb1-183"></a>$$</span>
-<span id="cb1-184"><a href="#cb1-184"></a>c_1 = (1-\mu) c_2</span>
-<span id="cb1-185"><a href="#cb1-185"></a>$$</span>
+<span id="cb1-66"><a href="#cb1-66"></a>In equilibrium, $k_1=k$. So we have</span>
+<span id="cb1-67"><a href="#cb1-67"></a></span>
+<span id="cb1-68"><a href="#cb1-68"></a>$$</span>
+<span id="cb1-69"><a href="#cb1-69"></a>\begin{eqnarray}</span>
+<span id="cb1-70"><a href="#cb1-70"></a>d_2 = d_1 + c_1  - F(k) \tag{1}<span class="sc">\\</span></span>
+<span id="cb1-71"><a href="#cb1-71"></a>c_1 + c_2 = 2F(k)-d_1 \tag{2} <span class="sc">\\</span></span>
+<span id="cb1-72"><a href="#cb1-72"></a>c_2 (1-\mu) = c_1 \tag{3}<span class="sc">\\</span></span>
+<span id="cb1-73"><a href="#cb1-73"></a>c_2 q (1-\kappa\mu) =  c_1 F'(k) \tag{4}<span class="sc">\\</span></span>
+<span id="cb1-74"><a href="#cb1-74"></a>\mu\ge 0 \tag{5} <span class="sc">\\</span></span>
+<span id="cb1-75"><a href="#cb1-75"></a>d_2 \le \kappa q k \tag{6}<span class="sc">\\</span></span>
+<span id="cb1-76"><a href="#cb1-76"></a>\mu (\kappa q k-d_2) =0 \tag{7}</span>
+<span id="cb1-77"><a href="#cb1-77"></a>\end{eqnarray}</span>
+<span id="cb1-78"><a href="#cb1-78"></a>$$</span>
+<span id="cb1-79"><a href="#cb1-79"></a></span>
+<span id="cb1-80"><a href="#cb1-80"></a><span class="fu">#### 3.</span></span>
+<span id="cb1-81"><a href="#cb1-81"></a></span>
+<span id="cb1-82"><a href="#cb1-82"></a>Set $\mu=0$. Then by equation (3), </span>
+<span id="cb1-83"><a href="#cb1-83"></a></span>
+<span id="cb1-84"><a href="#cb1-84"></a>$$</span>
+<span id="cb1-85"><a href="#cb1-85"></a>c_1 = c_2.</span>
+<span id="cb1-86"><a href="#cb1-86"></a>$$</span>
+<span id="cb1-87"><a href="#cb1-87"></a></span>
+<span id="cb1-88"><a href="#cb1-88"></a>and by (2)</span>
+<span id="cb1-89"><a href="#cb1-89"></a></span>
+<span id="cb1-90"><a href="#cb1-90"></a>$$</span>
+<span id="cb1-91"><a href="#cb1-91"></a>c_1 = F(k) - \frac12 d_1</span>
+<span id="cb1-92"><a href="#cb1-92"></a>$$</span>
+<span id="cb1-93"><a href="#cb1-93"></a></span>
+<span id="cb1-94"><a href="#cb1-94"></a>and by (1)</span>
+<span id="cb1-95"><a href="#cb1-95"></a></span>
+<span id="cb1-96"><a href="#cb1-96"></a>$$</span>
+<span id="cb1-97"><a href="#cb1-97"></a>d_2 = \frac12 d_1</span>
+<span id="cb1-98"><a href="#cb1-98"></a>$$</span>
+<span id="cb1-99"><a href="#cb1-99"></a></span>
+<span id="cb1-100"><a href="#cb1-100"></a>A requirement of equilibrium is that $c_1,c_2&gt;0$, thus an unconstrained equilibrium exists only if </span>
+<span id="cb1-101"><a href="#cb1-101"></a></span>
+<span id="cb1-102"><a href="#cb1-102"></a>$$</span>
+<span id="cb1-103"><a href="#cb1-103"></a>\fbox{$F(k) - \frac12 d_1 &gt;0$}</span>
+<span id="cb1-104"><a href="#cb1-104"></a>$$</span>
+<span id="cb1-105"><a href="#cb1-105"></a></span>
+<span id="cb1-106"><a href="#cb1-106"></a>From (4)</span>
+<span id="cb1-107"><a href="#cb1-107"></a></span>
+<span id="cb1-108"><a href="#cb1-108"></a>$$</span>
+<span id="cb1-109"><a href="#cb1-109"></a>q= F'(k) \ge 0</span>
+<span id="cb1-110"><a href="#cb1-110"></a>$$</span>
+<span id="cb1-111"><a href="#cb1-111"></a></span>
+<span id="cb1-112"><a href="#cb1-112"></a>Finally, check that the collateral constraint (6) is satisfied, that is, does $\frac12 d_1 \le \kappa F'(k) k$ hold. But this is not true in general thus, we need to impose: </span>
+<span id="cb1-113"><a href="#cb1-113"></a></span>
+<span id="cb1-114"><a href="#cb1-114"></a>$$</span>
+<span id="cb1-115"><a href="#cb1-115"></a>\fbox{$</span>
+<span id="cb1-116"><a href="#cb1-116"></a>\frac12 d_1 \le \kappa F'(k) k</span>
+<span id="cb1-117"><a href="#cb1-117"></a>$}</span>
+<span id="cb1-118"><a href="#cb1-118"></a>$$</span>
+<span id="cb1-119"><a href="#cb1-119"></a></span>
+<span id="cb1-120"><a href="#cb1-120"></a>This restriction is the tighter one of the two, because $\kappa &lt;1$ and because $F(k)&gt; F'(k) k$. </span>
+<span id="cb1-121"><a href="#cb1-121"></a></span>
+<span id="cb1-122"><a href="#cb1-122"></a>Thus, the answer is that an unconstrained equilibrium exists for any $d_1$ satisfying $\frac12 d_1 \le \kappa F'(k) k$. </span>
+<span id="cb1-123"><a href="#cb1-123"></a></span>
+<span id="cb1-124"><a href="#cb1-124"></a><span class="fu">#### 4.</span></span>
+<span id="cb1-125"><a href="#cb1-125"></a></span>
+<span id="cb1-126"><a href="#cb1-126"></a>We want to show that there exists an equilibrium in which $\mu &gt;0$. </span>
+<span id="cb1-127"><a href="#cb1-127"></a></span>
+<span id="cb1-128"><a href="#cb1-128"></a>Combining the 2 Euler equations, (3) and (4) yields</span>
+<span id="cb1-129"><a href="#cb1-129"></a></span>
+<span id="cb1-130"><a href="#cb1-130"></a>$$</span>
+<span id="cb1-131"><a href="#cb1-131"></a>q = \frac{1-\mu}{1-\kappa \mu} F'(k) &lt; F'(k)</span>
+<span id="cb1-132"><a href="#cb1-132"></a>$$</span>
+<span id="cb1-133"><a href="#cb1-133"></a></span>
+<span id="cb1-134"><a href="#cb1-134"></a>The last inequality follows from the facts that $\kappa&lt;1$. Thus, we have already shown that should an equilibrium exist with $\mu&gt;0$, then $q$ is lower. Now solve this equation for $1-\mu$ to obtain</span>
+<span id="cb1-135"><a href="#cb1-135"></a></span>
+<span id="cb1-136"><a href="#cb1-136"></a>$$</span>
+<span id="cb1-137"><a href="#cb1-137"></a>1- \mu = \frac{q -\kappa q}{F'(K) - \kappa q} \tag{8}</span>
+<span id="cb1-138"><a href="#cb1-138"></a>$$</span>
+<span id="cb1-139"><a href="#cb1-139"></a></span>
+<span id="cb1-140"><a href="#cb1-140"></a>At $q=F'(K)$ (which is the max value that $q$ can take), we have $1-\mu =1$. </span>
+<span id="cb1-141"><a href="#cb1-141"></a>At $q=0$ (which is the min value that $q$ can take), we have $1-\mu = 0$. </span>
+<span id="cb1-142"><a href="#cb1-142"></a>What is the slope for values of $q$ between 0 and $F'(k)$? </span>
+<span id="cb1-143"><a href="#cb1-143"></a></span>
+<span id="cb1-144"><a href="#cb1-144"></a>$$</span>
+<span id="cb1-145"><a href="#cb1-145"></a>\frac{\partial (1-\mu)}{\partial q} = \frac{F'(K) (1-\kappa)}{(F'(K) - \kappa q)^2}&gt;0</span>
+<span id="cb1-146"><a href="#cb1-146"></a>$$</span>
+<span id="cb1-147"><a href="#cb1-147"></a></span>
+<span id="cb1-148"><a href="#cb1-148"></a>The last inequality follows from $\kappa&lt;1$. </span>
+<span id="cb1-149"><a href="#cb1-149"></a></span>
+<span id="cb1-150"><a href="#cb1-150"></a>Now plot (8) in the space $(q, 1-\mu)$. It is an upward sloping function that is zero at $q=0$ and is 1 at $q=F'(K)$. </span>
+<span id="cb1-151"><a href="#cb1-151"></a></span>
+<span id="cb1-152"><a href="#cb1-152"></a>Next we combine the remaining equilibrium conditions to obtain a second relationship between $q $ and $1-\mu$. </span>
+<span id="cb1-153"><a href="#cb1-153"></a></span>
+<span id="cb1-154"><a href="#cb1-154"></a>Because $\mu&gt;0$, the collateral constraint must bind: </span>
+<span id="cb1-155"><a href="#cb1-155"></a></span>
+<span id="cb1-156"><a href="#cb1-156"></a>$$</span>
+<span id="cb1-157"><a href="#cb1-157"></a>d_2 = \kappa q k </span>
+<span id="cb1-158"><a href="#cb1-158"></a>$$</span>
+<span id="cb1-159"><a href="#cb1-159"></a></span>
+<span id="cb1-160"><a href="#cb1-160"></a>Using the period 1 and period 2 budget constraints, we then have </span>
+<span id="cb1-161"><a href="#cb1-161"></a></span>
+<span id="cb1-162"><a href="#cb1-162"></a>$$</span>
+<span id="cb1-163"><a href="#cb1-163"></a>c_1 = F(k) +\kappa q k - d_1</span>
+<span id="cb1-164"><a href="#cb1-164"></a>$$</span>
+<span id="cb1-165"><a href="#cb1-165"></a></span>
+<span id="cb1-166"><a href="#cb1-166"></a>and</span>
+<span id="cb1-167"><a href="#cb1-167"></a></span>
+<span id="cb1-168"><a href="#cb1-168"></a>$$</span>
+<span id="cb1-169"><a href="#cb1-169"></a>c_2 = F(k) - \kappa q k</span>
+<span id="cb1-170"><a href="#cb1-170"></a>$$</span>
+<span id="cb1-171"><a href="#cb1-171"></a></span>
+<span id="cb1-172"><a href="#cb1-172"></a>The Euler for debt, (3), is</span>
+<span id="cb1-173"><a href="#cb1-173"></a></span>
+<span id="cb1-174"><a href="#cb1-174"></a>$$</span>
+<span id="cb1-175"><a href="#cb1-175"></a>c_1 = (1-\mu) c_2</span>
+<span id="cb1-176"><a href="#cb1-176"></a>$$</span>
+<span id="cb1-177"><a href="#cb1-177"></a></span>
+<span id="cb1-178"><a href="#cb1-178"></a>Using the solution for $c_1$ and $c_2$ in this expression yields</span>
+<span id="cb1-179"><a href="#cb1-179"></a></span>
+<span id="cb1-180"><a href="#cb1-180"></a>$$</span>
+<span id="cb1-181"><a href="#cb1-181"></a>(1-\mu ) = \frac{c_1}{c_2} = \frac{F(k) +\kappa q k - d_1}{ F(k) - \kappa q k} \tag{9}</span>
+<span id="cb1-182"><a href="#cb1-182"></a>$$</span>
+<span id="cb1-183"><a href="#cb1-183"></a></span>
+<span id="cb1-184"><a href="#cb1-184"></a>Notice that if $\mu&gt;0$, then it must be the case that $c_1&lt;c_2$. Also $\mu$ must be less than 1. </span>
+<span id="cb1-185"><a href="#cb1-185"></a>Draw this relation in the space $(q, 1-\mu)$ for values of $q$ between $q=0$ and $q=F'(k)$, the highest value it can take, namely  the one associated with the unconstrained equilibrium. </span>
 <span id="cb1-186"><a href="#cb1-186"></a></span>
-<span id="cb1-187"><a href="#cb1-187"></a>Using the solution for $c_1$ and $c_2$ in this expression yields</span>
+<span id="cb1-187"><a href="#cb1-187"></a>Consider $q=0$, then $1-\mu = (F(k) - d_1)/ F(k)$. Suppose that </span>
 <span id="cb1-188"><a href="#cb1-188"></a></span>
 <span id="cb1-189"><a href="#cb1-189"></a>$$</span>
-<span id="cb1-190"><a href="#cb1-190"></a>(1-\mu ) = \frac{c_1}{c_2} = \frac{F(K) +\kappa q K - d_1}{ F(K) - \kappa q K}</span>
+<span id="cb1-190"><a href="#cb1-190"></a>F(k) &lt; d_1 </span>
 <span id="cb1-191"><a href="#cb1-191"></a>$$</span>
 <span id="cb1-192"><a href="#cb1-192"></a></span>
-<span id="cb1-193"><a href="#cb1-193"></a>Notice that if $\mu&gt;0$, then it must be the case that $c_1&lt;c_2$. Also $\mu$ must be less than 1. Draw this relation in the space $(q, 1-\mu)$ for values of $q$ between $q=0$ and $q=F'(K)$, the highest value it can take, namely  the one associated with the unconstrained equilibrium. </span>
+<span id="cb1-193"><a href="#cb1-193"></a>Then the intercept is negative. </span>
 <span id="cb1-194"><a href="#cb1-194"></a></span>
-<span id="cb1-195"><a href="#cb1-195"></a>Consider $q=0$, then $1-\mu = (F(K) - d_1)/ F(K)$. Suppose that </span>
-<span id="cb1-196"><a href="#cb1-196"></a></span>
-<span id="cb1-197"><a href="#cb1-197"></a>$$</span>
-<span id="cb1-198"><a href="#cb1-198"></a>F(K) &lt; d_1 </span>
-<span id="cb1-199"><a href="#cb1-199"></a>$$</span>
-<span id="cb1-200"><a href="#cb1-200"></a></span>
-<span id="cb1-201"><a href="#cb1-201"></a>Then the intercept is negative. </span>
-<span id="cb1-202"><a href="#cb1-202"></a></span>
-<span id="cb1-203"><a href="#cb1-203"></a>Consider $q=F'(K)$, then $1-\mu = \frac{F(K) +\kappa F'(K) K - d_1}{ F(K) - \kappa F'(K) K}$ this will be greater than 1 as long as $\kappa F'(K) K &gt; \frac12 d_1$, which holds as long as an unconstrained equilibrium exists in which the collateral constraint is slack. </span>
-<span id="cb1-204"><a href="#cb1-204"></a>What is the slope?</span>
+<span id="cb1-195"><a href="#cb1-195"></a>Consider $q=F'(k)$, then $1-\mu = \frac{F(k) +\kappa F'(k) k - d_1}{ F(k) - \kappa F'(k) k}$ this will be greater than 1 as long as $\kappa F'(k) k &gt; \frac12 d_1$, which holds as long as an unconstrained equilibrium exists in which the collateral constraint is slack. </span>
+<span id="cb1-196"><a href="#cb1-196"></a>What is the slope?</span>
+<span id="cb1-197"><a href="#cb1-197"></a></span>
+<span id="cb1-198"><a href="#cb1-198"></a>$$</span>
+<span id="cb1-199"><a href="#cb1-199"></a>\frac{\partial (1-\mu)}{\partial q} = \frac{\kappa k (c_1+c_2)}{c_2^2}&gt;0</span>
+<span id="cb1-200"><a href="#cb1-200"></a>$$</span>
+<span id="cb1-201"><a href="#cb1-201"></a></span>
+<span id="cb1-202"><a href="#cb1-202"></a>Therefore this locus, ie (9), must intersect the locus given in equation (8) at least once. </span>
+<span id="cb1-203"><a href="#cb1-203"></a></span>
+<span id="cb1-204"><a href="#cb1-204"></a>In summary an equilibrium in which collateral constraint binds exists if: </span>
 <span id="cb1-205"><a href="#cb1-205"></a></span>
 <span id="cb1-206"><a href="#cb1-206"></a>$$</span>
-<span id="cb1-207"><a href="#cb1-207"></a>\frac{\partial (1-\mu)}{\partial q} = \frac{\kappa K (c_1+c_2)}{c_2^2}&gt;0</span>
+<span id="cb1-207"><a href="#cb1-207"></a>2 \kappa F'(k) k &gt;  d_1 &gt; F(k) </span>
 <span id="cb1-208"><a href="#cb1-208"></a>$$</span>
 <span id="cb1-209"><a href="#cb1-209"></a></span>
-<span id="cb1-210"><a href="#cb1-210"></a>Therefore this locus must intersect the line given in equation xxx at least once. </span>
-<span id="cb1-211"><a href="#cb1-211"></a><span class="co">&lt;!-- Not sure about xxx, I guess is (1-\mu ) = \frac{c_1}{c_2} = \frac{F(K) +\kappa q K - d_1}{ F(K) - \kappa q K} --&gt;</span></span>
-<span id="cb1-212"><a href="#cb1-212"></a></span>
-<span id="cb1-213"><a href="#cb1-213"></a>In summary and equilibrium in which collateral constraint binds exists if: </span>
-<span id="cb1-214"><a href="#cb1-214"></a></span>
-<span id="cb1-215"><a href="#cb1-215"></a>$$</span>
-<span id="cb1-216"><a href="#cb1-216"></a>2 \kappa F'(K) K &gt;  d_1 &gt; F(K) </span>
-<span id="cb1-217"><a href="#cb1-217"></a>$$</span>
-<span id="cb1-218"><a href="#cb1-218"></a></span>
-<span id="cb1-219"><a href="#cb1-219"></a>Suppose $F(K) = K^{\alpha}$, then this condition is: </span>
-<span id="cb1-220"><a href="#cb1-220"></a></span>
-<span id="cb1-221"><a href="#cb1-221"></a>$$</span>
-<span id="cb1-222"><a href="#cb1-222"></a>2 \kappa \alpha  F(K) &gt;  d_1 &gt; F(K) </span>
-<span id="cb1-223"><a href="#cb1-223"></a>$$</span>
-<span id="cb1-224"><a href="#cb1-224"></a></span>
-<span id="cb1-225"><a href="#cb1-225"></a>That is we need $2 \kappa \alpha &gt;1$. This is possible eventhough both $\kappa $ and $\alpha$ are less than 1. </span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
+<span id="cb1-210"><a href="#cb1-210"></a>Suppose $F(k) = k^{\alpha}$, then this condition is: </span>
+<span id="cb1-211"><a href="#cb1-211"></a></span>
+<span id="cb1-212"><a href="#cb1-212"></a>$$</span>
+<span id="cb1-213"><a href="#cb1-213"></a>2 \kappa \alpha  F(k) &gt;  d_1 &gt; F(k) </span>
+<span id="cb1-214"><a href="#cb1-214"></a>$$</span>
+<span id="cb1-215"><a href="#cb1-215"></a></span>
+<span id="cb1-216"><a href="#cb1-216"></a>That is we need $2 \kappa \alpha &gt;1$. This is possible even though both $\kappa$ and $\alpha$ are less than 1. </span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 

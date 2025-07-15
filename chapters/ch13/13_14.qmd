@@ -1,0 +1,13 @@
+---
+title: "Exercise 13.14"
+subtitle: "Optimality of Wage Stability"
+---
+<a class="return-button" href="index.qmd">⬅ Return</a>
+
+## Problem
+
+Show that the devaluation rule given in equation (13.79) is optimal, that it implies a constant nominal wage rate at all times, and that it induces nontrending paths for the nominal exchagne rate, the nominal price of nontradables, and the consumer price level. 
+
+## Answer
+
+_No solution has been posted yet. If you have a solution, we invite you to share it in the comment box at the bottom of this page._

@@ -1,0 +1,13 @@
+---
+title: "Exercise 13.11"
+subtitle: "Breakdown of Reputational Lending"
+---
+<a class="return-button" href="index.qmd">⬅ Return</a>
+
+## Problem
+
+Consider a perfect-foresight endowment economy in which an equilibrium sequence of net external debt $\{d_t\}_{t=-1}^{\infty}$ is supported on reputational grounds when saving in international markets is not allowed after default. Suppose that this sequence contains no maximal element but has a positive least upper bound, $\bar{d}$. Show that the reputational equilibrium with debt breaks down if the country is allowed to save in international financial markets after default. 
+
+## Answer
+
+_No solution has been posted yet. If you have a solution, we invite you to share it in the comment box at the bottom of this page._

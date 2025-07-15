@@ -1,0 +1,13 @@
+---
+title: "Exercise 13.3"
+subtitle: "No Excessive Punishment"
+---
+<a class="return-button" href="index.qmd">⬅ Return</a>
+
+## Problem
+
+In Section 13.3.3 we studied an environment in which creditors seize $k$ units of goods from delinquent debtors. This threat could be viewed as excessive punishment in some states, because it implies that creditors will take away $k$ units of goods even if the size of the defaulted debt is smaller than $k$. A more compelling assumption is that the punishment takes the form $\min\{k,d(\epsilon)\}$, where $k\in (0,\epsilon^H)$ and $d(\epsilon)$ denotes the debt obligation in state $\epsilon$. Show that the  analysis of Section 13.3.3 goes through under this assumption. 
+
+## Answer
+
+_No solution has been posted yet. If you have a solution, we invite you to share it in the comment box at the bottom of this page._

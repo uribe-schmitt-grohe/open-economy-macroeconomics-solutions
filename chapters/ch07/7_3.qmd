@@ -45,8 +45,9 @@ $$
 
 ## Answer
 
-#### 1.
-use 
+We first show that
+
+Use
 
 $$ 
 \ln A(a^m,a^x) = \frac{\ln \left[
@@ -82,7 +83,7 @@ $$
 \end{eqnarray*}
 $$
 
-#### 2.
+Next, we show that
 
 Note that 
 
@@ -143,7 +144,7 @@ $$
 
 which is what we were asked to show. 
 
-#### 3.
+Then, we show that
 
 The claim follows from the facts that 
 
@@ -157,7 +158,7 @@ $$
 \lim_{\mu\rightarrow \infty} \left(1-\frac{1}{\mu}\right) = 1.
 $$
 
-#### 4.
+Finally, we propose an alternative specification such that
 
 Let 
 
@@ -189,4 +190,4 @@ A(a^m,a^x) =  \chi a^m
 ^\frac1{{1-\frac{1}{\mu}}}
 $$
 
-For the rest proceed as above. 
+For the rest proceed as above.

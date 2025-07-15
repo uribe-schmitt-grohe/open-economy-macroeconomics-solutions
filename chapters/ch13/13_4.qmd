@@ -1,0 +1,13 @@
+---
+title: "Exercise 13.4"
+subtitle: "Proportional Sanctions"
+---
+<a class="return-button" href="index.qmd">⬅ Return</a>
+
+## Problem
+
+In the model with direct sanctions of Section 13.3.3, replace the assumption of a constant sanction $k$ with the assumption of a proportional sanction $k(\epsilon)\equiv \alpha(\bar{y}+\epsilon)$. Characterize the optimal debt contract. How does it compare with the case of constant sanctions? 
+
+## Answer
+
+_No solution has been posted yet. If you have a solution, we invite you to share it in the comment box at the bottom of this page._

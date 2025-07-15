@@ -1,0 +1,17 @@
+---
+title: "Exercise 13.5"
+subtitle: "Moral Sanctions"
+---
+<a class="return-button" href="index.qmd">⬅ Return</a>
+
+## Problem
+
+Consider another variant of the model with direct sanctions of Section 13.3.3. Suppose that direct sanctions are not possible, that is, $k=0$. Instead, assume that defaulting countries experience  a self-inflicted moral punishment. Specifically, assume that the utility of the country that defaults in state $\epsilon$ is given by $u(y+\epsilon)-m,$ where $m>0$ is a parameter defining the severity of the moral punishment.
+
+1. Write the incentive-compatibility constraint. 
+
+2. Characterize the optimal debt contract $d(\epsilon)$ and compare it to the one corresponding to the case of direct sanctions.
+
+## Answer
+
+_No solution has been posted yet. If you have a solution, we invite you to share it in the comment box at the bottom of this page._

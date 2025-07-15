@@ -1,0 +1,13 @@
+---
+title: "Exercise 13.10"
+subtitle: "Default Risk and Trade Balance Surpluses With Correlated Shocks"
+---
+<a class="return-button" href="index.qmd">⬅ Return</a>
+
+## Problem
+
+Show that Proposition 13.1 holds when the endowment process is assumed to be serially correlated.
+
+## Answer
+
+_No solution has been posted yet. If you have a solution, we invite you to share it in the comment box at the bottom of this page._

@@ -1,0 +1,21 @@
+---
+title: "Exercise 13.7"
+subtitle: "Nonzero Opportunity Cost of Lending"
+---
+<a class="return-button" href="index.qmd">⬅ Return</a>
+
+## Problem
+
+Consider yet another variant of the model with direct sanctions of Section 13.3.3. Suppose that the opportunity cost of funds of foreign lenders is not zero but positive and equal to the constant $r$. Suppose first that the borrowing country does not have the option of not writing a debt contract with foreign lenders. 
+
+1. What restrictions on $k$ and $r$ do you need to impose to guarantee the existence of a nonautarkic equilibrium?
+
+2. Write the participation constraint. 
+
+3. Characterize the optimal debt contract $d(\epsilon)$ and compare it to the one corresponding to the case of zero opportunity costs.   
+
+4. How do the answers to questions 2 and 3 change if the borrowing country is assumed to have the option of not writing a contract with foreign lenders?
+
+## Answer
+
+_No solution has been posted yet. If you have a solution, we invite you to share it in the comment box at the bottom of this page._
