@@ -251,4 +251,4 @@ $$
 \mbox{amplification}= \frac{\alpha(1-\delta)}{\alpha \delta +\left(\frac{\delta+r}{1+r}\right)^{\eta} (1-\alpha)} >0
 $$
 
-Amplification is highest when $\delta\rightarrow 0$. To see this note that $\partial{am}/\partial{\delta} <0 $ for $0<\delta\le1$ 
+Amplification is highest when $\delta\rightarrow 0$. To see this note that $\partial{am}/\partial{\delta} <0$ for $0<\delta\le1$ 
