@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.31">
+<meta name="generator" content="quarto-1.8.27">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -67,14 +67,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <meta name="quarto:offset" content="../../">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-a14e3238c51140e99ccc48519b6ed9ce.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-ff63373b1067ca6f91cf1456aa1f00a2.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -117,7 +118,7 @@ const typesetMath = (el) => {
     var macros = [];
     for (var i = 0; i < mathElements.length; i++) {
       var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
         window.katex.render(texText.data, mathElements[i], {
           displayMode: mathElements[i].classList.contains('display'),
           throwOnError: false,
@@ -259,7 +260,10 @@ U'(c_t) q_{t,t+1} = \beta U'(c_{t+1})
 </section>
 <section id="section-3" class="level4">
 <h4 class="anchored" data-anchor-id="section-3">4.</h4>
-<p>Using the notation of section 4.9.1, we denote the net foreign asset position in period <span class="math inline">\(t\)</span> as <span class="math inline">\(s_t = E_tq_{t,t+1} b_{t+1}= \beta E_t b_{t+1}\)</span>. Since <span class="math inline">\(b_t\)</span> takes only 2 values, we have $’ = ’ $</p>
+<p>Using the notation of section 4.9.1, we denote the net foreign asset position in period <span class="math inline">\(t\)</span> as <span class="math inline">\(s_t = E_tq_{t,t+1} b_{t+1}= \beta E_t b_{t+1}\)</span>. Since <span class="math inline">\(b_t\)</span> takes only 2 values, we have</p>
+<p><span class="math display">\[
+\left[\begin{array}{cc} s_H &amp; s_L\end{array}\right]' = \beta \Pi \left[\begin{array}{cc} b_H &amp; b_L\end{array}\right]'
+\]</span></p>
 </section>
 <section id="section-4" class="level4">
 <h4 class="anchored" data-anchor-id="section-4">5.</h4>
@@ -337,13 +341,14 @@ U'(c_t) q_{t,t+1} = \beta U'(c_{t+1})
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
@@ -765,7 +770,7 @@ U'(c_t) q_{t,t+1} = \beta U'(c_{t+1})
   }
   loadGiscus();
 </script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
-<div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1"></a><span class="co">---</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1"></a><span class="co">---</span></span>
 <span id="cb1-2"><a href="#cb1-2"></a><span class="an">title:</span><span class="co"> "Exercise 4.4 - Solution"</span></span>
 <span id="cb1-3"><a href="#cb1-3"></a><span class="an">subtitle:</span><span class="co"> "Complete Asset Markets and a Discrete Endowment Process"</span></span>
 <span id="cb1-4"><a href="#cb1-4"></a><span class="co">---</span></span>
@@ -855,29 +860,33 @@ U'(c_t) q_{t,t+1} = \beta U'(c_{t+1})
 <span id="cb1-88"><a href="#cb1-88"></a></span>
 <span id="cb1-89"><a href="#cb1-89"></a><span class="fu">#### 4.</span></span>
 <span id="cb1-90"><a href="#cb1-90"></a></span>
-<span id="cb1-91"><a href="#cb1-91"></a>Using the notation of  section 4.9.1, we denote the net foreign asset position in period $t$ as $s_t = E_tq_{t,t+1} b_{t+1}= \beta E_t b_{t+1}$. Since $b_t$ takes only 2 values, we have $\left<span class="co">[</span><span class="ot">\begin{array}{cc} s_H &amp; s_L\end{array}\right</span><span class="co">]</span>' = \beta \Pi \left<span class="co">[</span><span class="ot">\begin{array}{cc} b_H &amp; b_L\end{array}\right</span><span class="co">]</span>' $</span>
+<span id="cb1-91"><a href="#cb1-91"></a>Using the notation of  section 4.9.1, we denote the net foreign asset position in period $t$ as $s_t = E_tq_{t,t+1} b_{t+1}= \beta E_t b_{t+1}$. Since $b_t$ takes only 2 values, we have</span>
 <span id="cb1-92"><a href="#cb1-92"></a></span>
-<span id="cb1-93"><a href="#cb1-93"></a><span class="fu">#### 5.</span></span>
-<span id="cb1-94"><a href="#cb1-94"></a></span>
-<span id="cb1-95"><a href="#cb1-95"></a>The current account is $ca_t = s_t - s_{t-1}$. If the states in period $t-1$ and period $t$ are the same, the current account in period $t$ is zero. If the state in period $t-1$ was $y_L$ and in period $t$ it is $y_H$, then $ca_t = s_H-s_L&gt;0$. And if in period $t-1$, the state was $y_H$ and in period $t$ the state is $y_L$, then $ca_t = s_L -s_H&lt;0$. This is intuitive. If the state is $y_H$ and was $y_L$ before, then the country should run a current account surplus as it accumulates net foreign assets. At the same time, if in the current period the endowment is low,  $y_L$, but was high in the previous period, $y_H$, then the country should run a current account deficit ie running down its stock of net foreign assets. This behavior of the current account is a consequence market completeness. Getting a high realization of the endowment in period $t$ has no effect on future consumption as the windfall was already fully insured. </span>
+<span id="cb1-93"><a href="#cb1-93"></a>$$</span>
+<span id="cb1-94"><a href="#cb1-94"></a>\left<span class="co">[</span><span class="ot">\begin{array}{cc} s_H &amp; s_L\end{array}\right</span><span class="co">]</span>' = \beta \Pi \left<span class="co">[</span><span class="ot">\begin{array}{cc} b_H &amp; b_L\end{array}\right</span><span class="co">]</span>'</span>
+<span id="cb1-95"><a href="#cb1-95"></a>$$</span>
 <span id="cb1-96"><a href="#cb1-96"></a></span>
-<span id="cb1-97"><a href="#cb1-97"></a><span class="fu">#### 6.</span></span>
+<span id="cb1-97"><a href="#cb1-97"></a><span class="fu">#### 5.</span></span>
 <span id="cb1-98"><a href="#cb1-98"></a></span>
-<span id="cb1-99"><a href="#cb1-99"></a>Now assume that the state in period $0$ is $L$ and the initial asset position is the same, namely, $b_0$.  Let a hat over the variable denote the equilibrium. Then we have </span>
-<span id="cb1-100"><a href="#cb1-100"></a>$\hat{c}/(1-\beta) = Y^L +b_0$. Because $Y^L&lt; Y^H$, $\hat{c}&lt;c$, so consumption is constant but lower. $\hat{tb}_H = y_H-\hat{c} &gt;tb_H$ and $\hat{tb}_L = y_L-\hat{c} &gt;tb_L$. Now $\hat{b}_L= b_0=b_H&lt;b_L$ and $\hat{b}_H= \hat{c}/(1-\beta) -Y^H&lt;b_H=b_0$This means that contingent claims are now less in both states. This makes sense because the initial present value of this economy is lower by $Y^H-Y^L$.  What are net foreign assets? </span>
-<span id="cb1-101"><a href="#cb1-101"></a></span>
-<span id="cb1-102"><a href="#cb1-102"></a>$$</span>
-<span id="cb1-103"><a href="#cb1-103"></a>\left[\begin{array}{cc}</span>
-<span id="cb1-104"><a href="#cb1-104"></a>\hat{s}_H &amp;</span>
-<span id="cb1-105"><a href="#cb1-105"></a>\hat{s}_L\end{array}\right]' = \beta \Pi </span>
-<span id="cb1-106"><a href="#cb1-106"></a>\left[\begin{array}{cc}</span>
-<span id="cb1-107"><a href="#cb1-107"></a>\hat{b}_H &amp;</span>
-<span id="cb1-108"><a href="#cb1-108"></a>\hat{b}_L\end{array}\right]'</span>
-<span id="cb1-109"><a href="#cb1-109"></a>$$</span>
-<span id="cb1-110"><a href="#cb1-110"></a></span>
-<span id="cb1-111"><a href="#cb1-111"></a>So $\hat{s}_H<span class="dt">&lt;</span><span class="kw">s_H</span><span class="ot"> </span><span class="er">$</span><span class="ot"> and </span><span class="er">$\</span><span class="ot">hat</span><span class="er">{</span><span class="ot">s</span><span class="er">}</span><span class="ot">_L </span><span class="er">&lt;</span><span class="ot"> s_L</span><span class="er">$,</span><span class="ot"> in both states net foreign assets are lower. </span></span>
-<span id="cb1-112"><a href="#cb1-112"></a><span class="ot">Again </span><span class="er">$</span><span class="ot">ca_t</span><span class="op">=</span><span class="st">0$</span><span class="ot"> when the state in </span><span class="er">$</span><span class="ot">t-1</span><span class="er">$</span><span class="ot"> and </span><span class="er">$</span><span class="ot">t</span><span class="er">$</span><span class="ot"> are the same. When </span><span class="er">$</span><span class="ot">t-1</span><span class="er">$</span><span class="ot"> is L and </span><span class="er">$</span><span class="ot">t</span><span class="er">$</span><span class="ot"> is H</span><span class="er">,</span><span class="ot"> then </span><span class="er">$\</span><span class="ot">hat</span><span class="er">{</span><span class="ot">ca</span><span class="er">}</span><span class="ot">_t </span><span class="op">=</span> <span class="st">\hat{s}_H</span><span class="ot"> </span><span class="er">-</span><span class="ot"> </span><span class="er">\</span><span class="ot">hat</span><span class="er">{</span><span class="ot">s</span><span class="er">}</span><span class="ot">_L</span><span class="er">$</span><span class="ot"> and vice versa. </span></span>
-<span id="cb1-113"><a href="#cb1-113"></a><span class="ot">Finally</span><span class="er">,</span><span class="ot"> if the initial value of </span><span class="er">$</span><span class="ot">b_0</span><span class="er">$</span><span class="ot"> in this case was instead </span><span class="er">$</span><span class="ot">b_L</span><span class="er">$,</span><span class="ot"> then consumption would be identical to the case characterized in questions </span><span class="er">1-5</span><span class="ot"> above. Why</span><span class="er">?</span><span class="ot"> Because of full insurance via complete markets. This means that we only get a differenct consumption allocation in this question because </span><span class="er">$</span><span class="ot">b_0</span><span class="er">$</span><span class="ot"> was not state contingent. </span></span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
+<span id="cb1-99"><a href="#cb1-99"></a>The current account is $ca_t = s_t - s_{t-1}$. If the states in period $t-1$ and period $t$ are the same, the current account in period $t$ is zero. If the state in period $t-1$ was $y_L$ and in period $t$ it is $y_H$, then $ca_t = s_H-s_L&gt;0$. And if in period $t-1$, the state was $y_H$ and in period $t$ the state is $y_L$, then $ca_t = s_L -s_H&lt;0$. This is intuitive. If the state is $y_H$ and was $y_L$ before, then the country should run a current account surplus as it accumulates net foreign assets. At the same time, if in the current period the endowment is low,  $y_L$, but was high in the previous period, $y_H$, then the country should run a current account deficit ie running down its stock of net foreign assets. This behavior of the current account is a consequence market completeness. Getting a high realization of the endowment in period $t$ has no effect on future consumption as the windfall was already fully insured. </span>
+<span id="cb1-100"><a href="#cb1-100"></a></span>
+<span id="cb1-101"><a href="#cb1-101"></a><span class="fu">#### 6.</span></span>
+<span id="cb1-102"><a href="#cb1-102"></a></span>
+<span id="cb1-103"><a href="#cb1-103"></a>Now assume that the state in period $0$ is $L$ and the initial asset position is the same, namely, $b_0$.  Let a hat over the variable denote the equilibrium. Then we have </span>
+<span id="cb1-104"><a href="#cb1-104"></a>$\hat{c}/(1-\beta) = Y^L +b_0$. Because $Y^L&lt; Y^H$, $\hat{c}&lt;c$, so consumption is constant but lower. $\hat{tb}_H = y_H-\hat{c} &gt;tb_H$ and $\hat{tb}_L = y_L-\hat{c} &gt;tb_L$. Now $\hat{b}_L= b_0=b_H&lt;b_L$ and $\hat{b}_H= \hat{c}/(1-\beta) -Y^H&lt;b_H=b_0$This means that contingent claims are now less in both states. This makes sense because the initial present value of this economy is lower by $Y^H-Y^L$.  What are net foreign assets? </span>
+<span id="cb1-105"><a href="#cb1-105"></a></span>
+<span id="cb1-106"><a href="#cb1-106"></a>$$</span>
+<span id="cb1-107"><a href="#cb1-107"></a>\left[\begin{array}{cc}</span>
+<span id="cb1-108"><a href="#cb1-108"></a>\hat{s}_H &amp;</span>
+<span id="cb1-109"><a href="#cb1-109"></a>\hat{s}_L\end{array}\right]' = \beta \Pi </span>
+<span id="cb1-110"><a href="#cb1-110"></a>\left[\begin{array}{cc}</span>
+<span id="cb1-111"><a href="#cb1-111"></a>\hat{b}_H &amp;</span>
+<span id="cb1-112"><a href="#cb1-112"></a>\hat{b}_L\end{array}\right]'</span>
+<span id="cb1-113"><a href="#cb1-113"></a>$$</span>
+<span id="cb1-114"><a href="#cb1-114"></a></span>
+<span id="cb1-115"><a href="#cb1-115"></a>So $\hat{s}_H<span class="dt">&lt;</span><span class="kw">s_H</span><span class="ot"> </span><span class="er">$</span><span class="ot"> and </span><span class="er">$\</span><span class="ot">hat</span><span class="er">{</span><span class="ot">s</span><span class="er">}</span><span class="ot">_L </span><span class="er">&lt;</span><span class="ot"> s_L</span><span class="er">$,</span><span class="ot"> in both states net foreign assets are lower. </span></span>
+<span id="cb1-116"><a href="#cb1-116"></a><span class="ot">Again </span><span class="er">$</span><span class="ot">ca_t</span><span class="op">=</span><span class="st">0$</span><span class="ot"> when the state in </span><span class="er">$</span><span class="ot">t-1</span><span class="er">$</span><span class="ot"> and </span><span class="er">$</span><span class="ot">t</span><span class="er">$</span><span class="ot"> are the same. When </span><span class="er">$</span><span class="ot">t-1</span><span class="er">$</span><span class="ot"> is L and </span><span class="er">$</span><span class="ot">t</span><span class="er">$</span><span class="ot"> is H</span><span class="er">,</span><span class="ot"> then </span><span class="er">$\</span><span class="ot">hat</span><span class="er">{</span><span class="ot">ca</span><span class="er">}</span><span class="ot">_t </span><span class="op">=</span> <span class="st">\hat{s}_H</span><span class="ot"> </span><span class="er">-</span><span class="ot"> </span><span class="er">\</span><span class="ot">hat</span><span class="er">{</span><span class="ot">s</span><span class="er">}</span><span class="ot">_L</span><span class="er">$</span><span class="ot"> and vice versa. </span></span>
+<span id="cb1-117"><a href="#cb1-117"></a><span class="ot">Finally</span><span class="er">,</span><span class="ot"> if the initial value of </span><span class="er">$</span><span class="ot">b_0</span><span class="er">$</span><span class="ot"> in this case was instead </span><span class="er">$</span><span class="ot">b_L</span><span class="er">$,</span><span class="ot"> then consumption would be identical to the case characterized in questions </span><span class="er">1-5</span><span class="ot"> above. Why</span><span class="er">?</span><span class="ot"> Because of full insurance via complete markets. This means that we only get a differenct consumption allocation in this question because </span><span class="er">$</span><span class="ot">b_0</span><span class="er">$</span><span class="ot"> was not state contingent. </span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 

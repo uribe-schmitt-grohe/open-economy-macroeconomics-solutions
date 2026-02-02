@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.31">
+<meta name="generator" content="quarto-1.8.27">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -67,14 +67,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <meta name="quarto:offset" content="../../">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-a14e3238c51140e99ccc48519b6ed9ce.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-ff63373b1067ca6f91cf1456aa1f00a2.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -117,7 +118,7 @@ const typesetMath = (el) => {
     var macros = [];
     for (var i = 0; i < mathElements.length; i++) {
       var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
         window.katex.render(texText.data, mathElements[i], {
           displayMode: mathElements[i].classList.contains('display'),
           throwOnError: false,
@@ -215,26 +216,28 @@ window.Quarto = {
 (c) consumption is strictly decreasing in debt (i.e., <span class="math inline">\(c_t\)</span> is a strictly decreasing function of <span class="math inline">\(d_{t-1}\)</span>).</p></li>
 <li><p>Find the policy functions for debt and consumption that are consistent with the three conditions imposed in the previous item.</p></li>
 </ol>
-</section>
-<section id="answer" class="level2">
-<h2 class="anchored" data-anchor-id="answer">Answer</h2>
-<section id="section" class="level4">
-<h4 class="anchored" data-anchor-id="section">1.</h4>
-<p>Hint: Consult Appendix 4.14.2.</p>
-</section>
-<section id="section-1" class="level4">
-<h4 class="anchored" data-anchor-id="section-1">2.</h4>
-<p>Policy functions:</p>
-<p><span class="math display">\[
+<!--
+## Answer
+
+#### 1.
+
+Hint: Consult Appendix 4.14.2.
+
+#### 2.
+
+Policy functions:
+
+$$
 d_t = \gamma_{11} d_{t-1} \quad \text{and} \quad c_t = \frac{\gamma_{11} - \gamma_{22}}{\gamma_{21}}.
-\]</span></p>
-<p>Need <span class="math inline">\(\gamma_{11} \in (0,1)\)</span>, <span class="math inline">\(\gamma_{22} &gt; 1\)</span>, and <span class="math inline">\(\gamma_{21} &gt; 0\)</span>.</p>
+$$
+
+Need $\gamma_{11} \in (0,1)$, $\gamma_{22} > 1$, and $\gamma_{21} > 0$.
+-->
 
 
 
 <!-- -->
 
-</section>
 </section>
 
 </main> <!-- /main -->
@@ -289,13 +292,14 @@ d_t = \gamma_{11} d_{t-1} \quad \text{and} \quad c_t = \frac{\gamma_{11} - \gamm
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
@@ -717,7 +721,7 @@ d_t = \gamma_{11} d_{t-1} \quad \text{and} \quad c_t = \frac{\gamma_{11} - \gamm
   }
   loadGiscus();
 </script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
-<div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1"></a><span class="co">---</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1"></a><span class="co">---</span></span>
 <span id="cb1-2"><a href="#cb1-2"></a><span class="an">title:</span><span class="co"> "Exercise 4.1"</span></span>
 <span id="cb1-3"><a href="#cb1-3"></a><span class="an">subtitle:</span><span class="co"> "Dynamics of a Linear Economy"</span></span>
 <span id="cb1-4"><a href="#cb1-4"></a><span class="co">---</span></span>
@@ -749,21 +753,23 @@ d_t = \gamma_{11} d_{t-1} \quad \text{and} \quad c_t = \frac{\gamma_{11} - \gamm
 <span id="cb1-30"><a href="#cb1-30"></a></span>
 <span id="cb1-31"><a href="#cb1-31"></a><span class="ss">2. </span>Find the policy functions for debt and consumption that are consistent with the three conditions imposed in the previous item.</span>
 <span id="cb1-32"><a href="#cb1-32"></a></span>
-<span id="cb1-33"><a href="#cb1-33"></a><span class="fu">## Answer</span></span>
-<span id="cb1-34"><a href="#cb1-34"></a></span>
-<span id="cb1-35"><a href="#cb1-35"></a><span class="fu">#### 1.</span></span>
-<span id="cb1-36"><a href="#cb1-36"></a></span>
-<span id="cb1-37"><a href="#cb1-37"></a>Hint: Consult Appendix 4.14.2.</span>
-<span id="cb1-38"><a href="#cb1-38"></a></span>
-<span id="cb1-39"><a href="#cb1-39"></a><span class="fu">#### 2.</span></span>
-<span id="cb1-40"><a href="#cb1-40"></a></span>
-<span id="cb1-41"><a href="#cb1-41"></a>Policy functions:  </span>
-<span id="cb1-42"><a href="#cb1-42"></a></span>
-<span id="cb1-43"><a href="#cb1-43"></a>$$</span>
-<span id="cb1-44"><a href="#cb1-44"></a>d_t = \gamma_{11} d_{t-1} \quad \text{and} \quad c_t = \frac{\gamma_{11} - \gamma_{22}}{\gamma_{21}}.</span>
-<span id="cb1-45"><a href="#cb1-45"></a>$$</span>
-<span id="cb1-46"><a href="#cb1-46"></a></span>
-<span id="cb1-47"><a href="#cb1-47"></a>Need $\gamma_{11} \in (0,1)$, $\gamma_{22} &gt; 1$, and $\gamma_{21} &gt; 0$.</span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
+<span id="cb1-33"><a href="#cb1-33"></a><span class="co">&lt;!--</span></span>
+<span id="cb1-34"><a href="#cb1-34"></a><span class="co">## Answer</span></span>
+<span id="cb1-35"><a href="#cb1-35"></a></span>
+<span id="cb1-36"><a href="#cb1-36"></a><span class="co">#### 1.</span></span>
+<span id="cb1-37"><a href="#cb1-37"></a></span>
+<span id="cb1-38"><a href="#cb1-38"></a><span class="co">Hint: Consult Appendix 4.14.2.</span></span>
+<span id="cb1-39"><a href="#cb1-39"></a></span>
+<span id="cb1-40"><a href="#cb1-40"></a><span class="co">#### 2.</span></span>
+<span id="cb1-41"><a href="#cb1-41"></a></span>
+<span id="cb1-42"><a href="#cb1-42"></a><span class="co">Policy functions:</span></span>
+<span id="cb1-43"><a href="#cb1-43"></a></span>
+<span id="cb1-44"><a href="#cb1-44"></a><span class="co">$$</span></span>
+<span id="cb1-45"><a href="#cb1-45"></a><span class="co">d_t = \gamma_{11} d_{t-1} \quad \text{and} \quad c_t = \frac{\gamma_{11} - \gamma_{22}}{\gamma_{21}}.</span></span>
+<span id="cb1-46"><a href="#cb1-46"></a><span class="co">$$</span></span>
+<span id="cb1-47"><a href="#cb1-47"></a></span>
+<span id="cb1-48"><a href="#cb1-48"></a><span class="co">Need $\gamma_{11} \in (0,1)$, $\gamma_{22} &gt; 1$, and $\gamma_{21} &gt; 0$.</span></span>
+<span id="cb1-49"><a href="#cb1-49"></a><span class="co">--&gt;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 

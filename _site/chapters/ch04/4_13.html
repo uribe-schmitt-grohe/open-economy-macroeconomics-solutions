@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.31">
+<meta name="generator" content="quarto-1.8.27">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -67,14 +67,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <meta name="quarto:offset" content="../../">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-a14e3238c51140e99ccc48519b6ed9ce.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-ff63373b1067ca6f91cf1456aa1f00a2.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -117,7 +118,7 @@ const typesetMath = (el) => {
     var macros = [];
     for (var i = 0; i < mathElements.length; i++) {
       var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
         window.katex.render(texText.data, mathElements[i], {
           displayMode: mathElements[i].classList.contains('display'),
           throwOnError: false,
@@ -207,10 +208,56 @@ c^{1-\omega}(1-h)^{\omega}
 {1-\sigma}.
 \]</span></p>
 <p>All other features of the model are unchanged.</p>
+<p><strong>Table 4.1: Calibration of the EDEIR Small Open RBC Economy</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 6%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 7%">
+<col style="width: 9%">
+<col style="width: 7%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Parameter</th>
+<th><span class="math inline">\(\sigma\)</span></th>
+<th><span class="math inline">\(\delta\)</span></th>
+<th><span class="math inline">\(r^*\)</span></th>
+<th><span class="math inline">\(\alpha\)</span></th>
+<th><span class="math inline">\(\bar{d}\)</span></th>
+<th><span class="math inline">\(\omega\)</span></th>
+<th><span class="math inline">\(\phi\)</span></th>
+<th><span class="math inline">\(\psi_1\)</span></th>
+<th><span class="math inline">\(\rho\)</span></th>
+<th><span class="math inline">\(\tilde{\eta}\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Value</td>
+<td>2</td>
+<td>0.1</td>
+<td>0.04</td>
+<td>0.32</td>
+<td>0.7442</td>
+<td>1.455</td>
+<td>0.028</td>
+<td>0.000742</td>
+<td>0.42</td>
+<td>0.0129</td>
+</tr>
+</tbody>
+</table>
 <ol type="1">
 <li><p>Derive analytically the steady state of the model.</p></li>
-<li><p>Set all parameters of the model as in table~<span class="math inline">\(\ref{table:soe-rbc-calibration-SGU-JIE}\)</span>, except for <span class="math inline">\(\omega\)</span>. Calibrate <span class="math inline">\(\omega\)</span> to ensure that in the deterministic steady state, hours equal 1/3 (i.e., ensure that in the steady state, households spend one-third of their time working). Calculate the implied value of <span class="math inline">\(\omega\)</span>.</p></li>
-<li><p>Produce a table of predicted second moments similar to table~<span class="math inline">\(\ref{table:soe-rbc-edeir}\)</span>. When performing this step, you might find it convenient to use as a starting point the Matlab programs for the EDEIR SOE-RBC model posted online.</p></li>
+<li><p>Set all parameters of the model as in Table 4.1, except for <span class="math inline">\(\omega\)</span>. Calibrate <span class="math inline">\(\omega\)</span> to ensure that in the deterministic steady state, hours equal 1/3 (i.e., ensure that in the steady state, households spend one-third of their time working). Calculate the implied value of <span class="math inline">\(\omega\)</span>.</p></li>
+<li><p>Produce a table of predicted second moments similar to Table 4.1. When performing this step, you might find it convenient to use as a starting point the Matlab programs for the EDEIR SOE-RBC model posted online.</p></li>
 <li><p>Compare the predictions of the present model with those of its GHH-preference counterpart.</p></li>
 </ol>
 </section>
@@ -276,13 +323,14 @@ c^{1-\omega}(1-h)^{\omega}
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
@@ -704,7 +752,7 @@ c^{1-\omega}(1-h)^{\omega}
   }
   loadGiscus();
 </script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
-<div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1"></a><span class="co">---</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1"></a><span class="co">---</span></span>
 <span id="cb1-2"><a href="#cb1-2"></a><span class="an">title:</span><span class="co"> "Exercise 4.13"</span></span>
 <span id="cb1-3"><a href="#cb1-3"></a><span class="an">subtitle:</span><span class="co"> "An SOE-RBC Model with Cobb-Douglas Preferences"</span></span>
 <span id="cb1-4"><a href="#cb1-4"></a><span class="co">---</span></span>
@@ -723,18 +771,24 @@ c^{1-\omega}(1-h)^{\omega}
 <span id="cb1-17"><a href="#cb1-17"></a></span>
 <span id="cb1-18"><a href="#cb1-18"></a>All other features of the model are unchanged.</span>
 <span id="cb1-19"><a href="#cb1-19"></a></span>
-<span id="cb1-20"><a href="#cb1-20"></a><span class="ss">1. </span>Derive analytically the steady state of the model.</span>
+<span id="cb1-20"><a href="#cb1-20"></a>**Table 4.1: Calibration of the EDEIR Small Open RBC Economy**</span>
 <span id="cb1-21"><a href="#cb1-21"></a></span>
-<span id="cb1-22"><a href="#cb1-22"></a><span class="ss">2. </span>Set all parameters of the model as in table~\ref{table:soe-rbc-calibration-SGU-JIE}, except for $\omega$.</span>
-<span id="cb1-23"><a href="#cb1-23"></a>   Calibrate $\omega$ to ensure that in the deterministic steady state, hours equal 1/3 (i.e., ensure that in the steady state, households spend one-third of their time working). Calculate the implied value of $\omega$.</span>
-<span id="cb1-24"><a href="#cb1-24"></a></span>
-<span id="cb1-25"><a href="#cb1-25"></a><span class="ss">3. </span>Produce a table of predicted second moments similar to table~\ref{table:soe-rbc-edeir}. When performing this step, you might find it convenient to use as a starting point the Matlab programs for the EDEIR SOE-RBC model posted online.</span>
-<span id="cb1-26"><a href="#cb1-26"></a></span>
-<span id="cb1-27"><a href="#cb1-27"></a><span class="ss">4. </span>Compare the predictions of the present model with those of its GHH-preference counterpart.</span>
-<span id="cb1-28"><a href="#cb1-28"></a></span>
-<span id="cb1-29"><a href="#cb1-29"></a><span class="fu">## Answer</span></span>
+<span id="cb1-22"><a href="#cb1-22"></a><span class="pp">|</span> Parameter <span class="pp">|</span> $\sigma$ <span class="pp">|</span> $\delta$ <span class="pp">|</span> $r^*$ <span class="pp">|</span> $\alpha$ <span class="pp">|</span> $\bar{d}$ <span class="pp">|</span> $\omega$ <span class="pp">|</span> $\phi$ <span class="pp">|</span> $\psi_1$ <span class="pp">|</span> $\rho$ <span class="pp">|</span> $\tilde{\eta}$ <span class="pp">|</span></span>
+<span id="cb1-23"><a href="#cb1-23"></a><span class="pp">|-----------|----------|----------|-------|----------|-----------|----------|--------|----------|--------|----------------|</span></span>
+<span id="cb1-24"><a href="#cb1-24"></a><span class="pp">|</span> Value     <span class="pp">|</span> 2        <span class="pp">|</span> 0.1      <span class="pp">|</span> 0.04  <span class="pp">|</span> 0.32     <span class="pp">|</span> 0.7442    <span class="pp">|</span> 1.455    <span class="pp">|</span> 0.028  <span class="pp">|</span> 0.000742 <span class="pp">|</span> 0.42   <span class="pp">|</span> 0.0129         <span class="pp">|</span></span>
+<span id="cb1-25"><a href="#cb1-25"></a></span>
+<span id="cb1-26"><a href="#cb1-26"></a><span class="ss">1. </span>Derive analytically the steady state of the model.</span>
+<span id="cb1-27"><a href="#cb1-27"></a></span>
+<span id="cb1-28"><a href="#cb1-28"></a><span class="ss">2. </span>Set all parameters of the model as in Table 4.1, except for $\omega$.</span>
+<span id="cb1-29"><a href="#cb1-29"></a>   Calibrate $\omega$ to ensure that in the deterministic steady state, hours equal 1/3 (i.e., ensure that in the steady state, households spend one-third of their time working). Calculate the implied value of $\omega$.</span>
 <span id="cb1-30"><a href="#cb1-30"></a></span>
-<span id="cb1-31"><a href="#cb1-31"></a>_No solution has been posted yet. If you have a solution, we invite you to share it in the comment box at the bottom of this page._</span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
+<span id="cb1-31"><a href="#cb1-31"></a><span class="ss">3. </span>Produce a table of predicted second moments similar to Table 4.1. When performing this step, you might find it convenient to use as a starting point the Matlab programs for the EDEIR SOE-RBC model posted online.</span>
+<span id="cb1-32"><a href="#cb1-32"></a></span>
+<span id="cb1-33"><a href="#cb1-33"></a><span class="ss">4. </span>Compare the predictions of the present model with those of its GHH-preference counterpart.</span>
+<span id="cb1-34"><a href="#cb1-34"></a></span>
+<span id="cb1-35"><a href="#cb1-35"></a><span class="fu">## Answer</span></span>
+<span id="cb1-36"><a href="#cb1-36"></a></span>
+<span id="cb1-37"><a href="#cb1-37"></a>_No solution has been posted yet. If you have a solution, we invite you to share it in the comment box at the bottom of this page._</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 

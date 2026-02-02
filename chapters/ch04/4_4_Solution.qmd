@@ -88,7 +88,11 @@ Trade balance in period t: $tb_t = y_t -c$. When $y_t=y_H$,  $tb_t = y_H - c$ an
 
 #### 4.
 
-Using the notation of  section 4.9.1, we denote the net foreign asset position in period $t$ as $s_t = E_tq_{t,t+1} b_{t+1}= \beta E_t b_{t+1}$. Since $b_t$ takes only 2 values, we have $\left[\begin{array}{cc} s_H & s_L\end{array}\right]' = \beta \Pi \left[\begin{array}{cc} b_H & b_L\end{array}\right]' $
+Using the notation of  section 4.9.1, we denote the net foreign asset position in period $t$ as $s_t = E_tq_{t,t+1} b_{t+1}= \beta E_t b_{t+1}$. Since $b_t$ takes only 2 values, we have
+
+$$
+\left[\begin{array}{cc} s_H & s_L\end{array}\right]' = \beta \Pi \left[\begin{array}{cc} b_H & b_L\end{array}\right]'
+$$
 
 #### 5.
 

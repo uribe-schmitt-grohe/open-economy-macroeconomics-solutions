@@ -17,12 +17,18 @@ $$
 
 All other features of the model are unchanged.
 
+**Table 4.1: Calibration of the EDEIR Small Open RBC Economy**
+
+| Parameter | $\sigma$ | $\delta$ | $r^*$ | $\alpha$ | $\bar{d}$ | $\omega$ | $\phi$ | $\psi_1$ | $\rho$ | $\tilde{\eta}$ |
+|-----------|----------|----------|-------|----------|-----------|----------|--------|----------|--------|----------------|
+| Value     | 2        | 0.1      | 0.04  | 0.32     | 0.7442    | 1.455    | 0.028  | 0.000742 | 0.42   | 0.0129         |
+
 1. Derive analytically the steady state of the model.
 
-2. Set all parameters of the model as in table~\ref{table:soe-rbc-calibration-SGU-JIE}, except for $\omega$.
+2. Set all parameters of the model as in Table 4.1, except for $\omega$.
    Calibrate $\omega$ to ensure that in the deterministic steady state, hours equal 1/3 (i.e., ensure that in the steady state, households spend one-third of their time working). Calculate the implied value of $\omega$.
 
-3. Produce a table of predicted second moments similar to table~\ref{table:soe-rbc-edeir}. When performing this step, you might find it convenient to use as a starting point the Matlab programs for the EDEIR SOE-RBC model posted online.
+3. Produce a table of predicted second moments similar to Table 4.1. When performing this step, you might find it convenient to use as a starting point the Matlab programs for the EDEIR SOE-RBC model posted online.
 
 4. Compare the predictions of the present model with those of its GHH-preference counterpart.
 
