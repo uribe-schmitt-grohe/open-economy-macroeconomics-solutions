@@ -34,4 +34,86 @@ All other features of the model are unchanged.
 
 ## Answer
 
-_No solution has been posted yet. If you have a solution, we invite you to share it in the comment box at the bottom of this page._
+#### 1. Steady State with Cobb-Douglas Preferences
+
+The marginal rate of substitution between leisure and consumption is:
+
+$$
+-\frac{U_h}{U_c} = \frac{\omega}{1-\omega}\frac{c}{1-h}
+$$
+
+Then the labor-leisure optimality condition (4.11) becomes:
+
+$$
+\frac{\omega}{1-\omega}\frac{c_t}{1-h_t} = (1-\alpha)A_t(k_t/h_t)^{\alpha} \tag{*}
+$$
+
+**Steady state:** Given $h = 1/3$.
+
+Calibrated are: $\alpha$, $\bar{d}$, $r^*$, $A = 1$, and $\delta$. From page 82:
+
+$$
+\beta^{-1} = 1 + r^*
+$$
+
+$$
+\kappa = \frac{k}{h} = \left(\frac{\alpha}{\beta^{-1} - 1 + \delta}\right)^{\frac{1}{1-\alpha}}
+$$
+
+$$
+k = \kappa h
+$$
+
+By (4.16):
+
+$$
+c = \kappa^{\alpha}h - r^*\bar{d} - \delta k
+$$
+
+By (*):
+
+$$
+\frac{\omega}{1-\omega}\frac{c}{1-h} = (1-\alpha)\kappa^{\alpha}
+$$
+
+Solving for $\omega$:
+
+$$
+\omega = \frac{Z}{1+Z}; \quad \text{where } Z \equiv \frac{(1-\alpha)\kappa^{\alpha}(1-h)}{c}
+$$
+
+#### 2. Calibration of $\omega$
+
+$$
+\omega = 0.6567
+$$
+
+#### 3. Predicted Second Moments
+
+**Cobb-Douglas Preferences:**
+
+| Variable    | Std. Dev. | Serial Corr. | Corr. with $y$ |
+|-------------|-----------|--------------|-----------------|
+| $y$         | 2.7853    | 0.6546       | 1.0000          |
+| $c$         | 0.8461    | 0.8775       | 0.2520          |
+| $i$         | 11.2857   | $-$0.0815    | 0.5053          |
+| $h$         | 1.7995    | 0.7523       | 0.9529          |
+| $tb/y$      | 2.5948    | 0.4772       | 0.4477          |
+| $ca/y$      | 2.3534    | 0.4129       | 0.3622          |
+
+**GHH Preferences (Original EDEIR):**
+
+| Variable    | Std. Dev. | Serial Corr. | Corr. with $y$ |
+|-------------|-----------|--------------|-----------------|
+| $y$         | 3.0826    | 0.6170       | 1.0000          |
+| $c$         | 2.7064    | 0.7822       | 0.8441          |
+| $i$         | 9.0391    | 0.0686       | 0.6688          |
+| $h$         | 2.1186    | 0.6170       | 1.0000          |
+| $tb/y$      | 1.7782    | 0.5085       | $-$0.0435       |
+| $ca/y$      | 1.4529    | 0.3220       | 0.0503          |
+
+#### 4. Comparison
+
+With income-elastic labor supply (Cobb-Douglas), hours are, as expected, somewhat less volatile than under income-inelastic labor supply (GHH). The largest difference in second moments, however, appears in consumption. Consumption is much less volatile (0.85 percent under Cobb-Douglas versus 2.71 percent under GHH) and less correlated with output (0.25 versus 0.84). The different cyclicality of consumption also affects the trade balance, which becomes procyclical, with a correlation of 0.45 with output.
+
+The impact response of the trade balance (not shown) remains negative because investment rises sharply on impact under both Cobb-Douglas and GHH preferences. Since investment exhibits near-zero serial correlation in both cases, the post-impact dynamics of the trade balance are driven largely by consumption. Because consumption increases only modestly during the output boom triggered by a positive technology shock, the trade balance turns positive after the impact period and is therefore procyclical overall.
